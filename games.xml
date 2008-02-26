@@ -1,0 +1,283 @@
+﻿<file>
+  <description language="de">Auf dieser Seite gibt Free- und Shareware Spiele. Die meisten sind Pacman ähnlich, aber es gibt auch ein Lernspiel, ein Logikspiel, und zwei Shooter.</description>
+  <description language="en">On this page can you find free- and shareware games: Most of them are like pacman, but there are 2 shooter games, too.</description>
+  <keywords language="de">Spiele, BeniBela, Mausitanien, Netzwerkbombermanclone, STWC, Save the World Trade Center, Das Kinderzimmer, Scherli 1, Scherli 2, Stockspiel, download, Freeware, Shareware, Pacman, Labyrinth, Maus, Mäuse, Käse, sammeln, Arcade, Logik, Shooter, Bomberman</keywords>
+  <keywords language="en">games, BeniBela, Mausitanien, Netzwerkbombermanclone, STWC, Save the World Trade Center, Das Kinderzimmer, Scherli 1, Scherli 2, Stockspiel, download, freeware, shareware, Pacman, maze, mouse, cheese, collect, Arcade, logic, shooter, Bomberman</keywords>
+  <content language="de">Alle hier aufgelisteten Spiele laufen unter allen (32 oder höher Bit-) Windowsversionen, und sind deutschsprachig.</content>
+<content language="en">Every game in this list can run on any (32 or more bit) Windows system and has a German user interface.</content>
+  <download-dir>bin/games</download-dir>
+  <download> 
+    <title>Mausitanien</title>
+    <file>mausitanien.zip</file>
+    <description_80 language="de">Pacmanclone mit Mäusen anstelle von Smileys.</description_80>
+    <description_80 language="en">Help a mouse to collect cheese!</description_80>
+    <language>de</language>
+    <payment>Shareware: 10 €</payment>
+    <size_KB>591</size_KB>
+    <content language="de"><![CDATA[Mausitanien ist ein typischer Pacmanclone. Man steuert mit den Pfeiltasten seine Spielfigur durch ein Labyrinth, um dabei Punkte zu sammeln. <br>
+Das besondere an Mausitanien ist, dass man, anstelle des üblichen Smileys, mit einer Maus im Labyrinth Käse sammeln muss, während man von 2 Katzen verfolgt wird. In späteren Leveln kommen noch eine Schlange und ein Gespenst als Feinde hinzu, die sich jeweils schneller bewegen, und somit gefährlicher sind.<br>
+Das Spiel ist relativ einfach zu spielen, da man, sollte man von einem der Feinde erwischt werden, keine Leben, sondern lediglich Punkte verliert. Es gibt auch einen Zweispielermodus, wo zwei Spieler zusammen am selben Computer spielen können.<br>
+Die Sharewareversion enthält insgesamt 10 Level, aufgeteilt in 5 Einzelspielerlevel und 5 Zweispielerlevel, und einen Leveleditor mit dem man eigene Level erstellen kann.<br>
+Die Vollversion dagegen hat 40 Level, je 20 Ein- und Zweispielerlevel, und kostet 10 &euro;, die überwiesen werden sollten. Um die Kontonummer zu erfahren, und das Spiel zu erhalten, schreiben Sie bitte eine E-Mail an "benito [Klammer durch at ersetzen] benibela.de".]]></content>
+    <content language="en"><![CDATA[Mausitanien is a game like pacman. You have to move a mouse through a maze to get points. <br>
+But Mausitanien isn't played with the usual smiley, You move a mouse which has to collect cheese while it is persecuted by 2 cats. Later it gets new enemys: a snake and a ghost. They are faster than the cats.<br>
+The game is relative simple because you cann't lose a life, but only points. <br>
+It has a two player mode in which 2 players sitting together at the PC move 2 mouses through the maze.<br>
+The shareware version contains 10 levels, 5 single player levels and 5 multi player levels, and a level editor with which you can create own levels.<br>
+The full version contains 40 levels, 20 single player levels and 20 multi player levels. It costs 10 &euro;, which you have to transfer to me when you want to get it.<br>To get my account number, write a mail to "benito [replace bracket with at] benibela.de</a>.]]></content>
+    <screenshot>
+      <title language="de">Spielansicht</title>
+      <title language="en">In game view</title>
+      <fullfile>img/games/mausitanien.gif</fullfile>
+      <height>206px</height>
+    </screenshot>
+    <screenshot>
+      <title language="de">Leveleditor</title>
+      <title language="en">level editor</title>
+      <fullfile>img/games/mausitanien2.gif</fullfile>
+      <height>230px</height>
+    </screenshot>
+  </download>
+  
+ 
+  <download> 
+    <title>2D Netzwerk bomberman clone</title>
+    <file>bomber.zip</file>
+    <description_80 language="de">Ein Bombermanclone mit Netzwerk- und KI-Fähigkeit.</description_80>
+    <description_80 language="en">A clone of bomberman which is played over a network and contains computer opponents.</description_80>
+    <language>de</language>
+    <payment>Freeware</payment>
+    <size_KB>354</size_KB>
+    <content language="de"><![CDATA[Bei diesem Bombermanclone steuert man einen schwebenden Luftpanzer mit dem man versuchen muss, die anderen Spieler abzuschießen.<br>
+Wird man getroffen, verliert man ein Leben, und derjenige der als letzter noch Leben hat, hat gewonnen.
+Es gibt 9 unterschiedliche Waffen, die den Gegner und die Kisten jeweils unterschiedlich stark verletzen, wie beispielsweise Bomben, Gewehre, Flammenwerfer, oder Spezialbomben, die sich bewegen lassen, oder später gesprengt werden.<br>
+Das Spiel läuft nur über Netzwerk, da ich es ursprünglich nur zum Erlernen der Netzwerkprogrammierung programmiert habe, und es sind nur bis zu 4 Spieler - Mensch oder Computer - möglich.<br>
+Als besondere Features gibt es einen Leveleditor und im Spiel 4 verschiedene Ansichten, wo entweder Spieler, Bomben, oder aufsammelbare Objekte hervorgehoben werden, so dass nie die Übersicht verloren geht.<br>
+Genauere Informationen (u.a zur Bedienung) findet man in der mitgelieferten Hilfedatei.]]></content>
+    <content language="en"><![CDATA[You control a flying air tank and have to shoot down the ones of the other players,<br>
+If you are hit, you will lose a life, until everyone except the winner will be dead.<br>
+There are 9 weapons which all damage players and blocks differently. For example, there are bombs, guns, flamethrower, or special bombs which can move or which will explode later.<br>
+The game needs a network and only 4 players - human or computer - can play in a session.<br>
+Extra feature are the 4 different views in the game which stress different elements of the game, like player, bombs or object you can collect.<br> 
+There is also a level editor.<br>
+More information you can find in the help file (it is on German).
+You control a flying air tank and have to shoot down the ones of the other players,<br>
+If you are hit, you will lose a life, until everyone except the winner will be dead.<br>
+There are 9 weapons which all damage players and blocks differently. For example, there are bombs, guns, flamethrower, or special bombs which can move or which will explode later.<br>
+The game needs a network and only 4 players - human or computer - can play in a session.<br>
+Extra feature are the 4 different views in the game which stress different elements of the game, like player, bombs or object you can collect.<br> 
+There is also a level editor.<br>
+More information you can find in the help file (it is on German).]]></content>
+    <screenshot>
+      <title language="de">Normale Spielansicht</title>
+      <title language="en">Gegenstandsansicht</title>
+      <fullfile>img/games/bomber_1.gif</fullfile>
+      <height>442px</height>
+    </screenshot>
+    <screenshot>
+      <title language="de">Gegenstandsansicht</title>
+      <title language="en">list of top level windows</title>
+      <fullfile>img/games/bomber_2.gif</fullfile>
+      <height>442px</height>
+    </screenshot>
+  </download>
+
+  <download> 
+    <title>Save the World Trade Center</title>
+    <file>wtc.zip</file>
+    <description_80 language="de">Ein Spiel, bei dem man das WTC mit an ihm angebrachten Flaks verteidigen muss.</description_80>
+    <description_80 language="en">Protect the WTC by shooting down planes before they hit and destroy it!</description_80>
+    <language>de</language>
+    <payment>Freeware</payment>
+    <size_KB>997</size_KB>
+    <content language="de"><![CDATA[Bei diesem Spiel steuert man 4 Flaks, von denen 3 um das WTC verteilt sind, und ein viertes auf dem WTC auf einer Verbindung zwischen den beiden Türmen fährt. Mit diesen Flaks muss man anfliegende Flugzeuge abschießen, um das WTC zu retten.<br>
+Die Steuerung ist in der Datei 0liesmich.doc beschrieben.]]></content>
+    <content language="en"><![CDATA[In this game you control 4 missile launchers with you have to use to protect the WTC. 3 are placed arond the WTC and the fourth can move between the top side of the towers.<br>
+You can select missile launcher by pressing the keys 1, 2, 3, 4. You can rotate it by the arrow keys and you shoot with space. The one of the towers can be moved by the del and end keys.]]></content>
+    <screenshot>
+      <title language="de">Auf den Türmen</title>
+      <title language="en">On the towers</title>
+      <fullfile>img/games/wtc_1.jpg</fullfile>
+      <height>305px</height>
+    </screenshot>
+    <screenshot>
+      <title language="de">Am Boden</title>
+      <title language="en">On the floor</title>
+      <fullfile>img/games/wtc_2.jpg</fullfile>
+      <height>305px</height>
+    </screenshot>
+  </download>
+
+  <download> 
+    <title language="de">Schlange</title>
+    <title language="en">Snake</title>
+    <file>schlange.zip</file>
+    <description_80 language="de">Snakeklon für den Algebra FX 2+ Taschenrechner</description_80>
+    <description_80 language="en">Clone of snake, running on the Algebra FX 2+ calculator.</description_80>
+    <language>de, (en)</language>
+    <payment>Freeware</payment>
+    <size_KB>11</size_KB>
+    <content language="de">Das Spiel ist ein typischer Snakeklon, in dem man mit einer Schlange, die weder sich selbst noch Wände berühren darf, Objekte aufsammeln muss. Es  hat 14 Level und eine Highscoreliste.&lt;br>
+                           Um das Spiel zu spielen, kann man den Casio Algebra FX 2.0 PLUS Taschenrechner benutzen, in dessen Skriptsprache es auf ihm programmiert wurde, wobei es aber eventuell auch auf Vorgängerversionen läuft. Außerdem braucht man eine Übertragungssoftware, wenn man die Programme nicht abtippen will. </content>
+    <content language="en">The game is a typical snake clon in which you have to collect food with a snake that is not allowed to touch anything else. It has 14 levels and a high score list.&lt;br>
+You can use the Casio Algebra FX 2.0 PLUS calculator to run this game, which is the one the game has been written on. However, it is possible that it works on older versions, too. And of course you need a transfer software in case you doesn't want to typewrite the source.</content>
+  </download>
+
+  <download> 
+    <title language="de">Solitär</title>
+    <title language="en">Solitaire</title>
+    <file>solitär.zip</file>
+    <description_80 language="de">Solitärklon für den Algebra FX 2+ Taschenrechner</description_80>
+    <description_80 language="en">Clone of the Windows' solitaire game, running on the Algebra FX 2+ calculator.</description_80>
+    <language>de, (en)</language>
+    <payment>Freeware</payment>
+    <size_KB>14</size_KB>
+    <content language="de">Dieses Spiel ist wie das Solitär von Windows, man muss unsortierte Karten von verdeckten Stapel auf vier Zielstapel sortieren und es gibt auch einen Reservestapel, aus dem man beliebige Karten ziehen kann.&lt;br>Um das Spiel zu spielen, kann man den Casio Algebra FX 2.0 PLUS Taschenrechner benutzen, in dessen Skriptsprache es auf ihm programmiert wurde, wobei es aber eventuell auch auf Vorgängerversionen läuft. Außerdem braucht man eine Übertragungssoftware, wenn man die Programme nicht abtippen will.</content>
+    <content language="en">This game is like the solitaire of windows&lt;br>You have to sort cards you can take from unsorted hidden stacks. There is also a reserve stack where you can take arbitrary cards from.&lt;br>
+You can use the Casio Algebra FX 2.0 PLUS calculator to run this game, which is the one the game has been written on. However, it is possible that it works on older versions, too. And of course you need a transfer software in case you doesn't want to typewrite the source.</content>
+  </download>
+
+  <download> 
+    <title language="de">Bücherjagd</title>
+    <title language="en">Bücherjagd</title>
+    <file>bücherjagd.zip</file>
+    <description_80 language="de">Hier müssen Bücher in der Bücherei gesucht werden</description_80>
+    <description_80 language="en">Search books in a library!</description_80>
+    <language>de</language>
+    <payment>Freeware</payment>
+    <size_KB>1400</size_KB>
+    <content language="de">>In diesem Spiel steuert man eine Figur durch einen zufällig generierten 2D Level, der aus Bücherregalen und Suchcomputer besteht. &lt;br>
+    Die Aufgabe kautet nun bestimmte Bücher zu finden, indem man die Regale einzeln durchsucht. Zur Hilfe können die Suchcomputer benutzt werden, die einem verraten, wo sich die Bücher befinden.&lt;br>
+    Diese kann man aber, bis man einen Schraubenzieher und Computerchip gefunden hat, nur einmalig nutzen.&lt;br>
+    Bereits gefundene Bücher können einem auch von einer Leseratte und zwei Bücherwürmern wieder gestohlen werden.&lt;br>
+    Das Spiel konnte auch einige Zeit lang in den Stadtbüchereien Düsseldorf gespielt werden.
+    </content>
+    <content language="en">In this game you have to walk around in randomly generated 2D level in order to find certain books in bookshelfs.&lt;br>However, you must be careful not to be caught by a bookworm or a "Leseratte". ("Leseratte" = reading rat, in German an animal similar to a bookworm. In fact it is so similar, that every  dictionaries I have checked gives "bookworm" as translation [or none at all])&lt;br>You can get help by search computers which can tell you where everything is. However, you can use one only once, except you have found a computer chip as well as screwdriver.</content>
+    <screenshot>
+      <title language="de">zu suchende und gefundenen Bücher</title>
+      <title language="en">books to find and books found</title>
+      <fullfile>img/games/bücherjagd_1.gif</fullfile>
+      <height>210px</height>
+    </screenshot>
+  </download>
+
+  
+  
+  <download> 
+    <title>Raumschiffspiel</title>
+    <file>upscroller.zip</file>
+    <description_80 language="de">Ein simples scrollendes Raumschiffspiel.</description_80>
+    <description_80 language="en">A simple vertically-scrolling game</description_80>
+    <language>de</language>
+    <payment>Freeware</payment>
+    <size_KB>464</size_KB>
+    <content language="de"><![CDATA[Bei diesem abwärts scrollenden Raumschiffshooter besteht das einzigste Ziel darin, den jeweils aktuellen Level zu durchqueren, ohne mit Minen zu kollidieren oder von feindlichen Schiffen abgeschossen zu werden.<br>
+Das Spiel ist ziemlich schwer zu spielen, was vor allem an der physikalischen ziemlich korrekten Steuerung, und den schwachen Schilden des Schiffes liegt.]]></content>
+    <content language="en"><![CDATA[In this game you will win when you have crossed a level and reached its end without being destroyed by mines or hostile firing space ships.<br>
+It is very difficult to play this game because ship is moved realistically and has got very weak shields.]]></content>
+    <screenshot>
+      <title language="de">Minenfeld</title>
+      <title language="en">mines</title>
+      <fullfile>img/games/upscroller_1.gif</fullfile>
+      <height>305px</height>
+    </screenshot>
+    <screenshot>
+      <title language="de">verschiedene Schiffe</title>
+      <title language="en">ships</title>
+      <fullfile>img/games/upscroller_2.gif</fullfile>
+      <height>249px</height>
+    </screenshot>
+  </download>
+  <download> 
+    <title>Das Kinderzimmer</title>
+    <file>kinder.zip</file>
+    <description_80 language="de">Ein Vorschullernprogramm mit 5 Lernspielen</description_80>
+    <description_80 language="en">A educational game for young children.</description_80>
+    <language>de</language>
+    <payment>Freeware</payment>
+    <size_KB>2550</size_KB>
+    <content language="de"><![CDATA["Das Kinderzimmer" ist ein Vorschullernprogramm, welches im Jahr 2001 mit dem Sonderpreis "Softwaresystemtechnik" von Jugend Forscht ausgezeichnet wurde. <br>Der Spieler muss ein virtuelles Kinderzimmer aufräumen. Dazu muss er die  auf dem Boden liegenden Teile anklicken, und ein Lernspiele zu Bereichen, wie logisches Denken und visuelle Wahrnehmung, lösen. Bei Erfolgt landet das Teil im Regal, ansonsten muss man es erneut probieren. <br>
+               Dieses Spiel ist Shareware und die Vollversion kostet 10 Euro. Um die nötigen Erwerbsbedingungen, wie Kontonummer, zu erhalten, schreiben Sie bitte eine E-Mail an "benito [Klammer ist durch at ersetzen] benibela.de".]]></content>
+    <content language="en"><![CDATA["Das Kinderzimmer" (= children's room) is a pre-school learn game.<br>The player has to tidy up a virtual children's room. To do this, he clicks on the toys laying on the floor. Then the game starts a sub game where he has to solve a problem. If he is successfull the toy is placed into a shelve, otherwise he has to do it again. <br>
+               This game is in German and based on voice output, so don't download the game, if you don't speak German. (of course you can use it to learn German) <br>
+               It is shareware and the full version costs 10 &euro;. To get more information (for example, how to pay) please write a mail to "benito "[replace bracket with at] benibela.de".]]></content>
+    <screenshot>
+      <title language="de">Das Zimmer</title>
+      <title language="en">the room</title>
+      <fullfile>img/games/kinder_1.jpg</fullfile>
+      <height>202px</height>
+    </screenshot>
+    <screenshot>
+      <title language="de">Unterspiel: Mustermacher</title>
+      <title language="en">sub game: creating of patterns</title>
+      <fullfile>img/games/kinder_2.gif</fullfile>
+      <height>190px</height>
+    </screenshot>
+  </download>
+  <download> 
+    <title>Scherli 2</title>
+    <file>scherli2.zip</file>
+    <description_80 language="de">Pacmanclone mit Raumschiffen und Krokodilen</description_80>
+    <description_80 language="en">A clone of pacman played with space ships, a snake and a crocodile</description_80>
+    <language>de</language>
+    <payment>Freeware</payment>
+    <size_KB>352</size_KB>
+    <content language="de"><![CDATA[Scherli 2 ist ein typisches Pacmanspiel. Man läuft mit einem Smiley durch Labyrinthe, um Kekse aufzusammeln, während man von zwei Raumschiffen, einer Schlange und einem Krokodil gejagt wird.<br>
+Es gibt Teleporter, Fallen, Extraleben und einen Leveleditor, und man kann das Aussehen der Blockaden zwischen Balken und Ellipsen umschalten.<br>
+Mit dem mitgelieferten Leveleditor kann man auch eigene Level erzeugen.]]></content>
+    <content language="en"><![CDATA[Scherli 2 is a typical clone of pacman. You move a Smiley through a maze to collect cookies while two space ships, a snake and a crocodile want to kill you.<br>
+There are extras like jumper, traps, new lifes and a level editor. You can also change the appearance of the walls.]]></content>
+    <screenshot>
+      <title>Level 2</title>
+      <fullfile>img/games/scherli2_1.gif</fullfile>
+      <height>251px</height>
+    </screenshot>
+    <screenshot>
+      <title>Level 2</title>
+      <fullfile>img/games/scherli2_2.gif</fullfile>
+      <height>251px</height>
+    </screenshot>
+  </download>
+  <download> 
+    <title>Scherli 1</title>
+    <file>scherli1.zip</file>
+    <description_80 language="de">Pacmanclone mit Raumschiffen und Krokodilen</description_80>
+    <description_80 language="en">A clone of pacman played with space ships and a crocodile</description_80>
+    <language>de</language>
+    <payment>Freeware</payment>
+    <size_KB>259</size_KB>
+    <content language="de"><![CDATA[Scherli 1 ist ein typisches Pacmanspiel, sehr ähnlich zu Scherli 2. Man läuft mit einem Smiley durch Labyrinthe, um Kekse aufzusammeln, während man von zwei Raumschiffen und einem Krokodil gejagt wird. <br>
+Es gibt recht viele Extrafeatures, wie Mauern, die nur von dem Spieler, oder nur von den Feinden durchlaufen werden können, Teleporter und Schlüssel. Das spiel ist für Anfänger dieser Art Spiele gut geeignet, da sich die Figuren langsam bewegen und die Level sich sehr ähnlich sind.]]></content>
+    <content language="en"><![CDATA[Scherli 1 is a clone of pacman, very similar to Scherli 2. You move a smiley through a maze (you can find this sentence three times on this page ;-) to get cookies while two space ships an a crocodile want to kill you. <br>There are many extras like jumper, walls the only player or only the enemies can get, new lifes, keys and doors. The game is suited for beginners because the smiley and his enemies move slowly and the levels have not much variations.]]></content>
+    <screenshot>
+      <title>Level 1</title>
+      <fullfile>img/games/scherli1_2.gif</fullfile>
+      <height>240px</height>
+    </screenshot>
+    <screenshot>
+      <title>Level 4</title>
+      <fullfile>img/games/scherli1_2.gif</fullfile>
+      <height>240px</height>
+    </screenshot>
+  </download>
+  <download> 
+    <title>Stockspiel</title>
+    <file>stockspiel.zip</file>
+    <description_80 language="de">Logikspiel mit Streichhölzern.</description_80>
+    <description_80 language="en">A logic game</description_80>
+    <language>de</language>
+    <payment>Freeware</payment>
+    <size_KB>136</size_KB>
+    <content language="de"><![CDATA[Bei diesem Spiel gibt es eine Reihe von Stöcken, von denen man in jeder Runde 1, 2 oder 3 anklickt, um sie zu entfernen. Derjenige der den letzten Stock nimmt, hat verloren.<br>
+Man kann allein gegen den Computer oder zu zweit gegen einander spielen.]]></content>
+    <content language="en"><![CDATA[In this game there is a row of sticks. You can remove 1, 2 or 3 of them. Then the computer or another player also removes some of the sticks. Then it is your turn. <br>
+The one who gets the last stick has lost the game.]]></content>
+    <screenshot>
+      <title language="de">Spielstart</title>
+      <title language="en">game start</title>
+      <fullfile>img/games/stockspiel.gif</fullfile>
+      <height>209px</height>
+    </screenshot>
+  </download>
+
+</file>

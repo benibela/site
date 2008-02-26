@@ -1,0 +1,35 @@
+
+body {
+  padding-top:  5em;
+  padding-bottom:2em;
+}
+
+.shortdescription{
+  width:auto;
+  margin-right: -15px;
+  display: block;
+  position: static;
+}
+.link_list{
+  width:auto;
+  margin-right: -15px;
+  display: block;
+  position: static;
+}
+#menulink_list li{
+  width: 11.25em;
+}
+#border_navi_left_bottom {
+  left:-10px;
+  bottom:-2px;
+}
+#border_navi_bottom {
+  left:10px;
+  bottom:4px;
+  width: 11.25em;
+}
+#border_navi_right_bottom {
+  bottom:1px;
+  right:-10px;
+  margin-bottom:-2px;
+}

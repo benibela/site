@@ -1,0 +1,26 @@
+/* Internet Explorer 7.0*/
+
+.long_desc_license{
+  padding-top: 5.5em;
+  
+}
+.long_desc_size{
+  padding-top: 5.5em;
+}
+/*.long_desc_title .target{
+  margin-top: 0em;
+  padding-top: 0em;
+}*/
+#border_navi_right_top{
+  position: absolute;
+  display: block;
+  top:0px;
+  left:12em;
+
+  margin-top: -8px;
+  margin-left:-2px;
+}
+html, body {
+  width: auto;
+  height: auto;
+}

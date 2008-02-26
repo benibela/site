@@ -1,0 +1,82 @@
+﻿<file>
+  <description language="de">Eine Sammlung von Delphikomponenten: Ein Kombination von Tree- und ListView , ein Fortschrittsbalken mit Farbverlauf und ein Eingabefeld für Zahlen</description>
+  <description language="en">You can find components for Delphi on this page: A tree list view which shows a tree together with column items, a gauge combined with a color gradient and an edit box for numbers</description>
+  <keywords language="de">Delphi, Komponenten, BeniBela, ListView, TreeView, TListView, TTreeView, TTreeListView, tree list view, Farbverlauf, Scrollbalken, Eingabefeld, Zahlen, download</keywords>
+  <keywords language="en">Delphi, Components, tree view, list view, TTreeView, TListView, TTreeListView, tree list view, BeniBela, gauge, gradient, color, edit, box, numbers, download</keywords>
+  <content language="de"><![CDATA[Auf dieser Seite kann man Delphikomponenten herunterladen, die wegen der Versionsproblematik von Delphi bei Komponenten alle Open-Source sind. Alle mit der MPL-Lizenz, GPL-Lizenz oder BSD-Lizenz versehenen Komponenten dürfen beliebig verändert und vertrieben werden. <br>Bei der MPL und GPL müssen aber Änderungen veröffentlicht werden und bleiben unter der MPL lizenziert, bei der GPL gilt dies auch für Erweiterungen.<br>Von der CC-Lizenz gibt es mehrere Versionen, ich verwende aber immer diejenige, die kommerzielle Verwendung verbietet und die Quellcodeveröffentlichung von Erweiterungen verlangt.<br>Steht eine Datei unter mehreren Lizenzen, darf man eine davon wählen.Genauere und rechtskräftige Informationen liegen den Dateien bei.<br>Zusätzliche Rechte für proprietäre Software erteile an bestimmte Personen per Mail (und nach eventueller Bezahlung).]]></content>
+  <content language="en"><![CDATA[You can find components for Delphi on this page. Everyone of them is open source. All sources published under the terms of the CC- (it gives more than one CC licence, but I only use one), GPL-, MPL-, or BSD-License you can change and distribute in any way you want. <br>But in case of MPL, GPL or CC you must publish changes and you mustn't change the license. In case of GPL and CC you must also publish extensions and the source of every program (from you) using it under the terms of the GPL. CC forbids also the creating of commercial software based on a component.<br>If any of the files is published under the terms of more than one license, you can choose one of them. <br> You can find more and legally valid information in the source files.]]></content>
+  <download-dir>bin/components</download-dir>
+  <download> 
+    <title>TTreeListView</title>
+    <file>treelistview.zip</file>
+    <description_80 language="de">Eine Verbindung von TListView und TTreeView, die einen Baum mit Spalten anzeigt.</description_80>
+    <description_80 language="en">A combination of TListView and TTreeView drawing tree and column items.</description_80>
+    <source-license>CCNCSA</source-license>
+    <size_KB>38</size_KB>
+    <content language="de">Diese Komponente ist eine Mischung aus TTreeView und TTListView und dient dazu, einen Strukturbaum anzuzeigen, dessen Knoten weitere in Spalten sortierte Information enthalten können.&lt;br&gt;
+Sie hat folgende Features:</content>
+    <content language="en">This component is a mix between TTreeView and TListView and can paint a tree whose nodes have additional information sorted in columns.&lt;br&gt;
+It has these features:</content>
+    <features language="de">
+      <feature>Gleichzeitige Anzeige des Strukturbaumes und zusätzlicher Spalten</feature>
+      <feature>Es können Trennlinien zwischen Zeilen und Spalten angezeigt werden.</feature>
+      <feature>Zeilen können abwechselnd unterschiedliche Hintergrundfarben bekommen.</feature>
+      <feature>In jede Spalte können mehrere von einander unabhängige Textteile eingefügt werden, die bei Mausberührung hervorgehoben werden können.</feature>
+      <feature>Jeder Knoten kann mit einem Icon versehen werden und der Benutzer kann Teilbäume auf- und zuklappen.</feature>
+    </features>
+    <features language="en">
+      <feature>Showing of a tree together with columns</feature>
+      <feature>The lines can be drawn striped, so lines alternate their background color.</feature>
+      <feature>It can paint dividing lines between rows and columns.</feature>
+      <feature>The text in each column can consist of several parts which can be hot tracked independly of each other.</feature>
+      <feature>Each node can get an icon and the user can collapse and expand it.</feature>
+    </features>
+    
+    <screenshot>
+      <title>TreeListView</title>
+      <fullfile>img/components/treelistview.gif</fullfile>
+      <height>300px</height>
+    </screenshot>
+  </download>
+  <download> 
+    <title>TBeniGrad</title>
+    <file>bgrad.zip</file>
+    <description_80 language="de">Eine Komponente, um auf dem Formular einen Farbverlauf darzustellen.</description_80>
+    <description_80 language="en">A component which creates a color gradient on the formular.</description_80>
+    <source-license>MPL, GPL</source-license>
+    <size_KB>10</size_KB>
+    <content language="de">Diese Komponente erzeugt einen horizontalen Farbverlauf zwischen (maximal) 20 Farben.</content>
+    <content language="en">This component creates a horizontal color gradient between (maximal) 20 colors.</content>
+    
+    <screenshot>
+      <title>TBeniGrad</title>
+      <fullfile>img/components/farbv.jpg</fullfile>
+      <height>73px</height>
+    </screenshot>
+  </download>
+  <download> 
+    <title>TBeniGradGauge</title>
+    <file>bgradg.zip</file>
+    <description_80 language="de">Eine Komponente, um auf dem Formular einen Fortschrittsbalken mit Farbverlauf darzustellen.</description_80>
+    <description_80 language="en">A gauge combined with a color gradient.</description_80>
+    <source-license>MPL, GPL</source-license>
+    <size_KB>11</size_KB>
+    <content language="de">Diese Komponente erzeugt wie TBeniGrad einen Farbverlauf, allerdings wird nur ein Teil gezeichnet, und der Rest einfarbig gefüllt.&lt;br&gt;
+Dadurch kann man die Komponente als Fortschrittsbalken benutzen. </content>
+    <content language="en">This component creates a color gradient like TBeniGrad, but it draws only a part of it, and the remnant is filled out with a single color, so it can be used as a gauge.</content>
+    
+  </download>
+  <download> 
+    <title>TZahlBox</title>
+    <file>zahlbox.zip</file>
+    <description_80 language="de">An edit box for numbers.</description_80>
+    <description_80 language="en">Ein Eingabefeld für Zahlen.</description_80>
+    <source-license>BSD</source-license>
+    <size_KB>3</size_KB>
+    <content language="de">Diese Komponente ist ein Editfeld, in das aber nur Zahlen eingegeben werden dürfen. Die Zwischenablage und andere Einfügemöglichkeiten werden dabei auch überwacht.&lt;br&gt;
+Man kann einstellen, ob die Komponente auch dezimale und negative Zahlen annehmen soll, wobei die Ländereinstellungen aus sysUtils.pas berücksichtigt werden. </content>
+    <content language="en">This component is an edit box where you can only input numbers. It also monitors the clipboard and other possibilitys for input.&lt;br&gt;
+It has a property over which you can control if it accepts negative or float numbers.</content>
+    
+  </download>
+</file>

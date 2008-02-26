@@ -1,0 +1,104 @@
+
+html, body {
+  overflow: hidden; /* Only one scrollbar */
+}
+
+.shortdescription{
+  margin-right:-30px;
+  position: relative;
+}
+.link_list{
+  margin-right:-30px;
+  position: relative;
+}
+.long_description { 
+  position: relative;
+  display:block;
+  width:auto;
+  margin-right:-16px;
+}
+.long_desc_title .target{
+  margin-top: 0em;
+  padding-top: 0em;
+}
+#outer_content {      
+  position:relative;
+  height: 100%;
+  left:0;
+  top:0;
+  
+  padding-top:0;
+  padding-bottom:0;
+}
+#content {
+  padding-right:1.5em;
+}
+#menu {
+  padding-right:9px;
+}
+
+#border_navi_bottom {
+  bottom:3px;
+  width:11em;
+  
+  padding-top:1px;
+  padding-right:22px;
+  margin-bottom:-0.9em;
+}
+
+#border_navi_right_top{
+  top:0px; 
+  right:0px;
+  left:auto; 
+  margin-left:0px;
+}
+
+#border_navi_left_bottom {bottom:0px;}
+
+#border_navi_right_bottom {
+  bottom:1px;
+  right:-2px;
+  margin-right:0px;
+}
+
+#border_right {
+  right: 20px;  /* Normal size + scrollbar width */
+}
+#border_right_down_img{
+  right: -1px;  /* 20(border_right.right)  - 20 (Startpixel auf dem Bild) px (Das ist Absicht)*/ 
+}
+#border_right_left_img{
+  right: -1px;  /* 20(border_right.right)  - 20 (Startpixel auf dem Bild) px (Das ist Absicht)*/ 
+}
+
+#border_middle_end {
+  position: absolute;
+  z-index: 5;
+  top:6.60em;
+  left: 14em;
+  width: 7px;
+  height: 100%; 
+  
+  margin-left: -10px;
+  border-width: 4em;
+
+  background-image: url(../img/design/borderblueV.gif);
+  background-position: left;
+  background-repeat: repeat-y;
+}
+/*Positionsartwechsel*/
+#menu {position: absolute;}
+#title{position:absolute;}
+#header{position:absolute}
+#footer{position: absolute}
+
+#border_navi_bottom {position:absolute;}
+#border_navi_top{position: absolute;}
+#footer_clip{position: absolute}
+#border_right_left_img{position: absolute}
+#border_middle_up_img{ position: absolute;}
+#border_middle {position: absolute;}
+#border_left {position: absolute;}
+#border_left_up_right{position: absolute;}
+#border_right {position: absolute;}
+#border_navi_right_top{position: absolute}

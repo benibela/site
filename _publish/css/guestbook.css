@@ -1,0 +1,60 @@
+#inputbox table{
+  vertical-align:center;
+}
+#inputbox table input {
+  width: 300px;
+}
+#inputbox textarea {
+  width: 300px;
+}
+#content h2 {
+  margin-bottom:1em;
+}
+#inputbox {
+  margin: 10px 10px;
+}
+#topInputBox *{
+  text-align: left
+} 
+#secondInputBox{
+  margin:auto;  
+  margin-bottom: 2em;
+  border-collapse: collapse;
+}
+#inputRow{
+  border: 3px double blue;
+}
+.entryrowtitle{
+  border: 3px double blue;
+  border-bottom: 1px solid blue;
+  margin-top: 2em;
+  padding: 3px 3px;
+}
+.entryrow{
+  border: 3px double blue;
+  border-top: none;
+  padding: 3px 3px;
+}
+.entryrow2{
+  border: 3px double blue;
+  border-top: none;
+  border-bottom: 1px solid blue;
+  padding: 3px 3px;
+}
+.emptyRow{
+  height:2em;
+  border: none;
+}
+.commentrow{
+  border: 3px double blue;
+  border-top: none;
+  padding: 3px 3px;
+}
+.small{
+  width: auto;
+  height: auto;
+}
+.cap{
+  color: blue;
+  font-style: italic;
+}

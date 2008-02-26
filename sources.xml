@@ -1,0 +1,149 @@
+﻿<file>
+  <description language="de">Auf dieser Seite gibt es verschiedene Quellcodes: einen Non VCL Canvas, TCVirus, einen Huffmankomprimierer, einen Kommandozeilenparser, eine AutoUpdate-Unit und einen Browser.</description>
+  <description language="en">You can find these sources here: a non VCL canvas, TCVirus, a Huffman compressor, a command line parser, a browser and a automatic update unit.</description>
+  <keywords language="de">Delphi, non VCL Canvas, TCVirus, Huffman, Komprimierung, Units, Komponenten, Kommandozeile, Parser, Browser, automatisches Update</keywords>
+  <keywords language="en">Delphi, Non VCL Canvas, TCVirus, Huffman, compression, Units, components, auto update, browser, command line reader, parser</keywords>
+  <content language="de"><![CDATA[Auf dieser Seite sind Quellcodes, die man in eigenen Projekten benutzten kann, aufgelistet, <a href="components_de.html">Delphikomponenten</a> sind jedoch auf einer eigenen Seite zu finden. Alle mit der MPL-Lizenz, GPL-Lizenz oder BSD-Lizenz versehenen Quellcodes dürfen beliebig verändert und vertrieben werden. <br>Bei der MPL und GPL müssen aber Änderungen veröffentlicht werden und bleiben unter der MPL lizenziert, bei der GPL gilt dies auch für Erweiterungen.<br>Steht eine Datei unter mehreren Lizenzen, darf man eine davon wählen.<br> Genauere und rechtskräftige Informationen sollten den Dateien bei liegen.<br>Braucht jemand unbedingt eine andere Lizenz, kann er mir eine E-Mail schicken.]]></content>
+  <content language="en"><![CDATA[You can find all my published sources usable in your projects. Only <a href="components_en.html">components</a> for Delphi are on another page. All sources published under the terms of the MPL-, GPL- or BSD-License can you change and distribute in any way you want. <br>But in case of MPL or GPL you must publish changes and you mustn't change the license. In case of GPL you must also publish extensions and the source of every program (from you) using it under the terms of the GPL.<br>Is any of the files published under the terms of more than one license, you can choos one of them. <br> You can find more and legally valid information in the source files.]]></content>
+  <download-dir>bin/sources</download-dir>
+  <download> 
+    <title>Non-VCL Canvas</title>
+    <file>nvcanvas.zip</file>
+    <description_80 language="de">Eine Konvertierung des Delphi-Canvas nach Non-Vcl.</description_80>
+    <description_80 language="en">A translation of the Delphi-Canvas to non vcl.</description_80>
+    <prog-language>Delphi</prog-language>
+    <source-license>MPL, GPL</source-license>
+    <size_KB>27</size_KB>
+    <content language="de"><![CDATA[Diese Quellcodesammlung ermöglicht es die üblichen Funktionen des Delphicanvas ohne die VCL-Codes zu benutzen, indem für jede VCL-Funktion eine Methode existiert, die direkt die entsprechende GDI-Funktion auffruft.<br>
+Ihre wichtigsten Elemente sind:]]></content>
+    <content language="en"><![CDATA[You can draw in a non vcl as if you would be able to use the normal Delphi, when you use this units. They contain a methode as replacement for every TCanvas methode.<br>
+The most important features are:]]></content>
+    <features language="de">
+      <feature>Funktionen zum Zeichnen von Ellipsen, Linien, Rechtecken und Polygonen.</feature>
+      <feature>Funktionen zum Kopieren von Bildausschnitten.</feature>
+      <feature>Funktionen zur Ausgabe von Text.</feature>
+      <feature>Klassen zur Einstellung von Vorder- und Hintergrundfarbe.</feature>
+      <feature>Eine Klasse zum Einstellen von Fonteigenschaften.</feature>
+      <feature>Eine Hash-klasse und ein Ressourcenmanager.</feature>
+    </features>
+    <features language="en">
+      <feature>Functions for drawing texts, ellipses, lines, rectangles and polygones.</feature>
+      <feature>Functions for copying parts of pictures.</feature>
+      <feature>Classes for setting font, pen and brush properties.</feature>
+      <feature>A hash class and a ressources manager.</feature>
+    </features>
+    <final-content language="de"><![CDATA[In einigen Bereichen sind sie den Delphimethoden sogar überlegen, so kann man beispielweise den Text auch gedreht ausgeben.<br>Es gibt eine ausführliche HTML-Doku, in der alle Funktionen beschrieben sind. ]]></final-content>
+    <final-content language="en"><![CDATA[In some field they are even better than the Delphi functions, for example they can draw rotated text.<br>There is a good, German help, and you could use the documentation of TCanvas from Delphi. ]]></final-content>
+  </download>
+  <download> 
+    <title>TCVirus</title>
+    <file>cvirus.zip</file>
+    <description_80 language="de">Eine Unit/Komponente zum Entwickeln von Scherzprogrammen</description_80>
+    <description_80 language="en">An unit/component for the development of joke programs</description_80>
+    <prog-language>Delphi</prog-language>
+    <source-license>MPL, GPL</source-license>
+    <size_KB>40</size_KB>
+    <content language="de">TCvirus hat (unter anderem) folgende Funktionen:</content>
+    <content language="en">These are the most important features of TCvirus:</content>
+    <features language="de">
+      <feature>Es liefert einen Canvas für das direkte Zeichnen auf den Bildschirm, unabhängig von geöffneten Fenstern.</feature>
+      <feature>Man kann den Bildschirm spiegeln</feature>
+      <feature>Es liefert Windowshandle für wichtige Objekte, wie dem Startbutton, der Taskleite und des Desktops, über die sie dann verändert werden können.</feature>
+      <feature>Man kann das Programm vor dem Taskmanager verstecken.</feature>
+      <feature>Man kann die CD-Schublade öffnen und schließen.</feature>
+    </features>
+    <features language="en">
+      <feature>It gives a canvas for direct drawing on the screen.</feature>
+      <feature>It can mirror the screen.</feature>
+      <feature>It returns handle of important objects like the task button, the task list, and the desktop.</feature>
+      <feature>It can hide your program from the task manager.</feature>
+      <feature>It can open and close the CD door.</feature>
+    </features>
+    <final-content language="de"><![CDATA[Da TCvirus ursprünglich eine Komponente war, gibt es zwei Units: Eine mit den eigentlichen Funktionen, und eine Komponente, die einen Wrapper für die erste Unit darstellt.<br>Will man die Komponente ohne die VCL nutzen, benötigt man meinen Non-VCL Canvas, der aber im Ziparchiv enthalten ist.]]></final-content>
+    <final-content language="en">Because TCvirus has originally been a component, there are 2 units, a component for the VCL and a unit for non VCL.</final-content>
+  </download>
+  <download> 
+    <title>TCommandLineReader</title>
+    <file>rcmdline.zip</file>
+    <description_80 language="de">Eine Unit zum Lesen von Kommandozeilenparametern</description_80>
+    <description_80 language="en">An unit for the parsing of command line parameters</description_80>
+    <prog-language>FPC, Delphi</prog-language>
+    <source-license>GPL</source-license>
+    <size_KB>8</size_KB>
+    <content language="de"><![CDATA[Dies ist ein Kommandozeilenparser, der sowohl mit Delphi wie auch mit Free Pascal (unter Linux nicht getestet) funktioniert.<br>
+Im Gegensatz zu den meisten anderen Kommandozeilenparser, muss man vor Benutzung die erlaubten Parameter definieren, was es erweiterte Parsingmöglichkeiten erlaubt. Die genauen Funktionen sind:]]></content>
+    <content language="en"><![CDATA[This is a command line parser working with Delphi as well as with Free Pascal (not tested under Linux).<br>
+In contrast to most of the other command line parsers, here you have to declare the allowed parameter, so the parser can be more intelligent.<br>
+The exact features are:]]></content>
+    <features language="de">
+      <feature>Automatische Typumwandlung in einen angegeben Typen</feature>
+      <feature>Automatische Anzeige aller erlaubten Parameter</feature>
+      <feature>Linux und Windowsstyleparameter werden erkannt</feature>
+      <feature>Verschiedene Eingabemöglichkeiten für Flags</feature>
+      <feature>Anführungszeichen werden erkannt</feature>
+      <feature>Existierende Dateien mit Leerzeichen im Namen auch ohne Verwendung von Anführungszeichen einlesbar</feature>
+    </features>
+    <features language="en">
+      <feature>type conversion</feature>
+      <feature>automatically user notification about wrong parameters</feature>
+      <feature>linux and windows style parameters</feature>
+      <feature>different input possibilities for boolean flags</feature>
+      <feature>understanding of quotation marks</feature>
+      <feature>existing files with names containing spaces can be parsed without quotation marks    </feature>
+    </features>
+</download>
+  <download> 
+    <title>TAutoUpdater</title>
+    <file>autoupdate.zip</file>
+    <description_80 language="de">Eine Unit für ein automatisches Progammupdate</description_80>
+    <description_80 language="en">An unit for an automatically update</description_80>
+    <prog-language>FPC</prog-language>
+    <source-license>GPL</source-license>
+    <size_KB>10</size_KB>
+    <content language="de"><![CDATA[Hiermit kann man in ein Programm ein automatisches Update übers Internet einbauen.<br>Um die Klasse benutzen zu können, braucht man eine wininet-Unit, die die Windowsinternetfunktionen enthält.
+Funktionen:]]></content>
+    <content language="en"><![CDATA[This allows an automatical update about the internt.<br>
+To use the class you need a wininet unit containing the windows internet functions.<br>Features:]]></content>
+    <features language="de">
+      <feature>Erkennen neuer Versionen</feature>
+      <feature>Download dieser</feature>
+      <feature>Ersetzen des eigenen Programms unter Windows NT und 9x-Schiene</feature>
+      <feature>Erkennen von Rechtemangel unter (Windows NT,...)</feature>
+    </features>
+    <features language="en">
+      <feature>check for new versions</feature>
+      <feature>download them in a compressed zip archive</feature>
+      <feature>extract this</feature>
+      <feature>replace the current executable with the new one on every Windows</feature>
+      <feature>detect missing access rights on Windows NT...</feature>
+    </features>
+  </download>
+  <download> 
+    <title>SimpleBrowser</title>
+    <file>simplebrowser.zip</file>
+    <description_80 language="de">Ein kleiner, IE-basierter Browser</description_80>
+    <description_80 language="en">A simple IE-based browser</description_80>
+    <prog-language>(Delphi), (EXE)</prog-language>
+    <source-license>GPL</source-license>
+    <size_KB>189</size_KB>
+    <content language="de"><![CDATA[Dies ist ein kleiner Browser, der auf dem Internet Explorer basiert.<br>
+Für einen Normaluser ist er vollkommen nutzlos, sein Aussehen kann aber beim Aufruf durch Kommandozeilenparameter festgelegt werden, was manchmal recht praktisch ist, wenn man nur eine bestimmte Seite anzeigen will.]]></content>
+    <content language="en"><![CDATA[This is a small browser based on the IE.<br>
+It is completely useless for a normal user, but you can use it to implement a browser for a certain web page in your program. The appearance and behaviour can be controlled over command line switches, so it allows, for example restricted access.]]></content>
+  </download>
+  <download> 
+    <title>Huffmankomprimierer</title>
+    <file>huffman.zip</file>
+    <description_80 language="de">Eine Funktionssammlung für Huffman(de-)komprimierung.</description_80>
+    <description_80 language="en">A collection of function for huffman (de-)compression.</description_80>
+    <prog-language>Delphi</prog-language>
+    <source-license>MPL, GPL</source-license>
+    <size_KB>13</size_KB>
+    <content language="de"><![CDATA[Diese Unit ermöglicht die (De-)Kompression von Strings mit dem Huffmanverfahren. In dem entstehenden, komprimierten String wird jedes Zeichen nicht mehr mit 8 Bit gespeichert, sondern die Bitlänge ist variabel, so dass häufige Zeichen mit weniger Bits als seltene gespeichert werden.<br>
+Es ist auch möglich Unicodestring, Arrays und Dateien zu komprimieren, indem sie von den entsprechenden Funktionen einfach als Ansistring interpretiert werden. <br>Die Unit läuft auch ohne die VCL.<br>Besonders eignet sich das Verfahren für normale Texte und andere Daten, wo einige wenige Zeichen sehr oft wiederholt werden. In beinahe jedem Fall ist die Kompressionsrate aber geringer als von modernen Komprimierungsverfahren, wie Rar oder Ace.]]></content>
+    <content language="en"><![CDATA[This unit can (de-)compress strings with using the huffman algorithm. In a compressed string a character isn't stored with 8 bit, but the bit count is different.<br>
+It is also possible to compress strings in the Unicode Format, arrays and files. These types are simply regarded as Ansi Strings.
+<br>This unit doesn't need the VCL.<br>You get the best compression rates in data which contains many equal characters, but it is always worse than modern compression processes like ACE or RAR.]]></content>
+  </download>
+
+</file>

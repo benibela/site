@@ -1,0 +1,5 @@
+/* Behebt springen der Seiteproblem
+ +7em muss es unter 100% liegen, 100% - 7em ~=  85%*/
+#border_right{  height: 85%;}
+#border_middle{  height: 85%;}
+#border_middle_end { height:85%; top: 5em}

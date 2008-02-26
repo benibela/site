@@ -1,0 +1,435 @@
+/*Inhaltstragende Elemente*/
+* {                 /* Because Opera moved the scrollbar away */
+  margin:0 0 0 0;
+  padding:0 0 0 0;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-size: 100.01%;         /* global font-Size fixes error in IE, .01 fixed error in Opera*/
+  background-color:#DDDDDD;
+  text-align: justify;
+}
+          
+#outer_content {      
+  overflow: auto;
+  min-height:100%;
+  padding-top:5em;            /* Beginn des Dokumenttextes in nicht IE-Browsern */
+  padding-bottom:2em; 
+}
+              
+#content {
+  z-index:-2;
+  min-height:100%;
+  padding:0.5em;            
+  margin: 0em 14px 0em 14em; 
+  background-color: #FFFFDD;
+}
+                    
+#title {
+  position: fixed;
+  z-index: 3;   
+  top:0.7em;
+  left:0.7em;
+  text-decoration: underline;
+  font-size:1.75em;
+}
+
+a:visited{
+  color: #6666FF;
+}
+
+#menu {
+  position: fixed;
+  z-index: 11;
+  top: 7em;   
+  left: 0.6em;
+  width: 11.4em; 
+  max-width: 11.4em;
+  
+  padding-right:15px;
+  margin-left:-4px;
+  
+  float:left;
+  overflow: visible;
+                 
+  background-color: #FFFFAA; 
+  background-position:right; /*border*/
+  background-repeat:repeat-y;
+  background-image:url(../img/design/borderblueV.gif);
+}
+         
+#menu ul{
+    list-style-position:outside;
+}
+#menulink_list {
+  list-style-type:none; 
+  padding-left:8px;
+  
+  background-position:left; /*border on the other side*/
+  background-repeat:repeat-y;
+  background-image:url(../img/design/borderblueV.gif); 
+}         
+#menulink_list a{
+  width: 100%;
+  
+  padding-left: 1em;
+  margin-bottom: 1px;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  color: #0000AA;
+  border: 2px outset blue;
+  
+  background-color: #FFFFAA;
+  background-position: right;
+  background-image: url(../img/design/menuarrow.gif);
+  background-repeat:no-repeat;
+}
+  
+#menulink_list a:hover{
+  color: #FF0000;
+  border: 2px inset aqua;
+  text-decoration: underline;
+  background-image: url(../img/design/menuarrowon.gif);
+}
+
+#menulink_list li{
+  width: 10em;
+}
+         
+#menulink_sublist_Delphi {
+  list-style-type:none;
+}
+#menulink_sublist_Delphi a{
+  padding-left: 2em;
+}
+#menulink_sublist_Delphi li{
+  width: 9em;
+}
+#SwitchLanguage{
+  margin-bottom: 1em !important; 
+  border:2px outset red !important; 
+}
+#SwitchLanguage:hover{
+  border: 2px inset orange !important;
+}
+
+
+
+#content h2{
+  color: #AA0000;
+  text-decoration: underline;
+}
+ul {list-style-position: inside;}
+.shortdescription{
+  border:1px solid blue;
+  width:100%;
+}
+.shortdescription td{
+  border:1px solid blue;
+  padding: 2px 2px;
+}
+.shortdescription th{
+  border:1px solid blue;
+  padding: 2px 2px;
+}
+.long_description { 
+  display:block;
+  margin-top: 2em;
+  padding: 3px 3px;
+  border: 3px double blue;
+}
+.long_desc_entry {
+  display: block; 
+  padding-bottom:0.5em;
+  padding-right:5px;
+  margin-bottom:1.5em;
+  border-bottom: 1px solid blue;
+}
+.long_desc_title {
+  font-size: 1.1em;
+  font-weight:bold; 
+  display: inline;
+}
+.long_desc_title .target{
+  margin-top: -5em;
+  padding-top: 5em;
+}
+.long_desc_license {
+  display: inline;
+  position:absolute;
+  right: 2em;
+  margin-right: 24px;
+}
+.long_desc_size {
+  display: inline;
+  position:absolute;
+  right: 10em;
+  margin-right: 24px;
+}
+.long_desc_desc {
+  display:block;
+  margin-top: 0.5em;
+}
+.long_desc_desc .screenshots {
+  text-align:center;
+  display:block; 
+}
+.long_desc_desc .screenshots img {
+  vertical-align:top;
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+h3.scherz{margin-top:1em;}
+.code {
+  font-family:'Courier New', Courier, monospace;
+}
+.type {
+  font-family:'Courier New', Courier, monospace;
+}
+.value {
+  font-family:'Courier New', Courier, monospace; 
+  font-style: italic;}
+.var {
+  font-family:'Courier New', Courier, monospace; 
+}
+.func {
+  font-family:'Courier New', Courier, monospace; 
+  font-weight: bold;
+}
+
+/*.link_list{
+  border:1px solid blue;
+  width:100%;
+  margin-top:1em;
+}
+.link_list tbody td{
+  border:1px solid blue;
+  padding: 2px 2px;
+}
+.link_list thead th{
+  border:2px solid #AA0000;
+}*/
+.category-line th{
+  border:2px solid #AA0000;
+}
+
+
+
+/*Elemente die inhaltstragende sein könnten, es aber nicht sind*/
+#header{
+  position: fixed;
+  z-index: 2;   
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:5em;
+  
+  background-image: url(../img/design/borderblueH.gif);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-color: #DDDDDD;
+}
+
+#footer{
+  position: fixed;
+  z-index: 5;   
+  bottom: -1px;
+  left: -2px;
+  width: 100%;
+  height:2em;
+
+  overflow:visible;
+
+  background-color: #DDDDDD;
+  background-image: url(../img/design/borderblueH.gif);
+  background-position: top;
+  background-repeat: repeat-x;
+} 
+
+/* Reine Designelemente */
+#contentEnd{
+  margin-top:4em;
+  height:1px;
+  color:blue;
+}
+#fileName{
+}
+#header_left_background {
+  position: absolute;
+  top:0.6em;
+  left:0.6em;
+  width: 13.4em;
+  height:4.4em;
+
+  margin-left:-4px;
+
+  background-image: url(../img/design/borderblueH.gif);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-color: #FFFFDD;
+}
+
+#border_title_top{
+  position:absolute;
+  left:0px;
+  width: 13.4em;
+  height:7px;
+  
+  background-image: url(../img/design/borderblueH.gif);
+  background-position: top;
+  background-repeat: repeat-x;
+  background-color: #FFFFDD;
+}
+
+#border_middle_left_img{
+  position:absolute;
+}
+
+#footer_clip{
+  position: fixed; /* IE 6 don't understand normal css clip *kotz* */
+  z-index: 6;   
+  left: -2px;
+  bottom: -1px;
+  width: 14em;
+  height:2em;
+  
+  background-color: #DDDDDD;
+}
+#border_right_left_img{ 
+  position: fixed;
+  z-index:10;
+  right: -17px;  /* 4(border_right.right)  - 20 (Startpixel auf dem Bild) px */
+  bottom: -8px;  /* Der untere Rand des horizontalen Rahmens auf dem Bild ist 2 Pixel vom unteren Bildrand entfernt */
+  margin-bottom: 2em; /*height of footer */
+}
+#border_left_up_right{
+  position: fixed;
+  z-index:10;
+  top:0.60em;
+  left: 0.6em;
+  margin-left:-4px;
+}
+#border_middle_up_img{ /* visible on footer, but not there */
+  position: fixed;
+  z-index:8;
+  left: 14em;  
+  bottom: -8px;  
+  
+  margin-left:-10px;
+  margin-bottom:2em;
+}
+          
+#border_right_down_img{ /* Ecke, rechter Rand, oben, Richtung: runter */
+  position:absolute;
+  right:-17px;  /* 4(border_right.right)  - 20 (Startpixel auf dem Bild) px */
+  bottom:-2px;  /* Der untere Rand des horizontalen Rahmens auf dem Bild ist 2 Pixel vom unteren Bildrand entfernt */
+  width:30px;
+  height:9px;
+}
+                
+#border_middle {
+  position: fixed;
+  z-index: 5;
+  top:0.60em;
+  left: 14em;
+  width: 7px;
+  height: 100%; 
+  
+  margin-left: -10px;
+  border-width: 4em;
+
+  overflow: visible;
+
+  background-image: url(../img/design/borderblueV.gif);
+  background-position: left;
+  background-repeat: repeat-y;
+}
+
+#border_right {
+  position: fixed;
+  z-index: 4;
+  top:5em;
+  right: 4px;
+  width: 7px;
+  height: 100%;
+  
+  background-image: url(../img/design/borderblueV.gif);
+  background-position: left;
+  background-repeat: repeat-y;
+}
+            
+#border_left{
+  position: fixed;
+  z-index: 5;
+  top:0.60em;
+  left: 0.6em;
+  width: 7px;
+  height: 7em; /* begin of the menu */
+
+  margin-left: -4px;
+  
+  overflow: visible;  
+
+  background-image: url(../img/design/borderblueV.gif);
+  background-position: left;
+  background-repeat: repeat-y;
+}
+                        
+#border_navi_bottom{
+  position: relative;
+  left:0;
+  bottom:0;
+  width:12.2em;
+  height:7px;
+  
+  overflow:visible;
+  
+  background-color:#DDDDDD;
+  background-image: url(../img/design/borderblueH.gif);
+  background-position: top;
+  background-repeat: repeat-x;
+}
+
+#border_navi_top{
+  position: fixed;
+  top: 7em;
+  left:0;
+  width:12.4em;
+  height:7px;
+
+  margin-top: -8px;
+
+  overflow:visible;
+
+  background-image: url(../img/design/borderblueH.gif);
+  background-position: top;
+  background-repeat: repeat-x;
+}
+#border_navi_left_bottom{
+  position: absolute;
+  left:0px;
+  bottom:-1px;
+}
+#border_navi_right_bottom{
+  position: absolute;
+  bottom:0px;
+  right:1em;
+  
+  margin-right:-21px;
+}
+
+#border_navi_right_top{
+  position: fixed;
+  z-index:12;
+  top:7em;
+  left:12em;
+
+  margin-top: -8px;
+  margin-left:4px;
+}

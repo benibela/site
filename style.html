@@ -1,0 +1,190 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+    <title>{{$WRITE fileinfo/title}} - BeniBela online</title>
+    {{$WRITE file/head}}
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="description" content="{{$WRITE file/description}}">
+    <meta name="keywords" content="{{$WRITE file/keywords}*}
+      {{$FOREACH download: file/download}*}
+      {{$IF download/keywords != ""}*}
+        , {{$WRITE download/keywords}*}
+      {{$/IF}*}
+      {{$/FOREACH}*}
+    ">
+    <meta name="DC.Title" content="{{$WRITE fileinfo/title}} - BeniBela online">
+    <meta name="DC.Subject" content="{{$WRITE fileinfo/title}}">
+    {{$IF file/content-type == ""}}<meta name="DC.Type" content="Text">{{$ELSE}}<meta name="DC.Type" content="{{$WRITE file/content-type}}">{{$/IF}}
+    <meta name="DC.Description" content="{{$WRITE file/description}}">
+    <link rel="SHORTCUT ICON" href="favicon.ico">
+    <link rel="stylesheet" media="print" href="css/print.css">
+    <script type="text/javascript" src="js/all.js"></script>
+ 
+    <meta name="author" content="{{$WRITE global/author}}">
+    <meta name="copyright" content="{{$WRITE global/copyrightfirstdate}}-{{$WRITE global/copyrightlastdate}}, {{$WRITE global/author}}">
+    <meta name="DC.Creator" content="{{$WRITE global/author}}">
+    <meta name="DC.Format" content="text/html">
+    <meta name="DC.Right" content="{{$WRITE global/author}}">
+    {{$IF file/robots != ""}*}
+    <meta name="robots" content="{{$WRITE file/robots}}">
+    {{$ELSE}*}
+    <meta name="robots" content="{{$WRITE global/robots}}">
+    {{$/IF}*}
+    <meta http-equiv="content-language" content="{{$WRITE language/id}}">
+    <link rel="contents" href="index.html" title="Startseite">
+    <link rel="start" href="index.html" title="Startseite">
+    <link rel="copyright" href="impressum_de.html" title="Impressum">
+    {{$FOREACH l: global/language}*}
+    <link rel="alternate" href="{{$$file-url fileinfo l}}" hreflang="{{$WRITE l/id}}">
+    {{$/FOREACH}}
+    <link rel="stylesheet" href="css/all.css">
+    <!--[if lte IE 6]><link rel="stylesheet" href="css/lte_ie6.css"><![endif]-->
+    <!--[if lt IE 6]><link rel="stylesheet" href="css/lt_ie6.css"><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="css/ie7.css"><![endif]-->
+    <!--[if IE 6]><link rel="stylesheet" href="css/ie6.css"><![endif]-->
+    <!--[if IE 5]><link rel="stylesheet" href="css/ie5.css"><![endif]-->
+    <link rel="stylesheet" media="print" href="css/print.css">
+    </head>
+    <body lang="de">
+      
+      <h1 id="title">BeniBela online</h1>
+	  <div id="menu">
+	     <ul id="menulink_list">
+         {{$FOREACH l: global/language}*}
+           {{$IF l/id != language/id}*}
+             <li><a href="{{$$file-url fileinfo l}}" id="SwitchLanguage">{{$WRITE l/changetext}}</a></li>{{$/IF}*}
+         {{$/FOREACH}*}
+         {{$DEFINE $writeSiteMap fileparent}*}
+           {{$FOREACH fi: fileparent/fileinfo}*}
+             {{$IF fi/hidden != "YES"}*}
+               <li><a href="{{$$file-url fi}*}">{{$WRITE fi/title}}</a></li>
+               {{$IF fi/fileinfo != ""}*}
+                 <li><ul id="menulink_sublist_Delphi">{{$$writeSiteMap fi}**}</ul></li>
+               {{$/IF}*}
+             {{$/IF}*}
+           {{$/FOREACH}*}
+         {{$/DEFINE}*}
+         
+         {{$$writeSiteMap global}}
+	     </ul>
+         <div id="border_navi_bottom">
+           <img src="img/design/borderbluedown_right.gif" alt="" id="border_navi_left_bottom">
+           <img src="img/design/borderbluedown_left2.gif" alt="" id="border_navi_right_bottom">
+         </div>
+         <img src="img/design/borderbluemiddleleft.gif" alt="" id="border_navi_right_top">
+	  </div>
+
+
+      <div id="outer_content">
+        <div id="content">
+           {{$IF file/prevent-content-title == ""}*}
+           <h2>{{$WRITE fileinfo/title}**}</h2>
+           {{$/IF}*}
+           {{$WRITE file/content}*}
+           
+           {{$FOREACH subfileinfo: fileinfo/fileinfo}*}
+             <br>
+             {{$LOADXML subfile: subfileinfo/basefilename".xml"}*}
+             {{$IF subfile/download != ""}*}
+               <h3>{{$WRITE subfileinfo/title}*}</h3>
+               <ul style="padding-left:2em; list-style-position:inside;">
+               {{$FOREACH download: subfile/download}*}
+                 <li><a href="{{$$file-url subfileinfo language}}#{{$WRITE download/file}}">{{$WRITE download/title}}</a>: {{$WRITE download/description_80}}</li>
+               {{$/FOREACH}*}
+               </ul>
+             {{$ELSE}*}
+               <h3><a href="{{$$file-url subfileinfo language}}">{{$WRITE subfileinfo/title}}</a></h3> <p style="margin-left:2em">{{$WRITE subfile/description}*}</p>
+             {{$/IF}*}
+           {{$/FOREACH}*}
+           
+           {{$IF file/download != ""}}<br><br>
+           <table class="shortdescription"><thead>
+           <tr>
+             <th>Titel</th>
+             <th>Beschreibung</th>
+             {{$IF file/download/language != ""}}<th>Sprache</th>{{$/IF}]
+             {{$IF file/download/prog-language != ""}}<th>Sprache</th>{{$/IF}}
+             {{$IF file/download/payment != ""}}<th>Typ</th>{{$/IF}}
+             {{$IF file/download/source != ""}}<th>Source</th>{{$/IF}}
+             {{$IF file/download/source-license != ""}}<th>Lizenz</th>{{$/IF}}
+             {{$IF file/download/payment-license != ""}}<th>Lizenz</th>{{$/IF}}
+           </tr>
+           </thead><tbody>
+           {{$FOREACH download: file/download}}
+           {{$IF download/start-category != ""}}
+             </tbody>
+             <thead><tr class="category-line"><th colspan=3>{{$WRITE download/start-category}}</th></tr></thead>
+             <tbody>
+           {{$/IF}}
+           <tr>
+             <td><a href="{{$IF download/linkTo != ""}}{{$WRITE download/linkTo}}{{$ELSE}}#{{$WRITE download/file}}{{$/IF}}">{{$WRITE download/title}}</a></td>
+             <td>{{$WRITE download/description_80}}</td>
+             {{$IF download/language != ""}}<td>{{$WRITE download/language}}</td>{{$/IF}]
+             {{$IF download/prog-language != ""}}<td>{{$WRITE download/prog-language}}</td>{{$/IF}}
+             {{$IF download/payment != ""}}<td>{{$WRITE download/payment}}</td>{{$/IF}}
+             {{$IF download/source != ""}}<td>{{$WRITE download/source}}</td>{{$/IF}}
+             {{$IF download/source-license != ""}}<td>{{$WRITE download/source-license}}</td>{{$/IF}}
+             {{$IF download/payment-license != ""}}<td>{{$WRITE download/payment-license}}</td>{{$/IF}}
+           </tr>
+           {{$/FOREACH}}
+           </tbody></table>
+           {{$IF file/prevent-details != "YES"}}
+           <div class="long_description">
+             {{$FOREACH download: file/download}}
+             <div class="long_desc_entry">
+               <h3 class="long_desc_title"><a id="{{$WRITE download/file}}" name="{{$WRITE download/file}}" class="target">&nbsp;</a><a href="{{$WRITE file/download-dir"/"download/file}}">{{$WRITE download/title}}</a></h3>
+               <div class="long_desc_license">{{$WRITE download/payment}}{{$WRITE download/source-license}}</div>
+               <div class="long_desc_size">{{$WRITE download/size_KB}} KB</div>
+               <div class="long_desc_desc">
+                 {{$WRITE download/content}}
+                 {{$IF download/features != ""}}
+                 <ul>
+                 {{$FOREACH feature: download/features/feature}}<li>{{$WRITE feature}}</li>{{$/FOREACH}}
+                 </ul>
+                 {{$/IF}}
+                 {{$IF download/screenshot != ""}}
+                 <div class="screenshots">{{$FOREACH shot: download/screenshot}}
+                   <img title="{{$WRITE shot/title}}" alt="screenshot:{{$WRITE shot/title}}" src="{{$WRITE shot/fullfile}}" width="300px" height="{{$WRITE shot/height}}">{{$/FOREACH}}
+                 </div>
+                 {{$/IF}}
+                 {{$WRITE download/final-content}}
+                 <br><br><a href="{{$WRITE file/download-dir"/"download/file}}">Download ({{$WRITE download/size_KB}} KB)</a>
+               </div>
+             </div>{{$/FOREACH}}
+           </div>
+           {{$/IF}*}
+           {{$/IF}*}
+           {{$WRITE file/final-content}*}
+           <hr id="contentEnd">
+           <span id="fileName">www.benibela.de/{{$WRITE $file-url}}</span><br>
+           {{$WRITE language/contentlastchange}}: {{$WRITE file/$lastModified}}<br>
+           {{$WRITE language/pagelastchange}}: {{$WRITE $lastModified}}
+        </div>
+      </div>	
+
+	  <div id="header">
+	    <img src="img/design/borderbluedown.gif" id="border_right_down_img" alt="">
+	    <div id="header_left_background">
+	      <div id="border_title_top">&nbsp;</div>
+	    </div>
+	  </div>
+      <div id="border_navi_top"></div>
+
+      <div id="border_right">&nbsp;</div>
+      <div id="border_middle"><img src="img/design/borderbluemiddleleft.gif" id="border_middle_left_img" alt=""></div>
+      <!--[if IE]>
+      <div id="border_middle_end"></div>
+      <![endif]-->
+
+    <div id="border_left"></div>
+
+	  <div id="footer">
+       <div id="border_middle_up_div"></div>
+	  </div>
+	  <div id="footer_clip">&nbsp;</div>
+	  <p><img src="img/design/borderbluemiddle_up.gif" id="border_middle_up_img" alt="">
+	     <img src="img/design/borderbluedown_left.gif" id="border_right_left_img" alt="">
+	     <img src="img/design/borderblueup_right.gif" id="border_left_up_right" alt=""></p>
+
+    </body>
+</html>

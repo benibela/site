@@ -1,0 +1,94 @@
+﻿<global>
+<language>
+  <id>de</id>
+  <changetext>Sprache wechseln</changetext>
+  <contentlastchange>Inhalt zuletzt geändert</contentlastchange>
+  <pagelastchange>Seite zuletzt geändert</pagelastchange>
+</language>
+<language>
+  <id>en</id>
+  <changetext>Switch Language</changetext>
+  <contentlastchange>Last change of the content of this page</contentlastchange>
+  <pagelastchange>Last change of this page</pagelastchange>
+</language>
+
+<fileinfo>
+  <basefilename>index</basefilename>
+  <title language="de">Startseite</title>
+  <title language="en">Home Site</title>
+</fileinfo>  
+<fileinfo>
+  <basefilename>oldnews</basefilename>
+  <title language="de">Newsarchiv</title>
+  <title language="en">News archive</title>
+</fileinfo>  
+<fileinfo>
+  <basefilename>tools</basefilename>
+  <title>Tools</title>
+</fileinfo>  
+<fileinfo>
+  <basefilename>games</basefilename>
+  <title language="de">Spiele</title>
+  <title language="en">Games</title>
+</fileinfo>  
+<fileinfo>
+  <basefilename>programming</basefilename>
+  <title language="de">Programmierung</title>
+  <title language="en">Programming</title>
+  <fileinfo>
+    <basefilename>sources</basefilename>
+    <title language="de">Quellcodes</title>
+    <title language="en">Sources</title>
+  </fileinfo>  
+  <fileinfo>
+    <basefilename>components</basefilename>
+    <title language="de">Komponenten</title>
+    <title language="en">Components</title>
+  </fileinfo>  
+  <fileinfo>
+    <basefilename>jokeprograms</basefilename>
+    <title language="de">Scherzprogramme</title>
+    <title language="en">Joke Programs</title>
+  </fileinfo>  
+  <fileinfo>
+    <basefilename>bwinf</basefilename>
+    <title language="de">BWInf</title>
+    <title language="en">BWInf (German)</title>
+  </fileinfo>  
+</fileinfo>  
+<fileinfo>
+  <basefilename>others</basefilename>
+  <title language="de">Sonstiges</title>
+  <title language="en">Other Things</title>
+</fileinfo>  
+<fileinfo>
+  <basefilename>koobtseug</basefilename>
+  <extension>.php</extension>
+  <title language="de">Gästebuch</title>
+  <title language="en">Guestbook</title>
+</fileinfo>  
+<fileinfo>
+  <basefilename>links</basefilename>
+  <title language="de">Links</title>
+</fileinfo>  
+<fileinfo>
+  <basefilename>impressum</basefilename>
+  <title language="de">Impressum</title>
+  <title language="en">Contact</title>
+</fileinfo>  
+
+<fileinfo>
+  <hidden>YES</hidden>
+  <basefilename>koobtseug_yrtne</basefilename>
+  <extension>.php</extension>
+<!--  <filename>koobtseug_yrtne.php</filename>-->
+  <title language="de">Gästebucheintrag</title>
+  <title language="en">Guestbookentry</title>
+</fileinfo>  
+
+<author>Benito van der Zander</author>
+<copyrightfirstdate>2005</copyrightfirstdate>
+<copyrightlastdate>2007</copyrightlastdate>
+<robots>index,follow</robots>
+
+</global>
