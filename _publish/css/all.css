@@ -37,6 +37,15 @@ body {
   font-size:1.75em;
 }
 
+.newstext{
+  margin-left: 1em;
+}
+.untranslated  p{ color:gray;}
+.untranslated .newstext{ display: none;}
+.untranslated:hover .newstext{ display: block;}
+
+
+
 a:visited{
   color: #6666FF;
 }
@@ -96,6 +105,13 @@ a:visited{
   background-image: url(../img/design/menuarrowon.gif);
 }
 
+#menulink_list .activepage{
+/*  background-image: url(../img/design/menuarrowon.gif);*/
+  border: 2px inset aqua;
+  background-image: url(../img/design/menuarrowactive.gif);
+}
+
+
 #menulink_list li{
   width: 10em;
 }
@@ -109,6 +125,8 @@ a:visited{
 #menulink_sublist_Delphi li{
   width: 9em;
 }
+
+
 #SwitchLanguage{
   margin-bottom: 1em !important; 
   border:2px outset red !important; 
@@ -433,3 +451,4 @@ h3.scherz{margin-top:1em;}
   margin-top: -8px;
   margin-left:4px;
 }
+

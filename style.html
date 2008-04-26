@@ -14,7 +14,7 @@
     ">
     <meta name="DC.Title" content="{{$WRITE fileinfo/title}} - BeniBela online">
     <meta name="DC.Subject" content="{{$WRITE fileinfo/title}}">
-    {{$IF file/content-type == ""}}<meta name="DC.Type" content="Text">{{$ELSE}}<meta name="DC.Type" content="{{$WRITE file/content-type}}">{{$/IF}}
+    <meta name="DC.Type" content="{{$IF file/content-type == ""}}Text{{$ELSE}}{{$WRITE file/content-type}}{{$/IF}}">
     <meta name="DC.Description" content="{{$WRITE file/description}}">
     <link rel="SHORTCUT ICON" href="favicon.ico">
     <link rel="stylesheet" media="print" href="css/print.css">
@@ -57,7 +57,7 @@
          {{$DEFINE $writeSiteMap fileparent}*}
            {{$FOREACH fi: fileparent/fileinfo}*}
              {{$IF fi/hidden != "YES"}*}
-               <li><a href="{{$$file-url fi}*}">{{$WRITE fi/title}}</a></li>
+               <li><a href="{{$$file-url fi}*}"{{$IF fi/basefilename == fileinfo/basefilename}} class="activepage"{{$/IF}}>{{$WRITE fi/title}}</a></li>
                {{$IF fi/fileinfo != ""}*}
                  <li><ul id="menulink_sublist_Delphi">{{$$writeSiteMap fi}**}</ul></li>
                {{$/IF}*}
@@ -80,7 +80,21 @@
            {{$IF file/prevent-content-title == ""}*}
            <h2>{{$WRITE fileinfo/title}**}</h2>
            {{$/IF}*}
+{{$WRITEX file/test}}                        
            {{$WRITE file/content}*}
+           
+           {{$IF file/news != ""}*}
+             <div id="newslist">
+             {{$FOREACH new: file/news/new}*}
+               <h3>{{$WRITE new/@date}*}</h3> 
+               {{$IF language/id != "de" && new/text/@language != language/id}*}
+                 <div class="untranslated"><p>(not translated)</p><p class="newstext">{{$WRITE new/text}*}</p></div>
+                {{$ELSE}} 
+                 <p class="newstext">{{$WRITE new/text}*}</p>
+               {{$/IF}}
+             {{$/FOREACH}}
+             </div>
+           {{$/IF}*}
            
            {{$FOREACH subfileinfo: fileinfo/fileinfo}*}
              <br>
@@ -159,6 +173,7 @@
            <span id="fileName">www.benibela.de/{{$WRITE $file-url}}</span><br>
            {{$WRITE language/contentlastchange}}: {{$WRITE file/$lastModified}}<br>
            {{$WRITE language/pagelastchange}}: {{$WRITE $lastModified}}
+      <div id="border_right">&nbsp;</div>
         </div>
       </div>	
 
@@ -170,7 +185,6 @@
 	  </div>
       <div id="border_navi_top"></div>
 
-      <div id="border_right">&nbsp;</div>
       <div id="border_middle"><img src="img/design/borderbluemiddleleft.gif" id="border_middle_left_img" alt=""></div>
       <!--[if IE]>
       <div id="border_middle_end"></div>
@@ -185,6 +199,5 @@
 	  <p><img src="img/design/borderbluemiddle_up.gif" id="border_middle_up_img" alt="">
 	     <img src="img/design/borderbluedown_left.gif" id="border_right_left_img" alt="">
 	     <img src="img/design/borderblueup_right.gif" id="border_left_up_right" alt=""></p>
-
     </body>
 </html>

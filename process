@@ -27,6 +27,8 @@ Defines a function which will write a link to a page
   <a href="{{$$file-url fileinfo language}}">{{$WRITE fileinfo/title}**}</a>
 {{$/DEFINE}
 
+
+
 Definiert die Umwandlung einer xml Seitendefinition zu html
 Defines transformation of xml data to html
 

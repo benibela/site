@@ -2,50 +2,43 @@
   <description language="de">Newsarchiv von BeniBela online</description>
   <description language="en">news archive of BeniBela online</description>
   <keywords>BeniBela, Benito van der Zander, News</keywords>
-  <content language="de"><![CDATA[
-<p style="margin: 1em;margin-right:0em">Neuere News finden sich auf der <a href="index.html">Startseite</a>.</p>
-<h3>26. Oktober 2006</h3>
-<p style="margin-left: 1em">Mein Chemiereferat zur <a href="others_de.html#glaselektrode.zip">Glaselektrode</a> ist jetzt online.</p>
-<h3>27. April 2006</h3>
-<p style="margin-left: 1em">Es gibt jetzt die nächste version von MathSys in der einige Fehler korrigiert sind. (Stark vergrößerte Sachen ließen sich nicht drucken, die Vorschau war verschoben und mit sich selbst multiplizierte Variablen wurden nicht gezeichnet). 
-</p>
-<h3>16. April 2006</h3>
-<p style="margin-left: 1em">Heute habe ich mehrere kleine Änderungen hochgeladen. Die Links wurden erweitert und auf der Seite steht endlich meine neue Mailadresse, die ich schon seit einem halben Jahr habe. Außerdem gibt es neu einen mathematisch Plotter, um Funktionen zu zeichnen. Er ist zwar noch relativ unfertig, aber das Zeichnen funktioniert bereits, und ich finde die Ausgabe schöner als die von allen anderen Programmen, die ich kenne. In dem Programm gibt es auch ein verstecktes "easter-egg".<br>
-Frohe Ostern!</p>
-<h3>26. Dezember 2005</h3>
-<p style="margin-left: 1em">Passend zur Winterzeit habe ich ein <a href="others_de.html#schnee.exe">kleines Programm</a> hochgeladen, das es auf dem Bildschirm schneien lässt.<br>
-Ich wünsche jedem ein schönes neues Jahr.</p>
-<h3>17. September 2005</h3>
-<p style="margin-left: 1em">Es gibt eine neue Delphikomponente, die die Funktionen von TListView mit denen von TTreeView verbindet.</p>
-<h3>9.September 2005</h3>
-<p style="margin-left: 1em">Es sind 4 neue Programme hochgeladen worden, 1 einfacher vertikaler Shooter und 3 Tools, Simulatoren für Logikschaltungen und Dateien. <br> Und ich bin wieder zum alten Seitenaufbau gewechselt, wo der Link zum Quellcode von Open Source Programmen nicht auf eine extra Seite ausgelagert ist, sondern direkt beim Programm steht.</p>
-<h3>21.August 2005</h3>
-<p style="margin-left: 1em">Das alte, externe Gästebuch wurde durch ein selbstprogrammiertes ersetzt, so dass es endlich zum Seitendesign passt. Leider sind dadurch alle alten Gästebucheinträge nicht mehr verfügbar, aber man kann sie noch auf der <a href="http://gaestebuch-2000.de/cgi-bin/gb.pl?user=benibela">alten Seite</a> finden.</p>
-<h3>15.August 2005</h3>
-<p style="margin-left: 1em">Ich habe die Seite komplett überarbeitet.<br>
-Sie ist jetzt moderner und völlig Standard-kompatibel. (Das heißt das sie unter alten Browser nicht mehr funktioniert ;-), da aber alle Zugriffe nahezu nur von neueren Browsern kommen, ist es nicht so tragisch)<br>
-Der Name der Seite wurde von "BeniBelas Seite" zu "BeniBela online" geändert, und sie wurde vollständig auf <a href="index_en.html" lang="en">English</a> übersetzt.<br>
-In den nächsten Tagen, werden noch kleinere Updates folgen, um andere Programme oder Quellcodes hochzuladen, und um eventuell auftretende Probleme zu beheben.</p><br><br><br>
-<div style="text-align:center; margin-top: 2em;">
-<img src="img/maus.gif" alt="Maus mit Käse"width="182" height="132">
-</div>
-<br><br><br><br>]]></content>
-  <content language="en"><![CDATA[
-<p style="margin: 1em;margin-right:0em">More recent news you can find on the <a href="index_en.html">home</a>.</p>
-<h3>26. December</h3>
-<p style="margin-left: 1em">Because of the wintertime I published a <a href="others_de.html#schnee.exe">small program</a> which draws snow on the screen.<br>
-Happy New Year!</p>
-<h3>17. September</h3>
-<p style="margin-left: 1em">There is a new delphi component which have the features of TListView and the ones of TTreeView together.</p>
-<h3>9.September:</h3>
-<p style="margin-left: 1em">There are 4 new programs, 1 simple vertically-scrolling shooter and 3 tools,  simulators of logic circuits and files. <br> And I have changed back to the old site division where the source of open source programs is directly linked with the program description.</p>
-<h3>15.August:</h3>
-<p style="margin-left:1em">This page was translated to English and it got a completely new design.<br>
-In the next days there will be more updates which will contain other programs. <br>
-Because this is my first published English page it would be nice, if you will inform me (via mail or over the guestbook), if you find any linguistic errors like spelling or grammar mistakes.
-<br><br><br><br>
-<div style="text-align:center; margin-top: 2em;">
-<img src="img/maus.gif" alt="Maus mit Käse"width="182" height="132">
-</div>
-]]></content>
+  <content language="de">&lt;p style="margin: 1em;margin-right:0em">Neuere News finden sich auf der &lt;a href="index.html">Startseite&lt;/a>.&lt;/p></content>
+  <content language="en">&lt;p style="margin: 1em;margin-right:0em">More recent news you can find on the &lt;a href="index_en.html">entry page&lt;/a>.&lt;p></content>
+  <news>
+    <new date="26. Oktober 2006"><text>Mein Chemiereferat zur &lt;a href="others_de.html#glaselektrode.zip">Glaselektrode&lt;/a> ist jetzt online.&lt;/p></text></new>
+    <new date="27. April 2006"><text>Es gibt jetzt die nächste version von MathSys in der einige Fehler korrigiert sind. (Stark vergrößerte Sachen ließen sich nicht drucken, die Vorschau war verschoben und mit sich selbst multiplizierte Variablen wurden nicht gezeichnet). </text></new>
+
+    <new date="16. April 2006">
+      <text>Heute habe ich mehrere kleine Änderungen hochgeladen. Die Links wurden erweitert und auf der Seite steht endlich meine neue Mailadresse, die ich schon seit einem halben Jahr habe. Außerdem gibt es neu einen mathematisch Plotter, um Funktionen zu zeichnen. Er ist zwar noch relativ unfertig, aber das Zeichnen funktioniert bereits, und ich finde die Ausgabe schöner als die von allen anderen Programmen, die ich kenne. In dem Programm gibt es auch ein verstecktes "easter-egg".&lt;br>
+Frohe Ostern!&lt;/p></text>
+<text language="en">
+Today I have uploaded some little changes.  The link page is now extended and my new (a half year old) mail address is listed here. Furthermore there is a mathematical plotter which draws functions. um Funktionen zu zeichnen. It is not finished yet, but the drawing works already and I thinks the output is nicer than the one of any other program I know. Additionally it has a hidden easter-egg.&lt;br>Happy Easter!
+</text></new>
+    <new date="26. Dezember 2005"><text>Passend zur Winterzeit habe ich ein &lt;a href="others_de.html#schnee.exe">kleines Programm&lt;/a> hochgeladen, das es auf dem Bildschirm schneien lässt.&lt;br>
+Ich wünsche jedem ein schönes neues Jahr.&lt;/p></text>
+<text language="en">Because of the wintertime I published a &lt;a href="others_de.html#schnee.exe">small program&lt;/a> which draws snow on the screen.&lt;br>
+Happy New Year!</text></new>
+<new date="17. September 2005">
+<text>Es gibt eine neue Delphikomponente, die die Funktionen von TListView mit denen von TTreeView verbindet.</text>
+<text language="en">There is a new delphi component which have the features of TListView and the ones of TTreeView together.</text></new>
+<new date="9.September 2005">
+<text>Es sind 4 neue Programme hochgeladen worden, 1 einfacher vertikaler Shooter und 3 Tools, Simulatoren für Logikschaltungen und Dateien. &lt;br> Und ich bin wieder zum alten Seitenaufbau gewechselt, wo der Link zum Quellcode von Open Source Programmen nicht auf eine extra Seite ausgelagert ist, sondern direkt beim Programm steht.</text>
+<text language="en">There are 4 new programs, 1 simple vertically-scrolling shooter and 3 tools,  simulators of logic circuits and files. &lt;br> And I have changed back to the old site division where the source of open source programs is directly linked with the program description.</text></new>
+<new date="21.August 2005"><text>
+Das alte, externe Gästebuch wurde durch ein selbstprogrammiertes ersetzt, so dass es endlich zum Seitendesign passt. Leider sind dadurch alle alten Gästebucheinträge nicht mehr verfügbar, aber man kann sie noch auf der &lt;a href="http://gaestebuch-2000.de/cgi-bin/gb.pl?user=benibela">alten Seite&lt;/a> finden.&lt;/p></text></new>
+<new date="15.August 2005"><text>
+Ich habe die Seite komplett überarbeitet.&lt;br>
+Sie ist jetzt moderner und völlig Standard-kompatibel. (Das heißt das sie unter alten Browser nicht mehr funktioniert ;-), da aber alle Zugriffe nahezu nur von neueren Browsern kommen, ist es nicht so tragisch)&lt;br>
+Der Name der Seite wurde von "BeniBelas Seite" zu "BeniBela online" geändert, und sie wurde vollständig auf &lt;a href="index_en.html" lang="en">English&lt;/a> übersetzt.&lt;br>
+In den nächsten Tagen, werden noch kleinere Updates folgen, um andere Programme oder Quellcodes hochzuladen, und um eventuell auftretende Probleme zu beheben.&lt;/p></text>
+<text language="en">This page was translated to English and it got a completely new design.&lt;br>
+In the next days there will be more updates which will contain other programs. &lt;br>
+Because this is my first published English page it would be nice, if you will inform me (via mail or over the guestbook), if you find any linguistic errors like spelling or grammar mistakes.</text></new>
+</news>
+<final-content>&lt;br>&lt;br>&lt;br>
+&lt;div style="text-align:center; margin-top: 2em;">
+&lt;img src="img/maus.gif" alt="Maus mit Käse"width="182" height="132">
+&lt;/div>
+&lt;br>&lt;br>&lt;br>&lt;br></final-content>
+ 
 </file>

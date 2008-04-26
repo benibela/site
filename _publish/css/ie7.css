@@ -24,3 +24,20 @@ html, body {
   width: auto;
   height: auto;
 }
+
+#outer_content {      
+  overflow: auto;
+}
+
+#border_right {
+  position: absolute;
+}
+#outer_content{
+  max-width: 100%;
+}
+#border_right_left_img{
+  position:absolute;
+}
+#footer{
+  position:fixed;
+}

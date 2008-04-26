@@ -4,109 +4,84 @@
   <keywords language="de">BeniBela, Benito van der Zander, Spiele, Tools, Delphi, Komponenten, Scherzprogramme</keywords>
   <keywords language="en">BeniBela, Benito van der Zander, games, tools, Delphi, components, joke programs</keywords>
   <prevent-content-title>YES</prevent-content-title>
-  <content><![CDATA[
-<h2>News</h2>
-<h3>12. Feb 2008</h3>
-<p style="margin-left: 1em">Die neue <a href="tools_de.html#videlibri-setup.exe">VideLibriversion 0.987</a> beseitigt mehrere kritische Fehler bei der FHB und STB.
-</p>
-<h3>15. Jan 2008</h3>
-<p style="margin-left: 1em">Mein neues Programm <a href="tools_de.html#regstealth.zip">RegStealth</a> ersetzt die Windowsregistry durch individuelle xml-Dateien für jedes Programm. Momentan ist es aber noch eine pre-Alpha-Version, die noch nicht alle Funnktionen aber dafür vermutlich einige Fehler hat.
-</p>
-
-<h3>24. Dez 2007</h3>
-<p style="margin-left: 1em">Frohe Weihnachten!<br>
-Mit (y&lt;maxy-7*maxx/8?((Math.abs(x-maxx/2)&lt;=maxx/16?6:5)):(Math.abs(x-maxx/2)&lt;(maxy-y+1)/2?7:5)) als Algorithmus für den Musterfeldgenerator (s.u.) erhält man übrigens einen Tannenbaum.
-</p>
-
-<h3>06. Dez 2007</h3>
-<p style="margin-left: 1em">Es gibt jetzt ein <a href="others_de.html#colorMap.js">Onlineprogramm</a> zur Erzeugung von farbigen Rasterfeldern wie Zufallsmustern oder Höhenfunktionen.
-</p>
-<h3>29. Nov 2007</h3>
-<p style="margin-left: 1em">Die neue Version 0.985 von <a href="tools_de.html#videlibri-setup.exe">VideLibri-Version</a> beseitigt zwei kritische Fehler bei der FHB (bezüglich Vormerkungen) und STB (bezüglich "nur nötiger" Verlängerung).
-</p>
-<h3>31. Okt 2007</h3>
-<p style="margin-left: 1em">Da die Stadtbücherei ihren WebOPAC geändert hat, gibt es nun wieder eine neue <a href="tools_de.html#videlibri-setup.exe">VideLibri-Version</a>, die nun auch über BibTex-Export verfügt. <br>Außerdem gibt es ein <a href="bwinf_de.html#25_3.zip">Programm</a>, dass die Lösung für eine Aufgabe der Endrunde des Bundeswettbewerb Informatik implementiert; in dem ich jetzt auch Bundessieger geworden bin.
-</p>
-<h3>23. Juli 2007</h3>
-<p style="margin-left: 1em">Auch diesmal gibt es wieder eine neue Version von VideLibri. Außerdem habe ich noch drei <a href="games_de.html#schlange.zip">alte Spiele</a> hochgeladen, von denen zwei auf dem Taschenrechner Algebra FX 2.0 Plus laufen. <br> Für diesen Rechner gibt es dann auch noch ein <a href="tools_de.html#math.zip">Hilfsprogramm für Rechnungen mit große Zahlen</a>.
-</p>
-<h3>23. Juli 2007</h3>
-<p style="margin-left: 1em">Auch diesmal gibt es wieder eine neue Version von VideLibri. Außerdem habe ich noch drei <a href="games_de.html#schlange.zip">alte Spiele</a> hochgeladen, von denen zwei auf dem Taschenrechner Algebra FX 2.0 Plus laufen. <br> Für diesen Rechner gibt es dann auch noch ein <a href="tools_de.html#math.zip">Hilfsprogramm für Rechnungen mit große Zahlen</a>.
-</p>
-<h3>4. Juni 2007</h3>
-<p style="margin-left: 1em">Es gibt jetzt die Version 0.906 von VideLibri, die einen für FHB-Benutzer kritischen Fehler korrigiert.
-</p>
-<h3>12. Mai 2007</h3>
-<p style="margin-left: 1em">Es gibt jetzt die Version 0.905 von VideLibri, die einige Fehler korrigiert.
-</p>
-<h3>22. April 2007</h3>
-<p style="margin-left: 1em"> Die Seite wurde überarbeitet und die Speicherung in xml mit meiner Sprache <a href="tools_de.html#jaxmlp.zip">JAXMLP</a> enthält jetzt praktisch keine Redunanz mehr.<br>
-Außerdem habe ich meine <a href="others_de#facharbeit.zip">Facharbeit</a> und das damit verbundene Programm hochgeladen, woran ich von Weihnachten bis Ostern gearbeitet habe.<br>
-Und es gibt jetzt auch die Programme der Bwinf-Runden hier, womit ich mich die restliche Zeit (vorher, nacher) beschäftigt habe, weshalb es auch so selten etwas neues auf der Seite gibt.
- </p>
-<h3>24. März 2007</h3>
-<p style="margin-left: 1em">Die Seite wird jetzt auch im Internet Explorer 5 und (leider nur ungezoomt) im IE 7. <br>Wer das Internet mit einem vernünftigen Programm benutzen will, sollte sich aber trotzdem mal den <a href="http://www.mozilla-anleitung.de/Mozilla/101Dinge.php">FireFox</a> ansehen.</p>
-<h3>27. Februar 2007</h3>
-<p style="margin-left: 1em">Zwei Fehler in VideLibri wurden gelöst, jetzt kann es auch wieder für die FHB benutzt werden.</p>
-<h3>17. Februar 2007</h3>
-<p style="margin-left: 1em">Das Ausleihenverwaltungsprogramm <a href="tools_de.html#videlibri-setup.exe">VideLibri</a> lässt sich jetzt als Betaversion herunterladen. (trotz Betastatus läuft es fast einwandfrei)
-</p>  
-<h3>1. Februar 2007</h3>
-<p style="margin-left: 1em">Die Seite ist jetzt in einer Art Content-Management-System gespeichert. (Das sieht man zwar nicht, ist aber praktisch),<br>Das letzte Jahr angegekündigte, Bücherverwaltungsprogramm dauert wohl noch ein bisschen länger, es ist zwar im Prinzip schon fertig, hat aber noch zu viele Fehler und ich zu wenig Zeit um sie zu beseitigen. Außerdem ist es in Lazarus programmiert, das Moment auch noch einen Haufen Fehler hat.
-</p>  
-<h3>15. Dezember 2006</h3>
-<p style="margin-left: 1em">Nach langer Zeit gibt es mal wieder ein Update bezüglich Programmierung.<br>
-Eine Klasse für das Parsen von <a href="sources_de.html#rcmdline.zip">Kommandozeilenparameter</a>, eine für ein <a href="sources_de.html#autoupdate.zip">automatisches Programmupdate</a> und einen kleinen IE-basierten <a href="sources_de.html#simplebrowser.zip">Browser</a>, der über Kommandozeile gesteuert werden kann. Wie man sieht, sind dies alles bloß Programmteile, und zwar von meinem neuen Bücherei - Ausleihen - Verwaltungs - programmes (Videlibri), das es auch bald hier geben wird.<br>
-Die Seite selbst ist auch leicht geändert, es gibt jetzt ein <a href="oldnews_de.html">Newsarchiv</a> und die Links sind teilweise als "social bookmarks" auf <a href="http://del.icio.us/BeniBela">del.icio.us</a> ausgelagert.
-
-<br><br><br>
-             
-<h2>Übersicht</h2>
-Ich programmiere schon 9 Jahre, obwohl ich erst in der 12ten Klasse (Stand Mitte 2007) auf dem Gymnasium bin.<br>
-Dies ist bereits meine vierte Homepage, aber die erste bilinguale. (siehe News)<br>
-Hier kannst du kleine, von mir programmierte Spiele und Tools downloaden.<br>
-Für diejenigen, die sich mehr fürs Programmieren selbst interessieren, gibt es offene Quellcodes und Komponenten für Delphi.<br>
-Ich bin stark an Feedback interessiert, also schreibt mir <a href="impressum_de.html">eine Mail</a>, oder tragt euch ins Gästebuch ein.
-<div style="text-align:center; margin-top: 2em;">
-  <img src="img/maus.gif" alt="Maus mit Käse"width="182" height="132">
-</div>
-]]></content>
-<content language="en"><![CDATA[
-<h2>News</h2>
-<h3>15. Jan 2008</h3>
-<p style="margin-left: 1em">My new program <a href="tools_en.html#regstealth.zip">RegStealth</a> replaces the registry of Windows with individual xml-files for every program. However, the current version is pre alpha, so there are missing features and probably bugs.
-</p>
-<h3>24. Dez 2007</h3>
-<p style="margin-left: 1em">Merry Christmas!<br>
-When you use (y&lt;maxy-7*maxx/8?((Math.abs(x-maxx/2)&lt;=maxx/16?6:5)):(Math.abs(x-maxx/2)&lt;(maxy-y+1)/2?7:5)) as algorithm in the color pattern generator(s.b.) you see a Christmas tree.
-</p>
-<h3>06. Dez 2007</h3>
-<p style="margin-left: 1em">There is now a <a href="others_en.html#colorMap.js">online program</a> which creates colorful raster maps, for example random patterns or high map of a function.
-</p>
-<h3>23. Juli 2007</h3>
-<p style="margin-left: 1em">You can now download three <a href="games_en.html#schlange.zip">old games</a>. Two of them can be played on the calculator Algebra FX 2.0 Plus.<br> There is also a program which allows <a href="tools_en.html#math.zip">the calculation with long integers.</a>.
-</p>
-<h3>22. April 2007</h3>
-<p style="margin-left: 1em"> The site structure has been improved, using my xml processing language <a href="tools_de.html#jaxmlp.zip">JAXMLP</a>.<br>
-And there are some German only ressources, my submissions to the national informatic contest BWInf and a text about the calculation of molecule conformations.
- </p>
-<h3>15. December 2006</h3>
-<p style="margin-left: 1em">Although the last change here has been more than 7 months ago, this site isn't dead. I have only been to busy to change anything here.<br>
-However, today I have added some new support units (for programming, not gaming), a <a href="sources_en.html#rcmdline.zip">command line parser</a>, an <a href="sources_en.html#autoupdate.zip">online update class</a> and a <a href="sources_en.html#simplebrowser.zip">simple browser</a> (the last one isn't a tool, because it is only usefull when used together with an own program).<br>
-The site itself have been changed, too. There is now a <a href="oldnews_en.html">news archive</a> (mainly for the German part, where more news exists) and most of the links are now social bookmarks on <a href="http://del.icio.us/BeniBela">del.icio.us</a> (mainly the English links).
-</p>
-<h3>16. April 2006</h3>
-<p style="margin-left: 1em">Today I have uploaded some little changes.  The link page is now extended and my new (a half year old) mail address is listed here. Furthermore there is a mathematical plotter which draws functions. um Funktionen zu zeichnen. It is not finished yet, but the drawing works already and I thinks the output is nicer than the one of any other program I know. Additionally it has a hidden easter-egg.<br>Happy Easter!</p>
-<br>
-<h2>Overview</h2>
-I have programmed for 9 years although I am only in the 12th class (2007) of a German high school.<br>
-This is now my 4th page, but the first bilingual one. (compare the news)<br>
-Here you can download small games and tools programmed by me.<br>
-If you are interested in programming itself, you can also download sources and components for Delphi.<br>
-I am very interested in getting feedback, so please write me <a href="impressum_en.html">a mail</a> or make an entry in the guestbook.
-<div style="text-align:center; margin-top: 2em;">
-  <img src="img/maus.gif" alt="Maus mit Käse"width="182" height="132">
-</div>
-<br><br><br><br>
-]]></content>
+  <content>&lt;h2>News&lt;/h2></content>
+  <news>
+    <new date="12. Feb 2008"><text>
+      Die neue &lt;a href="tools_de.html#videlibri-setup.exe">VideLibriversion 0.987&lt;/a> beseitigt mehrere kritische Fehler bei der FHB und STB.</text>
+    </new>
+    <new date="15. Jan 2008"><text>
+      Mein neues Programm &lt;a href="tools_de.html#regstealth.zip">RegStealth&lt;/a> ersetzt die Windowsregistry durch individuelle xml-Dateien für jedes Programm. Momentan ist es aber noch eine pre-Alpha-Version, die noch nicht alle Funnktionen aber dafür vermutlich einige Fehler hat.
+    </text>
+    <text language="en">My new program &lt;a href="tools_en.html#regstealth.zip">RegStealth&lt;/a> replaces the registry of Windows with individual xml-files for every program. However, the current version is pre alpha, so there are missing features and probably bugs.</text>
+    </new>
+    <new date="24. Dez 2007"><text>
+      Frohe Weihnachten!&lt;br>
+      Mit (y&amp;lt;maxy-7*maxx/8?((Math.abs(x-maxx/2)&amp;lt;=maxx/16?6:5)):(Math.abs(x-maxx/2)&amp;lt;(maxy-y+1)/2?7:5)) als Algorithmus für den Musterfeldgenerator (s.u.) erhält man übrigens einen Tannenbaum.
+    </text>
+    <text language="en">Merry Christmas!&lt;br>
+When you use (y&amp;lt;maxy-7*maxx/8?((Math.abs(x-maxx/2)&amp;lt;=maxx/16?6:5)):(Math.abs(x-maxx/2)&amp;lt;(maxy-y+1)/2?7:5)) as algorithm in the color pattern generator(s.b.) you see a Christmas tree.
+    </text></new>
+    <new date="06. Dez 2007"><text>
+      Es gibt jetzt ein &lt;a href="others_de.html#colorMap.js">Onlineprogramm&lt;/a> zur Erzeugung von farbigen Rasterfeldern wie Zufallsmustern oder Höhenfunktionen.
+    </text>
+    <text language="en">There is now a &lt;a href="others_en.html#colorMap.js">online program&lt;/a> which creates colorful raster maps, for example random patterns or high map of a function.</text></new>
+    <new date="29. Nov 2007"><text>
+      Die neue Version 0.985 von &lt;a href="tools_de.html#videlibri-setup.exe">VideLibri-Version&lt;/a> beseitigt zwei kritische Fehler bei der FHB (bezüglich Vormerkungen) und STB (bezüglich "nur nötiger" Verlängerung).
+    </text></new>
+    <new date="31. Okt 2007"><text>
+Da die Stadtbücherei ihren WebOPAC geändert hat, gibt es nun wieder eine neue &lt;a href="tools_de.html#videlibri-setup.exe">VideLibri-Version&lt;/a>, die nun auch über BibTex-Export verfügt. &lt;br>Außerdem gibt es ein &lt;a href="bwinf_de.html#25_3.zip">Programm&lt;/a>, dass die Lösung für eine Aufgabe der Endrunde des Bundeswettbewerb Informatik implementiert; in dem ich jetzt auch Bundessieger geworden bin.
+    </text></new>
+    <new date="23. Juli 2007"><text>
+    Auch diesmal gibt es wieder eine neue Version von VideLibri. Außerdem habe ich noch drei &lt;a href="games_de.html#schlange.zip">alte Spiele&lt;/a> hochgeladen, von denen zwei auf dem Taschenrechner Algebra FX 2.0 Plus laufen. &lt;br> Für diesen Rechner gibt es dann auch noch ein &lt;a href="tools_de.html#math.zip">Hilfsprogramm für Rechnungen mit große Zahlen&lt;/a>.
+    </text><text language="en">You can now download three &lt;a href="games_en.html#schlange.zip">old games&lt;/a>. Two of them can be played on the calculator Algebra FX 2.0 Plus.&lt;br> There is also a program which allows &lt;a href="tools_en.html#math.zip">the calculation with long integers.&lt;/a>.
+</text></new>
+    <new date="4. Juni 2007"><text>
+    Es gibt jetzt die Version 0.906 von VideLibri, die einen für FHB-Benutzer kritischen Fehler korrigiert.
+    </text></new>
+    <new date="12. Mai 2007"><text>Es gibt jetzt die Version 0.905 von VideLibri, die einige Fehler korrigiert.</text></new>
+    <new date="22. April 2007"><text>
+    Die Seite wurde überarbeitet und die Speicherung in xml mit meiner Sprache &lt;a href="tools_de.html#jaxmlp.zip">JAXMLP&lt;/a> enthält jetzt praktisch keine Redunanz mehr.&lt;br>
+Außerdem habe ich meine &lt;a href="others_de#facharbeit.zip">Facharbeit&lt;/a> und das damit verbundene Programm hochgeladen, woran ich von Weihnachten bis Ostern gearbeitet habe.&lt;br>
+Und es gibt jetzt auch die Programme der Bwinf-Runden hier, womit ich mich die restliche Zeit (vorher, nacher) beschäftigt habe, weshalb es auch so selten etwas neues auf der Seite gibt.</text>
+<text language="en">The site structure has been improved, using my xml processing language &lt;a href="tools_de.html#jaxmlp.zip">JAXMLP&lt;/a>.&lt;br>And there are some German only ressources, my submissions to the national informatic contest BWInf and a text about the calculation of molecule conformations.
+</text></new>
+<new date="24. März 2007"><text>
+Die Seite wird jetzt auch im Internet Explorer 5 und (leider nur ungezoomt) im IE 7. &lt;br>Wer das Internet mit einem vernünftigen Programm benutzen will, sollte sich aber trotzdem mal den &lt;a href="http://www.mozilla-anleitung.de/Mozilla/101Dinge.php">FireFox&lt;/a> ansehen.</text></new>
+<new date="27. Februar 2007"><text>Zwei Fehler in VideLibri wurden gelöst, jetzt kann es auch wieder für die FHB benutzt werden.</text></new>
+<new date="17. Februar 2007"><text>
+Das Ausleihenverwaltungsprogramm &lt;a href="tools_de.html#videlibri-setup.exe">VideLibri&lt;/a> lässt sich jetzt als Betaversion herunterladen. (trotz Betastatus läuft es fast einwandfrei)
+</text></new>  
+<new date="1. Februar 2007"><text>
+Die Seite ist jetzt in einer Art Content-Management-System gespeichert. (Das sieht man zwar nicht, ist aber praktisch),&lt;br>Das letzte Jahr angegekündigte, Bücherverwaltungsprogramm dauert wohl noch ein bisschen länger, es ist zwar im Prinzip schon fertig, hat aber noch zu viele Fehler und ich zu wenig Zeit um sie zu beseitigen. Außerdem ist es in Lazarus programmiert, das Moment auch noch einen Haufen Fehler hat.
+</text></new>  
+<new date="15. Dezember 2006"><text>
+Nach langer Zeit gibt es mal wieder ein Update bezüglich Programmierung.&lt;br>
+Eine Klasse für das Parsen von &lt;a href="sources_de.html#rcmdline.zip">Kommandozeilenparameter&lt;/a>, eine für ein &lt;a href="sources_de.html#autoupdate.zip">automatisches Programmupdate&lt;/a> und einen kleinen IE-basierten &lt;a href="sources_de.html#simplebrowser.zip">Browser&lt;/a>, der über Kommandozeile gesteuert werden kann. Wie man sieht, sind dies alles bloß Programmteile, und zwar von meinem neuen Bücherei - Ausleihen - Verwaltungs - programmes (Videlibri), das es auch bald hier geben wird.&lt;br>
+Die Seite selbst ist auch leicht geändert, es gibt jetzt ein &lt;a href="oldnews_de.html">Newsarchiv&lt;/a> und die Links sind teilweise als "social bookmarks" auf &lt;a href="http://del.icio.us/BeniBela">del.icio.us&lt;/a> ausgelagert.
+</text><text language="en">Although the last change here has been more than 7 months ago, this site isn't dead. I have only been to busy to change anything here.&lt;br>
+However, today I have added some new support units (for programming, not gaming), a &lt;a href="sources_en.html#rcmdline.zip">command line parser&lt;/a>, an &lt;a href="sources_en.html#autoupdate.zip">online update class&lt;/a> and a &lt;a href="sources_en.html#simplebrowser.zip">simple browser&lt;/a> (the last one isn't a tool, because it is only usefull when used together with an own program).&lt;br>
+The site itself have been changed, too. There is now a &lt;a href="oldnews_en.html">news archive&lt;/a> (mainly for the German part, where more news exists) and most of the links are now social bookmarks on &lt;a href="http://del.icio.us/BeniBela">del.icio.us&lt;/a> (mainly the English links).</text>
+</new>  
+  </news>
+  <final-content>&lt;br&lt;br>&lt;h2>Übersicht&lt;/h2>
+Ich programmiere schon 9 Jahre, obwohl ich erst in der 12ten Klasse (Stand Mitte 2007) auf dem Gymnasium bin.&lt;br>
+Dies ist bereits meine vierte Homepage, aber die erste bilinguale. (siehe News)&lt;br>
+Hier kannst du kleine, von mir programmierte Spiele und Tools downloaden.&lt;br>
+Für diejenigen, die sich mehr fürs Programmieren selbst interessieren, gibt es offene Quellcodes und Komponenten für Delphi.&lt;br>
+Ich bin stark an Feedback interessiert, also schreibt mir &lt;a href="impressum_de.html">eine Mail&lt;/a>, oder tragt euch ins Gästebuch ein.
+&lt;div style="text-align:center; margin-top: 2em;">
+  &lt;img src="img/maus.gif" alt="Maus mit Käse"width="182" height="132">
+&lt;/div>
+</final-content>
+<final-content language="en">&lt;br>
+&lt;h2>Overview&lt;/h2>
+I have programmed for 9 years although I am only in the 12th class (2007) of a German high school.&lt;br>
+This is now my 4th page, but the first bilingual one. (compare the news)&lt;br>
+Here you can download small games and tools programmed by me.&lt;br>
+If you are interested in programming itself, you can also download sources and components for Delphi.&lt;br>
+I am very interested in getting feedback, so please write me &lt;a href="impressum_en.html">a mail&lt;/a> or make an entry in the guestbook.
+&lt;div style="text-align:center; margin-top: 2em;">
+  &lt;img src="img/maus.gif" alt="mousing eating cheese"width="182" height="132">
+&lt;/div>
+&lt;br>&lt;br>&lt;br>&lt;br></final-content>
 </file>

@@ -25,6 +25,9 @@ function getObject(obj){
   return eval(teil1+obj+teil2);
 }
 
+
+
 var lang="de";
 if (window.location.href.search(/lang=en/)!=-1) lang="en";
 if (window.location.href.search(/_en/)!=-1) lang="en";
+   
