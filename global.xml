@@ -86,6 +86,14 @@
   <title language="en">Guestbookentry</title>
 </fileinfo>  
 
+<fileinfo>
+  <hidden>YES</hidden>
+  <basefilename>404</basefilename>
+  <title language="de">404 - Seite nicht gefunden</title>
+  <title language="en">404 - Page not found</title>
+</fileinfo>  
+
+
 <author>Benito van der Zander</author>
 <copyrightfirstdate>2005</copyrightfirstdate>
 <copyrightlastdate>2007</copyrightlastdate>

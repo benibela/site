@@ -10,6 +10,7 @@ The language codes "de" and "en" specify which languages are supported. If one o
   <download-dir>bin/tools</download-dir>
   <download> 
     <title>VideLibri</title>
+    <id>videlibri</id>
     <file>videlibri-setup.exe</file>
     <description_80 language="de">Ein Programm zur Verwaltung ausgeliehener Bücher</description_80>
     <description_80 language="en">A program to manage lend books </description_80>
@@ -19,9 +20,9 @@ The language codes "de" and "en" specify which languages are supported. If one o
     <payment>Shareware</payment>
     <source>-</source>
     <size_KB>ca. 1300</size_KB>
-    <content language="de"><![CDATA[VideLibri ist ein Programm zur automatischen Verwaltung der in den drei Bibliotheken Düsseldorfs (und ungetestet der Fachhochschulbibliothek von Bochum) ausgeliehen Bücher, das unter anderem dafür sorgt, das man praktisch nie mehr die Abgabe vergisst.<br>
-Es hat folgende Eigenschaften:]]></content>
-    <content language="en"><![CDATA[VideLibri manages books lend in public library, but only the ones of the German city Düsseldorf.]]></content>
+    <content language="de">VideLibri ist ein Programm zur automatischen Verwaltung der in den drei Bibliotheken Düsseldorfs (und ungetestet der Fachhochschulbibliothek von Bochum) ausgeliehen Bücher, das unter anderem dafür sorgt, das man praktisch nie mehr die Abgabe vergisst.&lt;br>
+Es hat folgende Eigenschaften:</content>
+    <content language="en">VideLibri manages books lend in public library, but only the ones of the German city Düsseldorf.</content>
     <features language="de">
       <feature>Unterstützung für die Stadtbücherei, die Universitäts- und Landesbibliothek sowie die Fachhochschulbibliothek Düsseldorfs</feature>
       <feature>Unterstützung für die Fachhochschulbibliothek Bochum (ungetestet)</feature>

@@ -135,7 +135,7 @@ nil),0,'SHELLDLL_DefView',nil),0,'SysListView32',nil);</span> (Das bedeutet, das
                <h3 class="scherz">Fremde Scherzprogramme</h3>
 
                <p><h4><a href="bin/scherz/andre.zip">Scherzprogramm von Andre Jochim (131 KB):</a></h4>
-               <img src="img/scherz/andre.gif"><br>
+               <a href="http://www.andre-jochim.de">www.andre-jochim.de</a><br>
 
                Dieses Programm ist Freeware und darf beliebig verändert werden.<br>
                Beim 1. Start kopiert es sich ins Win-Verzeichnis als sosystem.exe, erstellt die Datei C:\check.in und es trägt sich in die Registry ein und gibt eine Fehlermeldung aus, dass irgendwas nicht geklappt hat. <br>
@@ -279,7 +279,7 @@ nil),0,'SHELLDLL_DefView',nil),0,'SysListView32',nil);</span> (This means that t
                <h3 class="scherz">Joke programs from other people</h3>
 
                <p><h4><a href="bin/scherz/andre.zip">Joke program of Andre Jochim (131 KB):</a></h4>
-               <img src="img/scherz/andre.gif"><br>
+               <a href="http://www.andre-jochim.de">www.andre-jochim.de</a><br>
 
                This program is freeware and you are allowed to change it.<br>
                At the first start it copies itself into the Win-directory named sosystem.exe, creates the file C:\check.in, writes into the Registry, and shows an error message something hasn't worked.<br>

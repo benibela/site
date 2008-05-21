@@ -9,6 +9,7 @@
   <download> 
     <title>TTreeListView</title>
     <file>treelistview.zip</file>
+    <id>treelistview</id>
     <description_80 language="de">Eine Verbindung von TListView und TTreeView, die einen Baum mit Spalten anzeigt.</description_80>
     <description_80 language="en">A combination of TListView and TTreeView drawing tree and column items.</description_80>
     <source-license>CCNCSA</source-license>
@@ -21,15 +22,21 @@ It has these features:</content>
       <feature>Gleichzeitige Anzeige des Strukturbaumes und zusätzlicher Spalten</feature>
       <feature>Es können Trennlinien zwischen Zeilen und Spalten angezeigt werden.</feature>
       <feature>Zeilen können abwechselnd unterschiedliche Hintergrundfarben bekommen.</feature>
-      <feature>In jede Spalte können mehrere von einander unabhängige Textteile eingefügt werden, die bei Mausberührung hervorgehoben werden können.</feature>
       <feature>Jeder Knoten kann mit einem Icon versehen werden und der Benutzer kann Teilbäume auf- und zuklappen.</feature>
+      <feature>Die Zeilen können automatisch sortiert werden</feature>
+      <feature>Der Benutzer kann ohne Änderung der Indizes die Spalten verschieben. (Nur in Lazarus)</feature>
+      <feature>Unabhängig von den Windows Common Controls</feature>
+      <feature>Läuft unter Delphi (hier nur mit BDS2006 getestet) und Lazarus</feature>
     </features>
     <features language="en">
       <feature>Showing of a tree together with columns</feature>
       <feature>The lines can be drawn striped, so lines alternate their background color.</feature>
       <feature>It can paint dividing lines between rows and columns.</feature>
-      <feature>The text in each column can consist of several parts which can be hot tracked independly of each other.</feature>
       <feature>Each node can get an icon and the user can collapse and expand it.</feature>
+      <feature>The lines can automatically be sorted</feature>
+      <feature>The user can move the columns without a change of the indices(only in Lazarus)</feature>
+      <feature>Indepent of the Windows Common Controls</feature>
+      <feature>Works with Delphi (there only tested with BDS2006) and Lazarus</feature>
     </features>
     
     <screenshot>

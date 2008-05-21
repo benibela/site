@@ -131,7 +131,14 @@
              <tbody>
            {{$/IF}}
            <tr>
-             <td><a href="{{$IF download/linkTo != ""}}{{$WRITE download/linkTo}}{{$ELSE}}#{{$WRITE download/file}}{{$/IF}}">{{$WRITE download/title}}</a></td>
+             {{$DEFINE $download-id download}*}
+             {{$IF download/id != ""}*}
+               {{$WRITE download/id}*}
+             {{$ELSE}*}
+               {{$WRITE download/file}*}
+             {{$/IF}*}
+             {{$/DEFINE}*}
+             <td><a href="{{$IF download/linkTo != ""}}{{$WRITE download/linkTo}}{{$ELSE}}#{{$$download-id}}{{$/IF}}">{{$WRITE download/title}}</a></td>
              <td>{{$WRITE download/description_80}}</td>
              {{$IF download/language != ""}}<td>{{$WRITE download/language}}</td>{{$/IF}]
              {{$IF download/prog-language != ""}}<td>{{$WRITE download/prog-language}}</td>{{$/IF}}
@@ -146,7 +153,7 @@
            <div class="long_description">
              {{$FOREACH download: file/download}}
              <div class="long_desc_entry">
-               <h3 class="long_desc_title"><a id="{{$WRITE download/file}}" name="{{$WRITE download/file}}" class="target">&nbsp;</a><a href="{{$WRITE file/download-dir"/"download/file}}">{{$WRITE download/title}}</a></h3>
+               <h3 class="long_desc_title"><a id="{{$$download-id}}" name="{{$$download-id}}" class="target">&nbsp;</a><a href="{{$WRITE file/download-dir"/"download/file}}">{{$WRITE download/title}}</a></h3>
                <div class="long_desc_license">{{$WRITE download/payment}}{{$WRITE download/source-license}}</div>
                <div class="long_desc_size">{{$WRITE download/size_KB}} KB</div>
                <div class="long_desc_desc">

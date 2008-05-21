@@ -6,6 +6,13 @@
   <prevent-content-title>YES</prevent-content-title>
   <content>&lt;h2>News&lt;/h2></content>
   <news>
+    <new date="21. Mai 2008"><text language="de">
+      Heute gibt es verschiedene kleine Updates: Eine neue Version meines &lt;a href="components_de.html#TreeListView">TreeListView&lt;/a>, die einige Fehler beseitigt, stärker den normalen Komponenten ähnelt und unter Lazarus funktioniert. Dafür funktioniert sie aber eventuell nicht mehr unter alten Delphiversionen und hat keine sub-Spalten-Elemente mehr (die macthen aber sowieso kaum Sinn). &lt;br> Zusätzlich gibt es eine neue Version von meinem &lt;a href="tools_de.html#jaxmlp.zip">XML Umwandler&lt;/a> mit dem wesentlichsten Unterschied das Eingabedaten als Anweisungen interpretiert werden können.&lt;br>Und dann noch eine Unit mit immer wieder &lt;a href="sources_de.html#bbutils">nützlichen Funktionen&lt;/a> für FPC.&lt;br>Außerdem habe ich das Seitenlayout ein wenig überarbeitet, zum Beispiel mit einigen schöneren internen Links und einer aktualisierten 404-Fehlerseite.</text>
+      <text language="en">Today there are some small updates: A new version of my &lt;a href="components_en.html#treelistview">TreeListView&lt;/a> which removes some bugs, is more similar to the Windows controls and works with Lazarus.  However, it is possible that it doesn't work in  older versions of Delphi and it doesn't shows sub-column-elements (but they were never useful anyways). 
+      &lt;br> Then there is a new version of my &lt;a href="tools_en.html#jaxmlp.zip">xml converter&lt;/a> with the main difference being the possibility to interpret the xml data as source. &lt;br>Furthermore I uploaded a unit (for FPC) containing always &lt;a href="sources_en.html#bbutils">useful functions&lt;/a>.&lt;br>And the layout of this page is improved, for example the URL of the links looks nicer, the 404 error page is updated and untranslated news are shown (in gray).
+      </text>
+      </new>
+    
     <new date="12. Feb 2008"><text>
       Die neue &lt;a href="tools_de.html#videlibri-setup.exe">VideLibriversion 0.987&lt;/a> beseitigt mehrere kritische Fehler bei der FHB und STB.</text>
     </new>
@@ -41,7 +48,7 @@ Da die Stadtbücherei ihren WebOPAC geändert hat, gibt es nun wieder eine neue 
     <new date="12. Mai 2007"><text>Es gibt jetzt die Version 0.905 von VideLibri, die einige Fehler korrigiert.</text></new>
     <new date="22. April 2007"><text>
     Die Seite wurde überarbeitet und die Speicherung in xml mit meiner Sprache &lt;a href="tools_de.html#jaxmlp.zip">JAXMLP&lt;/a> enthält jetzt praktisch keine Redunanz mehr.&lt;br>
-Außerdem habe ich meine &lt;a href="others_de#facharbeit.zip">Facharbeit&lt;/a> und das damit verbundene Programm hochgeladen, woran ich von Weihnachten bis Ostern gearbeitet habe.&lt;br>
+Außerdem habe ich meine &lt;a href="others_de.html#facharbeit.zip">Facharbeit&lt;/a> und das damit verbundene Programm hochgeladen, woran ich von Weihnachten bis Ostern gearbeitet habe.&lt;br>
 Und es gibt jetzt auch die Programme der Bwinf-Runden hier, womit ich mich die restliche Zeit (vorher, nacher) beschäftigt habe, weshalb es auch so selten etwas neues auf der Seite gibt.</text>
 <text language="en">The site structure has been improved, using my xml processing language &lt;a href="tools_de.html#jaxmlp.zip">JAXMLP&lt;/a>.&lt;br>And there are some German only ressources, my submissions to the national informatic contest BWInf and a text about the calculation of molecule conformations.
 </text></new>

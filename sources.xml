@@ -35,6 +35,31 @@ The most important features are:]]></content>
     <final-content language="de"><![CDATA[In einigen Bereichen sind sie den Delphimethoden sogar überlegen, so kann man beispielweise den Text auch gedreht ausgeben.<br>Es gibt eine ausführliche HTML-Doku, in der alle Funktionen beschrieben sind. ]]></final-content>
     <final-content language="en"><![CDATA[In some field they are even better than the Delphi functions, for example they can draw rotated text.<br>There is a good, German help, and you could use the documentation of TCanvas from Delphi. ]]></final-content>
   </download>
+  <download>
+    <title>BBUtils</title>
+    <file>bbutils.zip</file>
+    <id>bbutils</id>
+    <description_80 language="de">Häufig benötigte Funktionen, die eínem bei FPC fehlen.</description_80>
+    <description_80 language="en">Often needed functions missing in FPC.</description_80>
+    <prog-language>FPC</prog-language>
+    <source-license>GPL</source-license>
+    <content language="de">Hier habe ich einige kleine Funktionen gesammelt, die einem bei der Programmierung mit FPC ständig fehlen. Mit den Funktionen kann man:</content>
+    <content language="en">This unit consist of function which you need very often, when programming in FPC. You can use it to</content>
+    <features language="de">
+      <feature>Arrayelemente einfügen, löschen und Arrays invertieren</feature>
+      <feature>Eine Funktion in einem anderen Thread ausführen.</feature>
+      <feature>Unterschiedliche pchar/string-Vergleichsfunktionen</feature>
+      <feature>Stringzerlegung, Zeichensatzänderung, String laden/speichern</feature>
+      <feature>Bernoulli-Wahrscheinlichkeitsrechnung</feature>
+    </features>
+    <features language="en">
+      <feature>insert and remove array elements, invert arrays</feature>
+      <feature>execute a function in another thread.</feature>
+      <feature>compare pchar/strings in different ways</feature>
+      <feature>split strings, change encoding, load/save strings</feature>
+      <feature>calculate Bernoulli statistics</feature>
+    </features>
+  </download>
   <download> 
     <title>TCVirus</title>
     <file>cvirus.zip</file>
