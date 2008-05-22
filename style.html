@@ -103,7 +103,7 @@
                <h3>{{$WRITE subfileinfo/title}*}</h3>
                <ul style="padding-left:2em; list-style-position:inside;">
                {{$FOREACH download: subfile/download}*}
-                 <li><a href="{{$$file-url subfileinfo language}}#{{$WRITE download/file}}">{{$WRITE download/title}}</a>: {{$WRITE download/description_80}}</li>
+                 <li><a href="{{$$file-url subfileinfo language}}#{{$IF download/id != ""}}{{$WRITE download/id}}{{$ELSE}}{{$WRITE download/file}}{{$/IF}}">{{$WRITE download/title}}</a>: {{$WRITE download/description_80}}</li>
                {{$/FOREACH}*}
                </ul>
              {{$ELSE}*}
@@ -180,9 +180,9 @@
            <span id="fileName">www.benibela.de/{{$WRITE $file-url}}</span><br>
            {{$WRITE language/contentlastchange}}: {{$WRITE file/$lastModified}}<br>
            {{$WRITE language/pagelastchange}}: {{$WRITE $lastModified}}
-      <div id="border_right">&nbsp;</div>
         </div>
       </div>	
+      <div id="border_right">&nbsp;</div>
 
 	  <div id="header">
 	    <img src="img/design/borderbluedown.gif" id="border_right_down_img" alt="">
