@@ -31,6 +31,7 @@ Es hat folgende Eigenschaften:</content>
       <feature>Vor dem Ablauf der Leihfrist wird man vom Programm benachrichtigt</feature>
       <feature>Es können die Medien auf mehreren Konten gleichzeitig betrachtet und verlängert werden</feature>
       <feature>Die momentan ausgeliehenen Medien werden gespeichert, so dass man seine Ausleihen sehen kann, ohne dafür ins Internet zu müssen. (für Aktualisierungen muss man es aber natürlich schon)</feature>
+      <feature>Es kann nach beliebigen Medien gesucht werden</feature>
       <feature>VideLibri wird (je nach Einstellung) bei jedem Windowsstart minimiert in der Symbolleiste gestartet</feature>
       <feature>Je nach Einstellungen werden alle jemals ausgeliehenen Medien gespeichert</feature>
       <feature>Es gibt eine Statistik über alle ausgeliehenen Medien</feature>
@@ -41,7 +42,7 @@ Es hat folgende Eigenschaften:</content>
     <final-content>&lt;br&gt;
       Besonders praktisch ist das Programm für Leute, die mehrere Konten bei verschiedenen Büchereien haben, da man dann alle ausgeliehenen Bücher auf einmal betrachten kann.&lt;br&gt;
       Die automatischen Verlängerungen und Benachrichtigungen funktionieren natürlich nur, wenn das Programm auch gestartet wird, das heißt, wenn man den (standardmäßig aktiven) Autostart deaktiviert, muss man VideLibri also regelmäßig starten.&lt;br&gt;
-      Die kostenlose Sharewareversion zeigt nur jeweils 10 Medien und beim Starten ein Hinweisfenster an, die uneingeschränkte  Vollversion kostet 19€ (Selbstkostenpreis). &lt;br&gt;Wer in der Sharewareversion einen größeren Fehler findet und meldet, kann eine kostenlose Vollversion bekommen.
+      Die kostenlose Sharewareversion zeigt nur jeweils 10 Medien und beim Starten ein Hinweisfenster an, die uneingeschränkte  Vollversion kostet 10€ (Selbstkostenpreis). &lt;br&gt;Wer in der Sharewareversion einen größeren Fehler findet und meldet, kann eine kostenlose Vollversion bekommen.
 
       &lt;br&gt;
       Eine Übersicht über alle bisherigen Versionen und Änderungen findet man im &lt;a href="updates/videlibri/changelog.xml" target="_blank" class="popup-link">ChangeLog&lt;/a>
