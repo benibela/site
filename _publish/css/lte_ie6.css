@@ -1,91 +1,100 @@
-
-html, body {
-  overflow: hidden; /* Only one scrollbar */
+body {
+   position: static;
+/*   padding-top: 5em solid red;
+   border-bottom: 2em solid red;*/
+   padding-top: 5em;
+   padding-bottom: 2em;
 }
 
-.shortdescription{
-  margin-right:-30px;
-  position: relative;
-}
-.link_list{
-  margin-right:-30px;
-  position: relative;
-}
-.long_description { 
-  position: relative;
-  display:block;
-  width:auto;
-  margin-right:-16px;
-}
-.long_desc_title .target{
-  margin-top: 0em;
-  padding-top: 0em;
-}
-#outer_content {      
+#outer_content { 
   position:relative;
-  height: 100%;
-  left:0;
+  left:-14px;
   top:0;
-  
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
   padding-top:0;
   padding-bottom:0;
+  overflow: auto;
+  overflow-x: hidden;
 }
+
+
 #content {
-  padding-right:1.5em;
+  padding-right:0.5em;
+  margin-left: 14em;
+  padding-left: 1em;
+/*  border-left: 14px solid #DDDDDD;*/
+  border-left: 4px solid #DDDDDD;
+
+  background-image: url(../img/design/borderblueV.gif);
+  background-position: 4px 0px;
+  background-repeat: repeat-y;
 }
+
+/* fix top-bottom position error*/
+#border_right { 
+   position: relative;
+   top: 0px;
+   height: 100%;
+   z-index: 1; /* under header */
+}
+
+#border_middle {  
+  height: 50%;
+}
+
+/* fix wrong size of li items */
+#menulink_list li{
+  width: 11em;
+}
+
+#menulink_list li a{
+  width: 13.7em;
+}
+
+
+
+#border_navi_bottom {
+  /* fix gap */
+  width: 11.7em;
+  /* border make to large menu invisible */
+  border-right: 5px solid #DDDDDD; 
+  border-bottom: 5px solid #DDDDDD;
+  /* fix invisible background-image, compensation border*/
+  height:13px;
+  /* fix to small menu  */
+  margin-bottom: -1em; 
+  /* exact position at the bottom */
+  padding-bottom: 1px; 
+  /* compensate padding */
+  background-position: 0 1px;
+}
+
+/* fix moved image */
+#border_navi_right_bottom {
+  left: 11em;
+  margin-left:3px;
+}
+
+
+	
+/* fix to large shortdescription table (disable ie 7 patch) */
+.shortdescription_border{
+  width: 100%;
+  border: 0 0 0 0;
+}
+.shortdescription  {
+  width: 100%;
+}
+
+.untranslated .newstext{ display: block;}
+
 #menu {
   padding-right:9px;
 }
 
-#border_navi_bottom {
-  bottom:3px;
-  width:11em;
-  
-  padding-top:1px;
-  padding-right:22px;
-  margin-bottom:-0.9em;
-}
 
-#border_navi_right_top{
-  top:0px; 
-  right:0px;
-  left:auto; 
-  margin-left:0px;
-}
-
-#border_navi_left_bottom {bottom:0px;}
-
-#border_navi_right_bottom {
-  bottom:1px;
-  right:-2px;
-  margin-right:0px;
-}
-
-#border_right {
-  right: 20px;  /* Normal size + scrollbar width */
-}
-#border_right_down_img{
-  right: -1px;  /* 20(border_right.right)  - 20 (Startpixel auf dem Bild) px (Das ist Absicht)*/ 
-}
-#border_right_left_img{
-  right: -1px;  /* 20(border_right.right)  - 20 (Startpixel auf dem Bild) px (Das ist Absicht)*/ 
-}
-
-#border_middle_end {
-  position: absolute;
-  z-index: 5;
-  top:6.60em;
-  left: 14em;
-  width: 7px;
-  height: 100%; 
-  
-  margin-left: -10px;
-  border-width: 4em;
-
-  background-image: url(../img/design/borderblueV.gif);
-  background-position: left;
-  background-repeat: repeat-y;
-}
 /*Positionsartwechsel*/
 #menu {position: absolute;}
 #title{position:absolute;}

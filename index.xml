@@ -6,11 +6,20 @@
   <prevent-content-title>YES</prevent-content-title>
   <content>&lt;h2>News&lt;/h2></content>
     <news>
-      <new date="19. Juli 2008"><text language="de">
+      <new date="31. Jul 2008"><text language="de">
+        Ich habe das Seitenlayout nochmals überarbeitet, so dass es nun auf allen Browser stabil laufen und sich die Seiten nun ohne Probleme im IE zoomen, durchsuchen, drucken und einigermaßen per Tastatur scrollen lassen sollte. 
+        &lt;br>Besonders das Durchsuchen und Scrollen war problematisch, da bei einem Layout mit festen, den Inhalt überlagernden Elementen die Browsersuchfunktion prinzipiell nicht richtig funktioniert. Und ein Layout mit einem Scrollcontainer lässt sich im Allgemeinen nicht mittels Tastatur scrollen. Hier funktioniert es nun nur, indem jeder Link zu einem Anker zeigt und beim ersten Aufruf mittels JavaScript der Fokus versetzt wird. Aber das ist ziemlich umständlich und funktioniert eben nicht beim ersten Aufruf, wenn Skripte ausgeschaltet sind. Kennt jemand eine Methode dafür, die ohne JavaScript auskommt?
+      </text>
+      <text language="en">
+        I have modified the layout of this site, so that it  works probably stably in all browsers. You can now zoom the pages in IE 7, print in FireFox, search something and scroll using your keyboard.
+        &lt;br>Especially the possibility to search and scroll was difficult to implement, because the usual search functions don't work in a layout using fixed elements lying about the content. And if you put the content in a smaller container with scrollbar, the keyboard scrolling normally doesn't work. Here it works because every link refers to an anchor and a JavaScript function changes the focus to the content area when you visit this site from another one. But this is nasty and doesn't work on the first call if scripts are disabled. Has anyone found a method which doesn't need JavaScript?
+      </text>
+      </new>
+      <new date="19. Jul 2008"><text language="de">
       Die neue &lt;a href="tools_de.html#videlibri">VideLibri Version 0.990&lt;/a> ermöglicht es nun auch nach nicht ausgeliehenen Medien zu suchen und erweiterte Informationen, wie das Titelbild, anzeigen. Damit hat VideLibri nun eindeutig mehr Funktionen als die nativen Seiten.
       </text></new>
       <new date="21. Mai 2008"><text language="de">
-      Heute gibt es verschiedene kleine Updates: Eine neue Version meines &lt;a href="components_de.html#TreeListView">TreeListView&lt;/a>, die einige Fehler beseitigt, stärker den normalen Komponenten ähnelt und unter Lazarus funktioniert. Dafür funktioniert sie aber eventuell nicht mehr unter alten Delphiversionen und hat keine sub-Spalten-Elemente mehr (die macthen aber sowieso kaum Sinn). &lt;br> Zusätzlich gibt es eine neue Version von meinem &lt;a href="tools_de.html#jaxmlp.zip">XML Umwandler&lt;/a> mit dem wesentlichsten Unterschied das Eingabedaten als Anweisungen interpretiert werden können.&lt;br>Und dann noch eine Unit mit immer wieder &lt;a href="sources_de.html#bbutils">nützlichen Funktionen&lt;/a> für FPC.&lt;br>Außerdem habe ich das Seitenlayout ein wenig überarbeitet, zum Beispiel mit einigen schöneren internen Links und einer aktualisierten 404-Fehlerseite.</text>
+      Heute gibt es verschiedene kleine Updates: Eine neue Version meines &lt;a href="components_de.html#TreeListView">TreeListView&lt;/a>, die einige Fehler beseitigt, stärker den normalen Komponenten ähnelt und unter Lazarus funktioniert. Dafür funktioniert sie aber eventuell nicht mehr unter alten Delphiversionen und hat keine sub-Spalten-Elemente mehr (die machten aber sowieso kaum Sinn). &lt;br> Zusätzlich gibt es eine neue Version von meinem &lt;a href="tools_de.html#jaxmlp.zip">XML Umwandler&lt;/a> mit dem wesentlichsten Unterschied das Eingabedaten als Anweisungen interpretiert werden können.&lt;br>Und dann noch eine Unit mit immer wieder &lt;a href="sources_de.html#bbutils">nützlichen Funktionen&lt;/a> für FPC.&lt;br>Außerdem habe ich das Seitenlayout ein wenig überarbeitet, zum Beispiel mit einigen schöneren internen Links und einer aktualisierten 404-Fehlerseite.</text>
       <text language="en">Today there are some small updates: A new version of my &lt;a href="components_en.html#treelistview">TreeListView&lt;/a> which removes some bugs, is more similar to the Windows controls and works with Lazarus.  However, it is possible that it doesn't work in  older versions of Delphi and it doesn't shows sub-column-elements (but they were never useful anyways). 
       &lt;br> Then there is a new version of my &lt;a href="tools_en.html#jaxmlp.zip">xml converter&lt;/a> with the main difference being the possibility to interpret the xml data as source. &lt;br>Furthermore I uploaded a unit (for FPC) containing always &lt;a href="sources_en.html#bbutils">useful functions&lt;/a>.&lt;br>And the layout of this page is improved, for example the URL of the links looks nicer, the 404 error page is updated and untranslated news are shown (in gray).
       </text>
@@ -45,40 +54,13 @@ Da die Stadtbücherei ihren WebOPAC geändert hat, gibt es nun wieder eine neue 
     Auch diesmal gibt es wieder eine neue Version von VideLibri. Außerdem habe ich noch drei &lt;a href="games_de.html#schlange.zip">alte Spiele&lt;/a> hochgeladen, von denen zwei auf dem Taschenrechner Algebra FX 2.0 Plus laufen. &lt;br> Für diesen Rechner gibt es dann auch noch ein &lt;a href="tools_de.html#math.zip">Hilfsprogramm für Rechnungen mit große Zahlen&lt;/a>.
     </text><text language="en">You can now download three &lt;a href="games_en.html#schlange.zip">old games&lt;/a>. Two of them can be played on the calculator Algebra FX 2.0 Plus.&lt;br> There is also a program which allows &lt;a href="tools_en.html#math.zip">the calculation with long integers.&lt;/a>.
 </text></new>
-    <new date="4. Juni 2007"><text>
-    Es gibt jetzt die Version 0.906 von VideLibri, die einen für FHB-Benutzer kritischen Fehler korrigiert.
-    </text></new>
-    <new date="12. Mai 2007"><text>Es gibt jetzt die Version 0.905 von VideLibri, die einige Fehler korrigiert.</text></new>
-    <new date="22. April 2007"><text>
-    Die Seite wurde überarbeitet und die Speicherung in xml mit meiner Sprache &lt;a href="tools_de.html#jaxmlp.zip">JAXMLP&lt;/a> enthält jetzt praktisch keine Redunanz mehr.&lt;br>
-Außerdem habe ich meine &lt;a href="others_de.html#facharbeit.zip">Facharbeit&lt;/a> und das damit verbundene Programm hochgeladen, woran ich von Weihnachten bis Ostern gearbeitet habe.&lt;br>
-Und es gibt jetzt auch die Programme der Bwinf-Runden hier, womit ich mich die restliche Zeit (vorher, nacher) beschäftigt habe, weshalb es auch so selten etwas neues auf der Seite gibt.</text>
-<text language="en">The site structure has been improved, using my xml processing language &lt;a href="tools_de.html#jaxmlp.zip">JAXMLP&lt;/a>.&lt;br>And there are some German only ressources, my submissions to the national informatic contest BWInf and a text about the calculation of molecule conformations.
-</text></new>
-<new date="24. März 2007"><text>
-Die Seite wird jetzt auch im Internet Explorer 5 und (leider nur ungezoomt) im IE 7. &lt;br>Wer das Internet mit einem vernünftigen Programm benutzen will, sollte sich aber trotzdem mal den &lt;a href="http://www.mozilla-anleitung.de/Mozilla/101Dinge.php">FireFox&lt;/a> ansehen.</text></new>
-<new date="27. Februar 2007"><text>Zwei Fehler in VideLibri wurden gelöst, jetzt kann es auch wieder für die FHB benutzt werden.</text></new>
-<new date="17. Februar 2007"><text>
-Das Ausleihenverwaltungsprogramm &lt;a href="tools_de.html#videlibri">VideLibri&lt;/a> lässt sich jetzt als Betaversion herunterladen. (trotz Betastatus läuft es fast einwandfrei)
-</text></new>  
-<new date="1. Februar 2007"><text>
-Die Seite ist jetzt in einer Art Content-Management-System gespeichert. (Das sieht man zwar nicht, ist aber praktisch),&lt;br>Das letzte Jahr angegekündigte, Bücherverwaltungsprogramm dauert wohl noch ein bisschen länger, es ist zwar im Prinzip schon fertig, hat aber noch zu viele Fehler und ich zu wenig Zeit um sie zu beseitigen. Außerdem ist es in Lazarus programmiert, das Moment auch noch einen Haufen Fehler hat.
-</text></new>  
-<new date="15. Dezember 2006"><text>
-Nach langer Zeit gibt es mal wieder ein Update bezüglich Programmierung.&lt;br>
-Eine Klasse für das Parsen von &lt;a href="sources_de.html#rcmdline.zip">Kommandozeilenparameter&lt;/a>, eine für ein &lt;a href="sources_de.html#autoupdate.zip">automatisches Programmupdate&lt;/a> und einen kleinen IE-basierten &lt;a href="sources_de.html#simplebrowser.zip">Browser&lt;/a>, der über Kommandozeile gesteuert werden kann. Wie man sieht, sind dies alles bloß Programmteile, und zwar von meinem neuen Bücherei - Ausleihen - Verwaltungs - programmes (Videlibri), das es auch bald hier geben wird.&lt;br>
-Die Seite selbst ist auch leicht geändert, es gibt jetzt ein &lt;a href="oldnews_de.html">Newsarchiv&lt;/a> und die Links sind teilweise als "social bookmarks" auf &lt;a href="http://del.icio.us/BeniBela">del.icio.us&lt;/a> ausgelagert.
-</text><text language="en">Although the last change here has been more than 7 months ago, this site isn't dead. I have only been to busy to change anything here.&lt;br>
-However, today I have added some new support units (for programming, not gaming), a &lt;a href="sources_en.html#rcmdline.zip">command line parser&lt;/a>, an &lt;a href="sources_en.html#autoupdate.zip">online update class&lt;/a> and a &lt;a href="sources_en.html#simplebrowser.zip">simple browser&lt;/a> (the last one isn't a tool, because it is only usefull when used together with an own program).&lt;br>
-The site itself have been changed, too. There is now a &lt;a href="oldnews_en.html">news archive&lt;/a> (mainly for the German part, where more news exists) and most of the links are now social bookmarks on &lt;a href="http://del.icio.us/BeniBela">del.icio.us&lt;/a> (mainly the English links).</text>
-</new>  
   </news>
-  <final-content>&lt;br&lt;br>&lt;h2>Übersicht&lt;/h2>
+  <final-content>&lt;br>&lt;br>&lt;h2>Übersicht&lt;/h2>
 Ich programmiere schon 9 Jahre, obwohl ich erst in der 12ten Klasse (Stand Mitte 2007) auf dem Gymnasium bin.&lt;br>
 Dies ist bereits meine vierte Homepage, aber die erste bilinguale. (siehe News)&lt;br>
 Hier kannst du kleine, von mir programmierte Spiele und Tools downloaden.&lt;br>
 Für diejenigen, die sich mehr fürs Programmieren selbst interessieren, gibt es offene Quellcodes und Komponenten für Delphi.&lt;br>
-Ich bin stark an Feedback interessiert, also schreibt mir &lt;a href="impressum_de.html">eine Mail&lt;/a>, oder tragt euch ins Gästebuch ein.
+Ich bin stark an Feedback interessiert, also schreibt mir &lt;a href="impressum_de.html#top">eine Mail&lt;/a>, oder tragt euch ins Gästebuch ein.
 &lt;div style="text-align:center; margin-top: 2em;">
   &lt;img src="img/maus.gif" alt="Maus mit Käse"width="182" height="132">
 &lt;/div>
@@ -89,7 +71,7 @@ I have programmed for 9 years although I am only in the 12th class (2007) of a G
 This is now my 4th page, but the first bilingual one. (compare the news)&lt;br>
 Here you can download small games and tools programmed by me.&lt;br>
 If you are interested in programming itself, you can also download sources and components for Delphi.&lt;br>
-I am very interested in getting feedback, so please write me &lt;a href="impressum_en.html">a mail&lt;/a> or make an entry in the guestbook.
+I am very interested in getting feedback, so please write me &lt;a href="impressum_en.html#top">a mail&lt;/a> or make an entry in the guestbook.
 &lt;div style="text-align:center; margin-top: 2em;">
   &lt;img src="img/maus.gif" alt="mousing eating cheese"width="182" height="132">
 &lt;/div>

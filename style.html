@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="iso-8859-1"?>  
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 	<head>
@@ -17,7 +18,6 @@
     <meta name="DC.Type" content="{{$IF file/content-type == ""}}Text{{$ELSE}}{{$WRITE file/content-type}}{{$/IF}}">
     <meta name="DC.Description" content="{{$WRITE file/description}}">
     <link rel="SHORTCUT ICON" href="favicon.ico">
-    <link rel="stylesheet" media="print" href="css/print.css">
     <script type="text/javascript" src="js/all.js"></script>
  
     <meta name="author" content="{{$WRITE global/author}}">
@@ -38,26 +38,22 @@
     <link rel="alternate" href="{{$$file-url fileinfo l}}" hreflang="{{$WRITE l/id}}">
     {{$/FOREACH}}
     <link rel="stylesheet" href="css/all.css">
+    <!--[if IE]><link rel="stylesheet" href="css/ie.css"><![endif]-->    
     <!--[if lte IE 6]><link rel="stylesheet" href="css/lte_ie6.css"><![endif]-->
-    <!--[if lt IE 6]><link rel="stylesheet" href="css/lt_ie6.css"><![endif]-->
-    <!--[if IE 7]><link rel="stylesheet" href="css/ie7.css"><![endif]-->
-    <!--[if IE 6]><link rel="stylesheet" href="css/ie6.css"><![endif]-->
-    <!--[if IE 5]><link rel="stylesheet" href="css/ie5.css"><![endif]-->
     <link rel="stylesheet" media="print" href="css/print.css">
     </head>
-    <body lang="de">
-      
+    <body lang="de" onload="pageFocus()"> <!--[if IE 7]><div id="wrapper"> <![endif]-->
       <h1 id="title">BeniBela online</h1>
 	  <div id="menu">
 	     <ul id="menulink_list">
          {{$FOREACH l: global/language}*}
            {{$IF l/id != language/id}*}
-             <li><a href="{{$$file-url fileinfo l}}" id="SwitchLanguage">{{$WRITE l/changetext}}</a></li>{{$/IF}*}
+             <li><a href="{{$$file-url fileinfo l}}#top" id="SwitchLanguage">{{$WRITE l/changetext}}</a></li>{{$/IF}*}
          {{$/FOREACH}*}
          {{$DEFINE $writeSiteMap fileparent}*}
            {{$FOREACH fi: fileparent/fileinfo}*}
              {{$IF fi/hidden != "YES"}*}
-               <li><a href="{{$$file-url fi}*}"{{$IF fi/basefilename == fileinfo/basefilename}} class="activepage"{{$/IF}}>{{$WRITE fi/title}}</a></li>
+               <li><a href="{{$$file-url fi}*}#top"{{$IF fi/basefilename == fileinfo/basefilename}} class="activepage"{{$/IF}}>{{$WRITE fi/title}}</a></li>
                {{$IF fi/fileinfo != ""}*}
                  <li><ul id="menulink_sublist_Delphi">{{$$writeSiteMap fi}**}</ul></li>
                {{$/IF}*}
@@ -74,11 +70,13 @@
          <img src="img/design/borderbluemiddleleft.gif" alt="" id="border_navi_right_top">
 	  </div>
 
-
+    
       <div id="outer_content">
         <div id="content">
+           <a name="top" href="#top"></a>           
            {{$IF file/prevent-content-title == ""}*}
            <h2>{{$WRITE fileinfo/title}**}</h2>
+           {{$ELSE}}
            {{$/IF}*}
 {{$WRITEX file/test}}                        
            {{$WRITE file/content}*}
@@ -112,6 +110,7 @@
            {{$/FOREACH}*}
            
            {{$IF file/download != ""}}<br><br>
+           <div class="shortdescription_border">
            <table class="shortdescription"><thead>
            <tr>
              <th>Titel</th>
@@ -123,7 +122,7 @@
              {{$IF file/download/source-license != ""}}<th>Lizenz</th>{{$/IF}}
              {{$IF file/download/payment-license != ""}}<th>Lizenz</th>{{$/IF}}
            </tr>
-           </thead><tbody>
+           </thead><tbody>          
            {{$FOREACH download: file/download}}
            {{$IF download/start-category != ""}}
              </tbody>
@@ -148,7 +147,7 @@
              {{$IF download/payment-license != ""}}<td>{{$WRITE download/payment-license}}</td>{{$/IF}}
            </tr>
            {{$/FOREACH}}
-           </tbody></table>
+           </tbody></table></div>
            {{$IF file/prevent-details != "YES"}}
            <div class="long_description">
              {{$FOREACH download: file/download}}
@@ -170,6 +169,7 @@
                  {{$/IF}}
                  {{$WRITE download/final-content}}
                  <br><br><a href="{{$WRITE file/download-dir"/"download/file}}">Download ({{$WRITE download/size_KB}} KB)</a>
+                 <a style="position:absolute;right: 2em" href="#top">{{$IF language/id=="en"}}back{{$ELSE}}zur Übersicht{{$/IF}}</a>
                </div>
              </div>{{$/FOREACH}}
            </div>
@@ -182,23 +182,18 @@
            {{$WRITE language/pagelastchange}}: {{$WRITE $lastModified}}
         </div>
       </div>	
-      <div id="border_right">&nbsp;</div>
 
+      
+    <div id="border_right">&nbsp;</div>
 	  <div id="header">
 	    <img src="img/design/borderbluedown.gif" id="border_right_down_img" alt="">
 	    <div id="header_left_background">
 	      <div id="border_title_top">&nbsp;</div>
 	    </div>
 	  </div>
-      <div id="border_navi_top"></div>
-
-      <div id="border_middle"><img src="img/design/borderbluemiddleleft.gif" id="border_middle_left_img" alt=""></div>
-      <!--[if IE]>
-      <div id="border_middle_end"></div>
-      <![endif]-->
-
+    <div id="border_navi_top"></div>
+    <div id="border_middle"><img src="img/design/borderbluemiddleleft.gif" id="border_middle_left_img" alt=""></div>
     <div id="border_left"></div>
-
 	  <div id="footer">
        <div id="border_middle_up_div"></div>
 	  </div>
@@ -206,5 +201,5 @@
 	  <p><img src="img/design/borderbluemiddle_up.gif" id="border_middle_up_img" alt="">
 	     <img src="img/design/borderbluedown_left.gif" id="border_right_left_img" alt="">
 	     <img src="img/design/borderblueup_right.gif" id="border_left_up_right" alt=""></p>
-    </body>
+    <!--[if IE 7]></div><![endif]--> </body>
 </html>

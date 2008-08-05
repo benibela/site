@@ -20,32 +20,34 @@ The language codes "de" and "en" specify which languages are supported. If one o
     <payment>Shareware</payment>
     <source>-</source>
     <size_KB>ca. 1300</size_KB>
-    <content language="de">VideLibri ist ein Programm zur automatischen Verwaltung der in den drei Bibliotheken Düsseldorfs (und ungetestet der Fachhochschulbibliothek von Bochum) ausgeliehen Bücher, das unter anderem dafür sorgt, das man praktisch nie mehr die Abgabe vergisst.&lt;br>
-Es hat folgende Eigenschaften:</content>
+    <content language="de">VideLibri ist ein Programm zur automatischen Verwaltung der in den drei Bibliotheken Düsseldorfs ausgeliehen Bücher, das unter anderem dafür sorgt, das man praktisch nie mehr vergisst, die Bücher in der Stadtbücherei abzugeben.&lt;br>
+    Besonders praktisch ist das Programm für Leute, die mehrere Konten bei verschiedenen Büchereien haben, da es die einzigste Möglichkeit ist automatisch alle ausgeliehenen Bücher auf einmal zu betrachten.&lt;br&gt;&lt;br&gt;
+Im einzelnen hat VideLibri folgende Features:</content>
     <content language="en">VideLibri manages books lend in public library, but only the ones of the German city Düsseldorf.</content>
     <features language="de">
-      <feature>Unterstützung für die Stadtbücherei, die Universitäts- und Landesbibliothek sowie die Fachhochschulbibliothek Düsseldorfs</feature>
-      <feature>Unterstützung für die Fachhochschulbibliothek Bochum (ungetestet)</feature>
-      <feature>Die Liste der ausgeliehenen Medien wird automatisch von den Internetseiten der Büchereien geladen.</feature>
+      <feature>Es können die Medien von mehreren Konten gleichzeitig betrachtet und verlängert werden</feature>
       <feature>Bald fällige Medien werden automatisch verlängert</feature>
-      <feature>Vor dem Ablauf der Leihfrist wird man vom Programm benachrichtigt</feature>
-      <feature>Es können die Medien auf mehreren Konten gleichzeitig betrachtet und verlängert werden</feature>
-      <feature>Die momentan ausgeliehenen Medien werden gespeichert, so dass man seine Ausleihen sehen kann, ohne dafür ins Internet zu müssen. (für Aktualisierungen muss man es aber natürlich schon)</feature>
-      <feature>Es kann nach beliebigen Medien gesucht werden</feature>
+      <feature>Vor dem endgültigeme Ablauf der Leihfrist wird man vom Programm benachrichtigt</feature>
+      <feature>Die Liste der ausgeliehenen Medien wird automatisch über die Internetseiten der Büchereien aktualisiert.</feature>
+      <feature>Die momentan ausgeliehenen Medien werden gespeichert, so dass man seine Ausleihen sehen kann, ohne dafür ins Internet zu müssen.</feature>
+      <feature>Es kann nach beliebigen (auch nicht ausgeliehenen) Medien gesucht werden</feature>
       <feature>VideLibri wird (je nach Einstellung) bei jedem Windowsstart minimiert in der Symbolleiste gestartet</feature>
-      <feature>Je nach Einstellungen werden alle jemals ausgeliehenen Medien gespeichert</feature>
+      <feature>Alle jemals ausgeliehenen Medien können gespeichert</feature>
       <feature>Es gibt eine Statistik über alle ausgeliehenen Medien</feature>
-      <feature>BibTex-Export für Literaturverzeichnisse.</feature>
+      <feature>BibTex-Export für die Erstellung von Literaturverzeichnisse.</feature>
       <feature>Automatisches Update</feature>
-      <feature>Links zu den einzelnen Homepages der Büchereien und der digi-bib</feature>
+      <feature>Links zu den Homepages der einzelnen Büchereien und der digi-bib</feature>
     </features>
-    <final-content>&lt;br&gt;
-      Besonders praktisch ist das Programm für Leute, die mehrere Konten bei verschiedenen Büchereien haben, da man dann alle ausgeliehenen Bücher auf einmal betrachten kann.&lt;br&gt;
-      Die automatischen Verlängerungen und Benachrichtigungen funktionieren natürlich nur, wenn das Programm auch gestartet wird, das heißt, wenn man den (standardmäßig aktiven) Autostart deaktiviert, muss man VideLibri also regelmäßig starten.&lt;br&gt;
-      Die kostenlose Sharewareversion zeigt nur jeweils 10 Medien und beim Starten ein Hinweisfenster an, die uneingeschränkte  Vollversion kostet 10€ (Selbstkostenpreis). &lt;br&gt;Wer in der Sharewareversion einen größeren Fehler findet und meldet, kann eine kostenlose Vollversion bekommen.
-
+    <final-content>&lt;br&gt;Es werden folgende Büchereien unterstützt:
+      &lt;ul>&lt;li>Die Stadtbüchereien Düsseldorf&lt;/li>
+      &lt;li>Die Fachhochschulbibliothek Düsseldorf&lt;/li>
+      &lt;li>Die Universitäts- und Landesbibliothek Düsseldorf&lt;/li>
+      &lt;li>(Ungetestet) die Fachhochschulbibliothek Bochum&lt;/li>
+      &lt;/ul>&lt;br&gt;
+      Die automatischen Verlängerungen und Benachrichtigungen funktionieren natürlich nur, wenn das Programm auch gestartet wird, das heißt, wenn man den (standardmäßig aktiven) Autostart deaktiviert, muss man VideLibri regelmäßig manuell starten.&lt;br&gt;
+      Die kostenlose Sharewareversion zeigt nur jeweils 10 Medien und jeden Monat beim Starten ein Hinweisfenster an, die uneingeschränkte  Vollversion kostet 10&amp;euro; (Selbstkostenpreis). &lt;br&gt;Wer in der Sharewareversion einen größeren Fehler findet und meldet, kann eine kostenlose Vollversion erhalten.
       &lt;br&gt;
-      Eine Übersicht über alle bisherigen Versionen und Änderungen findet man im &lt;a href="updates/videlibri/changelog.xml" target="_blank" class="popup-link">ChangeLog&lt;/a>
+      Eine Übersicht über alle bisherigen Versionen und Änderungen findet man im &lt;a href="updates/videlibri/changelog.xml" class="inline-popup">ChangeLog&lt;/a>. Außerdem gibt es eine Übersicht über &lt;a href="updates/videlibri/bugs.html" class="inline-popup">alle Fehler der aktuellen Version&lt;/a>.
       
       &lt;br>&lt;br>
     </final-content>
@@ -263,7 +265,7 @@ The <a href="bin/tools/source/fileparser.zip">source (17 KB)</a> is a typical De
     <payment>Freeware</payment>
     <source>open</source>
     <size_KB>708</size_KB>
-    <content language="de">Ein Programm, das ich im Rahmen meiner Facharbeit entwickelt habe und das die Konformation eines Moleküles über das Tetraedermodell und quantenchemische Formeln berechnen sollte.&lt;br>Im Allgemeinen funktioniert dies allerdings nicht, warum kann man in der &lt;a href="bin/others/facharbeit.zip">Facharbeit&lt;a> nachlesen.&lt;br>Man kann es allerdings benutzen, um schöne Lewisformel zu zeichnen und eine (meistens falsche) 3D-Ansicht zu betrachten.</content>
+    <content language="de">Ein Programm, das ich im Rahmen meiner Facharbeit entwickelt habe und das die Konformation eines Moleküles über das Tetraedermodell und quantenchemische Formeln berechnen sollte.&lt;br>Im Allgemeinen funktioniert dies allerdings nicht, warum kann man in der &lt;a href="bin/others/facharbeit.zip">Facharbeit&lt;/a> nachlesen.&lt;br>Man kann es allerdings benutzen, um schöne Lewisformel zu zeichnen und eine (meistens falsche) 3D-Ansicht zu betrachten.</content>
     <content language="en">This program is meant to be able calculate the conformation of a molecule, either with quanten chemistry calculations or with a very simple model.&lt;br>However, it doesn't work, you can read about the problems, in this &lt;a href="bin/others/facharbeit.zip">German text&lt;/a>.&lt;br>
     But you can use the program to draw Lewis structures and see the 3D structure of very simple molecules.
     </content>
@@ -395,7 +397,7 @@ They are like the GST-Builder bilingual and have a German and a English version.
   <download> 
     <title>WDLSSG</title>
     <file>wdlssg.zip</file>
-    <description_80 language="de">(Veralteter) WDL Editor für 3D-GameStudio</description_80>
+    <description_80 language="de">(Veralteter) WDL Editor für das 3D-GameStudio</description_80>
     <description_80 language="en">(Deprecated) WDL editor for the 3D-GameStudio</description_80>
     <language>de</language>
     <payment>Freeware</payment>

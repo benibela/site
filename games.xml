@@ -12,7 +12,7 @@
     <description_80 language="de">Pacmanclone mit Mäusen anstelle von Smileys.</description_80>
     <description_80 language="en">Help a mouse to collect cheese!</description_80>
     <language>de</language>
-    <payment>Shareware: 10 €</payment>
+    <payment>Shareware: 10 &amp;euro;</payment>
     <size_KB>591</size_KB>
     <content language="de"><![CDATA[Mausitanien ist ein typischer Pacmanclone. Man steuert mit den Pfeiltasten seine Spielfigur durch ein Labyrinth, um dabei Punkte zu sammeln. <br>
 Das besondere an Mausitanien ist, dass man, anstelle des üblichen Smileys, mit einer Maus im Labyrinth Käse sammeln muss, während man von 2 Katzen verfolgt wird. In späteren Leveln kommen noch eine Schlange und ein Gespenst als Feinde hinzu, die sich jeweils schneller bewegen, und somit gefährlicher sind.<br>
@@ -24,7 +24,7 @@ But Mausitanien isn't played with the usual smiley, You move a mouse which has t
 The game is relative simple because you cann't lose a life, but only points. <br>
 It has a two player mode in which 2 players sitting together at the PC move 2 mouses through the maze.<br>
 The shareware version contains 10 levels, 5 single player levels and 5 multi player levels, and a level editor with which you can create own levels.<br>
-The full version contains 40 levels, 20 single player levels and 20 multi player levels. It costs 10 &euro;, which you have to transfer to me when you want to get it.<br>To get my account number, write a mail to "benito [replace bracket with at] benibela.de</a>.]]></content>
+The full version contains 40 levels, 20 single player levels and 20 multi player levels. It costs 10 &euro;, which you have to transfer to me when you want to get it.<br>To get my account number, write a mail to "benito [replace bracket with at] benibela.de".]]></content>
     <screenshot>
       <title language="de">Spielansicht</title>
       <title language="en">In game view</title>
@@ -126,7 +126,8 @@ You can use the Casio Algebra FX 2.0 PLUS calculator to run this game, which is 
   <download> 
     <title language="de">Solitär</title>
     <title language="en">Solitaire</title>
-    <file>solitär.zip</file>
+    <id>solitaer</id>
+    <file>solitaer.zip</file>
     <description_80 language="de">Solitärklon für den Algebra FX 2+ Taschenrechner</description_80>
     <description_80 language="en">Clone of the Windows' solitaire game, running on the Algebra FX 2+ calculator.</description_80>
     <language>de, (en)</language>
@@ -140,7 +141,8 @@ You can use the Casio Algebra FX 2.0 PLUS calculator to run this game, which is 
   <download> 
     <title language="de">Bücherjagd</title>
     <title language="en">Bücherjagd</title>
-    <file>bücherjagd.zip</file>
+    <id>buecherjagd</id>
+    <file>buecherjagd.zip</file>
     <description_80 language="de">Hier müssen Bücher in der Bücherei gesucht werden</description_80>
     <description_80 language="en">Search books in a library!</description_80>
     <language>de</language>
@@ -156,7 +158,7 @@ You can use the Casio Algebra FX 2.0 PLUS calculator to run this game, which is 
     <screenshot>
       <title language="de">zu suchende und gefundenen Bücher</title>
       <title language="en">books to find and books found</title>
-      <fullfile>img/games/bücherjagd_1.gif</fullfile>
+      <fullfile>img/games/buecherjagd_1.gif</fullfile>
       <height>210px</height>
     </screenshot>
   </download>

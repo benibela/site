@@ -5,4 +5,4 @@ Disallow: /mail/
 Disallow: /scripte/
 Disallow: /koobtseug_de.php
 Disallow: /koobtseug_en.php
-Disallow: /updates
+Disallow: /bin/

@@ -2,9 +2,36 @@
   <description language="de">Newsarchiv von BeniBela online</description>
   <description language="en">news archive of BeniBela online</description>
   <keywords>BeniBela, Benito van der Zander, News</keywords>
-  <content language="de">&lt;p style="margin: 1em;margin-right:0em">Neuere News finden sich auf der &lt;a href="index.html">Startseite&lt;/a>.&lt;/p></content>
-  <content language="en">&lt;p style="margin: 1em;margin-right:0em">More recent news you can find on the &lt;a href="index_en.html">entry page&lt;/a>.&lt;p></content>
+  <content language="de">&lt;p style="margin: 1em;margin-right:0em">Neuere News finden sich auf der &lt;a href="index.html#top">Startseite&lt;/a>.&lt;/p></content>
+  <content language="en">&lt;p style="margin: 1em;margin-right:0em">More recent news you can find on the &lt;a href="index_en.html#top">entry page&lt;/a>.&lt;p></content>
   <news>
+    <new date="4. Juni 2007"><text>
+    Es gibt jetzt die Version 0.906 von VideLibri, die einen für FHB-Benutzer kritischen Fehler korrigiert.
+    </text></new>
+    <new date="12. Mai 2007"><text>Es gibt jetzt die Version 0.905 von VideLibri, die einige Fehler korrigiert.</text></new>
+    <new date="22. April 2007"><text>
+    Die Seite wurde überarbeitet und die Speicherung in xml mit meiner Sprache &lt;a href="tools_de.html#jaxmlp.zip">JAXMLP&lt;/a> enthält jetzt praktisch keine Redunanz mehr.&lt;br>
+Außerdem habe ich meine &lt;a href="others_de.html#facharbeit.zip">Facharbeit&lt;/a> und das damit verbundene Programm hochgeladen, woran ich von Weihnachten bis Ostern gearbeitet habe.&lt;br>
+Und es gibt jetzt auch die Programme der Bwinf-Runden hier, womit ich mich die restliche Zeit (vorher, nacher) beschäftigt habe, weshalb es auch so selten etwas neues auf der Seite gibt.</text>
+<text language="en">The site structure has been improved, using my xml processing language &lt;a href="tools_de.html#jaxmlp.zip">JAXMLP&lt;/a>.&lt;br>And there are some German only ressources, my submissions to the national informatic contest BWInf and a text about the calculation of molecule conformations.
+</text></new>
+<new date="24. März 2007"><text>
+Die Seite wird jetzt auch im Internet Explorer 5 und (leider nur ungezoomt) im IE 7. &lt;br>Wer das Internet mit einem vernünftigen Programm benutzen will, sollte sich aber trotzdem mal den &lt;a href="http://www.mozilla-anleitung.de/Mozilla/101Dinge.php">FireFox&lt;/a> ansehen.</text></new>
+<new date="27. Februar 2007"><text>Zwei Fehler in VideLibri wurden gelöst, jetzt kann es auch wieder für die FHB benutzt werden.</text></new>
+<new date="17. Februar 2007"><text>
+Das Ausleihenverwaltungsprogramm &lt;a href="tools_de.html#videlibri">VideLibri&lt;/a> lässt sich jetzt als Betaversion herunterladen. (trotz Betastatus läuft es fast einwandfrei)
+</text></new>  
+<new date="1. Februar 2007"><text>
+Die Seite ist jetzt in einer Art Content-Management-System gespeichert. (Das sieht man zwar nicht, ist aber praktisch),&lt;br>Das letzte Jahr angegekündigte, Bücherverwaltungsprogramm dauert wohl noch ein bisschen länger, es ist zwar im Prinzip schon fertig, hat aber noch zu viele Fehler und ich zu wenig Zeit um sie zu beseitigen. Außerdem ist es in Lazarus programmiert, das Moment auch noch einen Haufen Fehler hat.
+</text></new>  
+<new date="15. Dezember 2006"><text>
+Nach langer Zeit gibt es mal wieder ein Update bezüglich Programmierung.&lt;br>
+Eine Klasse für das Parsen von &lt;a href="sources_de.html#rcmdline.zip">Kommandozeilenparameter&lt;/a>, eine für ein &lt;a href="sources_de.html#autoupdate.zip">automatisches Programmupdate&lt;/a> und einen kleinen IE-basierten &lt;a href="sources_de.html#simplebrowser.zip">Browser&lt;/a>, der über Kommandozeile gesteuert werden kann. Wie man sieht, sind dies alles bloß Programmteile, und zwar von meinem neuen Bücherei - Ausleihen - Verwaltungs - programmes (Videlibri), das es auch bald hier geben wird.&lt;br>
+Die Seite selbst ist auch leicht geändert, es gibt jetzt ein &lt;a href="oldnews_de.html#top">Newsarchiv&lt;/a> und die Links sind teilweise als "social bookmarks" auf &lt;a href="http://del.icio.us/BeniBela">del.icio.us&lt;/a> ausgelagert.
+</text><text language="en">Although the last change here has been more than 7 months ago, this site isn't dead. I have only been to busy to change anything here.&lt;br>
+However, today I have added some new support units (for programming, not gaming), a &lt;a href="sources_en.html#rcmdline.zip">command line parser&lt;/a>, an &lt;a href="sources_en.html#autoupdate.zip">online update class&lt;/a> and a &lt;a href="sources_en.html#simplebrowser.zip">simple browser&lt;/a> (the last one isn't a tool, because it is only usefull when used together with an own program).&lt;br>
+The site itself have been changed, too. There is now a &lt;a href="oldnews_en.html#top">news archive&lt;/a> (mainly for the German part, where more news exists) and most of the links are now social bookmarks on &lt;a href="http://del.icio.us/BeniBela">del.icio.us&lt;/a> (mainly the English links).</text>
+</new>  
     <new date="26. Oktober 2006"><text>Mein Chemiereferat zur &lt;a href="others_de.html#glaselektrode.zip">Glaselektrode&lt;/a> ist jetzt online.&lt;/p></text></new>
     <new date="27. April 2006"><text>Es gibt jetzt die nächste version von MathSys in der einige Fehler korrigiert sind. (Stark vergrößerte Sachen ließen sich nicht drucken, die Vorschau war verschoben und mit sich selbst multiplizierte Variablen wurden nicht gezeichnet). </text></new>
 
@@ -29,7 +56,7 @@ Das alte, externe Gästebuch wurde durch ein selbstprogrammiertes ersetzt, so da
 <new date="15.August 2005"><text>
 Ich habe die Seite komplett überarbeitet.&lt;br>
 Sie ist jetzt moderner und völlig Standard-kompatibel. (Das heißt das sie unter alten Browser nicht mehr funktioniert ;-), da aber alle Zugriffe nahezu nur von neueren Browsern kommen, ist es nicht so tragisch)&lt;br>
-Der Name der Seite wurde von "BeniBelas Seite" zu "BeniBela online" geändert, und sie wurde vollständig auf &lt;a href="index_en.html" lang="en">English&lt;/a> übersetzt.&lt;br>
+Der Name der Seite wurde von "BeniBelas Seite" zu "BeniBela online" geändert, und sie wurde vollständig auf &lt;a href="index_en.html#top" lang="en">English&lt;/a> übersetzt.&lt;br>
 In den nächsten Tagen, werden noch kleinere Updates folgen, um andere Programme oder Quellcodes hochzuladen, und um eventuell auftretende Probleme zu beheben.&lt;/p></text>
 <text language="en">This page was translated to English and it got a completely new design.&lt;br>
 In the next days there will be more updates which will contain other programs. &lt;br>

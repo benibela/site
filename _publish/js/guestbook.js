@@ -1,3 +1,6 @@
+function getObject(id){
+  return document.getElementById(id);
+}
 function boldClicked(){
   var box=getObject('entryBox');
   var button=getObject('boldBtn');

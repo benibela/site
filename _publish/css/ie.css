@@ -1,0 +1,12 @@
+/* Internet Explorer*/
+
+
+/* fix; to large shortdescription table */
+#outer_content {
+  overflow-x: hidden;
+}
+.shortdescription_border{
+  border-right:1em solid #FFFFDD;
+}
+
+

@@ -6,30 +6,33 @@ a:link, a:visited {
 	}
 #content a:link:after, #content a:visited:after {
    content: " (" attr(href) ") ";
-   font-size: 90%;
+   font-weight: normal;
+   font-size: 75%;
 }
-#header{display: none;}
-#footer{display: none;}
 html,body {
+  position: static;
   padding-top:0;
   padding-bottom:0;
+  max-height: none;
+  height: auto;
+  overflow: visible;
 }
-#title{
-  position: relative;
-  top: 0;
-  left:0em;
-  padding: 0 0 0 0;
-  background-color: white;
-  margin: 0 0 0 0;
+#wrapper {
+  position: static;
+  height: auto;
+  max-height: none;
 }
 #outer_content{
-  position: relative;
+  position: static;
   overflow: visible;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   left:0;
   top:0;
+  bottom: auto;
   background-color: white;
+  height:auto;
+  max-height:none;
 }
 #content{
   position: static;
@@ -40,6 +43,21 @@ html,body {
   top:0;
   background-color: white;
 }
+#title{
+  position: static;
+  top: 0;
+  left:0em;
+  padding: 0 0 0 0;
+  background-color: white;
+  margin: 0 0 0 0;
+}
+
+
+.untranslated .newstext{ display: block;}
+
+#header{display: none;}
+#footer{display: none;}
+
 #menu{display:none;}
 #header_left_background {display:none;}
 
