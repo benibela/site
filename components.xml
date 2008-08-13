@@ -23,10 +23,13 @@ It has these features:</content>
       <feature>Es können Trennlinien zwischen Zeilen und Spalten angezeigt werden.</feature>
       <feature>Zeilen können abwechselnd unterschiedliche Hintergrundfarben bekommen.</feature>
       <feature>Jeder Knoten kann mit einem Icon versehen werden und der Benutzer kann Teilbäume auf- und zuklappen.</feature>
-      <feature>Die Zeilen können automatisch sortiert werden</feature>
+      <feature>Die Zeilen können automatisch numerisch/lexikalisch sortiert werden</feature>
       <feature>Der Benutzer kann ohne Änderung der Indizes die Spalten verschieben. (Nur in Lazarus)</feature>
       <feature>Unabhängig von den Windows Common Controls</feature>
-      <feature>Läuft unter Delphi (hier nur mit BDS2006 getestet) und Lazarus</feature>
+      <feature>Läuft unter Delphi (getestet mit D4 und BDS2006) und Lazarus</feature>
+      
+      <feature>Spalten können linksbündig, rechtsbündig und zentriert sein</feature>
+      <feature>Es gibt eine Mozilla-ähnliche Suchleiste mit Hervorhebung des/aller Suchtreffer</feature>
     </features>
     <features language="en">
       <feature>It can show a tree together with columns</feature>
@@ -36,7 +39,7 @@ It has these features:</content>
       <feature>The lines can automatically be sorted</feature>
       <feature>The user can move the columns without a change of the indices(only in Lazarus)</feature>
       <feature>It is indepent of the Windows Common Controls</feature>
-      <feature>Works with Delphi (there only tested with BDS2006) and Lazarus</feature>
+      <feature>Works with Delphi (tested with D4 and BDS2006) and Lazarus</feature>
     </features>
     
     <screenshot>
