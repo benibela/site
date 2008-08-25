@@ -4,8 +4,33 @@
   <keywords language="de">Delphi, non VCL Canvas, TCVirus, Huffman, Komprimierung, Units, Komponenten, Kommandozeile, Parser, Browser, automatisches Update</keywords>
   <keywords language="en">Delphi, Non VCL Canvas, TCVirus, Huffman, compression, Units, components, auto update, browser, command line reader, parser</keywords>
   <content language="de"><![CDATA[Auf dieser Seite sind Quellcodes, die man in eigenen Projekten benutzten kann, aufgelistet, <a href="components_de.html#top">Delphikomponenten</a> sind jedoch auf einer eigenen Seite zu finden. Alle mit der MPL-Lizenz, GPL-Lizenz oder BSD-Lizenz versehenen Quellcodes dürfen beliebig verändert und vertrieben werden. <br>Bei der MPL und GPL müssen aber Änderungen veröffentlicht werden und bleiben unter der MPL lizenziert, bei der GPL gilt dies auch für Erweiterungen.<br>Steht eine Datei unter mehreren Lizenzen, darf man eine davon wählen.<br> Genauere und rechtskräftige Informationen sollten den Dateien bei liegen.<br>Braucht jemand unbedingt eine andere Lizenz, kann er mir eine E-Mail schicken.]]></content>
-  <content language="en"><![CDATA[You can find all my published sources usable in your projects. Only <a href="components_en.html#top">components</a> for Delphi are on another page. All sources published under the terms of the MPL-, GPL- or BSD-License can you change and distribute in any way you want. <br>But in case of MPL or GPL you must publish changes and you mustn't change the license. In case of GPL you must also publish extensions and the source of every program (from you) using it under the terms of the GPL.<br>Is any of the files published under the terms of more than one license, you can choos one of them. <br> You can find more and legally valid information in the source files.]]></content>
+  <content language="en"><![CDATA[You can find all my published sources usable in your projects. Only <a href="components_en.html#top">components</a> for Delphi are on another page. All sources published under the terms of the MPL-, GPL- or BSD-License can you change and distribute in any way you want. <br>But in case of MPL or GPL you must publish changes and you mustn't change the license. In case of GPL you must also publish extensions and the source of every program (from you) using it under the terms of the GPL.<br>Is any of the files published under the terms of more than one license, you can choose one of them. <br> You can find more and legally valid information in the source files.]]></content>
   <download-dir>bin/sources</download-dir>
+  <download> 
+    <title>HTML-Parser</title>
+    <file>htmlparser.zip</file>
+    <id>htmlparser.zip</id>
+    <description_80 language="de">Ein Template-basierter HTML-Parser</description_80>
+    <description_80 language="en">A template based html parser.</description_80>
+    <prog-language>FPC</prog-language>
+    <source-license>GPL</source-license>
+    <content language="de">Dieser HTML Parser benutzt zum Auswerten einer html-Seite eine in HTML-ähnlichen Sprache geschriebene Templatedatei. So kann man praktischerweise die zu parsende Datei mit minimalen Änderungen als Template benutzen.</content>
+    <content language="en">This html parser interprets the html data using a template written in a html like language. So you can just use the file to parse as template with only small changes. </content>
+    <features language="de">
+      <feature>Templates lassen sich einfach erstellen/updaten</feature>
+      <feature>Es kann alle Teile der html Datei (außer Kommentaren) lesen</feature>
+      <feature>Kann mit regulären Ausdrücken kombiniert werden</feature>
+      <feature>Erlaubt Schleifen und Bedingungen</feature>
+      <feature>Es gibt eine Hilfedatei</feature>
+    </features>
+    <features language="en">
+      <feature>Templates can be easily created/updated</feature>
+      <feature>Can read all parts of the html file (except comments)</feature>
+      <feature>Can be combined with regular expressions</feature>
+      <feature>Allows loops and conditions</feature>
+      <feature>There is a help file</feature>
+    </features>
+  </download>
   <download> 
     <title>Non-VCL Canvas</title>
     <file>nvcanvas.zip</file>

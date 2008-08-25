@@ -3,8 +3,8 @@
   <description language="en">You can find components for Delphi on this page: A tree list view which shows a tree together with column items, a gauge combined with a color gradient and an edit box for numbers</description>
   <keywords language="de">Delphi, Komponenten, BeniBela, ListView, TreeView, TListView, TTreeView, TTreeListView, tree list view, Farbverlauf, Scrollbalken, Eingabefeld, Zahlen, download</keywords>
   <keywords language="en">Delphi, Components, tree view, list view, TTreeView, TListView, TTreeListView, tree list view, BeniBela, gauge, gradient, color, edit, box, numbers, download</keywords>
-  <content language="de"><![CDATA[Auf dieser Seite kann man Delphikomponenten herunterladen, die wegen der Versionsproblematik von Delphi bei Komponenten alle Open-Source sind. Alle mit der MPL-Lizenz, GPL-Lizenz oder BSD-Lizenz versehenen Komponenten dürfen beliebig verändert und vertrieben werden. <br>Bei der MPL und GPL müssen aber Änderungen veröffentlicht werden und bleiben unter der MPL lizenziert, bei der GPL gilt dies auch für Erweiterungen.<br>Von der CC-Lizenz gibt es mehrere Versionen, ich verwende aber immer diejenige, die kommerzielle Verwendung verbietet und die Quellcodeveröffentlichung von Erweiterungen verlangt.<br>Steht eine Datei unter mehreren Lizenzen, darf man eine davon wählen.Genauere und rechtskräftige Informationen liegen den Dateien bei.<br>Zusätzliche Rechte für proprietäre Software erteile an bestimmte Personen per Mail (und nach eventueller Bezahlung).]]></content>
-  <content language="en"><![CDATA[You can find components for Delphi on this page. Everyone of them is open source. All sources published under the terms of the CC- (it gives more than one CC licence, but I only use one), GPL-, MPL-, or BSD-License you can change and distribute in any way you want. <br>But in case of MPL, GPL or CC you must publish changes and you mustn't change the license. In case of GPL and CC you must also publish extensions and the source of every program (from you) using it under the terms of the GPL. CC forbids also the creating of commercial software based on a component.<br>If any of the files is published under the terms of more than one license, you can choose one of them. <br> You can find more and legally valid information in the source files.]]></content>
+  <content language="de"><![CDATA[Auf dieser Seite kann man Delphikomponenten herunterladen, die wegen der Versionsproblematik von Delphi bei Komponenten alle Open-Source sind. Alle mit der MPL-Lizenz, GPL-Lizenz oder BSD-Lizenz versehenen Komponenten dürfen beliebig verändert und vertrieben werden. <br>Bei der MPL und GPL müssen aber Änderungen veröffentlicht werden und bleiben unter der MPL lizenziert, bei der GPL gilt dies auch für Erweiterungen.<br>Wer die Komponenten in einem proprietären Programm verwenden will, sollte mir eine <a href="impressum_de.html">E-Mail</a> schreiben..]]></content>
+  <content language="en"><![CDATA[You can find components for Delphi on this page. Everyone of them is open source. All sources published under GPL-, MPL-, or BSD-License you can change and distribute in any way you want. <br>But in case of MPL, GPL or CC you must publish changes and you mustn't change the license. In case of GPL you must also publish extensions and the source of every program (from you) using it under the terms of the GPL.<br> You can find more and legally valid information in the source files.]]></content>
   <download-dir>bin/components</download-dir>
   <download> 
     <title>TTreeListView</title>
@@ -12,7 +12,7 @@
     <id>treelistview</id>
     <description_80 language="de">Eine Verbindung von TListView und TTreeView, die einen Baum mit Spalten anzeigt.</description_80>
     <description_80 language="en">A combination of TListView and TTreeView drawing tree and column items.</description_80>
-    <source-license>CCNCSA</source-license>
+    <source-license>GPL</source-license>
     <size_KB>38</size_KB>
     <content language="de">Diese Komponente ist eine Mischung aus TTreeView und TTListView und dient dazu, einen Strukturbaum anzuzeigen, dessen Knoten weitere in Spalten sortierte Information enthalten können.&lt;br&gt;
 Sie hat folgende Features:</content>
@@ -24,12 +24,13 @@ It has these features:</content>
       <feature>Zeilen können abwechselnd unterschiedliche Hintergrundfarben bekommen.</feature>
       <feature>Jeder Knoten kann mit einem Icon versehen werden und der Benutzer kann Teilbäume auf- und zuklappen.</feature>
       <feature>Die Zeilen können automatisch numerisch/lexikalisch sortiert werden</feature>
+      <feature>Spalteneinträge können linksbündig, rechtsbündig und zentriert sein</feature>
       <feature>Der Benutzer kann ohne Änderung der Indizes die Spalten verschieben. (Nur in Lazarus)</feature>
-      <feature>Unabhängig von den Windows Common Controls</feature>
-      <feature>Läuft unter Delphi (getestet mit D4 und BDS2006) und Lazarus</feature>
-      
-      <feature>Spalten können linksbündig, rechtsbündig und zentriert sein</feature>
       <feature>Es gibt eine Mozilla-ähnliche Suchleiste mit Hervorhebung des/aller Suchtreffer</feature>
+      <feature>Unabhängig von den Windows Common Controls</feature>
+      <feature>Sollte auf allen von Lazarus unterstützten Betriebsystemen laufen (nur Windows getested)</feature>
+      <feature>Läuft unter Delphi (getestet mit D4 und BDS2006) und Lazarus</feature>      
+      <feature>Enthält Beispiel und HTML-Dokumentation</feature>
     </features>
     <features language="en">
       <feature>It can show a tree together with columns</feature>
@@ -37,9 +38,13 @@ It has these features:</content>
       <feature>It can paint dividing lines between rows and columns.</feature>
       <feature>Each node can get an icon and the user can collapse and expand it.</feature>
       <feature>The lines can automatically be sorted</feature>
+      <feature>The entries of the columns can be left aligned, right aligned or centered</feature>
       <feature>The user can move the columns without a change of the indices(only in Lazarus)</feature>
+      <feature>Contains a Mozilla like search bar</feature>
       <feature>It is indepent of the Windows Common Controls</feature>
+      <feature>It should work on every OS supported by Lazarus (only Windows tested)</feature>  
       <feature>Works with Delphi (tested with D4 and BDS2006) and Lazarus</feature>
+      <feature>There is an example and html documentation</feature>
     </features>
     
     <screenshot>
@@ -47,6 +52,18 @@ It has these features:</content>
       <fullfile>img/components/treelistview.gif</fullfile>
       <height>300px</height>
     </screenshot>
+  </download>
+  <download> 
+    <title>TSearchBar</title>
+    <file>searchbar.zip</file>
+    <id>searchbar</id>
+    <description_80 language="de">Eine Leiste, die den von Mozilla verwendeten Suchleisten ähnelt.</description_80>
+    <description_80 language="en">A Mozilla like search bar.</description_80>
+    <source-license>GPL</source-license>
+    <content language="de">Diese Suchleiste entspricht, bis auf fehlende Bilder, den von Mozilla verwendeten. &lt;br>
+    Sie ist nützlich, da sie einige Dinge automatisiert, die man leicht zu implementieren vergisst.</content>
+    <content language="en">This SearchBar looks and behaves like the ones used from Mozilla (except it doesn't contain pictures). &lt;br>
+    It is useful because it automates a lot of things you can easily forget to implement.</content>
   </download>
   <download> 
     <title>TBeniGrad</title>

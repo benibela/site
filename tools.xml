@@ -54,6 +54,7 @@ Im einzelnen hat VideLibri folgende Features:</content>
   </download> 
   <download> 
     <title>JAXMLP</title>
+    <id>jaxmlp</id>
     <file>jaxmlp.zip</file>
     <description_80 language="de">Eine XML Umwandlungssprache.</description_80>
     <description_80 language="en">Just another XML Processor language.</description_80>
@@ -72,6 +73,7 @@ Im einzelnen hat VideLibri folgende Features:</content>
       <feature>Nicht geänderte Dateien werden ignoriert.</feature>
       <feature>Der Zugriff auf XML-Elemente ist denkbar einfach.</feature>
       <feature>Dank Java läuft das Programm auf praktisch jedem System.</feature>
+      <feature>Erlaubt das Ausführen von externen Programmen</feature>
     </features>
     <features language="en">
       <feature>You can load multiple xml files.</feature>
@@ -80,6 +82,7 @@ Im einzelnen hat VideLibri folgende Features:</content>
       <feature>Unchanged files are ignored.</feature>
       <feature>You can use (even recursive) functions.</feature>
       <feature>The accessing of xml elements is really simple.</feature>
+      <feature>You can call additional programs</feature>
     </features>
   </download>
   <download> 
@@ -222,7 +225,7 @@ The GPL-licensed <a href="bin/tools/source/logics.zip">source (23 KB)</a> is a D
   </download>
   <download> 
     <title>FileParser</title>
-    <file>fileparser</file>
+    <file>fileparser.zip</file>
     <description_80 language="de">Ein einfacher Parser, der Schlüsselworte in mehreren Dateien ersetzt.</description_80>
     <description_80 language="en">A simple parser which replaces key words in some files.</description_80>
     <language>(de), en</language>

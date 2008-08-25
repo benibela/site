@@ -154,7 +154,9 @@
              <div class="long_desc_entry">
                <h3 class="long_desc_title"><a id="{{$$download-id}}" name="{{$$download-id}}" class="target">&nbsp;</a><a href="{{$WRITE file/download-dir"/"download/file}}">{{$WRITE download/title}}</a></h3>
                <div class="long_desc_license">{{$WRITE download/payment}}{{$WRITE download/source-license}}</div>
-               <div class="long_desc_size">{{$WRITE download/size_KB}} KB</div>
+                {{$CALL "ls -s _publish/"file/download-dir"/"download/file" | grep -o -E \\\"^ *[0-9.]*\\\"" >> downloadsize}}
+                {{$IF downloadsize == ""}}<b style="color:red;font-size:150%">FILE NOT FOUND</b>{{$/IF}}
+               <div class="long_desc_size">{{$WRITE downloadsize}} KB</div>
                <div class="long_desc_desc">
                  {{$WRITE download/content}}
                  {{$IF download/features != ""}}
@@ -168,8 +170,8 @@
                  </div>
                  {{$/IF}}
                  {{$WRITE download/final-content}}
-                 <br><br><a href="{{$WRITE file/download-dir"/"download/file}}">Download ({{$WRITE download/size_KB}} KB)</a>
-                 <a style="position:absolute;right: 2em" href="#top">{{$IF language/id=="en"}}back{{$ELSE}}zur Übersicht{{$/IF}}</a>
+                 <br><br><a href="{{$WRITE file/download-dir"/"download/file}}">Download ({{$WRITE downloadsize}} KB )</a>
+                 <a style="position:absolute;right: 2em" href="#top">{{$IF language/id=="en"}}jump to top{{$ELSE}}zur Übersicht{{$/IF}}</a>
                </div>
              </div>{{$/FOREACH}}
            </div>
