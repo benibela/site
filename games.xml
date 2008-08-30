@@ -13,7 +13,6 @@
     <description_80 language="en">Help a mouse to collect cheese!</description_80>
     <language>de</language>
     <payment>Shareware: 10 &amp;euro;</payment>
-    <size_KB>591</size_KB>
     <content language="de"><![CDATA[Mausitanien ist ein typischer Pacmanclone. Man steuert mit den Pfeiltasten seine Spielfigur durch ein Labyrinth, um dabei Punkte zu sammeln. <br>
 Das besondere an Mausitanien ist, dass man, anstelle des üblichen Smileys, mit einer Maus im Labyrinth Käse sammeln muss, während man von 2 Katzen verfolgt wird. In späteren Leveln kommen noch eine Schlange und ein Gespenst als Feinde hinzu, die sich jeweils schneller bewegen, und somit gefährlicher sind.<br>
 Das Spiel ist relativ einfach zu spielen, da man, sollte man von einem der Feinde erwischt werden, keine Leben, sondern lediglich Punkte verliert. Es gibt auch einen Zweispielermodus, wo zwei Spieler zusammen am selben Computer spielen können.<br>
@@ -47,7 +46,6 @@ The full version contains 40 levels, 20 single player levels and 20 multi player
     <description_80 language="en">A clone of bomberman which is played over a network and contains computer opponents.</description_80>
     <language>de</language>
     <payment>Freeware</payment>
-    <size_KB>354</size_KB>
     <content language="de"><![CDATA[Bei diesem Bombermanclone steuert man einen schwebenden Luftpanzer mit dem man versuchen muss, die anderen Spieler abzuschießen.<br>
 Wird man getroffen, verliert man ein Leben, und derjenige der als letzter noch Leben hat, hat gewonnen.
 Es gibt 9 unterschiedliche Waffen, die den Gegner und die Kisten jeweils unterschiedlich stark verletzen, wie beispielsweise Bomben, Gewehre, Flammenwerfer, oder Spezialbomben, die sich bewegen lassen, oder später gesprengt werden.<br>
@@ -89,7 +87,6 @@ More information you can find in the help file (it is on German).]]></content>
     <description_80 language="en">Protect the WTC by shooting down planes before they hit and destroy it!</description_80>
     <language>de</language>
     <payment>Freeware</payment>
-    <size_KB>997</size_KB>
     <content language="de"><![CDATA[Bei diesem Spiel steuert man 4 Flaks, von denen 3 um das WTC verteilt sind, und ein viertes auf dem WTC auf einer Verbindung zwischen den beiden Türmen fährt. Mit diesen Flaks muss man anfliegende Flugzeuge abschießen, um das WTC zu retten.<br>
 Die Steuerung ist in der Datei 0liesmich.doc beschrieben.]]></content>
     <content language="en"><![CDATA[In this game you control 4 missile launchers with you have to use to protect the WTC. 3 are placed arond the WTC and the fourth can move between the top side of the towers.<br>
@@ -116,7 +113,6 @@ You can select missile launcher by pressing the keys 1, 2, 3, 4. You can rotate 
     <description_80 language="en">Clone of snake, running on the Algebra FX 2+ calculator.</description_80>
     <language>de, (en)</language>
     <payment>Freeware</payment>
-    <size_KB>11</size_KB>
     <content language="de">Das Spiel ist ein typischer Snakeklon, in dem man mit einer Schlange, die weder sich selbst noch Wände berühren darf, Objekte aufsammeln muss. Es  hat 14 Level und eine Highscoreliste.&lt;br>
                            Um das Spiel zu spielen, kann man den Casio Algebra FX 2.0 PLUS Taschenrechner benutzen, in dessen Skriptsprache es auf ihm programmiert wurde, wobei es aber eventuell auch auf Vorgängerversionen läuft. Außerdem braucht man eine Übertragungssoftware, wenn man die Programme nicht abtippen will. </content>
     <content language="en">The game is a typical snake clon in which you have to collect food with a snake that is not allowed to touch anything else. It has 14 levels and a high score list.&lt;br>
@@ -132,7 +128,6 @@ You can use the Casio Algebra FX 2.0 PLUS calculator to run this game, which is 
     <description_80 language="en">Clone of the Windows' solitaire game, running on the Algebra FX 2+ calculator.</description_80>
     <language>de, (en)</language>
     <payment>Freeware</payment>
-    <size_KB>14</size_KB>
     <content language="de">Dieses Spiel ist wie das Solitär von Windows, man muss unsortierte Karten von verdeckten Stapel auf vier Zielstapel sortieren und es gibt auch einen Reservestapel, aus dem man beliebige Karten ziehen kann.&lt;br>Um das Spiel zu spielen, kann man den Casio Algebra FX 2.0 PLUS Taschenrechner benutzen, in dessen Skriptsprache es auf ihm programmiert wurde, wobei es aber eventuell auch auf Vorgängerversionen läuft. Außerdem braucht man eine Übertragungssoftware, wenn man die Programme nicht abtippen will.</content>
     <content language="en">This game is like the solitaire of windows&lt;br>You have to sort cards you can take from unsorted hidden stacks. There is also a reserve stack where you can take arbitrary cards from.&lt;br>
 You can use the Casio Algebra FX 2.0 PLUS calculator to run this game, which is the one the game has been written on. However, it is possible that it works on older versions, too. And of course you need a transfer software in case you doesn't want to typewrite the source.</content>
@@ -147,7 +142,6 @@ You can use the Casio Algebra FX 2.0 PLUS calculator to run this game, which is 
     <description_80 language="en">Search books in a library!</description_80>
     <language>de</language>
     <payment>Freeware</payment>
-    <size_KB>1400</size_KB>
     <content language="de">In diesem Spiel steuert man eine Figur durch einen zufällig generierten 2D Level, der aus Bücherregalen und Suchcomputer besteht. &lt;br>
     Die Aufgabe kautet nun bestimmte Bücher zu finden, indem man die Regale einzeln durchsucht. Zur Hilfe können die Suchcomputer benutzt werden, die einem verraten, wo sich die Bücher befinden.&lt;br>
     Diese kann man aber, bis man einen Schraubenzieher und Computerchip gefunden hat, nur einmalig nutzen.&lt;br>
@@ -172,7 +166,6 @@ You can use the Casio Algebra FX 2.0 PLUS calculator to run this game, which is 
     <description_80 language="en">A simple vertically-scrolling game</description_80>
     <language>de</language>
     <payment>Freeware</payment>
-    <size_KB>464</size_KB>
     <content language="de"><![CDATA[Bei diesem abwärts scrollenden Raumschiffshooter besteht das einzigste Ziel darin, den jeweils aktuellen Level zu durchqueren, ohne mit Minen zu kollidieren oder von feindlichen Schiffen abgeschossen zu werden.<br>
 Das Spiel ist ziemlich schwer zu spielen, was vor allem an der physikalischen ziemlich korrekten Steuerung, und den schwachen Schilden des Schiffes liegt.]]></content>
     <content language="en"><![CDATA[In this game you will win when you have crossed a level and reached its end without being destroyed by mines or hostile firing space ships.<br>
@@ -197,7 +190,6 @@ It is very difficult to play this game because ship is moved realistically and h
     <description_80 language="en">A educational game for young children.</description_80>
     <language>de</language>
     <payment>Freeware</payment>
-    <size_KB>2550</size_KB>
     <content language="de"><![CDATA["Das Kinderzimmer" ist ein Vorschullernprogramm, welches im Jahr 2001 mit dem Sonderpreis "Softwaresystemtechnik" von Jugend Forscht ausgezeichnet wurde. <br>Der Spieler muss ein virtuelles Kinderzimmer aufräumen. Dazu muss er die  auf dem Boden liegenden Teile anklicken, und ein Lernspiele zu Bereichen, wie logisches Denken und visuelle Wahrnehmung, lösen. Bei Erfolgt landet das Teil im Regal, ansonsten muss man es erneut probieren. <br>
                Dieses Spiel ist Shareware und die Vollversion kostet 10 Euro. Um die nötigen Erwerbsbedingungen, wie Kontonummer, zu erhalten, schreiben Sie bitte eine E-Mail an "benito [Klammer ist durch at ersetzen] benibela.de".]]></content>
     <content language="en"><![CDATA["Das Kinderzimmer" (= children's room) is a pre-school learn game.<br>The player has to tidy up a virtual children's room. To do this, he clicks on the toys laying on the floor. Then the game starts a sub game where he has to solve a problem. If he is successfull the toy is placed into a shelve, otherwise he has to do it again. <br>
@@ -223,7 +215,6 @@ It is very difficult to play this game because ship is moved realistically and h
     <description_80 language="en">A clone of pacman played with space ships, a snake and a crocodile</description_80>
     <language>de</language>
     <payment>Freeware</payment>
-    <size_KB>352</size_KB>
     <content language="de"><![CDATA[Scherli 2 ist ein typisches Pacmanspiel. Man läuft mit einem Smiley durch Labyrinthe, um Kekse aufzusammeln, während man von zwei Raumschiffen, einer Schlange und einem Krokodil gejagt wird.<br>
 Es gibt Teleporter, Fallen, Extraleben und einen Leveleditor, und man kann das Aussehen der Blockaden zwischen Balken und Ellipsen umschalten.<br>
 Mit dem mitgelieferten Leveleditor kann man auch eigene Level erzeugen.]]></content>
@@ -269,7 +260,6 @@ Es gibt recht viele Extrafeatures, wie Mauern, die nur von dem Spieler, oder nur
     <description_80 language="en">A logic game</description_80>
     <language>de</language>
     <payment>Freeware</payment>
-    <size_KB>136</size_KB>
     <content language="de"><![CDATA[Bei diesem Spiel gibt es eine Reihe von Stöcken, von denen man in jeder Runde 1, 2 oder 3 anklickt, um sie zu entfernen. Derjenige der den letzten Stock nimmt, hat verloren.<br>
 Man kann allein gegen den Computer oder zu zweit gegen einander spielen.]]></content>
     <content language="en"><![CDATA[In this game there is a row of sticks. You can remove 1, 2 or 3 of them. Then the computer or another player also removes some of the sticks. Then it is your turn. <br>
@@ -281,5 +271,55 @@ The one who gets the last stick has lost the game.]]></content>
       <height>209px</height>
     </screenshot>
   </download>
+  
 
+  <download> 
+    <title>Benworm</title>
+    <file>benworm.zip</file>
+    <id>benworm</id>
+    <description_80 language="de">Zweispieler Snakeklon.</description_80>
+    <description_80 language="en">Clone of Snake</description_80>
+    <language>de</language>
+    <payment>Freeware</payment>
+    <content language="de">Das ist ein üblicher Snakeklon mit zwei Spielern (Mensch oder Computer), bei dem man durch Kristall einsammeln länger wird. Man darf durch sich selbst hindurch fahren, aber nicht den Gegner oder die Wand berühren. Leider flackert es alle 5 Sekunden unschön.</content>
+    <content language="en">This is a typical clone of snake. You can play it against the computer or someone else and you have to collect crystals to grow. If you touch the opponent or the border (not yourself) you lose. Sadly it flickers badly every 5 seconds.</content>
+  </download>
+
+
+  <download> 
+    <title>In der Galaxis</title>
+    <file>indergalaxis.zip</file>
+    <id>indergalaxis</id>
+    <description_80 language="de">2D Raumschiffspiel mit mehreren Räumen.</description_80>
+    <description_80 language="en">A 2d space ship game with different rooms</description_80>
+    <language>de</language>
+    <payment>Freeware (GPL)</payment>
+    <content language="de">In diesem Spiel steuert man ein Raumschiff durch mehrere von Laserbarrieren abgetrennte Räume und muss in jeden Rätsel lösen, zum Beispiel Minen abschießen oder Objekte aufsammeln. &lt;br> Ein Problem bei diesem Programm ist, dass das es manchmal abstürzt und ich die Programmierung daran aufgegeben habe, als ich den Fehler nicht finden konnte. (aber man kann den ersten Level spielen) </content>
+    <content language="en">In this game you move a space ship through different rooms which are separated by laser blockades. In the rooms you can have to solve riddles like collecting something or destroying mines. The title means translated "In the galaxy" and there are many messages spoken in German.&lt;br> The problem with this program is that it sometimes crashes. And because I couldn't find the error, I stopped the development of it. (but you can play the first level) </content>
+    <screenshot>
+      <title language="de">Spielstart</title>
+      <title language="en">game start</title>
+      <fullfile>img/games/indergalaxis.gif</fullfile>
+      <height>182px</height>
+    </screenshot>
+  </download>
+  
+  <download> 
+    <title>PB</title>
+    <file>pbspiel.zip</file>
+    <id>pbspiel</id>
+    <description_80 language="de">Unfertiges Strategiespiel</description_80>
+    <description_80 language="en">Unfinished RTS game</description_80>
+    <language>de</language>
+    <payment>Freeware (GPL)</payment>
+    <content language="de">Ein nie fertig gestelltes Strategiespiel, das in der Zukunft spielen sollte. Man kann nur herumfahren und Gebäude bauen. </content>
+    <content language="en">A never finished strategy game which should play in the future. You can only drive around and create buildings.</content>
+    <screenshot>
+      <title language="de">einige Gebäude</title>
+      <title language="en">some buildings</title>
+      <fullfile>img/games/pbspiel.gif</fullfile>
+      <height>299px</height>
+    </screenshot>
+  </download>
+  
 </file>

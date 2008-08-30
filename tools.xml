@@ -350,7 +350,7 @@ They are like the GST-Builder bilingual and have a German and a English version.
   <download> 
     <title>MatheFix</title>
     <file>mathefix.zip</file>
-    <description_80 language="de">Ein kleines Malprogramm, das Bilder automatisch als Textur gekachelt darstellt.</description_80>
+    <description_80 language="de">Ein Mathematikprogramm zu Primzahlen und Teilbarkeit.</description_80>
     <description_80 language="en">A mathematics program about divisible and prime numbers</description_80>
     <language>de</language>
     <payment>Freeware</payment>

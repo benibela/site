@@ -7,6 +7,43 @@
   <content language="en"><![CDATA[You can find all my published sources usable in your projects. Only <a href="components_en.html#top">components</a> for Delphi are on another page. All sources published under the terms of the MPL-, GPL- or BSD-License can you change and distribute in any way you want. <br>But in case of MPL or GPL you must publish changes and you mustn't change the license. In case of GPL you must also publish extensions and the source of every program (from you) using it under the terms of the GPL.<br>Is any of the files published under the terms of more than one license, you can choose one of them. <br> You can find more and legally valid information in the source files.]]></content>
   <download-dir>bin/sources</download-dir>
   <download> 
+    <title>Farbauswahldialog</title>
+    <file>farbe.zip</file>
+    <id>farbe</id>
+    <description_80 language="de">Ein Farbauswahldialog mit RGB- und HLS-Auswahlmöglichkeiten</description_80>
+    <description_80 language="en">A color select dialog with hls- and rgb-mode.</description_80>
+    <prog-language>FPC</prog-language>
+    <source-license>Delphi</source-license>
+    <content language="de">Dieser Farbauswahl ähnelt dem Windowsstandarddialog, bietet aber mehr Möglichkeiten:</content>
+    <content language="en">This color select dialog is similar to the default one, but has more possibilities: </content>
+    <features language="de">
+      <feature>Es werden alle Komponenten von RGB und HLS angezeigt.</feature>
+      <feature>Man kann in einem Farbverlauf eine beliebige Komponente von RGB/HLS ändern</feature>
+      <feature>Diese Komponente wird sowohl in Abhängigkeit von den beiden anderen angezeigt wie auch unabhängig</feature>
+      <feature>Die beiden anderen Komponenten können in einem 2D-Farbverlauf ausgewählt werden</feature>
+      <feature>Dieser wird jeweils in Abhängigkeit der anderen Komponente angezeigt</feature>
+      <feature>Zusätzlich kann man eine Liste von änderbaren Farben anzeigen</feature>
+    </features>
+    <features language="en">
+      <feature>All components of rgb and hls are shown.</feature>
+      <feature>You can change any component of rgb/hls in a color gradient</feature>
+      <feature>This component is shown depending of the other two as well as independent</feature>
+      <feature>You can change the other two components in a two-dimensional gradient</feature>
+      <feature>This one is drawn depending on the first component</feature>
+      <feature>Additional you can enable a list of colors to change</feature>
+    </features>
+    <screenshot>
+      <title>example</title>
+      <fullfile>img/sources/farbe.jpg</fullfile>
+      <height>173px</height>
+    </screenshot>
+    <screenshot>
+      <title>example</title>
+      <fullfile>img/sources/farbe2.jpg</fullfile>
+      <height>173px</height>
+    </screenshot>
+  </download>
+  <download> 
     <title>HTML-Parser</title>
     <file>htmlparser.zip</file>
     <id>htmlparser.zip</id>
@@ -64,7 +101,7 @@ The most important features are:]]></content>
     <title>BBUtils</title>
     <file>bbutils.zip</file>
     <id>bbutils</id>
-    <description_80 language="de">Häufig benötigte Funktionen, die eínem bei FPC fehlen.</description_80>
+    <description_80 language="de">Häufig benötigte Funktionen, die einem bei FPC fehlen.</description_80>
     <description_80 language="en">Often needed functions missing in FPC.</description_80>
     <prog-language>FPC</prog-language>
     <source-license>GPL</source-license>
