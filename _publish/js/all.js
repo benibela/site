@@ -101,6 +101,19 @@ function openInlinePopup(href,idnr){
   closediv.href="javascript:closeInlinePopup()";
   closediv.appendChild(document.createTextNode("schließen"));
   
+  var classicdiv = document.createElement("a");
+  //classicdiv.style.fontWeight="bold";
+  classicdiv.style.position="absolute";
+  classicdiv.style.left="2em";
+  classicdiv.style.bottom="-1em";
+  classicdiv.style.marginBottom="-5px";
+  classicdiv.style.border="1px solid blue";
+  classicdiv.style.color="red";
+  classicdiv.style.backgroundColor="#FFFFFF";
+  classicdiv.href=href;
+  classicdiv.appendChild(document.createTextNode("vergrößern"));
+  
+  
   var newdiv = document.createElement("div");
   newdiv.style.overflow="visible";
   newdiv.style.position="absolute";
@@ -123,6 +136,7 @@ function openInlinePopup(href,idnr){
   
   newdiv.appendChild(newpage);//document.createTextNode(href));
   newdiv.appendChild(closediv);//document.createTextNode(href));
+  newdiv.appendChild(classicdiv);//document.createTextNode(href));
   var body=document.body;
   if (!body) body = document.documentElement;
   body.appendChild(basediv);
@@ -147,13 +161,14 @@ function openInlinePopup(href,idnr){
 function pageFocus(){
   contentdiv=document.getElementById("content");
   if (!contentdiv) return;
-  for(var i=0; i<contentdiv.childNodes.length; i++){
-    var link = contentdiv.childNodes[i];
-    if(link.nodeName=='A'){
-        link.focus();
-        break;
+  if (window.location.href.indexOf("#") <= -1) 
+    for(var i=0; i<contentdiv.childNodes.length; i++){
+      var link = contentdiv.childNodes[i];
+      if(link.nodeName=='A'){
+          link.focus();
+          break;
+      }  
     }
-  }
   for (var i=0;i<document.links.length;i++) {    
     if (document.links[i].className=="inline-popup")  {
       inlinePopupLinks+=1;
