@@ -47,11 +47,86 @@ Im einzelnen hat VideLibri folgende Features:</content>
       Die automatischen Verlängerungen und Benachrichtigungen funktionieren natürlich nur, wenn das Programm auch gestartet wird, das heißt, wenn man den (standardmäßig aktiven) Autostart deaktiviert, muss man VideLibri regelmäßig manuell starten.&lt;br&gt;
       Die kostenlose Sharewareversion zeigt nur jeweils 10 Medien und jeden Monat beim Starten ein Hinweisfenster an, die uneingeschränkte  Vollversion kostet 10&amp;euro; (Selbstkostenpreis). &lt;br&gt;Wer in der Sharewareversion einen größeren Fehler findet und meldet, kann eine kostenlose Vollversion erhalten.
       &lt;br&gt;
-      Eine Übersicht über alle bisherigen Versionen und Änderungen findet man im &lt;a href="updates/videlibri/changelog.xml" class="inline-popup">ChangeLog&lt;/a>. Außerdem gibt es eine Übersicht über &lt;a href="updates/videlibri/bugs.html" class="inline-popup">alle Fehler der aktuellen Version&lt;/a>.
+      Eine Übersicht über alle bisherigen Versionen und Änderungen findet man im &lt;a href="updates/videlibri/changelog.xml" class="inline-popup">ChangeLog&lt;/a>. <!--Außerdem gibt es eine Übersicht über &lt;a href="updates/videlibri/bugs.html" class="inline-popup">alle Fehler der aktuellen Version&lt;/a>.-->
       
       &lt;br>&lt;br>
     </final-content>
   </download> 
+
+  <download> 
+    <title>API Manager</title>
+    <file>apim.zip</file>
+    <id>apim</id>
+    <version>3.0.0</version>
+    <description_80 language="de">Ein Programm zum Lesen und Setzen der Eigenschaften anderer Programme</description_80>
+    <description_80 language="en">A program which can read and write properties of other programs.</description_80>
+    <language>de, en</language>
+    <payment>Freeware</payment>
+    <source>GPL</source>
+    <content language="de"><![CDATA[APIM ist ähnlich wie Spyxx und <a href="http://assarbad.net/">EDA</a> ein Programm mit dessen Hilfe man Attribute von anderen Anwendungen lesen und setzen kann.<br>
+Im Gegensatz zu EDA ist APIM mehr auf das Verändern von Attributen ausgelegt, als auf das reine Auslesen.<br>
+Der <a href="bin/tools/source/apim.zip">Quellcode</a> steht unter der GPL.<br>
+APIV hat folgende Features:]]></content>
+    <content language="en"><![CDATA[APIM is like Spyxx and <a href="http://assarbad.net/">EDA</a> a program which can read and set attributes of other windows, but in comparison to it APIM has much more features for changing them.
+    <br>The <a href="bin/tools/source/apim.zip">source</a> is GPLed.
+    <br>APIM has got these functions: 
+]]></content>
+    <features language="de">
+      <feature>Auflisten von Fenstern und Prozessen.</feature>
+      <feature>Fensterauswahl per Maus und Miniaturbildschirm</feature>
+      <feature>Es kann Fenster (de)aktivieren und (un)sichtbar machen.</feature>
+      <feature>Es kann Fenster maximieren, minimieren und wiederherstellen.</feature>
+      <feature>Es kann von Fenstern die (Extended) Window Styles und Class Styles lesen und setzen.</feature>
+      <feature>Es kann von Fenstern den Classnamen auslesen.</feature>
+      <feature>Es kann von Fenstern den WindowText auslesen und setzen (auch von Passwortfeldern) .</feature>
+      <feature>Es kann von Fenstern die Position und die Größe auslesen und setzen.</feature>
+      <feature>Es kann von Fenstern das Parent auslesen und setzen.</feature>
+      <feature>Es kann von Fenstern den Prozess, den Thread und den Besitzer auslesen.</feature>
+      <feature>Es kann Fenster beenden und zerstören.</feature>
+      <feature>Es kann an Fenster beliebige Nachrichten schicken.</feature>
+      <feature>Es kann die Priorität von Prozessen auslesen und ändern.</feature>
+      <feature>Es kann Prozesse beenden und ihre Speicherbelegung anzeigen.</feature>
+      <feature>Es kann einige Systeminformationen auslesen.</feature>
+      <feature>Es kann Passwörter auslesen (nur unter 9x Systemen) (&lt;em>Achtung: Manche Virenscanner halten es deshalb für Spyware&lt;/em>).</feature>
+      <feature>Es stellt alle Zahlen wahlweise hexadezimal oder dezimal dar.</feature>
+      <feature>Es kann Fenster transparent machen und den Transparentstatus auslesen (funktioniert nur unter 2000/XP/(Vista?)).</feature>
+      <feature>und mehr</feature>
+     </features>
+    <features language="en">     
+      <feature>It can list all top level windows or processes.</feature>
+      <feature>You can select windows with the mouse and a mini-screen.</feature>
+      <feature>It can enable and disable windows.</feature>
+      <feature>It can hide and show windows.</feature>
+      <feature>It can set the windows on "stay on top".</feature>
+      <feature>It can restore, maximize and minimize windows.</feature>
+      <feature>It can read and write the window text (even from password edits), the parent window, the (extended) window styles and class styles of windows.</feature>
+      <feature>It can read the class name of a window.</feature>
+      <feature>It can read the owner, process and thread of a window.</feature>
+      <feature>It can read and write the position and size of a window.</feature>
+      <feature>It can close and destroy windows.</feature>
+      <feature>It can send messages to windows.</feature>
+      <feature>It can close processes.</feature>
+      <feature>It can get and set the priority of processes.</feature>
+      <feature>It can read and write some properties of the system.</feature>
+      <feature>It can read passwords (only on 9x systems) (&lt;em>Attention:  This causes some scanner to identify it as spyware&lt;/em>).</feature>
+      <feature>It can read and set the status of the transparent effects of windows (only on 2000/XP/(Vista?)).</feature>
+      <feature>and more</feature>    
+    </features>
+    <screenshot>
+      <title language="de">Fensterliste</title>
+      <title language="en">list of top level windows</title>
+      <fullfile>img/tools/apiv.gif</fullfile>
+      <height>351px</height>
+    </screenshot>
+    <screenshot>
+      <title language="de">Prozessliste</title>
+      <title language="en">list of processes</title>
+      <fullfile>img/tools/apiv2.gif</fullfile>
+      <height>351px</height>
+    </screenshot>
+  </download>
+
+
   <download> 
     <title>JAXMLP</title>
     <id>jaxmlp</id>
@@ -125,84 +200,6 @@ Im einzelnen hat VideLibri folgende Features:</content>
     <content language="en">You can use this program for addition, subtraction and multiplication of long integers on the Casio Algebra FX 2.0 Plus calculator. (Perhaps it also works on older models)</content>
   </download>
 
-  <download> 
-    <title>APIV</title>
-    <file>apiv.zip</file>
-    <description_80 language="de">Ein Programm zum Lesen und Setzen der Eigenschaften anderer Programme</description_80>
-    <description_80 language="en">A program which can read and write properties of other programs.</description_80>
-    <language>de</language>
-    <payment>Freeware</payment>
-    <source>-</source>
-    <size_KB>228</size_KB>
-    <content language="de"><![CDATA[APIV ist ähnlich wie <a href="http://assarbad.net/">EDA</a> ein Programm mit dessen Hilfe man Attribute von anderen Anwendungen lesen und setzen kann.<br>
-Im Gegensatz zu EDA ist APIV mehr auf das Verändern von Attributen ausgelegt, als auf das reine Auslesen.<br>
-APIV hat folgende Features:]]></content>
-    <content language="en"><![CDATA[APIV is like <a href="http://assarbad.net/">EDA</a> a program which can read and set attributes of other windows, but in comparison to it APIV has much more features for changing them.<br>APIV has got this functions: (be careful: windows doesn't mean Microsoft Windows):    
-]]></content>
-    <features language="de">
-      <feature>Es kann alle Top-Level-Fenster auflisten.</feature>
-      <feature>Es kann Fenster an einer bestimmten Position auf dem Bildschirm finden.</feature>
-      <feature>Es hat dafür zwei verschiedene Fenstermarkierungstechniken.</feature>
-      <feature>Es kann Fenster auf dem Bildschirm fixieren.</feature>
-      <feature>Es kann Fenster (de)aktivieren.</feature>
-      <feature>Es kann Fenster (un)sichtbar machen.</feature>
-      <feature>Es kann Fenster maximieren, minimieren und wiederherstellen.</feature>
-      <feature>Es kann von Fenstern die (Extended) Window Styles und Class Styles lesen und setzen.</feature>
-      <feature>Es kann von Fenstern den Classnamen auslesen.</feature>
-      <feature>Es kann von Fenstern den WindowText auslesen und setzen.</feature>
-      <feature>Es kann von Fenstern die ID-Nummer des dazugehörigen Prozesses und Threads auslesen.</feature>
-      <feature>Es kann von Fenstern den ParentWnd auslesen und setzen.</feature>
-      <feature>Es kann von Fenstern den Handle des Owners lesen.</feature>
-      <feature>Es kann von Fenstern die Position und die Größe auslesen und setzen.</feature>
-      <feature>Es kann Fenster beenden und zerstören.</feature>
-      <feature>Es kann an Fenster Nachrichten schicken.</feature>
-      <feature>Auf einem kleinen Monitorabbild kann man Windowsfenster auswählen.</feature>
-      <feature>Es kann alle Prozesse auffeaturesten.</feature>
-      <feature>Es kann Prozesse beenden.</feature>
-      <feature>Es kann die Priorität von Prozessen auslesen und ändern.</feature>
-      <feature>Es kann einige Systeminformationen auslesen und setzen.</feature>
-      <feature>Es stellt alle Zahlen wahlweise hexadezimal oder dezimal dar.</feature>
-      <feature>Es kann alle Auffeaturestungen periodisch aktuafeaturesieren.</feature>
-      <feature>Es kann Passwörter auslesen (nur unter 9x Systemen).</feature>
-      <feature>Es kann Fenster transparent machen und den Transparentstatus auslesen (funktioniert nur unter 2000/XP/(Vista?)).</feature>
-      <feature>Es verfügt über eine recht große, deutsche Hilfe. (Zum Aufrufen muss man zweimal auf das [?] auf der Titelleiste kfeaturecken).</feature>
-     </features>
-    <features language="en">     
-      <feature>It can create a list with all top level windows or processes.</feature>
-      <feature>It can find windows at a position on the screen.</feature>
-      <feature>It has two different ways for selecting windows to find them better.</feature>
-      <feature>It can set the windows on "stay on top".</feature>
-      <feature>It can enable and disable windows.</feature>
-      <feature>It can hide and show windows.</feature>
-      <feature>It can restore, maximize and minimize windows.</feature>
-      <feature>It can read and write the window text, the parent window, the (extended) window styles and class styles of windows.</feature>
-      <feature>It can read the class name of a window.</feature>
-      <feature>It can read the handle of the owner of a window.</feature>
-      <feature>It can read the id of the process and of the thread a window belongs to.</feature>
-      <feature>It can read and write the position and size of a window.</feature>
-      <feature>It can close and destroy windows.</feature>
-      <feature>It can send messages to windows.</feature>
-      <feature>It displays a small image of the screen where you can select windows.</feature>
-      <feature>It can close processes.</feature>
-      <feature>It can get and set the priority of processes.</feature>
-      <feature>It can read and write some properties of the system.</feature>
-      <feature>It can read passwords (only on 9x systems).</feature>
-      <feature>It can read and set the status of the transparent effects of windows (only on 2000/XP/(Vista?)).</feature>
-      <feature>and more</feature>    
-    </features>
-    <screenshot>
-      <title language="de">Fensterliste</title>
-      <title language="en">list of top level windows</title>
-      <fullfile>img/tools/apiv.gif</fullfile>
-      <height>287px</height>
-    </screenshot>
-    <screenshot>
-      <title language="de">Prozessliste</title>
-      <title language="en">list of processes</title>
-      <fullfile>img/tools/apiv_proc.gif</fullfile>
-      <height>301px</height>
-    </screenshot>
-  </download>
   <download> 
     <title>Logics</title>
     <file>logics.zip</file>
