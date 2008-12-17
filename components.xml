@@ -111,8 +111,8 @@ Dadurch kann man die Komponente als Fortschrittsbalken benutzen. </content>
   <download> 
     <title>TZahlBox</title>
     <file>zahlbox.zip</file>
-    <description_80 language="de">An edit box for numbers.</description_80>
-    <description_80 language="en">Ein Eingabefeld für Zahlen.</description_80>
+    <description_80 language="en">An edit box for numbers.</description_80>
+    <description_80 language="de">Ein Eingabefeld für Zahlen.</description_80>
     <source-license>BSD</source-license>
     <prog-language>Delphi</prog-language>
     <size_KB>3</size_KB>
