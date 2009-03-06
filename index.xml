@@ -6,7 +6,15 @@
   <prevent-content-title>YES</prevent-content-title>
   <content>&lt;h2>News&lt;/h2></content>
     <news>
-      <new date="18. Okt 2008"><text language="de">
+      <new date="01. Mar 2009"><text language="de">
+         Vor einiger Zeit habe ich angefangen Texte und ein Buch mit LaTeX zu schreiben und habe dafür den Editor Texmaker genommen, da es der einzige platform-unabhängige, open-source Editor war, den ich finde konnte. Da der einige Fehler enthält, habe ich in einige kleine Patch erstellt, die dann immer größer wurden, bis sie schließlich zu dem Fork &lt;a href="http://texmakerx.sourceforge.net">TexMakerX&lt;/a> (auf Sourceforge) geführt haben. Zu den wichtigsten Feature, die ich hinzugefügt habe, gehört interaktive Rechtschreibprüfung, Codefaltung und eine Textanalyse.&lt;br>
+         Auf dieser Seite hier habe ich dagegen nur den Übersichtstext unten mal wieder aktualisiert und, dank eines Versionskontrollsystems, das Datum der Newsnachricht vor dieser richtig gestellt. (da stand nämlich noch 18. Okt) (Korrektur: Das VCS lag falsch, aber glücklicherweise hatte ich noch mein CMS)
+      </text><text language="en">
+        Some time ago I started to write texts and even a book in LaTeX. Therefore I searched a platform-independent, open-source editor, and found only Texmaker. &lt;br>
+        But since he has some bugs, I created some small patches, which got bigger and bigger, until they finally lead to the fork &lt;a href="http://texmakerx.sourceforge.net">TexMakerX&lt;/a> (on Sourceforge). The most important features I added are, interactive spell checking, code folding and a text analyse.&lt;br>
+         On this web page I only updated the overview text below and corrected the date of the last news from 18.Okt to 27.Nov. (version control systems are really useful...) (correction: The date of the VCS was wrong, but my CMS got it right).
+      </text></new>    
+      <new date="07. Nov 2008"><text language="de">
         Es gibt jetzt eine &lt;a href="sources_de.html#bbutils">Übersetzungunit&lt;/a> für FPC-Dateien (wird fürs Compilern von APIM benötigt) und einen verbesserten &lt;a href="sources_de.html#htmlparser.zip">HTML-Auswerter&lt;/a>, der auch optionale Elemente unterstützt.&lt;br>
         Und außerdem eine neue Videlibriversion, welche auch ein Konto der FHB ohne ausgeliehene Medien verarbeiten kann (wobei man dann natürlich sowieso kein Ausleihverwaltungsprogramm benötigt)
       </text><text language="en">
@@ -95,22 +103,29 @@ Da die Stadtbücherei ihren WebOPAC geändert hat, gibt es nun wieder eine neue 
 </text></new>
   </news>
   <final-content>&lt;br>&lt;br>&lt;h2>Übersicht&lt;/h2>
-Ich programmiere schon 9 Jahre, obwohl ich erst in der 12ten Klasse (Stand Mitte 2007) auf dem Gymnasium bin.&lt;br>
-Dies ist bereits meine vierte Homepage, aber die erste bilinguale. (siehe News)&lt;br>
-Hier kannst du kleine, von mir programmierte Spiele und Tools downloaden.&lt;br>
-Für diejenigen, die sich mehr fürs Programmieren selbst interessieren, gibt es offene Quellcodes und Komponenten für Delphi.&lt;br>
-Ich bin stark an Feedback interessiert, also schreibt mir &lt;a href="impressum_de.html#top">eine Mail&lt;/a>, oder tragt euch ins Gästebuch ein.
+  &lt;br>
+  Auf dieser Seite kann man einige von mir programmierte Spiele und Tools herunterladen. &lt;br>
+  Zudem gibt es nützliche Quellcodes und Komponenten, vorwiegend für Delphi und FreePascal. &lt;br>
+  &lt;br>
+  Ein paar Informationen über mich: Ich programmiere, seit ich zwölf bin (weshalb viele der Downloads auf dieser Seite sehr alt sind), mittlerweile bin ich 19 und studiere Informatik an der Heinrich-Heine-Universität Düsseldorf.(Stand 2009)&lt;br>
+  Ich habe mehrmals am Bundeswettbewerb Informatik teilgenommen, wo ich Preisträger und Bundessieger wurde, außerdem war ich im deutschen Team bei mehreren internationalen Informatikolympiaden (auch bei &lt;em>der&lt;/em> International Olympiad of Informatics)  und habe dort (leider nicht bei der) auch einige Medaillen gewonnen.&lt;br>
+  &lt;br>
+Es wäre schön, wenn ihr ins &lt;a href="koobtseug_de.php">Gästebuch&lt;/a> schreibt wie euch diese Seite und die Programme hier gefallen haben. Bei sonstigen Fragen könnte ihr mir auch gerne &lt;a href="impressum_de.html#top">eine Mail&lt;/a> schreiben.
 &lt;div style="text-align:center; margin-top: 2em;">
   &lt;img src="img/maus.gif" alt="Maus mit Käse"width="182" height="132">
 &lt;/div>
 </final-content>
 <final-content language="en">&lt;br>
 &lt;h2>Overview&lt;/h2>
-I have programmed for 9 years although I am only in the 12th class (2007) of a German high school.&lt;br>
-This is now my 4th page, but the first bilingual one. (compare the news)&lt;br>
-Here you can download small games and tools programmed by me.&lt;br>
-If you are interested in programming itself, you can also download sources and components for Delphi.&lt;br>
-I am very interested in getting feedback, so please write me &lt;a href="impressum_en.html#top">a mail&lt;/a> or make an entry in the guestbook.
+  &lt;br>
+  On this page you can download some games and tools I wrote. &lt;br>
+  There are also useful sources and components, mainly for Delphi and Free Pascal. &lt;br>
+  &lt;br>
+  Some information about me: I have programmed since I was twelve (that's why there are so many old downloads here), now I am 19 and study computer science at the Heinrich-Heine-Universität Düsseldorf. (2009)&lt;br>
+  I won several prices in the German national informatics competition and participated in different European and International Olympiads of Informatics. In the European ones I also won some medaills. &lt;br>
+  &lt;br>
+Here is a &lt;a href="koobtseug_en.php">guestbook&lt;/a> where you can tell me if you like or dislike something on this page. If you have any questions or suggestions you can also write me &lt;a href="impressum_en.html#top">a mail&lt;/a>.
+
 &lt;div style="text-align:center; margin-top: 2em;">
   &lt;img src="img/maus.gif" alt="mousing eating cheese"width="182" height="132">
 &lt;/div>
