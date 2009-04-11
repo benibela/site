@@ -124,6 +124,27 @@ The most important features are:]]></content>
       <feature>calculate Bernoulli statistics</feature>
     </features>
   </download>
+  <download>
+    <title>Diffreader</title>
+    <file>diffreader.zip</file>
+    <id>diffreader</id>
+    <description_80 language="de">Eine Unit zum Lesen und Schreiben von Unified Diffs.</description_80>
+    <description_80 language="en">A unit to read and write unified diffs.</description_80>
+    <prog-language>FPC</prog-language>
+    <source-license>GPL</source-license>
+    <content language="de">Mit dieser Unit kann man ein Unified Diff in ein strukturiertes Format einlesen, verarbeiten und wieder als gültiges Diff speichern</content>
+    <content language="en">You can use this unit to read a Unified Diff, do some work on its tree structure and save it finally. </content>
+    <features language="de">
+      <feature>Liest Unified Diffs für eine oder mehrere Dateien</feature>
+      <feature>Erzeugt gültige Diffs</feature>
+      <feature>Besitzt Funktionen um unnötige Daten zu entfernen (siehe mein Programm &lt;a href="tools_de.html#simplifydiff">Simplify Diff&lt;/a>)</feature>
+    </features>
+    <features language="en">
+      <feature>Reads Unified Diffs of one or many files</feature>
+      <feature>Creates valid diffs</feature>
+      <feature>Has functions to remove unnecessary data (see also &lt;a href="tools_en.html#simplifydiff">Simplify Diff&lt;/a>)</feature>
+    </features>
+  </download>
   <download> 
     <title>TCVirus</title>
     <file>cvirus.zip</file>

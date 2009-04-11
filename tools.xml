@@ -161,6 +161,37 @@ APIV hat folgende Features:]]></content>
     </features>
   </download>
   <download> 
+    <title>SimplifyDiff</title>
+	<id>simplifydiff</id>
+    <file title="Windows">simplifydiff.zip</file>
+	<file title="Linux">simplifydiff_linux.zip</file>
+	<file title="Source">source/simplifydiff.zip</file>
+    <description_80 language="de">SimplifyDiff entfernt alle unnötigen Daten wie Whitespace-Änderungen und Duplikate aus einem Diff.</description_80>
+    <description_80 language="en">SimplifyDiff remove all unnessecary lines from a diff file like modified white space or duplicates.</description_80>
+    <keywords>diff, whitespace</keywords>
+    <language>en</language>
+    <payment>Freeware</payment>
+    <source>GPL</source>
+    <content language="de">Dieses Kommandozeilentool ist nützlich, wenn man häufig Unified Diffs erhält, die zum größten Teil aus Whitespace-Änderungen bestehen. </content>
+    <content language="en">This tool is useful if you often receive unified diffs which consists mostly of changed whitespace</content>
+    <features language="de">
+      <feature>Einlesen des Diffs über Stdin und Ausgabe des reduzierten über Stdout.</feature>
+      <feature>Aufspüren von Zeilen, die zwar als verändert gekennzeichnet sind, aber trotzdem identisch sind (auch wenn sie durch Leerzeilen getrennt sind)</feature>
+      <feature>Entfernen von identischen Zeilen, unveränderten Chunks und leeren Dateien.</feature>
+      <feature>Entfernen von Whitespace-Änderungen wie Leerzeichen oder Tabs</feature>
+      <feature>Verarbeitet Diffs für eine/mehrere Datei und speichert sie als gültige Diffs</feature>
+      <feature>Beachtet nur die Diffdatei und funktioniert daher auch wenn die als identisch markierten Zeilen vom Original abweichen (im Gegensatz zu z.B.: TortoiseMerge)</feature>
+    </features>
+    <features language="en">
+      <feature>It reads the diff file from stdin and prints its result to stdout.</feature>
+      <feature>Finds lines which are identical but stored as modified, even if they are separated by other lines</feature>
+      <feature>Removes identical lines, unmodified chunks and empty files.</feature>
+      <feature>Removes modified whitespace like spaces or tabs</feature>
+      <feature>Works with Unified Diffs of one/more files and writes valid diffs</feature>
+      <feature>Only looks at the diff file itself and therefore works even if lines marked as identical are different to the original (in contrast to tools like TortoiseMerge)</feature>
+    </features>
+  </download>
+  <download> 
     <title>RegStealth 0.01</title>
     <file>regstealth.zip</file>
     <description_80 language="de">RegStealth ersetzt die Windowsregistry durch xml-Dateien.</description_80>
