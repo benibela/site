@@ -69,6 +69,51 @@
     </features>
   </download>
   <download> 
+    <title>Diagram-Tools</title>
+    <file>diagram.zip</file>
+    <id>diagram</id>
+    <description_80 language="de">Eine Diagrammkomponente, basierend auf einem Model/View-System</description_80>
+    <description_80 language="en">A diagram component based on a model/view system.</description_80>
+    <prog-language>FPC/Lazarus</prog-language>
+    <source-license>GPL</source-license>
+    <content language="de">Diese Unit zur Anzeige eines Diagrammes folgt einem ähnlichen Model/View-Konzept wie QT: Es gibt eine View-Komponente, welches die in einem Model gespeicherten Daten anzeigt und eine dazugehörige, abstrakte Modelklasse.&lt;br>
+	Dies ist sehr viel flexibler als der traditionelle Weg, bei welchem die Daten der anzeigenden Komponente direkt zugeordnet sind.&lt;br>
+	Features:</content>
+    <content language="en">This diagram drawing unit follows a model/view concept like qt: There is a view component responsible for showing the data, and a model class storing them.&lt;br>
+	This is much more flexible than the traditional way, where the data is handled within the viewing class.&lt;br>
+	Features:</content>
+    <features language="de">
+      <feature>Model/View-Konzept mit automatische Synchronisation zwischen Views, welche identische Models zeigen</feature>
+      <feature>Füllen mit horizontalem/vertikalen Farbverlauf und unterschiedliche Linien/Punktstyles</feature>
+      <feature>Interpolation durch Geraden oder Splines möglich</feature>
+      <feature>Die Diagrammwerte können je nach Einstellung vom Benutzer verändert werden</feature>
+	  <feature>Mehrere mögliche Achsen und Punktreihen mit samt einer Legende für letztere</feature>
+	  <feature>Automatische Bereichswahl, Verarbeitung von Fließkommawerten</feature>
+	  <feature>Standardmodels, mit Punktlisten, zyklischen Listen und einem Model zur Verknüpfung anderer Modelle</feature>
+      <feature>Es gibt eine Hilfedatei</feature>
+    </features>
+    <features language="en">
+      <feature>Model/view-concept with automatical synchronisation between different views showing the same model</feature>
+      <feature>Filling with horizontal/vertical color gradient and different line/point-styles</feature>
+      <feature>Interpolation using linear lines or splines</feature>
+      <feature>The diagram data can be modified by the user if wanted</feature>
+	  <feature>Multiple axis and point rows as well as a legend naming the latter</feature>
+	  <feature>Automatical calculation of the view range and support for floats</feature>
+	  <feature>Standardmodels with lists of points, cyclic lists, and a model to merge other ones</feature>
+      <feature>There is a help file</feature>
+    </features>
+    <screenshot>
+      <title>grid like</title>
+      <fullfile>img/sources/diagram2.png</fullfile>
+      <height>304px</height>
+    </screenshot>
+    <screenshot>
+      <title>filled</title>
+      <fullfile>img/sources/diagram1.png</fullfile>
+      <height>302px</height>
+    </screenshot>
+  </download>
+  <download> 
     <title>Non-VCL Canvas</title>
     <file>nvcanvas.zip</file>
     <description_80 language="de">Eine Konvertierung des Delphi-Canvas nach Non-Vcl.</description_80>

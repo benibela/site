@@ -4,7 +4,7 @@
   <keywords language="de">Delphi, download, Freeware, Shareware, Tools</keywords>
   <keywords language="en">Delphi, APIV, download, freeware</keywords>
   <content language="de"><![CDATA[Alle hier vorgestellten Programme laufen unter allen Windowsversionen (> 3.11), sofern es nicht (bei FileSim und -Blow) anders angegeben ist. <br>
-Die Sprachkürzel "de" und "en" an einem Programm geben an, in welchen Sprachen es verfügbar ist. Ist eines der beiden eingeklammert, so ist nur die Dokumentation in dieser Sprache verfügbar. Bei einem Open Source Programm steht in der rechten Spalte die Abkürzung des Namens der Lizenze, die für den Quellcode gewählt wurde, ansonsten steht dort ein Minus.]]></content>
+Die Sprachkürzel "de" und "en" an einem Programm geben an, in welchen Sprachen es verfügbar ist. Ist eines der beiden eingeklammert, so ist nur die Dokumentation in dieser Sprache verfügbar. Bei einem Open Source Programm steht in der rechten Spalte die Abkürzung des Namens der Lizenz, die für den Quellcode gewählt wurde, ansonsten steht dort ein Minus.]]></content>
 <content language="en"><![CDATA[Every tool published on this page is able to run on any Windows system (> 3.11), if there is no contradiction mentioned. (FileSim and -Blow) <br>
 The language codes "de" and "en" specify which languages are supported. If one of it is in breaks, the documentation exists in this language, not the program. By a open source program, the abbreviation of the name of the licence under whose terms the source is distributed stands in the right column, otherwise there is a minus.]]></content>
   <download-dir>bin/tools</download-dir>
@@ -126,6 +126,45 @@ APIV hat folgende Features:]]></content>
     </screenshot>
   </download>
 
+  <download> 
+    <title>Sun Simulator</title>
+    <file>sunsimulator.zip</file>
+    <id>sunsimulator</id>
+    <description_80 language="de">Ein Programm, das die Helligkeit und den Farbton des Bildschirms gemäß dem natürlichen Tagesverlauf steuert</description_80>
+    <description_80 language="en">This program  changes the brightness and color of the monitor according to the natural course</description_80>
+    <language>de, en</language>
+    <payment>Freeware</payment>
+    <source>-</source>
+    <content language="de">In einer natürlichen Umgebung (im Freien) ändert sich der Farbton des Lichtes je nach Uhrzeit und beeinflusst dabei körperliche Prozesse (z.B.: Steuerung der inneren Uhr, Aufmerksamkeit). Der Computerbildschirm hat jedoch üblicherweise immer dieselbe Helligkeit und stört deshalb den normalen Biorhytmus. &lt;br>
+	Sun-Simulator ändert nun die Einstellungen der Grafikkarte zeitlich, so dass die Farbe des Bildschirms wieder  einigermaßen mit der des Sonnenlichtes übereinstimmt.&lt;br>Features:</content>
+   <content language="en">In a natural environment (outdoors) the light changes it shade of color during the day and controls biological processes (e.g. the sense of time). However, the computer monitor always has the same shade of color and  disturbs therefore the biorhythms.&lt;br>
+   Sun-Simulator solves this problem by altering the settings of the graphic card with the course of day and year, so that the monitor becomes more similar to the sun light. &lt;br>
+   Features:</content>
+    <features language="de">
+	  <feature>Standardeinstellung entspricht ungefähr dem Sonnenlicht</feature>
+	  <feature>Einfache grafische Steuerung der Werte</feature>
+      <feature>Zeitabhängige Einstellung für Gamma, Helligkeit und Kontrast</feature>
+	  <feature>Beachtet Tages- und Jahresverlauf</feature>
+	  <feature>Unabhängige oder identische Werte für Rot, Grün und Blau</feature>
+	  <feature>Testbild, Farbzuordnungsgraph und unterschiedliche Farbprofile</feature>
+     </features>
+    <features language="en">     
+	  <feature>default settings matches  the sun light approximately</feature>
+	  <feature>Simple graphical control of the color settings</feature>
+      <feature>Time-depending options for gamma, brighness and contrast</feature>
+	  <feature>Respects time of the day and of the year </feature>
+	  <feature>Independent values for red, green and blue</feature>
+	  <feature>test image, mapping graph and user-defined color profiles</feature>
+    </features>
+    <screenshot>
+      <fullfile>img/tools/sunsimulator1.png</fullfile>
+      <height>253px</height>
+    </screenshot>
+    <screenshot>
+      <fullfile>img/tools/sunsimulator2.png</fullfile>
+      <height>253px</height>
+    </screenshot>
+  </download>
 
   <download> 
     <title>JAXMLP</title>
