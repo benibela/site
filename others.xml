@@ -15,7 +15,7 @@
     <payment-license>Freeware</payment-license>
     <size_KB>10</size_KB>
     <content language="de">Dieses Javaskriptprogramm setzt im Browser Farben in ein Raster. Es sollte direkt hier angezeigt werden:&lt;br> &lt;br></content>
-    <content language="en">This script puts color into a raster. You should now see it here:&lt;br> &lt;br></content>
+    <content language="en">This script puts color into a raster. You should  see it here now:&lt;br> &lt;br></content>
     <final-content>
       &lt;script type="text/javascript" src="bin/others/colorMap.js">&lt;/script>
     </final-content>

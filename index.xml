@@ -11,13 +11,13 @@
 		 Außerdem habe ich dafür eine &lt;a href="sources_de.html#diagram">Diagrammkomponente&lt;/a> geschrieben, die Gleitkommazahlen-Reihen unterschiedlich darstellen kann. Sie benutzt ein Model/View-System (da ich mich viel mit QT beschäftig habe), das im ersten Moment ziemlich verblüffend wirkt. Z.B.: Kann man in zwei unterschiedlichen Fenstern immer dieselben Punkte synchronisiert anzeigen und in einem noch eine weitere Reihe hinzufügen.
       </text><text language="en">
 	     There is now a new program: &lt;a href="tools_en.html#sunsimulator">Sun-Simulator&lt;/a> which changes the brightness and shade of color of the monitor during the day and year, so that its light matches the sunlight.&lt;br>
-		 Additional I wrote a &lt;a href="sources_en.html#diagram">diagram component&lt;/a> for it which shows float points in multiple ways. It is based a model/view system (because I use qt a lot at the moment) which can be used to create interesting effects very easily. E.g.: you can synchronize some points rows across different windows and add some other rows in one of them at the same time.
+		 Additional I wrote a &lt;a href="sources_en.html#diagram">diagram component&lt;/a> for Lazarus which shows float points in multiple ways. It is based on a model/view system (because I use qt a lot at the moment) which can be used to create interesting effects very easily. E.g.: you can synchronize the data points across different windows and add some other points in one of them at the same time.
       </text></new>    
 	  <new date="09. Apr 2009"><text language="de">
 	     Ein Problem, wenn man Opensource-Software schreibt ist, dass man häufig Patches erhält, die ziemlich unbrauchbar sind, weil sie zu 95% aus Whitspaceänderungen bestehen. Daher habe ich ein (unter Linux und Windows laufendes) &lt;a href="tools_de.html#simplifydiff">Kommandozeilentool namens Simplifydiff&lt;/a> geschrieben, welches alle unnötigen Daten entfernt.&lt;br>
          Außerdem werden ab jetzt alle Gästebucheintrag, welche von der Heuristik als Spam erkannt werden &lt;em>ohne Backup&lt;/em> gelöscht. Bisher habe ich zur Sicherheit immer noch eine Kopie per Mail erhalten, aber da unter den letzten tausend Einträgen sowieso kein echter Beitrag war, ist das wohl unnötig. (Ebenfalls unnötig sind übrigens die Spameinträge, das Gästebuch hat nämlich schon immer noindex, nofollow gesetzt!)
       </text><text language="en">
-	     A problem with writen open-source sofware is that you often receive patches which are completely useless, because they consists to 95 percent of changed whitespace. Therefore I wrote the command line tool &lt;a href="tools_en.html#simplifydiff">Simplifydiff&lt;/a> that removes all unnecessary data.&lt;br>
+	     A problem with writing open-source software is that you often receive patches which are completely useless, because they consists to 95 percent of changed whitespace. Therefore I wrote the command line tool &lt;a href="tools_en.html#simplifydiff">Simplifydiff&lt;/a> that removes all unnecessary data.&lt;br>
          And all entries in the guestbook which are spam according to the heuristic are now removed &lt;em>without a backup&lt;/em>. So far  I received a copy as mail, but since the last thousand entries were really spam, this seems to be useless.  (Actually the spam entries are also completely useless, because the guestbook has set the flags noindex, nofollow since the beginning!)
       </text></new>    
       <new date="01. Mar 2009"><text language="de">
@@ -25,7 +25,7 @@
          Auf dieser Seite hier habe ich dagegen nur den Übersichtstext unten mal wieder aktualisiert und, dank eines Versionskontrollsystems, das Datum der Newsnachricht vor dieser richtig gestellt. (da stand nämlich noch 18. Okt) (Korrektur: Das VCS lag falsch, aber glücklicherweise hatte ich noch mein CMS)
       </text><text language="en">
         Some time ago I started to write texts and even a book in LaTeX. Therefore I searched a platform-independent, open-source editor, and found only Texmaker. &lt;br>
-        But since he has some bugs, I created some small patches, which got bigger and bigger, until they finally lead to the fork &lt;a href="http://texmakerx.sourceforge.net">TexMakerX&lt;/a> (on Sourceforge). The most important features I added are, interactive spell checking, code folding and a text analyse.&lt;br>
+        But since he has some bugs, I created some small patches, which got bigger and bigger, until they finally lead to the fork &lt;a href="http://texmakerx.sourceforge.net">TexMakerX&lt;/a> (on Sourceforge). The most important features I added are, interactive spell checking, code folding and a text analysis.&lt;br>
          On this web page I only updated the overview text below and corrected the date of the last news from 18.Okt to 27.Nov. (version control systems are really useful...) (correction: The date of the VCS was wrong, but my CMS got it right).
       </text></new>    
       <new date="07. Nov 2008"><text language="de">
@@ -38,8 +38,8 @@
         Nach langer Zeit gibt es eine neue Version von APIV, meinem Programm zur Kontrolle anderer Fenster. Wegen einem möglichen Namenskonflikt heißt es jetzt allerdings &lt;a href="tools_de.html#apim">API Manager&lt;/a>. &lt;br> 
         Es gibt einige neue Features, die wesentliche Verbesserung ist aber die höhere Stabilität und Flexibilität. Die alte Version neigte dazu häufig nicht zu starten oder einfach abzustürzen, bei der neuen sollte dies nicht mehr passieren. Die Flexibilität kommt dadurch zustande, dass man mittels Docking die einzelnen Bestandteile des Programms einigermaßen beliebig anordnen kann. Dazu habe ich den GUI-Teil fast komplett neugeschrieben und nebenbei von Delphi nach Lazarus portiert. Außerdem ist der Quellcode jetzt ordentlich genug, dass ich das Programm unter die GPL stellen kann.
       </text><text language="en">
-        It took a long time, but now there is a new version of APIV, a program to control other ones. It is now called &lt;a href="tools_de.html#apim">API Manager&lt;/a> due to another program with the same name.  &lt;br> 
-        It has got some new features, but the most important improvement is that it is much more stable and flexible. The old version often crashed or doesn't start at all, no something like that shouldn't happen anymore. And it is flexible, because it supports docking which you can use to chose the  layout you want. It also supports automatically translations, so it has been translated into English. The GUI part is nearly completely rewritten and converted from Delphi to Lazarus. Furthermore the source is nice enough that I can publish it under the GPL.
+        It took a long time, but there is now a new version of APIV, a program to control other ones. It is now called &lt;a href="tools_de.html#apim">API Manager&lt;/a> due to another program with the same name.  &lt;br> 
+        It has got some new features, but the most important improvement is that it is much more stable and flexible. The old version often crashed or doesn't start at all, now something like that shouldn't happen anymore. And it is flexible, because it supports docking which you can use to choose the  layout you want. It also supports automatically translations, so it has been translated into English. The GUI part is nearly completely rewritten and converted from Delphi to Lazarus. Furthermore the source is nice enough that I can publish it under the GPL.
       </text></new>
       <new date="15. Okt 2008"><text language="de">
         Das neue &lt;a href="tools_de.html#videlibri">VideLibri 0.994&lt;/a> bringt einige kosmetische Verbesserungen.
@@ -51,13 +51,13 @@
       </text></new>
       <new date="3. Sep 2008"><text language="de">
       Es gibt ein neues Update für mein &lt;a href="components_de.html#treelistview">TreeListView&lt;/a>, welches die Grafikfehler behebt, die bei aktivieren XP-Themes und Suchleiste auftraten, wenn man es mit FPC oder Delphi ab Version 7 compiliert hatte (D4-6 haben funktioniert). Da das auch &lt;a href="tools_de.html#videlibri">VideLibri&lt;/a> betrifft und inzwischen die FHB ihre Seitenstruktur geändert hat, gibt es davon ebenfalls eine neue Version.
-      </text><text language="en">There is a new update for the &lt;a href="components_en.html#treelistview">TreeListView&lt;/a> which fixes some graphic issues with the XP-themes and FPC or Delphi 7 or higher (D4-6 has worked correct). </text>
+      </text><text language="en">There is a new update for the &lt;a href="components_en.html#treelistview">TreeListView&lt;/a> which fixes some graphic issues with the XP-themes and FPC or Delphi 7 or higher (D4-6 has worked correctly). </text>
       </new>    
       <new date="30. Aug 2008"><text language="de">
       Ich habe ein bisschen auf der Festplatte gekramt und einige uralt Projekte (von ca. 2000) ausgegraben: Das einzig nützliche ist ein etwas jüngerer &lt;a href="sources_de.html#farbe">erweiterter Farbauswahldialog&lt;/a>. Dann gibt es noch eine Sammlung von Windows-unabhängigen, &lt;a href="components_de.html#customcontrols">bunten Standardkomponenten.&lt;/a>.&lt;br>
       Damals habe ich ziemlich viele Spiele angefangen, als gibt es hier jetzt zum Einen einen kleinen &lt;a href="games_de.html#benworm">Snakeklon&lt;/a>. Zum anderen zwei unfertige Spiele: ein &lt;a href="games_de.html#indergalaxis">Raumschiffspiel&lt;/a> und ein &lt;a href="games_de.html#pbspiel">Strategiespiel&lt;/a>&lt;br>
       Außerdem gibt es ein kleineres Update für mein &lt;a href="components_de.html#treelistview">TreeListView&lt;/a> (danke an Bruce Christensen) sowie kritische Bugfixes für &lt;a href="tools_de.html#videlibri">VideLibri&lt;/a>.
-      </text><text language="en">I have looked a little bit around on my harddisk und digged out some old projects (from around 2000): The most useful is a younger &lt;a href="sources_en.html#farbe">extended color selection dialog&lt;/a>. Then there is a collection of Windows-independ &lt;a href="components_en.html#customcontrols">colorful standard components.&lt;/a>.&lt;br>
+      </text><text language="en">I have looked a little bit around on my harddisk und diged out some old projects (from around 2000): The most useful is a younger &lt;a href="sources_en.html#farbe">extended color selection dialog&lt;/a>. Then there is a collection of  &lt; href="components_en.html#customcontrols">colorful standard components.&lt;/a>.&lt;br>
       Because I started programming many games at that time, here is a small &lt;a href="games_en.html#benworm">clone of snake&lt;/a> as well as  two unfinished games: a &lt;a href="games_en.html#indergalaxis">space ship game&lt;/a> and a &lt;a href="games_en.html#pbspiel">RTS game&lt;/a>&lt;br>
       Furthermore there is a small update for the &lt;a href="components_en.html#treelistview">TreeListView&lt;/a> (thanks to Bruce Christensen).</text>
       </new>
@@ -73,7 +73,7 @@
       </text>
       <text language="en">
         I have modified the layout of this site, so that it  works probably stably in all browsers. You can now zoom the pages in IE 7, print in FireFox, search something and scroll using your keyboard.
-        &lt;br>Especially the possibility to search and scroll was difficult to implement, because the usual search functions don't work in a layout using fixed elements lying about the content. And if you put the content in a smaller container with scrollbar, the keyboard scrolling normally doesn't work. Here it works because every link refers to an anchor and a JavaScript function changes the focus to the content area when you visit this site from another one. But this is nasty and doesn't work on the first call if scripts are disabled. Has anyone found a method which doesn't need JavaScript?
+        &lt;br>Especially the possibility to search and scroll was difficult to implement, because the usual search functions don't work in a layout using fixed elements lying over the content. And if you put the content in a smaller container with scrollbar, the keyboard scrolling normally doesn't work. Here it works because every link refers to an anchor and a JavaScript function changes the focus to the content area when you visit this site from another one. But this is nasty and doesn't work on the first call if scripts are disabled. Has anyone found a method which doesn't need JavaScript?
       </text>
       </new>
       <new date="19. Jul 2008"><text language="de">
@@ -136,7 +136,7 @@ Es wäre schön, wenn ihr ins &lt;a href="koobtseug_de.php">Gästebuch&lt;/a> sc
   There are also useful sources and components, mainly for Delphi and Free Pascal. &lt;br>
   &lt;br>
   Some information about me: I have programmed since I was twelve (that's why there are so many old downloads here), now I am 19 and study computer science at the Heinrich-Heine-Universität Düsseldorf. (2009)&lt;br>
-  I won several prices in the German national informatics competition and participated in different European and International Olympiads of Informatics. In the European ones I also won some medaills. &lt;br>
+  I won several prices in the German national informatics competition and participated in different European and International Olympiads of Informatics. In the European ones I also won some medals. &lt;br>
   &lt;br>
 Here is a &lt;a href="koobtseug_en.php">guestbook&lt;/a> where you can tell me if you like or dislike something on this page. If you have any questions or suggestions you can also write me &lt;a href="impressum_en.html#top">a mail&lt;/a>.
 
