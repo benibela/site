@@ -641,7 +641,7 @@ function createInterface(intfWin){
   doc.write('</table>');
   doc.write('</div></div>');
 
-  doc.write('</div id="ColorMapBaseDiv">');
+  doc.write('</div>');
 
   if (get("generate","")=="true") {
 	genAll();
