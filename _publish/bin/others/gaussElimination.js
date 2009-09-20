@@ -15,29 +15,10 @@ function removeAllChildren(element){
 function createCustomTable(parent, maxx, maxy, elementFunction){
 	removeAllChildren(parent);
     var border=2;
-/*    var totalWidth=(parseInt(sizex)+parseInt(border))*maxx;
-    var maxWidth=parseInt(colorMapOutput.parentNode.offsetWidth);
-//    colorMapOutput.style.width="50px";
-    colorMapOutput.style.width=totalWidth+"px";
-    if (totalWidth<maxWidth) {
-      colorMapOutput.style.marginLeft=Math.round((maxWidth-totalWidth)/2)+"px";
-      colorMapOutput.parentNode.style.overflow="visible";
-    } else {
-      colorMapOutput.style.marginLeft="0px";
-      colorMapOutput.parentNode.style.overflow="scroll";
-      colorMapOutput.parentNode.style.width=maxWidth+"px";
-    }*/
     
     var tab=document.createElement("table");//empty-cells:show
     parent.appendChild(tab);
-    /*
-    if (border!="0") {
-      tab.style.borderCollapse="separate";
-      tab.style.borderSpacing=border+"px";
-      tab.cellSpacing=border; 
-    } else tab.style.borderCollapse="collapse";
-    //else  //setAttribute("style","margin-left:40px;");;
-*/
+
     for (var y=0;y<maxy;y++){
       var line=tab.insertRow(y);
       for (var x=0;x<maxx;x++){
@@ -46,7 +27,9 @@ function createCustomTable(parent, maxx, maxy, elementFunction){
 		var sub = elementFunction(x,y);
 		if (sub==null) sub=document.createTextNode("");
 		newCell.appendChild(sub);
+		//styles 
 		newCell.style.padding=border+"px"; //use padding or ie won't show border around the button likes
+		newCell.style.textAlign="center";
       }
     }
 	return tab;
@@ -59,20 +42,14 @@ function createTextInput(size,def){
 	if (def) newEdit.value=def;
 	return newEdit;
 }
-/*
-function createButton(def,onclick){
-	var newButton = document.createElement("input");
-	newButton.type="button";
-	newButton.value=def;
-	newButton.onclick = onclick; 
-	return newButton;
-}*/
 
 
 //=========================Funktionsdefinition=====================================
 var gaussInputs=new Array();
+var gaussInverseInputs=new Array();
 var gaussMultiplyInputs=new Array();
-var gaussDropReceivers;
+var gaussDropReceivers; //moving row
+var gaussDropReceivers2; //moving column
 
 var gaussSizeXInput;
 var gaussSizeYInput;
@@ -81,6 +58,8 @@ var gaussImportExport;
 var gaussChangeLog;
 var gaussLog;
 var gaussLogTextArea;
+var gaussChangeInverse;
+var gaussInverseOutput;
 var gaussTextArea;
 var gaussNewColumnChars;
 var gaussNewRowChars;
@@ -90,31 +69,73 @@ var gaussCols;
 
 
 //matrix manipulating functions
-function gaussMultiplyRow(row){
-	var multiplyBy=gaussMultiplyInputs[row].value;
-	if (isNaN(multiplyBy)) multiplyBy=eval(multiplyBy);
-	if (isNaN(multiplyBy)) {alert(gaussTxtNoNumberGiven); return;}
-	for (var i=0;i<gaussCols;i++)
-		gaussInputs[row][i].value=gaussInputs[row][i].value*multiplyBy;
+function gaussMatMultiplyRow(mat, row, multiplyBy){
+	for (var i=0;i<mat[0].length;i++)
+		mat[row][i].value=mat[row][i].value*multiplyBy;
+}
+function gaussMatMultiplyCol(mat, col, multiplyBy){
+	for (var i=0;i<mat.length;i++)
+		mat[i][col].value=mat[i][col].value*multiplyBy;
 }
 
-function gaussAddRows(from, to, multiplyBy){
-	if (isNaN(multiplyBy)) multiplyBy=eval(multiplyBy);
-	if (isNaN(multiplyBy)) {alert(gaussTxtNoNumberGiven); return;}
-	for (var i=0;i<gaussCols;i++)
-		gaussInputs[to][i].value=gaussInputs[to][i].value*1+gaussInputs[from][i].value*multiplyBy;
+function gaussMatAddRows(mat, from, to, multiplyBy){ 
+	for (var i=0;i<mat[0].length;i++)
+		mat[to][i].value=mat[to][i].value*1+mat[from][i].value*multiplyBy;
+}
+function gaussMatAddCols(mat, from, to, multiplyBy){ 
+	for (var i=0;i<mat.length;i++)
+		mat[i][to].value=mat[i][to].value*1+mat[i][from].value*multiplyBy;
 }
 
-function gaussSwapRows(a,b){
+function gaussMatSwapRows(mat,a,b){ 
 	var temp;
-	for (var i=0;i<gaussCols;i++) {
-		temp=gaussInputs[a][i].value;
-		gaussInputs[a][i].value=gaussInputs[b][i].value;
-		gaussInputs[b][i].value=temp;
+	for (var i=0;i<mat[0].length;i++) {
+		temp=mat[a][i].value;
+		mat[a][i].value=mat[b][i].value;
+		mat[b][i].value=temp;
 	}
 }
 
-function gaussKillRowColumn(row,col,pivotRow){
+function gaussMatSwapCols(mat,a,b){ 
+	var temp;
+	for (var i=0;i<mat.length;i++) {
+		temp=mat[i][a].value;
+		mat[i][a].value=mat[i][b].value;
+		mat[i][b].value=temp;
+	}
+}
+
+//extended gauss functions
+function gaussMultiplyRow(row){ //elementary
+	var multiplyBy=gaussMultiplyInputs[row].value;
+	if (isNaN(multiplyBy)) multiplyBy=eval(multiplyBy);
+	if (isNaN(multiplyBy)) {alert(gaussTxtNoNumberGiven); return;}
+	gaussMatMultiplyRow(gaussInputs, row, multiplyBy);
+	if (gaussChangeInverse.checked)
+		gaussMatMultiplyCol(gaussInverseInputs, row, 1/multiplyBy);
+}
+
+function gaussAddRows(from, to, multiplyBy){ //elementary
+	if (isNaN(multiplyBy)) multiplyBy=eval(multiplyBy);
+	if (isNaN(multiplyBy)) {alert(gaussTxtNoNumberGiven); return;}
+	gaussMatAddRows(gaussInputs, from, to, multiplyBy);
+	if (gaussChangeInverse.checked)
+		gaussMatAddCols(gaussInverseInputs, to, from, -multiplyBy);
+}
+
+function gaussSwapRows(a,b){ //elementary
+	gaussMatSwapRows(gaussInputs,a,b);
+	if (gaussChangeInverse.checked)
+		gaussMatSwapCols(gaussInverseInputs,a,b);
+}
+
+function gaussSwapCols(a,b){ //elementary
+	gaussMatSwapCols(gaussInputs,a,b);
+	if (gaussChangeInverse.checked)
+		gaussMatSwapRows(gaussInverseInputs,a,b);
+}
+
+function gaussKillRowColumn(row,col,pivotRow){ //not-elementary
 	if (row==pivotRow) return;
 	if (gaussInputs[pivotRow][col].value==0) {
 		alert(gaussTxtWrongPivotRow);
@@ -123,7 +144,7 @@ function gaussKillRowColumn(row,col,pivotRow){
 	gaussAddRows(pivotRow, row,  -gaussInputs[row][col].value/gaussInputs[pivotRow][col].value);
 }
 
-function gaussKillColumn(col,pivotRow){
+function gaussKillColumn(col,pivotRow){//not-elementary
 	if (gaussInputs[pivotRow][col].value==0) {
 		alert(gaussTxtWrongPivotRow);
 		return;
@@ -156,6 +177,11 @@ function gaussSwapRowsLog(a,b){
 	gaussLogOperation(gaussTxtLogSwapRows.replace("%1",a+1).replace("%2",b+1));
 }
 
+function gaussSwapColsLog(a,b){
+	gaussSwapCols(a,b);
+	gaussLogOperation(gaussTxtLogSwapCols.replace("%1",a+1).replace("%2",b+1));
+}
+
 function gaussKillRowColumnLog(row,col,pivotRow){
 	gaussKillRowColumn(row,col,pivotRow);
 	gaussLogOperation(gaussTxtLogKillRowColumn.replace("%1",row+1).replace("%2",col+1).replace("%3",pivotRow+1));
@@ -170,35 +196,25 @@ function gaussKillColumnLog(col,pivotRow){
 //GUI
 var gaussFloater; //div containing floating row
 var gaussFloatingRow; //index of the floating row (0-based)
+var gaussFloatingCol; //index of the floating row (0-based)
 
-function gaussDragDropRow(e,row){
+function gaussDragDrop(e, newFloater, dx, dy){
 	if (gaussFloater!=null) {
 		gaussFloater.parentNode.removeChild(gaussFloater);
 		gaussFloater=null;
 	}
-	gaussFloatingRow=row;
-	gaussFloater=document.createElement("div");
-	var floaterTable=createCustomTable(gaussFloater,gaussCols+1,1, 
-										function(x,y){
-											if (x==0) {
-												var temp=document.createElement("b"); 
-												temp.appendChild(document.createTextNode(row+1));
-												return temp; 
-											} else return gaussInputs[row][x-1].cloneNode(true);
-										});
-	document.body.appendChild(gaussFloater);
+
+	gaussFloater=newFloater;
 	gaussFloater.style.zIndex=100;
-	gaussFloater.style.position="absolute";
 	gaussFloater.style.backgroundColor = "#EEEEFF";
 	gaussFloater.style.opacity = "0.5";
 	gaussFloater.style.filter = "alpha(opacity=50);";
 	
     var posx = document.all ? window.event.clientX : e.pageX;
     var posy = document.all ? window.event.clientY : e.pageY;
-	gaussFloater.style.left = (posx-gaussFloater.clientWidth-5)+"px";
-	gaussFloater.style.top = (posy-Math.round(gaussFloater.clientHeight/2))+"px";
-	for (var i=0;i<gaussDropReceivers.length;i++)
-		gaussDropReceivers[i].style.border="2px solid blue";
+	gaussFloater.style.left = (posx+dx)+"px";
+	gaussFloater.style.top = (posy+dy)+"px";
+
 	document.onmouseup=function(){
 		document.onselectstart=null;
 		window.setTimeout(function (){
@@ -208,16 +224,62 @@ function gaussDragDropRow(e,row){
 				gaussFloater=null;
 				for (var i=0;i<gaussDropReceivers.length;i++)
 					gaussDropReceivers[i].style.border="2px solid #FFFFDD";
+				for (var i=0;i<gaussDropReceivers2.length;i++)
+					gaussDropReceivers2[i].style.border="2px solid #FFFFDD";
 			}},50);
 		};
 	document.onmousemove=function(f){ 
 		if (gaussFloater) {
 			var posx = document.all ? window.event.clientX : f.pageX;
 			var posy = document.all ? window.event.clientY : f.pageY;
-			gaussFloater.style.left = (posx-gaussFloater.clientWidth-5)+"px";
-			gaussFloater.style.top = (posy-Math.round(gaussFloater.clientHeight/2))+"px";
+			gaussFloater.style.left = (posx+dx)+"px";
+			gaussFloater.style.top = (posy+dy)+"px";
 		}
 	};
+}
+
+function gaussDragDropRow(e,row){
+	gaussFloatingRow=row;
+	gaussFloatingCol=-1;
+	for (var i=0;i<gaussDropReceivers.length;i++)
+		gaussDropReceivers[i].style.border="2px solid blue";
+	
+	var newFloater=document.createElement("div");
+	newFloater.style.position="absolute";
+	var floaterTable=createCustomTable(newFloater,gaussCols+1,1, 
+										function(x,y){
+											if (x==0) {
+												var temp=document.createElement("b"); 
+												temp.appendChild(document.createTextNode(row+1));
+												return temp; 
+											} else return gaussInputs[row][x-1].cloneNode(true);
+										});
+	document.body.appendChild(newFloater);
+	var dx=0-newFloater.clientWidth-5;
+	var dy=0-Math.round(newFloater.clientHeight/2);
+	gaussDragDrop(e,newFloater,dx,dy);
+}
+
+function gaussDragDropCol(e,col){
+	gaussFloatingRow=-1;
+	gaussFloatingCol=col;
+	for (var i=0;i<gaussDropReceivers2.length;i++)
+		gaussDropReceivers2[i].style.border="2px solid blue";
+	
+	var newFloater=document.createElement("div");
+	newFloater.style.position="absolute";
+	var floaterTable=createCustomTable(newFloater,1,gaussRows+1, 
+										function(x,y){
+											if (y==0) {
+												var temp=document.createElement("b"); 
+												temp.appendChild(document.createTextNode(col+1));
+												return temp; 
+											} else return gaussInputs[y-1][col].cloneNode(true);
+										});
+	document.body.appendChild(newFloater);
+	var dx=0-Math.round(newFloater.clientWidth/2);-5;
+	var dy=0-newFloater.clientHeight;
+	gaussDragDrop(e,newFloater,dx,dy);
 }
 
 function gaussCreateButtonLike(text,onmousedown,onmouseup){
@@ -250,27 +312,45 @@ function gaussCreateMatrix(multiply){
 		gaussInputs[i]=new Array(gaussCols);
 	}
 	gaussDropReceivers=new Array();
-	createCustomTable(gaussOutput,gaussCols+6, gaussRows+1,
+	gaussDropReceivers2=new Array();
+	createCustomTable(gaussOutput,gaussCols+6, gaussRows+3,
 		function (x,y) {
 			if (x>=1 && x <= gaussCols) {
 				if (y==0) {//return document.createTextNode(x);
-					var temp=gaussCreateButtonLike(x,null,function () {if (gaussFloater) gaussKillColumnLog(x-1, gaussFloatingRow);});
-					temp.onmouseover = function (){temp.style.backgroundColor=gaussFloater?"aqua":""};
+					var temp=gaussCreateButtonLike(x,null,function () {
+						if (gaussFloater && gaussFloatingRow!=-1) 
+							gaussKillColumnLog(x-1, gaussFloatingRow);});
+					temp.onmouseover = function (){temp.style.backgroundColor=(gaussFloater&& gaussFloatingRow!=-1)?"aqua":""};
 					temp.style.border="2px solid #FFFFDD";
 					gaussDropReceivers.push(temp);
 					return temp;
 				} else if (y>=1 && y<=gaussRows) {
 					gaussInputs[y-1][x-1]=createTextInput("6",""+(multiply*(x==y?1:0)));
 					gaussInputs[y-1][x-1].onmouseout = function (){gaussInputs[y-1][x-1].style.backgroundColor="";};
-					gaussInputs[y-1][x-1].onmouseover = function (){if (gaussFloater) gaussInputs[y-1][x-1].style.backgroundColor="aqua";};
-					gaussInputs[y-1][x-1].onmouseup = function (){document.onselectstart=null; if (gaussFloater) gaussKillRowColumnLog(y-1, x-1, gaussFloatingRow);};
+					gaussInputs[y-1][x-1].onmouseover = function (){
+							if (gaussFloater && gaussFloatingRow!=-1) 
+								gaussInputs[y-1][x-1].style.backgroundColor="aqua";};
+					gaussInputs[y-1][x-1].onmouseup = function (){
+							document.onselectstart=null; 
+							if (gaussFloater  && gaussFloatingRow!=-1) 
+								gaussKillRowColumnLog(y-1, x-1, gaussFloatingRow);};
 					return gaussInputs[y-1][x-1];
+				} else if (y==gaussRows+1) {
+					//column move start and swap end
+					return gaussCreateButtonLike("move",
+												function(e){
+													gaussDragDropCol(e,x-1);
+													return false;},
+												function () {
+													if (gaussFloater && gaussFloatingCol!=-1) 
+														gaussSwapColsLog(x-1,gaussFloatingCol);});
 				}
 			} else if (y>=1 && y <= gaussRows) {
 				if (x==0) return document.createTextNode(y);
 				else if (x==gaussCols+1) return gaussCreateButtonLike("<-*",function(){return false;},
 					function () {
-						if (gaussFloater) gaussAddRowsLog(gaussFloatingRow, y-1, gaussMultiplyInputs[y-1].value);
+						if (gaussFloater  && gaussFloatingRow!=-1) 
+							gaussAddRowsLog(gaussFloatingRow, y-1, gaussMultiplyInputs[y-1].value);
 						else gaussMultiplyRowLog(y-1);
 					});
 				else if (x==gaussCols+2) {
@@ -278,8 +358,12 @@ function gaussCreateMatrix(multiply){
 					return gaussMultiplyInputs[y-1];
 				} else if (x==gaussCols+3) 
 					return gaussCreateButtonLike("move |->",
-												function(e){gaussDragDropRow(e,y-1);return false;},
-												function () {if (gaussFloater) gaussSwapRowsLog(gaussFloatingRow, y-1);});
+												function(e){
+													gaussDragDropRow(e,y-1);
+													return false;},
+												function () {
+													if (gaussFloater && gaussFloatingRow!=-1) 
+														gaussSwapRowsLog(gaussFloatingRow, y-1);});
 					/*var newSpan = document.createElement("span");
 					newSpan.appendChild(document.createTextNode("*="text";
 					newEdit.size=size;
@@ -287,14 +371,24 @@ function gaussCreateMatrix(multiply){
 					return newEdit;
 					varr temp=createButton("*",function () {gaussMultiplyRow(y-1);});*/
 				else if (x==gaussCols+4) {
-					var temp=gaussCreateButtonLike("+",null,function () {if (gaussFloater) gaussAddRowsLog(gaussFloatingRow, y-1, 1);});
-					temp.onmouseover = function (){temp.style.backgroundColor=gaussFloater?"aqua":""};
+					var temp=gaussCreateButtonLike("+",null,function () {
+						if (gaussFloater && gaussFloatingRow!=-1) 
+							gaussAddRowsLog(gaussFloatingRow, y-1, 1);
+					});
+					temp.onmouseover = function (){
+						temp.style.backgroundColor=(gaussFloater&& gaussFloatingRow!=-1)?"aqua":""
+					};
 					temp.style.border="2px solid #FFFFDD";
 					gaussDropReceivers.push(temp);
 					return temp;
 				} else if (x==gaussCols+5) {
-					var temp=gaussCreateButtonLike("-",null,function () {if (gaussFloater) gaussAddRowsLog(gaussFloatingRow, y-1, -1);});
-					temp.onmouseover = function (){temp.style.backgroundColor=gaussFloater?"aqua":""};
+					var temp=gaussCreateButtonLike("-",null,function () {
+						if (gaussFloater && gaussFloatingRow!=-1) 
+							gaussAddRowsLog(gaussFloatingRow, y-1, -1);
+					});
+					temp.onmouseover = function (){
+						temp.style.backgroundColor=(gaussFloater&& gaussFloatingRow!=-1)?"aqua":""
+					};
 					temp.style.border="2px solid #FFFFDD";
 					gaussDropReceivers.push(temp);
 					return temp;
@@ -304,6 +398,7 @@ function gaussCreateMatrix(multiply){
 			}
 			return null;
 		});
+		gaussUpdateInverse();
   }
 
 //imports a matrix
@@ -391,6 +486,28 @@ function gaussUpdateLog(){
 }
 
 
+function gaussUpdateInverse(){
+	if (gaussChangeInverse.checked) {
+		gaussInverseOutput.style.display="block";
+		for (var i=0;i<gaussRows;i++) 
+			gaussInverseInputs[i]=new Array(gaussCols);
+		createCustomTable(gaussInverseOutput,gaussCols+1, gaussRows+1,
+			function (x,y) {
+				if (x>=1 && x <= gaussCols) {
+					if (y==0) return document.createTextNode(x);
+					else if (y>=1 && y<=gaussRows) {
+						gaussInverseInputs[y-1][x-1]=createTextInput("6",""+(x==y?1:0));
+						//gaussInverseInputs[y-1][x-1].readOnly=true;
+						return gaussInverseInputs[y-1][x-1];
+					} 
+				} else if (x==0 && y>=1 && y <= gaussRows) 
+					return document.createTextNode(y);
+		});
+			
+	} else
+		gaussInverseOutput.style.display="none";
+}
+
 function gaussReadInterfaceVars(){
   //===============Interfacezugriffsvariablen setzen====================  
   var doc=document;
@@ -404,6 +521,8 @@ function gaussReadInterfaceVars(){
 	gaussLog=doc.getElementById("gaussLogID");
 	gaussLogTextArea=doc.getElementById("gaussLogTextAreaID");
 	gaussChangeLog=doc.getElementById("gaussChangeLogID")
+	gaussChangeInverse=doc.getElementById("gaussChangeInverseID")
+	gaussInverseOutput=doc.getElementById("gaussInverseOutputID")
 }
   
   
@@ -431,16 +550,21 @@ if (lang=="en") {
 						  'Long description:<br>'+
 						  '1. To multiply a row with a given value, enter this value in the box after "<-*" and click on "<-*"<br>'+
 						  '2. To add/subtract rows from each other, click and hold on the "move" button  and drag the row on the "+"/"-" buttons after the row which should be modified.<br>'+
-						  '3. To swap rows move, drag the row from with its "move" button on the   "move" button of the other row.<br>'+
-						  '4. To eliminate a cell, drag the pivot row on the edit box of this cell.<br>'+
-						  '5. To eliminate a column below a pivot row, drag the pivot row on the number above the column.<br>';
+						  '3. To swap rows, drag a row using its "move" button on the   "move" button of the other row.<br>'+
+						  '4. To swap columns, drag a column using its "move" button on the   "move" button of the other column.<br>'+
+						  '5. To eliminate a cell, drag the pivot row on the edit box of this cell.<br>'+
+						  '6. To eliminate a column below a pivot row, drag the pivot row on the number above the column.<br>';
   var gaussTxtParsingOptions="<b>Parsing options:</b>";
   var gaussTxtNewColumnChars="New column characters:";
   var gaussTxtNewRowChars="New row characters:";
-  var gaussTxtShowLog="Keep Log";
+  var gaussTxtShowLog="Keep log";
+  var gaussTxtShowInverse="Show inverse operations for LU decomposition";
+  //var gaussTxtShowInverse="Mirror operations to calculate inverse";
+
 	var gaussTxtLogMultiplyBy = "multiply row %1 by %2"
 	var gaussTxtLogAddRows = "add row %1 to %2 multiplied by %3"
 	var gaussTxtLogSwapRows = "swap rows %1 and %2"
+	var gaussTxtLogSwapRows = "swap cols %1 and %2"
 	var gaussTxtLogKillRowColumn = "eliminate column %2 in row %1 using row %3"
 	var gaussTxtLogKillColumn = "eliminate column %1 using row %2"
 } else  {
@@ -459,15 +583,19 @@ if (lang=="en") {
 						  '1. Um eine Zeile mit einer Zahl zu multiplizieren, gebe diese Zahl in die Box nach dem "<-*" ein und klicke auf "<-*"<br>'+
 						  '2. Um eine Zeile zu einer anderen zu addieren oder davon abzuziehen, schiebe die Zeile ausgehend von dem "move"-Button auf das +/- Symbole hinter der zu modifizierenden Zeile.<br>'+
 						  '3. Um Zeilen zu tauschen, schiebe eine Zeile auf den "move"-Button der jeweils anderen.<br>'+
-						  '4. Um eine Matrixzelle  zu eliminieren, schiebe eine Pivotzeile auf das dazugehörige Editfeld.<br>'+
-						  '5. Um eine Matrixspalte unter einer Pivotzeile zu eliminieren, schiebe diese Zeile auf die Zahl über der Spalte.<br>';
+						  '4. Um Spalten zu tauschen, schiebe eine Spalte ausgehend von ihrem "move"-Button auf den "move"-Button der jeweils anderen.<br>'+
+						  '5. Um eine Matrixzelle  zu eliminieren, schiebe eine Pivotzeile auf das dazugehörige Editfeld.<br>'+
+						  '6. Um eine Matrixspalte unter einer Pivotzeile zu eliminieren, schiebe diese Zeile auf die Zahl über der Spalte.<br>';
   var gaussTxtParsingOptions="<b>Importoptionen:</b>";
   var gaussTxtNewColumnChars="Zeichen für neue Spalte:";
   var gaussTxtNewRowChars="Zeichen für neue Zeile:";
   var gaussTxtShowLog="Ablauf speichern";
+  //var gaussTxtShowInverse="Operationen spiegeln zur Berechnung der Inversen";
+  var gaussTxtShowInverse="Inverse Operationen für LR-Zerlegung durchführen";
 	var gaussTxtLogMultiplyBy = "multipliziere Zeile %1 mit %2"
 	var gaussTxtLogAddRows = "addiere Zeile %1 zu %2 multipliziert mit %3"
 	var gaussTxtLogSwapRows = "vertausche Zeilen %1 und %2"
+	var gaussTxtLogSwapRows = "vertausche Spalten %1 und %2"
 	var gaussTxtLogKillRowColumn = "eliminiere Spalte %2 in Zeile %1 mit Zeile %3"
 	var gaussTxtLogKillColumn = "eliminate Spalte %1 mit Zeile %2"
 }
@@ -521,6 +649,10 @@ function createInterface(intfWin){
   doc.write('</table>');
   doc.write('</div></div>');
   
+  doc.write('<br><input  onclick="javascript:gaussUpdateInverse();" id="gaussChangeInverseID" type="checkbox" />&nbsp;'+gaussTxtShowInverse);
+  doc.write('<div id="gaussInverseOutputID" style="display:none">');
+  doc.write('</div>');
+
   doc.write('<br><input  onclick="javascript:gaussUpdateLog();" id="gaussChangeLogID" type="checkbox" />&nbsp;'+gaussTxtShowLog);
   doc.write('<div id="gaussLogID" style="display:none">');
   doc.write('<textarea rows="15" cols="80" id="gaussLogTextAreaID"></textarea><br>');
