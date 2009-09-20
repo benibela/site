@@ -78,6 +78,9 @@ var gaussSizeXInput;
 var gaussSizeYInput;
 var gaussOutput;
 var gaussImportExport;  
+var gaussChangeLog;
+var gaussLog;
+var gaussLogTextArea;
 var gaussTextArea;
 var gaussNewColumnChars;
 var gaussNewRowChars;
@@ -129,6 +132,41 @@ function gaussKillColumn(col,pivotRow){
 		gaussKillRowColumn(i,col,pivotRow);
 }
 
+//operations with logging
+function gaussLogOperation(desc){
+	if (!gaussChangeLog.checked) return;
+	gaussExport();
+	gaussLogTextArea.value=gaussLogTextArea.value+"\n"+desc+"\n\n"+gaussTextArea.value+"\n";
+	gaussLogTextArea.scrollTop = gaussLogTextArea.scrollHeight;
+}
+
+function gaussMultiplyRowLog(row){
+	gaussMultiplyRow(row);
+	gaussLogOperation(gaussTxtLogMultiplyBy.replace("%1",row+1).replace("%2",gaussMultiplyInputs[row].value));
+}
+
+function gaussAddRowsLog(from, to, multiplyBy){
+	gaussAddRows(from,to,multiplyBy);
+	gaussLogOperation(gaussTxtLogAddRows.replace("%1",from+1).replace("%2",to+1).replace("%3",multiplyBy));
+}
+
+
+function gaussSwapRowsLog(a,b){
+	gaussSwapRows(a,b);
+	gaussLogOperation(gaussTxtLogSwapRows.replace("%1",a+1).replace("%2",b+1));
+}
+
+function gaussKillRowColumnLog(row,col,pivotRow){
+	gaussKillRowColumn(row,col,pivotRow);
+	gaussLogOperation(gaussTxtLogKillRowColumn.replace("%1",row+1).replace("%2",col+1).replace("%3",pivotRow+1));
+}
+
+function gaussKillColumnLog(col,pivotRow){
+	gaussKillColumn(col,pivotRow);
+	gaussLogOperation(gaussTxtLogKillColumn.replace("%1",col+1).replace("%2",pivotRow+1));
+}
+
+
 //GUI
 var gaussFloater; //div containing floating row
 var gaussFloatingRow; //index of the floating row (0-based)
@@ -162,6 +200,7 @@ function gaussDragDropRow(e,row){
 	for (var i=0;i<gaussDropReceivers.length;i++)
 		gaussDropReceivers[i].style.border="2px solid blue";
 	document.onmouseup=function(){
+		document.onselectstart=null;
 		window.setTimeout(function (){
 			document.onmousemove=null;
 			if (gaussFloater!=null) {
@@ -188,11 +227,16 @@ function gaussCreateButtonLike(text,onmousedown,onmouseup){
 	temp.style.cursor="pointer";
 	temp.style.paddingLeft="3px";
 	temp.style.paddingRight="3px";
-	temp.onmousedown = onmousedown;
-	temp.onmouseup = onmouseup;
+	if (document.all){ //internet explorer
+	//document.onselectstart = function(){return false;}
+		temp.onmousedown = function(){document.onselectstart=function(){return false}; if (onmousedown) onmousedown();};
+		temp.onmouseup =  function(){document.onselectstart=null; if (onmouseup) onmouseup();};
+	} else {
+		temp.onmousedown = onmousedown;
+		temp.onmouseup = onmouseup;
+	}
 	temp.onmouseover = function (){temp.style.backgroundColor="aqua";};
 	temp.onmouseout = function (){temp.style.backgroundColor="";};
-	temp.onselectstart = function(){return false;}
 	return temp;
 }  
   
@@ -210,7 +254,7 @@ function gaussCreateMatrix(multiply){
 		function (x,y) {
 			if (x>=1 && x <= gaussCols) {
 				if (y==0) {//return document.createTextNode(x);
-					var temp=gaussCreateButtonLike(x,null,function () {if (gaussFloater) gaussKillColumn(x-1, gaussFloatingRow);});
+					var temp=gaussCreateButtonLike(x,null,function () {if (gaussFloater) gaussKillColumnLog(x-1, gaussFloatingRow);});
 					temp.onmouseover = function (){temp.style.backgroundColor=gaussFloater?"aqua":""};
 					temp.style.border="2px solid #FFFFDD";
 					gaussDropReceivers.push(temp);
@@ -219,15 +263,15 @@ function gaussCreateMatrix(multiply){
 					gaussInputs[y-1][x-1]=createTextInput("6",""+(multiply*(x==y?1:0)));
 					gaussInputs[y-1][x-1].onmouseout = function (){gaussInputs[y-1][x-1].style.backgroundColor="";};
 					gaussInputs[y-1][x-1].onmouseover = function (){if (gaussFloater) gaussInputs[y-1][x-1].style.backgroundColor="aqua";};
-					gaussInputs[y-1][x-1].onmouseup = function (){if (gaussFloater) gaussKillRowColumn(y-1, x-1, gaussFloatingRow);};
+					gaussInputs[y-1][x-1].onmouseup = function (){document.onselectstart=null; if (gaussFloater) gaussKillRowColumnLog(y-1, x-1, gaussFloatingRow);};
 					return gaussInputs[y-1][x-1];
 				}
 			} else if (y>=1 && y <= gaussRows) {
 				if (x==0) return document.createTextNode(y);
 				else if (x==gaussCols+1) return gaussCreateButtonLike("<-*",function(){return false;},
 					function () {
-						if (gaussFloater) gaussAddRows(gaussFloatingRow, y-1, gaussMultiplyInputs[y-1].value);
-						else gaussMultiplyRow(y-1);
+						if (gaussFloater) gaussAddRowsLog(gaussFloatingRow, y-1, gaussMultiplyInputs[y-1].value);
+						else gaussMultiplyRowLog(y-1);
 					});
 				else if (x==gaussCols+2) {
 					gaussMultiplyInputs[y-1]=createTextInput("3","1");
@@ -235,7 +279,7 @@ function gaussCreateMatrix(multiply){
 				} else if (x==gaussCols+3) 
 					return gaussCreateButtonLike("move |->",
 												function(e){gaussDragDropRow(e,y-1);return false;},
-												function () {if (gaussFloater) gaussSwapRows(gaussFloatingRow, y-1);});
+												function () {if (gaussFloater) gaussSwapRowsLog(gaussFloatingRow, y-1);});
 					/*var newSpan = document.createElement("span");
 					newSpan.appendChild(document.createTextNode("*="text";
 					newEdit.size=size;
@@ -243,13 +287,13 @@ function gaussCreateMatrix(multiply){
 					return newEdit;
 					varr temp=createButton("*",function () {gaussMultiplyRow(y-1);});*/
 				else if (x==gaussCols+4) {
-					var temp=gaussCreateButtonLike("+",null,function () {if (gaussFloater) gaussAddRows(gaussFloatingRow, y-1, 1);});
+					var temp=gaussCreateButtonLike("+",null,function () {if (gaussFloater) gaussAddRowsLog(gaussFloatingRow, y-1, 1);});
 					temp.onmouseover = function (){temp.style.backgroundColor=gaussFloater?"aqua":""};
 					temp.style.border="2px solid #FFFFDD";
 					gaussDropReceivers.push(temp);
 					return temp;
 				} else if (x==gaussCols+5) {
-					var temp=gaussCreateButtonLike("-",null,function () {if (gaussFloater) gaussAddRows(gaussFloatingRow, y-1, -1);});
+					var temp=gaussCreateButtonLike("-",null,function () {if (gaussFloater) gaussAddRowsLog(gaussFloatingRow, y-1, -1);});
 					temp.onmouseover = function (){temp.style.backgroundColor=gaussFloater?"aqua":""};
 					temp.style.border="2px solid #FFFFDD";
 					gaussDropReceivers.push(temp);
@@ -331,9 +375,21 @@ function gaussExport(){
   
   
 function gaussChangeImportExport(){
-	if (gaussImportExport.style.display=="none") gaussImportExport.style.display="block";
-	else gaussImportExport.style.display="none";
+	if (document.getElementById("gaussChangeImportExportID").checked)
+		gaussImportExport.style.display="block";
+	else
+		gaussImportExport.style.display="none";
 }
+
+function gaussUpdateLog(){
+	if (gaussChangeLog.checked) 
+		gaussLog.style.display="block";
+	 else
+		gaussLog.style.display="none";
+	gaussExport();
+	gaussLogTextArea.value=gaussTextArea.value+"\n";
+}
+
 
 function gaussReadInterfaceVars(){
   //===============Interfacezugriffsvariablen setzen====================  
@@ -345,7 +401,10 @@ function gaussReadInterfaceVars(){
 	gaussTextArea=doc.getElementById("gaussTextAreaID");
 	gaussNewColumnChars=doc.getElementById("gaussNewColumnCharsID");
 	gaussNewRowChars=doc.getElementById("gaussNewRowCharsID");
-  }
+	gaussLog=doc.getElementById("gaussLogID");
+	gaussLogTextArea=doc.getElementById("gaussLogTextAreaID");
+	gaussChangeLog=doc.getElementById("gaussChangeLogID")
+}
   
   
 //====================Interfacevariablendefinition============================
@@ -367,7 +426,7 @@ if (lang=="en") {
   var gaussTxtMultiply=" multiply ";
   var gaussTxtNoNumberGiven="No number given";
   var gaussTxtWrongPivotRow="The dragged row can't be used to eliminate this column.";
-  var gaussTxtDescription="<br><br><b>How to use it:</b><br><br>"+
+  var gaussTxtDescription="<b>How to use it:</b><br><br>"+
 						  'Short description: <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Everything blue reacts to  the mouse. <br><br>'+
 						  'Long description:<br>'+
 						  '1. To multiply a row with a given value, enter this value in the box after "<-*" and click on "<-*"<br>'+
@@ -378,6 +437,12 @@ if (lang=="en") {
   var gaussTxtParsingOptions="<b>Parsing options:</b>";
   var gaussTxtNewColumnChars="New column characters:";
   var gaussTxtNewRowChars="New row characters:";
+  var gaussTxtShowLog="Keep Log";
+	var gaussTxtLogMultiplyBy = "multiply row %1 by %2"
+	var gaussTxtLogAddRows = "add row %1 to %2 multiplied by %3"
+	var gaussTxtLogSwapRows = "swap rows %1 and %2"
+	var gaussTxtLogKillRowColumn = "eliminate column %2 in row %1 using row %3"
+	var gaussTxtLogKillColumn = "eliminate column %1 using row %2"
 } else  {
   var gaussTxtSize="Größe:";  
   var gaussTxtCreateIDMatrix="Einheitsmatrix";  
@@ -388,7 +453,7 @@ if (lang=="en") {
   var gaussTxtMultiply=" multipliziere ";
   var gaussTxtNoNumberGiven="Keine Zahl gegeben";
   var gaussTxtWrongPivotRow="Die gezogene Matrixzeile kann die ausgewählte Spalte nicht eliminieren.";
-  var gaussTxtDescription="<br><br><b>Anleitung:</b><br><br>"+
+  var gaussTxtDescription="<b>Anleitung:</b><br><br>"+
 						  'Zusammenfassung: <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alles Blaue  reagiert auf die Maus. <br><br>'+
 						  'Ausführlich:<br>'+
 						  '1. Um eine Zeile mit einer Zahl zu multiplizieren, gebe diese Zahl in die Box nach dem "<-*" ein und klicke auf "<-*"<br>'+
@@ -399,6 +464,12 @@ if (lang=="en") {
   var gaussTxtParsingOptions="<b>Importoptionen:</b>";
   var gaussTxtNewColumnChars="Zeichen für neue Spalte:";
   var gaussTxtNewRowChars="Zeichen für neue Zeile:";
+  var gaussTxtShowLog="Ablauf speichern";
+	var gaussTxtLogMultiplyBy = "multipliziere Zeile %1 mit %2"
+	var gaussTxtLogAddRows = "addiere Zeile %1 zu %2 multipliziert mit %3"
+	var gaussTxtLogSwapRows = "vertausche Zeilen %1 und %2"
+	var gaussTxtLogKillRowColumn = "eliminiere Spalte %2 in Zeile %1 mit Zeile %3"
+	var gaussTxtLogKillColumn = "eliminate Spalte %1 mit Zeile %2"
 }
 
 //====================Interfaceerzeugung======================================
@@ -426,7 +497,7 @@ function createInterface(intfWin){
   doc.write('<b>'+gaussTxtSize+'</b>: <input type="text" id="gaussSizeXInputID" value="3" size="5"><input type="text" id="gaussSizeYInputID" value="3" size="5">');
   doc.write('<button onclick="javascript:gaussCreateMatrix(1);" type="button">'+gaussTxtCreateIDMatrix+'</button> ');
   doc.write('<button onclick="javascript:gaussCreateMatrix(0);" type="button">'+gaussTxtCreateEmptyMatrix+'</button> ');
-  doc.write('<button onclick="javascript:gaussChangeImportExport();" type="button">'+gaussTxtImportExport+'</button>&nbsp;&nbsp;&nbsp;');
+  doc.write('<input  onclick="javascript:gaussChangeImportExport();" id="gaussChangeImportExportID" type="checkbox"/>&nbsp;'+gaussTxtImportExport+'&nbsp;&nbsp;');
 
   if (doc==document && window.location.href.search(/www\.benibela\.de\/others/)!=-1) 
     doc.write('<button onclick="javascript:openNewWindow();" type="button">'+colorMapTxtCreateWindow+'</button>');
@@ -449,12 +520,20 @@ function createInterface(intfWin){
   doc.write('<tr><td>&nbsp;</td></tr>');
   doc.write('</table>');
   doc.write('</div></div>');
-
+  
+  doc.write('<br><input  onclick="javascript:gaussUpdateLog();" id="gaussChangeLogID" type="checkbox" />&nbsp;'+gaussTxtShowLog);
+  doc.write('<div id="gaussLogID" style="display:none">');
+  doc.write('<textarea rows="15" cols="80" id="gaussLogTextAreaID"></textarea><br>');
+  doc.write('</div>');
+  
+  doc.write('<br><br>');
   doc.write(gaussTxtDescription);
   
   doc.write('</div>');
 
   gaussCreateMatrix(1)
+  gaussChangeImportExport();
+  gaussUpdateLog();
   
 /*if (window.colorMapStandAlone==true){
   doc.write('<\/script></body></html>');
