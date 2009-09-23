@@ -110,6 +110,9 @@ function gaussMultiplyRow(row){ //elementary
 	var multiplyBy=gaussMultiplyInputs[row].value;
 	if (isNaN(multiplyBy)) multiplyBy=eval(multiplyBy);
 	if (isNaN(multiplyBy)) {alert(gaussTxtNoNumberGiven); return;}
+	if (multiplyBy == 0) 
+		if (!confirm(gaussTxtReallyRemove))
+			return;
 	gaussMatMultiplyRow(gaussInputs, row, multiplyBy);
 	if (gaussChangeInverse.checked)
 		gaussMatMultiplyCol(gaussInverseInputs, row, 1/multiplyBy);
@@ -118,6 +121,10 @@ function gaussMultiplyRow(row){ //elementary
 function gaussAddRows(from, to, multiplyBy){ //elementary
 	if (isNaN(multiplyBy)) multiplyBy=eval(multiplyBy);
 	if (isNaN(multiplyBy)) {alert(gaussTxtNoNumberGiven); return;}
+	if (from==to && multiplyBy == -1) 
+		if (!confirm(gaussTxtReallyRemove))
+			return;
+
 	gaussMatAddRows(gaussInputs, from, to, multiplyBy);
 	if (gaussChangeInverse.checked)
 		gaussMatAddCols(gaussInverseInputs, to, from, -multiplyBy);
@@ -141,7 +148,9 @@ function gaussKillRowColumn(row,col,pivotRow){ //not-elementary
 		alert(gaussTxtWrongPivotRow);
 		return;
 	}
-	gaussAddRows(pivotRow, row,  -gaussInputs[row][col].value/gaussInputs[pivotRow][col].value);
+	//gaussAddRows(pivotRow, row,  -gaussInputs[row][col].value/gaussInputs[pivotRow][col].value);
+	//describe what we are doing
+	gaussAddRowsLog(pivotRow, row,  -gaussInputs[row][col].value/gaussInputs[pivotRow][col].value);
 }
 
 function gaussKillColumn(col,pivotRow){//not-elementary
@@ -154,11 +163,14 @@ function gaussKillColumn(col,pivotRow){//not-elementary
 }
 
 //operations with logging
+function gaussAddToLog(value){
+	gaussLogTextArea.value=gaussLogTextArea.value+"\n"+value+"\n";
+	gaussLogTextArea.scrollTop = gaussLogTextArea.scrollHeight;
+}
 function gaussLogOperation(desc){
 	if (!gaussChangeLog.checked) return;
 	gaussExport();
-	gaussLogTextArea.value=gaussLogTextArea.value+"\n"+desc+"\n\n"+gaussTextArea.value+"\n";
-	gaussLogTextArea.scrollTop = gaussLogTextArea.scrollHeight;
+	gaussAddToLog(desc+"\n\n"+gaussTextArea.value);
 }
 
 function gaussMultiplyRowLog(row){
@@ -183,13 +195,16 @@ function gaussSwapColsLog(a,b){
 }
 
 function gaussKillRowColumnLog(row,col,pivotRow){
+	gaussAddToLog(gaussTxtLogKillRowColumn.replace("%1",row+1).replace("%2",col+1).replace("%3",pivotRow+1)+"\n");
+	gaussLogTextArea.scrollTop = gaussLogTextArea.scrollHeight;
 	gaussKillRowColumn(row,col,pivotRow);
-	gaussLogOperation(gaussTxtLogKillRowColumn.replace("%1",row+1).replace("%2",col+1).replace("%3",pivotRow+1));
+	//gaussLogOperation(gaussTxtLogKillRowColumn.replace("%1",row+1).replace("%2",col+1).replace("%3",pivotRow+1));
 }
 
 function gaussKillColumnLog(col,pivotRow){
+	gaussAddToLog(gaussTxtLogKillColumn.replace("%1",col+1).replace("%2",pivotRow+1)+"\n");
 	gaussKillColumn(col,pivotRow);
-	gaussLogOperation(gaussTxtLogKillColumn.replace("%1",col+1).replace("%2",pivotRow+1));
+	//gaussLogOperation(gaussTxtLogKillColumn.replace("%1",col+1).replace("%2",pivotRow+1));
 }
 
 
@@ -325,7 +340,7 @@ function gaussCreateMatrix(multiply){
 					gaussDropReceivers.push(temp);
 					return temp;
 				} else if (y>=1 && y<=gaussRows) {
-					gaussInputs[y-1][x-1]=createTextInput("6",""+(multiply*(x==y?1:0)));
+					gaussInputs[y-1][x-1]=createTextInput(gaussRows<10?"6":"2",""+(multiply*(x==y?1:0)));
 					gaussInputs[y-1][x-1].onmouseout = function (){gaussInputs[y-1][x-1].style.backgroundColor="";};
 					gaussInputs[y-1][x-1].onmouseover = function (){
 							if (gaussFloater && gaussFloatingRow!=-1) 
@@ -564,10 +579,12 @@ if (lang=="en") {
 	var gaussTxtLogMultiplyBy = "multiply row %1 by %2"
 	var gaussTxtLogAddRows = "add row %1 to %2 multiplied by %3"
 	var gaussTxtLogSwapRows = "swap rows %1 and %2"
-	var gaussTxtLogSwapRows = "swap cols %1 and %2"
+	var gaussTxtLogSwapCols = "swap cols %1 and %2"
 	var gaussTxtLogKillRowColumn = "eliminate column %2 in row %1 using row %3"
 	var gaussTxtLogKillColumn = "eliminate column %1 using row %2"
-} else  {
+
+   var gaussTxtReallyRemove="Sorry, but do you know what you're doing?\nThis will completely remove this row and lead to information loss.\nAre you sure you don't need it anymore? (OK means yes)";
+  } else  {
   var gaussTxtSize="Größe:";  
   var gaussTxtCreateIDMatrix="Einheitsmatrix";  
   var gaussTxtCreateEmptyMatrix="Leere Matrix";  
@@ -595,27 +612,28 @@ if (lang=="en") {
 	var gaussTxtLogMultiplyBy = "multipliziere Zeile %1 mit %2"
 	var gaussTxtLogAddRows = "addiere Zeile %1 zu %2 multipliziert mit %3"
 	var gaussTxtLogSwapRows = "vertausche Zeilen %1 und %2"
-	var gaussTxtLogSwapRows = "vertausche Spalten %1 und %2"
+	var gaussTxtLogSwapCols = "vertausche Spalten %1 und %2"
 	var gaussTxtLogKillRowColumn = "eliminiere Spalte %2 in Zeile %1 mit Zeile %3"
 	var gaussTxtLogKillColumn = "eliminate Spalte %1 mit Zeile %2"
+	var gaussTxtReallyRemove="Sorry, aber weißt du, was du tust?\nDamit wird diese Zeile vollständig und für immer entfernt.\nKlicke auf OK, falls sie wirklich gelöscht werden soll.";
 }
 
 //====================Interfaceerzeugung======================================
 
-/*
-function openNewWindow(){
+
+function gaussOpenNewWindow(){
   var fenster=window.open("", "_blank");//, "scrollbars");
   fenster.document.writeln("<html><head><title>")
-  if (lang=="en") fenster.document.writeln("color pattern generator - BeniBela online");
-  else fenster.document.writeln("Farbmustergenerator - BeniBela online");
+  if (lang=="en") fenster.document.writeln("Gauss Elimination - BeniBela online");
+  else fenster.document.writeln("Gaußsches Eliminationsverfahren - BeniBela online");
   fenster.document.writeln('</title><script type="text/javascript">var lang="'+lang+'";var functionOnly=true;</script>');
   fenster.document.writeln('</head><body>');
   createInterface(fenster);
-  fenster.document.writeln('<script type="text/javascript" src="bin/others/colorMap.js"></script>');
+  fenster.document.writeln('<script type="text/javascript" src="bin/others/gaussElimination.js"></script>');
   fenster.document.writeln('</body></html>');
 //  if (navigator.userAgent.search(/MSIE/)==-1)
   fenster.document.close(); //nötig für FireFox, lässt aber IE abstürzen 
-}*/
+}
 
 
 function createInterface(intfWin){
@@ -627,16 +645,16 @@ function createInterface(intfWin){
   doc.write('<button onclick="javascript:gaussCreateMatrix(0);" type="button">'+gaussTxtCreateEmptyMatrix+'</button> ');
   doc.write('<input  onclick="javascript:gaussChangeImportExport();" id="gaussChangeImportExportID" type="checkbox"/>&nbsp;'+gaussTxtImportExport+'&nbsp;&nbsp;');
 
-  if (doc==document && window.location.href.search(/www\.benibela\.de\/others/)!=-1) 
-    doc.write('<button onclick="javascript:openNewWindow();" type="button">'+colorMapTxtCreateWindow+'</button>');
-   else if (window.location.href.search(/www\.benibela\.de/)==-1) 
+  //if (doc==document && window.location.href.search(/www\.benibela\.de\/others/)!=-1) 
+    doc.write('<button onclick="javascript:gaussOpenNewWindow();" type="button">'+colorMapTxtCreateWindow+'</button>');
+   if (window.location.href.search(/www\.benibela\.de/)==-1) 
       doc.write('by <a href="http://www.benibela.de">Benito van der Zander</a>');
 
   doc.write('<br><br>');
   doc.write('<div><div id="gaussImportExportID" style="display:none">');
   doc.write('<textarea rows="15" cols="80" id="gaussTextAreaID"></textarea><br>');
   doc.write('<button onclick="javascript:gaussExport();" type="button">'+gaussTxtExport+'</button> '); 
-  doc.write(gaussTxtParsingOptions+" "+gaussTxtNewColumnChars+' <input type="text" id="gaussNewColumnCharsID" value=", |\\t" size="5"/> '); 
+  doc.write(gaussTxtParsingOptions+" "+gaussTxtNewColumnChars+' <input type="text" id="gaussNewColumnCharsID" value=", |\\t=" size="5"/> '); 
   doc.write(gaussTxtNewRowChars+' <input type="text" id="gaussNewRowCharsID" value="\\n\\r;" size="5"/> '); 
   doc.write('<button onclick="javascript:gaussParseImport();" type="button">'+gaussTxtImport+'</button>'); 
   gaussExport
