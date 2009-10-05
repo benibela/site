@@ -59,6 +59,18 @@ You can only stop it over the task manager. </content>
     <content language="en">This intro was created for a contest (sadly only two people took part in it) and it came on place one. You can see an attack on Coruscant, for which a bluff attack is maked at Praesitlyn. It is only 40KB big, but it needs <a href="http://www.fmod.org">FMOD</a> for sounds, and Windows. </content>
   </download>
   <download> 
+    <title>Bacholorarbeit</title>
+	<id>bachelor</id>
+    <file>bachelor.zip</file>
+    <description_80 language="de">Meine Bachelorarbeit über Ereigniszuordnungen</description_80>
+    <description_80 language="en">My (German) bachelor thesis about event matching</description_80>
+    <payment-license>-</payment-license>
+    <content language="de"></content>
+    <content language="en">Because the text is in German and to long to translate, the description is also in German:&lt;br>&lt;br></content>
+    <final-content language="de">In dieser Arbeit mit dem Titel "Eigenschaften eines Algorithmus zur Zuordnung von nicht eindeutigen Sende- und
+Empfangsereignissen in Ereignisprotokollen" wird untersucht, wie man aus der Reihenfolge von in Logs lokal aufgezeichneten Netzwerkpaketen berechnen kann, welche aufgezeichneten Ereignisse dasselbe (und nicht nur das inhaltlich gleiche) Paket beschreiben. Das wichtigste Ergebnis ist, dass dieses Problem NP-vollständig ist  und der  früher  am Lehrstuhl verwendete Algorithmus  (siehe Literaturverzeichnis) zur Lösung des Problems überhaupt nicht funktioniert. </final-content>
+  </download>
+  <download> 
     <title>Facharbeit</title>
     <file>facharbeit.zip</file>
     <description_80 language="de">Meine Facharbeit über Molekülstrukturberechnungen</description_80>

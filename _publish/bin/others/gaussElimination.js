@@ -523,8 +523,20 @@ function gaussUpdateInverse(){
 		gaussInverseOutput.style.display="none";
 }
 
+
+//some customization
+function gaussOptionSet(){
+	var size=document.getElementById('gaussOptionEditSizeId').value;
+	for (var i=0;i<gaussInputs.length;i++)
+		for (var j=0;j<gaussInputs[i].length;j++)
+			gaussInputs[i][j].size=size;
+	for (var i=0;i<gaussInverseInputs.length;i++)
+		for (var j=0;j<gaussInverseInputs[i].length;j++)
+			gaussInverseInputs[i][j].size=size;
+}
+
+//===============Interfacezugriffsvariablen setzen====================  
 function gaussReadInterfaceVars(){
-  //===============Interfacezugriffsvariablen setzen====================  
   var doc=document;
     gaussSizeXInput=doc.getElementById("gaussSizeXInputID");
     gaussSizeYInput=doc.getElementById("gaussSizeYInputID");
@@ -674,6 +686,15 @@ function createInterface(intfWin){
   doc.write('<br><input  onclick="javascript:gaussUpdateLog();" id="gaussChangeLogID" type="checkbox" />&nbsp;'+gaussTxtShowLog);
   doc.write('<div id="gaussLogID" style="display:none">');
   doc.write('<textarea rows="15" cols="80" id="gaussLogTextAreaID"></textarea><br>');
+  doc.write('</div>');
+
+  var gaussTxtEditWidth="edit width:";
+  var gaussTxtUpdate="update";
+  var gaussTxtShowOptions="show options";
+
+  doc.write('<br><input  onclick="javascript:document.getElementById(\'gaussOptionsID\').style.display=(document.getElementById(\'gaussChangeOptionsID\').checked?\'block\':\'none\');" id="gaussChangeOptionsID" type="checkbox" />&nbsp;'+gaussTxtShowOptions);
+  doc.write('<div id="gaussOptionsID" style="display:none">');
+  doc.write(gaussTxtEditWidth+' <input type="text" id="gaussOptionEditSizeId" value="6"> <button onclick="javascript:gaussOptionSet();" type="button">'+gaussTxtUpdate+'</button><br>');
   doc.write('</div>');
   
   doc.write('<br><br>');
