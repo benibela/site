@@ -169,11 +169,11 @@
                  {{$WRITE download/final-content}}
                  
 				 {{$FOREACH downloadFile: download/file}}
-				 {{$CALL "ls -s _publish/"file/download-dir"/"downloadFile" | grep -o -E \\\"^ *[0-9.]*\\\"" >> downloadsize}}
+				 {{$CALL "ls -s _publish/"file/download-dir"/"downloadFile" | grep -o -E ^*[0-9.]*" >> downloadsize}}
 				 {{$IF downloadsize == ""}}<b style="color:red;font-size:150%">FILE NOT FOUND</b>{{$/IF}}
 				 <br><br><a href="{{$WRITE file/download-dir"/"downloadFile}}">Download {{$WRITE downloadFile/@title}} ({{$WRITE downloadsize}} KB )</a>
 				 {{$/FOREACH}}
-                 <a style="position:absolute;right: 2em" href="#top">{{$IF language/id=="en"}}jump to top{{$ELSE}}zur Übersicht{{$/IF}}</a>
+                 <a style="position:absolute;right: 2em" href="#top">{{$IF language/id=="en"}}jump to top{{$ELSE}}zur &Uuml;bersicht{{$/IF}}</a>
                </div>
              </div>{{$/FOREACH}}
            </div>

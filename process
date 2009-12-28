@@ -35,7 +35,7 @@ Defines transformation of xml data to html
 {{$DEFINE $rec-transform fileparent}*}
   {{$FOREACH fileinfo: fileparent/fileinfo}*}
     {{$LOADXML file: fileinfo/basefilename".xml"}*}
-    {{$OUTPUT style >> "_publish/"$file-url}*}
+    {{$OUTPUT style >> "_publish/"$file-url "ISO-8859-1"}*}
     {{$$rec-transform fileinfo}*}
   {{$/FOREACH}*}
 {{$/DEFINE*}
