@@ -167,7 +167,7 @@
                  </div>
                  {{$/IF}}
                  {{$WRITE download/final-content}}
-                 
+
 				 {{$FOREACH downloadFile: download/file}}
 				 {{$CALL "ls -s _publish/"file/download-dir"/"downloadFile" | grep -o -E ^*[0-9.]*" >> downloadsize}}
 				 {{$IF downloadsize == ""}}<b style="color:red;font-size:150%">FILE NOT FOUND</b>{{$/IF}}
