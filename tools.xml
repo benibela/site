@@ -169,7 +169,7 @@ APIV hat folgende Features:]]></content>
   <download> 
     <title>JAXMLP</title>
     <id>jaxmlp</id>
-    <file>jaxmlp.zip</file>
+    <file>jaxmlparser.zip</file>
     <description_80 language="de">Eine XML Umwandlungssprache.</description_80>
     <description_80 language="en">Just another XML Processor language.</description_80>
     <keywords>XML, engine</keywords>
@@ -181,7 +181,7 @@ APIV hat folgende Features:]]></content>
     <content language="en">"Just another XML Processor" is a script language with interpreter. Its purpose is the simple processing of xml files and the transforming to other formats.&lt;br>You only need Java JRE 1.5 to run the program.</content>
     <features language="de">
       <feature>Es können mehrere XML Dateien geladen werden.</feature>
-      <feature>Die Ausgabe kann in mehrere Dateien auf einmal erfolgen.</feature>
+      <feature>Die Ausgabe einer XML-Datei kann in mehrere Dateien auf einmal und in unterschiedlichen Kodierungen erfolgen.</feature>
       <feature>Die Befehle können, wie bei php, in andere Dateien eingebaut werden.</feature>
       <feature>Man kann (auch rekursive) Funktionen definieren.</feature>
       <feature>Nicht geänderte Dateien werden ignoriert.</feature>
@@ -191,7 +191,7 @@ APIV hat folgende Features:]]></content>
     </features>
     <features language="en">
       <feature>You can load multiple xml files.</feature>
-      <feature>You can write to multiple files.</feature>
+      <feature>You can write the data of a single xml to multiple files and in different encodings.</feature>
       <feature>Like in php, the commands can be included in other files.</feature>
       <feature>Unchanged files are ignored.</feature>
       <feature>You can use (even recursive) functions.</feature>
@@ -201,10 +201,10 @@ APIV hat folgende Features:]]></content>
   </download>
   <download> 
     <title>SimplifyDiff</title>
-	<id>simplifydiff</id>
+    <id>simplifydiff</id>
     <file title="Windows">simplifydiff.zip</file>
-	<file title="Linux">simplifydiff_linux.zip</file>
-	<file title="Source">source/simplifydiff.zip</file>
+    <file title="Linux">simplifydiff_linux.zip</file>
+    <file title="Source">source/simplifydiff.zip</file>
     <description_80 language="de">SimplifyDiff entfernt alle unnötigen Daten wie Whitespace-Änderungen und Duplikate aus einem Diff.</description_80>
     <description_80 language="en">SimplifyDiff remove all unnessecary lines from a diff file like modified white space or duplicates.</description_80>
     <keywords>diff, whitespace</keywords>

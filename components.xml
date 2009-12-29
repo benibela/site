@@ -21,19 +21,20 @@ Sie hat folgende Features:</content>
 It has these features:</content>
     <features language="de">
       <feature>Gleichzeitige Anzeige des Strukturbaumes und zusätzlicher Spalten</feature>
+      <feature>Jeder Knoten kann mit einem Icon versehen werden und der Benutzer kann Teilbäume auf- und zuklappen.</feature>
       <feature>Es können Trennlinien zwischen Zeilen und Spalten angezeigt werden.</feature>
       <feature>Zeilen können abwechselnd unterschiedliche Hintergrundfarben bekommen.</feature>
-      <feature>Jeder Knoten kann mit einem Icon versehen werden und der Benutzer kann Teilbäume auf- und zuklappen.</feature>
       <feature>Die Zeilen können automatisch numerisch/lexikalisch sortiert werden</feature>
       <feature>Spalteneinträge können linksbündig, rechtsbündig und zentriert sein</feature>
       <feature>Der Benutzer kann ohne Änderung der Indizes die Spalten verschieben. (Nur in Lazarus)</feature>
       <feature>Es gibt eine Mozilla-ähnliche Suchleiste mit Hervorhebung des/aller Suchtreffer</feature>
       <feature>Unabhängig von den Windows Common Controls</feature>
-      <feature>Sollte auf allen von Lazarus unterstützten Betriebsystemen laufen (nur Windows getested)</feature>
-      <feature>Läuft unter Delphi (getestet mit D4 und BDS2006) und Lazarus</feature>      
-      <feature>Enthält Beispiel und HTML-Dokumentation</feature>
-    </features>
+      <feature>Sollte auf allen von Lazarus unterstützten Betriebsystemen laufen (nur Debian und Windows getested)</feature>
+      <feature>Läuft unter Delphi (getestet mit D4 und früher auch mal BDS2006) und Lazarus</feature>      
+      <feature>Enthält ein Beispiel und HTML-Dokumentation</feature>
+      <feature>Enthält sowohl ein Delphi- wie auch ein Lazaruspackage für die Registrierung in der IDE</feature>
     <features language="en">
+    </features>
       <feature>It can show a tree together with columns</feature>
       <feature>The lines can be drawn striped, so lines alternate their background color.</feature>
       <feature>It can paint dividing lines between rows and columns.</feature>
@@ -43,14 +44,20 @@ It has these features:</content>
       <feature>The user can move the columns without a change of the indices(only in Lazarus)</feature>
       <feature>Contains a Mozilla like search bar</feature>
       <feature>It is indepent of the Windows Common Controls</feature>
-      <feature>It should work on every OS supported by Lazarus (only Windows tested)</feature>  
-      <feature>Works with Delphi (tested with D4 and BDS2006) and Lazarus</feature>
+      <feature>It should work on every OS supported by Lazarus (only Debian Windows tested)</feature>  
+      <feature>Works with Delphi (tested with D4 and in an old version also BDS2006) and Lazarus</feature>
       <feature>There is an example and html documentation</feature>
+      <feature>There is a design time package for Delphi and for Lazarus.</feature>
     </features>
     
     <screenshot>
-      <title>TreeListView</title>
+      <title>TreeListView Delphi Win-98</title>
       <fullfile>img/components/treelistview.gif</fullfile>
+      <height>300px</height>
+    </screenshot>
+    <screenshot>
+      <title>TreeListView Lazarus GTK2</title>
+      <fullfile>img/components/treelistview2.png</fullfile>
       <height>300px</height>
     </screenshot>
   </download>
@@ -58,14 +65,14 @@ It has these features:</content>
     <title>TSearchBar</title>
     <file>searchbar.zip</file>
     <id>searchbar</id>
-    <description_80 language="de">Eine Leiste, die den von Mozilla verwendeten Suchleisten ähnelt.</description_80>
-    <description_80 language="en">A Mozilla like search bar.</description_80>
+    <description_80 language="de">Eine typische Suchleiste mit Vorwärts/Rückwärts/Einfärbe-Buttons.</description_80>
+    <description_80 language="en">A typical search bar with next/previous/highlight-buttons.</description_80>
     <prog-language>Lazarus, Delphi</prog-language>
     <source-license>GPL</source-license>
-    <content language="de">Diese Suchleiste entspricht, bis auf fehlende Bilder, den von Mozilla verwendeten. &lt;br>
-    Sie ist nützlich, da sie einige Dinge automatisiert, die man leicht zu implementieren vergisst.</content>
-    <content language="en">This SearchBar looks and behaves like the ones used from Mozilla (except it doesn't contain pictures). &lt;br>
-    It is useful because it automates a lot of things you can easily forget to implement.</content>
+    <content language="de">Diese Suchleiste ähnelt den von Mozilla bekannten Suchleisten. Sie wird nach dem Einfügen auf dem Formular automatisch am unteren Fensterrand platziert, wo der Benutzer  den Suchtext mit inkrementieller Suchfunktion eingeben kann. Auch gibt es Vorwärts/Rückwärts-Buttons und einen Button, um alle Suchergebnisse einzufärben. Außerdem gibt es eine Combobox, in der z.B.: ein Suchbereich ausgewählt werden kann und die wie die anderen Elemente auch ausgeblendet werden kann, wenn man sie nicht braucht.&lt;br>
+    Die eigentliche Suchefunktionalität muss man natürlich selbst implementieren, aber dies wird enorm vereinfacht, indem alle Benutzereingaben auf ein Ereignis gemappt werden, so dass man sich nicht darum kümmern muss, was jetzt eigentlich passiert ist.  Die Komponente wird auch von meinem TreeListView (siehe oben) benutzt.</content>
+    <content language="en">This SearchBar is similar to those used by Mozilla. It is automatically placed on the bottom of the parenting form where the user can insert it search text (with incremental search). Also there are forward/back/highlight buttons which can be hidden if you don't need them, as well as a combobox which can be used to select a search scope. &lt;br>
+    Of course you have to implement the actual search yourself, but this control make that much easier, because it maps all user interactions to a single event, so you can't forget a possible interaction. (There are a lot of search bars around where the people forgot to handle things like escape or shift+enter...). Above you can see a part of this search bar in the TTreeListView-class.</content>
   </download>
   <download> 
     <title>Custom Controls</title>

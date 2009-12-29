@@ -6,8 +6,15 @@
   <prevent-content-title>YES</prevent-content-title>
   <content>&lt;h2>News&lt;/h2></content>
     <news>
+	  <new date="28. Dec 2009"><text language="de">
+		So nun bin ich von Windows 32-Bit auf Linux 64-Bit gewechselt, und jetzt geht das große Updaten los. Die alten Programme dieser Seite waren zwar theoretisch schon alle platform-unabhängig, praktisch gab es aber noch einige Macken.&lt;br>
+		Mein &lt;a href="components_de.html#treelistview">TreeListView&lt;/a> läuft in der neuen Version unter LCL-GTK sehr viel schneller/flüssiger als früher, da mehrere Benutzereingaben hintereinander zusammengefasst angezeigt werden (wobei es eigentlich ein gemeldeter LCL-Bug ist, dass so viele  überflüssige  Nachrichten überhaupt weitergeleitet werden), außerdem kann jetzt in jedem Item ein Datenwert mit 64-Bit gespeichert werden und die Komponente steht in einem Designzeitpackage zur Verfügung. Die dazugehörige &lt;a href="components_de.html#searchbar">Suchleiste&lt;/a> passt sich nun der Schriftgröße an und hat ebenfalls ein Package bekommen. Zudem kann mein  &lt;a href="tools_de.html#jaxmlp">JAXML-Parser&lt;/a> jetzt auch Dateien mit unterschiedlichen Zeichensätzen erstellen und die \\-Form funktioniert wieder richtig.
+	  </text><text language="en">
+	      So now I switched from Windows 32 bit to Linux 64 bit and need to update all the programs here which were theoretically platform-independent, but apparently didn't really work there.&lt;br>
+The  &lt;a href="components_en.html#treelistview">TreeListView&lt;/a> is now a lot faster in LCL-GTK, because it will cache subsequent input events and draw all changes at once (actually it is a reported lcl bug that there are so many unnecessary events, but joining them is better anyways), and  in every item you can now store a 64 bit value instead of a 32-bit value like before. I also changed the included &lt;a href="components_en.html#searchbar">SearchBar&lt;/a> to set its size dependent on the currently used font. For both these components I created a Delphi and a Lazarus package, so you can place them on the form during the design time.  Furthermore my  &lt;a href="tools_en.html#jaxmlp">JAXML parser&lt;/a> can now create files in different encodings and  \\-escaping works again (it seems I forgot to actually run the unit tests on the last release). 
+	  </text></new>
 	  <new date="05. Okt 2009"><text language="de">
-		Ich habe jetzt mal meine &lt;a href="others_de.html#bachelor">Bachelorarbeit&lt;/a> hochgeladen. Im wesentlichen geht es darum, wie man aus mehreren gegebenen, sortierten Listen von gleichen Ereignissen herausfinden kann, welches dieselben sind. 
+		Ich habe jetzt mal meine &lt;a href="others_de.html#bachelor">Bachelorarbeit&lt;/a> hochgeladen. Im Wesentlichen geht es darum, wie man aus mehreren gegebenen, sortierten Listen von gleichen Ereignissen herausfinden kann, welches dieselben sind. 
 	  </text></new>
 	  <new date="16. Sep 2009"><text language="de">
 		Diese Woche habe ich meine Bachelorarbeit/prüfung abgelegt , so dass ich mich wieder etwas um meine Homepage kümmern kann. &lt;br>
