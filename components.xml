@@ -8,6 +8,7 @@
   <download-dir>bin/components</download-dir>
   <download> 
     <title>TTreeListView</title>
+    <link type="onlinedocu"/>
     <file>treelistview.zip</file>
     <id>treelistview</id>
     <description_80 language="de">Eine Verbindung von TListView und TTreeView, die einen Baum mit Spalten anzeigt.</description_80>
@@ -49,7 +50,6 @@ It has these features:</content>
       <feature>There is an example and html documentation</feature>
       <feature>There is a design time package for Delphi and for Lazarus.</feature>
     </features>
-    
     <screenshot>
       <title>TreeListView Delphi Win-98</title>
       <fullfile>img/components/treelistview.gif</fullfile>
@@ -63,6 +63,7 @@ It has these features:</content>
   </download>
   <download> 
     <title>TSearchBar</title>
+    <link type="onlinedocu"/>
     <file>searchbar.zip</file>
     <id>searchbar</id>
     <description_80 language="de">Eine typische Suchleiste mit Vorwärts/Rückwärts/Einfärbe-Buttons.</description_80>

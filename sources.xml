@@ -44,28 +44,51 @@
     </screenshot>
   </download>
   <download> 
-    <title>HTML-Parser</title>
-    <file>htmlparser.zip</file>
-    <id>htmlparser.zip</id>
-    <description_80 language="de">Ein Template-basierter HTML-Parser</description_80>
-    <description_80 language="en">A template based html parser.</description_80>
+    <title>Internet Tools</title>
+    <link type="onlinedocu"/>
+    <file>internettools.zip</file>
+    <id>internettools</id>
+    <description_80 language="de">Template-basierter HTML-Parser, Autoupdateklasse und HTTP-Verbindungswrapper</description_80>
+    <description_80 language="en">A template based html parser, an auto update class and a http connection wrapper.</description_80>
     <prog-language>FPC</prog-language>
     <source-license>GPL</source-license>
-    <content language="de">Dieser HTML Parser benutzt zum Auswerten einer html-Seite eine in HTML-ähnlichen Sprache geschriebene Templatedatei. So kann man praktischerweise die zu parsende Datei mit minimalen Änderungen als Template benutzen.</content>
-    <content language="en">This html parser interprets the html data using a template written in a html like language. So you can just use the file to parse as template with only small changes. </content>
+    <content language="de">Dieses Package besteht aus drei Teilen, die alle aufeinander aufbauen: &lt;br> Der HTML Parser benutzt zum Auswerten einer HTML-Seite eine in einer HTML-ähnlichen Sprache geschriebene Templatedatei. So kann man praktisch die zu parsende Datei mit minimalen Änderungen als Template benutzen und auch schnell an Änderungen der geparsten Seite anpassen. &lt;br> Der HTTP-Verbindungswrapper ermöglicht es dynamisch zwischen Wininet (auf allen Windowscomputern vorhanden) und Synapse (platform-unabhängig,  aber muss installiert werden) umzuschalten.&lt;br> Mit der Autoupdateklasse ist es einfach, ein Programm um ein Autoupdate zu erweitern, bei dem das Update automatisch aus dem Internet geladen und dann wahlweise auch installiert wird.&lt;br> </content>
+    <content language="en">This package consists of three parts working together: &lt;br> The HTML Parser parses a html page using a language similar to html itself. Therefore you can just copy the html site you want to parse and mark the important things  to get a template for the parser. With this template you can  extract the marked information from any similar page. (imagine for example you have a site showing several entries from a database. Then you can create a template for one of those entries and the parser will automatically retrieve all entries)  &lt;br> The http-wrapper enables you to switch dynamically between Wininet (default library installed on every Windows computer) and Synapse (platform-independent,  but not always installed).&lt;br> The auto update class can be used to add an auto update function to a program which will check online for a more recent version, download that version automatically and (optionally) install it. </content>
     <features language="de">
-      <feature>Templates lassen sich einfach erstellen/updaten</feature>
+      <feature>&lt;b>Parser:&lt;/b></feature>
+      <feature>Templates lassen sich einfach aus einer html-Datei erstellen/updaten</feature>
       <feature>Es kann alle Teile der html Datei (außer Kommentaren) lesen</feature>
-      <feature>Kann mit regulären Ausdrücken kombiniert werden</feature>
-      <feature>Erlaubt optionale Elemente, Schleifen und Bedingungen</feature>
-      <feature>Es gibt eine Hilfedatei</feature>
+      <feature>Die Seite wird automatisch in den richtigen Ausgabezeichensatz konvertiert</feature>
+      <feature>Die Templatesprache enthält reguläre Ausdrücke</feature>
+      <feature>Die Sprache unterstützt optionale Elemente, Schleifen und If-Anweisungen</feature>
+      <feature></feature>
+      <feature>&lt;b>HTTP-Wrapper:&lt;/b></feature>
+      <feature>Erlaubt GET/POST-Übertragungen über http und https mit Fortschrittsanzeige</feature>
+      <feature>Verwendet entweder die Windowsstandardlibrary Wininet oder das platformunabhängige Synapsepackage</feature>
+      <feature></feature>
+      <feature>&lt;b>Auto update:&lt;/b></feature>
+      <feature>Verwendet ein XML-Format, um auf dem Server die aktuelle Version und das Changelog zu speichern.</feature>
+      <feature>Erlaubt unterschiedliche Updates für 32/64-bit Linux/Windows und BSD-Platformen</feature>
+      <feature>Überprüft, ob es eine neue Version gibt, indem nur eine kleine Datei (statt dem Changelog) heruntergeladen wird</feature>
+      <feature>Erlaubt das Ausführen beliebiger Kommandozeilenparameter</feature>
     </features>
     <features language="en">
-      <feature>Templates can be easily created/updated</feature>
+      <feature>&lt;b>Parser:&lt;/b></feature>
+      <feature>Templates can be easily created/updated from the existing html file</feature>
       <feature>Can read all parts of the html file (except comments)</feature>
-      <feature>Can be combined with regular expressions</feature>
-      <feature>Allows loops and conditions</feature>
-      <feature>There is a help file</feature>
+      <feature>The values are automatically converted into the correct output encoding</feature>
+      <feature>The template languages allows the use of regular expressions</feature>
+      <feature>The language allows optional elements, loops and conditions</feature>
+      <feature></feature>
+      <feature>&lt;b>HTTP-Wrapper:&lt;/b></feature>
+      <feature>Can be used for get/post transmissions over http and https</feature>
+      <feature>Either uses  the default Windows library Wininet or the platform independent synapse package</feature>
+      <feature></feature>
+      <feature>&lt;b>Auto update:&lt;/b></feature>
+      <feature>Uses a xml format to store the most recent version and a changelog on the server.</feature>
+      <feature>Supports different updates for 32/64-bit platforms and linux,Windows or BSD systems </feature>
+      <feature>Checks if a new version is available without downloading the whole, large changelog</feature>
+      <feature>Allows the execution of an arbitrary command line after the update</feature>
     </features>
   </download>
   <download> 
@@ -144,6 +167,7 @@ The most important features are:]]></content>
   </download>
   <download>
     <title>BBUtils</title>
+    <link type="onlinedocu"/>
     <file>bbutils.zip</file>
     <id>bbutils</id>
     <description_80 language="de">Häufig benötigte Funktionen, die einem bei FPC fehlen.</description_80>
@@ -255,10 +279,10 @@ The exact features are:]]></content>
     <prog-language>FPC</prog-language>
     <source-license>GPL</source-license>
     <size_KB>10</size_KB>
-    <content language="de"><![CDATA[Hiermit kann man in ein Programm ein automatisches Update übers Internet einbauen.<br>Um die Klasse benutzen zu können, braucht man eine wininet-Unit, die die Windowsinternetfunktionen enthält.
+    <content language="de"><![CDATA[Hiermit kann man in ein Programm ein automatisches Update übers Internet einbauen.<br>Um die Klasse benutzen zu können, braucht man eine wininet-Unit, die die Windowsinternetfunktionen enthält. (<a href="#internettools">oben</a> gibt es eine neuere Version, die ein besser konfigurierbares XML-Format verwendet)
 Funktionen:]]></content>
     <content language="en"><![CDATA[This allows an automatical update about the internt.<br>
-To use the class you need a wininet unit containing the windows internet functions.<br>Features:]]></content>
+To use the class you need a wininet unit containing the windows internet functions (<a href="#internettools">above is a new class which use a better customizable xml format).<br>Features:]]></content>
     <features language="de">
       <feature>Erkennen neuer Versionen</feature>
       <feature>Download dieser</feature>
