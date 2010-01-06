@@ -11,7 +11,8 @@ The language codes "de" and "en" specify which languages are supported. If one o
   <download> 
     <title>VideLibri</title>
     <id>videlibri</id>
-    <file>videlibri-setup.exe</file>
+    <file title="Windows, Version 0.995 ">videlibri-setup.exe</file>
+    <file title="Debian 64-bit, Version 0.996">videlibri_deb64.tar.bz2</file>
     <description_80 language="de">Ein Programm zur Verwaltung ausgeliehener Bücher</description_80>
     <description_80 language="en">A program to manage lend books </description_80>
     <keywords language="de">Düsseldorf, Bücherei, Bibliothek, Stadtbücherei, Universitätbibliothek, Landesbibliothek, Fachhochschulbibliothek</keywords>
@@ -24,14 +25,20 @@ The language codes "de" and "en" specify which languages are supported. If one o
     Besonders praktisch ist das Programm für Leute, die mehrere Konten bei verschiedenen Büchereien haben, da es die einzigste Möglichkeit ist automatisch alle ausgeliehenen Bücher auf einmal zu betrachten.&lt;br&gt;&lt;br&gt;
 Im einzelnen hat VideLibri folgende Features:</content>
     <content language="en">VideLibri manages books lend in public library, but only the ones of the German city Düsseldorf.</content>
+    <screenshot>
+      <title language="de">Videlibri</title>
+      <fullfile>img/tools/videlibri.png</fullfile>
+      <height>230px</height>
+    </screenshot>
     <features language="de">
       <feature>Es können die Medien von mehreren Konten gleichzeitig betrachtet und verlängert werden</feature>
       <feature>Bald fällige Medien werden automatisch verlängert</feature>
+      <feature>Abgabezeiten in unterschiedlichen Wochen werden markiert.</feature>
       <feature>Vor dem endgültigeme Ablauf der Leihfrist wird man vom Programm benachrichtigt</feature>
       <feature>Die Liste der ausgeliehenen Medien wird automatisch über die Internetseiten der Büchereien aktualisiert.</feature>
       <feature>Die momentan ausgeliehenen Medien werden gespeichert, so dass man seine Ausleihen sehen kann, ohne dafür ins Internet zu müssen.</feature>
       <feature>Es kann nach beliebigen (auch nicht ausgeliehenen) Medien gesucht werden</feature>
-      <feature>VideLibri wird (je nach Einstellung) bei jedem Windowsstart minimiert in der Symbolleiste gestartet</feature>
+      <feature>VideLibri wird (je nach Einstellung) bei jedem Systemstart minimiert in der Symbolleiste gestartet</feature>
       <feature>Alle jemals ausgeliehenen Medien können gespeichert</feature>
       <feature>Es gibt eine Statistik über alle ausgeliehenen Medien</feature>
       <feature>BibTex-Export für die Erstellung von Literaturverzeichnisse.</feature>
@@ -42,6 +49,7 @@ Im einzelnen hat VideLibri folgende Features:</content>
       &lt;ul>&lt;li>Die Stadtbüchereien Düsseldorf&lt;/li>
       &lt;li>Die Fachhochschulbibliothek Düsseldorf&lt;/li>
       &lt;li>Die Universitäts- und Landesbibliothek Düsseldorf&lt;/li>
+      &lt;li>Die Stadtbibliothek Aachen&lt;/li>
       &lt;li>(Ungetestet) die Fachhochschulbibliothek Bochum&lt;/li>
       &lt;/ul>&lt;br&gt;
       Die automatischen Verlängerungen und Benachrichtigungen funktionieren natürlich nur, wenn das Programm auch gestartet wird, das heißt, wenn man den (standardmäßig aktiven) Autostart deaktiviert, muss man VideLibri regelmäßig manuell starten.&lt;br&gt;

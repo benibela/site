@@ -60,6 +60,11 @@ It has these features:</content>
       <fullfile>img/components/treelistview2.png</fullfile>
       <height>300px</height>
     </screenshot>
+    <screenshot>
+      <title>TreeListView von VideLibri unter Lazarus Win-98</title>
+      <fullfile>img/components/treelistview3.png</fullfile>
+      <height>230px</height>
+    </screenshot>
   </download>
   <download> 
     <title>TSearchBar</title>
