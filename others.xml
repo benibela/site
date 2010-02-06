@@ -1,8 +1,8 @@
 ﻿<file>
-  <description language="de">BeniBela online: Auf dieser Unterseite gibt es  alles, was nicht mehr auf die anderen gepasst hat. Unter anderem: Ein Mathematikskript und einen Star Wars Film</description>
-  <description language="en">BeniBela online: Here you find everything which doesn't fit into the other categories on my page.</description>
-  <keywords language="de">BeniBela, Skript, Lineare Algebra, 64K 3D Star Wars Intro, download, Glaselektrode, Schnee</keywords>
-  <keywords language="en">BeniBela, script, lineare algebra, 64K 3D Star Wars Intro, download</keywords>
+  <description language="de">BeniBela online: Auf dieser Unterseite gibt es  alles, was nicht mehr auf die anderen gepasst hat.</description>
+  <description language="en">BeniBela online: Here you find everything which don't fit into the other categories on my page.</description>
+  <keywords language="de">BeniBela, Skript, Lineare Algebra, download, Glaselektrode</keywords>
+  <keywords language="en">BeniBela, script, lineare algebra, download</keywords>
   <content language="de">Auf dieser Seite kann man alles finden, was nicht auf die anderen gepasst hat.</content>
   <content language="en">On this page you can find everything which doesn't fit into the other categories.</content>
   <download-dir>bin/others</download-dir>
@@ -34,29 +34,6 @@
     <final-content>
       &lt;script type="text/javascript" src="bin/others/gaussElimination.js">&lt;/script>
     </final-content>
-  </download>
-  <download> 
-    <title language="de">Schnee</title>
-    <title language="en">Snow</title>
-    <file>schnee.exe</file>
-    <description_80 language="de">Ein kleines Programm, das es auf dem Computerbildschirm schneien lässt.</description_80>
-    <description_80 language="en">A small program which draws snow on the screen.</description_80>
-    <payment-license>Freeware</payment-license>
-    <size_KB>121</size_KB>
-    <content language="de">Dieses Programm zeichnet fallenden Schnee auf dem Bildschirm.&lt;br&gt;
-Es lässt sich allerdings nur über den Taskmanager beenden. </content>
-    <content language="en">This program draws snow on the screen, which falls from the top side to the bottom side.&lt;br&gt;
-You can only stop it over the task manager. </content>
-  </download>
-  <download> 
-    <title>64K 3D Starwars Intro</title>
-    <file>starwars.exe</file>
-    <description_80 language="de">Ein kleiner Film zum Thema Star Wars, in dem ein Raumschiffkampf gezeigt wird.</description_80>
-    <description_80 language="en">A small movie concerning Star Wars where you see a space ship fight.</description_80>
-    <payment-license>Freeware</payment-license>
-    <size_KB>41</size_KB>
-    <content language="de">Dieses Intro wurde für einen Wettbewerb programmiert (mit leider zwei Teilnehmern, wie am Abgabetermin bekannt wurde), bei dem es den ersten Platz erhielt. Man sieht einen Angriff auf Coruscant, für den ein Ablenkungsmanöver über Praesitlyn ausgeführt wird. Es ist nur 40KB groß, braucht aber für die Soundausgabe <a href="http://www.fmod.org">FMOD</a>, und Windows. </content>
-    <content language="en">This intro was created for a contest (sadly only two people took part in it) and it came on place one. You can see an attack on Coruscant, for which a bluff attack is maked at Praesitlyn. It is only 40KB big, but it needs <a href="http://www.fmod.org">FMOD</a> for sounds, and Windows. </content>
   </download>
   <download> 
     <title>Bacholorarbeit</title>

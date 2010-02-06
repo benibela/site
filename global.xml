@@ -34,6 +34,11 @@
   <title language="en">Games</title>
 </fileinfo>  
 <fileinfo>
+  <basefilename>demos</basefilename>
+  <title language="de">Demos</title>
+  <title language="en">Demos</title>
+</fileinfo>  
+<fileinfo>
   <basefilename>programming</basefilename>
   <title language="de">Programmierung</title>
   <title language="en">Programming</title>

@@ -47,10 +47,10 @@ Im einzelnen hat VideLibri folgende Features:</content>
     </features>
     <final-content>&lt;br&gt;Es werden folgende Büchereien unterstützt:
       &lt;ul>&lt;li>Die Stadtbüchereien Düsseldorf&lt;/li>
-      &lt;li>Die Fachhochschulbibliothek Düsseldorf&lt;/li>
+      &lt;li>Die Fachhochschulbibliothek Düsseldorf (momentan nicht verfügbar) &lt;/li>
       &lt;li>Die Universitäts- und Landesbibliothek Düsseldorf&lt;/li>
-      &lt;li>Die Stadtbibliothek Aachen&lt;/li>
-      &lt;li>(Ungetestet) die Fachhochschulbibliothek Bochum&lt;/li>
+      &lt;li>Die Stadtbibliothek Aachen (momentan eventuell nicht verfügbar)&lt;/li>
+      &lt;li>Die Hochschulbibliothek der RWTH Aachen&lt;/li>
       &lt;/ul>&lt;br&gt;
       Die automatischen Verlängerungen und Benachrichtigungen funktionieren natürlich nur, wenn das Programm auch gestartet wird, das heißt, wenn man den (standardmäßig aktiven) Autostart deaktiviert, muss man VideLibri regelmäßig manuell starten.&lt;br&gt;
       Die kostenlose Sharewareversion zeigt nur jeweils 10 Medien und jeden Monat beim Starten ein Hinweisfenster an, die uneingeschränkte  Vollversion kostet 10&amp;euro; (Selbstkostenpreis). &lt;br&gt;Wer in der Sharewareversion einen größeren Fehler findet und meldet, kann eine kostenlose Vollversion erhalten.
