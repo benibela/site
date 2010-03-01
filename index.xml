@@ -6,6 +6,22 @@
   <prevent-content-title>YES</prevent-content-title>
   <content>&lt;h2>News&lt;/h2></content>
     <news>
+          <new date="16. Feb 2010"><text language="de">
+          Heute gibt es abermals ein &lt;a href="tools_de.html#videlibri">Videlibri-Update&lt;/a>, das die unten erwähnten Probleme mit der  FHB Düsseldorf und den beiden Aachener Bibliotheken löst. Außerdem läuft es jetzt wieder unter Windows (und weiterhin unter Linux).&lt;br>
+          Dazu habe ich auch meine  &lt;a href="sources_de.html#internettools">Internettools&lt;/a> aktualisiert: Der Wininet-Wrapper unterstützt nun auch Cookies ohne Attribute und http-Verbindungen über andere Ports als 80. Außerdem gibt es ein globales Logging (was man insbesondere für https braucht). Die Parserklasse ist ebenfalls flexibler geworden und man kann in den Pseudo-XPath-Ausdrücken nun auch Regex-Filter vor dem Ausführen anderer Funktionen anwenden, statt nur nachträglich wie bisher. (echte XPath-Ausdrücke können es dagegen übrigens gar nicht)&lt;br>
+          Zudem habe ich ein paar News ins Archiv und einige unfertige Tools auf die Demoseite verschoben. 
+          </text><text language="en">
+          There is a new update of my &lt;a href="sources_en.html#internettools">Internettools&lt;/a>: It fixes two small bugs that prevented the receiving of cookies without attributes and the creation of http connections over the 8080 port. It also add a global logging which is especially useful for debugging https.  In the  parser class the pseudo-XPath-expressions can now extract regex-matching data during the evaluation of the expression instead only afterwards like before. (real XPath-expressions does not support it at all) &lt;br>
+         Furthermore, some news have been moved in the archive and some uncompleted tools on the demo page.
+          </text></new>
+          <new date="07. Feb 2010"><text language="de">
+          Ab jetzt gibt es eine extra &lt;a href="demos_de.html">Demo-Unterseite&lt;/a> für kleine Programme, die eigentlich nutzlos sind, aber interessante Techniken oder hübsche Filme zeigen. Dazu habe ich zum einen ein paar Programme verschoben, zum anderen gibt es zwei neue, die ich an der Uni aus den Übungsprogrammen der VR- und Computergrafikvorlesungen programmiert habe. &lt;br>
+          Beide zeigen eine echte 3D-Darstellung, das eine rendert hardware beschleunigte &lt;a href="demos_de.html#sirdsgl">Single Image (Random Dot) Stereograms&lt;/a>, also Bilder, in denen man ein 3D-Bild durch Schielen sehen kann. Das andere &lt;a href="demos_de.html#webcamucp">"Webcam-UCP"&lt;/a> Programm verwendet die klassische rot/cyan-Trennung, um Bilder für 3D-Brillen zu erstellen. Zusätzlich wird aber mittels einer Webcam, die Brillenposition getrackt und die Szene betrachterzentriert gerendert.&lt;br>
+          Außerdem funktioniert in Videlibri jetzt wieder die StB Aachen (FHB Düsseldorf vermutlich auch), ich lade die neue Version aber erst hoch, wenn ich die FHB noch getestet habe, da es ja sowieso niemand nutzt.
+          </text><text language="en">
+          There is now a new &lt;a href="demos_en.html">demo page&lt;/a> listing small program which are useless but demonstrate interesting techniques or show nice films. &lt;br>
+          Aside from some recategorizated old programs, there are two new ones on this page, both based on lecture exercises and rendering real 3d. The first draws hardware accelerated &lt;a href="demos_en.html#sirdsgl">Single Image (Random Dot) Stereograms&lt;/a>. SIRDS are flat pictures containing a 3d scene which you can only see by squinting.  The other &lt;a href="demos_en.html#webcamucp">"Webcam-UCP"&lt;/a> program creates  traditional red/cyan anaglyphs. Furthermore it tracks the position of the 3d glasses via a webcam and renders the scene in user centered projection.&lt;br>
+          </text></new>
           <new date="27. Jan 2010"><text language="de">
           Von VideLibri gibt es nun eine neue Version, die auch die Hochschulbibliothekk der RWTH Aachen unterstützt und vollständig Linux-kompatible ist, inklusive Menüeinträge und integrierte Autostartkonfiguration.  &lt;br>
           Nun die schlechten Nachrichten: Bei der BTH Aachen gibt es noch keine integrierte Verlängerung, da man nicht gleich nach einer  Ausleihe verlängern darf, und ich somit weiß  nicht feststellen kann, wie es funktioniert. Außerden haben alle Libero-Büchereien mal wieder eine neue Software installiert. Das heißt:&lt;br>
@@ -67,93 +83,6 @@ The  &lt;a href="components_en.html#treelistview">TreeListView&lt;/a> is now a l
         But since he has some bugs, I created some small patches, which got bigger and bigger, until they finally lead to the fork &lt;a href="http://texmakerx.sourceforge.net">TexMakerX&lt;/a> (on Sourceforge). The most important features I added are, interactive spell checking, code folding and a text analysis.&lt;br>
          On this web page I only updated the overview text below and corrected the date of the last news from 18.Okt to 27.Nov. (version control systems are really useful...) (correction: The date of the VCS was wrong, but my CMS got it right).
       </text></new>    
-      <new date="07. Nov 2008"><text language="de">
-        Es gibt jetzt eine &lt;a href="sources_de.html#bbutils">Übersetzungunit&lt;/a> für FPC-Dateien (wird fürs Compilern von APIM benötigt) und einen verbesserten &lt;a href="sources_de.html#htmlparser.zip">HTML-Auswerter&lt;/a>, der auch optionale Elemente unterstützt.&lt;br>
-        Und außerdem eine neue Videlibriversion, welche auch ein Konto der FHB ohne ausgeliehene Medien verarbeiten kann (wobei man dann natürlich sowieso kein Ausleihverwaltungsprogramm benötigt)
-      </text><text language="en">
-        I added a  &lt;a href="sources_en.html#bbutils">translation unit&lt;/a> for fpc-files (you need it for compiling APIM) and improved my &lt;a href="sources_en.html#htmlparser.zip">html template parser&lt;/a>, so that it now supports  optional elements.
-      </text></new>
-      <new date="18. Okt 2008"><text language="de">
-        Nach langer Zeit gibt es eine neue Version von APIV, meinem Programm zur Kontrolle anderer Fenster. Wegen einem möglichen Namenskonflikt heißt es jetzt allerdings &lt;a href="tools_de.html#apim">API Manager&lt;/a>. &lt;br> 
-        Es gibt einige neue Features, die wesentliche Verbesserung ist aber die höhere Stabilität und Flexibilität. Die alte Version neigte dazu häufig nicht zu starten oder einfach abzustürzen, bei der neuen sollte dies nicht mehr passieren. Die Flexibilität kommt dadurch zustande, dass man mittels Docking die einzelnen Bestandteile des Programms einigermaßen beliebig anordnen kann. Dazu habe ich den GUI-Teil fast komplett neugeschrieben und nebenbei von Delphi nach Lazarus portiert. Außerdem ist der Quellcode jetzt ordentlich genug, dass ich das Programm unter die GPL stellen kann.
-      </text><text language="en">
-        It took a long time, but there is now a new version of APIV, a program to control other ones. It is now called &lt;a href="tools_de.html#apim">API Manager&lt;/a> due to another program with the same name.  &lt;br> 
-        It has got some new features, but the most important improvement is that it is much more stable and flexible. The old version often crashed or doesn't start at all, now something like that shouldn't happen anymore. And it is flexible, because it supports docking which you can use to choose the  layout you want. It also supports automatically translations, so it has been translated into English. The GUI part is nearly completely rewritten and converted from Delphi to Lazarus. Furthermore the source is nice enough that I can publish it under the GPL.
-      </text></new>
-      <new date="15. Okt 2008"><text language="de">
-        Das neue &lt;a href="tools_de.html#videlibri">VideLibri 0.994&lt;/a> bringt einige kosmetische Verbesserungen.
-      </text></new>
-      <new date="24. Sep 2008"><text language="de">
-      Heute ist der Welttag gegen &lt;a href="http://stopsoftwarepatents.org/">Softwarepatente&lt;/a>.
-      </text><text language="en">
-      Today is the &lt;a href="http://stopsoftwarepatents.org/">World Day Against Software Patents&lt;/a>.
-      </text></new>
-      <new date="3. Sep 2008"><text language="de">
-      Es gibt ein neues Update für mein &lt;a href="components_de.html#treelistview">TreeListView&lt;/a>, welches die Grafikfehler behebt, die bei aktivieren XP-Themes und Suchleiste auftraten, wenn man es mit FPC oder Delphi ab Version 7 compiliert hatte (D4-6 haben funktioniert). Da das auch &lt;a href="tools_de.html#videlibri">VideLibri&lt;/a> betrifft und inzwischen die FHB ihre Seitenstruktur geändert hat, gibt es davon ebenfalls eine neue Version.
-      </text><text language="en">There is a new update for the &lt;a href="components_en.html#treelistview">TreeListView&lt;/a> which fixes some graphic issues with the XP-themes and FPC or Delphi 7 or higher (D4-6 has worked correctly). </text>
-      </new>    
-      <new date="30. Aug 2008"><text language="de">
-      Ich habe ein bisschen auf der Festplatte gekramt und einige uralt Projekte (von ca. 2000) ausgegraben: Das einzig nützliche ist ein etwas jüngerer &lt;a href="sources_de.html#farbe">erweiterter Farbauswahldialog&lt;/a>. Dann gibt es noch eine Sammlung von Windows-unabhängigen, &lt;a href="components_de.html#customcontrols">bunten Standardkomponenten.&lt;/a>.&lt;br>
-      Damals habe ich ziemlich viele Spiele angefangen, als gibt es hier jetzt zum Einen einen kleinen &lt;a href="games_de.html#benworm">Snakeklon&lt;/a>. Zum anderen zwei unfertige Spiele: ein &lt;a href="games_de.html#indergalaxis">Raumschiffspiel&lt;/a> und ein &lt;a href="games_de.html#pbspiel">Strategiespiel&lt;/a>&lt;br>
-      Außerdem gibt es ein kleineres Update für mein &lt;a href="components_de.html#treelistview">TreeListView&lt;/a> (danke an Bruce Christensen) sowie kritische Bugfixes für &lt;a href="tools_de.html#videlibri">VideLibri&lt;/a>.
-      </text><text language="en">I have looked a little bit around on my harddisk und diged out some old projects (from around 2000): The most useful is a younger &lt;a href="sources_en.html#farbe">extended color selection dialog&lt;/a>. Then there is a collection of  &lt; href="components_en.html#customcontrols">colorful standard components.&lt;/a>.&lt;br>
-      Because I started programming many games at that time, here is a small &lt;a href="games_en.html#benworm">clone of snake&lt;/a> as well as  two unfinished games: a &lt;a href="games_en.html#indergalaxis">space ship game&lt;/a> and a &lt;a href="games_en.html#pbspiel">RTS game&lt;/a>&lt;br>
-      Furthermore there is a small update for the &lt;a href="components_en.html#treelistview">TreeListView&lt;/a> (thanks to Bruce Christensen).</text>
-      </new>
-      <new date="25. Aug 2008"><text language="de">
-        Heute gibt es einige kleine Änderungen: &lt;br> Die neue Version von &lt;a href="tools_de.html#videlibri">VideLibri&lt;/a> behebt einige kleinere Bugs.  Der XML Konverter &lt;a href="tools_de.html#jaxmlp">JAXMLP&lt;/a> erlaubt nun das Ausführen externer Programme und das Einfügen ihrer Ausgabe in die erzeugten Dateien. &lt;br> Mein &lt;a href="components_de.html#treelistview">TreeListView&lt;/a> läuft nun auch unter alten Delphiversionen und verfügt über eine &lt;a href="components_de.html#searchbar">Suchleiste&lt;/a>. Außerdem gibt es einen template-basierten &lt;a href="sources_de.html#htmlparser">HTML-Parser&lt;/a> für Freepascal. Für diese drei Komponenten habe ich zudem jeweils eine HTML-Dokumentation geschrieben.
-      </text>
-      <text language="en">
-        Today there are some small changes: &lt;br> The XML converter &lt;a href="tools_en.html#jaxmlp">JAXMLP&lt;/a> can now call additional programs during a transformation and insert their output into created files.&lt;br>  My &lt;a href="components_en.html#treelistview">TreeListView&lt;/a> can now be used in old Delphi versions and has got a Mozilla like &lt;a href="components_en.html#searchbar">search bar&lt;/a>. Additional there is a template-based &lt;a href="sources_en.html#htmlparser">html parser&lt;/a> for use with FreePascal. These last three components have a new html documentation.</text>
-      </new>
-      <new date="31. Jul 2008"><text language="de">
-        Ich habe das Seitenlayout nochmals überarbeitet, so dass es nun auf allen Browser stabil laufen und sich die Seiten nun ohne Probleme im IE zoomen, durchsuchen, drucken und einigermaßen per Tastatur scrollen lassen sollte. 
-        &lt;br>Besonders das Durchsuchen und Scrollen war problematisch, da bei einem Layout mit festen, den Inhalt überlagernden Elementen die Browsersuchfunktion prinzipiell nicht richtig funktioniert. Und ein Layout mit einem Scrollcontainer lässt sich im Allgemeinen nicht mittels Tastatur scrollen. Hier funktioniert es nun nur, indem jeder Link zu einem Anker zeigt und beim ersten Aufruf mittels JavaScript der Fokus versetzt wird. Aber das ist ziemlich umständlich und funktioniert eben nicht beim ersten Aufruf, wenn Skripte ausgeschaltet sind. Kennt jemand eine Methode dafür, die ohne JavaScript auskommt?
-      </text>
-      <text language="en">
-        I have modified the layout of this site, so that it  works probably stably in all browsers. You can now zoom the pages in IE 7, print in FireFox, search something and scroll using your keyboard.
-        &lt;br>Especially the possibility to search and scroll was difficult to implement, because the usual search functions don't work in a layout using fixed elements lying over the content. And if you put the content in a smaller container with scrollbar, the keyboard scrolling normally doesn't work. Here it works because every link refers to an anchor and a JavaScript function changes the focus to the content area when you visit this site from another one. But this is nasty and doesn't work on the first call if scripts are disabled. Has anyone found a method which doesn't need JavaScript?
-      </text>
-      </new>
-      <new date="19. Jul 2008"><text language="de">
-      Die neue &lt;a href="tools_de.html#videlibri">VideLibri Version 0.990&lt;/a> ermöglicht es nun auch nach nicht ausgeliehenen Medien zu suchen und erweiterte Informationen, wie das Titelbild, anzeigen. Damit hat VideLibri nun eindeutig mehr Funktionen als die nativen Seiten.
-      </text></new>
-      <new date="21. Mai 2008"><text language="de">
-      Heute gibt es verschiedene kleine Updates: Eine neue Version meines &lt;a href="components_de.html#TreeListView">TreeListView&lt;/a>, die einige Fehler beseitigt, stärker den normalen Komponenten ähnelt und unter Lazarus funktioniert. Dafür funktioniert sie aber eventuell nicht mehr unter alten Delphiversionen und hat keine sub-Spalten-Elemente mehr (die machten aber sowieso kaum Sinn). &lt;br> Zusätzlich gibt es eine neue Version von meinem &lt;a href="tools_de.html#jaxmlp">XML Umwandler&lt;/a> mit dem wesentlichsten Unterschied das Eingabedaten als Anweisungen interpretiert werden können.&lt;br>Und dann noch eine Unit mit immer wieder &lt;a href="sources_de.html#bbutils">nützlichen Funktionen&lt;/a> für FPC.&lt;br>Außerdem habe ich das Seitenlayout ein wenig überarbeitet, zum Beispiel mit einigen schöneren internen Links und einer aktualisierten 404-Fehlerseite.</text>
-      <text language="en">Today there are some small updates: A new version of my &lt;a href="components_en.html#treelistview">TreeListView&lt;/a> which removes some bugs, is more similar to the Windows controls and works with Lazarus.  However, it is possible that it doesn't work in  older versions of Delphi and it doesn't shows sub-column-elements (but they were never useful anyways). 
-      &lt;br> Then there is a new version of my &lt;a href="tools_en.html#jaxmlp">xml converter&lt;/a> with the main difference being the possibility to interpret the xml data as source. &lt;br>Furthermore I uploaded a unit (for FPC) containing always &lt;a href="sources_en.html#bbutils">useful functions&lt;/a>.&lt;br>And the layout of this page is improved, for example the URL of the links looks nicer, the 404 error page is updated and untranslated news are shown (in gray).
-      </text>
-      </new>
-    
-    <new date="12. Feb 2008"><text>
-      Die neue &lt;a href="tools_de.html#videlibri">VideLibriversion 0.987&lt;/a> beseitigt mehrere kritische Fehler bei der FHB und STB.</text>
-    </new>
-    <new date="15. Jan 2008"><text>
-      Mein neues Programm &lt;a href="tools_de.html#regstealth.zip">RegStealth&lt;/a> ersetzt die Windowsregistry durch individuelle xml-Dateien für jedes Programm. Momentan ist es aber noch eine pre-Alpha-Version, die noch nicht alle Funnktionen aber dafür vermutlich einige Fehler hat.
-    </text>
-    <text language="en">My new program &lt;a href="tools_en.html#regstealth.zip">RegStealth&lt;/a> replaces the registry of Windows with individual xml-files for every program. However, the current version is pre alpha, so there are missing features and probably bugs.</text>
-    </new>
-    <new date="24. Dez 2007"><text>
-      Frohe Weihnachten!&lt;br>
-      Mit (y&amp;lt;maxy-7*maxx/8?((Math.abs(x-maxx/2)&amp;lt;=maxx/16?6:5)):(Math.abs(x-maxx/2)&amp;lt;(maxy-y+1)/2?7:5)) als Algorithmus für den Musterfeldgenerator (s.u.) erhält man übrigens einen Tannenbaum.
-    </text>
-    <text language="en">Merry Christmas!&lt;br>
-When you use (y&amp;lt;maxy-7*maxx/8?((Math.abs(x-maxx/2)&amp;lt;=maxx/16?6:5)):(Math.abs(x-maxx/2)&amp;lt;(maxy-y+1)/2?7:5)) as algorithm in the color pattern generator(s.b.) you see a Christmas tree.
-    </text></new>
-    <new date="06. Dez 2007"><text>
-      Es gibt jetzt ein &lt;a href="others_de.html#colorMap.js">Onlineprogramm&lt;/a> zur Erzeugung von farbigen Rasterfeldern wie Zufallsmustern oder Höhenfunktionen.
-    </text>
-    <text language="en">There is now a &lt;a href="others_en.html#colorMap.js">online program&lt;/a> which creates colorful raster maps, for example random patterns or high map of a function.</text></new>
-    <new date="29. Nov 2007"><text>
-      Die neue Version 0.985 von &lt;a href="tools_de.html#videlibri">VideLibri-Version&lt;/a> beseitigt zwei kritische Fehler bei der FHB (bezüglich Vormerkungen) und STB (bezüglich "nur nötiger" Verlängerung).
-    </text></new>
-    <new date="31. Okt 2007"><text>
-Da die Stadtbücherei ihren WebOPAC geändert hat, gibt es nun wieder eine neue &lt;a href="tools_de.html#videlibri">VideLibri-Version&lt;/a>, die nun auch über BibTex-Export verfügt. &lt;br>Außerdem gibt es ein &lt;a href="bwinf_de.html#25_3.zip">Programm&lt;/a>, dass die Lösung für eine Aufgabe der Endrunde des Bundeswettbewerb Informatik implementiert; in dem ich jetzt auch Bundessieger geworden bin.
-    </text></new>
-    <new date="23. Juli 2007"><text>
-    Auch diesmal gibt es wieder eine neue Version von VideLibri. Außerdem habe ich noch drei &lt;a href="games_de.html#schlange.zip">alte Spiele&lt;/a> hochgeladen, von denen zwei auf dem Taschenrechner Algebra FX 2.0 Plus laufen. &lt;br> Für diesen Rechner gibt es dann auch noch ein &lt;a href="tools_de.html#math.zip">Hilfsprogramm für Rechnungen mit große Zahlen&lt;/a>.
-    </text><text language="en">You can now download three &lt;a href="games_en.html#schlange.zip">old games&lt;/a>. Two of them can be played on the calculator Algebra FX 2.0 Plus.&lt;br> There is also a program which allows &lt;a href="tools_en.html#math.zip">the calculation with long integers.&lt;/a>.
-</text></new>
   </news>
   <final-content>&lt;br>&lt;br>&lt;h2>Übersicht&lt;/h2>
   &lt;br>

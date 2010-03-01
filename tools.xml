@@ -3,16 +3,16 @@
   <description language="en">On this page you can find some tools: A program to get information about others, a file parser, GUI Tools for the 3D Game Studio, a mathematics program and a paint program.</description>
   <keywords language="de">Delphi, download, Freeware, Shareware, Tools</keywords>
   <keywords language="en">Delphi, APIV, download, freeware</keywords>
-  <content language="de"><![CDATA[Alle hier vorgestellten Programme laufen unter allen Windowsversionen (> 3.11), sofern es nicht (bei FileSim und -Blow) anders angegeben ist. <br>
+  <content language="de"><![CDATA[Alle hier vorgestellten Programme laufen unter allen Windowsversionen (> 3.11), sofern es nicht  anders angegeben ist. <br>
 Die Sprachkürzel "de" und "en" an einem Programm geben an, in welchen Sprachen es verfügbar ist. Ist eines der beiden eingeklammert, so ist nur die Dokumentation in dieser Sprache verfügbar. Bei einem Open Source Programm steht in der rechten Spalte die Abkürzung des Namens der Lizenz, die für den Quellcode gewählt wurde, ansonsten steht dort ein Minus.]]></content>
-<content language="en"><![CDATA[Every tool published on this page is able to run on any Windows system (> 3.11), if there is no contradiction mentioned. (FileSim and -Blow) <br>
+<content language="en"><![CDATA[Every tool published on this page is able to run on any Windows system (> 3.11), if there is no contradiction mentioned. <br>
 The language codes "de" and "en" specify which languages are supported. If one of it is in breaks, the documentation exists in this language, not the program. By a open source program, the abbreviation of the name of the licence under whose terms the source is distributed stands in the right column, otherwise there is a minus.]]></content>
   <download-dir>bin/tools</download-dir>
   <download> 
     <title>VideLibri</title>
     <id>videlibri</id>
-    <file title="Windows, Version 0.995 ">videlibri-setup.exe</file>
-    <file title="Debian 64-bit, Version 0.996">videlibri_deb64.tar.bz2</file>
+    <file title="Windows, Version 0.997 ">videlibri-setup.exe</file>
+    <file title="Debian 64-bit, Version 0.997">videlibri_deb64.tar.bz2</file>
     <description_80 language="de">Ein Programm zur Verwaltung ausgeliehener Bücher</description_80>
     <description_80 language="en">A program to manage lend books </description_80>
     <keywords language="de">Düsseldorf, Bücherei, Bibliothek, Stadtbücherei, Universitätbibliothek, Landesbibliothek, Fachhochschulbibliothek</keywords>
@@ -34,7 +34,7 @@ Im einzelnen hat VideLibri folgende Features:</content>
       <feature>Es können die Medien von mehreren Konten gleichzeitig betrachtet und verlängert werden</feature>
       <feature>Bald fällige Medien werden automatisch verlängert</feature>
       <feature>Abgabezeiten in unterschiedlichen Wochen werden markiert.</feature>
-      <feature>Vor dem endgültigeme Ablauf der Leihfrist wird man vom Programm benachrichtigt</feature>
+      <feature>Vor dem endgültigem Ablauf der Leihfrist wird man vom Programm benachrichtigt</feature>
       <feature>Die Liste der ausgeliehenen Medien wird automatisch über die Internetseiten der Büchereien aktualisiert.</feature>
       <feature>Die momentan ausgeliehenen Medien werden gespeichert, so dass man seine Ausleihen sehen kann, ohne dafür ins Internet zu müssen.</feature>
       <feature>Es kann nach beliebigen (auch nicht ausgeliehenen) Medien gesucht werden</feature>
@@ -47,13 +47,13 @@ Im einzelnen hat VideLibri folgende Features:</content>
     </features>
     <final-content>&lt;br&gt;Es werden folgende Büchereien unterstützt:
       &lt;ul>&lt;li>Die Stadtbüchereien Düsseldorf&lt;/li>
-      &lt;li>Die Fachhochschulbibliothek Düsseldorf (momentan nicht verfügbar) &lt;/li>
+      &lt;li>Die Fachhochschulbibliothek Düsseldorf &lt;/li>
       &lt;li>Die Universitäts- und Landesbibliothek Düsseldorf&lt;/li>
-      &lt;li>Die Stadtbibliothek Aachen (momentan eventuell nicht verfügbar)&lt;/li>
+      &lt;li>Die Stadtbibliothek Aachen&lt;/li>
       &lt;li>Die Hochschulbibliothek der RWTH Aachen&lt;/li>
       &lt;/ul>&lt;br&gt;
       Die automatischen Verlängerungen und Benachrichtigungen funktionieren natürlich nur, wenn das Programm auch gestartet wird, das heißt, wenn man den (standardmäßig aktiven) Autostart deaktiviert, muss man VideLibri regelmäßig manuell starten.&lt;br&gt;
-      Die kostenlose Sharewareversion zeigt nur jeweils 10 Medien und jeden Monat beim Starten ein Hinweisfenster an, die uneingeschränkte  Vollversion kostet 10&amp;euro; (Selbstkostenpreis). &lt;br&gt;Wer in der Sharewareversion einen größeren Fehler findet und meldet, kann eine kostenlose Vollversion erhalten.
+      Die kostenlose Sharewareversion zeigt nur die jeweils wichtigsten 10 Medien und zudem jeden Monat ein Hinweisfenster an, was aber für die meisten Leute völlig ausreicht. Die uneingeschränkte  Vollversion kostet 10&amp;euro; (Selbstkostenpreis und ist nur ein Bruchteil von dem, was man durch das Programm an Säumnisgebühren sparen kann). &lt;br&gt;Wer in der Sharewareversion einen größeren Fehler findet und meldet, kann eine kostenlose Vollversion erhalten.
       &lt;br&gt;
       Eine Übersicht über alle bisherigen Versionen und Änderungen findet man im &lt;a href="updates/videlibri/changelog.xml" class="inline-popup">ChangeLog&lt;/a>. <!--Außerdem gibt es eine Übersicht über &lt;a href="updates/videlibri/bugs.html" class="inline-popup">alle Fehler der aktuellen Version&lt;/a>.-->
       
@@ -238,33 +238,8 @@ APIV hat folgende Features:]]></content>
       <feature>Only looks at the diff file itself and therefore works even if lines marked as identical are different to the original (in contrast to tools like TortoiseMerge)</feature>
     </features>
   </download>
-  <download> 
-    <title>RegStealth 0.01</title>
-    <file>regstealth.zip</file>
-    <description_80 language="de">RegStealth ersetzt die Windowsregistry durch xml-Dateien.</description_80>
-    <description_80 language="en">RegStealth replaces the registry of Windows with xml-files.</description_80>
-    <keywords>registry, xml</keywords>
-    <language>(de), (en)</language>
-    <payment>Freeware</payment>
-    <source>GPL</source>
-    <size_KB>800</size_KB>
-    <content language="de">Mittels IAT-Hooking fängt dieses Programm alle Zugriffe auf die Windowsregistry ab und leitet sie in xml-Dateien um. Momentan ist es allerdings noch nicht vollfunktionsfähig, zeigt aber das es  so funktionieren kann. Man benötigt mindestens W2k. Momentan hat es folgende Eigenschaften:</content>
-    <content language="en">Using IAT-hooking RegStealth captures every registry access and passes it to xml-files. The current version is merely a proof of concept. You need W2k to use it. The properties are:</content>
-    <features language="de">
-      <feature>Die meisten üblichen Registryfunktionen werden ersetzt.</feature>
-      <feature>Original Windowsprogramme werden ignoriert.</feature>
-      <feature>Jede EXE bekommt ihre eigene xml-Datei im Programmverzeichnis.</feature>
-      <feature>Ermöglicht es somit Programme übers Dateisystem auf andere Computer zu verschieben.</feature>
-      <feature>Keine Synchronisierung zwischen mehreren Instanzen.</feature>  
-    </features>
-    <features language="en">
-      <feature>It already replaces most of the usual registry functions.</feature>
-      <feature>Original Windows programs are ignored.</feature>
-      <feature>Every exe get its own xml-file in the application directory.</feature>
-      <feature>Finally it will be easy to copy applications over the file system.</feature>
-      <feature>There is no synchronization between multiple instances of the same program.</feature>
-    </features>
-  </download>
+
+
   <download> 
     <title>AFX-Math</title>
     <file>math.zip</file>
@@ -333,63 +308,6 @@ It has these features:]]></content>
 Der <a href="bin/tools/source/fileparser.zip">Quellcode (17 KB)</a> ist ein Beispiel für ein typisches Delphiprojekt.]]></final-content>
     <final-content language="en"><![CDATA[The parser doesn't have so much functions like others, for example like GNU Make, but because of this you can understand it without reading hundreds of pages.<br>However, the parser is not flexible, e.g. every transformation of one file creates the same result. Therefore I hava programmed <a href="#jaxmlp.zip">JAXMLP</a>, which is much more flexible, since it is a real programming language.<br>
 The <a href="bin/tools/source/fileparser.zip">source (17 KB)</a> is a typical Delphi Project.]]></final-content>
-  </download>
-  <download> 
-    <title>Molekülsimulator</title>
-    <file>moleculesim.zip</file>
-    <description_80 language="de">Sollte die Struktur eines Moleküles berechnen</description_80>
-    <description_80 language="en">It is meant to calculate the structure of a molecule</description_80>
-    <language>de</language>
-    <payment>Freeware</payment>
-    <source>open</source>
-    <size_KB>708</size_KB>
-    <content language="de">Ein Programm, das ich im Rahmen meiner Facharbeit entwickelt habe und das die Konformation eines Moleküles über das Tetraedermodell und quantenchemische Formeln berechnen sollte.&lt;br>Im Allgemeinen funktioniert dies allerdings nicht, warum kann man in der &lt;a href="bin/others/facharbeit.zip">Facharbeit&lt;/a> nachlesen.&lt;br>Man kann es allerdings benutzen, um schöne Lewisformel zu zeichnen und eine (meistens falsche) 3D-Ansicht zu betrachten.</content>
-    <content language="en">This program is meant to be able calculate the conformation of a molecule, either with quanten chemistry calculations or with a very simple model.&lt;br>However, it doesn't work, you can read about the problems, in this &lt;a href="bin/others/facharbeit.zip">German text&lt;/a>.&lt;br>
-    But you can use the program to draw Lewis structures and see the 3D structure of very simple molecules.
-    </content>
-  </download>
-  <download> 
-    <title>FileSim</title>
-    <file>filesim.zip</file>
-    <description_80 language="de">Ein Dateisimulator, der den Inhalt eines Laufwerks auf einem anderen anzeigt. (nur W9x und ME)</description_80>
-    <description_80 language="en">A file simulator which maps a drive on another. (works only under W9x and ME)</description_80>
-    <language>(de), en</language>
-    <payment>Freeware</payment>
-    <source>GPL</source>
-    <size_KB>131</size_KB>
-    <content language="de"><![CDATA[
-Dieses Programm simuliert auf einem (bereits vorhandenen) Laufwerk jede Datei eines anderen und verbirgt dabei die ursprünglich vorhandenen Dateien.<br>
-Nicht verändert wird aber der Typ der Laufwerke, es ist also z.B. möglich Dateien von einer Festplatte auf einem CD-ROM Laufwerk erscheinen zu lassen, ohne dass normale Programme feststellen können, dass sie aus einer anderen Quelle kommen.<br>
-Wenn man die Ausgangsdaten aus einem Unterverzeichnis lesen will, kann man mit dem DOS-Programm subst aus dem Verzeichnis ein neues Laufwerk erzeugen und dieses als Quelle benutzen.<br>
-Das Programm funktioniert wegen der verwendeten Treiberfunktionen nur unter W95, 98 und ME, und es ist auch unmöglich es auf andere Systeme zu portieren, ohne es komplett neu zuschreiben.<br>
-Wenn hierbei ein Bluescreen erscheint, muss nicht unbedingt ein Fehler vorliegen, es kann auch sein das es sich um eine Debugmeldung handelt, die ich vergessen habe, aus dem Programm auszubauen. In dem Fall kann man ohne Probleme eine Taste drücken, und die Meldung verschwindet wieder.<br>
-Der GPL-lizenzierte <a href="bin/tools/source/filesim.zip">Quellcode (203 KB)</a> besteht aus zwei Teilen, dem eigentlichen Treiber, der in einem Mix aus C und Assembler programmiert ist und zum Compilern MASM, Visual C++ (Toolkit) und das 98-DDK (alle 3 von Microsoft) benötigt; und einem Aufrufteil, der in Delphi programmiert ist.  Mit dem Treiberteil kann man gut die W95 Dateifunktionen für Ring 0 Programme kennenlernen.]]></content>
-    <content language="en"><![CDATA[This program simulates each file of a drive on another (existing) one and hides every file of the original one.<br>
-It doesn't change the type of the drive, so it is able to read files of a harddisk from an CD-ROM, without the possibility for normal programs to determine the original location.<br>
-If the original files are in a sub directory, you can create a new drive containing the files of the directory with the DOS-program subst.<br>
-This program works only under W95, 98 and ME, because of the used driver functions.<br>
-If a bluescreen appears, this is not necessarily a problem, perhaps it shows just debug information. Then you can press any key to continue.<br>
-The GPL-licensed <a href="bin/tools/source/filesim.zip">source (203 KB)</a> contains two parts, the important driver programmed in C and assembler needing MASM, Visual C++ (Toolkit) and the 98-DDK (all 3 from Microsoft). The other part is the caller which is programmed in Delphi. You can learn the basic of W95 file system functions with this code.]]></content>
-  </download>
-  <download> 
-    <title>FileBlow</title>
-    <file>fileblow.zip</file>
-    <description_80 language="de">Ein Treiber der die Größe von allen Dateien in einem Verzeichnis auf 7,45EB setzt. (nur W9x und ME)</description_80>
-    <description_80 language="en">A driver which sets the size of all files in a directory to a 7.45EB. (only under W9x and ME)</description_80>
-    <language>(de), en</language>
-    <payment>Freeware</payment>
-    <source>GPL</source>
-    <size_KB>129</size_KB>
-    <content language="de"><![CDATA[
-Dieses Programm simuliert in einem bestimmten Verzeichnis eine Dateigröße von 7,45 ExaByte (=8.000.000.000 GB). Dabei spielt es keine Rolle, dass so große Dateien nicht mehr auf die Festplatte passen würden, angezeigt wird trotzdem diese Größe.<br>
-Das Programm ist praktisch dasselbe wie <a href="#filesim.zip">FileSim</a>, nur verändert es einen anderen Aspekt des Dateisystems.<br>
-Es funktioniert wegen der verwendeten Treiberfunktionen nur unter W95, 98 und ME, und es ist auch unmöglich es auf andere Systeme zu portieren, ohne es komplett neu zuschreiben.<br>
-Der GPL-lizenzierte <a href="bin/tools/source/fileblow.zip">Quellcode (162 KB)</a> besteht aus zwei Teilen, dem eigentlichen Treiber, der in einem Mix aus C und Assembler programmiert ist und zum Compilern MASM, Visual C++ (Toolkit) und das 98-DDK (alle 3 von Microsoft) benötigt; und einem Aufrufteil, der in Delphi programmiert ist.  Mit dem Treiberteil kann man gut die W95 Dateifunktionen für Ring 0 Programme kennenlernen.]]></content>
-    <content language="en"><![CDATA[
-This program shows a file size of 7.45 ExaByte (=8,000,000,000 GB) for every file in a certain directory. It doesn't matter that such big files don't fit on the drive.<br>
-It is mainly the same as <a href="#filesim.zip">FileSim</a>, but it manipulates a different aspect of the file system.<br>
-It works only under W95, 98 and ME, because of the used driver functions.<br>
-The GPL-licensed <a href="bin/tools/source/fileblow.zip">source (162 KB)</a> contains two parts, the important driver programmed in C and assembler which needs MASM, Visual C++ (Toolkit) and the 98-DDK (all 3 from Microsoft). The other part is the caller which is programmed in Delphi. You can learn the basic of W95 file system functions with this code.]]></content>
   </download>
   <download> 
     <title>GUITools</title>
