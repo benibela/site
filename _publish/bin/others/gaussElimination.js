@@ -422,7 +422,7 @@ function gaussParseImport(){
 	if (gaussTextArea==null) gaussReadInterfaceVars();
 	var rowSplit = new RegExp("[^"+gaussNewRowChars.value+"]+["+gaussNewRowChars.value+"]","g");
 	var colSplit = new RegExp("[^"+gaussNewColumnChars.value+"]+["+gaussNewColumnChars.value+"]","g");
-	var number = /[0-9]+(.[0-9]+)?([eE][0-9]+)?/;
+	var number = /-?[ ]*[0-9]+(.[0-9]+)?([eE][0-9]+)?/;
 	var textRows = (gaussTextArea.value+gaussNewRowChars.value).match(rowSplit);
 	if (textRows.length==0) {
 		alert("no rows");
@@ -444,9 +444,12 @@ function gaussParseImport(){
 		for (var j=0;j<textCols.length;j++){
 			var newNumber=textCols[j].match(number);
 			
-		//	alert(textCols[j]+" -> "+	numbers[i][j]);
-			if (newNumber !=null&& newNumber.length>0 && !isNaN(1*newNumber[0]))
-				newNumbers.push(newNumber[0]);
+			//alert(textCols[j]+" -> "+	newNumber);
+			if (newNumber !=null&& newNumber.length>0) {
+				var nn = newNumber[0].replace(/ */g, "");
+				if (!isNaN(1*nn))
+					newNumbers.push(nn);
+			}
 		}
 		if (newNumbers.length!=0) {
 			if (cols==-1) cols=newNumbers.length;
@@ -468,15 +471,17 @@ function gaussParseImport(){
 }
 function gaussExport(){
 	if (gaussTextArea==null) gaussReadInterfaceVars();
-	var res = "";
+        var res=document.getElementById("gaussExportStartID").value.replace(/\\n/g, "\n").replace(/\\t/g, "\t");
+	var newCol = document.getElementById("gaussExportNewColumnCharsID").value.replace(/\\n/g, "\n").replace(/\\t/g, "\t");
+	var newRow = document.getElementById("gaussExportNewRowCharsID").value.replace(/\\n/g, "\n").replace(/\\t/g, "\t");  
 	for (var i=0; i < gaussRows;i++){
-		if (i!=0) res+=";\n";
+		if (i!=0) res+=newRow;
 		res+=gaussInputs[i][0].value;
 		for (var j=1; j < gaussCols; j++){
-			res+=", "+gaussInputs[i][j].value;
+			res+=newCol+gaussInputs[i][j].value;
 		}
 	}	
-	gaussTextArea.value=res;
+	gaussTextArea.value=res+document.getElementById("gaussExportEndID").value.replace(/\\n/g, "\n").replace(/\\t/g, "\t");
 }
   /*for (var y=0;y<maxy;y++)
         for (var x=0;x<maxx;x++)
@@ -581,7 +586,7 @@ if (lang=="en") {
 						  '4. To swap columns, drag a column using its "move" button on the   "move" button of the other column.<br>'+
 						  '5. To eliminate a cell, drag the pivot row on the edit box of this cell.<br>'+
 						  '6. To eliminate a column below a pivot row, drag the pivot row on the number above the column.<br>';
-  var gaussTxtParsingOptions="<b>Parsing options:</b>";
+  var gaussTxtParsingOptions="<b>Options:</b>";
   var gaussTxtNewColumnChars="New column characters:";
   var gaussTxtNewRowChars="New row characters:";
   var gaussTxtShowLog="Keep log";
@@ -615,7 +620,7 @@ if (lang=="en") {
 						  '4. Um Spalten zu tauschen, schiebe eine Spalte ausgehend von ihrem "move"-Button auf den "move"-Button der jeweils anderen.<br>'+
 						  '5. Um eine Matrixzelle  zu eliminieren, schiebe eine Pivotzeile auf das dazugehörige Editfeld.<br>'+
 						  '6. Um eine Matrixspalte unter einer Pivotzeile zu eliminieren, schiebe diese Zeile auf die Zahl über der Spalte.<br>';
-  var gaussTxtParsingOptions="<b>Importoptionen:</b>";
+  var gaussTxtParsingOptions="<b>Optionen:</b>";
   var gaussTxtNewColumnChars="Zeichen für neue Spalte:";
   var gaussTxtNewRowChars="Zeichen für neue Zeile:";
   var gaussTxtShowLog="Ablauf speichern";
@@ -665,10 +670,11 @@ function createInterface(intfWin){
   doc.write('<br><br>');
   doc.write('<div><div id="gaussImportExportID" style="display:none">');
   doc.write('<textarea rows="15" cols="80" id="gaussTextAreaID"></textarea><br>');
-  doc.write('<button onclick="javascript:gaussExport();" type="button">'+gaussTxtExport+'</button> '); 
+  doc.write('<button onclick="javascript:gaussParseImport();" type="button">'+gaussTxtImport+'</button> '); 
   doc.write(gaussTxtParsingOptions+" "+gaussTxtNewColumnChars+' <input type="text" id="gaussNewColumnCharsID" value=", |\\t=" size="5"/> '); 
-  doc.write(gaussTxtNewRowChars+' <input type="text" id="gaussNewRowCharsID" value="\\n\\r;" size="5"/> '); 
-  doc.write('<button onclick="javascript:gaussParseImport();" type="button">'+gaussTxtImport+'</button>'); 
+  doc.write(gaussTxtNewRowChars+' <input type="text" id="gaussNewRowCharsID" value="\\n\\r;" size="5"/><br> ');
+  doc.write('<button onclick="javascript:gaussExport();" type="button">'+gaussTxtExport+'</button>'); 
+  doc.write('<input type="text" id="gaussExportStartID" value="[" size="5"/> <input type="text" id="gaussExportNewColumnCharsID" value=", " size="5"/> <input type="text" id="gaussExportNewRowCharsID" value=";  \n" size="5"/> <input type="text" id="gaussExportEndID" value="]\\n" size="5"/>'); 
   gaussExport
   doc.write('<br><br></div>');
   
