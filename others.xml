@@ -56,7 +56,7 @@ Empfangsereignissen in Ereignisprotokollen" wird untersucht, wie man aus der Rei
     <size_KB>399</size_KB>
     <content language="de"></content>
     <content language="en">Because the text is in German and to long to translate, the description is also in German:&lt;br>&lt;br></content>
-    <final-content language="de">Der Text stellt zwei Methoden zur Berechnung der Konformation von Molekülen vor. Einerseits die triviale Methode über das Tetraederverfahren, anderenseits eine komplizierte mit Hilfe der Quantenchemie.&lt;br&gt;Desweiteren gibt es ein &lt;a href="bin/tools/moleculesim.zip">Programm&lt;a> das zeigt, dass beide so nicht funktionieren.</final-content>
+    <final-content language="de">Der Text stellt zwei Methoden zur Berechnung der Konformation von Molekülen vor. Einerseits die triviale Methode über das Tetraederverfahren, anderenseits eine komplizierte mit Hilfe der Quantenchemie.&lt;br&gt;Desweiteren gibt es ein &lt;a href="demos_de.html#moleculesim.zip">Programm&lt;a> das zeigt, dass beide so nicht funktionieren.</final-content>
   </download>
   <download> 
     <title>Glaselektrodenreferat</title>

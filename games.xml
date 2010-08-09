@@ -6,6 +6,35 @@
   <content language="de">Alle hier aufgelisteten Spiele laufen unter allen (32 oder höher Bit-) Windowsversionen, und sind deutschsprachig.</content>
 <content language="en">Every game in this list can run on any (32 or more bit) Windows system and has a German user interface.</content>
   <download-dir>bin/games</download-dir>
+
+  <download> 
+    <title>SIRDSlets</title>
+    <file>sirdslets.zip</file> 
+    <id>sirdslets</id>
+    <description_80 language="de">Online Sidescroller-Spiel in einer 3D-Welt, die als Stereogramm gerendert wird.</description_80>
+    <description_80 language="en">Online side-scrolling game in the full 3d world of a stereogram</description_80>
+    <language>en</language>
+    <payment>Freeware (GPL)</payment>
+    <content language="de">Ein Sidescroller, bei dem man ein Raumschiff zwischen verschiedenen Hindernissen wie Minen oder schwarzen Löchern hindurch steuert.&lt;br>Dabei befindet man sich in einer 3D-Welt und kann das Raumschiff sowohl in x, y wie auch z-Richtung fliegen lassen. Außerdem wird der Level als Stereogramm gerendert, so dass man die tatsächliche 3D-Position des Schiffes und der Hindernisse direkt sehen kann. &lt;br>&lt;br>Zusätzlich gibt es ein Stereogrammmalprogramm und einen Leveleditor. (Das Spiel ist spielbar, aber noch nicht ganz fertig, eine deutsche Übersetzung fehlt zum Beispiel noch)</content>
+    <content language="en">A side-scrolling game in which you move a space ship while you have to avoid several obstacles like mines or black holes.&lt;br>The special thing is that the level is a 3d world which is rendered as a stereogram so you can actually see it in full 3d (although it has no colors). The  ship can therefore not only move along the x/y-axis, but also along the z-axis from near to far.&lt;br>Additionally there is a level editor and a simple stereogram painting program. (It is not completely finished, but playable)</content>
+    <final-content language="de">&lt;br>&lt;br>&lt;a href="bin/games/sirdslets/sirdslet_page.html" class="inline-popup-large">Spiele es online&lt;/a></final-content>
+    <final-content language="en">&lt;br>&lt;a href="bin/games/sirdslets/sirdslet_page.html" class="inline-popup-large">Play it online&lt;/a></final-content>
+    <screenshot>
+      <title language="de">Parallelblick</title>
+      <title language="en">parallel eye view</title>
+      <fullfile>img/games/sirdslets_1.png</fullfile>s
+      <height>300px</height>
+    </screenshot>
+    <screenshot>
+      <title language="de">Kreuzblick</title>
+      <title language="en">cross eye view</title>
+      <fullfile>img/games/sirdslets_2.png</fullfile>
+      <height>300px</height>
+    </screenshot>
+  </download>
+
+
+
   <download> 
     <title>Mausitanien</title>
     <file>mausitanien.zip</file>

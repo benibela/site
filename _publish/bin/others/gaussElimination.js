@@ -674,8 +674,10 @@ function createInterface(intfWin){
   doc.write(gaussTxtParsingOptions+" "+gaussTxtNewColumnChars+' <input type="text" id="gaussNewColumnCharsID" value=", |\\t=" size="5"/> '); 
   doc.write(gaussTxtNewRowChars+' <input type="text" id="gaussNewRowCharsID" value="\\n\\r;" size="5"/><br> ');
   doc.write('<button onclick="javascript:gaussExport();" type="button">'+gaussTxtExport+'</button>'); 
-  doc.write('<input type="text" id="gaussExportStartID" value="[" size="5"/> <input type="text" id="gaussExportNewColumnCharsID" value=", " size="5"/> <input type="text" id="gaussExportNewRowCharsID" value=";  \n" size="5"/> <input type="text" id="gaussExportEndID" value="]\\n" size="5"/>'); 
-  gaussExport
+  doc.write('<input type="text" id="gaussExportStartID" value="[" size="5"/>'); 
+  doc.write('<input type="text" id="gaussExportNewColumnCharsID" value=", " size="5"/>');
+  doc.write('<input type="text" id="gaussExportNewRowCharsID" value=";  \\n" size="5"/> <input type="text" id="gaussExportEndID" value="]\\n" size="5"/>'); 
+  //gaussExport
   doc.write('<br><br></div>');
   
   
