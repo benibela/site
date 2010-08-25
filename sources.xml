@@ -324,5 +324,16 @@ Es ist auch möglich Unicodestring, Arrays und Dateien zu komprimieren, indem si
 It is also possible to compress strings in the Unicode Format, arrays and files. These types are simply regarded as Ansi Strings.
 <br>This unit doesn't need the VCL.<br>You get the best compression rates in data which contains many equal characters, but it is always worse than modern compression processes like ACE or RAR.]]></content>
   </download>
+  <download> 
+    <title>TRegExpr</title>
+    <file>regexpr.zip</file>
+    <id>regexpr</id>
+    <description_80 language="de">Kopie von TRegExpr von Andrey V. Sorokin</description_80>
+    <description_80 language="en">Mirror of TRegExpr of Andrey V. Sorokin</description_80>
+    <prog-language>Delphi, FPC</prog-language>
+    <source-license>GPL</source-license>
+    <content language="de">Dies ist eine Kopie von TRegExpr 0.952 von Andrey V. Sorokin, dessen Seite www.regexpstudio.com tot zu sein scheint. Im wesentlichen ist eine Bibliothek für reguläre Ausdrücke, die sämtliche Regexp-Operationen unterstützt, inklusive Backtracking. &lt;br>Ich habe ein paar Zeilen geändert, damit es besser mit FPC funktioniert, die größte Änderung ist im Grunde, dass ich die Unit umbenannt habe.</content>
+    <content language="en">This is a mirror of TRegExpr of Andrey V. Sorokin whose page www.regexpstudio.com seems to be vanished from the internet. It is a highly advanced regular expression parser which supports all regexp operations, even backtracking. Hence, although it was written in 2004, it is still more advanced than most regexpr packages. &lt;br> This copy is a little bit modified to improve fpc support, one of the biggest changes is that I renamed the file to dregexpr.</content>
+  </download>
 
 </file>
