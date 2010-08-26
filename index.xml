@@ -6,6 +6,113 @@
   <prevent-content-title>YES</prevent-content-title>
   <content>&lt;h2>News&lt;/h2></content>
     <news>
+        <new date="26. Aug 2010">
+<text language="en">
+I just started to rewrite my fpc html template parser (which of course involves hours of debugging and patching Lazarus, before I can start to program anything else) and found two bugs due to an invalid string->pchar conversion. And although this is an absolutely trivial conversion, no one seems to have examined and described, how to do it best. So, here is a detailed analysis:
+
+&lt;h4>Converting ansistring to pchar&lt;/h4>
+&lt;p>
+Converting a &lt;a href="http://www.freepascal.org/docs-html/ref/refsu10.html">ansistring&lt;/a> to &lt;a href="http://www.freepascal.org/docs-html/ref/refsu13.html">pchar&lt;/a> should be pretty simple, because  the text itself is stored in almost the same way in both cases. 
+If you have a variable str: string, there are three popular ways to convert it to a pchar: pchar(str), @str[1] and pchar(pointer(str)), but it is not obvious which is the best way to do the conversion.
+
+&lt;p>
+If you don't want to bother with the technical details, &lt;i>you can always use &lt;code>pchar(str)&lt;/code>&lt;/i> and treat the result as a read-only pchar. But this is not the most efficient way to convert the string, and the following table summarizes the advantages (always green) and disadvantages (always red) of the other methods:
+
+&lt;p>
+&lt;table style="margin-left:auto;margin-right:auto">
+&lt;thead>
+&lt;tr>&lt;td class="invisible">&lt;/td>&lt;td>Example&lt;/td>&lt;td>No copy&lt;/td>&lt;td>Branch free&lt;/td>&lt;td>Nil aware&lt;/td>&lt;td>Range safe&lt;/td>&lt;td>$H- safe&lt;/td>&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>&lt;td>Explicit&lt;/td> &lt;td>&lt;code>p := pchar(str)&lt;/code>&lt;/td> &lt;td class="yes">yes&lt;/td> &lt;td class="no">no&lt;/td> &lt;td class="yes">yes&lt;/td> &lt;td class="yes">yes&lt;/td> &lt;td class="yes">yes&lt;/td> &lt;/tr>
+&lt;tr>&lt;td>Array like&lt;/td> &lt;td class="code">p := @str[1]&lt;/span>&lt;/td> &lt;td class="yes">yes&lt;/td> &lt;td class="yesno">without $R&lt;/td>&lt;td class="no">no&lt;/td> &lt;td class="no">no&lt;/td> &lt;td class="no">no&lt;/td> &lt;/tr>
+&lt;tr>&lt;td>Indirect&lt;/td> &lt;td>&lt;code>p := pchar(pointer(str))&lt;/code>&lt;/td> &lt;td class="yes">yes&lt;/td>&lt;td class="yes">yes&lt;/td> &lt;td class="no">no&lt;/td> &lt;td class="yes">yes&lt;/td> &lt;td class="yes">yes&lt;/td> &lt;/tr>
+&lt;/tbody>
+&lt;/table>
+
+&lt;p>
+The meaning of the columns is:
+&lt;ul>
+&lt;li>No copy: None of the methods above copies the content of the string.&lt;/li>
+&lt;li>Branch free: yes, iff the conversion works without branching instructions (hidden ifs). Branching is always very slow and  even if modern computers are fast enough that it usually does not matter, you sometimes have/want to make something as fast as possible.  &lt;/li>
+&lt;li>Nil aware: yes, if it works if str=nil. &lt;/li>
+&lt;li>Range safe: no, iff the conversion can fail if you enable range checking with the $R+ or -Cr option. &lt;br> &lt;code>@str[1]&lt;/code> will raise a range checking error if the string is empty, because s[1] doesn't exist then. &lt;/li>
+&lt;li>$H- safe: no, if it also compiles with shortstrings. This section is only about conversion of ansistrings to pchars and none of the methods supports shortstrings. However, sometimes you forget to enable the $H+ option and every string becomes a shortstring.  If you then use @str[1], it can randomly crash, because shortstrings are not null-terminated. The other two methods are safe, because they will not compile.&lt;/li>
+&lt;/ul>
+
+&lt;p>
+So you should never use @str[1] to convert it to a pchar, and pchar(pointer(str)) only if you understand what nil aware means. &lt;br>
+It is said that every ansistring is null-terminated, but this is not exactly true. There is one (and only one!) case in which a ansistring str is not null-terminated: If str is empty (&lt;code>str = ''&lt;/code>). Then str is nil.&lt;br>
+&lt;code>pchar(str)&lt;/code> will detect this case and returns a pointer to a global #0 character, but &lt;code>pchar(pointer(str))&lt;/code> will return nil. So &lt;i>you can always use &lt;code>pchar(str)&lt;/code>, and &lt;code>pchar(pointer(str))&lt;/code> only if your string is not empty&lt;/i> and you can prove this.&lt;br>
+(and as a remark: if you ever get a string which is not '' and not null-terminated, you probably forget to enable $H+ or - less probably - something wrote to a wrong pointer. )
+
+&lt;p>
+So why should you not always use &lt;code>pchar(str)&lt;/code>? &lt;br>
+Because it is much slower than the two other methods, since &lt;code>pchar(str)&lt;/code> checks for the nil-case, and this is often unnecessary.&lt;br>
+&lt;p>Some people also say &lt;code>pchar(str)&lt;/code> calls &lt;code>UniqueString&lt;/code> to reset the reference count of the string, but this is wrong. &lt;code>pchar(str)&lt;/code> does not call any function.
+
+To see how worse the check is, you have to look at the assembly of the program (generated with fpc2.4 on amd64, not affected by optimization levels (which is strange because the assignment to rax was duplicated)):
+
+&lt;p>
+&lt;code>pchar(str):&lt;/code>
+&lt;pre>
+1    mov    rax,QWORD PTR &lt;i>string variable&lt;/i>
+2    test   rax,rax
+3    jne    &lt;i>to 5&lt;/i>
+4    mov    rax, &lt;i>global #0 address&lt;/i>
+5    mov    QWORD PTR &lt;i>pchar variable&lt;/i>,rax
+&lt;/pre>
+
+&lt;code>p := pchar(pointer(str))&lt;/code> or &lt;code>p := @str[1]&lt;/code> with $R-:
+
+&lt;pre>
+1    mov    rax,QWORD PTR &lt;i>string variable&lt;/i>
+2    mov    QWORD PTR &lt;i>pchar variable&lt;/i>,rax
+&lt;/pre>
+
+So the check requires three additional instructions, and one is a jump instruction which will be executed iff the string is not empty.
+
+Benchmarking (100000000 * 8 times repeated) results in:
+&lt;table style="text-align:center; margin-left:auto;margin-right:auto">
+&lt;tr>&lt;td class="invisible">&lt;/td>&lt;td colspan=2>non-empty string&lt;/td>&lt;td colspan=2>empty string&lt;/td>&lt;/tr>
+&lt;tr>&lt;td class="invisible">&lt;/td>&lt;td>$R-&lt;/td>&lt;td>$R+&lt;/td>&lt;td>$R-&lt;/td>&lt;td>$R+&lt;/td>&lt;/tr>
+&lt;tr>&lt;td style="text-align:left">pchar(str)&lt;/td>&lt;td colspan=2>894 ms&lt;/td>&lt;td colspan=2>496 ms&lt;/td>&lt;/tr>
+&lt;tr>&lt;td style="text-align:left">pchar(pointer(str))&lt;/td>&lt;td colspan=2>325 ms&lt;/td>&lt;td colspan=2>325 ms, but wrong result&lt;/td>&lt;/tr>
+&lt;tr>&lt;td style="text-align:left">@str[1]&lt;/td>&lt;td>325 ms&lt;/td>&lt;td colspan>4616 ms&lt;/td>&lt;td>325 ms, but wrong result&lt;/td>&lt;td>crash&lt;/td>&lt;/td>&lt;/tr>
+&lt;/table>
+&lt;p>
+This shows &lt;code>pchar(pointer(str))&lt;/code> is more than twice as fast than &lt;code>pchar(str)&lt;/code> in the more common use case of non-empty strings.
+
+&lt;p>
+And for completeness, also the &lt;code>$R+ @s[1]&lt;/code> assembly:
+&lt;pre>
+1    mov    rbx, &lt;i>string variable&lt;/i>
+2    mov    rdi,rbx
+3    call   0x421668 &amp;lt;fpc_ansistr_checkzero&amp;gt;
+4    mov    rsi,0x1
+5    mov    rdi, &lt;i>string variable&lt;/i>
+6    call   0x421680 &amp;lt;fpc_ansistr_checkrange&amp;gt;
+7    mov    &lt;i>pchar variable&lt;/i>,rbx
+&lt;/pre>
+
+In all cases is possible to modify the resulting pchar, but if you do that you will modify all copies of the string (unless you call UniqueString before): 
+
+&lt;pre>
+var s,t:string;
+    p:pchar;
+begin
+    s:='Hallo'; 
+    t:=s;
+    p:=pchar(s); 
+    p^:='h';
+    assert(s='hallo');
+    assert(t='hallo');
+end.
+&lt;/pre>
+
+So only modify the pchar of an converted string if you created that string or have modified it before with string functions (so reference count = 1). 
+</text>
+        </new>
 	<new date="20. Aug 2010">
           <text language="de">Langsam sterben alle Seite weg, die ich im Internet kenne. Heute habe ich gemerkt, dass regexpstudio.com mit der TRegExpr-Klasse verschwunden ist, die früher als bester Delphi regexp-Parser galt. (die alten Delphiforen, in denen sie bewundert wurde, finde ich auch nicht mehr...) &lt;br> Da man die Klasse für meine Internettools braucht, gibt es hier jetzt einen &lt;a href="sources_de.html#regexpr">TRegExpr-Mirror&lt;/a>.</text>
           <text language="en"> I just noticed that Andrey V. Sorokin's site regexpstudio.com does not exist anymore. His class TRegExpr was the best regular expression parser for Delphi and FPC. Because you need this class to use my internet tools, I  created a &lt;a href="sources_en.html#regexpr">mirror of TRegExpr&lt;/a>.</text>
