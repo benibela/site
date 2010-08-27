@@ -6,6 +6,10 @@
   <prevent-content-title>YES</prevent-content-title>
   <content>&lt;h2>News&lt;/h2></content>
     <news>
+    <new date="26. Aug 2010">
+    <text language="de">Als ich gerade den vorherigen Artikel auf "unübersetzt" setzen wollte (was ich dann aber doch nicht gemacht habe, da die Textfarbe dadurch grau wird, und das nicht zu den bunten Tabellen passt), habe ich gemerkt, dass JAXMLP überhaupt keine Klammern in den If-Bedingungen erlaubt hat, warum auch immer, vielleicht weil es den Schwierigkeitsgrad fürs Parsen von trivial auf einfach erhöht. Die neue Version unterstützt sie jetzt aber.</text>
+    <text language="en">When I wanted to display the article below as "untranslated" on the German version, I noticed that JAXMLP did not support parentheses in if-conditions (perhaps because it would increase the implementation difficulty from trivial to easy). Anyways, I changed it and you can now use brackets there.  </text>
+    </new>
         <new date="26. Aug 2010">
 <text language="en">
 I just started to rewrite my fpc html template parser (which of course involves hours of debugging and patching Lazarus, before I can start to program anything else) and found two bugs due to an invalid string->pchar conversion. And although this is an absolutely trivial conversion, no one seems to have examined and described, how to do it best. So, here is a detailed analysis:
