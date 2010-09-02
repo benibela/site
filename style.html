@@ -85,7 +85,7 @@
              <div id="newslist">
              {{$FOREACH new: file/news/new}*}
                <h3>{{$WRITE new/@date}*}</h3> 
-               {{$IF (new/text/@language != language/id) && ( (language/id != "de") || (language/id == "de" && new/text/@language != "") ) }*}
+               {{$IF (new/text/@language != language/id) && ( new/text/@language != "" ) }*}
                  <div class="untranslated"><p>(not translated)</p><div class="newstext"><p>{{$WRITE new/text}*}</p></div></div>
                 {{$ELSE}} 
                  <p class="newstext">{{$WRITE new/text}*}</p>
