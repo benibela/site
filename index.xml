@@ -6,6 +6,12 @@
   <prevent-content-title>YES</prevent-content-title>
   <content>&lt;h2>News&lt;/h2></content>
     <news>
+    <new date="24. Sep 2010"><text language="de">
+      Es gibt jetzt eine neue Videlibri Version (0.998). Ich weiß gar nicht, ob man einen Unterschied zur vorherigen Version bemerken kann, auf jeden Fall habe ich die Templates für die Büchereien mit dem neuen Html-Parser vereinfacht.&lt;br>
+      Und eigentlich hatte ich gehofft, dass jemand es von selbst entdeckt, aber da es immer noch niemand verwemdet, verrate ich es mal hier: Im Infodialog von Videlibri, kann man und konnte man schon immer -- wenn man richtig klickt -- Snake spielen!&lt;br>
+      Ansonsten habe ich noch ein paar Sachen geändert, zum Beispiel, das sich eine Unit der Internet Tools nicht unter Windows compilern ließ.
+    </text><text language="en">I tried to write an automatical sourceforge bugtracker/forum responder, which should be trivial with my internet tools library, but it was surprisingly complicated. First sourceforge does not seem to understand host names in the format hostname:port, which is the default format of synapse. Then sf responds with a lot of redirections which neither my library nor synapse followed. Sf also uses the wrong (not standard compliant, although widely used) http status code for these redirections. And finally sf has banned the user agent "Mozilla 3.0 (compatible)" which was my default agent. It only works with "Mozilla/3.0 (compatible)". And everything is encrypted with https, so you could hardly debug it with Wireshark.&lt;br>
+    In the new update I changed that, and you can now compile it on Windows, too.  </text> </new>
     <new date="09. Sep 2010"><text language="de">Heute habe ich noch eine &lt;a href="others_de.html#seminarCV2010">Seminararbeit über Bildsegmentierung&lt;/a> vom letzten Semester hochgeladen. Die Bilder musste ich allerdings stark komprimieren, damit der Text noch so gerade auf die Seite passt (obwohl sie sowieso schon 10 mb größer ist als erlaubt), eigentlich sehen sie also schöner aus. </text> </new>
     <new date="05. Sep 2010">
     <text language="de">Ups, jetzt habe ich tatsächlich im letzen bbutils/internettools-Update &amp;amp;szlig; vermasselt, ich dachte das wäre ein ascii-Zeichen. Mit dem neueun Bugfix unterstützt es nun aber wirklich alle Entities aus dem Standard, selbst die von MathML. </text>

@@ -34,8 +34,8 @@ It has these features:</content>
       <feature>Läuft unter Delphi (getestet mit D4 und früher auch mal BDS2006) und Lazarus</feature>      
       <feature>Enthält ein Beispiel und HTML-Dokumentation</feature>
       <feature>Enthält sowohl ein Delphi- wie auch ein Lazaruspackage für die Registrierung in der IDE</feature>
-    <features language="en">
     </features>
+    <features language="en">
       <feature>It can show a tree together with columns</feature>
       <feature>The lines can be drawn striped, so lines alternate their background color.</feature>
       <feature>It can paint dividing lines between rows and columns.</feature>
@@ -45,7 +45,7 @@ It has these features:</content>
       <feature>The user can move the columns without a change of the indices(only in Lazarus)</feature>
       <feature>Contains a Mozilla like search bar</feature>
       <feature>It is indepent of the Windows Common Controls</feature>
-      <feature>It should work on every OS supported by Lazarus (only Debian Windows tested)</feature>  
+      <feature>It should work on every OS supported by Lazarus (only Debian and Windows tested)</feature>  
       <feature>Works with Delphi (tested with D4 and in an old version also BDS2006) and Lazarus</feature>
       <feature>There is an example and html documentation</feature>
       <feature>There is a design time package for Delphi and for Lazarus.</feature>
