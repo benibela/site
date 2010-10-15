@@ -5,7 +5,14 @@
   <keywords language="en">BeniBela, Benito van der Zander, games, tools, Delphi, components, joke programs</keywords>
   <prevent-content-title>YES</prevent-content-title>
   <content>&lt;h2>News&lt;/h2></content>
+    
     <news>
+    <new date="11. Okt 2010"><text language="de">
+    Huch, was ist denn mit VideLibri los? In den vier Jahren, die es auf dieser Seite lag, wurde es praktisch kein einziges Mal runtergeladen, nun ist es drei Tage auf SourceForge und wurde schon 778 mal runtergeladen. Weitaus öfter als TexMakerX in der gleichen Zeit, obwohl es keine fremden Links darauf gibt, außer mehreren aus Japan (Und wen interessiert es in Japan?). Am Quellcode kann es nicht liegen, der wurde nämlich nicht runtergeladen.
+    </text></new>
+    <new date="09. Okt 2010"><text language="de">
+    VideLibri habe ich jetzt auf &lt;a href="http://videlibri.sourceforge.net">SourceForge&lt;/a> verschoben; hier findet es ja niemand und mittlerweile ist es so groß geworden, dass die Webseite nicht genug Speicher dafür hat.
+    </text></new>
     <new date="24. Sep 2010"><text language="de">
       Es gibt jetzt eine neue Videlibri Version (0.998). Ich weiß gar nicht, ob man einen Unterschied zur vorherigen Version bemerken kann, auf jeden Fall habe ich die Templates für die Büchereien mit dem neuen Html-Parser vereinfacht.&lt;br>
       Und eigentlich hatte ich gehofft, dass jemand es von selbst entdeckt, aber da es immer noch niemand verwemdet, verrate ich es mal hier: Im Infodialog von Videlibri, kann man und konnte man schon immer -- wenn man richtig klickt -- Snake spielen!&lt;br>
