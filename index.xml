@@ -7,6 +7,29 @@
   <content>&lt;h2>News&lt;/h2></content>
     
     <news>
+    <new date="26. Feb 2011"><text language="de">
+      Da ja jetzt fast alles auf SF mit öffentlichen Commitlogs ist, habe ich in letzter Zeit keine News mehr darüber geschrieben.&lt;br>
+      Aber dies sind die Änderungen der letzten Monate:
+      &lt;ul>
+      &lt;li> &lt;a href="tools_de.html#regexgen">regexgen&lt;/a>: Ist neues kleines Programm um alle Strings zu finden, die einen regulären Ausdruck erfüllen. (d.h. es arbeitet genau umgekehrt zu allen anderen Regexengines) &lt;/li> 
+      &lt;li> bbutils: ein paar behobene Fehler, sehr viel mehr Array-Funktionen, die ganze Unit wird automatisch aus einem Pascal-Template erstellt. &lt;/li> 
+      &lt;li> Internet Tools: Das Interface wurde leicht geändert, und ein paar low-level html-Parsingfehler sind behoben. PXPath: Die Variablen sind nun Teil der PXPath-Syntax und werden nachträglich ersetzt, so dass man sie nicht mehr in Gänsefüßchen schreiben soll (darf!). Und es ist noch ähnlicher zum echten XPath (mehr Selektoren und mehr Funktionen). &lt;/li>      
+      &lt;li> TreeListView: Die Scrollbargröße wird nicht mehr auf einen negativen Wert gesetzt, wenn die View-Größe 0 ist. (weil sonst Lazarus die Form nicht mehr lädt!)   &lt;/li>
+      &lt;li> VideLibri funktioniert nun auch in Berlin; dank Leonid, der mir seine Kontodaten geschickt hat.  &lt;/li>
+      &lt;li> SIRDSlets: Neue Hintergründe. (Ich vermute, das Bild muss die Autokorrelation der Helligkeit von mittelgroßen Flecken minimieren, um den besten 3D-Effekt zu erzeugen)  &lt;/li>
+      &lt;/ul>
+    </text>
+    <text language="en">
+      Since everything is now on SF with public commit logs, I didn't write any news here, but these are the changes of the last months:
+      &lt;ul>
+      &lt;li> &lt;a href="tools_en.html#regexgen">regexgen&lt;/a>: a new little program which is the inverse of an usual regex engine and generates all matches to a given regex. (you could use it as a replacement of John's non standard rules if you known a certain structure :-) &lt;/li> 
+      &lt;li> bbutils: some bugs fixed, faster, and much more array functions. Latter are all trivial, but tedious to write for all cases, so the complete unit is now auto generated from a Pascal template.  &lt;/li> 
+      &lt;li> Internet Tools: Some interfaces are changed and some low-level html parsing bugs are fixed. PXPath: The $..;-variables are now part of the PXPath-syntax, so they can be replaced in  the evaluation step and don't have to be written in quotes anymore (actually must not). And it is more similar to real XPath with support for all selectors and much more functions. &lt;/li>      
+      &lt;li> TreeListView: It doesn't set the scrollbar size to a negative value anymore, if the view size is 0. (because stupid Lazarus refuses to open a form with negative sizes instead of clipping the value) &lt;/li>
+      &lt;li> SIRDSlets: New backgrounds. (I think the image has to minimize the auto correlation of the brightness of middle large points to generate the best 3d effect.)  &lt;/li>
+      &lt;/ul>
+    </text>
+    </new>
     <new date="11. Okt 2010"><text language="de">
     Huch, was ist denn mit VideLibri los? In den vier Jahren, die es auf dieser Seite lag, wurde es praktisch kein einziges Mal runtergeladen, nun ist es drei Tage auf SourceForge und wurde schon 778 mal runtergeladen. Weitaus öfter als TexMakerX in der gleichen Zeit, obwohl es keine fremden Links darauf gibt, außer mehreren aus Japan (Und wen interessiert es in Japan?). Am Quellcode kann es nicht liegen, der wurde nämlich nicht runtergeladen.
     </text></new>

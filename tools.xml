@@ -202,6 +202,24 @@ APIV hat folgende Features:]]></content>
 
 
   <download> 
+    <id>regexgen</id>
+    <title>Regexgen</title>
+    <file>regexgen.zip</file>
+    <description_80 language="de">Ein inverser Regexgenerator, der für einen regulären Ausdruck alle Strings berechnet, die diesen Ausdruck erfüllen</description_80>
+    <description_80 language="en">An inverse regex matcher that generates all strings which match a given regular expression </description_80>
+    <language>en</language>
+    <payment>Freeware</payment>
+    <source>open</source>
+    <content language="de">Dies ist ein inverser Regexgenerator, der zu einen gegebenen regulären Ausdruck sämtliche String berechnet, die den Ausdruck erfüllen. Er unterstützt fast alle übliche Regexausdrücke (wie z.B.: "([abc]{2,3}|x+)\1")&lt;br>  
+Es arbeitet in 2-Phasen, zuerst wird ein Ausdruck in mehrere vereinfachte Ausdrücke fester Länge zerlegt, die nur noch Zeichenklassen und Einzelzeichen enthalten, und dann werden alle Kombinationen von Zeichen generiert. Dadurch kann es mehrere Millionen Strings pro Sekunde berechnen, hat aber Probleme mit Unicode. &lt;br>
+&lt;br>Es ist ein C++ Kommandozeilen-Programm, läuft unter Linux (ich habe es nur unter 64 Bit compilert)  und Windows, benötigt aber Qt. </content>
+    <content language="en">This is an inverse regex matcher that generates all strings which match a given regular expression. It supports all major expressions (e.g. "([abc]{2,3}|x+)\1"). &lt;br> 
+It runs in two steps: First it splits the regex in a set of equivalent regex that only use character class and match strings of fixed size. Then it lists all possible ways to choose characters from the sets. This last step is heavily optimized, so it can generate several million strings per second. However, it has no real unicode support, since unicode characters have no fixed length.  &lt;br> 
+It is a C++ command line program, runs on Linux (binary is for 64 bit only) and Windows, but requires Qt.
+ </content>
+  </download>
+
+  <download> 
     <title>AFX-Math</title>
     <file>math.zip</file>
     <description_80 language="de">Programm für das Rechnen mit großen Zahlen auf dem Algebra FX2+ Rechner</description_80>
