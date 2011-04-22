@@ -7,6 +7,10 @@
   <content>&lt;h2>News&lt;/h2></content>
     
     <news>
+    <new date="25. Mar 2011"><text language="de">Das SIRDSlets-Spiel hat jetzt einen Regenbogenfarbenmodus, obwohl ich den Modus eigentlich weglassen wollte, da er zu leicht ist und in einem Stereogramm-Spiel der Stereogrammmodus am einfachsten sein sollte, aber er sieht hübsch bunt aus.
+    </text><text language="en">
+    I added a rainbow color mode to the sirdslets game, although I didn't really wanted to include it, because it makes the game to easy to play (i.e. actually playable) in the non sirdslets modes. But it looks nice.
+    </text></new>
     <new date="26. Feb 2011"><text language="de">
       Da ja jetzt fast alles auf SF mit öffentlichen Commitlogs ist, habe ich in letzter Zeit keine News mehr darüber geschrieben.&lt;br>
       Aber dies sind die Änderungen der letzten Monate:
