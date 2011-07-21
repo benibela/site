@@ -48,13 +48,23 @@
 Empfangsereignissen in Ereignisprotokollen" wird untersucht, wie man aus der Reihenfolge von in Logs lokal aufgezeichneten Netzwerkpaketen berechnen kann, welche aufgezeichneten Ereignisse dasselbe (und nicht nur das inhaltlich gleiche) Paket beschreiben. Das wichtigste Ergebnis ist, dass dieses Problem NP-vollständig ist  und der  früher  am Lehrstuhl verwendete Algorithmus  (siehe Literaturverzeichnis) zur Lösung des Problems überhaupt nicht funktioniert. </final-content>
   </download>
   <download> 
+    <title>Seminararbeit Kryptographie</title>
+    <id>cryptsem</id>
+    <file>seminarcrypt.pdf</file>
+    <description_80 language="de">Meine Seminararbeit über teilbares, elektronisches Geld</description_80>
+    <description_80 language="en">A (German) seminar text about divisible, electronical money</description_80>
+    <payment-license>-</payment-license>
+    <content language="de"></content>
+    <content language="en">Because the text is in German and to long to translate, the description is also in German:&lt;br>&lt;br></content>
+    <final-content language="de">Die theoretische Beschreibung eines digitalen Geldsystems, das anonyme und unlinkbare Bezahlvorgänge mit teilbaren Münzen ermöglicht. </final-content>
+  </download>
+  <download> 
     <title>Seminararbeit Vision</title>
     <id>seminarCV2010</id>
     <file>seminarvision.pdf.7z</file>
     <description_80 language="de">Meine Seminararbeit über semantische Bildsegmentierungen</description_80>
     <description_80 language="en">A (German) seminar text about semantically image segmentation</description_80>
     <payment-license>-</payment-license>
-    <size_KB>399</size_KB>
     <content language="de"></content>
     <content language="en">Because the text is in German and to long to translate, the description is also in German:&lt;br>&lt;br></content>
     <final-content language="de">Diese Seminararbeit erläutert das Paper "Decomposing a Scene into Geometric and Semantically Consistent Regions" von Stephen Gould, in dem beschrieben wird, wie ein Bild in semantisch und geometrisch sinnvolle Regionen segmentiert werden kann; Das heißt wie für jeden Pixel eines Bildes ermittelt werden kann, was dieser Pixel darstellt (in Goulds  Beispielsimplementation konkret, zu welcher von acht Klasse Haus, Baum, Gras, Straße... er gehört). Der Text ist eigentlich nur für die Leute interessant, deren Englisch zu schlecht ist, um das eigentliche Paper zu verstehen, oder die keine Ahnung von den üblichen Computervision-Methoden haben. </final-content>

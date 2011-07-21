@@ -7,6 +7,13 @@
   <content>&lt;h2>News&lt;/h2></content>
     
     <news>
+    <new date="10. Jul 2011"><text language="de">
+    Ich habe den Internet-Tools-&lt;a href="sources_de.html#internettools">Parser&lt;/a> ein wenig erweitert, und nun ist er fast Standard-konforme XPath 2-Implementierung (im wesentlichen gibt es alles bis auf namespaces und das ganze Datenmodellzeugs).  &lt;br>
+    Und hier ist ein &lt;a href="others_de.html#cryptsem"> Kryptographieseminarpaper&lt;/a>
+    </text><text language="en">
+    I added a few constructs to the internet tools parsers, so that the &lt;a href="sources_de.html#internettools">pxp parser&lt;/a> is now a almost standard compliant implementation of XPath 2. (did you know that  <pre>every $x in satisfies satisfies satisfies</pre> is always true?) 
+    
+    </text></new>
     <new date="25. Mar 2011"><text language="de">Das SIRDSlets-Spiel hat jetzt einen Regenbogenfarbenmodus, obwohl ich den Modus eigentlich weglassen wollte, da er zu leicht ist und in einem Stereogramm-Spiel der Stereogrammmodus am einfachsten sein sollte, aber er sieht hübsch bunt aus.
     </text><text language="en">
     I added a rainbow color mode to the sirdslets game, although I didn't really wanted to include it, because it makes the game to easy to play (i.e. actually playable) in the non sirdslets modes. But it looks nice.

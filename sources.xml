@@ -59,7 +59,7 @@
       <feature>Templates lassen sich einfach aus einer html-Datei erstellen/updaten</feature>
       <feature>Es kann alle Teile der html Datei (außer Kommentaren) lesen</feature>
       <feature>Die Seite wird automatisch in den richtigen Ausgabezeichensatz konvertiert</feature>
-      <feature>Die Templatesprache enthält reguläre Ausdrücke</feature>
+      <feature>Die Templatesprache unterstützt reguläre  und XPath 2 Ausdrücke</feature>
       <feature>Die Sprache unterstützt optionale Elemente, Schleifen und If-Anweisungen</feature>
       <feature></feature>
       <feature>&lt;b>HTTP-Wrapper:&lt;/b></feature>
