@@ -10,7 +10,7 @@
     <new date="03. Mai 2012"><text language="de">
     Mal wieder was neues, auch wenn es so wirklich neu ist: Der &lt;a href="sources_de.html#internettools">Internet-Tools-Parser&lt;/a> ist noch mehr erweitert und  nun eine fast Standard-konforme XPath 2-Implementierung. Zusätzlich unterstützt er jetzt auch eine Art Objekte und die übergeordnete Templatesprache erlaubt auch Abkürzungen für häufige Befehle, wie {...} für &amp;lt;template:read/&amp;gt;. 
     </text><text language="en">
-    Another update to the &lt;a href="sources_de.html#internettools">internet tools parser&lt;/a>. It is now almost standard compatible, up to mostly &lt;a href="documentation/internettools/internettoolsxqts.html">rounding issues and missing namespace/scheme support&lt;/a> and my extensions like variable assignments and (new) some kind of objects. And the template language itself allows you now to abbreviate common commands, e.g.  &amp;lt;template:read/&amp;gt; can be written as {...} or &amp;lt;template:loop/&amp;gt; as *.
+    Another update to the &lt;a href="sources_de.html#internettools">internet tools parser&lt;/a>. It is now almost standard compatible, up to mostly &lt;a href="documentation/internettools/internettoolsxqts.html">rounding issues and missing namespace/dtd/schema support&lt;/a> and my extensions like variable assignments and (new) some kind of objects. And the template language itself allows you now to abbreviate common commands, e.g.  &amp;lt;template:read/&amp;gt; can be written as {...} or &amp;lt;template:loop/&amp;gt; as *.
     
     </text></new>    
     <new date="10. Jul 2011"><text language="de">
