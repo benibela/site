@@ -95,6 +95,7 @@
     <title>Diagram-Tools</title>
     <file>diagram.zip</file>
     <id>diagram</id>
+    <link type="onlinedocu"/>
     <description_80 language="de">Eine Diagrammkomponente, basierend auf einem Model/View-System</description_80>
     <description_80 language="en">A diagram component based on a model/view system.</description_80>
     <prog-language>FPC/Lazarus</prog-language>
@@ -239,6 +240,8 @@ The most important features are:]]></content>
   </download>
   <download> 
     <title>TCommandLineReader</title>
+    <link type="onlinedocu"/>
+    <id>rcmdline</id>
     <file>rcmdline.zip</file>
     <description_80 language="de">Eine Unit zum Lesen von Kommandozeilenparametern</description_80>
     <description_80 language="en">An unit for the parsing of command line parameters</description_80>
@@ -278,7 +281,7 @@ The exact features are:]]></content>
     <content language="de"><![CDATA[Hiermit kann man in ein Programm ein automatisches Update übers Internet einbauen.<br>Um die Klasse benutzen zu können, braucht man eine wininet-Unit, die die Windowsinternetfunktionen enthält. (<a href="#internettools">oben</a> gibt es eine neuere Version, die ein besser konfigurierbares XML-Format verwendet)
 Funktionen:]]></content>
     <content language="en"><![CDATA[This allows an automatical update about the internt.<br>
-To use the class you need a wininet unit containing the windows internet functions (<a href="#internettools">above is a new class which use a better customizable xml format).<br>Features:]]></content>
+To use the class you need a wininet unit containing the windows internet functions (<a href="#internettools">above is a new class which use a better customizable xml format</a>).<br>Features:]]></content>
     <features language="de">
       <feature>Erkennen neuer Versionen</feature>
       <feature>Download dieser</feature>
