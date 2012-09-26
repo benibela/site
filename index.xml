@@ -1,4 +1,4 @@
-﻿<file>
+<file>
   <description language="de">BeniBela online ist eine Seite über die Programmierung mit Delphi, und eine Downloadseite für Tools und Spiele.</description>
   <description language="en">BeniBela online is a site about the programming with Delphi, and it is also a download page for tools and games.</description>
   <keywords language="de">BeniBela, Benito van der Zander, Spiele, Tools, Delphi, Komponenten, Scherzprogramme</keywords>
@@ -7,8 +7,24 @@
   <content>&lt;h2>News&lt;/h2></content>
     
     <news>
+    <new date="26. Sept 2012"><text language="de">
+    Mal wieder ein Update:
+    <ul><li><a href="sources_de.html#internettools">Internet Tools</a>: Sie unterstützen nun CSS 3 Selektoren, direkt und innerhalb von XPath-Ausdrücken. Und es gibt eine XPath-Funktion <code>form</code>, die das HTTP-Request für eine HTML-Form berechnet und als Objekt zurückgibt. Die Internetaccess-Klasse gibt einem Zugriff auf die HTTP-Header, und der Htmltreeparser erkennt die Zeichenkodierung auch dann, wenn die Angabe im http-equiv meta-Tag <i>falsch</i> ist und einem korrekten Content-Type Header widerspricht (Da hat die Münchener Stadtbücherei wirklich einen <i>super</i> programmierten Katalog). <br/> Die Internet Tools enthalten nun also die Klasse für Mehrseitenabfrageskripts von VideLibri, und es gibt ein  <a href="http://videlibri.sourceforge.net/xidel.html">Commandlinetool Xidel</a> als Wrapper um die Internet Tools mit dem man Templates und XPathausdrücke auf Webseiten anwenden kann, ohne Pascal zu kennen oder Büchereien zu stören. <br/> Und es gibt nun ein <a href="http://userscripts.org/scripts/show/144991">Greasemonkey-Skript</a>, das die Templates für VideLibri/Xidel automatisch erstellen kann, wenn man die entsprechenden Werte in Firefox markiert.<br/>Nun soll ich den XPath parser zu XQuery ausbauen, oder nicht? So groß ist der Unterschied nicht...</li>
+    <li><a href="sources_de.html#rcmdline">TCommandLineReader</a>: mein Kommandozeilenparser funktioniert nun auch unter Linux. (er hat früher nicht funktioniert, weil die fpc RTL-Funktion zum gesamten Kommandozeilenauslesen unter Linux keine einfachen Anführungszeichen unterstützt! Und umgekehrt funktioniert die RTL-Funktion zum Lesen der aufgeteilten Argumente unter Windows nicht mit einfachen Anführungszeichen! Weshalb ich den Kommandozeilenparser überhaupt erst geschrieben hatte...)<br/>Und es gibt jetzt eine Unterklasse, die als cgi-Service läuft und die Argumente von GET/POST-Requests liest anstatt von der Kommandozeile.</li>
+    <li>TeXstudio: da gibt es immer neue Features...</li>
+    </ul>
+    </text>
+        
+    <text language="en">
+    Some updates: 
+    <ul><li><a href="sources_en.html#internettools">Internet Tools</a>: They do now (well, since a month) support css 3 selectors, standalone or within XPath expressions, and now have a new XPath function <code>form</code> that converts a html form in an object describing the corresponding http request. The internet access class lets you read/write the http header, and the html tree parser will choose the correct encoding, if the Content-Type header and the http-equiv meta tag specify different encodings. <br/> I also forked the multipage query scripts/templates from VideLibri in a new class that is now part of the internettools, and made a command line tool <a href="http://videlibri.sourceforge.net/xidel.html">Xidel</a> that let you use all the internet functionality of VideLibri/Internet Tools without requiring some stupid libraries (the book kind). <br/> And I wrote a <a href="http://userscripts.org/scripts/show/144991">GreaseMonkey script</a> that can automatically generate the scraping templates (or most of them) for VideLibri/Xidel by selecting the values on the webpage in FireFox.</li>
+    <li><a href="sources_en.html#rcmdline">TCommandLineReader</a>: my command line reader does now work on Linux. (it did not work before, because the rtl function I used to read the cmdline does not support single quotes on Linux! Quite ironically, since I wrote the command line reader, because the other parameter-reading rtl function does not support single quotes on Windows!)<br/>I also extended it to read the arguments from GET/POST-requests, instead of only the command line.</li>
+    <li>TeXstudio: many, many new features...</li>
+    </ul>
+    </text>
+    </new>
     <new date="03. Mai 2012"><text language="de">
-    Mal wieder was neues, auch wenn es so wirklich neu ist: Der &lt;a href="sources_de.html#internettools">Internet-Tools-Parser&lt;/a> ist noch mehr erweitert und  nun eine fast Standard-konforme XPath 2-Implementierung. Zusätzlich unterstützt er jetzt auch eine Art Objekte und die übergeordnete Templatesprache erlaubt auch Abkürzungen für häufige Befehle, wie {...} für &amp;lt;template:read/&amp;gt;. 
+    Mal wieder was neues, auch wenn es nicht so wirklich neu ist: Der &lt;a href="sources_de.html#internettools">Internet-Tools-Parser&lt;/a> ist noch mehr erweitert und  nun eine fast Standard-konforme XPath 2-Implementierung. Zusätzlich unterstützt er jetzt auch eine Art Objekte und die übergeordnete Templatesprache erlaubt auch Abkürzungen für häufige Befehle, wie {...} für &amp;lt;template:read/&amp;gt;. 
     </text><text language="en">
     Another update to the &lt;a href="sources_de.html#internettools">internet tools parser&lt;/a>. It is now almost standard compatible, up to mostly &lt;a href="documentation/internettools/internettoolsxqts.html">rounding issues and missing namespace/dtd/schema support&lt;/a> and my extensions like variable assignments and (new) some kind of objects. And the template language itself allows you now to abbreviate common commands, e.g.  &amp;lt;template:read/&amp;gt; can be written as {...} or &amp;lt;template:loop/&amp;gt; as *.
     

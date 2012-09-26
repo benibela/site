@@ -128,6 +128,9 @@
     <a href="http://videlibri.hg.sourceforge.net/hgweb/videlibri/videlibri/">Mercurial repository</a>
     </final-content>
   </download>
+  
+  
+  
   <download> 
     <title>Farbauswahldialog</title>
     <file>farbe.zip</file>
@@ -165,6 +168,62 @@
       <height>173px</height>
     </screenshot>
   </download>
+  
+
+  <download> 
+    <title>TCommandLineReader</title>
+    <link type="onlinedocu"/>
+    <id>rcmdline</id>
+    <file>rcmdline.zip</file>
+    <description_80 language="de">Eine Unit zum Lesen von Kommandozeilenparametern</description_80>
+    <description_80 language="en">An unit for the parsing of command line parameters</description_80>
+    <prog-language>FPC, Delphi</prog-language>
+    <source-license>GPL</source-license>
+    <size_KB>8</size_KB>
+    <content language="de">Dies ist ein Kommandozeilenparser, der sowohl mit Delphi wie auch mit Free Pascal funktioniert, sowie unter Windows und Linux.<br/>
+    Vor der Abfrage von Parametern, müssen alle erlaubten Parameter deklariert werden. Dadurch kann vom Parser überprüft werden, dass der Benutzer nur erlaubte Parameter und nur richtige Parameterwerte (z.B.: Int vs. String) verwendet. Außerdem kann so bei Angabe eines falschen Parameters automatisch eine Hilfsliste aller unterstützenden Parameter angezeigt werden. Dies verhindert umgekehrt, dass es geheime, undokumentiere Optionen gibt.<br/>
+    Es gibt drei verschiedene Versionen des Parsers, die ersten beiden lesen die Argumente von der Kommandozeile, und zeigen die Hilfe auf stdout bzw. in einer Messagebox an. Die dritte Version (nur fpc) läuft als CGI-Anwendung und nimmt die Argumente über http GET/POST-Anfragen entgegen.<br/><br/>
+    Zum Vergleich sind hier die Ausgaben meiner Klasse und der Standard-Kommandozeilenfunktionen bei Aufruf des Programms mit den Parameter <code>'" a "'</code> :
+    <table><tr><th>System</th><th>TCommandLineReader</th><th>ParamStr</th><th>string(cmdline)</th></tr>
+    <tr><td>Windows (Delphi 4)</td><td class="yes"><code>" a "</code></td><td class="no"><code>' a '</code></td><td class="yesno"><code>"executable" '" a "'</code></td></tr>
+    <tr><td>Windows (fpc 2.6)</td><td class="yes"><code>" a "</code></td><td class="no"><code>' a '</code></td><td class="yesno"><code>executable '" a "'</code></td></tr>
+    <tr><td>Linux/bash (fpc 2.6)</td><td class="yes"><code>" a "</code></td><td class="yes"><code>" a "</code></td><td class="no"><code>executable "" a ""</code></td></tr>
+    </table>
+    <br/>
+Die Features von rcmdline sind:<br/></content>
+    <content language="en">This is a command line parser working with Delphi as well as with Free Pascal, and on Windows and Linux.<br/>
+    Before you can read the command line arguments, all allowed arguments needs to be declared. So the parser can ensure that the user only uses allowed arguments and each given argument has the correct type (e.g. int or string). Furthermore, the parser can automatically generate a help summary displaying all allowed arguments with description. This again ensures that there are no hidden, undocumented command line arguments. <br/>
+    There are three different versions of the parser. The first two read the arguments from the command line and show the help list of all allowed arguments on stdout or respectively in a message box. The third version (fpc only) runs as cgi service and reads the argument from get/post requests.<br/><br/>
+Here is a nice comparison between TCommandLineReader and the standard pascal command line functions, when the program is called as <code>executable '" a "'</code>
+ <table><tr><th>System</th><th>TCommandLineReader</th><th>ParamStr</th><th>string(cmdline)</th></tr>
+    <tr><td>Windows (Delphi 4)</td><td class="yes"><code>" a "</code></td><td class="no"><code>' a '</code></td><td class="yesno"><code>"executable" '" a "'</code></td></tr>
+    <tr><td>Windows (fpc 2.6)</td><td class="yes"><code>" a "</code></td><td class="no"><code>' a '</code></td><td class="yesno"><code>executable '" a "'</code></td></tr>
+    <tr><td>Linux/bash (fpc 2.6)</td><td class="yes"><code>" a "</code></td><td class="yes"><code>" a "</code></td><td class="no"><code>executable "" a ""</code></td></tr>
+    </table>
+The feature list of rcmdline is:<br/><br/></content>
+    <features language="de">
+      <feature>Automatische Typumwandlung in den angegeben Typen</feature>
+      <feature>Automatische Anzeige aller erlaubten Parameter</feature>
+      <feature>Linux (<code>--xyz=bar</code> oder <code>-x bar</code>) und Windows (/) -styleparameter werden erkannt</feature>
+      <feature>Verschiedene Eingabemöglichkeiten für Flags (<code>-f</code>, <code>--flag</code>, <code>--enable-flag</code>, <code>--disable-flag</code>)</feature>
+      <feature>Einfache (') und doppelte (") Anführungszeichen werden erkannt (auch unter Windows)</feature>
+      <feature>Existierende Dateien mit Leerzeichen im Namen auch ohne Verwendung von Anführungszeichen einlesbar</feature>
+      <feature>Kann als CGI-Anwendung laufen und auf GET/POST-Anfragen antworten (nur fpc) </feature>      
+      <feature>Parameter können von einem String (z.B.: cmdline) oder einem Array (z.B.: indirekt ParamStr) gelesen werden </feature>      
+    </features>
+    <features language="en">
+      <feature>supports linux (<code>--xyz=bar</code> or <code>-x bar</code>) and windows (/) style parameters</feature>
+      <feature>different input possibilities for boolean flags (<code>-f</code>, <code>--flag</code>, <code>--enable-flag</code>, <code>--disable-flag</code>)</feature>
+      <feature>understands single (') and double (") quotation marks (even on Windows)</feature>
+      <feature>type conversion of the string arguments to the declared types </feature>
+      <feature>automatically user notification about wrong parameters</feature>
+      <feature>existing files with names containing spaces can be parsed without quotation marks    </feature>
+      <feature>can run as cgi service and answer to GET/POST requests (fpc only)</feature>
+      <feature>Arguments can be read from: a simple string (e.g. cmdline) or an array of arguments (e.g. paramstr)</feature>
+    </features>
+</download>
+  
+  
   <download> 
     <title>Diagram-Tools</title>
     <file>diagram.zip</file>
@@ -211,6 +270,9 @@
       <height>302px</height>
     </screenshot>
   </download>
+  
+  
+  
   <download> 
     <title>Non-VCL Canvas</title>
     <file>nvcanvas.zip</file>
@@ -240,6 +302,9 @@ The most important features are:]]></content>
     <final-content language="de"><![CDATA[In einigen Bereichen sind sie den Delphimethoden sogar überlegen, so kann man beispielweise den Text auch gedreht ausgeben.<br>Es gibt eine ausführliche HTML-Doku, in der alle Funktionen beschrieben sind. ]]></final-content>
     <final-content language="en"><![CDATA[In some field they are even better than the Delphi functions, for example they can draw rotated text.<br>There is a good, German help, and you could use the documentation of TCanvas from Delphi. ]]></final-content>
   </download>
+  
+  
+  
   <download>
     <title>BBUtils</title>
     <link type="onlinedocu"/>
@@ -264,6 +329,10 @@ The most important features are:]]></content>
       <feature>Automatical translation of with tr['marked strings'] and components</feature>
     </features>
   </download>
+  
+  
+  
+  
   <download>
     <title>Diffreader</title>
     <file>diffreader.zip</file>
@@ -285,6 +354,8 @@ The most important features are:]]></content>
       <feature>Has functions to remove unnecessary data (see also &lt;a href="tools_en.html#simplifydiff">Simplify Diff&lt;/a>)</feature>
     </features>
   </download>
+  
+  
   <download> 
     <title>TCVirus</title>
     <file>cvirus.zip</file>
@@ -312,38 +383,9 @@ The most important features are:]]></content>
     <final-content language="de"><![CDATA[Da TCvirus ursprünglich eine Komponente war, gibt es zwei Units: Eine mit den eigentlichen Funktionen, und eine Komponente, die einen Wrapper für die erste Unit darstellt.<br>Will man die Komponente ohne die VCL nutzen, benötigt man meinen Non-VCL Canvas, der aber im Ziparchiv enthalten ist.]]></final-content>
     <final-content language="en">Because TCvirus has originally been a component, there are 2 units, a component for the VCL and a unit for non VCL.</final-content>
   </download>
-  <download> 
-    <title>TCommandLineReader</title>
-    <link type="onlinedocu"/>
-    <id>rcmdline</id>
-    <file>rcmdline.zip</file>
-    <description_80 language="de">Eine Unit zum Lesen von Kommandozeilenparametern</description_80>
-    <description_80 language="en">An unit for the parsing of command line parameters</description_80>
-    <prog-language>FPC, Delphi</prog-language>
-    <source-license>GPL</source-license>
-    <size_KB>8</size_KB>
-    <content language="de"><![CDATA[Dies ist ein Kommandozeilenparser, der sowohl mit Delphi wie auch mit Free Pascal (unter Linux nicht getestet) funktioniert.<br>
-Im Gegensatz zu den meisten anderen Kommandozeilenparser, muss man vor Benutzung die erlaubten Parameter definieren, was es erweiterte Parsingmöglichkeiten erlaubt. Die genauen Funktionen sind:]]></content>
-    <content language="en"><![CDATA[This is a command line parser working with Delphi as well as with Free Pascal (not tested under Linux).<br>
-In contrast to most of the other command line parsers, here you have to declare the allowed parameter, so the parser can be more intelligent.<br>
-The exact features are:]]></content>
-    <features language="de">
-      <feature>Automatische Typumwandlung in einen angegeben Typen</feature>
-      <feature>Automatische Anzeige aller erlaubten Parameter</feature>
-      <feature>Linux und Windowsstyleparameter werden erkannt</feature>
-      <feature>Verschiedene Eingabemöglichkeiten für Flags</feature>
-      <feature>Anführungszeichen werden erkannt</feature>
-      <feature>Existierende Dateien mit Leerzeichen im Namen auch ohne Verwendung von Anführungszeichen einlesbar</feature>
-    </features>
-    <features language="en">
-      <feature>type conversion</feature>
-      <feature>automatically user notification about wrong parameters</feature>
-      <feature>linux and windows style parameters</feature>
-      <feature>different input possibilities for boolean flags</feature>
-      <feature>understanding of quotation marks</feature>
-      <feature>existing files with names containing spaces can be parsed without quotation marks    </feature>
-    </features>
-</download>
+
+
+
   <download> 
     <title>TAutoUpdater</title>
     <file>autoupdate.zip</file>
