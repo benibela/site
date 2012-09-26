@@ -29,7 +29,7 @@
          liest alle Tabellenzellen nach der Zelle mit dem Text abc in der Tabelle mit ID foobar.
         Und schließlich ein Template wie
         <pre>&lt;table id="foobar">{temp := 0}&lt;tr>&lt;td>abc&lt;/td>&lt;td>{temp := $temp + .}&lt;/td>*{result := $temp}&lt;/tr>*&lt;/table></pre>
-        berechnet die Summe aller Tabellenzellen nach der abc-Zelle für alle Zeilen.<br/>Diese Templates lassen sich auch <a href ="http://videlibri.sourceforge.net/cgi-bin/htmlparserExampleCGI"> online</a> ausprobieren.</li>
+        berechnet die Summe aller Tabellenzellen nach der abc-Zelle für alle Zeilen.<br/>Diese Templates lassen sich auch <a href ="http://videlibri.sourceforge.net/cgi-bin/htmlparserExampleCGI"> online</a> or with <a href="http://videlibri.sourceforge.net/xidel.html">Xidel</a> ausprobieren.</li>
         <li>Die <em>multi page Templateengine</em> speichert in ihren Templates mehrere Einzelseitentemplates, die nacheinander auf die angegebenen Seiten angewandt werden. Im Gegensatz zu den Einzelseitentemplates führt diese Engine kein pattern-matching durch (außer natürlich dem pattern-matching mit den enthaltenen Einzelseitentemplates zu den heruntergeladenen Seiten), sondern führt alle Aktionen in der angegebenen Reihenfolge durch. Dabei werden auch Variablen, Bedingungen und Schleifen unterstützt, so dass sie Turing vollständig ist.</li>
         <li>Der <em>HTTP/S-Verbindungswrapper</em> kann Seiten mit GET/Post-Anfragen runterladen und kümmert sich automatisch um Cookies und Weiterleitungen. Außerdem kann er dynamisch zwischen Wininet (auf allen Windowscomputern vorhanden) und Synapse (platform-unabhängig, muss aber installiert werden) umzuschalten.</li>
         <li>Die <em>Autoupdateklasse</em> ist ein Trivialbeispiel für die anderen Klassen, und kann automatisch ein Update runterladen und installieren.
@@ -51,7 +51,7 @@
      will read all table cells after the cell containing abc in all rows of the table with id foobar.
     And a template like this:
     <pre>&lt;table id="foobar">{temp := 0}&lt;tr>&lt;td>abc&lt;/td>&lt;td>{temp := $temp + .}&lt;/td>*{result := $temp}&lt;/tr>*&lt;/table></pre>
-    will calculate the sum of all table cells after the abc cell in all rows.<br/>You can also try these templates <a href ="http://videlibri.sourceforge.net/cgi-bin/htmlparserExampleCGI"> online</a>.</li>
+    will calculate the sum of all table cells after the abc cell in all rows.<br/>You can also try these templates <a href ="http://videlibri.sourceforge.net/cgi-bin/htmlparserExampleCGI"> online</a> or with <a href="http://videlibri.sourceforge.net/xidel.html">Xidel</a>.</li>
     <li>The <em>multi page template engine</em> can be used to download several pages, and apply a single-page template to each of them. Contrary to the single-page template it does not do any pattern matching itself (of course the single-page templates contained in a multi-page template do pattern matching against each page), but simply executes the actions in the order given in the template. It also supports variables, condition and loops, so it is even Turing complete.</li>
     <li>The <em>http/s-wrapper</em> let you switch dynamically between Wininet (default library installed on every Windows computer) and Synapse (platform-independent,  but not always installed and problematic with https).</li>
     <li>The <em>auto update</em> class is a trivial example for the other classes and can be used to add an auto update function to a program which will check online for a more recent version, download that version automatically and (optionally) install it. </li>
@@ -124,6 +124,9 @@
       <feature2>Allows the execution of an arbitrary command line after the update</feature2>
       </feature>
     </features>
+    <final-content>
+    <a href="http://videlibri.hg.sourceforge.net/hgweb/videlibri/videlibri/">Mercurial repository</a>
+    </final-content>
   </download>
   <download> 
     <title>Farbauswahldialog</title>
