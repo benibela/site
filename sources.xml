@@ -1,4 +1,4 @@
-﻿<file>
+<file>
   <description language="de">Auf dieser Seite gibt es verschiedene Quellcodes: einen Non VCL Canvas, TCVirus, einen Huffmankomprimierer, einen Kommandozeilenparser, eine AutoUpdate-Unit und einen Browser.</description>
   <description language="en">You can find these sources here: a non VCL canvas, TCVirus, a Huffman compressor, a command line parser, a browser and a automatic update unit.</description>
   <keywords language="de">Delphi, non VCL Canvas, TCVirus, Huffman, Komprimierung, Units, Komponenten, Kommandozeile, Parser, Browser, automatisches Update</keywords>
@@ -6,6 +6,125 @@
   <content language="de"><![CDATA[Auf dieser Seite sind Quellcodes, die man in eigenen Projekten benutzten kann, aufgelistet, <a href="components_de.html#top">Delphikomponenten</a> sind jedoch auf einer eigenen Seite zu finden. Alle mit der MPL-Lizenz, GPL-Lizenz oder BSD-Lizenz versehenen Quellcodes dürfen beliebig verändert und vertrieben werden. <br>Bei der MPL und GPL müssen aber Änderungen veröffentlicht werden und bleiben unter der MPL lizenziert, bei der GPL gilt dies auch für Erweiterungen.<br>Steht eine Datei unter mehreren Lizenzen, darf man eine davon wählen.<br> Genauere und rechtskräftige Informationen sollten den Dateien bei liegen.<br>Braucht jemand unbedingt eine andere Lizenz, kann er mir eine E-Mail schicken.]]></content>
   <content language="en"><![CDATA[You can find all my published sources usable in your projects. Only <a href="components_en.html#top">components</a> for Delphi are on another page. All sources published under the terms of the MPL-, GPL- or BSD-License can you change and distribute in any way you want. <br>But in case of MPL or GPL you must publish changes and you mustn't change the license. In case of GPL you must also publish extensions and the source of every program (from you) using it under the terms of the GPL.<br>Is any of the files published under the terms of more than one license, you can choose one of them. <br> You can find more and legally valid information in the source files.]]></content>
   <download-dir>bin/sources</download-dir>
+  <download> 
+    <title>Internet Tools</title>
+    <link type="onlinedocu"/>
+    <file>internettools.zip</file>
+    <id>internettools</id>
+    <description_80 language="de">Template-basierter HTML-Parser, Autoupdateklasse und HTTP-Verbindungswrapper</description_80>
+    <description_80 language="en">A template based html parser, an auto update class and a http connection wrapper.</description_80>
+    <prog-language>FPC</prog-language>
+    <source-license>GPL</source-license>
+    <content language="de">Dieses Package enthält folgende Module: <br/><br/> 
+        <ul class="indentation-list">
+        <li>Einen <em>simplen HTML Parser</em>, der eine HTML/XML-Datei parst und für jeden gelesen Tag und Text eine entsprechende Callbackfunktion aufruft.</li>
+        <li>Einen <em>HTML Tree Parser</em>, der den einfachen Parser verwendet, um eine HTML/XML-Datei zu lesen und in einen Elementstream umzuwandeln, der sich wie ein DOM-Baum verhält. Dabei werden zudem Fehler in der HTML-Datei wie nicht geschlossene Tags korrigiert und die Zeichenkodierung ermittelt.</li>
+        <li>Einen <em>XPath 2 Interpreter</em>, der beliebige XPath 2 Ausdrücke über dem DOM-ähnlichen Baum ausführen kann. Er ist vollständig in Pascal implementiert, unterstützt alle XPath 2 Funktionen/Ausdrücke und ist nahezu standardkompatibel (vergleiche seine <a href="documentation/internettools/internettoolsxqts.html">Ergebnisse der XQuery/XPath Testsuite</a>)</li>
+        <li>Ein Parser für <em>CSS 3 Selectors</em>, der in die XPath 2 Klasse eingebaut ist, der CSS Selektoren in XPath 2-Ausdrücke umwandeln, und diese dann ausführt.</li>
+        <li>Eine <em>pattern-matching HTML Templateengine</em>, die ein HTML Template auf eine Seite anwendet. Ein solches HTML-Template ist eine vereinfachte Version der zu verarbeitenden Seite. Die Struktur des Templates wird mit der Struktur der Seite verglichen, und jedes Template-Element wird mit einem übereinstimmenden Seiten-Element verknüpft, welches dieselben Eigenschaften und ähnliche Kinder aufweist. Die in den Template-Elementen enthaltenden Annotationen können dann die Werte der entsprechenden Seiten-Elemente auslesen.  Zum Beispiel ein Template wie
+        <pre>&lt;a>{@href}&lt;/a>*</pre>
+        liest die Addressen aller Links auf einer HTML Seite.<br/>
+        Ein Template wie 
+        <pre>&lt;table id="foobar">&lt;tr>&lt;td>abc&lt;/td>&lt;td>{.}&lt;/td>*&lt;/tr>*&lt;/table></pre>
+         liest alle Tabellenzellen nach der Zelle mit dem Text abc in der Tabelle mit ID foobar.
+        Und schließlich ein Template wie
+        <pre>&lt;table id="foobar">{temp := 0}&lt;tr>&lt;td>abc&lt;/td>&lt;td>{temp := $temp + .}&lt;/td>*{result := $temp}&lt;/tr>*&lt;/table></pre>
+        berechnet die Summe aller Tabellenzellen nach der abc-Zelle für alle Zeilen.<br/>Diese Templates lassen sich auch <a href ="http://videlibri.sourceforge.net/cgi-bin/htmlparserExampleCGI"> online</a> ausprobieren.</li>
+        <li>Die <em>multi page Templateengine</em> speichert in ihren Templates mehrere Einzelseitentemplates, die nacheinander auf die angegebenen Seiten angewandt werden. Im Gegensatz zu den Einzelseitentemplates führt diese Engine kein pattern-matching durch (außer natürlich dem pattern-matching mit den enthaltenen Einzelseitentemplates zu den heruntergeladenen Seiten), sondern führt alle Aktionen in der angegebenen Reihenfolge durch. Dabei werden auch Variablen, Bedingungen und Schleifen unterstützt, so dass sie Turing vollständig ist.</li>
+        <li>Der <em>HTTP/S-Verbindungswrapper</em> kann Seiten mit GET/Post-Anfragen runterladen und kümmert sich automatisch um Cookies und Weiterleitungen. Außerdem kann er dynamisch zwischen Wininet (auf allen Windowscomputern vorhanden) und Synapse (platform-unabhängig, muss aber installiert werden) umzuschalten.</li>
+        <li>Die <em>Autoupdateklasse</em> ist ein Trivialbeispiel für die anderen Klassen, und kann automatisch ein Update runterladen und installieren.
+        </li>
+        </ul>
+        <br/><br/>Stichpunktübersicht der Features:<br/><br/></content>
+
+    <content language="en">This package consists of several units working together: <br/><br/> 
+    <ul class="indentation-list">
+    <li>The <em>simple html parser</em> at the lowest level, parses a xml/html file and calls callback functions for every tag and text it has read.</li>
+    <li>The <em>html tree parser</em>, uses the simpler parser to read an xml/html file and create a linked element-stream from it, which is equivalent to a dom-like tree. This parser takes much care to make the tree usable, e.g. by correcting errors in invalid html files and auto detecting its encoding.</li>
+    <li>With the <em>XPath 2 engine</em> you can then run arbitrary XPath 2 queries on the dom-like representation. It is completely implemented in Pascal, supports all XPath 2 functions and is  nearly standard compatible. (compare its <a href="documentation/internettools/internettoolsxqts.html">XQuery/XPath Testsuite results</a>)</li>
+    <li>The parser for <em>CSS 3 selectors</em> is part of then XPath 2 class, converts the CSS selector to an XPath expression and evaluates that.</li>
+    <li>The <em>pattern-matching html template engine</em> at the highest level, can be used to process an html file by annotating a subset of it and applying the resulting template to the html file.  All elements in the template are searched in the html file and template instructions in matching elements can be used to extract data. For example a template like 
+    <pre>&lt;a>{@href}&lt;/a>*</pre>
+    will read the urls of all links in a html file.<br/>
+    A template like this:
+    <pre>&lt;table id="foobar">&lt;tr>&lt;td>abc&lt;/td>&lt;td>{.}&lt;/td>*&lt;/tr>*&lt;/table></pre>
+     will read all table cells after the cell containing abc in all rows of the table with id foobar.
+    And a template like this:
+    <pre>&lt;table id="foobar">{temp := 0}&lt;tr>&lt;td>abc&lt;/td>&lt;td>{temp := $temp + .}&lt;/td>*{result := $temp}&lt;/tr>*&lt;/table></pre>
+    will calculate the sum of all table cells after the abc cell in all rows.<br/>You can also try these templates <a href ="http://videlibri.sourceforge.net/cgi-bin/htmlparserExampleCGI"> online</a>.</li>
+    <li>The <em>multi page template engine</em> can be used to download several pages, and apply a single-page template to each of them. Contrary to the single-page template it does not do any pattern matching itself (of course the single-page templates contained in a multi-page template do pattern matching against each page), but simply executes the actions in the order given in the template. It also supports variables, condition and loops, so it is even Turing complete.</li>
+    <li>The <em>http/s-wrapper</em> let you switch dynamically between Wininet (default library installed on every Windows computer) and Synapse (platform-independent,  but not always installed and problematic with https).</li>
+    <li>The <em>auto update</em> class is a trivial example for the other classes and can be used to add an auto update function to a program which will check online for a more recent version, download that version automatically and (optionally) install it. </li>
+    </ul>
+    <br/><br/>Summary of features:<br/><br/>
+    </content>
+    <features language="de">
+      <feature><title>Parser/Interpreter:</title>
+      <feature2>für xml/html Seiten, über ein sax und dom-ähnliches Interface</feature2>
+      <feature2><title>für XPath 2 Ausdrücke</title>
+      <feature3>95% standardkompatibel</feature3>
+      <feature3>Plus Erweiterungen für OOP, CSS und Regexps.</feature3>
+      </feature2>
+      <feature2><title>für CSS 3 Selektoren</title>
+      <feature3>standardkompatibel</feature3>
+      <feature3>standalone oder innerhalb eines XPath Ausdrucks: <code>//foobar/css("p#x a.class")/@href</code></feature3>
+      </feature2>
+      <feature2><title>für pattern-matching html/xml Templates:</title>
+        <feature3>Templates lassen sich einfach aus einer html-Datei erstellen und später updaten </feature3>
+        <feature3>Die Sprache kann reguläre, XPath 2 and CSS 3 Selektor Ausdrücke einbinden</feature3>
+        <feature3>Es gibt Variablen, optionale Elemente, Schleifen und Bedingungen</feature3>
+        <feature3>z.B.: <code>&lt;p class="test">&lt;span>Caption:&lt;/span>&lt;a>{.}&lt;/a>*&lt;/p></code> liest alle Links nach einem <code>span</code>-Element mit Text <code>Caption:</code> innerhalb eines Paragraphens mit Klasse <code>test</code></feature3>
+      </feature2>
+      <feature2><title>für multi-page Templates</title>
+      <feature3>Mehrere pattern-matching Templates zusammen, die nacheinander auf unterschiedliche Seiten angewandt werden.</feature3>
+      <feature3>unterstützt Variablen, Bedingungen und Schleifen => Turing vollständig</feature3>
+      </feature2>
+      </feature>
+      <feature><title>HTTP-Wrapper:</title>
+      <feature2>Erlaubt GET/POST-Übertragungen über http und https mit Fortschrittsanzeige </feature2>
+      <feature2>Verwendet entweder die Windowsstandardlibrary Wininet oder das platformunabhängige Synapse </feature2>
+      </feature>
+      <feature><title>Auto update:</title>
+      <feature2>Verwendet ein XML-Format, um auf dem Server die aktuelle Version und das Changelog zu speichern. </feature2>
+      <feature2>Erlaubt unterschiedliche Updates für 32/64-bit Linux/Windows und BSD-Platformen  </feature2>
+      <feature2>Überprüft, ob es eine neue Version gibt, indem nur eine kleine Datei (statt dem Changelog) heruntergeladen wird </feature2>
+      <feature2>Erlaubt das Ausführen des heruntergeladenen Installers mit beliebigen Kommandozeilenparametern </feature2>
+      </feature>
+    </features>
+    <features language="en">
+      <feature><title>Parsers/interpreters:</title>
+      <feature2>for xml/html files, with a sax or dom-like interface</feature2>
+      <feature2><title>for XPath 2 expressions</title>
+      <feature3>95% standard compatible</feature3>
+      <feature3>Some extension for objects, css, regular expressions</feature3>
+      </feature2>
+      <feature2><title>for CSS 3 Selectors</title>
+      <feature3>standard compatible</feature3>
+      <feature3>standalone or within XPath queries <code>//foobar/css("p#x a.class")/@href</code></feature3>
+      </feature2>
+      <feature2><title>for pattern-matching html/xml templates:</title>
+        <feature3>Templates can be easily created/updated from the existing html file</feature3>
+        <feature3>The template languages allows the inclusion of regular, XPath 2 and CSS 3 Selectors expressions</feature3>
+        <feature3>The language has variables, optional elements, loops and conditions</feature3>
+        <feature3>e.g. <code>&lt;p class="test">&lt;span>Caption:&lt;/span>&lt;a>{.}&lt;/a>*&lt;/p></code> will read all links after the <code>span</code>-element containing <code>Caption:</code> in a paragraph with class <code>test</code></feature3>
+      </feature2>
+      <feature2><title>for multi-page "scraping" templates</title>
+      <feature3>A collection of pattern-matching template to apply to several webpages</feature3>
+      <feature3>has variables, conditions and loops => Turing complete</feature3>
+      </feature2>
+      </feature>
+      <feature><title>HTTP-Wrapper:</title>
+      <feature2>Can be used for get/post transmissions over http and https</feature2>
+      <feature2>Either uses  the default Windows library Wininet or the platform independent synapse package</feature2>
+      </feature>
+      <feature><title>Auto update:</title>
+      <feature2>Uses a xml format to store the most recent version and a changelog on the server.</feature2>
+      <feature2>Supports different updates for 32/64-bit platforms and linux,Windows or BSD systems </feature2>
+      <feature2>Checks if a new version is available without downloading the whole, large changelog</feature2>
+      <feature2>Allows the execution of an arbitrary command line after the update</feature2>
+      </feature>
+    </features>
+  </download>
   <download> 
     <title>Farbauswahldialog</title>
     <file>farbe.zip</file>
@@ -42,54 +161,6 @@
       <fullfile>img/sources/farbe2.jpg</fullfile>
       <height>173px</height>
     </screenshot>
-  </download>
-  <download> 
-    <title>Internet Tools</title>
-    <link type="onlinedocu"/>
-    <file>internettools.zip</file>
-    <id>internettools</id>
-    <description_80 language="de">Template-basierter HTML-Parser, Autoupdateklasse und HTTP-Verbindungswrapper</description_80>
-    <description_80 language="en">A template based html parser, an auto update class and a http connection wrapper.</description_80>
-    <prog-language>FPC</prog-language>
-    <source-license>GPL</source-license>
-    <content language="de">Dieses Package besteht aus drei Teilen, die alle aufeinander aufbauen: &lt;br> Der HTML Parser benutzt zum Auswerten einer HTML-Seite eine in einer HTML-ähnlichen Sprache geschriebene Templatedatei. So kann man praktisch die zu parsende Datei mit minimalen Änderungen als Template benutzen und auch schnell an Änderungen der geparsten Seite anpassen. (Hat man zum Beispiel ein Datenbankfrontend, das unterschiedliche Datenbankeinträge anzeigt, so kann man aus einem einzigen dieser Einträge ein Template erstellen, mit dem der HTML Parser automatisch sämtliche dieser Einträge auswerten kann)&lt;br> Die zum Templateparser  gehörenden Klassen zum Parsen von xml/html-Dateien, Aufbauen einer Baumrepresentation und Auswerten von beliebigen XPath 2-Ausdrücken können auch unabhängig von den Templates verwendet werden. (Die XPath 2-Ausdrücke sind fast Standard-kompatible, wie man an den Ergebnissen der &lt;a href="documentation/internettools/internettoolsxqts.html">XQuery/Path Testsuite&lt;/a> sieht.)  &lt;br> Der HTTP-Verbindungswrapper ermöglicht es dynamisch zwischen Wininet (auf allen Windowscomputern vorhanden) und Synapse (platform-unabhängig,  aber muss installiert werden) umzuschalten.&lt;br> Mit der Autoupdateklasse ist es einfach, ein Programm um ein Autoupdate zu erweitern, bei dem das Update automatisch aus dem Internet geladen und dann wahlweise auch installiert wird.&lt;br> &lt;br>Der Templateparser lässt sich auch &lt;a href ="http://videlibri.sourceforge.net/cgi-bin/htmlparserExampleCGI"> online&lt;/a> testen. &lt;br> &lt;br></content>
-    <content language="en">This package consists of three parts working together: &lt;br> The HTML Parser parses a html page using a language similar to html itself. Therefore you can just copy the html site you want to parse and mark the important things  to get a template for the parser. With this template you can  extract the marked information from any similar page. (imagine for example you have a site showing several entries from a database. Then you can create a template for one of those entries and the parser will automatically retrieve all entries) &lt;br> You can also use the independent submodules of the template parser to parse xml/html files, create a tree representation of the file or to evaluate XPath 2 expressions (latter are almost standard compatible, see the &lt;a href="documentation/internettools/internettoolsxqts.html">XQuery/Path Testsuite results&lt;/a>).   &lt;br> The http-wrapper enables you to switch dynamically between Wininet (default library installed on every Windows computer) and Synapse (platform-independent,  but not always installed).&lt;br>&lt;br> The auto update class can be used to add an auto update function to a program which will check online for a more recent version, download that version automatically and (optionally) install it. &lt;br> &lt;br>You can also test the template parsing &lt;a href ="http://videlibri.sourceforge.net/cgi-bin/htmlparserExampleCGI"> online&lt;/a>.&lt;br>&lt;br></content>
-    <features language="de">
-      <feature>&lt;b>Parser:&lt;/b></feature>
-      <feature>Templates lassen sich einfach aus einer html-Datei erstellen/updaten</feature>
-      <feature>Es kann alle Teile der html Datei (außer Kommentaren) lesen</feature>
-      <feature>Die Seite wird automatisch in den richtigen Ausgabezeichensatz konvertiert</feature>
-      <feature>Die Templatesprache unterstützt reguläre  und XPath 2 Ausdrücke</feature>
-      <feature>Die Sprache unterstützt optionale Elemente, Schleifen und If-Anweisungen</feature>
-      <feature></feature>
-      <feature>&lt;b>HTTP-Wrapper:&lt;/b></feature>
-      <feature>Erlaubt GET/POST-Übertragungen über http und https mit Fortschrittsanzeige</feature>
-      <feature>Verwendet entweder die Windowsstandardlibrary Wininet oder das platformunabhängige Synapsepackage</feature>
-      <feature></feature>
-      <feature>&lt;b>Auto update:&lt;/b></feature>
-      <feature>Verwendet ein XML-Format, um auf dem Server die aktuelle Version und das Changelog zu speichern.</feature>
-      <feature>Erlaubt unterschiedliche Updates für 32/64-bit Linux/Windows und BSD-Platformen</feature>
-      <feature>Überprüft, ob es eine neue Version gibt, indem nur eine kleine Datei (statt dem Changelog) heruntergeladen wird</feature>
-      <feature>Erlaubt das Ausführen beliebiger Kommandozeilenparameter</feature>
-    </features>
-    <features language="en">
-      <feature>&lt;b>Parser:&lt;/b></feature>
-      <feature>Templates can be easily created/updated from the existing html file</feature>
-      <feature>Can read all parts of the html file (except comments)</feature>
-      <feature>The values are automatically converted into the correct output encoding</feature>
-      <feature>The template languages allows the use of regular and XPath 2 expressions</feature>
-      <feature>The language allows optional elements, loops and conditions</feature>
-      <feature></feature>
-      <feature>&lt;b>HTTP-Wrapper:&lt;/b></feature>
-      <feature>Can be used for get/post transmissions over http and https</feature>
-      <feature>Either uses  the default Windows library Wininet or the platform independent synapse package</feature>
-      <feature></feature>
-      <feature>&lt;b>Auto update:&lt;/b></feature>
-      <feature>Uses a xml format to store the most recent version and a changelog on the server.</feature>
-      <feature>Supports different updates for 32/64-bit platforms and linux,Windows or BSD systems </feature>
-      <feature>Checks if a new version is available without downloading the whole, large changelog</feature>
-      <feature>Allows the execution of an arbitrary command line after the update</feature>
-    </features>
   </download>
   <download> 
     <title>Diagram-Tools</title>
