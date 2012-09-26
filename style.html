@@ -158,7 +158,25 @@
                  {{$WRITE download/content}}
                  {{$IF download/features != ""}}
                  <ul>
-                 {{$FOREACH feature: download/features/feature}}<li>{{$WRITE feature}}</li>{{$/FOREACH}}
+                 {{$FOREACH feature: download/features/feature}}<li>
+                   {{$IF feature/feature2 == ""}}
+                     {{$WRITE feature}}
+                   {{$ELSE}}
+                     <b>{{$WRITE feature/title}}</b>
+                     <ul>
+                     {{$FOREACH feature2: feature/feature2}}<li>
+                       {{$IF feature2/feature3 == ""}}
+                         {{$WRITE feature2}}
+                       {{$ELSE}}
+                         {{$WRITE feature2/title}}
+                         <ul>
+                           {{$FOREACH feature3: feature2/feature3}}<li>{{$WRITE feature3}}</li>{{$/FOREACH}}
+                         </ul>
+                       {{$/IF}}
+                     </li>{{$/FOREACH}}
+                     </ul>
+                   {{$/IF}}
+                 </li>{{$/FOREACH}}
                  </ul>
                  {{$/IF}}
                  {{$IF download/screenshot != ""}}
