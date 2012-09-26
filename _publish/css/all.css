@@ -211,6 +211,11 @@ td{
   padding: 2px 2px;
 
 }
+th{
+  border:1px solid blue;
+  padding: 2px 2px;
+
+}
 .invisible{
   border:none; 
   background-color:#FFFFDD;
@@ -272,6 +277,10 @@ td{
   margin-top: 10px;
   margin-right: 5px;
 }
+
+
+.indentation-list {list-style: none}
+.indentation-list li {margin-bottom: 1em}
 
 h3.scherz{margin-top:1em;}
 .code {
