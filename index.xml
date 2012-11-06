@@ -7,7 +7,12 @@
   <content>&lt;h2>News&lt;/h2></content>
     
     <news>
-    <new date="26. Sept 2012"><text language="de">
+    <new date="06. Nov 2012"><text language="de">
+    Die <a href="sources_de.html#internettools">Internet Tools</a> unterstützen nun XQuery, statt nur XPath 2!<br/> Und die variant-Klassen in der API wurden durch Interfaces ersetzt, so dass sie jetzt ref-counted sind.
+    </text><text language="en">
+    The <a href="sources_en.html#internettools">Internet Tools</a> support now XQuery, instead of only XPath 2! <br/> And all the variant-classes in the API were replaced by ref-counted interfaces.
+    </text></new>
+    <new date="26. Sep 2012"><text language="de">
     Mal wieder ein Update:
     <ul><li><a href="sources_de.html#internettools">Internet Tools</a>: Sie unterstützen nun CSS 3 Selektoren, direkt und innerhalb von XPath-Ausdrücken. Und es gibt eine XPath-Funktion <code>form</code>, die das HTTP-Request für eine HTML-Form berechnet und als Objekt zurückgibt. Die Internetaccess-Klasse gibt einem Zugriff auf die HTTP-Header, und der Htmltreeparser erkennt die Zeichenkodierung auch dann, wenn die Angabe im http-equiv meta-Tag <i>falsch</i> ist und einem korrekten Content-Type Header widerspricht (Da hat die Münchener Stadtbücherei wirklich einen <i>super</i> programmierten Katalog). <br/> Die Internet Tools enthalten nun also die Klasse für Mehrseitenabfrageskripts von VideLibri, und es gibt ein  <a href="http://videlibri.sourceforge.net/xidel.html">Commandlinetool Xidel</a> als Wrapper um die Internet Tools mit dem man Templates und XPathausdrücke auf Webseiten anwenden kann, ohne Pascal zu kennen oder Büchereien zu stören. <br/> Und es gibt nun ein <a href="http://userscripts.org/scripts/show/144991">Greasemonkey-Skript</a>, das die Templates für VideLibri/Xidel automatisch erstellen kann, wenn man die entsprechenden Werte in Firefox markiert.<br/>Nun soll ich den XPath parser zu XQuery ausbauen, oder nicht? So groß ist der Unterschied nicht...</li>
     <li><a href="sources_de.html#rcmdline">TCommandLineReader</a>: mein Kommandozeilenparser funktioniert nun auch unter Linux. (er hat früher nicht funktioniert, weil die fpc RTL-Funktion zum gesamten Kommandozeilenauslesen unter Linux keine einfachen Anführungszeichen unterstützt! Und umgekehrt funktioniert die RTL-Funktion zum Lesen der aufgeteilten Argumente unter Windows nicht mit einfachen Anführungszeichen! Weshalb ich den Kommandozeilenparser überhaupt erst geschrieben hatte...)<br/>Und es gibt jetzt eine Unterklasse, die als cgi-Service läuft und die Argumente von GET/POST-Requests liest anstatt von der Kommandozeile.</li>

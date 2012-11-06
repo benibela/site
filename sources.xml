@@ -19,8 +19,8 @@
         <ul class="indentation-list">
         <li>Einen <em>simplen HTML Parser</em>, der eine HTML/XML-Datei parst und für jeden gelesen Tag und Text eine entsprechende Callbackfunktion aufruft.</li>
         <li>Einen <em>HTML Tree Parser</em>, der den einfachen Parser verwendet, um eine HTML/XML-Datei zu lesen und in einen Elementstream umzuwandeln, der sich wie ein DOM-Baum verhält. Dabei werden zudem Fehler in der HTML-Datei wie nicht geschlossene Tags korrigiert und die Zeichenkodierung ermittelt.</li>
-        <li>Einen <em>XPath 2 Interpreter</em>, der beliebige XPath 2 Ausdrücke über dem DOM-ähnlichen Baum ausführen kann. Er ist vollständig in Pascal implementiert, unterstützt alle XPath 2 Funktionen/Ausdrücke und ist nahezu standardkompatibel (vergleiche seine <a href="documentation/internettools/internettoolsxqts.html">Ergebnisse der XQuery/XPath Testsuite</a>)</li>
-        <li>Ein Parser für <em>CSS 3 Selectors</em>, der in die XPath 2 Klasse eingebaut ist, der CSS Selektoren in XPath 2-Ausdrücke umwandeln, und diese dann ausführt.</li>
+        <li>Einen <em>XPath 2 / XQuery Interpreter</em>, der beliebige XPath 2 / XQuery Ausdrücke über dem DOM-ähnlichen Baum ausführen kann. Er ist vollständig in Pascal implementiert, unterstützt alle XPath 2 Funktionen/Ausdrücke und ist nahezu standardkompatibel (vergleiche seine <a href="documentation/internettools/internettoolsxqts.html">Ergebnisse der vollständigen XQuery Testsuite</a> oder beschränkt auf <a href="documentation/internettools/internettoolsxqts_path.html">XPath 2</a>)</li>
+        <li>Ein Parser für <em>CSS 3 Selectors</em>, der in die XQuery Klasse eingebaut ist, der CSS Selektoren in XPath 2-Ausdrücke umwandeln, und diese dann ausführt.</li>
         <li>Eine <em>pattern-matching HTML Templateengine</em>, die ein HTML Template auf eine Seite anwendet. Ein solches HTML-Template ist eine vereinfachte Version der zu verarbeitenden Seite. Die Struktur des Templates wird mit der Struktur der Seite verglichen, und jedes Template-Element wird mit einem übereinstimmenden Seiten-Element verknüpft, welches dieselben Eigenschaften und ähnliche Kinder aufweist. Die in den Template-Elementen enthaltenden Annotationen können dann die Werte der entsprechenden Seiten-Elemente auslesen.  Zum Beispiel ein Template wie
         <pre>&lt;a>{@href}&lt;/a>*</pre>
         liest die Addressen aller Links auf einer HTML Seite.<br/>
@@ -41,8 +41,8 @@
     <ul class="indentation-list">
     <li>The <em>simple html parser</em> at the lowest level, parses a xml/html file and calls callback functions for every tag and text it has read.</li>
     <li>The <em>html tree parser</em>, uses the simpler parser to read an xml/html file and create a linked element-stream from it, which is equivalent to a dom-like tree. This parser takes much care to make the tree usable, e.g. by correcting errors in invalid html files and auto detecting its encoding.</li>
-    <li>With the <em>XPath 2 engine</em> you can then run arbitrary XPath 2 queries on the dom-like representation. It is completely implemented in Pascal, supports all XPath 2 functions and is  nearly standard compatible. (compare its <a href="documentation/internettools/internettoolsxqts.html">XQuery/XPath Testsuite results</a>)</li>
-    <li>The parser for <em>CSS 3 selectors</em> is part of then XPath 2 class, converts the CSS selector to an XPath expression and evaluates that.</li>
+    <li>With the <em>XPath 2 / XQuery engine</em> you can then run arbitrary XPath 2 / XQuery queries on the dom-like representation. It is completely implemented in Pascal, supports all XPath 2 / XQuery functions and is  nearly standard compatible. (compare its <a href="documentation/internettools/internettoolsxqts.html">XQuery Testsuite results</a> or the results on the <a href="documentation/internettools/internettoolsxqts_path.html">XPath 2 subset</a>)</li>
+    <li>The parser for <em>CSS 3 selectors</em> is part of then XQuery class, converts the CSS selector to an XPath expression and evaluates that.</li>
     <li>The <em>pattern-matching html template engine</em> at the highest level, can be used to process an html file by annotating a subset of it and applying the resulting template to the html file.  All elements in the template are searched in the html file and template instructions in matching elements can be used to extract data. For example a template like 
     <pre>&lt;a>{@href}&lt;/a>*</pre>
     will read the urls of all links in a html file.<br/>
@@ -51,7 +51,7 @@
      will read all table cells after the cell containing abc in all rows of the table with id foobar.
     And a template like this:
     <pre>&lt;table id="foobar">&lt;tr>{temp := 0}&lt;td>abc&lt;/td>&lt;td>{temp := $temp + .}&lt;/td>*{result := $temp}&lt;/tr>*&lt;/table></pre>
-    will calculate the sum of all table cells after the abc cell in all rows.<br/>You can also try these templates <a href ="http://videlibri.sourceforge.net/cgi-bin/htmlparserExampleCGI"> online</a> or with <a href="http://videlibri.sourceforge.net/xidel.html">Xidel</a>.</li>
+    will calculate the sum of all table cells after the abc cell in all rows.<br/>You can also try these templates <a href ="http://videlibri.sourceforge.net/cgi-bin/xidelcgi"> online</a> or with <a href="http://videlibri.sourceforge.net/xidel.html">Xidel</a>.</li>
     <li>The <em>multi page template engine</em> can be used to download several pages, and apply a single-page template to each of them. Contrary to the single-page template it does not do any pattern matching itself (of course the single-page templates contained in a multi-page template do pattern matching against each page), but simply executes the actions in the order given in the template. It also supports variables, condition and loops, so it is even Turing complete.</li>
     <li>The <em>http/s-wrapper</em> let you switch dynamically between Wininet (default library installed on every Windows computer) and Synapse (platform-independent,  but not always installed and problematic with https).</li>
     <li>The <em>auto update</em> class is a trivial example for the other classes and can be used to add an auto update function to a program which will check online for a more recent version, download that version automatically and (optionally) install it. </li>
@@ -61,9 +61,9 @@
     <features language="de">
       <feature><title>Parser/Interpreter:</title>
       <feature2>für xml/html Seiten, über ein sax und dom-ähnliches Interface</feature2>
-      <feature2><title>für XPath 2 Ausdrücke</title>
-      <feature3>95% standardkompatibel</feature3>
-      <feature3>Plus Erweiterungen für OOP, CSS und Regexps.</feature3>
+      <feature2><title>für XPath 2 / XQuery Ausdrücke</title>
+      <feature3>vollständig standardkompatibel, abgesehen von XML Schema, Fehlerkodes und statischer Typüberprüfung.</feature3>
+      <feature3>Plus Erweiterungen für OOP, CSS, Regexps und pattern-matching.</feature3>
       </feature2>
       <feature2><title>für CSS 3 Selektoren</title>
       <feature3>standardkompatibel</feature3>
@@ -95,8 +95,8 @@
       <feature><title>Parsers/interpreters:</title>
       <feature2>for xml/html files, with a sax or dom-like interface</feature2>
       <feature2><title>for XPath 2 expressions</title>
-      <feature3>95% standard compatible</feature3>
-      <feature3>Some extension for objects, css, regular expressions</feature3>
+      <feature3>standard compatible, except for missing xml schemas, error codes and static type checking </feature3>
+      <feature3>Some extension for objects, css, regular expressions and pattern matching</feature3>
       </feature2>
       <feature2><title>for CSS 3 Selectors</title>
       <feature3>standard compatible</feature3>
