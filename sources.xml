@@ -71,7 +71,7 @@
       </feature2>
       <feature2><title>für pattern-matching html/xml Templates:</title>
         <feature3>Templates lassen sich einfach aus einer html-Datei erstellen und später updaten </feature3>
-        <feature3>Die Sprache kann reguläre, XPath 2 and CSS 3 Selektor Ausdrücke einbinden</feature3>
+        <feature3>Die Sprache kann reguläre, XPath 2 / XQuery and CSS 3 Selektor Ausdrücke einbinden</feature3>
         <feature3>Es gibt Variablen, optionale Elemente, Schleifen und Bedingungen</feature3>
         <feature3>z.B.: <code>&lt;p class="test">&lt;span>Caption:&lt;/span>&lt;a>{.}&lt;/a>*&lt;/p></code> liest alle Links nach einem <code>span</code>-Element mit Text <code>Caption:</code> innerhalb eines Paragraphens mit Klasse <code>test</code></feature3>
       </feature2>
@@ -94,7 +94,7 @@
     <features language="en">
       <feature><title>Parsers/interpreters:</title>
       <feature2>for xml/html files, with a sax or dom-like interface</feature2>
-      <feature2><title>for XPath 2 expressions</title>
+      <feature2><title>for XPath 2 / XQuery expressions</title>
       <feature3>standard compatible, except for missing xml schemas, error codes and static type checking </feature3>
       <feature3>Some extension for objects, css, regular expressions and pattern matching</feature3>
       </feature2>
@@ -104,7 +104,7 @@
       </feature2>
       <feature2><title>for pattern-matching html/xml templates:</title>
         <feature3>Templates can be easily created/updated from the existing html file</feature3>
-        <feature3>The template languages allows the inclusion of regular, XPath 2 and CSS 3 Selectors expressions</feature3>
+        <feature3>The template languages allows the inclusion of regular, XPath 2 / XQuery and CSS 3 Selectors expressions</feature3>
         <feature3>The language has variables, optional elements, loops and conditions</feature3>
         <feature3>e.g. <code>&lt;p class="test">&lt;span>Caption:&lt;/span>&lt;a>{.}&lt;/a>*&lt;/p></code> will read all links after the <code>span</code>-element containing <code>Caption:</code> in a paragraph with class <code>test</code></feature3>
       </feature2>
