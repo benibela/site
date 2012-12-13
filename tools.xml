@@ -219,6 +219,30 @@ It is a C++ command line program, runs on Linux (binary is for 64 bit only) and 
  </content>
   </download>
 
+
+  <download> 
+    <title>BBMultiPlot</title>
+    <file>bbmultiplot.zip</file>
+    <file title="Source">source/bbmultiplot.zip</file>
+    <id>bbmultiplot</id>
+    <description_80 language="de">Plotter für multivariable Funktionen, mit symbolischer Ableitungsberechnung </description_80>
+    <description_80 language="en">Plotter rendering multivariable functions with their symbolic derivative </description_80>
+    <language>de, (en)</language>
+    <payment>Freeware</payment>
+    <source>open</source>
+    <content language="de">BBMultiPlot kann beliebige Funktionen plotten, und ihre Ableitung symbolisch berechnen. Es kann Funktionen, die von mehreren Variablen abhängen anzeigen, in dem die Funktion für jede mögliche Variablenbelegung in einem bestimmten Interval mit einiger eigenen Farbe geplottet wird.<br/>
+     Es  unterstützt die normalen arithmetischen Operationen, +,-,*,/,^,|, sowie sin, cos, tan, exp, ln, sqrt, abs, sign, int (= floor), asin, acos und atan. Der Parser ist recht flexible, so kann man "4*x" als "4x" schreiben und  Randklammern wie in "x)+(7" statt "(x)+(7)" weglassen.<br/>
+    Leider habe ich, als ich es programmiert habe, noch kein VCS verwendet, und so den Quellcode bei der Portierung von Windows/Delphi nach Linux/Lazarus irgendwie beschädigt. Der Source im unterstehenden zip-Archive ist wahrscheinlich neuer als das Binary, hat aber wohl ein paar Bugs.</content>
+    <content language="en">BBMultiPlot can plot arbitrary mathematical functions and calculate their symbolic derivative. It can plot multivariable functions, by plotting the function for each possible value of the unknown variables within a certain range with different gradient colors. <br/>
+    It supports the usual arithmetic operations, +,-,*,/,^,|, and the sin, cos, tan, exp, ln, sqrt, abs, sign, int (= floor), asin, acos und atan functions. It's expression parsing is quite flexible, so you can write "4*x" as "4x", and omit trailing/leading brackets like in "x)+(7".<br/>Sadly, I did not use a VCS while writing it, and kind of damaged the source while trying to port it from Windows/Delphi to Linux/Lazarus. The source archive below, is probably newer than the binary and has more features, but also more bugs. </content>
+    <screenshot>
+      <fullfile>img/tools/bbmultiplot.png</fullfile>
+      <title>x^2*a + sin(x)^2 * 10 in WINE</title>
+      <height>300px</height>
+    </screenshot>
+  </download>
+
+
   <download> 
     <title>AFX-Math</title>
     <file>math.zip</file>
@@ -231,6 +255,7 @@ It is a C++ command line program, runs on Linux (binary is for 64 bit only) and 
     <content language="de">Hiermit kann man Additionen, Subtraktionen und Multiplikationen mit (fast) beliebig langen ganzen Zahlen auf dem Casio Algebra FX 2.0 Plus Taschenrechner durchführen. (eventuell läuft es auch auf älteren Modellen)</content>
     <content language="en">You can use this program for addition, subtraction and multiplication of long integers on the Casio Algebra FX 2.0 Plus calculator. (Perhaps it also works on older models)</content>
   </download>
+
 
   <download> 
     <title>Logics</title>
