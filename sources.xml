@@ -62,11 +62,11 @@
       <feature><title>Parser/Interpreter:</title>
       <feature2>für xml/html Seiten, über ein sax und dom-ähnliches Interface</feature2>
       <feature2><title>für XPath 2 / XQuery Ausdrücke</title>
-      <feature3>vollständig standardkompatibel, abgesehen von XML Schema, Fehlerkodes und statischer Typüberprüfung.</feature3>
+      <feature3>nahezu vollständig standardkompatibel: besteht 99.3% der XPath 2 Tests und 97.8% der XQuery 1 Tests in der XQuery Testsuite<br/> (unter Auslassung der Tests für ungültige Eingaben; die meisten fehlschlagenden Tests testen XML Schemas, welche noch nicht unterstützt werden  )</feature3>
       <feature3>Plus Erweiterungen für OOP, CSS, Regexps und pattern-matching.</feature3>
       </feature2>
       <feature2><title>für CSS 3 Selektoren</title>
-      <feature3>standardkompatibel</feature3>
+      <feature3>standardkompatibel (afaik)</feature3>
       <feature3>standalone oder innerhalb eines XPath Ausdrucks: <code>//foobar/css("p#x a.class")/@href</code></feature3>
       </feature2>
       <feature2><title>für pattern-matching html/xml Templates:</title>
@@ -95,11 +95,11 @@
       <feature><title>Parsers/interpreters:</title>
       <feature2>for xml/html files, with a sax or dom-like interface</feature2>
       <feature2><title>for XPath 2 / XQuery expressions</title>
-      <feature3>standard compatible, except for missing xml schemas, error codes and static type checking </feature3>
+      <feature3>nearly completely standard compatible: passes 99.3% of the XPath 2 only tests and 97.8% of the XQuery 1 tests in the XQuery Testsuite <br/> (skipping tests for invalid input queries; most failing tests depend on xml schemas which are not supported, yet)</feature3>
       <feature3>Some extension for objects, css, regular expressions and pattern matching</feature3>
       </feature2>
       <feature2><title>for CSS 3 Selectors</title>
-      <feature3>standard compatible</feature3>
+      <feature3>standard compatible (afaik)</feature3>
       <feature3>standalone or within XPath queries <code>//foobar/css("p#x a.class")/@href</code></feature3>
       </feature2>
       <feature2><title>for pattern-matching html/xml templates:</title>
