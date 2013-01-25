@@ -5,7 +5,8 @@
   <contentlastchange>Inhalt zuletzt geändert</contentlastchange>
   <pagelastchange>Seite zuletzt geändert</pagelastchange>
   <onlinedocumentation>Onlinereferenz</onlinedocumentation>
-  <authorship>Für G+ Autorenanerkennung: von </authorship>
+  <authorship>Für G+ Autorenanerkennung: </authorship>
+  <homepageOf>Homepage von </homepageOf>
 </language>
 <language>
   <id>en</id>
@@ -13,7 +14,8 @@
   <contentlastchange>Last change of the content of this page</contentlastchange>
   <pagelastchange>Last change of this page</pagelastchange>
   <onlinedocumentation>Online Documentation</onlinedocumentation>
-  <authorship>For G+ authorship: by </authorship>
+  <authorship>For G+ authorship:  </authorship>
+  <homepageOf>Personal home page of </homepageOf>
 </language>
 
 <fileinfo>
