@@ -206,3 +206,10 @@ function pageFocus(){
 
   }
 }  
+
+
+var lang="de"; //needed for guestbook
+if (window.location.href.search(/lang=en/)!=-1) lang="en";
+if (window.location.href.search(/_en/)!=-1) lang="en";
+
+ 
