@@ -1,4 +1,4 @@
-﻿<file>
+<file>
   <description language="de">Auf dieser Seite gibt Free- und Shareware Spiele. Die meisten sind Pacman ähnlich, aber es gibt auch ein Lernspiel, ein Logikspiel, und zwei Shooter.</description>
   <description language="en">On this page can you find free- and shareware games: Most of them are like pacman, but there are 2 shooter games, too.</description>
   <keywords language="de">Spiele, BeniBela, Mausitanien, Netzwerkbombermanclone, STWC, Save the World Trade Center, Das Kinderzimmer, Scherli 1, Scherli 2, Stockspiel, download, Freeware, Shareware, Pacman, Labyrinth, Maus, Mäuse, Käse, sammeln, Arcade, Logik, Shooter, Bomberman</keywords>
@@ -342,7 +342,7 @@ The one who gets the last stick has lost the game.]]></content>
     <language>de</language>
     <payment>Freeware (GPL)</payment>
     <content language="de">Ein nie fertig gestelltes Strategiespiel, das in der Zukunft spielen sollte. Man kann nur herumfahren und Gebäude bauen. </content>
-    <content language="en">A never finished strategy game which should play in the future. You can only drive around and create buildings.</content>
+    <content language="en">A never finished real time strategy game which should play in the future. You can only drive around and create buildings and units.</content>
     <screenshot>
       <title language="de">einige Gebäude</title>
       <title language="en">some buildings</title>

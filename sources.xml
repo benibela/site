@@ -11,15 +11,15 @@
     <link type="onlinedocu"/>
     <file>internettools.zip</file>
     <id>internettools</id>
-    <description_80 language="de">Template-basierter HTML-Parser, Autoupdateklasse und HTTP-Verbindungswrapper</description_80>
-    <description_80 language="en">A template based html parser, an auto update class and a http connection wrapper.</description_80>
+    <description_80 language="de">Ein vollständiger XPath 2/XQuery/JSONiq-Interpreter, ein Pattern-Matcher für HTML/XML-Templates, eine Autoupdate-Klasse und einen HTTP-Verbindungswrapper</description_80>
+    <description_80 language="en">Containing a full XPath 2/XQuery/JSONiq engine, a pattern matcher for html/xml, an auto update class and a http connection wrapper.</description_80>
     <prog-language>FPC</prog-language>
     <source-license>GPL</source-license>
     <content language="de">Dieses Package enthält folgende Module: <br/><br/> 
         <ul class="indentation-list">
         <li>Einen <em>simplen HTML Parser</em>, der eine HTML/XML-Datei parst und für jeden gelesen Tag und Text eine entsprechende Callbackfunktion aufruft.</li>
         <li>Einen <em>HTML Tree Parser</em>, der den einfachen Parser verwendet, um eine HTML/XML-Datei zu lesen und in einen Elementstream umzuwandeln, der sich wie ein DOM-Baum verhält. Dabei werden zudem Fehler in der HTML-Datei wie nicht geschlossene Tags korrigiert und die Zeichenkodierung ermittelt.</li>
-        <li>Einen <em>XPath 2 / XQuery Interpreter</em>, der beliebige XPath 2 / XQuery Ausdrücke über dem DOM-ähnlichen Baum ausführen kann. Er ist vollständig in Pascal implementiert, unterstützt alle XPath 2 Funktionen/Ausdrücke und ist nahezu standardkompatibel (vergleiche seine <a href="documentation/internettools/internettoolsxqts.html">Ergebnisse der vollständigen XQuery Testsuite</a> oder beschränkt auf <a href="documentation/internettools/internettoolsxqts_path.html">XPath 2</a>)</li>
+        <li>Einen <em>XPath 2 / XQuery Interpreter</em>, der beliebige XPath 2 / XQuery Ausdrücke über dem DOM-ähnlichen Baum ausführen kann. Er ist vollständig in Pascal implementiert, unterstützt alle XPath 2 Funktionen/Ausdrücke und ist nahezu standardkompatibel (vergleiche seine <a href="documentation/internettools/internettoolsxqts.html">Ergebnisse der vollständigen XQuery Testsuite</a> oder beschränkt auf <a href="documentation/internettools/internettoolsxqts_path.html">XPath 2</a>). Er unterstützt auch JSONiq.</li>
         <li>Ein Parser für <em>CSS 3 Selectors</em>, der in die XQuery Klasse eingebaut ist, der CSS Selektoren in XPath 2-Ausdrücke umwandeln, und diese dann ausführt.</li>
         <li>Eine <em>pattern-matching HTML Templateengine</em>, die ein HTML Template auf eine Seite anwendet. Ein solches HTML-Template ist eine vereinfachte Version der zu verarbeitenden Seite. Die Struktur des Templates wird mit der Struktur der Seite verglichen, und jedes Template-Element wird mit einem übereinstimmenden Seiten-Element verknüpft, welches dieselben Eigenschaften und ähnliche Kinder aufweist. Die in den Template-Elementen enthaltenden Annotationen können dann die Werte der entsprechenden Seiten-Elemente auslesen.  Zum Beispiel ein Template wie
         <pre>&lt;a>{@href}&lt;/a>*</pre>
@@ -29,10 +29,10 @@
          liest alle Tabellenzellen nach der Zelle mit dem Text abc in der Tabelle mit ID foobar.
         Und schließlich ein Template wie
         <pre>&lt;table id="foobar">&lt;tr>{temp := 0}&lt;td>abc&lt;/td>&lt;td>{temp := $temp + .}&lt;/td>*{result := $temp}&lt;/tr>*&lt;/table></pre>
-        berechnet die Summe aller Tabellenzellen nach der abc-Zelle für alle Zeilen.<br/>Diese Templates lassen sich auch <a href ="http://videlibri.sourceforge.net/cgi-bin/htmlparserExampleCGI"> online</a> or with <a href="http://videlibri.sourceforge.net/xidel.html">Xidel</a> ausprobieren.</li>
+        berechnet die Summe aller Tabellenzellen nach der abc-Zelle für alle Zeilen.<br/>Diese Templates lassen sich auch <a href ="http://videlibri.sourceforge.net/cgi-bin/xidelcgi"> online</a> or with <a href="http://videlibri.sourceforge.net/xidel.html">Xidel</a> ausprobieren.</li>
         <li>Die <em>multi page Templateengine</em> speichert in ihren Templates mehrere Einzelseitentemplates, die nacheinander auf die angegebenen Seiten angewandt werden. Im Gegensatz zu den Einzelseitentemplates führt diese Engine kein pattern-matching durch (außer natürlich dem pattern-matching mit den enthaltenen Einzelseitentemplates zu den heruntergeladenen Seiten), sondern führt alle Aktionen in der angegebenen Reihenfolge durch. Dabei werden auch Variablen, Bedingungen und Schleifen unterstützt, so dass sie Turing vollständig ist.</li>
-        <li>Der <em>HTTP/S-Verbindungswrapper</em> kann Seiten mit GET/Post-Anfragen runterladen und kümmert sich automatisch um Cookies und Weiterleitungen. Außerdem kann er dynamisch zwischen Wininet (auf allen Windowscomputern vorhanden) und Synapse (platform-unabhängig, muss aber installiert werden) umzuschalten.</li>
-        <li>Die <em>Autoupdateklasse</em> ist ein Trivialbeispiel für die anderen Klassen, und kann automatisch ein Update runterladen und installieren.
+        <li>Der <em>HTTP/S-Verbindungswrapper</em> kann Seiten mit beliebigen HTTP-Methoden (z.B.: GET/POST) herunterladen und kümmert sich automatisch um Cookies und Weiterleitungen. Außerdem kann er dynamisch zwischen Wininet (auf allen Windowscomputern vorhanden), Synapse (plattform-unabhängig, muss aber installiert werden) und Apache HttpComponents (alter Standard für Android) umschalten.</li>
+        <li>Die <em>Autoupdateklasse</em> ist ein Trivialbeispiel für die anderen Klassen, und kann automatisch ein Update herunterladen und installieren.
         </li>
         </ul>
         <br/><br/>Stichpunktübersicht der Features:<br/><br/></content>
@@ -41,8 +41,8 @@
     <ul class="indentation-list">
     <li>The <em>simple html parser</em> at the lowest level, parses a xml/html file and calls callback functions for every tag and text it has read.</li>
     <li>The <em>html tree parser</em>, uses the simpler parser to read an xml/html file and create a linked element-stream from it, which is equivalent to a dom-like tree. This parser takes much care to make the tree usable, e.g. by correcting errors in invalid html files and auto detecting its encoding.</li>
-    <li>With the <em>XPath 2 / XQuery engine</em> you can then run arbitrary XPath 2 / XQuery queries on the dom-like representation. It is completely implemented in Pascal, supports all XPath 2 / XQuery functions and is  nearly standard compatible. (compare its <a href="documentation/internettools/internettoolsxqts.html">XQuery Testsuite results</a> or the results on the <a href="documentation/internettools/internettoolsxqts_path.html">XPath 2 subset</a>)</li>
-    <li>The parser for <em>CSS 3 selectors</em> is part of then XQuery class, converts the CSS selector to an XPath expression and evaluates that.</li>
+    <li>With the <em>XPath 2 / XQuery engine</em> you can then run arbitrary XPath 2 / XQuery queries on the dom-like representation. It is completely implemented in Pascal, supports all XPath 2 / XQuery functions and is  nearly standard compatible. (compare its <a href="documentation/internettools/internettoolsxqts.html">XQuery Testsuite results</a> or the results on the <a href="documentation/internettools/internettoolsxqts_path.html">XPath 2 subset</a>). It also supports JSONiq.</li>
+    <li>The parser for <em>CSS 3 selectors</em> is part of then XQuery class, converts the CSS selector to a XPath expression and evaluates that.</li>
     <li>The <em>pattern-matching html template engine</em> at the highest level, can be used to process an html file by annotating a subset of it and applying the resulting template to the html file.  All elements in the template are searched in the html file and template instructions in matching elements can be used to extract data. For example a template like 
     <pre>&lt;a>{@href}&lt;/a>*</pre>
     will read the urls of all links in a html file.<br/>
@@ -53,7 +53,7 @@
     <pre>&lt;table id="foobar">&lt;tr>{temp := 0}&lt;td>abc&lt;/td>&lt;td>{temp := $temp + .}&lt;/td>*{result := $temp}&lt;/tr>*&lt;/table></pre>
     will calculate the sum of all table cells after the abc cell in all rows.<br/>You can also try these templates <a href ="http://videlibri.sourceforge.net/cgi-bin/xidelcgi"> online</a> or with <a href="http://videlibri.sourceforge.net/xidel.html">Xidel</a>.</li>
     <li>The <em>multi page template engine</em> can be used to download several pages, and apply a single-page template to each of them. Contrary to the single-page template it does not do any pattern matching itself (of course the single-page templates contained in a multi-page template do pattern matching against each page), but simply executes the actions in the order given in the template. It also supports variables, condition and loops, so it is even Turing complete.</li>
-    <li>The <em>http/s-wrapper</em> let you switch dynamically between Wininet (default library installed on every Windows computer) and Synapse (platform-independent,  but not always installed and problematic with https).</li>
+    <li>The <em>http/s-wrapper</em> let you switch dynamically between Wininet (default library installed on every Windows computer), Synapse (platform-independent,  but not always installed and problematic with https) and Apache HttpComponents (called through JNI and runs on Android).</li>
     <li>The <em>auto update</em> class is a trivial example for the other classes and can be used to add an auto update function to a program which will check online for a more recent version, download that version automatically and (optionally) install it. </li>
     </ul>
     <br/><br/>Summary of features:<br/><br/>
@@ -62,11 +62,11 @@
       <feature><title>Parser/Interpreter:</title>
       <feature2>für xml/html Seiten, über ein sax und dom-ähnliches Interface</feature2>
       <feature2><title>für XPath 2 / XQuery Ausdrücke</title>
-      <feature3>nahezu vollständig standardkompatibel: besteht 99.3% der XPath 2 Tests und 97.8% der XQuery 1 Tests in der XQuery Testsuite<br/> (unter Auslassung der Tests für ungültige Eingaben; die meisten fehlschlagenden Tests testen XML Schemas, welche noch nicht unterstützt werden  )</feature3>
-      <feature3>Plus Erweiterungen für OOP, CSS, Regexps und pattern-matching.</feature3>
+      <feature3>nahezu vollständig standardkompatibel: besteht 99.3% der XPath 2 Tests und 97.8% der XQuery 1 Tests in der XQuery Testsuite<br/> (unter Auslassung der Tests für ungültige Eingaben; die meisten fehlschlagenden Tests und XML Schemas, welche noch nicht unterstützt werden  )</feature3>
+      <feature3>Plus Erweiterungen für OOP, CSS, Regexps, pattern-matching und JSONiq.</feature3>
       </feature2>
       <feature2><title>für CSS 3 Selektoren</title>
-      <feature3>standardkompatibel (afaik)</feature3>
+      <feature3>standardkompatibel (afaik, nicht viel getestet)</feature3>
       <feature3>standalone oder innerhalb eines XPath Ausdrucks: <code>//foobar/css("p#x a.class")/@href</code></feature3>
       </feature2>
       <feature2><title>für pattern-matching html/xml Templates:</title>
@@ -80,9 +80,14 @@
       <feature3>unterstützt Variablen, Bedingungen und Schleifen => Turing vollständig</feature3>
       </feature2>
       </feature>
-      <feature><title>HTTP-Wrapper:</title>
-      <feature2>Erlaubt GET/POST-Übertragungen über http und https mit Fortschrittsanzeige </feature2>
-      <feature2>Verwendet entweder die Windowsstandardlibrary Wininet oder das platformunabhängige Synapse </feature2>
+      <feature><title>HTTP/S-Wrapper:</title>
+      <feature2>Übertragungen über http und https mit Fortschrittsanzeige </feature2>
+      <feature2>Beliebige HTTP-Methoden, z.B.: GET, POST, PUT, ...</feature2>
+      <feature2><title>Unterstützte Plattformen:</title>
+      <feature3>Windows: via wininet</feature3>
+      <feature3>Android: via JNI-Aufruf der Apache HttpComponents</feature3>
+      <feature3>Andere (Linux, Mac): via dem plattform unabhängigen Synapse</feature3> </feature2>
+      <feature2>Unterstützung für http, https und socks-Proxy (nicht auf Android)</feature2>
       </feature>
       <feature><title>Auto update:</title>
       <feature2>Verwendet ein XML-Format, um auf dem Server die aktuelle Version und das Changelog zu speichern. </feature2>
@@ -96,7 +101,7 @@
       <feature2>for xml/html files, with a sax or dom-like interface</feature2>
       <feature2><title>for XPath 2 / XQuery expressions</title>
       <feature3>nearly completely standard compatible: passes 99.3% of the XPath 2 only tests and 97.8% of the XQuery 1 tests in the XQuery Testsuite <br/> (skipping tests for invalid input queries; most failing tests depend on xml schemas which are not supported, yet)</feature3>
-      <feature3>Some extension for objects, css, regular expressions and pattern matching</feature3>
+      <feature3>Some extension for objects, css, regular expressions, pattern matching and JSONiq</feature3>
       </feature2>
       <feature2><title>for CSS 3 Selectors</title>
       <feature3>standard compatible (afaik)</feature3>
@@ -113,19 +118,24 @@
       <feature3>has variables, conditions and loops => Turing complete</feature3>
       </feature2>
       </feature>
-      <feature><title>HTTP-Wrapper:</title>
-      <feature2>Can be used for get/post transmissions over http and https</feature2>
-      <feature2>Either uses  the default Windows library Wininet or the platform independent synapse package</feature2>
+      <feature><title>HTTP/S-Wrapper:</title>
+      <feature2>Can be used for transmissions over http and https</feature2>
+      <feature2>Allows arbitrary http methods, e.g. GET, POST, PUT, ...</feature2>
+      <feature2><title>Supported platforms:</title>
+            <feature3>Windows: using wininet with the standard system configuration</feature3>
+            <feature3>Android: using the Apache HttpComponents through JNI</feature3>
+            <feature3>Others (Linux, Mac): using the platform-independent Synapse</feature3> </feature2>
+      <feature2>Supports http, https and socks-Proxy (not on Android)</feature2>
       </feature>
       <feature><title>Auto update:</title>
       <feature2>Uses a xml format to store the most recent version and a changelog on the server.</feature2>
       <feature2>Supports different updates for 32/64-bit platforms and linux,Windows or BSD systems </feature2>
       <feature2>Checks if a new version is available without downloading the whole, large changelog</feature2>
-      <feature2>Allows the execution of an arbitrary command line after the update</feature2>
+      <feature2>Allows the execution of an arbitrary command line after the update, runas administrator if necessary</feature2>
       </feature>
     </features>
     <final-content>
-    <a href="http://videlibri.hg.sourceforge.net/hgweb/videlibri/videlibri/">Mercurial repository</a>
+    <a href="https://sourceforge.net/p/videlibri/code/ci/tip/tree/">Mercurial repository</a>
     </final-content>
   </download>
   
