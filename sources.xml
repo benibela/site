@@ -325,18 +325,24 @@ The most important features are:]]></content>
     <prog-language>FPC</prog-language>
     <source-license>GPL</source-license>
     <content language="de">In diesen Units habe ich einige kleine Funktionen gesammelt, die einem bei der Programmierung mit FPC ständig fehlen. Es gibt:</content>
-    <content language="en">These units consist of function which you need very often, when programming in FPC. You can use it to</content>
+    <content language="en">These units consist of low-level functions missing in FPC. E.g.:/content>
     <features language="de">
       <feature>Alle möglichen Arrayfunktionen (hinzufügen, löschen, vergleichen, ...)</feature>
       <feature>Alle möglichen Stringfunktionen (pchar/ansistring, vergleichen, zerlegen, suchen, umwandeln, html-Entities, ...)</feature>
+      <feature>Alle möglichen date/time-parsing/formatting functions, für negative Jahre und Jahre nach 65535, und Zeitzonen </feature>
+      <feature>Stabile Sortierfunktion für Daten beliebiger Größe (merge+insert sort) </feature>
       <feature>Mathematische Funktionen (ggt, Primzahlen, Bernoulli-Wahrscheinlichkeitsrechnung,...)</feature>
       <feature>Automatische Übersetzung von mit tr['markierten String'] und Lazaruskomponenten</feature>
+      <feature>Einen Pascal-Preprocessor, der ähnlich zum C-Preprocessor, Pascalquellcode aus einer Templatedatei erzeugt</feature> 
     </features>
     <features language="en">
       <feature>Various array functions (add, delete, search, prealloc, ...)</feature>
-      <feature>Various string functions (pchar/ansistring, compare, split, search, convert, html entities, ...)</feature>
+      <feature>Various string functions (pchar/ansistring, compare, split, search, convert html entities, ...)</feature>
+      <feature>Various date/time parsing/formatting functions, supporting years before 0 and after 65535, and timezones</feature>
+      <feature>Stable sorting function for arbitrary sized data arrays (merge+insert sort)</feature>
       <feature>Mathematical functions (gcd, primes, Bernoulli statistics,...)</feature>
       <feature>Automatical translation of with tr['marked strings'] and components</feature>
+      <feature>A  Pascal template language which is "compiled" to Pascal (similar to the C preprocessor)</feature>
     </features>
   </download>
   
