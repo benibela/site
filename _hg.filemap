@@ -1,0 +1,4 @@
+include sites/web5
+exclude sites/web5/upload.sh
+exclude sites/web5/password.sh
+rename sites/web5 .
