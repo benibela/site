@@ -1,4 +1,4 @@
-﻿<file>
+<file>
   <description language="de">Auf dieser Seite gibt es verschiedene Tools: Ein Programm zur Manipulierung von anderen, ein File Parser, GUI Tools für das 3D Game Studio, ein Mathematikprogramm und ein Malprogramm.</description>
   <description language="en">On this page you can find some tools: A program to get information about others, a file parser, GUI Tools for the 3D Game Studio, a mathematics program and a paint program.</description>
   <keywords language="de">Delphi, download, Freeware, Shareware, Tools</keywords>
@@ -26,6 +26,7 @@ The language codes "de" and "en" specify which languages are supported. If one o
     <title>API Manager</title>
     <file>apim.zip</file>
     <id>apim</id>
+    <github>apim</github>
     <version>3.0.0</version>
     <description_80 language="de">Ein Programm zum Lesen und Setzen der Eigenschaften anderer Programme</description_80>
     <description_80 language="en">A program which can read and write properties of other programs.</description_80>
@@ -99,6 +100,7 @@ APIV hat folgende Features:]]></content>
     <title>Sun Simulator</title>
     <file>sunsimulator.zip</file>
     <id>sunsimulator</id>
+    <github>sun-simulator</github>
     <description_80 language="de">Ein Programm, das die Helligkeit und den Farbton des Bildschirms gemäß dem natürlichen Tagesverlauf steuert</description_80>
     <description_80 language="en">This program  changes the brightness and color of the monitor according to the natural course</description_80>
     <language>de, en</language>
@@ -171,6 +173,7 @@ APIV hat folgende Features:]]></content>
   <download> 
     <title>SimplifyDiff</title>
     <id>simplifydiff</id>
+    <github>simplify-diff</github>
     <file title="Windows">simplifydiff.zip</file>
     <file title="Linux">simplifydiff_linux.zip</file>
     <file title="Source">source/simplifydiff.zip</file>
@@ -205,6 +208,7 @@ APIV hat folgende Features:]]></content>
     <id>regexgen</id>
     <title>Regexgen</title>
     <file>regexgen.zip</file>
+    <github>regexgen</github>
     <description_80 language="de">Ein inverser Regexgenerator, der für einen regulären Ausdruck alle Strings berechnet, die diesen Ausdruck erfüllen</description_80>
     <description_80 language="en">An inverse regex matcher that generates all strings which match a given regular expression </description_80>
     <language>en</language>

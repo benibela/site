@@ -11,6 +11,7 @@
     <link type="onlinedocu"/>
     <file>internettools.zip</file>
     <id>internettools</id>
+    <github>internettools</github>
     <description_80 language="de">Ein vollständiger XPath 2/XQuery/JSONiq-Interpreter, ein Pattern-Matcher für HTML/XML-Templates, eine Autoupdate-Klasse und einen HTTP-Verbindungswrapper</description_80>
     <description_80 language="en">Containing a full XPath 2/XQuery/JSONiq engine, a pattern matcher for html/xml, an auto update class and a http connection wrapper.</description_80>
     <prog-language>FPC</prog-language>
@@ -145,6 +146,7 @@
     <title>Farbauswahldialog</title>
     <file>farbe.zip</file>
     <id>farbe</id>
+    <github>color-dialog</github>
     <description_80 language="de">Ein Farbauswahldialog mit RGB- und HLS-Auswahlmöglichkeiten</description_80>
     <description_80 language="en">A color select dialog with hls- and rgb-mode.</description_80>
     <prog-language>Delphi</prog-language>
@@ -185,6 +187,7 @@
     <link type="onlinedocu"/>
     <id>rcmdline</id>
     <file>rcmdline.zip</file>
+    <github>rcmdline</github>
     <description_80 language="de">Eine Unit zum Lesen von Kommandozeilenparametern</description_80>
     <description_80 language="en">An unit for the parsing of command line parameters</description_80>
     <prog-language>FPC, Delphi</prog-language>
@@ -238,6 +241,7 @@ The feature list of rcmdline is:<br/><br/></content>
     <title>Diagram-Tools</title>
     <file>diagram.zip</file>
     <id>diagram</id>
+    <github>diagram</github>
     <link type="onlinedocu"/>
     <description_80 language="de">Eine Diagrammkomponente, basierend auf einem Model/View-System</description_80>
     <description_80 language="en">A diagram component based on a model/view system.</description_80>
@@ -320,12 +324,13 @@ The most important features are:]]></content>
     <link type="onlinedocu"/>
     <file>bbutils.zip</file>
     <id>bbutils</id>
+    <github>bbutils</github>
     <description_80 language="de">Häufig benötigte Funktionen, die einem bei FPC fehlen.</description_80>
     <description_80 language="en">Often needed functions missing in FPC.</description_80>
     <prog-language>FPC</prog-language>
     <source-license>GPL</source-license>
     <content language="de">In diesen Units habe ich einige kleine Funktionen gesammelt, die einem bei der Programmierung mit FPC ständig fehlen. Es gibt:</content>
-    <content language="en">These units consist of low-level functions missing in FPC. E.g.:/content>
+    <content language="en">These units consist of low-level functions missing in FPC. E.g.:</content>
     <features language="de">
       <feature>Alle möglichen Arrayfunktionen (hinzufügen, löschen, vergleichen, ...)</feature>
       <feature>Alle möglichen Stringfunktionen (pchar/ansistring, vergleichen, zerlegen, suchen, umwandeln, html-Entities, ...)</feature>

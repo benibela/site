@@ -11,6 +11,7 @@
     <title>SIRDSlets</title>
     <file>sirdslets.zip</file> 
     <id>sirdslets</id>
+    <github>sirdslets</github>
     <description_80 language="de">Online Sidescroller-Spiel in einer 3D-Welt, die als Stereogramm gerendert wird.</description_80>
     <description_80 language="en">Online side-scrolling game in the full 3d world of a stereogram</description_80>
     <language>en</language>

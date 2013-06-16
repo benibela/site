@@ -1,4 +1,4 @@
-﻿<file>
+<file>
   <description language="de">BeniBela online: Auf dieser Unterseite gibt es kleine Programme, die Techniken demonstrieren oder einfach nur interessant sind, nicht jedoch nützlich. </description>
   <description language="en">BeniBela online: This page contains small programs which demonstrate certain techniques or are just interesting, but not really useful.</description>
   <keywords language="de">BeniBela, SIRDS, stereogram, 64K 3D Star Wars Intro, download</keywords>
@@ -33,6 +33,7 @@
     <title>Webcam UCP</title>
     <id>webcamucp</id>
     <file>webcamucp.7z</file>
+    <github>webcam-ucp</github>
     <description_80 language="de">3D-Anaglyphenrenderer, der ein Objekt betrachterzentriert rendert und den  Betrachter dazu per Webcam trackt.</description_80>
     <description_80 language="en">A 3d anaglyph renderer which tracks the user with a webcam and then renders an object with a user centered projection.</description_80>
     <content language="de">Dieses Programm rendern ein paar 3D-Objekte in Anaglyphendarstellung (rot/cyan) mit betrachterzentrierter Projektion. Dazu wird der Benutzer per  Webcam gefilmt und in jedem Frame, der röteste und cyanste Bereich gesucht. Daraus wird die Position der 3D-Brille ermittelt und dann die Szene aus Sicht dieser Position gerendert. Der Download enthält den Quellcode und ein Linux amd64 Binary.</content>

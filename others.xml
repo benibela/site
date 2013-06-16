@@ -1,4 +1,4 @@
-﻿<file>
+<file>
   <description language="de">BeniBela online: Auf dieser Unterseite gibt es  alles, was nicht mehr auf die anderen gepasst hat.</description>
   <description language="en">BeniBela online: Here you find everything which don't fit into the other categories on my page.</description>
   <keywords language="de">BeniBela, Skript, Lineare Algebra, download, Glaselektrode</keywords>
@@ -72,6 +72,7 @@ Empfangsereignissen in Ereignisprotokollen" wird untersucht, wie man aus der Rei
   <download> 
     <title>Facharbeit</title>
     <file>facharbeit.zip</file>
+    <github>chemistry</github>
     <description_80 language="de">Meine Facharbeit über Molekülstrukturberechnungen</description_80>
     <description_80 language="en">A (German) text about the calculation of molecule conformation</description_80>
     <payment-license>-</payment-license>

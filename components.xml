@@ -1,4 +1,4 @@
-﻿<file>
+<file>
   <description language="de">Eine Sammlung von Delphikomponenten: Ein Kombination von Tree- und ListView , ein Fortschrittsbalken mit Farbverlauf und ein Eingabefeld für Zahlen</description>
   <description language="en">You can find components for Delphi on this page: A tree list view which shows a tree together with column items, a gauge combined with a color gradient and an edit box for numbers</description>
   <keywords language="de">Delphi, Komponenten, BeniBela, ListView, TreeView, TListView, TTreeView, TTreeListView, tree list view, Farbverlauf, Scrollbalken, Eingabefeld, Zahlen, download</keywords>
@@ -11,6 +11,7 @@
     <link type="onlinedocu"/>
     <file>treelistview.zip</file>
     <id>treelistview</id>
+    <github>treelistview</github>
     <description_80 language="de">Eine Verbindung von TListView und TTreeView, die einen Baum mit Spalten anzeigt.</description_80>
     <description_80 language="en">A combination of TListView and TTreeView drawing tree and column items.</description_80>
     <prog-language>Lazarus, Delphi</prog-language>
