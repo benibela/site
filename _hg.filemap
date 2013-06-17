@@ -1,4 +1,6 @@
 include sites/web5
 exclude sites/web5/upload.sh
 exclude sites/web5/password.sh
+exclude sites/web5/koobtseug.xml
+exclude sites/web5/koobtseug_yrtne.xml
 rename sites/web5 .
