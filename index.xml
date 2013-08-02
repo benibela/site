@@ -8,7 +8,7 @@
     
     <news>
     <new date="13. Jul  2013"><text language="de">
-    Seit einer Weile gibt es nun VideLibri auch als <a href="https://play.google.com/store/apps/details?id=de.benibela.videlibri">Android-App</a>. Zudem habe ich mal eine Liste, der Bibliotheken erstellt, welche von VideLibri unterstütze Systeme verwendet. Schon beinahe 170 Büchereien. Dauert ewig, sie alle anzuschreiben.<br/><br/>
+    Seit einer Weile gibt es nun VideLibri auch als <a href="https://play.google.com/store/apps/details?id=de.benibela.videlibri">Android-App</a>. Zudem habe ich mal eine Liste, der Bibliotheken erstellt, welche von VideLibri unterstützte Systeme verwenden. Schon beinahe 170 Büchereien. Dauert ewig, sie alle anzuschreiben.<br/><br/>
     Für die Internet Tools gibt es ein Update mit ein paar trivialen Änderungen/Bugfixes. Z.B.: &amp;lt;s>-Elemente (<i>s</i>hortcut-Elemente, deren als XQuery/XPath-Statement ausgeführt wird) werden auch in Gesamttemplates unterstützt, und es gibt mehr Funktionen in der XQuery-Engine, um Werte in url-encoded Daten zu verändert. <br/><br/>
     Eine neue TeXstudio-Version (Bugfix-Release) wird es auch bald geben. In der Zwischenzeit läuft eine Abstimmung für das <a href="http://twtpoll.com/4j7el6">Sourceforge Projekt des Monats</a> und TeXstudio hat gute Chancen zu gewinnen. 
     </text><text language="en">
