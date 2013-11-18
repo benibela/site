@@ -16,6 +16,7 @@
     <description_80 language="en">Containing a full XPath 2/XQuery/JSONiq engine, a pattern matcher for html/xml, an auto update class and a http connection wrapper.</description_80>
     <prog-language>FPC</prog-language>
     <source-license>GPL</source-license>
+    <year>2006 - 2013</year>
     <content language="de">Dieses Package enthält folgende Module: <br/><br/> 
         <ul class="indentation-list">
         <li>Einen <em>simplen HTML Parser</em>, der eine HTML/XML-Datei parst und für jeden gelesen Tag und Text eine entsprechende Callbackfunktion aufruft.</li>
@@ -66,13 +67,15 @@
       <feature3>nahezu vollständig standardkompatibel: besteht 99.3% der XPath 2 Tests und 97.8% der XQuery 1 Tests in der XQuery Testsuite<br/> (unter Auslassung der Tests für ungültige Eingaben; die meisten fehlschlagenden Tests und XML Schemas, welche noch nicht unterstützt werden  )</feature3>
       <feature3>Plus Erweiterungen für OOP, CSS, Regexps, pattern-matching und JSONiq.</feature3>
       </feature2>
+      <feature2><code>!</code> und <code>||</code> Operatoren von XPath/XQuery 3.0</feature2>
+      <feature2>für JSONiq: Eine Weiterentwicklung von XQuery zur Verarbeitung von JSON-Daten</feature2>
       <feature2><title>für CSS 3 Selektoren</title>
       <feature3>standardkompatibel (afaik, nicht viel getestet)</feature3>
       <feature3>standalone oder innerhalb eines XPath Ausdrucks: <code>//foobar/css("p#x a.class")/@href</code></feature3>
       </feature2>
       <feature2><title>für pattern-matching html/xml Templates:</title>
         <feature3>Templates lassen sich einfach aus einer html-Datei erstellen und später updaten </feature3>
-        <feature3>Die Sprache kann reguläre, XPath 2 / XQuery and CSS 3 Selektor Ausdrücke einbinden</feature3>
+        <feature3>Die Sprache kann reguläre, XPath 2 / XQuery, JSONiq und CSS 3 Selektor Ausdrücke einbinden</feature3>
         <feature3>Es gibt Variablen, optionale Elemente, Schleifen und Bedingungen</feature3>
         <feature3>z.B.: <code>&lt;p class="test">&lt;span>Caption:&lt;/span>&lt;a>{.}&lt;/a>*&lt;/p></code> liest alle Links nach einem <code>span</code>-Element mit Text <code>Caption:</code> innerhalb eines Paragraphens mit Klasse <code>test</code></feature3>
       </feature2>
@@ -87,7 +90,8 @@
       <feature2><title>Unterstützte Plattformen:</title>
       <feature3>Windows: via wininet</feature3>
       <feature3>Android: via JNI-Aufruf der Apache HttpComponents</feature3>
-      <feature3>Andere (Linux, Mac): via dem plattform unabhängigen Synapse</feature3> </feature2>
+      <feature3>Andere (Linux, Mac): via dem plattform unabhängigen Synapse</feature3>
+      <feature3>Offline: Simulation eine Internetverbindung für Unittests </feature3> </feature2>
       <feature2>Unterstützung für http, https und socks-Proxy (nicht auf Android)</feature2>
       </feature>
       <feature><title>Auto update:</title>
@@ -102,15 +106,17 @@
       <feature2>for xml/html files, with a sax or dom-like interface</feature2>
       <feature2><title>for XPath 2 / XQuery expressions</title>
       <feature3>nearly completely standard compatible: passes 99.3% of the XPath 2 only tests and 97.8% of the XQuery 1 tests in the XQuery Testsuite <br/> (skipping tests for invalid input queries; most failing tests depend on xml schemas which are not supported, yet)</feature3>
-      <feature3>Some extension for objects, css, regular expressions, pattern matching and JSONiq</feature3>
+      <feature3>Some extension for objects, css, regular expressions, pattern matching and JSONiq<br/></feature3>
       </feature2>
+      <feature2><code>!</code> and <code>||</code> operators of XPath/XQuery 3.0</feature2>
+      <feature2>for JSONiq: An extension to XQuery to handle JSON data<br/></feature2>                  
       <feature2><title>for CSS 3 Selectors</title>
       <feature3>standard compatible (afaik)</feature3>
       <feature3>standalone or within XPath queries <code>//foobar/css("p#x a.class")/@href</code></feature3>
       </feature2>
       <feature2><title>for pattern-matching html/xml templates:</title>
         <feature3>Templates can be easily created/updated from the existing html file</feature3>
-        <feature3>The template languages allows the inclusion of regular, XPath 2 / XQuery and CSS 3 Selectors expressions</feature3>
+        <feature3>The template languages allows the inclusion of regular, XPath 2 / XQuery, JSONiq and CSS 3 Selectors expressions</feature3>
         <feature3>The language has variables, optional elements, loops and conditions</feature3>
         <feature3>e.g. <code>&lt;p class="test">&lt;span>Caption:&lt;/span>&lt;a>{.}&lt;/a>*&lt;/p></code> will read all links after the <code>span</code>-element containing <code>Caption:</code> in a paragraph with class <code>test</code></feature3>
       </feature2>
@@ -125,7 +131,8 @@
       <feature2><title>Supported platforms:</title>
             <feature3>Windows: using wininet with the standard system configuration</feature3>
             <feature3>Android: using the Apache HttpComponents through JNI</feature3>
-            <feature3>Others (Linux, Mac): using the platform-independent Synapse</feature3> </feature2>
+            <feature3>Others (Linux, Mac): using the platform-independent Synapse</feature3> 
+            <feature3>Offline: simulating an internet connection locally for unit tests</feature3> </feature2>
       <feature2>Supports http, https and socks-Proxy (not on Android)</feature2>
       </feature>
       <feature><title>Auto update:</title>
@@ -237,6 +244,65 @@ The feature list of rcmdline is:<br/><br/></content>
 </download>
   
   
+  
+  <download> 
+    <title>Big Decimal Math</title>
+    <link type="onlinedocu"/>
+    <file>bigdecimalmath.zip</file>
+    <id>bigdecimalmath</id>
+    <github>bigdecimalmath</github>
+    <description_80 language="de">Funktionen zum Rechnen mit beliebig genauen Dezimalzahlen</description_80>
+    <description_80 language="en">An arbitrary precision bcd floating point library</description_80>
+    <prog-language>FPC</prog-language>
+    <source-license>GPL</source-license>
+    <year>2013</year>
+    <content language="de">
+    Diese Unit definiert einen BigDecimal-Typ, der beliebig genaue (BCD) Dezimalzahlen speichert und wie ein normaler numerischer Typ verwendet werden kann, z.B.: 
+    <pre>
+  var bd: BigDecimal;
+  bd := 12.34;
+  bd := bd * 1000 - 42;  // bd = 12298
+  bd := bd / 7.0;        // bd = 1756.85714285714286
+  bd := StrToBigDecimal('123456789012345678901234567890123456789') + 1; // bd = 123456789012345678901234567890123456790
+    </pre>
+
+        <br/><br/>Features:<br/><br/></content>
+
+    <content language="en">    
+    This unit provides a BigDecimal-Typ which stores arbitrary precision (bcd) decimal numbers and can be used like any numeric type. For example:
+     <pre>
+  var bd: BigDecimal;
+  bd := 12.34;
+  bd := bd * 1000 - 42;  // bd = 12298
+  bd := bd / 7.0;        // bd = 1756.85714285714286
+  bd := StrToBigDecimal('123456789012345678901234567890123456789') + 1; // bd = 123456789012345678901234567890123456790
+    </pre>
+    <br/><br/>Summary of features:<br/><br/>
+    </content>
+    <features language="de">
+      <feature>Funktioniert mit Zahlen zwischen 10<sup>-19327352814</sup> und 10<sup>19327352814</sup> mit 2147483647  Dezimalziffergenauigkeit</feature>
+      <feature>Implementiert alle Grundrechenarten und Vergleichsoperatoren</feature>
+      <feature>Die entsprechenden Operatoren sind überladen, so dass es wie ein normaler Zahlentyp verwendet werden kann</feature>
+      <feature>Funktionen zum Runden (auf, ab, kaufmännisch, ...)</feature>
+      <feature>Einige wenige höhere mathematische Funktionen, wie sqrt und power</feature>
+      <feature>Exakte Standard-float zu String Umwandlungsfunktionen</feature>
+      <feature>In reinem Pascal geschrieben, daher vollständig plattformunabhängig und ohne Abhängigkeiten</feature>
+      <feature>Die Hauptziele der Entwicklung sind Korrektheit und Einfachheit, nicht Geschwindigkeit.</feature>
+    </features>
+    <features language="en">
+      <feature>Supports at least numbers between 10<sup>-19327352814</sup> to 10<sup>19327352814</sup> with 2147483647 decimal digit precision</feature>
+      <feature>And all standard arithmetic and comparison operators</feature>
+      <feature>The operators are overloaded, so that it can be used like normal numeric types</feature>
+      <feature>Rounding functions (floor, ceil, to-even, ..)</feature>
+      <feature>Some more advanced operations, e.g. power and sqrt</feature>
+      <feature>Also provides exact native float to string conversion functions</feature>
+      <feature>Written in pure Pascal, therefore platform-independent and without dependencies</feature>
+      <feature>Designed for correctness and simplicity (rather than speed)</feature>
+    </features>
+  </download>
+
+
+  
   <download> 
     <title>Diagram-Tools</title>
     <file>diagram.zip</file>
@@ -327,7 +393,7 @@ The most important features are:]]></content>
     <github>bbutils</github>
     <description_80 language="de">Häufig benötigte Funktionen, die einem bei FPC fehlen.</description_80>
     <description_80 language="en">Often needed functions missing in FPC.</description_80>
-    <prog-language>FPC</prog-language>
+    <prog-language>Delphi, FPC</prog-language>
     <source-license>GPL</source-license>
     <content language="de">In diesen Units habe ich einige kleine Funktionen gesammelt, die einem bei der Programmierung mit FPC ständig fehlen. Es gibt:</content>
     <content language="en">These units consist of low-level functions missing in FPC. E.g.:</content>

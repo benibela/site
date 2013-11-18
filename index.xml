@@ -7,6 +7,24 @@
   <content>&lt;h2>News&lt;/h2></content>
     
     <news>
+    <new date="19. Nov  2013"><text>
+    There was a bug in the string conversion of the big decimal math. It is fixed now. (very surprising since I had a test for this case. Seems like I forgot to run all the tests)
+    <p>Also the bbutils now work with Delphi (4), since there was a feature request for that...</p>
+    </text></new>
+    <new date="18. Nov  2013"><text language="de">
+    Eine überraschende Konsequenz davon, dass jetzt plötzlich so viele versuchen VideLibri nachzuprogrammieren, ist, dass ich dadurch einen neuen <a href="http://uberspace.de/" rel="nofollow">Webhoster</a> gefunden habe. Zwar scbon im Mindestpreis zehnmal so teuer wie der alte Tarif beim <a href="http://planet-hosting.de/" rel="nofollow">alten Hoster</a>, aber dafür kriegt man Shellzugriff und 10 GB statt wie bisher 30 MB Speicherplatz. (so dass es keine Speicherüberschreitung gibt und es im Endeffekt doch billiger ist...)
+    <p>Das heißt, ich kann jetzt mal ein paar neuere Sachen hochladen, die also nicht 10 Jahre alt sind wie der Großteil der bisherigen Daten hier und für die es bisher einfach nicht genug Speicher gab. Mal angefangen mit meiner <a href="others_de.html#master">Masterarbeit</a>.</p>
+    <p>Unabhängig davon gibt es auch eine neue Version der <a href="sources_de.html#internettools">Internet Tools</a>. Die wichtigste Neuerung ist die Unterstützung für das Rechnen mit Dezimalzahlen beliebiger Genauigkeit, was meine alte 65-Bit Arithmetik ersetzt und den vollen Umfang von <code>xs:decimal</code> realisiert. Desweiteren habe ich die neueste Version des JSONiq-Standard implementiert, das Typsystem vollständig umgeschrieben als Vorbereitung für XML Schema-Unterstützung (heißt, es unterstützt keine XML Schema, aber man kann sie vermutlich pluginmäßig implementieren, ohne etwas am bisher existierenden Code ändern zu müssen) und angefangen, ein paar Sachen von XQuery/XPath 3 einzubauen.<br/>Die <a href="sources_de.html#bigdecimalmath">arbitrary-precision Funktionen</a> gibt es auch als Einzelunit, unabhängig von den Internet Tools.</p>
+    <p>Und Anmerkung zur letzten News: TeXstudio hat die Abstimmung von SourceForge tatsächlich gewonnen! (wobei, eigentlich ist es auf Platz 2 gelandet, aber das Projekt von Platz 1 wurde wegen Voting-Fraud (von dritter Seite?) disqualifiziert...)</p></text>
+    <text language="en">I moved my page to a new web hoster, where it has can astounishing 10 GB instead 30 MB quota.
+    
+    <p>Therefore I can now upload some things, which would have been far too big for the old hoster. Starting with my <a href="others_en.html#master">master thesis</a>. (It is even in English, first English pdf here)</p>
+    
+    <p>There is also an update of my <a href="sources_en.html#internettools">internet tools</a>. The biggest change is that the XQuery engine can now calculate with arbitrary precision decimal numbers. This replaces my old 65-bit aritmethic and allows you to use almost the full range of <code>xs:decimal</code> (well the full range would be infinite, but for that you need more memory...). Now it also supports the newest JSONiq standard (a standard that changes every few months is a little bit annoying), some minor operators of the XPath/XQuery 3.0 standard (too busy to implement the full standard right now), and the type system was almost completely rewritten in preparation of xml schema support (meaning there is no xml schema support, but it could be added by just writing new source and not modifying the old one).<br/>
+    The <a href="sources_en.html#bigdecimalmath">arbitrary-precision bcd floats</a> can also be used as standalone unit, independent of the internet tools. </p>
+    
+    <p>And a comment to the last news: TeXstudio actually won the sourceforge award!</p>
+    </text></new>
     <new date="13. Jul  2013"><text language="de">
     Seit einer Weile gibt es nun VideLibri auch als <a href="https://play.google.com/store/apps/details?id=de.benibela.videlibri">Android-App</a>. Zudem habe ich mal eine Liste, der Bibliotheken erstellt, welche von VideLibri unterstützte Systeme verwenden. Schon beinahe 170 Büchereien. Dauert ewig, sie alle anzuschreiben.<br/><br/>
     Für die Internet Tools gibt es ein Update mit ein paar trivialen Änderungen/Bugfixes. Z.B.: &amp;lt;s>-Elemente (<i>s</i>hortcut-Elemente, deren als XQuery/XPath-Statement ausgeführt wird) werden auch in Gesamttemplates unterstützt, und es gibt mehr Funktionen in der XQuery-Engine, um Werte in url-encoded Daten zu verändert. <br/><br/>

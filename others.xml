@@ -36,6 +36,18 @@
     </final-content>
   </download>
   <download> 
+    <title language="de">Masterarbeit</title>
+    <title language="en">Master thesis</title>    
+    <id>master</id>
+    <file>master.pdf</file>
+    <description_80 language="de">Meine Masterarbeit über die Kombination von aus Videos berechneten Kamerapfaden und (Straßen-)karten</description_80>
+    <description_80 language="en">My master thesis about combining camera paths estimated from video sequences with cadastral (street) maps</description_80>
+    <payment-license>-</payment-license>
+    <content language="de">Meine Masterarbeit "OpenStreetSLAM: Combining visual SLAM with cadastral maps". Es wird ein System beschrieben, welches aus 3D-Video einen Kamerapfad berechnet, wie man daraus eine 3D Szene als Punktwolke berechnet und dann wie man es mit (Straßen-)karten kombinieren kann, um die Pfadberechnung oder die Karte zu verbessen. So richtig gut hat es nicht funktioniert, die Weiterentwicklung im Paper "OpenStreetSLAM: Global vehicle localization using OpenStreetMaps" soll wohl besser funktionieren, .     
+    </content>
+    <content language="en">My master thesis "OpenStreetSLAM: Combining visual SLAM with cadastral maps". It describes as system calculating a camera path from a 3d video, how you can reconstruct the scene as point cloud and how you can combine it with cadastral (meaning street) maps to improve the estimation of the path and simultaneously the map. It did find paths and map correspondences, but overall not very convincing. The follow-up paper "OpenStreetSLAM: Global vehicle localization using OpenStreetMaps" is supposed to work better, but I do not really know the details there.</content>
+  </download>
+  <download> 
     <title>Bacholorarbeit</title>
 	<id>bachelor</id>
     <file>bachelor.zip</file>
