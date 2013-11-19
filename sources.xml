@@ -280,7 +280,7 @@ The feature list of rcmdline is:<br/><br/></content>
     <br/><br/>Summary of features:<br/><br/>
     </content>
     <features language="de">
-      <feature>Funktioniert mit Zahlen zwischen 10<sup>-19327352814</sup> und 10<sup>19327352814</sup> mit 2147483647  Dezimalziffergenauigkeit</feature>
+      <feature>Funktioniert mit Zahlen zwischen 10<sup>-19327352814</sup> und 10<sup>19327352814</sup> mit bis zu 4831838208 Dezimalziffergenauigkeit</feature>
       <feature>Implementiert alle Grundrechenarten und Vergleichsoperatoren</feature>
       <feature>Die entsprechenden Operatoren sind überladen, so dass es wie ein normaler Zahlentyp verwendet werden kann</feature>
       <feature>Funktionen zum Runden (auf, ab, kaufmännisch, ...)</feature>
@@ -290,7 +290,7 @@ The feature list of rcmdline is:<br/><br/></content>
       <feature>Die Hauptziele der Entwicklung sind Korrektheit und Einfachheit, nicht Geschwindigkeit.</feature>
     </features>
     <features language="en">
-      <feature>Supports at least numbers between 10<sup>-19327352814</sup> to 10<sup>19327352814</sup> with 2147483647 decimal digit precision</feature>
+      <feature>Supports at least numbers between 10<sup>-19327352814</sup> to 10<sup>19327352814</sup> with up to 4831838208 decimal digit precision</feature>
       <feature>And all standard arithmetic and comparison operators</feature>
       <feature>The operators are overloaded, so that it can be used like normal numeric types</feature>
       <feature>Rounding functions (floor, ceil, to-even, ..)</feature>
