@@ -246,6 +246,22 @@ It is a C++ command line program, runs on Linux (binary is for 64 bit only) and 
     </screenshot>
   </download>
 
+  <download> 
+    <title>ChiffrenDecoder</title>
+    <file>cipherdecoder.zip</file>
+    <id>cipherdecoder</id>
+    <description_80 language="de">Decoder für triviale Chiffren </description_80>
+    <description_80 language="en">Decoder for trivial ciphers</description_80>
+    <language>de</language>
+    <payment>Freeware</payment>
+    <source>-</source>
+    <year>2009 - 2010</year>
+    <content language="de">Dieses Programm kann triviale Transpositionschiffren (wie bei Anagrammen) und monoalphabetische Chiffren (wie Cäsar) knacken.<br/>Es verwendet  dabei keine statistischen Verfahren, um die wahrscheinlichste Entschlüsselung zu finden, sondern listet <i>alle</i> möglichen Entschlüsselungen auf. Das hat den Nachteil, dass es bei kurzen Texten mehrere tausende Entschlüsselungsmöglichkeiten finden, und bei längeren Texten zu langsam ist, um überhaupt etwas zu finden. Dafür kann man sich dann sicher sein, im Rahmen der Parameter keine Möglichkeiten übersehen zu haben.<br/><br/>
+     Der Download enthält Wörterlisten für Deutsch und Englisch, sowie ausführbare Dateien für Windows und Linux 32/64-Bit. .</content>
+    <content language="en">This program can decode trivial transpositions ciphers (like anagrams) and monoalphabetic ciphers (like caesar), without knowing the key.<br/>It does not use statistics to find a most likely plain text, but enumerates <i>all</i> possible texts. This has the disadvantage of finding many thousands texts on small inputs, and being too slow to find anything on large inputs. On the other hand you can be sure to not have missed anything.<br/><br/> The download contains word lists for German and English, and executables for Windows and Linux 32/64 bit. The GUI is on German, but the meaning should be obvious (Länge = length, Wort = word, ...).</content>
+  </download>
+
+
 
   <download> 
     <title>AFX-Math</title>

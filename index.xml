@@ -7,6 +7,22 @@
   <content>&lt;h2>News&lt;/h2></content>
     
     <news>
+    
+    <!--
+    burg
+    kampfsimulator
+    mausitanien vollversion
+    schnippja
+    defendrix
+
+    chemie heft
+    
+    chiffrendecoder
+    euglena
+    
+    shipgame dx sound cccontrols
+    -->
+    
     <new date="19. Nov  2013"><text>
     There was a bug in the string conversion of the big decimal math. It is fixed now. (very surprising since I had a test for this case. Seems like I forgot to run all the tests)
     <p>Also the bbutils now work with Delphi (4), since there was a feature request for that...</p>
