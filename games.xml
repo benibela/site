@@ -3,8 +3,8 @@
   <description language="en">On this page can you find free- and shareware games: Most of them are like pacman, but there are 2 shooter games, too.</description>
   <keywords language="de">Spiele, BeniBela, Mausitanien, Netzwerkbombermanclone, STWC, Save the World Trade Center, Das Kinderzimmer, Scherli 1, Scherli 2, Stockspiel, download, Freeware, Shareware, Pacman, Labyrinth, Maus, Mäuse, Käse, sammeln, Arcade, Logik, Shooter, Bomberman</keywords>
   <keywords language="en">games, BeniBela, Mausitanien, Netzwerkbombermanclone, STWC, Save the World Trade Center, Das Kinderzimmer, Scherli 1, Scherli 2, Stockspiel, download, freeware, shareware, Pacman, maze, mouse, cheese, collect, Arcade, logic, shooter, Bomberman</keywords>
-  <content language="de">Alle hier aufgelisteten Spiele laufen unter allen (32 oder höher Bit-) Windowsversionen, und sind deutschsprachig.</content>
-<content language="en">Every game in this list can run on any (32 or more bit) Windows system and has a German user interface.</content>
+  <content language="de">Alle hier aufgelisteten Spiele laufen unter allen (32 oder höher Bit-) Windowsversionen, und sind deutschsprachig (falls nicht anders angegeben).</content>
+<content language="en">Every game in this list can run on any (32 or more bit) Windows system and has a German user interface (if not noticed otherwise).</content>
   <download-dir>bin/games</download-dir>
 
   <download> 
@@ -39,21 +39,20 @@
   <download> 
     <title>Mausitanien</title>
     <file>mausitanien.zip</file>
+    <file title="Alte Demo">mausitanien_trial.zip</file>
     <description_80 language="de">Pacmanclone mit Mäusen anstelle von Smileys.</description_80>
     <description_80 language="en">Help a mouse to collect cheese!</description_80>
     <language>de</language>
-    <payment>Shareware: 10 &amp;euro;</payment>
+    <payment>Freeware</payment>
     <content language="de"><![CDATA[Mausitanien ist ein typischer Pacmanclone. Man steuert mit den Pfeiltasten seine Spielfigur durch ein Labyrinth, um dabei Punkte zu sammeln. <br>
 Das besondere an Mausitanien ist, dass man, anstelle des üblichen Smileys, mit einer Maus im Labyrinth Käse sammeln muss, während man von 2 Katzen verfolgt wird. In späteren Leveln kommen noch eine Schlange und ein Gespenst als Feinde hinzu, die sich jeweils schneller bewegen, und somit gefährlicher sind.<br>
 Das Spiel ist relativ einfach zu spielen, da man, sollte man von einem der Feinde erwischt werden, keine Leben, sondern lediglich Punkte verliert. Es gibt auch einen Zweispielermodus, wo zwei Spieler zusammen am selben Computer spielen können.<br>
-Die Sharewareversion enthält insgesamt 10 Level, aufgeteilt in 5 Einzelspielerlevel und 5 Zweispielerlevel, und einen Leveleditor mit dem man eigene Level erstellen kann.<br>
-Die Vollversion dagegen hat 40 Level, je 20 Ein- und Zweispielerlevel, und kostet 10 &euro;, die überwiesen werden sollten. Um die Kontonummer zu erfahren, und das Spiel zu erhalten, schreiben Sie bitte eine E-Mail an "benito [Klammer durch at ersetzen] benibela.de".]]></content>
+Es gibt 40 Level, je 20 Ein- und Zweispielerlevel. Die alte Demo-Version hat noch einmal 10 andere Level (so schade, dass Shareware nie funktioniert). ]]></content>
     <content language="en"><![CDATA[Mausitanien is a game like pacman. You have to move a mouse through a maze to get points. <br>
 But Mausitanien isn't played with the usual smiley, You move a mouse which has to collect cheese while it is persecuted by 2 cats. Later it gets new enemys: a snake and a ghost. They are faster than the cats.<br>
 The game is relative simple because you cann't lose a life, but only points. <br>
 It has a two player mode in which 2 players sitting together at the PC move 2 mouses through the maze.<br>
-The shareware version contains 10 levels, 5 single player levels and 5 multi player levels, and a level editor with which you can create own levels.<br>
-The full version contains 40 levels, 20 single player levels and 20 multi player levels. It costs 10 &euro;, which you have to transfer to me when you want to get it.<br>To get my account number, write a mail to "benito [replace bracket with at] benibela.de".]]></content>
+It has 40 levels, 20 single player levels and 20 multi player levels. ]]></content>
     <screenshot>
       <title language="de">Spielansicht</title>
       <title language="en">In game view</title>
@@ -283,6 +282,70 @@ Es gibt recht viele Extrafeatures, wie Mauern, die nur von dem Spieler, oder nur
       <height>240px</height>
     </screenshot>
   </download>
+
+
+  <download> 
+    <title>Burg</title>
+    <id>burg</id>
+    <file>burg.zip</file>
+    <description_80 language="de">Ein uraltes Burg-Spiel mit dem man Kopfrechnen trainieren kann.</description_80>
+    <description_80 language="en">An old training game for mental arithmetic set in a castle</description_80>
+    <language>de</language>
+    <payment>Freeware</payment>
+    <content language="de">Dieses Spiel besteht aus mehreren Level, die alle in einer Burg spielen, und in denen man gegen die Zeit Rechenaufgaben lösen muss. Zwischen den Leveln gibt es Video-Intermissions.<br/>Es hat auch eine (seltsame) Story: Du bist ein Agent, der in eine Burg der Landaner eindringen und mit einem Undercover-Agent dort Kontakt aufnehmen bzw. jenen retten soll. Weil in dieser Burg eine geheime Super-Waffe aufbewahrt wird, die es zu finden gilt.<br/>Es ist vielleicht das älteste der Spiele auf dieser Seite, aber auch nur ein Windows-Port von einem noch älteren Spiel, das ich früher mal unter DOS geschrieben hatte.</content>
+    <content language="en">This  game consists of three levels set in a castle. You need to solve little arithmetic problems to continue to the next level and in-between you can have a break watching video intermissions. One of the oldest games I have made. It is in German, but math is the same everywhere.</content>
+    <screenshot>
+      <title language="de">Die Burg (Außenansicht)</title>
+      <title language="en">The castle</title>
+      <fullfile>img/games/burg.png</fullfile>
+      <height>214px</height>
+    </screenshot>
+  </download>
+
+  <download> 
+    <title>Schnippja</title>
+    <id>schnippja</id>
+    <file>schnippja.zip</file>
+    <description_80 language="de">Ein Farbratespiel, ähnlich wie Mastermind</description_80>
+    <description_80 language="en">An color guessing game, similar to Mastermind</description_80>
+    <language>de</language>
+    <payment>Freeware</payment>
+    <content language="de">Bei diesem Spiel wählt der Computer zufällig vier Farben, die man dann erraten muss. Dazu hat man mehrere Versuche, und nach jedem wird einem verraten, wie viele Farben korrekt oder an der falschen Stelle gesetzt wurde.</content>
+    <content language="en">Here you have to guess 4 colors randomly choosen by the computer. You have multiple tries, and after each the computer tells you how many colors are correct or on the wrong place. Some texts are in Germany, but that does not matter, since the actual interface consists only of colored boxes. </content>
+  </download>
+
+
+  <download> 
+    <title>Kampfsimulator</title>
+    <id>kampfsimulator</id>
+    <file>kampfsimulator.zip</file>
+    <description_80 language="de">Ein Kampf-Simulator für das "Stadt der Diebe"-Abenteuerbuch</description_80>
+    <description_80 language="en">A battle simulator for a German adventure book</description_80>
+    <language>de</language>
+    <payment>Freeware</payment>
+    <content language="de">Dieses Programm simuliert die Kämpfe des "Stadt der Diebe"-Abenteuerbuch. Wahrscheinlich funktioniert es mit allen Abenteuerbüchern, in denen die Kämpfe nur von Stärke (HP?) und Gewandtheit (Schaden?) abhängen. Es unterstützt auch noch das Glück-Attribute, und mehrere Monster nacheinander oder gleichzeitig.</content>
+    <content language="en">Since the book is in German, this entry is not translated. </content>
+  </download>
+
+  <download> 
+    <title>Defendrix</title>
+    <id>defendrix</id>
+    <file>defendrix.zip</file>
+    <description_80 language="de">Ein Konsolen-Raumschiffspiel, ähnlich wie das alte Defender</description_80>
+    <description_80 language="en">A console space ship game, similar to the old defender</description_80>
+    <language>de</language>
+    <payment>Freeware</payment>
+    <content language="de">Dies ist ein Defender-ähnliches Raumschiffspiel für die Windowskonsole. Es kann mit Tastatur oder Maus gespielt werden. Es ist wie bei (alten) Konsolenspielen sehr kompliziert, obwohl es selbst nicht alt ist. </content>
+    <content language="en">This is a game similar to Defender, made for the Windows console. It can be played with keyboard or mouse, but is very complicated (either because it should be like an old console game or because the timing does not work  in newer Windows versions). </content>
+    <screenshot>
+      <title>Defendrix</title>
+      <fullfile>img/games/defendrix.png</fullfile>
+      <height>152px</height>
+    </screenshot>
+  </download>
+
+
+
   <download> 
     <title>Stockspiel</title>
     <file>stockspiel.zip</file>

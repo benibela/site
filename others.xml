@@ -94,6 +94,25 @@ Empfangsereignissen in Ereignisprotokollen" wird untersucht, wie man aus der Rei
     <final-content language="de">Der Text stellt zwei Methoden zur Berechnung der Konformation von Molekülen vor. Einerseits die triviale Methode über das Tetraederverfahren, anderenseits eine komplizierte mit Hilfe der Quantenchemie.&lt;br&gt;Desweiteren gibt es ein &lt;a href="demos_de.html#moleculesim.zip">Programm&lt;a> das zeigt, dass beide so nicht funktionieren.</final-content>
   </download>
   <download> 
+    <title>Chemie-Heft</title>
+    <id>chemiebbo</id>
+    <file>chemiebbo.zip</file>
+    <description_80 language="de">Mein virtuelles Chemieheft. Inklusive eigenem Dateiformat</description_80>
+    <description_80 language="en">My (German) school notes about chemistry</description_80>
+    <payment-license>-</payment-license>
+    <content language="de">Mein altes Chemie-Heft aus der Schule. Nur insofern interessant, dass ich dafür ein eigenes Dateiformat geschrieben habe.</content>
+  </download>
+  <download> 
+    <title>Euglenareferat</title>
+    <id>euglena</id>
+    <file>euglena/euglena.html</file>
+    <description_80 language="de">Ein Referat über den Euglena-Einzeller (Augentierchen).</description_80>
+    <description_80 language="en">A (German) text about the Euglena</description_80>
+    <size_KB>online</size_KB>
+    <payment-license>-</payment-license>
+    <content language="de">Mein Referat zur Euglena als Online-Webseite. Mit einem Java-Applet, das eine Euglena simuliert. (Der Link sagt "Download", aber es ist ein Link zur Webseite)</content>
+  </download>
+  <download> 
     <title>Glaselektrodenreferat</title>
     <file>glaselektrode.zip</file>
     <description_80 language="de">Ein Referat über die Glaselektrode zur pH-Messung.</description_80>
