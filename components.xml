@@ -100,6 +100,7 @@ It has these features:</content>
     <source-license>MPL, GPL</source-license>
     <prog-language>Delphi</prog-language>
     <size_KB>10</size_KB>
+    <year>2001</year>
     <content language="de">Diese Komponente erzeugt einen horizontalen Farbverlauf zwischen (maximal) 20 Farben.</content>
     <content language="en">This component creates a horizontal color gradient between (maximal) 20 colors.</content>
     
@@ -117,6 +118,7 @@ It has these features:</content>
     <source-license>MPL, GPL</source-license>
     <prog-language>Delphi</prog-language>
     <size_KB>11</size_KB>
+    <year>2001</year>
     <content language="de">Diese Komponente erzeugt wie TBeniGrad einen Farbverlauf, allerdings wird nur ein Teil gezeichnet, und der Rest einfarbig gefüllt.&lt;br&gt;
 Dadurch kann man die Komponente als Fortschrittsbalken benutzen. </content>
     <content language="en">This component creates a color gradient like TBeniGrad, but it draws only a part of it, and the remnant is filled out with a single color, so it can be used as a gauge.</content>
@@ -130,6 +132,7 @@ Dadurch kann man die Komponente als Fortschrittsbalken benutzen. </content>
     <source-license>BSD</source-license>
     <prog-language>Delphi</prog-language>
     <size_KB>3</size_KB>
+    <year>1999</year>
     <content language="de">Diese Komponente ist ein Editfeld, in das aber nur Zahlen eingegeben werden dürfen. Die Zwischenablage und andere Einfügemöglichkeiten werden dabei auch überwacht.&lt;br&gt;
 Man kann einstellen, ob die Komponente auch dezimale und negative Zahlen annehmen soll, wobei die Ländereinstellungen aus sysUtils.pas berücksichtigt werden. </content>
     <content language="en">This component is an edit box where you can only input numbers. It also monitors the clipboard and other possibilitys for input.&lt;br&gt;

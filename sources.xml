@@ -158,6 +158,7 @@
     <description_80 language="en">A color select dialog with hls- and rgb-mode.</description_80>
     <prog-language>Delphi</prog-language>
     <source-license>GPL</source-license>
+    <year>2005</year>
     <content language="de">Dieser Farbauswahl ähnelt dem Windowsstandarddialog, bietet aber mehr Möglichkeiten:</content>
     <content language="en">This color select dialog is similar to the default one, but has more possibilities: </content>
     <features language="de">
@@ -451,6 +452,7 @@ The most important features are:]]></content>
     <prog-language>Delphi</prog-language>
     <source-license>MPL, GPL</source-license>
     <size_KB>40</size_KB>
+    <year>2000</year>
     <content language="de">TCvirus hat (unter anderem) folgende Funktionen:</content>
     <content language="en">These are the most important features of TCvirus:</content>
     <features language="de">

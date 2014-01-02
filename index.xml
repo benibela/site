@@ -15,7 +15,7 @@
     <li>Ein <a href="games_de.html#kampfsimulator">Kampf-Simulator</a> für das "Stadt der Diebe"-Buch, damit man bei Monsterbegegnungen nicht selbst würfeln und rechnen muss</li>
     <li><a href="games_de.html#defendrix">Defendrix</a>, ein Spiel für die Windowskonsole mit einem ASCII Raumschiff. Sieht am ältesten aus, ist aber das neueste dieser Spiele. In alter Tradition ist es extrem schwer zu spielen</li>
     <li>Ein <a href="games_de.html#schnippja">Farbratespiel</a> ähnlich wie Mastermind</li>
-    <li>Mein altes <a href="games_de.html#">Chemieheft</a>. Interessant nur, weil ich dafür ein eigenes Dateiformat geschrieben habe (aber html wäre besser gewesen)</li>
+    <li>Mein altes <a href="others_de.html#chemiebbo">Chemieheft</a>. Interessant nur, weil ich dafür ein eigenes Dateiformat geschrieben habe (aber html wäre besser gewesen)</li>
     <li>Ein unvollständiger <a href="tools_de.html#cipherdecoder">Chiffren-Decoder</a>. Für die letzten Übungsblätter wäre er trotzdem nützlich gewesen.</li>
     <li>Ein Referat über <a href="others_de.html#euglena">Euglena</a>. Mit einem Java-Applet für eine virtuelle "Simulation" von dem Einzeller.</li>
     </ul><br/>
@@ -376,7 +376,7 @@ The  &lt;a href="components_en.html#treelistview">TreeListView&lt;/a> is now a l
       </text></new>    
   </news>
   <final-content>
-  <a href="oldnews_de.html">Ältere Neurigkeiten...</a>&lt;br&lt;br
+  <a href="oldnews_de.html">Ältere Neurigkeiten...</a>
   
   &lt;br>&lt;br>&lt;h2>Übersicht&lt;/h2>
   &lt;br>
@@ -392,7 +392,7 @@ Es wäre schön, wenn ihr ins &lt;a href="koobtseug_de.php">Gästebuch&lt;/a> sc
 &lt;/div>
 </final-content>
 <final-content language="en">
-  <a href="oldnews_en.html">Older news...</a>
+  <a href="oldnews_en.html">Older news...</a>&lt;br>&lt;br>
 &lt;br>
 &lt;h2>Overview&lt;/h2>
   &lt;br>

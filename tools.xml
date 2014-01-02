@@ -19,6 +19,7 @@ The language codes "de" and "en" specify which languages are supported. If one o
     <payment>Freeware</payment>
     <source>-</source>
     <size_KB>ca. 1300</size_KB>
+    <year>2006 - present</year>
     <content>VideLibri ist nun auf &lt;a href="http://videlibri.sourceforge.net">SourceForge&lt;/a></content>
   </download> 
 
@@ -33,6 +34,7 @@ The language codes "de" and "en" specify which languages are supported. If one o
     <language>de, en</language>
     <payment>Freeware</payment>
     <source>GPL</source>
+    <year>2002, 2008</year>
     <content language="de"><![CDATA[APIM ist ähnlich wie Spyxx und <a href="http://assarbad.net/">EDA</a> ein Programm mit dessen Hilfe man Attribute von anderen Anwendungen lesen und setzen kann.<br>
 Im Gegensatz zu EDA ist APIM mehr auf das Verändern von Attributen ausgelegt, als auf das reine Auslesen.<br>
 Der <a href="bin/tools/source/apim.zip">Quellcode</a> steht unter der GPL.<br>
@@ -373,6 +375,7 @@ They are like the GST-Builder bilingual and have a German and a English version.
     <payment>Freeware</payment>
     <source>-</source>
     <size_KB>139</size_KB>
+    <year>2001</year>
     <content language="de">MatheFix ist ein Mathematikprogramm, das folgende Funktionen hat:</content>
     <content language="en">MatheFix is mathematics program with these features:</content>
     <features language="de">
@@ -399,6 +402,7 @@ They are like the GST-Builder bilingual and have a German and a English version.
     <payment>Freeware</payment>
     <source>-</source>
     <size_KB>239</size_KB>
+    <year>2001</year>
     <content language="de">TVB ist ein einfaches Malprogramm mit folgenden Funktionen:</content>
     <content language="en">TVB is a simple paint program with these functions:</content>
     <features language="de">
@@ -423,6 +427,7 @@ They are like the GST-Builder bilingual and have a German and a English version.
     <payment>Freeware</payment>
     <source>-</source>
     <size_KB>1500</size_KB>
+    <year>2001 - 2002</year>
     <content language="de"><![CDATA[
 WDLSSG ist ein von mir programmmierter Editor für die Skriptsprache WDL von dem 3D Game Studio.<br>
 Ich habe ihn ursprünglich für 3DGS-4 (die einzige Version, die ich besitze) entwickelt, und ihn später um die (meisten) 
