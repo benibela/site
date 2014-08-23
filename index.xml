@@ -7,6 +7,15 @@
   <content>&lt;h2>News&lt;/h2></content>
     
     <news>
+    <new date="2014-08-23"> 
+    <text language="de">Falls sich jemand gewundert hat, wo ich letzten Monat war: Auf Konferenzen im Amerika, um zwei Paper vorzustellen. Eines über <a href="http://auai.org/uai2014/proceedings/uai-2014-proceedings.pdf">Kausalität</a> (Achtung: pdf) für meine Doktorarbeit und eines über <a href="http://balisage.net/Proceedings/vol13/html/Zander01/BalisageVol13-Zander01.html">VideLibri/XQuery</a>. Es gab auch jeweils einen "best student (paper) award" dafür, was beim VideLibri-Paper wohl zeigt, dass damals in der Jugend Forscht Jury wirklich nur Idioten saßen, die nicht verstanden haben, um was es eigentlich geht, sonst hätte ich zumindest eine Runde weiterkommen müssen...
+    </text>
+    <text language="en">If someone is curious where I was last month: I went to conferences (protip: try to avoid transit at JFK when flying across the Atlantic), and presented two papers:
+    One about my <a href="http://auai.org/uai2014/proceedings/uai-2014-proceedings.pdf">PhD project</a> (warning: pdf) and one about <a href="http://balisage.net/Proceedings/vol13/html/Zander01/BalisageVol13-Zander01.html">VideLibri/XQuery</a>. 
+    </text>
+    </new>
+    
+    
     <new date="30. Nov  2013"><text language="de">
     Hier ist, was ich bisher so von meinen alten oder neuen Programmen gefunden habe; viele Spiele und Schulsachen:
     <ul>
