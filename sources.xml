@@ -395,7 +395,7 @@ The most important features are:]]></content>
     <description_80 language="de">Häufig benötigte Funktionen, die einem bei FPC fehlen.</description_80>
     <description_80 language="en">Often needed functions missing in FPC.</description_80>
     <prog-language>Delphi, FPC</prog-language>
-    <source-license>GPL</source-license>
+    <source-license>(LC)LGPL</source-license>
     <content language="de">In diesen Units habe ich einige kleine Funktionen gesammelt, die einem bei der Programmierung mit FPC ständig fehlen. Es gibt:</content>
     <content language="en">These units consist of low-level functions missing in FPC. E.g.:</content>
     <features language="de">
