@@ -251,6 +251,12 @@ th{
   margin-top: -5em;
   padding-top: 5em;
 }*/
+.long_desc_year {
+  display: inline;
+  position:absolute;
+  right: 8.5em;
+  margin-right: 24px;
+}
 .long_desc_license {
   display: inline;
   position:absolute;
@@ -318,7 +324,7 @@ h3.scherz{margin-top:1em;}
 
 
 
-/*Elemente die inhaltstragende sein könnten, es aber nicht sind*/
+/*Elemente die inhaltstragende sein kï¿½nnten, es aber nicht sind*/
 #header{
   position: absolute;
   display: block;

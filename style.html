@@ -153,6 +153,7 @@
              {{$FOREACH download: file/download}}
              <div class="long_desc_entry">
                <h3 class="long_desc_title"><a id="{{$$download-id}}" name="{{$$download-id}}" class="target">&nbsp;</a><a href="{{$WRITE file/download-dir"/"download/file}}">{{$WRITE download/title}}</a></h3>
+               {{$IF download/year != ""}}<div class="long_desc_year">{{$WRITE download/year}}</div>{{$/IF}}
                <div class="long_desc_license">{{$WRITE download/payment}}{{$WRITE download/source-license}}</div>
                <div class="long_desc_desc">
                  {{$WRITE download/content}}
