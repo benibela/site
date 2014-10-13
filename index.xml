@@ -7,6 +7,18 @@
   <content>&lt;h2>News&lt;/h2></content>
     
     <news>
+<!--
+    <new date="2014-10-13"> 
+    <text language="de"></text>
+    <text language="en"></text>
+    </new>
+-->    
+    <new date="2014-10-13"> 
+    <text language="de">Mein kleineren Open-Source-Projektrepositories gibt es nun auch <a href="http://hg.benibela.de/">hier</a> und auf <a href="https://bitbucket.org/benibela/" rel="nofollow">Bitbucket</a>, anstatt nur auf Github. Aber die beiden größeren sind noch ausschließlich auf Sourceforge. </text>
+    <text language="en">All my smaller open-source repositories are now also mirrored <a href="http://hg.benibela.de/">here</a> and on <a href="https://bitbucket.org/benibela/" rel="nofollow">Bitbucket</a>, instead only on Github (So it won't matter, if Russia blocks Github again like last week). Although the real big ones are still solely on Sourceforge. <br/>
+    And I just noticed that my links on Delicious are still available there. I thought Yahoo had shutdown these servers years ago and the links were lost, but it seems they were just temporarily unavailable, while they sold the site. Perhaps time to fetch the links back, too.
+     </text>
+    </new>
     <new date="2014-08-23"> 
     <text language="de">Falls sich jemand gewundert hat, wo ich letzten Monat war: Auf Konferenzen im Amerika, um zwei Paper vorzustellen. Eines über <a href="http://auai.org/uai2014/proceedings/uai-2014-proceedings.pdf">Kausalität</a> (Achtung: pdf) für meine Doktorarbeit und eines über <a href="http://balisage.net/Proceedings/vol13/html/Zander01/BalisageVol13-Zander01.html">VideLibri/XQuery</a>. Es gab auch jeweils einen "best student (paper) award" dafür, was beim VideLibri-Paper wohl zeigt, dass damals in der Jugend Forscht Jury wirklich nur Idioten saßen, die nicht verstanden haben, um was es eigentlich geht, sonst hätte ich zumindest eine Runde weiterkommen müssen...
     </text>
