@@ -12,6 +12,15 @@ graph = graph.tmpl
 help = help.tmpl
 helptopics = helptopics.tmpl
 
+bodyheader = bodyheader.tmpl
+bodyheader2 = bodyheaderpostmenu.tmpl
+commonmenu = commonmenu.tmpl
+menuoverview = menuoverview.tmpl
+menuchangeset = menuchangeset.tmpl
+menudownload = menudownload.tmpl
+menufile = menufile.tmpl
+titleadd = ' - BeniBela online'
+
 helpentry = '
   <tr><td>
     <a href="{url|urlescape}help/{topic|escape}{sessionvars%urlparameter}">
@@ -216,6 +225,9 @@ filelogchild = '
     <th>child {rev}:</th>
     <td><a href="{url|urlescape}file/{node|short}/{file|urlescape}{sessionvars%urlparameter}">{node|short}</a></td>
   </tr>'
+
+
+indexentrymenu = '<li><a href="{url|urlescape}{sessionvars%urlparameter}">{name|escape}</a></li>'
 
 indexentry = '
   <tr>

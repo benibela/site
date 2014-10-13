@@ -55,7 +55,7 @@
              {{$IF fi/hidden != "YES"}*}
                <li><a href="{{$$file-url fi}*}#top"{{$IF fi/basefilename == fileinfo/basefilename}} class="activepage"{{$/IF}}>{{$WRITE fi/title}}</a></li>
                {{$IF fi/fileinfo != ""}*}
-                 <li><ul id="menulink_sublist_Delphi">{{$$writeSiteMap fi}**}</ul></li>
+                 <li><ul class="menulink_sublist">{{$$writeSiteMap fi}**}</ul></li>
                {{$/IF}*}
              {{$/IF}*}
            {{$/FOREACH}*}
@@ -95,6 +95,7 @@
            {{$/IF}*}
            
            {{$FOREACH subfileinfo: fileinfo/fileinfo}*}
+            {{$IF subfileinfo/basefilename != ""}*}
              <br>
              {{$LOADXML subfile: subfileinfo/basefilename".xml"}*}
              {{$IF subfile/download != ""}*}
@@ -107,6 +108,7 @@
              {{$ELSE}*}
                <h3><a href="{{$$file-url subfileinfo language}}">{{$WRITE subfileinfo/title}}</a></h3> <p style="margin-left:2em">{{$WRITE subfile/description}*}</p>
              {{$/IF}*}
+            {{$/IF}*}
            {{$/FOREACH}*}
            
            {{$IF file/download != ""}}<br><br>

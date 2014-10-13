@@ -6,41 +6,16 @@
    href="{url|urlescape}rss-log" title="RSS feed for {repo|escape}" />
 </head>
 <body>
+{bodyheader}
+{commonmenu}
+{bodyheader2}
 
-<div class="container">
-<div class="menu">
-<div class="logo">
-<a href="{logourl}">
-<img src="{staticurl|urlescape}{logoimg}" alt="mercurial" /></a>
-</div>
-<ul>
-<li class="active">log</li>
-<li><a href="{url|urlescape}graph/{node|short}{sessionvars%urlparameter}">graph</a></li>
-<li><a href="{url|urlescape}tags{sessionvars%urlparameter}">tags</a></li>
-<li><a href="{url|urlescape}bookmarks{sessionvars%urlparameter}">bookmarks</a></li>
-<li><a href="{url|urlescape}branches{sessionvars%urlparameter}">branches</a></li>
-</ul>
-<ul>
-<li><a href="{url|urlescape}rev/{node|short}{sessionvars%urlparameter}">changeset</a></li>
-<li><a href="{url|urlescape}file/{node|short}{path|urlescape}{sessionvars%urlparameter}">browse</a></li>
-</ul>
-<ul>
-{archives%archiveentry}
-</ul>
-<ul>
- <li><a href="{url|urlescape}help{sessionvars%urlparameter}">help</a></li>
-</ul>
-<p>
-<div class="atom-logo">
-<a href="{url|urlescape}atom-log" title="subscribe to atom feed">
-<img class="atom-logo" src="{staticurl|urlescape}feed-icon-14x14.png" alt="atom feed">
-</a>
-</div>
-</div>
 
-<div class="main">
+
+
 <h2 class="breadcrumb"><a href="/">Mercurial</a> {pathdef%breadcrumb}</h2>
-<h3>log</h3>
+<h3>Log <a href="{url|urlescape}atom-log" title="subscribe to atom feed"> 
+    <img class="atom-logo" src="{staticurl|urlescape}feed-icon-14x14.png" alt="atom feed"></a></h3>
 
 <form class="search" action="{url|urlescape}log">
 {sessionvars%hiddenformentry}
@@ -86,7 +61,5 @@
     );
 </script>
 
-</div>
-</div>
 
 {footer}

@@ -1,4 +1,4 @@
-﻿<global>
+<global>
 <language>
   <id>de</id>
   <changetext>Sprache wechseln</changetext>
@@ -46,6 +46,11 @@
   <basefilename>programming</basefilename>
   <title language="de">Programmierung</title>
   <title language="en">Programming</title>
+  <fileinfo>
+    <url>//hg.benibela.de/?sort=lastchange</url>
+    <title language="de">HG-Repositories*</title>
+    <title language="en">HG-Repositories*</title>
+  </fileinfo>  
   <fileinfo>
     <basefilename>sources</basefilename>
     <title language="de">Quellcodes</title>

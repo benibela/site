@@ -152,14 +152,14 @@ a:visited{
   width: 12em;
 }
          
-#menulink_sublist_Delphi {
+#menulink_list .menulink_sublist {
   list-style-type:none;
 }
-#menulink_sublist_Delphi a{
+#menulink_list .menulink_sublist a{
   padding-left: 2em;
   width: 11.7em;
 }
-#menulink_sublist_Delphi li{
+#menulink_list .menulink_sublist li{
   width: 12em;
 }
 
