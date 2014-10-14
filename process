@@ -13,7 +13,7 @@ Defines a function which returns the url of a single page
 
 {{$DEFINE $file-url fileinfo language}*}
   {{$IF fileinfo/url != ""}*}
-    {{$WRITE fileinfo/url"_"language/id}*}
+    {{$WRITE fileinfo/url}*}
   {{$ELSE}*}
     {{$WRITE fileinfo/basefilename"_"language/id}*}
     {{$IF fileinfo/extension != ""}*}

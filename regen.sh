@@ -1,4 +1,6 @@
 #/bin/sh
+eval `keychain -q --eval --agents ssh id_rsa `
+
 echo $1
 java -cp ../../programs/data/jaxmlparser/publish FileParser $1 --print-changed-output-files process  > /tmp/webpageregen
 

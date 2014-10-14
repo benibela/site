@@ -1,4 +1,4 @@
-default = 'shortlog'
+default = 'summary'
 
 mimetype = 'text/html; charset={encoding}'
 header = header.tmpl
@@ -7,6 +7,7 @@ search = search.tmpl
 
 changelog = shortlog.tmpl
 shortlog = shortlog.tmpl
+summary = summary.tmpl
 shortlogentry = shortlogentry.tmpl
 graph = graph.tmpl
 help = help.tmpl
@@ -233,7 +234,6 @@ indexentry = '
   <tr>
     <td><a href="{url|urlescape}{sessionvars%urlparameter}">{name|escape}</a></td>
     <td>{description}</td>
-    <td>{contact|obfuscate}</td>
     <td class="age">{lastchange|rfc822date}</td>
     <td class="indexlinks">{archives%indexarchiveentry}</td>
     <td>

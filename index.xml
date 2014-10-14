@@ -14,8 +14,8 @@
     </new>
 -->    
     <new date="2014-10-13"> 
-    <text language="de">Meine kleineren Open-Source-Projektrepositories gibt es nun auch <a href="http://hg.benibela.de/">hier</a> und auf <a href="https://bitbucket.org/benibela/" rel="nofollow">Bitbucket</a>, anstatt nur auf GitHub. Aber die beiden größeren bleiben ausschließlich auf Sourceforge, wie große Projekte es nun mal tun. </text>
-    <text language="en">All my smaller open-source repositories are now also mirrored <a href="http://hg.benibela.de/">here</a> and on <a href="https://bitbucket.org/benibela/" rel="nofollow">Bitbucket</a>, instead only on GitHub (So it won't matter, if Russia blocks GitHub again like last week). Although the real big ones are still solely on Sourceforge. <br/>
+    <text language="de">Meine kleineren Open-Source-Projektrepositories gibt es nun auch <a href="http://hg.benibela.de/?sort=lastchange">hier</a> und auf <a href="https://bitbucket.org/benibela/" rel="nofollow">Bitbucket</a>, anstatt nur auf GitHub. Aber die beiden größeren bleiben ausschließlich auf Sourceforge, wie große Projekte es nun mal tun. </text>
+    <text language="en">All my smaller open-source repositories are now also mirrored <a href="http://hg.benibela.de/?sort=lastchange">here</a> and on <a href="https://bitbucket.org/benibela/" rel="nofollow">Bitbucket</a>, instead only on GitHub (So it won't matter, if Russia blocks GitHub again like last week). Although the real big ones are still solely on Sourceforge. <br/>
     And I just noticed that my links on Delicious are still available there. I thought Yahoo had shutdown these servers years ago and the links were lost, but it seems they were just temporarily unavailable, while they sold the site. Perhaps time to fetch the links back, too.
      </text>
     </new>
