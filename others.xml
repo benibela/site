@@ -59,6 +59,31 @@
     <final-content language="de">In dieser Arbeit mit dem Titel "Eigenschaften eines Algorithmus zur Zuordnung von nicht eindeutigen Sende- und
 Empfangsereignissen in Ereignisprotokollen" wird untersucht, wie man aus der Reihenfolge von in Logs lokal aufgezeichneten Netzwerkpaketen berechnen kann, welche aufgezeichneten Ereignisse dasselbe (und nicht nur das inhaltlich gleiche) Paket beschreiben. Das wichtigste Ergebnis ist, dass dieses Problem NP-vollständig ist  und der  früher  am Lehrstuhl verwendete Algorithmus  (siehe Literaturverzeichnis) zur Lösung des Problems überhaupt nicht funktioniert. </final-content>
   </download>
+  
+  <download> 
+    <title language="de">Folien Balisage 14</title>
+    <title language="en">Slides Balisage 14</title>
+    <id>slides14balisage</id>
+    <file>slides14balisage.pdf</file>
+    <description_80 language="de">Folien zum Balisage Vortrag "Extending XQuery with pattern matching"</description_80>
+    <description_80 language="en">Slides for the Balisage talk "Extending XQuery with pattern matching"</description_80>
+    <payment-license>-</payment-license>
+    <content language="de">Folien von meinem Vortrag über das Paper <a href="http://balisage.net/Proceedings/vol13/html/Zander01/BalisageVol13-Zander01.html">Extending XQuery with pattern matching over XML, HTML and JSON, and its usage for data mining</a> bei der Balisagekonferenz 2014, welches beschreibt, wie VideLibri die Webseiten der Bibliotheken ausliest.</content>
+    <content language="en">Slides of my talk about the paper <a href="http://balisage.net/Proceedings/vol13/html/Zander01/BalisageVol13-Zander01.html">Extending XQuery with pattern matching over XML, HTML and JSON, and its usage for data mining</a> at Balisage 2014, which describes the XQuery extensions developed for my library app VideLibri to simply the data mining of webpages.</content>
+  </download>
+  
+  <download> 
+    <title language="de">Folien UAI 14</title>
+    <title language="en">Slides UAI 14</title>
+    <id>slides14uai</id>
+    <file>slides14uai.pdf</file>
+    <description_80 language="de">Folien zum UAI Vortrag "Constructing Separators and Adjustment Sets in Ancestral Graphs"</description_80>
+    <description_80 language="en">Slides for the UAI talk "Constructing Separators and Adjustment Sets in Ancestral Graphs"</description_80>
+    <payment-license>-</payment-license>
+    <content language="de">Folien von meinem Vortrag über das Paper <a href="http://auai.org/uai2014/proceedings/individuals/209.pdf">Constructing Separators and Adjustment Sets in Ancestral Graphs</a> bei der UAI (Conference on Uncertainty in Artificial Intelligence) 2014, eine Sammlung von Algorithmen, um statistisch unabhängige Variablen zu finden und den kausalen Effekt zu berechnen.</content>
+    <content language="en">Slides of my talk about the paper <a href="http://auai.org/uai2014/proceedings/individuals/209.pdf">Constructing Separators and Adjustment Sets in Ancestral Graphs</a> at the UAI (Conference on Uncertainty in Artificial Intelligence) 2014, which is part of my Ph.D. research.</content>
+  </download>
+  
   <download> 
     <title>Seminararbeit Kryptographie</title>
     <id>cryptsem</id>
