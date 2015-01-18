@@ -1,4 +1,4 @@
-﻿<file>
+<file>
   <description language="de">Ein Tutorial über die Programmierung von Scherzprogrammen. Es behandelt Themen wie Verstecken und Zeichnen auf den Monitor.</description>
   <description language="en">A tutorial about the programming of joke programs. For example, it contains information about hiding a program and how to draw on the screen.</description>
   <keywords language="de">Delphi, Scherzprogramme, TCVirus, Monitor bemalen, Tastatur LEDs, Autostart, Trojaner</keywords>
@@ -6,6 +6,8 @@
   <prevent-content-title>YES</prevent-content-title>
   <content><![CDATA[
 <h2 class="scherz">Scherzprogramme programmieren</h2>
+
+<div style="text-align:center; font-size: 120%; color: red; margin: 2em">Achtung: Ich habe dieses Tutorial um das Jahr 2000 herum für Windows 98  geschrieben und inzwischen ist es größtenteils veraltet. </div>
 
            <p>Eigentlich kann man mit reinen Delphi-Routinen keine verstecken Scherzprogramme programmieren, aber mit Hilfe der Win-API geht es. Die meisten der Win-API-Befehle die hier beschrieben werden, funktionieren auch unter anderen Programmiersprachen. Anfänger sollten aber meine Komponente <a href="sources_de.html#cvirus.zip">TCVirus</a> verwenden, da sie viele Befehle automatisiert.</p>
 
@@ -156,9 +158,11 @@ Die zugeschickten Scherzprogramme können hier veröffentlicht werden.</p>
 ]]></content>
   <content language="en"><![CDATA[<h2 class="scherz">The programming of joke programs</h2>
 
+  <div style="text-align:center; font-size: 120%; color: red; margin: 2em">Attention: This was written around 2000 (although translated later) for Windows 98 and is terrible outdated. </div>
+
            <p>Actually you can't write hidden joke programs with functions of Delphi, but you can use functions of the Win API for joke programs. These functions you can also use in other languages. Beginners can use my component <a href="sources_en.html#cvirus.zip">TCVirus</a> which has implemented a lot of the functions.
 
-           <h3 class="scherz">Bases</h3>
+           <h3 class="scherz">Basics</h3>
 
            <p>It is important for such joke programs that a normal user can't find and stop them.<br>
               If you use TCVirus, the hiding of the program is simple, because you can use the methode <span class="func">HideFromTaskManager</span> to remove its entry in the task manager and the methode <span class="func">Hide</span> together with the Parameter <span class="var">(form1.)handle</span> to hide it from the screen and from the task list. 

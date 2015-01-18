@@ -34,6 +34,7 @@
     <id>webcamucp</id>
     <file>webcamucp.7z</file>
     <github>webcam-ucp</github>
+    <year>2010</year>
     <description_80 language="de">3D-Anaglyphenrenderer, der ein Objekt betrachterzentriert rendert und den  Betrachter dazu per Webcam trackt.</description_80>
     <description_80 language="en">A 3d anaglyph renderer which tracks the user with a webcam and then renders an object with a user centered projection.</description_80>
     <content language="de">Dieses Programm rendern ein paar 3D-Objekte in Anaglyphendarstellung (rot/cyan) mit betrachterzentrierter Projektion. Dazu wird der Benutzer per  Webcam gefilmt und in jedem Frame, der röteste und cyanste Bereich gesucht. Daraus wird die Position der 3D-Brille ermittelt und dann die Szene aus Sicht dieser Position gerendert. Der Download enthält den Quellcode und ein Linux amd64 Binary.</content>
@@ -64,12 +65,13 @@
     <content language="de">Dieses Programm zeichnet fallenden Schnee auf dem Bildschirm.&lt;br&gt;
 Es lässt sich allerdings nur über den Taskmanager beenden. </content>
     <content language="en">This program draws snow on the screen, which falls from the top side to the bottom side.&lt;br&gt;
-You can only stop it over the task manager. </content>
+You can only stop it with the task manager. </content>
   </download>
 
   <download> 
     <title>RegStealth 0.01</title>
     <file>regstealth.zip</file>
+    <year><!--?-->2007 - 2008</year>
     <description_80 language="de">RegStealth ersetzt die Windowsregistry durch xml-Dateien.</description_80>
     <description_80 language="en">RegStealth replaces the registry of Windows with xml-files.</description_80>
     <keywords>registry, xml</keywords>
@@ -98,6 +100,7 @@ You can only stop it over the task manager. </content>
   <download> 
     <title>Molekülsimulator</title>
     <file>moleculesim.zip</file>
+    <year>2007</year>
     <description_80 language="de">Sollte die Struktur eines Moleküles berechnen</description_80>
     <description_80 language="en">It is meant to calculate the structure of a molecule</description_80>
   <!--  <language>de</language>
@@ -112,6 +115,7 @@ You can only stop it over the task manager. </content>
   <download> 
     <title>FileSim</title>
     <file>filesim.zip</file>
+    <year>2004</year>
     <description_80 language="de">Ein Dateisimulator, der den Inhalt eines Laufwerks auf einem anderen anzeigt. (nur W9x und ME)</description_80>
     <description_80 language="en">A file simulator which maps a drive on another. (works only under W9x and ME)</description_80>
 <!--    <language>(de), en</language>
@@ -135,6 +139,7 @@ The GPL-licensed <a href="bin/demos/source/filesim.zip">source (203 KB)</a> cont
   <download> 
     <title>FileBlow</title>
     <file>fileblow.zip</file>
+    <year>2004</year>
     <description_80 language="de">Ein Treiber der die Größe von allen Dateien in einem Verzeichnis auf 7,45EB setzt. (nur W9x und ME)</description_80>
     <description_80 language="en">A driver which sets the size of all files in a directory to a 7.45EB. (only under W9x and ME)</description_80>
 <!--    <language>(de), en</language>

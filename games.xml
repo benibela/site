@@ -4,7 +4,7 @@
   <keywords language="de">Spiele, BeniBela, Mausitanien, Netzwerkbombermanclone, STWC, Save the World Trade Center, Das Kinderzimmer, Scherli 1, Scherli 2, Stockspiel, download, Freeware, Shareware, Pacman, Labyrinth, Maus, Mäuse, Käse, sammeln, Arcade, Logik, Shooter, Bomberman</keywords>
   <keywords language="en">games, BeniBela, Mausitanien, Netzwerkbombermanclone, STWC, Save the World Trade Center, Das Kinderzimmer, Scherli 1, Scherli 2, Stockspiel, download, freeware, shareware, Pacman, maze, mouse, cheese, collect, Arcade, logic, shooter, Bomberman</keywords>
   <content language="de">Alle hier aufgelisteten Spiele laufen unter allen (32 oder höher Bit-) Windowsversionen, und sind deutschsprachig (falls nicht anders angegeben).</content>
-<content language="en">Every game in this list can run on any (32 or more bit) Windows system and has a German user interface (if not noticed otherwise).</content>
+<content language="en">Every game in this list can run on any (32 or more bit) Windows system and has a German user interface (if not mentioned otherwise).</content>
   <download-dir>bin/games</download-dir>
 
   <download> 
@@ -16,8 +16,8 @@
     <description_80 language="en">Online side-scrolling game in the full 3d world of a stereogram</description_80>
     <language>en</language>
     <payment>Freeware (GPL)</payment>
-    <content language="de">Ein Sidescroller, bei dem man ein Raumschiff zwischen verschiedenen Hindernissen wie Minen oder schwarzen Löchern hindurch steuert.&lt;br>Dabei befindet man sich in einer 3D-Welt und kann das Raumschiff sowohl in x, y wie auch z-Richtung fliegen lassen. Außerdem wird der Level als Stereogramm gerendert, so dass man die tatsächliche 3D-Position des Schiffes und der Hindernisse direkt sehen kann. Alternativ gibt es auch einen Anaglyphrendermodus, der dient aber nur als Notbehelf für Leute, die keine SIRDS sehen können. Die Schwierigkeitsgradeinstellung ändert die Fähigkeiten des Raumschiffes und bestimmt, ob die reparierenden Nanoroboter und die Zeitmaschine aktiviert werden können.&lt;br>&lt;br>Zusätzlich gibt es ein Stereogrammmalprogramm und einen Leveleditor. (Das Spiel ist jetzt in der späten Betaphase)</content>
-    <content language="en">A side-scrolling game in which you move a space ship while you have to avoid several obstacles like mines or black holes.&lt;br>The special thing is that the level is a 3d world which is rendered as a stereogram so you can actually see it in full 3d (although it has no colors). You can also switch to an anaglyph render mode, but you should only use it if you are unable to see SIRDS. The ship can of course not only move along the x/y-axis, but also along the z-axis from near to far. The option to change the level of difficulty determines the abilities of the ship and give you repairing nano robots or a time machine.&lt;br>Additionally there is a level editor and a simple stereogram painting program. (It is not completely finished, but playable in its late beta stage)</content>
+    <content language="de">Ein Sidescroller, bei dem man ein Raumschiff zwischen verschiedenen Hindernissen wie Minen oder schwarzen Löchern hindurch steuert.&lt;br>Dabei befindet man sich in einer 3D-Welt und kann das Raumschiff sowohl in x, y wie auch z-Richtung fliegen lassen. Außerdem wird der Level als Stereogramm gerendert, so dass man die tatsächliche 3D-Position des Schiffes und der Hindernisse direkt sehen kann. Alternativ gibt es auch einen Anaglyphrendermodus, der dient aber nur als Notbehelf für Leute, die keine SIRDS sehen können. Die Schwierigkeitsgradeinstellung ändert die Fähigkeiten des Raumschiffes und bestimmt, ob die reparierenden Nanoroboter und die Zeitmaschine aktiviert werden können.&lt;br>&lt;br>Zusätzlich gibt es ein Stereogrammmalprogramm und einen Leveleditor.</content>
+    <content language="en">A side-scrolling game in which you move a space ship while you have to avoid several obstacles like mines or black holes.&lt;br>The special thing is that the level is a 3d world which is rendered as a stereogram so you can actually see it in full 3d (although it has no colors). You can also switch to an anaglyph render mode, but you should only use it if you are unable to see SIRDS. The ship can of course not only move along the x/y-axis, but also along the z-axis from near to far. The option to change the level of difficulty determines the abilities of the ship and give you repairing nano robots or a time machine.&lt;br>Additionally there is a level editor and a simple stereogram painting program. </content>
     <final-content language="de">&lt;br>&lt;br>&lt;a href="bin/games/sirdslets/sirdslet_page.html" class="inline-popup-large">Spiele es online&lt;/a></final-content>
     <final-content language="en">&lt;br>&lt;a href="bin/games/sirdslets/sirdslet_page.html" class="inline-popup-large">Play it online&lt;/a></final-content>
     <screenshot>
@@ -72,7 +72,7 @@ It has 40 levels, 20 single player levels and 20 multi player levels. ]]></conte
     <title>2D Netzwerk bomberman clone</title>
     <file>bomber.zip</file>
     <description_80 language="de">Ein Bombermanclone mit Netzwerk- und KI-Fähigkeit.</description_80>
-    <description_80 language="en">A clone of bomberman which is played over a network and contains computer opponents.</description_80>
+    <description_80 language="en">A clone of bomberman which is played over a network and has AI opponents.</description_80>
     <language>de</language>
     <payment>Freeware</payment>
     <year>2002</year>

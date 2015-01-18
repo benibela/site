@@ -4,7 +4,7 @@
   <keywords language="de">Delphi, non VCL Canvas, TCVirus, Huffman, Komprimierung, Units, Komponenten, Kommandozeile, Parser, Browser, automatisches Update</keywords>
   <keywords language="en">Delphi, Non VCL Canvas, TCVirus, Huffman, compression, Units, components, auto update, browser, command line reader, parser</keywords>
   <content language="de"><![CDATA[Auf dieser Seite sind Quellcodes, die man in eigenen Projekten benutzten kann, aufgelistet, <a href="components_de.html#top">Delphikomponenten</a> sind jedoch auf einer eigenen Seite zu finden. Alle mit der MPL-Lizenz, GPL-Lizenz oder BSD-Lizenz versehenen Quellcodes dürfen beliebig verändert und vertrieben werden. <br>Bei der MPL und GPL müssen aber Änderungen veröffentlicht werden und bleiben unter der MPL lizenziert, bei der GPL gilt dies auch für Erweiterungen.<br>Steht eine Datei unter mehreren Lizenzen, darf man eine davon wählen.<br> Genauere und rechtskräftige Informationen sollten den Dateien bei liegen.<br>Braucht jemand unbedingt eine andere Lizenz, kann er mir eine E-Mail schicken.]]></content>
-  <content language="en"><![CDATA[You can find all my published sources usable in your projects. Only <a href="components_en.html#top">components</a> for Delphi are on another page. All sources published under the terms of the MPL-, GPL- or BSD-License can you change and distribute in any way you want. <br>But in case of MPL or GPL you must publish changes and you mustn't change the license. In case of GPL you must also publish extensions and the source of every program (from you) using it under the terms of the GPL.<br>Is any of the files published under the terms of more than one license, you can choose one of them. <br> You can find more and legally valid information in the source files.]]></content>
+  <content language="en"><![CDATA[Here you can find all my published sources that you can use as libraries in your projects. Only <a href="components_en.html#top">components</a> for Delphi are on another page. You can use, change and distribute all sources published under the terms of the MPL, GPL or BSD-license in any way you want. Although in the case of the MPL or GPL you must publish changes and you must not change the license. In the case of the GPL you must also publish extensions and the source of all (your) programs using it under the terms of the GPL.<br>If any of the files is published under the terms of more than one license, you can choose one of them. <br> You can find more and legally valid information in the source files.]]></content>
   <download-dir>bin/sources</download-dir>
   <download> 
     <title>Internet Tools</title>
@@ -13,10 +13,10 @@
     <id>internettools</id>
     <github>internettools</github>
     <description_80 language="de">Ein vollständiger XPath 2/XQuery/JSONiq-Interpreter, ein Pattern-Matcher für HTML/XML-Templates, eine Autoupdate-Klasse und einen HTTP-Verbindungswrapper</description_80>
-    <description_80 language="en">Containing a full XPath 2/XQuery/JSONiq engine, a pattern matcher for html/xml, an auto update class and a http connection wrapper.</description_80>
+    <description_80 language="en">A full XPath 2/XQuery/JSONiq engine, a pattern matcher for HTML/XML, an auto update class and a HTTP connection wrapper.</description_80>
     <prog-language>FPC</prog-language>
     <source-license>GPL</source-license>
-    <year>2006 - 2013</year>
+    <year>2006 - 2015</year>
     <content language="de">Dieses Package enthält folgende Module: <br/><br/> 
         <ul class="indentation-list">
         <li>Einen <em>simplen HTML Parser</em>, der eine HTML/XML-Datei parst und für jeden gelesen Tag und Text eine entsprechende Callbackfunktion aufruft.</li>
@@ -155,12 +155,12 @@
     <id>farbe</id>
     <github>color-dialog</github>
     <description_80 language="de">Ein Farbauswahldialog mit RGB- und HLS-Auswahlmöglichkeiten</description_80>
-    <description_80 language="en">A color select dialog with hls- and rgb-mode.</description_80>
+    <description_80 language="en">A color select dialog with HLS- and RGB-mode.</description_80>
     <prog-language>Delphi</prog-language>
     <source-license>GPL</source-license>
     <year>2005</year>
     <content language="de">Dieser Farbauswahl ähnelt dem Windowsstandarddialog, bietet aber mehr Möglichkeiten:</content>
-    <content language="en">This color select dialog is similar to the default one, but has more possibilities: </content>
+    <content language="en">This color select dialog is similar to the default one, but has more options: </content>
     <features language="de">
       <feature>Es werden alle Komponenten von RGB und HLS angezeigt.</feature>
       <feature>Man kann in einem Farbverlauf eine beliebige Komponente von RGB/HLS ändern</feature>
@@ -172,7 +172,7 @@
     <features language="en">
       <feature>All components of rgb and hls are shown.</feature>
       <feature>You can change any component of rgb/hls in a color gradient</feature>
-      <feature>This component is shown depending of the other two as well as independent</feature>
+      <feature>The selected color component is shown as function depending on the other two components</feature>
       <feature>You can change the other two components in a two-dimensional gradient</feature>
       <feature>This one is drawn depending on the first component</feature>
       <feature>Additional you can enable a list of colors to change</feature>
@@ -197,7 +197,7 @@
     <file>rcmdline.zip</file>
     <github>rcmdline</github>
     <description_80 language="de">Eine Unit zum Lesen von Kommandozeilenparametern</description_80>
-    <description_80 language="en">An unit for the parsing of command line parameters</description_80>
+    <description_80 language="en">An unit for parsing of command line parameters</description_80>
     <prog-language>FPC, Delphi</prog-language>
     <source-license>GPL</source-license>
     <size_KB>8</size_KB>
@@ -213,7 +213,7 @@
     <br/>
 Die Features von rcmdline sind:<br/></content>
     <content language="en">This is a command line parser working with Delphi as well as with Free Pascal, and on Windows and Linux.<br/>
-    Before you can read the command line arguments, all allowed arguments needs to be declared. So the parser can ensure that the user only uses allowed arguments and each given argument has the correct type (e.g. int or string). Furthermore, the parser can automatically generate a help summary displaying all allowed arguments with description. This again ensures that there are no hidden, undocumented command line arguments. <br/>
+    Before you can read the command line arguments, all allowed arguments need to be declared. So the parser can ensure that the user only uses allowed arguments and each given argument has the correct type (e.g. int or string). Furthermore, the parser can automatically generate a help summary displaying all allowed arguments including a description. This again ensures that there are no hidden, undocumented command line arguments. <br/>
     There are three different versions of the parser. The first two read the arguments from the command line and show the help list of all allowed arguments on stdout or respectively in a message box. The third version (fpc only) runs as cgi service and reads the argument from get/post requests.<br/><br/>
 Here is a nice comparison between TCommandLineReader and the standard pascal command line functions, when the program is called as <code>executable '" a "'</code>
  <table><tr><th>System</th><th>TCommandLineReader</th><th>ParamStr</th><th>string(cmdline)</th></tr>
@@ -256,11 +256,12 @@ The feature list of rcmdline is:<br/><br/></content>
     <description_80 language="en">An arbitrary precision bcd floating point library</description_80>
     <prog-language>FPC</prog-language>
     <source-license>GPL</source-license>
-    <year>2013</year>
+    <year>2013, 2015</year>
     <content language="de">
     Diese Unit definiert einen BigDecimal-Typ, der beliebig genaue (BCD) Dezimalzahlen speichert und wie ein normaler numerischer Typ verwendet werden kann, z.B.: 
     <pre>
   var bd: BigDecimal;
+  
   bd := 12.34;
   bd := bd * 1000 - 42;  // bd = 12298
   bd := bd / 7.0;        // bd = 1756.85714285714286
@@ -270,9 +271,10 @@ The feature list of rcmdline is:<br/><br/></content>
         <br/><br/>Features:<br/><br/></content>
 
     <content language="en">    
-    This unit provides a BigDecimal-Typ which stores arbitrary precision (bcd) decimal numbers and can be used like any numeric type. For example:
+    This unit provides a BigDecimal-Typ which stores arbitrary precision (bcd) decimal numbers and can be used like any native numeric type. For example:
      <pre>
   var bd: BigDecimal;
+  
   bd := 12.34;
   bd := bd * 1000 - 42;  // bd = 12298
   bd := bd / 7.0;        // bd = 1756.85714285714286
@@ -293,7 +295,7 @@ The feature list of rcmdline is:<br/><br/></content>
     <features language="en">
       <feature>Supports at least numbers between 10<sup>-19327352814</sup> to 10<sup>19327352814</sup> with up to 4831838208 decimal digit precision</feature>
       <feature>And all standard arithmetic and comparison operators</feature>
-      <feature>The operators are overloaded, so that it can be used like normal numeric types</feature>
+      <feature>The operators are overloaded, so it can be used like normal numeric types</feature>
       <feature>Rounding functions (floor, ceil, to-even, ..)</feature>
       <feature>Some more advanced operations, e.g. power and sqrt</feature>
       <feature>Also provides exact native float to string conversion functions</feature>
@@ -317,8 +319,8 @@ The feature list of rcmdline is:<br/><br/></content>
     <content language="de">Diese Unit zur Anzeige eines Diagrammes folgt einem ähnlichen Model/View-Konzept wie QT: Es gibt eine View-Komponente, welches die in einem Model gespeicherten Daten anzeigt und eine dazugehörige, abstrakte Modelklasse.&lt;br>
 	Dies ist sehr viel flexibler als der traditionelle Weg, bei welchem die Daten der anzeigenden Komponente direkt zugeordnet sind.&lt;br>
 	Features:</content>
-    <content language="en">This diagram drawing unit follows a model/view concept like qt: There is a view component responsible for showing the data, and a model class storing them.&lt;br>
-	This is much more flexible than the traditional way, where the data is handled within the viewing class.&lt;br>
+    <content language="en">This diagram drawing unit follows a model/view concept like qt: There is a view component responsible to show the data, and a model class to store them.&lt;br>
+	This is more flexible than the traditional way, in which the data is handled within the viewing class.&lt;br>
 	Features:</content>
     <features language="de">
       <feature>Model/View-Konzept mit automatische Synchronisation zwischen Views, welche identische Models zeigen</feature>
@@ -331,13 +333,13 @@ The feature list of rcmdline is:<br/><br/></content>
       <feature>Es gibt eine Hilfedatei</feature>
     </features>
     <features language="en">
-      <feature>Model/view-concept with automatical synchronisation between different views showing the same model</feature>
+      <feature>Model/view-concept with automatic synchronization between different views showing the same model</feature>
       <feature>Filling with horizontal/vertical color gradient and different line/point-styles</feature>
       <feature>Interpolation using linear lines or splines</feature>
       <feature>The diagram data can be modified by the user if wanted</feature>
 	  <feature>Multiple axis and point rows as well as a legend naming the latter</feature>
-	  <feature>Automatical calculation of the view range and support for floats</feature>
-	  <feature>Standardmodels with lists of points, cyclic lists, and a model to merge other ones</feature>
+	  <feature>Automatic calculation of the view range and support for floats</feature>
+	  <feature>Standard models with lists of points, cyclic lists, and a model to merge other ones</feature>
       <feature>There is a help file</feature>
     </features>
     <screenshot>
@@ -354,36 +356,7 @@ The feature list of rcmdline is:<br/><br/></content>
   
   
   
-  <download> 
-    <title>Non-VCL Canvas</title>
-    <file>nvcanvas.zip</file>
-    <description_80 language="de">Eine Konvertierung des Delphi-Canvas nach Non-Vcl.</description_80>
-    <description_80 language="en">A translation of the Delphi-Canvas to non vcl.</description_80>
-    <prog-language>Delphi</prog-language>
-    <source-license>MPL, GPL</source-license>
-    <size_KB>27</size_KB>
-    <content language="de"><![CDATA[Diese Quellcodesammlung ermöglicht es die üblichen Funktionen des Delphicanvas ohne die VCL-Codes zu benutzen, indem für jede VCL-Funktion eine Methode existiert, die direkt die entsprechende GDI-Funktion auffruft.<br>
-Ihre wichtigsten Elemente sind:]]></content>
-    <content language="en"><![CDATA[You can draw in a non vcl as if you would be able to use the normal Delphi, when you use this units. They contain a methode as replacement for every TCanvas methode.<br>
-The most important features are:]]></content>
-    <features language="de">
-      <feature>Funktionen zum Zeichnen von Ellipsen, Linien, Rechtecken und Polygonen.</feature>
-      <feature>Funktionen zum Kopieren von Bildausschnitten.</feature>
-      <feature>Funktionen zur Ausgabe von Text.</feature>
-      <feature>Klassen zur Einstellung von Vorder- und Hintergrundfarbe.</feature>
-      <feature>Eine Klasse zum Einstellen von Fonteigenschaften.</feature>
-      <feature>Eine Hash-klasse und ein Ressourcenmanager.</feature>
-    </features>
-    <features language="en">
-      <feature>Functions for drawing texts, ellipses, lines, rectangles and polygones.</feature>
-      <feature>Functions for copying parts of pictures.</feature>
-      <feature>Classes for setting font, pen and brush properties.</feature>
-      <feature>A hash class and a ressources manager.</feature>
-    </features>
-    <final-content language="de"><![CDATA[In einigen Bereichen sind sie den Delphimethoden sogar überlegen, so kann man beispielweise den Text auch gedreht ausgeben.<br>Es gibt eine ausführliche HTML-Doku, in der alle Funktionen beschrieben sind. ]]></final-content>
-    <final-content language="en"><![CDATA[In some field they are even better than the Delphi functions, for example they can draw rotated text.<br>There is a good, German help, and you could use the documentation of TCanvas from Delphi. ]]></final-content>
-  </download>
-  
+
   
   
   <download>
@@ -413,24 +386,55 @@ The most important features are:]]></content>
       <feature>Various date/time parsing/formatting functions, supporting years before 0 and after 65535, and timezones</feature>
       <feature>Stable sorting function for arbitrary sized data arrays (merge+insert sort)</feature>
       <feature>Mathematical functions (gcd, primes, Bernoulli statistics,...)</feature>
-      <feature>Automatical translation of with tr['marked strings'] and components</feature>
+      <feature>Automatic translation of with tr['marked strings'] and components</feature>
       <feature>A  Pascal template language which is "compiled" to Pascal (similar to the C preprocessor)</feature>
     </features>
   </download>
   
   
-  
+  <download> 
+    <title>Non-VCL Canvas</title>
+    <file>nvcanvas.zip</file>
+    <description_80 language="de">Eine Konvertierung des Delphi-Canvas nach Non-Vcl.</description_80>
+    <description_80 language="en">A replacement for Delphi's TCanvas not depending on the VCL.</description_80>
+    <prog-language>Delphi</prog-language>
+    <source-license>MPL, GPL</source-license>
+    <size_KB>27</size_KB>
+    <year><!-- ? - -->2003</year>
+    <content language="de"><![CDATA[Diese Quellcodesammlung ermöglicht es die üblichen Funktionen des Delphicanvas ohne die VCL-Codes zu benutzen, indem für jede VCL-Funktion eine Methode existiert, die direkt die entsprechende GDI-Funktion auffruft.<br>
+Ihre wichtigsten Elemente sind:]]></content>
+    <content language="en"><![CDATA[This package provides a TCanvas replacement which does not depend on the VCL.<br>
+The most important features are:]]></content>
+    <features language="de">
+      <feature>Funktionen zum Zeichnen von Ellipsen, Linien, Rechtecken und Polygonen.</feature>
+      <feature>Funktionen zum Kopieren von Bildausschnitten.</feature>
+      <feature>Funktionen zur Ausgabe von Text.</feature>
+      <feature>Klassen zur Einstellung von Vorder- und Hintergrundfarbe.</feature>
+      <feature>Eine Klasse zum Einstellen von Fonteigenschaften.</feature>
+      <feature>Eine Hash-klasse und ein Ressourcenmanager.</feature>
+    </features>
+    <features language="en">
+      <feature>Functions to draw texts, ellipses, lines, rectangles and polygones.</feature>
+      <feature>Functions to copying parts of pictures.</feature>
+      <feature>Classes to set font, pen and brush properties.</feature>
+      <feature>An int-int hash map implementation and a resources manager.</feature>
+    </features>
+    <final-content language="de"><![CDATA[In einigen Bereichen sind sie den Delphimethoden sogar überlegen, so kann man beispielweise den Text auch gedreht ausgeben.<br>Es gibt eine ausführliche HTML-Doku, in der alle Funktionen beschrieben sind. ]]></final-content>
+    <final-content language="en"><![CDATA[In some field they are even better than the  functions of Delphi, for example they can draw rotated text.<br>There is a good, German help, and you could use the documentation of TCanvas from Delphi. ]]></final-content>
+  </download>
+
   
   <download>
     <title>Diffreader</title>
     <file>diffreader.zip</file>
     <id>diffreader</id>
+    <year>2009</year>
     <description_80 language="de">Eine Unit zum Lesen und Schreiben von Unified Diffs.</description_80>
     <description_80 language="en">A unit to read and write unified diffs.</description_80>
     <prog-language>FPC</prog-language>
     <source-license>GPL</source-license>
     <content language="de">Mit dieser Unit kann man ein Unified Diff in ein strukturiertes Format einlesen, verarbeiten und wieder als gültiges Diff speichern</content>
-    <content language="en">You can use this unit to read a Unified Diff, do some work on its tree structure and save it finally. </content>
+    <content language="en">You can use this unit to read an Unified Diff, modify its tree structure and save it finally. </content>
     <features language="de">
       <feature>Liest Unified Diffs für eine oder mehrere Dateien</feature>
       <feature>Erzeugt gültige Diffs</feature>
@@ -452,7 +456,7 @@ The most important features are:]]></content>
     <prog-language>Delphi</prog-language>
     <source-license>MPL, GPL</source-license>
     <size_KB>40</size_KB>
-    <year>2000</year>
+    <year>2000 <!-- ? -->,2003</year>
     <content language="de">TCvirus hat (unter anderem) folgende Funktionen:</content>
     <content language="en">These are the most important features of TCvirus:</content>
     <features language="de">
@@ -463,11 +467,11 @@ The most important features are:]]></content>
       <feature>Man kann die CD-Schublade öffnen und schließen.</feature>
     </features>
     <features language="en">
-      <feature>It gives a canvas for direct drawing on the screen.</feature>
+      <feature>It gives you a canvas for direct drawing on the screen.</feature>
       <feature>It can mirror the screen.</feature>
-      <feature>It returns handle of important objects like the task button, the task list, and the desktop.</feature>
-      <feature>It can hide your program from the task manager.</feature>
-      <feature>It can open and close the CD door.</feature>
+      <feature>It returns handles of important objects like the task button, the task list, and the desktop.</feature>
+      <feature>It can hide your program from the task manager (on Win9x).</feature>
+      <feature>It can open and close the CD tray.</feature>
     </features>
     <final-content language="de"><![CDATA[Da TCvirus ursprünglich eine Komponente war, gibt es zwei Units: Eine mit den eigentlichen Funktionen, und eine Komponente, die einen Wrapper für die erste Unit darstellt.<br>Will man die Komponente ohne die VCL nutzen, benötigt man meinen Non-VCL Canvas, der aber im Ziparchiv enthalten ist.]]></final-content>
     <final-content language="en">Because TCvirus has originally been a component, there are 2 units, a component for the VCL and a unit for non VCL.</final-content>
@@ -486,7 +490,7 @@ The most important features are:]]></content>
     <content language="de"><![CDATA[Hiermit kann man in ein Programm ein automatisches Update übers Internet einbauen.<br>Um die Klasse benutzen zu können, braucht man eine wininet-Unit, die die Windowsinternetfunktionen enthält. (<a href="#internettools">oben</a> gibt es eine neuere Version, die ein besser konfigurierbares XML-Format verwendet)
 Funktionen:]]></content>
     <content language="en"><![CDATA[This allows an automatical update about the internt.<br>
-To use the class you need a wininet unit containing the windows internet functions (<a href="#internettools">above is a new class which use a better customizable xml format</a>).<br>Features:]]></content>
+To use the class you need a wininet unit containing the windows internet functions (<a href="#internettools">above is a new class which uses a better customizable xml format</a>).<br>Features:]]></content>
     <features language="de">
       <feature>Erkennen neuer Versionen</feature>
       <feature>Download dieser</feature>
@@ -512,32 +516,33 @@ To use the class you need a wininet unit containing the windows internet functio
     <content language="de"><![CDATA[Dies ist ein kleiner Browser, der auf dem Internet Explorer basiert.<br>
 Für einen Normaluser ist er vollkommen nutzlos, sein Aussehen kann aber beim Aufruf durch Kommandozeilenparameter festgelegt werden, was manchmal recht praktisch ist, wenn man nur eine bestimmte Seite anzeigen will.]]></content>
     <content language="en"><![CDATA[This is a small browser based on the IE.<br>
-It is completely useless for a normal user, but you can use it to implement a browser for a certain web page in your program. The appearance and behaviour can be controlled over command line switches, so it allows, for example restricted access.]]></content>
+It is completely useless for a normal user, but you can use it to implement a browser for a certain web page in your program. The appearance and behavior can be controlled over command line switches, so it allows for example restricted access.]]></content>
   </download>
   <download> 
     <title>Huffmankomprimierer</title>
     <file>huffman.zip</file>
+    <year>2003</year> <!--?-->
     <description_80 language="de">Eine Funktionssammlung für Huffman(de-)komprimierung.</description_80>
-    <description_80 language="en">A collection of function for huffman (de-)compression.</description_80>
+    <description_80 language="en">A collection of functions for Huffman (de-)compression.</description_80>
     <prog-language>Delphi</prog-language>
     <source-license>MPL, GPL</source-license>
     <size_KB>13</size_KB>
     <content language="de"><![CDATA[Diese Unit ermöglicht die (De-)Kompression von Strings mit dem Huffmanverfahren. In dem entstehenden, komprimierten String wird jedes Zeichen nicht mehr mit 8 Bit gespeichert, sondern die Bitlänge ist variabel, so dass häufige Zeichen mit weniger Bits als seltene gespeichert werden.<br>
-Es ist auch möglich Unicodestring, Arrays und Dateien zu komprimieren, indem sie von den entsprechenden Funktionen einfach als Ansistring interpretiert werden. <br>Die Unit läuft auch ohne die VCL.<br>Besonders eignet sich das Verfahren für normale Texte und andere Daten, wo einige wenige Zeichen sehr oft wiederholt werden. In beinahe jedem Fall ist die Kompressionsrate aber geringer als von modernen Komprimierungsverfahren, wie Rar oder Ace.]]></content>
-    <content language="en"><![CDATA[This unit can (de-)compress strings with using the huffman algorithm. In a compressed string a character isn't stored with 8 bit, but the bit count is different.<br>
-It is also possible to compress strings in the Unicode Format, arrays and files. These types are simply regarded as Ansi Strings.
-<br>This unit doesn't need the VCL.<br>You get the best compression rates in data which contains many equal characters, but it is always worse than modern compression processes like ACE or RAR.]]></content>
+Es ist auch möglich Unicodestrings, Arrays und Dateien zu komprimieren, indem sie einfach als Bytestrings interpretiert werden. <br>Die Unit enthält eine Kopie von TBits der 32-Bit VCL, per Define kann dies deaktiviert werden, um auch auf anderen Platformen zu kompilieren.<br>Geeignet ist das Verfahren für normale Texte und andere Daten, bei denen einige wenige Zeichen sehr oft wiederholt werden. In den meisten Fällen ist die Kompressionsrate aber geringer als bei modernen Komprimierungsverfahren, wie Rar oder Ace.]]></content>
+    <content language="en"><![CDATA[This unit can (de-)compress strings with the Huffman algorithm. After compression frequently occurring characters are stored with less than 8 bit.<br>
+It is also possible to compress Unicode strings, arrays and files, by treating them as byte strings.
+<br>This unit contains a copy of TBits from the 32-Bit VCL, which only works on 32 systems. On other platforms the normal VCL can be used by enabling a define.<br>You get the best compression rates in data which contains many repeated characters, but it is usually worse than modern compressions like ACE or RAR.]]></content>
   </download>
   <download> 
     <title>TRegExpr</title>
     <file>regexpr.zip</file>
     <id>regexpr</id>
     <description_80 language="de">Kopie von TRegExpr von Andrey V. Sorokin</description_80>
-    <description_80 language="en">Mirror of TRegExpr of Andrey V. Sorokin</description_80>
+    <description_80 language="en">Mirror of  Andrey V. Sorokin's TRegExpr</description_80>
     <prog-language>Delphi, FPC</prog-language>
     <source-license>GPL</source-license>
     <content language="de">Dies ist eine Kopie von TRegExpr 0.952 von Andrey V. Sorokin, dessen Seite www.regexpstudio.com tot zu sein scheint. Im wesentlichen ist eine Bibliothek für reguläre Ausdrücke, die sämtliche Regexp-Operationen unterstützt, inklusive Backtracking. &lt;br>Ich habe ein paar Zeilen geändert, damit es besser mit FPC funktioniert, die größte Änderung ist im Grunde, dass ich die Unit umbenannt habe.</content>
-    <content language="en">This is a mirror of TRegExpr of Andrey V. Sorokin whose page www.regexpstudio.com seems to be vanished from the internet. It is a highly advanced regular expression parser which supports all regexp operations, even backtracking. Hence, although it was written in 2004, it is still more advanced than most regexpr packages. &lt;br> This copy is a little bit modified to improve fpc support, one of the biggest changes is that I renamed the file to dregexpr.</content>
+    <content language="en">This is a mirror of  Andrey V. Sorokin's TRegExpr  whose page www.regexpstudio.com seems to be vanished from the internet. It is a highly advanced regular expression parser which supports all regexp operations, even backtracking. Hence, although it was written in 2004, it is still more advanced than most regexpr packages. &lt;br> This copy is a little bit modified to improve fpc support, one of the biggest changes is that I renamed the file to dregexpr.</content>
   </download>
 
 </file>

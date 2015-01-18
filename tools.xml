@@ -6,7 +6,7 @@
   <content language="de"><![CDATA[Alle hier vorgestellten Programme laufen unter allen Windowsversionen (> 3.11), sofern es nicht  anders angegeben ist. <br>
 Die Sprachkürzel "de" und "en" an einem Programm geben an, in welchen Sprachen es verfügbar ist. Ist eines der beiden eingeklammert, so ist nur die Dokumentation in dieser Sprache verfügbar. Bei einem Open Source Programm steht in der rechten Spalte die Abkürzung des Namens der Lizenz, die für den Quellcode gewählt wurde, ansonsten steht dort ein Minus.]]></content>
 <content language="en"><![CDATA[Every tool published on this page is able to run on any Windows system (> 3.11), if there is no contradiction mentioned. <br>
-The language codes "de" and "en" specify which languages are supported. If one of it is in breaks, the documentation exists in this language, not the program. By a open source program, the abbreviation of the name of the licence under whose terms the source is distributed stands in the right column, otherwise there is a minus.]]></content>
+The language codes "de" and "en" specify which languages are supported. If one of them is in parentheses, only the documentation exists in this language, not the program. The "source" column contains the license under which the source of the program is published, or "-" for closed source programs.]]></content>
   <download-dir>bin/tools</download-dir>
   <download> 
     <title>VideLibri</title>
@@ -20,7 +20,21 @@ The language codes "de" and "en" specify which languages are supported. If one o
     <source>-</source>
     <size_KB>ca. 1300</size_KB>
     <year>2006 - present</year>
-    <content>VideLibri ist nun auf &lt;a href="http://videlibri.sourceforge.net">SourceForge&lt;/a></content>
+    <content language="de">VideLibri ist nun auf &lt;a href="http://videlibri.sourceforge.net" rel="nofollow">SourceForge&lt;/a>.</content>
+    <content language="en">VideLibri is hosted on &lt;a href="http://videlibri.sourceforge.net/index_en.html" rel="nofollow">SourceForge&lt;/a>.</content>    
+  </download> 
+
+  <download> 
+    <title>TeXstudio</title>
+    <id>texstudio</id>
+    <description_80 language="de">Ein LaTeX-editor</description_80>
+    <description_80 language="en">A LaTeX editor</description_80>
+    <language>de, en, ...</language>
+    <payment>Freeware</payment>
+    <source>GPL</source>
+    <year>2009 - present</year>
+    <content language="de">TeXstudio ist auf &lt;a href="http://texstudio.sourceforge.net" rel="nofollow">SourceForge&lt;/a> gehostet.</content>
+    <content language="en">TeXstudio is hosted on &lt;a href="http://texstudio.sourceforge.net" rel="nofollow">SourceForge&lt;/a>.</content>
   </download> 
 
   <download> 
@@ -39,7 +53,7 @@ The language codes "de" and "en" specify which languages are supported. If one o
 Im Gegensatz zu EDA ist APIM mehr auf das Verändern von Attributen ausgelegt, als auf das reine Auslesen.<br>
 Der <a href="bin/tools/source/apim.zip">Quellcode</a> steht unter der GPL.<br>
 APIV hat folgende Features:]]></content>
-    <content language="en"><![CDATA[APIM is like Spyxx and <a href="http://assarbad.net/">EDA</a> a program which can read and set attributes of other windows, but in comparison to it APIM has much more features for changing them.
+    <content language="en"><![CDATA[APIM is like Spyxx and <a href="http://assarbad.net/">EDA</a> a program which can read and set attributes of other windows, but in comparison to them APIM has much more features for changing properties.
     <br>The <a href="bin/tools/source/apim.zip">source</a> is GPLed.
     <br>APIM has got these functions: 
 ]]></content>
@@ -66,7 +80,7 @@ APIV hat folgende Features:]]></content>
      </features>
     <features language="en">     
       <feature>It can list all top level windows or processes.</feature>
-      <feature>You can select windows with the mouse and a mini-screen.</feature>
+      <feature>You can select windows with the mouse and on a mini-screen.</feature>
       <feature>It can enable and disable windows.</feature>
       <feature>It can hide and show windows.</feature>
       <feature>It can set the windows on "stay on top".</feature>
@@ -80,7 +94,7 @@ APIV hat folgende Features:]]></content>
       <feature>It can close processes.</feature>
       <feature>It can get and set the priority of processes.</feature>
       <feature>It can read and write some properties of the system.</feature>
-      <feature>It can read passwords (only on 9x systems) (&lt;em>Attention:  This causes some scanner to identify it as spyware&lt;/em>).</feature>
+      <feature>It can read passwords (only on 9x systems) (&lt;em>Attention:  This causes some scanners to identify it as spyware&lt;/em>).</feature>
       <feature>It can read and set the status of the transparent effects of windows (only on 2000/XP/(Vista?)).</feature>
       <feature>and more</feature>    
     </features>
@@ -102,15 +116,16 @@ APIV hat folgende Features:]]></content>
     <title>Sun Simulator</title>
     <file>sunsimulator.zip</file>
     <id>sunsimulator</id>
+    <year>2009</year>
     <github>sun-simulator</github>
     <description_80 language="de">Ein Programm, das die Helligkeit und den Farbton des Bildschirms gemäß dem natürlichen Tagesverlauf steuert</description_80>
-    <description_80 language="en">This program  changes the brightness and color of the monitor according to the natural course</description_80>
+    <description_80 language="en">This program  changes the brightness and color of the monitor according to the time and date</description_80>
     <language>de, en</language>
     <payment>Freeware</payment>
     <source>-</source>
     <content language="de">In einer natürlichen Umgebung (im Freien) ändert sich der Farbton des Lichtes je nach Uhrzeit und beeinflusst dabei körperliche Prozesse (z.B.: Steuerung der inneren Uhr, Aufmerksamkeit). Der Computerbildschirm hat jedoch üblicherweise immer dieselbe Helligkeit und stört deshalb den normalen Biorhytmus. &lt;br>
 	Sun-Simulator ändert nun die Einstellungen der Grafikkarte zeitlich, so dass die Farbe des Bildschirms wieder  einigermaßen mit der des Sonnenlichtes übereinstimmt.&lt;br>Features:</content>
-   <content language="en">In a natural environment (outdoors) the light changes it shade of color during the day and controls biological processes (e.g. the sense of time). However, the computer monitor always has the same shade of color and  disturbs therefore the biorhythms.&lt;br>
+   <content language="en">In a natural environment (outdoors) the light changes it shade of color during the day and controls biological processes (e.g. the sense of time). However, the computer monitor always has the same shade of color and thus disturbs the biorhythms.&lt;br>
    Sun-Simulator solves this problem by altering the settings of the graphic card with the course of day and year, so that the monitor becomes more similar to the sun light. &lt;br>
    Features:</content>
     <features language="de">
@@ -122,12 +137,12 @@ APIV hat folgende Features:]]></content>
 	  <feature>Testbild, Farbzuordnungsgraph und unterschiedliche Farbprofile</feature>
      </features>
     <features language="en">     
-	  <feature>default settings matches  the sun light approximately</feature>
+	  <feature>Default settings matches  the sun light approximately</feature>
 	  <feature>Simple graphical control of the color settings</feature>
       <feature>Time-depending options for gamma, brighness and contrast</feature>
 	  <feature>Respects time of the day and of the year </feature>
 	  <feature>Independent values for red, green and blue</feature>
-	  <feature>test image, mapping graph and user-defined color profiles</feature>
+	  <feature>Test image, mapping graph and user-defined color profiles</feature>
     </features>
     <screenshot>
       <fullfile>img/tools/sunsimulator1.png</fullfile>
@@ -151,7 +166,7 @@ APIV hat folgende Features:]]></content>
     <source>GPL</source>
     <size_KB>68</size_KB>
     <content language="de">"Just another XML Processor" ist eine Skriptsprache mit Interpreter, die zur Umwandlung von xml-Dateien in andere Formate benutzt werden kann.&lt;br>Die einzigste Systemanforderung ist Java JRE 1.5</content>
-    <content language="en">"Just another XML Processor" is a script language with interpreter. Its purpose is the simple processing of xml files and the transforming to other formats.&lt;br>You only need Java JRE 1.5 to run the program.</content>
+    <content language="en">"Just another XML Processor" is a script language with interpreter. Its purpose is the simple processing of XML files and the transforming to other formats.&lt;br>You only need Java JRE 1.5 to run the program.</content>
     <features language="de">
       <feature>Es können mehrere XML Dateien geladen werden.</feature>
       <feature>Die Ausgabe einer XML-Datei kann in mehrere Dateien auf einmal und in unterschiedlichen Kodierungen erfolgen.</feature>
@@ -163,12 +178,12 @@ APIV hat folgende Features:]]></content>
       <feature>Erlaubt das Ausführen von externen Programmen</feature>
     </features>
     <features language="en">
-      <feature>You can load multiple xml files.</feature>
-      <feature>You can write the data of a single xml to multiple files and in different encodings.</feature>
+      <feature>You can load multiple XML files.</feature>
+      <feature>You can write the data of a single XML to multiple files and in different encodings.</feature>
       <feature>Like in php, the commands can be included in other files.</feature>
       <feature>Unchanged files are ignored.</feature>
       <feature>You can use (even recursive) functions.</feature>
-      <feature>The accessing of xml elements is really simple.</feature>
+      <feature>The accessing of XML elements is really simple.</feature>
       <feature>You can call additional programs</feature>
     </features>
   </download>
@@ -180,7 +195,7 @@ APIV hat folgende Features:]]></content>
     <file title="Linux">simplifydiff_linux.zip</file>
     <file title="Source">source/simplifydiff.zip</file>
     <description_80 language="de">SimplifyDiff entfernt alle unnötigen Daten wie Whitespace-Änderungen und Duplikate aus einem Diff.</description_80>
-    <description_80 language="en">SimplifyDiff remove all unnessecary lines from a diff file like modified white space or duplicates.</description_80>
+    <description_80 language="en">SimplifyDiff remove all unnecessary lines from a diff file, e.g. modified white space or duplicates.</description_80>
     <keywords>diff, whitespace</keywords>
     <language>en</language>
     <payment>Freeware</payment>
@@ -197,10 +212,10 @@ APIV hat folgende Features:]]></content>
     </features>
     <features language="en">
       <feature>It reads the diff file from stdin and prints its result to stdout.</feature>
-      <feature>Finds lines which are identical but stored as modified, even if they are separated by other lines</feature>
+      <feature>Finds lines that are identical but stored as modified, even if they are separated by other lines</feature>
       <feature>Removes identical lines, unmodified chunks and empty files.</feature>
       <feature>Removes modified whitespace like spaces or tabs</feature>
-      <feature>Works with Unified Diffs of one/more files and writes valid diffs</feature>
+      <feature>Works with unified diffs of one/more files and writes valid diffs</feature>
       <feature>Only looks at the diff file itself and therefore works even if lines marked as identical are different to the original (in contrast to tools like TortoiseMerge)</feature>
     </features>
   </download>
@@ -220,7 +235,7 @@ APIV hat folgende Features:]]></content>
 Es arbeitet in 2-Phasen, zuerst wird ein Ausdruck in mehrere vereinfachte Ausdrücke fester Länge zerlegt, die nur noch Zeichenklassen und Einzelzeichen enthalten, und dann werden alle Kombinationen von Zeichen generiert. Dadurch kann es mehrere Millionen Strings pro Sekunde berechnen, hat aber Probleme mit Unicode. &lt;br>
 &lt;br>Es ist ein C++ Kommandozeilen-Programm, läuft unter Linux (ich habe es nur unter 64 Bit compilert)  und Windows, benötigt aber Qt. </content>
     <content language="en">This is an inverse regex matcher that generates all strings which match a given regular expression. It supports all major expressions (e.g. "([abc]{2,3}|x+)\1"). &lt;br> 
-It runs in two steps: First it splits the regex in a set of equivalent regex that only use character class and match strings of fixed size. Then it lists all possible ways to choose characters from the sets. This last step is heavily optimized, so it can generate several million strings per second. However, it has no real unicode support, since unicode characters have no fixed length.  &lt;br> 
+It runs in two steps: First it splits the regex to a set of equivalent regexs that only use character classes and match strings of fixed size. Then it lists all possible ways to choose characters from the sets. This last step is heavily optimized, so it can generate several million strings per second. However, it has no real unicode support, since unicode characters have no fixed length.  &lt;br> 
 It is a C++ command line program, runs on Linux (binary is for 64 bit only) and Windows, but requires Qt.
  </content>
   </download>
@@ -232,14 +247,14 @@ It is a C++ command line program, runs on Linux (binary is for 64 bit only) and 
     <file title="Source">source/bbmultiplot.zip</file>
     <id>bbmultiplot</id>
     <description_80 language="de">Plotter für multivariable Funktionen, mit symbolischer Ableitungsberechnung </description_80>
-    <description_80 language="en">Plotter rendering multivariable functions with their symbolic derivative </description_80>
+    <description_80 language="en">Plotter rendering multivariate functions with their symbolic derivative </description_80>
     <language>de, (en)</language>
     <payment>Freeware</payment>
     <source>open</source>
     <content language="de">BBMultiPlot kann beliebige Funktionen plotten, und ihre Ableitung symbolisch berechnen. Es kann Funktionen, die von mehreren Variablen abhängen anzeigen, in dem die Funktion für jede mögliche Variablenbelegung in einem bestimmten Interval mit einiger eigenen Farbe geplottet wird.<br/>
      Es  unterstützt die normalen arithmetischen Operationen, +,-,*,/,^,|, sowie sin, cos, tan, exp, ln, sqrt, abs, sign, int (= floor), asin, acos und atan. Der Parser ist recht flexible, so kann man "4*x" als "4x" schreiben und  Randklammern wie in "x)+(7" statt "(x)+(7)" weglassen.<br/>
     Leider habe ich, als ich es programmiert habe, noch kein VCS verwendet, und so den Quellcode bei der Portierung von Windows/Delphi nach Linux/Lazarus irgendwie beschädigt. Der Source im unterstehenden zip-Archive ist wahrscheinlich neuer als das Binary, hat aber wohl ein paar Bugs.</content>
-    <content language="en">BBMultiPlot can plot arbitrary mathematical functions and calculate their symbolic derivative. It can plot multivariable functions, by plotting the function for each possible value of the unknown variables within a certain range with different gradient colors. <br/>
+    <content language="en">BBMultiPlot can plot arbitrary mathematical functions and calculate their symbolic derivative. It can plot multivariate functions, by plotting the function for each possible value of the unknown variables within a certain range with different gradient colors. <br/>
     It supports the usual arithmetic operations, +,-,*,/,^,|, and the sin, cos, tan, exp, ln, sqrt, abs, sign, int (= floor), asin, acos und atan functions. It's expression parsing is quite flexible, so you can write "4*x" as "4x", and omit trailing/leading brackets like in "x)+(7".<br/>Sadly, I did not use a VCS while writing it, and kind of damaged the source while trying to port it from Windows/Delphi to Linux/Lazarus. The source archive below, is probably newer than the binary and has more features, but also more bugs. </content>
     <screenshot>
       <fullfile>img/tools/bbmultiplot.png</fullfile>
@@ -282,6 +297,7 @@ It is a C++ command line program, runs on Linux (binary is for 64 bit only) and 
   <download> 
     <title>Logics</title>
     <file>logics.zip</file>
+   <!--?--> <year>2002 - 2003</year>
     <description_80 language="de">Ein Simulator für (den logischen Aspekt von) Gatterschaltungen.</description_80>
     <description_80 language="en">A simulator of (the logic side of) gate circuits.</description_80>
     <language>(de), en</language>
@@ -293,9 +309,9 @@ It is a C++ command line program, runs on Linux (binary is for 64 bit only) and 
                  Jeder Gatterkreis (außer not) kann beliebig viele Eingangs- und Ausgangsleitungen haben, und verändert je nach Ausgangswert seine Farbe, so dass man an Hand der Farben sehen kann, welche true (grün) und welche false (weiß) liefern.<br>
                  Zusätzlich zum Programm gibt es zwei Beispielsschaltungen, eine Flip-Flop Speicher&shy;schaltung und eine für 5-Bit Zahlen Addition.<br>
                  Der GPL-lizenzierte <a href="bin/tools/source/logics.zip">Quellcode (23 KB)</a> ist ein Delphiprojekt.]]></content>
-    <content language="en"><![CDATA[This program displays the logical side of a gate circuit by representing each gate through a circle.<br>
+    <content language="en"><![CDATA[This program displays a logical model of a gate circuit by representing each gate as a circle.<br>
 It understands all important logical functions (or, and, xor, nand, nor, not).<br>
-Each gate (except "not") can have an unlimited count of input and output links, and it changes its color depending on the output value which is either true (=green) or false (=white).<br>
+Each gate (except "not") can have an unlimited count of input and output connections, and it changes its color depending on the output value which is either true (=green) or false (=white).<br>
 In addition to the program there are two example circuits, a flip-flop memory and a 5-bit addition circuit.<br>
 The GPL-licensed <a href="bin/tools/source/logics.zip">source (23 KB)</a> is a Delphi project]]></content>
   </download>
@@ -303,7 +319,7 @@ The GPL-licensed <a href="bin/tools/source/logics.zip">source (23 KB)</a> is a D
     <title>FileParser</title>
     <file>fileparser.zip</file>
     <description_80 language="de">Ein einfacher Parser, der Schlüsselworte in mehreren Dateien ersetzt.</description_80>
-    <description_80 language="en">A simple parser which replaces key words in some files.</description_80>
+    <description_80 language="en">A simple parser which replaces keywords in some files.</description_80>
     <language>(de), en</language>
     <payment>Freeware</payment>
     <source>GPL</source>
@@ -338,6 +354,7 @@ The <a href="bin/tools/source/fileparser.zip">source (17 KB)</a> is a typical De
   <download> 
     <title>GUITools</title>
     <file>guitools.zip</file>
+    <year>2003</year>
     <description_80 language="de">Ein Plugin für den GST-Builder, das diesen mit den Funktionen zur GUI-Konstruktion meines WDL-Editors ausstattet.</description_80>
     <description_80 language="en">A plugin for the GST-Builder which contains the most important functions of my WDL editor.</description_80>
     <language>de, en</language>
@@ -457,12 +474,12 @@ These are the most important features:
       <feature>Sparmodus für weniger Ressourcenverbrauch</feature>
     </features>
     <features language="en">     
-      <feature>It has syntax high lighting</feature>
+      <feature>It has syntax highlighting</feature>
       <feature>You can change the color of all backgrounds and captions.</feature>
-      <feature>WDL commands can be copied from sorted directorys into the script.</feature>
-      <feature>help for WDL commands</feature>
+      <feature>WDL commands can be copied from sorted directories into the script.</feature>
+      <feature>Help for WDL commands</feature>
       <feature>The command lists can be changed</feature>
-      <feature>visual editors for text, panel and view objects like in GUITools.</feature>
+      <feature>Visual editors for text, panel and view objects (which later became the GUITools).</feature>
       <feature>It has a Code Explorer</feature>
     </features>
   </download>

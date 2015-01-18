@@ -4,7 +4,7 @@
   <keywords language="de">Delphi, Komponenten, BeniBela, ListView, TreeView, TListView, TTreeView, TTreeListView, tree list view, Farbverlauf, Scrollbalken, Eingabefeld, Zahlen, download</keywords>
   <keywords language="en">Delphi, Components, tree view, list view, TTreeView, TListView, TTreeListView, tree list view, BeniBela, gauge, gradient, color, edit, box, numbers, download</keywords>
   <content language="de"><![CDATA[Auf dieser Seite kann man Delphi und Lazaruskomponenten herunterladen, die wegen der Versionsproblematik von Delphi bei Komponenten alle Open-Source sind. Alle mit der MPL-Lizenz, GPL-Lizenz oder BSD-Lizenz versehenen Komponenten dürfen beliebig verändert und vertrieben werden. <br>Bei der MPL und GPL müssen aber Änderungen veröffentlicht werden und bleiben unter der MPL lizenziert, bei der GPL gilt dies auch für Erweiterungen.<br>Wer die Komponenten in einem proprietären Programm verwenden will, sollte mir eine <a href="impressum_de.html">E-Mail</a> schreiben.<br>Sortiert sind die Komponenten hier nach Qualität und Alter.]]></content>
-  <content language="en"><![CDATA[You can find components for Delphi and Lazarus on this page. Everyone of them is open source. All sources published under GPL-, MPL-, or BSD-License you can change and distribute in any way you want. <br>But in case of MPL, GPL or CC you must publish changes and you mustn't change the license. In case of GPL you must also publish extensions and the source of every program (from you) using it under the terms of the GPL.<br> You can find more and legally valid information in the source files.<br>The components here are sorted according to quality and age.]]></content>
+  <content language="en"><![CDATA[You can find components for Delphi and Lazarus on this page. Each of them is open source. You can use, change and distribute all sources published under the terms of the MPL, GPL or BSD-license in any way you want. Although in the case of the MPL or GPL you must publish changes and you must not change the license. In the case of the GPL you must also publish extensions and the source of all (your) programs using it under the terms of the GPL.<br>If any of the files is published under the terms of more than one license, you can choose one of them. <br> You can find more and legally valid information in the source files.]]></content>
   <download-dir>bin/components</download-dir>
   <download> 
     <title>TTreeListView</title>
@@ -41,11 +41,11 @@ It has these features:</content>
       <feature>The lines can be drawn striped, so lines alternate their background color.</feature>
       <feature>It can paint dividing lines between rows and columns.</feature>
       <feature>Each node can get an icon and the user can collapse and expand it.</feature>
-      <feature>The lines can automatically be sorted</feature>
+      <feature>The lines can  be sorted automatically</feature>
       <feature>The entries of the columns can be left aligned, right aligned or centered</feature>
       <feature>The user can move the columns without a change of the indices(only in Lazarus)</feature>
       <feature>Contains a Mozilla like search bar</feature>
-      <feature>It is indepent of the Windows Common Controls</feature>
+      <feature>It is independent of the Windows Common Controls</feature>
       <feature>It should work on every OS supported by Lazarus (only Debian and Windows tested)</feature>  
       <feature>Works with Delphi (tested with D4 and in an old version also BDS2006) and Lazarus</feature>
       <feature>There is an example and html documentation</feature>
@@ -135,8 +135,8 @@ Dadurch kann man die Komponente als Fortschrittsbalken benutzen. </content>
     <year>1999</year>
     <content language="de">Diese Komponente ist ein Editfeld, in das aber nur Zahlen eingegeben werden dürfen. Die Zwischenablage und andere Einfügemöglichkeiten werden dabei auch überwacht.&lt;br&gt;
 Man kann einstellen, ob die Komponente auch dezimale und negative Zahlen annehmen soll, wobei die Ländereinstellungen aus sysUtils.pas berücksichtigt werden. </content>
-    <content language="en">This component is an edit box where you can only input numbers. It also monitors the clipboard and other possibilitys for input.&lt;br&gt;
-It has a property over which you can control if it accepts negative or float numbers.</content>
+    <content language="en">This component is an edit box where you can only input numbers. It also monitors the clipboard and other possibilities for input.&lt;br&gt;
+    The accepted input can be restricted to only positive or integer numbers.</content>
     
   </download>
 </file>
