@@ -13,6 +13,15 @@
     <text language="en"></text>
     </new>
 -->    
+   <new date="2015-02-08"> 
+       <text language="de"> Es hat viel zu lange gedauert (über ein Jahr), aber an Silvester habe ich es endlich geschafft, sämtliche <a href="documentation/internettools/xqts.html">Tests der neuen XQuery Test Suite</a> in meinem Interpreter auszuführen, von XPath 2 bis XQuery 3 inklusive Fehlertests, ohne dass die Auswertung wegen einer unerwarteten Exception abgebrochen wird. <br/>
+       In der neuen <a href="sources_de.html#internettools">Internet Tools Version</a> gibt es nun für jede dieser Exceptions den passenden XQuery-Error-Code. Was leider auch heißt, dass viele Ausdrücke, die es bisher ausgeführt hat, nun als ungültig zurückgewiesen werden.<br/> 
+       Außerdem unterstützt es jetzt weitere XPath/XQuery 3 Syntax, nämlich anonyme und higher order Funktionen, sowie die <code>Q{}</code>-Notation.
+       </text>
+       <text language="en"> On New Year's Eve, more than a year after the first attempt, I finally managed to evaluate the entire new XQuery Test Suite in all configurations from XPath 2 to XQuery 3 without aborting due to some unhandled exception. I made a really  bad decision when implementing everything without error codes at the beginning, and the XQTS evaluation are far too complex.<br/>
+       Turns out the XQuery 3 support is <a href="documentation/internettools/xqts.html">still lacking</a>, even after implementing <code>Q{}</code>, higher order functions and spending the last months adding the error codes.<br/>
+       At least the higher order functions seem to work perfectly in the <a href="sources_en.html#internettools">new version</a>. And the percentage of passed XPath 2 tests remained almost the same except for these codes.</text>
+       </new>
     <new date="2014-10-13"> 
     <text language="de">Meine kleineren Open-Source-Projektrepositories gibt es nun auch <a href="http://hg.benibela.de/?sort=lastchange">hier</a> und auf <a href="https://bitbucket.org/benibela/" rel="nofollow">Bitbucket</a>, anstatt nur auf GitHub. Aber die beiden größeren bleiben ausschließlich auf Sourceforge, wie große Projekte es nun mal tun. </text>
     <text language="en">All my smaller open-source repositories are now also mirrored <a href="http://hg.benibela.de/?sort=lastchange">here</a> and on <a href="https://bitbucket.org/benibela/" rel="nofollow">Bitbucket</a>, instead only on GitHub (So it won't matter, if Russia blocks GitHub again like last week). Although the real big ones are still solely on Sourceforge. <br/>

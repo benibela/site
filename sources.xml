@@ -12,8 +12,8 @@
     <file>internettools.zip</file>
     <id>internettools</id>
     <github>internettools</github>
-    <description_80 language="de">Ein vollständiger XPath 2/XQuery/JSONiq-Interpreter, ein Pattern-Matcher für HTML/XML-Templates, eine Autoupdate-Klasse und einen HTTP-Verbindungswrapper</description_80>
-    <description_80 language="en">A full XPath 2/XQuery/JSONiq engine, a pattern matcher for HTML/XML, an auto update class and a HTTP connection wrapper.</description_80>
+    <description_80 language="de">Ein XPath 2/3/XQuery 1/3/JSONiq-Interpreter, ein Pattern-Matcher für HTML/XML-Templates, eine Autoupdate-Klasse und einen HTTP-Verbindungswrapper</description_80>
+    <description_80 language="en">A XPath 2/3/XQuery 1/3/JSONiq engine, a pattern matcher for HTML/XML, an auto update class and a HTTP connection wrapper.</description_80>
     <prog-language>FPC</prog-language>
     <source-license>GPL</source-license>
     <year>2006 - 2015</year>
@@ -21,7 +21,7 @@
         <ul class="indentation-list">
         <li>Einen <em>simplen HTML Parser</em>, der eine HTML/XML-Datei parst und für jeden gelesen Tag und Text eine entsprechende Callbackfunktion aufruft.</li>
         <li>Einen <em>HTML Tree Parser</em>, der den einfachen Parser verwendet, um eine HTML/XML-Datei zu lesen und in einen Elementstream umzuwandeln, der sich wie ein DOM-Baum verhält. Dabei werden zudem Fehler in der HTML-Datei wie nicht geschlossene Tags korrigiert und die Zeichenkodierung ermittelt.</li>
-        <li>Einen <em>XPath 2 / XQuery Interpreter</em>, der beliebige XPath 2 / XQuery Ausdrücke über dem DOM-ähnlichen Baum ausführen kann. Er ist vollständig in Pascal implementiert, unterstützt alle XPath 2 Funktionen/Ausdrücke und ist nahezu standardkompatibel (vergleiche seine <a href="documentation/internettools/internettoolsxqts.html">Ergebnisse der vollständigen XQuery Testsuite</a> oder beschränkt auf <a href="documentation/internettools/internettoolsxqts_path.html">XPath 2</a>). Er unterstützt auch JSONiq.</li>
+        <li>Einen <em>XPath / XQuery Interpreter</em>, der beliebige <a href="http://www.w3.org/TR/xpath20/" rel="nofollow">XPath 2</a>/<a href="http://www.w3.org/TR/xpath-30/">3</a> / <a href="http://www.w3.org/TR/xquery-30/" rel="nofollow">XQuery 1</a>/<a href="http://www.w3.org/TR/xquery-30/" rel="nofollow">3</a> Ausdrücke über dem DOM-ähnlichen Baum ausführen kann. Er ist vollständig in Pascal implementiert, unterstützt alle XPath 2/XQuery 1 Funktionen/Ausdrücke  und ist nahezu standardkompatibel (siehe die <a href="documentation/internettools/xqts.html">Ergebnisse der XQuery Testsuite</a>). Er unterstützt auch die meisten XPath/XQuery 3 Ausdrücke und JSONiq.</li>
         <li>Ein Parser für <em>CSS 3 Selectors</em>, der in die XQuery Klasse eingebaut ist, der CSS Selektoren in XPath 2-Ausdrücke umwandeln, und diese dann ausführt.</li>
         <li>Eine <em>pattern-matching HTML Templateengine</em>, die ein HTML Template auf eine Seite anwendet. Ein solches HTML-Template ist eine vereinfachte Version der zu verarbeitenden Seite. Die Struktur des Templates wird mit der Struktur der Seite verglichen, und jedes Template-Element wird mit einem übereinstimmenden Seiten-Element verknüpft, welches dieselben Eigenschaften und ähnliche Kinder aufweist. Die in den Template-Elementen enthaltenden Annotationen können dann die Werte der entsprechenden Seiten-Elemente auslesen.  Zum Beispiel ein Template wie
         <pre>&lt;a>{@href}&lt;/a>*</pre>
@@ -43,7 +43,7 @@
     <ul class="indentation-list">
     <li>The <em>simple html parser</em> at the lowest level, parses a xml/html file and calls callback functions for every tag and text it has read.</li>
     <li>The <em>html tree parser</em>, uses the simpler parser to read an xml/html file and create a linked element-stream from it, which is equivalent to a dom-like tree. This parser takes much care to make the tree usable, e.g. by correcting errors in invalid html files and auto detecting its encoding.</li>
-    <li>With the <em>XPath 2 / XQuery engine</em> you can then run arbitrary XPath 2 / XQuery queries on the dom-like representation. It is completely implemented in Pascal, supports all XPath 2 / XQuery functions and is  nearly standard compatible. (compare its <a href="documentation/internettools/internettoolsxqts.html">XQuery Testsuite results</a> or the results on the <a href="documentation/internettools/internettoolsxqts_path.html">XPath 2 subset</a>). It also supports JSONiq.</li>
+    <li>With the <em>XPath  / XQuery engine</em> you can then run arbitrary <a href="http://www.w3.org/TR/xpath20/" rel="nofollow">XPath 2</a>/<a href="http://www.w3.org/TR/xpath-30/">3</a> / <a href="http://www.w3.org/TR/xquery-30/" rel="nofollow">XQuery 1</a>/<a href="http://www.w3.org/TR/xquery-30/" rel="nofollow">3</a> queries on the dom-like representation. It is completely implemented in Pascal, supports all XPath 2 / XQuery 1 functions and is  nearly standard compatible. (compare its <a href="documentation/internettools/xqts.html">XQuery Testsuite results</a>). It also supports JSONiq and most of XPath/XQuery 3.</li>
     <li>The parser for <em>CSS 3 selectors</em> is part of then XQuery class, converts the CSS selector to a XPath expression and evaluates that.</li>
     <li>The <em>pattern-matching html template engine</em> at the highest level, can be used to process an html file by annotating a subset of it and applying the resulting template to the html file.  All elements in the template are searched in the html file and template instructions in matching elements can be used to extract data. For example a template like 
     <pre>&lt;a>{@href}&lt;/a>*</pre>
