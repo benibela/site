@@ -16,12 +16,17 @@
     $ito = stripos($data, "\n", $i);
     return trim(substr($data, $i, $ito - $i ));
   }
-  $fromName = myget($data, "Name:");
-  if ($fromName == "") $fromName = "ErrorReport";
   $fromMail = myget($data, "Mail:");
+  $fromName = myget($data, "Name:");
+  if ($fromName == "") {
+    $t = stripos($fromMail, "@");
+    if ($t > 0)
+      $fromName = substr($fromMail, 0, $t);
+  }
+  if ($fromName == "") $fromName = "ErrorReport";
   if ($fromMail == "") $fromMail = "noreply@benibela.de";
  
-  $headers = "From: ".$fromName." <".$fromMail.">";
+  $headers = "From: \"".$fromName."\" <".$fromMail.">";
  
   
 #  mail("benito@benibela.de","[-[Fehler]-] in ".$app." ".$ver,"Fehler in ".$app." ".$ver.": \n\n".$data);
