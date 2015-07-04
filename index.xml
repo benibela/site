@@ -13,6 +13,14 @@
     <text language="en"></text>
     </new>
 -->    
+    <new date="2015-07-04"> 
+    <text language="de"><a href="http://www.videlibri.de/">VideLibri</a> hat nun eine eigene Domain. Nachdem SourceForge angefangen hat, auch ungefragt Mal/adware in die Installer zu packen, ist eine SourceForge-Subdomain wohl untragbar geworden. Der Quellcode von VideLibri und Xidel ist nun wie meine anderen Projekte (außer TeXstudio) dreifach gehostet (hier, Github, Bitbucket. Fehlen noch welche? Gitlabs?). <br/><br/>
+    Es gibt nun das schon etwas lange überfällige Xidel-Release (auf der VideLibri-Seite), welches den Großteil der XQuery 3.0-Syntax unterstützt  und die Auswertung der neuen XQuery Test Suite berücksichtigt. Die Internet Tools sind ebenfalls entsprechend aktualisiert.
+     </text>
+    <text language="en">It is astonishing how much the Internet affects the efficiency of programming. I did not have Internet access for some weeks, and everything went much faster without all those distractions. So I could implement the new XQuery 3.0 for-syntax, a query command as complex as the SELECT statement of SQL, in seemingly less time than it took to write this news entry.<br/>Thence there is now a new release of Xidel and the Internet Tools that supports almost the entire XQuery 3.0 syntax.
+    <br/><br/>Also <a href="http://www.videlibri.de/xidel.html">Xidel</a> has now a page on a custom domain. Its source is triple hosted  (github, bitbucket and here; perhaps add Gitlabs, too?), like my other projects. (Except TeXstudio, it is too big. But people already made Github mirrors)  SourceForge seems to have earned a really suspicious reputation lately. I was hosting projects there to have them on the most trustworthy source, not the least. 
+    </text>
+    </new>
    <new date="2015-02-08"> 
        <text language="de"> Es hat viel zu lange gedauert (über ein Jahr), aber an Silvester habe ich es endlich geschafft, sämtliche <a href="documentation/internettools/xqts.html">Tests der neuen XQuery Test Suite</a> in meinem Interpreter auszuführen, von XPath 2 bis XQuery 3 inklusive Fehlertests, ohne dass die Auswertung wegen einer unerwarteten Exception abgebrochen wird. <br/>
        In der neuen <a href="sources_de.html#internettools">Internet Tools Version</a> gibt es nun für jede dieser Exceptions den passenden XQuery-Error-Code. Was leider auch heißt, dass viele Ausdrücke, die es bisher ausgeführt hat, nun als ungültig zurückgewiesen werden.<br/> 

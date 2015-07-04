@@ -11,17 +11,29 @@ The language codes "de" and "en" specify which languages are supported. If one o
   <download> 
     <title>VideLibri</title>
     <id>videlibri</id>
-    <description_80 language="de">Ein Programm zur Verwaltung ausgeliehener Bücher</description_80>
-    <description_80 language="en">A program to manage lend books </description_80>
-    <keywords language="de">Düsseldorf, Bücherei, Bibliothek, Stadtbücherei, Universitätbibliothek, Landesbibliothek, Fachhochschulbibliothek</keywords>
-    <keywords language="en">Düsseldorf, library</keywords>
+    <description_80 language="de">Eine App zum Zugriff auf das Ausleihkonto bei einer Bibliothek und sonstige Katalogfunktionen</description_80>
+    <description_80 language="en">An app to manage books lend from a library and access other library catalog functions</description_80>
+    <keywords language="de">Bücherei, Bibliothek, Stadtbücherei, Universitätbibliothek, Landesbibliothek, Fachhochschulbibliothek</keywords>
+    <keywords language="en">library</keywords>
     <language>de</language>
     <payment>Freeware</payment>
-    <source>-</source>
-    <size_KB>ca. 1300</size_KB>
+    <source>GPL</source>
     <year>2006 - present</year>
-    <content language="de">VideLibri ist nun auf &lt;a href="http://videlibri.sourceforge.net" rel="nofollow">SourceForge&lt;/a>.</content>
-    <content language="en">VideLibri is hosted on &lt;a href="http://videlibri.sourceforge.net/index_en.html" rel="nofollow">SourceForge&lt;/a>.</content>    
+    <content language="de">VideLibri ist auf einer eigenen Domain gehostet &lt;a href="http://www.videlibri.de/" rel="nofollow">SourceForge&lt;/a>.</content>
+    <content language="en">VideLibri is hosted on &lt;a href="http://www.videlibri.de/index_en.html" rel="nofollow">its own page&lt;/a>.</content>    
+  </download> 
+
+  <download> 
+    <title>Xidel</title>
+    <id>xidel</id>
+    <description_80 language="de">Ein Kommandozeilen-XPath/XQuery/JSONiq-Interpreter, um HTML/XML/JSON-Daten von Webseiten zu verarbeiten</description_80>
+    <description_80 language="en">A command line XPath/XQuery/JSONiq interpreter to process HTML/XML/JSON from webpages or locally</description_80>
+    <language>en</language>
+    <payment>Freeware</payment>
+    <source>GPL</source>
+    <year>(2008 - ) 2012 - present</year>
+    <content language="de">Xidel ist auf einer eigenen Seite gehostet &lt;a href="http://www.videlibri.de/xidel.html" rel="nofollow">SourceForge&lt;/a>.</content>
+    <content language="en">Xidel is hosted on &lt;a href="http://www.videlibri.de/xidel.html" rel="nofollow">its own page&lt;/a>.</content>    
   </download> 
 
   <download> 
@@ -33,8 +45,8 @@ The language codes "de" and "en" specify which languages are supported. If one o
     <payment>Freeware</payment>
     <source>GPL</source>
     <year>2009 - present</year>
-    <content language="de">TeXstudio ist auf &lt;a href="http://texstudio.sourceforge.net" rel="nofollow">SourceForge&lt;/a> gehostet.</content>
-    <content language="en">TeXstudio is hosted on &lt;a href="http://texstudio.sourceforge.net" rel="nofollow">SourceForge&lt;/a>.</content>
+    <content language="de">TeXstudio ist auf einer eigenen &lt;a href="http://www.texstudio.org" rel="nofollow">Domain&lt;/a> gehostet.</content>
+    <content language="en">TeXstudio is hosted on &lt;a href="http://www.texstudio.org" rel="nofollow">texstudio.org&lt;/a>.</content>
   </download> 
 
   <download> 
