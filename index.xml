@@ -13,6 +13,16 @@
     <text language="en"></text>
     </new>
 -->    
+    <new date="2015-08-16"> 
+    <text language="de">Hier sind zwei Abstimmungen:
+          <ul><li>Ob Xidel's Standardsprache <a href="http://goo.gl/forms/E8vYgpa8nP" rel="nofollow">XPath oder XQuery</a> sein soll. (auf Google Forms, weshalb nach es dem Passwort fragt). XQuery hätte den Nachteil, dass es &amp; als Escapezeichen verwendet, so dass die meisten URLs keine gültigen XQuery Strings sind. XPath hat den Nachteil, dass es gar kein Escapezeichen gibt, so dass Leute es nicht schaffen, Anführungszeichen zu verwenden. Wobei es in Bash trivial ist, also ist die Umfrage im Grunde darüber, ob Xidel mehr unter Windows oder Linux verwendet wird.  </li>
+          <li>Und wichtiger: ob TeXstudio wieder ein <a href="https://sourceforge.net/p/potm/discussion/vote/thread/2001cdf0/" rel="nofollow">SourceForge Project of the Month</a> wird.</li>
+          </ul> </text>
+    <text language="en">You can now vote: 
+      <ul><li>If you rather want to use <a href="http://goo.gl/forms/E8vYgpa8nP" rel="nofollow">XPath or XQuery</a> in Xidel (on Google Forms, so you need to login). Too bad that XQuery uses &amp; as escape character, so URIs are not valid XQuery strings. </li>
+      <li>And for TeXstudio to earn the <a href="https://sourceforge.net/p/potm/discussion/vote/thread/2001cdf0/" rel="nofollow">SourceForge Project of the Month award</a>. (let's just hope SourceForge does not go offline again)</li>
+      </ul> </text>
+    </new>
     <new date="2015-07-04"> 
     <text language="de"><a href="http://www.videlibri.de/">VideLibri</a> hat nun eine eigene Domain. Nachdem SourceForge angefangen hat, auch ungefragt Mal/adware in die Installer zu packen, ist eine SourceForge-Subdomain wohl untragbar geworden. Der Quellcode von VideLibri und Xidel ist nun wie meine anderen Projekte (außer TeXstudio) dreifach gehostet (hier, Github, Bitbucket. Fehlen noch welche? Gitlabs?). <br/><br/>
     Es gibt nun das schon etwas lange überfällige Xidel-Release (auf der VideLibri-Seite), welches den Großteil der XQuery 3.0-Syntax unterstützt  und die Auswertung der neuen XQuery Test Suite berücksichtigt. Die Internet Tools sind ebenfalls entsprechend aktualisiert.
