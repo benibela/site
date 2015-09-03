@@ -476,7 +476,7 @@ These are the most important features:
       <feature>Die Möglichkeit ein AVI vor den Start der 3DGS Engine anzuzeigen</feature>
       <feature>Die Möglichkeit die Bildschirmauflösung und Farbtiefe von einem eigenen Spiel vor dem Start
          der Engine festzulegen</feature>
-      <feature>WDL Befehle lassen sich einfach aus gut geordneten Ordnern ins Skript enfügen</feature>
+      <feature>WDL Befehle lassen sich einfach aus gut geordneten Ordnern ins Skript einfügen</feature>
       <feature>Hilfe zu WDL-Befehlen</feature>
       <feature>WDL Ordner und Befehl Hilfe veränderbar</feature>
       <feature>View,(visueller) Panel und Text Editor</feature>
