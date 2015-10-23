@@ -255,7 +255,7 @@ The feature list of rcmdline is:<br/><br/></content>
     <description_80 language="de">Funktionen zum Rechnen mit beliebig genauen Dezimalzahlen</description_80>
     <description_80 language="en">An arbitrary precision bcd floating point library</description_80>
     <prog-language>FPC</prog-language>
-    <source-license>GPL</source-license>
+    <source-license>(LC)LGPL</source-license>
     <year>2013, 2015</year>
     <content language="de">
     Diese Unit definiert einen BigDecimal-Typ, der beliebig genaue (BCD) Dezimalzahlen speichert und wie ein normaler numerischer Typ verwendet werden kann, z.B.: 
