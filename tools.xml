@@ -19,7 +19,7 @@ The language codes "de" and "en" specify which languages are supported. If one o
     <payment>Freeware</payment>
     <source>GPL</source>
     <year>2006 - present</year>
-    <content language="de">VideLibri ist auf einer eigenen Domain gehostet &lt;a href="http://www.videlibri.de/" rel="nofollow">SourceForge&lt;/a>.</content>
+    <content language="de">VideLibri ist auf einer &lt;a href="http://www.videlibri.de/" rel="nofollow">eigenen Domain&lt;/a> gehostet.</content>
     <content language="en">VideLibri is hosted on &lt;a href="http://www.videlibri.de/index_en.html" rel="nofollow">its own page&lt;/a>.</content>    
   </download> 
 
@@ -32,7 +32,7 @@ The language codes "de" and "en" specify which languages are supported. If one o
     <payment>Freeware</payment>
     <source>GPL</source>
     <year>(2008 - ) 2012 - present</year>
-    <content language="de">Xidel ist auf einer eigenen Seite gehostet &lt;a href="http://www.videlibri.de/xidel.html" rel="nofollow">SourceForge&lt;/a>.</content>
+    <content language="de">Xidel ist auf &lt;a href="http://www.videlibri.de/xidel.html" rel="nofollow">einer eigenen Seite&lt;/a> gehostet .</content>
     <content language="en">Xidel is hosted on &lt;a href="http://www.videlibri.de/xidel.html" rel="nofollow">its own page&lt;/a>.</content>    
   </download> 
 

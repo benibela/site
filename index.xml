@@ -13,6 +13,11 @@
     <text language="en"></text>
     </new>
 -->    
+    <new date="2015-11-11"> 
+    <text language="de">Die neuste Version der <a href="sources_de.html#internettools">Internet Tools</a> hat nun ein verkettbares, funktionales Interface auf der Pascalseite. Zum Beispiel <pre>query('1 to $_1', ['100']).filter('. mod 2 = 0').query('sum($_)')</pre> berechnet die Summe aller geraden Zahlen bis 100.<br/><br/>
+     Und TeXstudio hat SourceForges Staff-Pick Projekt-des-Monats-Preis gewonnen. Jetzt ist es vermutlich das einzige Open-Source-Projekt, das den Preis zweimal bekommen hat. Nur leider nicht den Community-Projekt-des-Monats-Preis von der Umfrage. </text>
+    <text language="en">So TeXstudio lost the community vote, but it still got picked as Staff POTM. Now it might be the only open-source project to get a SourceForge Project of the Month award twice.<br/><br/>The new version of the <a href="sources_en.html#internettools">Internet Tools</a> has now a LINQ-like interface, e.g. you can write <pre>query('1 to $_1', ['100']).filter('. mod 2 = 0').query('sum($_)')</pre> to get the sum of all even numbers below 100.</text>
+    </new>
     <new date="2015-08-16"> 
     <text language="de">Hier sind zwei Abstimmungen:
           <ul><li>Ob Xidel's Standardsprache <a href="http://goo.gl/forms/E8vYgpa8nP" rel="nofollow">XPath oder XQuery</a> sein soll. (auf Google Forms, weshalb nach es dem Passwort fragt). XQuery hätte den Nachteil, dass es &amp; als Escapezeichen verwendet, so dass die meisten URLs keine gültigen XQuery Strings sind. XPath hat den Nachteil, dass es gar kein Escapezeichen gibt, so dass Leute es nicht schaffen, Anführungszeichen zu verwenden. Wobei es in Bash trivial ist, also ist die Umfrage im Grunde darüber, ob Xidel mehr unter Windows oder Linux verwendet wird.  </li>
