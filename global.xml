@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>  
 <global>
 <language>
   <id>de</id>
@@ -7,6 +8,8 @@
   <onlinedocumentation>Onlinereferenz</onlinedocumentation>
   <authorship>Für G+ Autorenanerkennung: </authorship>
   <homepageOf>Homepage von </homepageOf>
+  <sourceOnGithub>Quellcode auf GitHub</sourceOnGithub>
+  <jumpToTop>zur Übersicht</jumpToTop>
 </language>
 <language>
   <id>en</id>
@@ -16,6 +19,8 @@
   <onlinedocumentation>Online Documentation</onlinedocumentation>
   <authorship>For G+ authorship:  </authorship>
   <homepageOf>Personal home page of </homepageOf>
+  <sourceOnGithub>Source on GitHub</sourceOnGithub>
+  <jumpToTop>jump to top</jumpToTop>
 </language>
 
 <fileinfo>

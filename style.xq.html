@@ -1,0 +1,211 @@
+<html>
+	<head>
+    <title>{$fileinfo/title/node()} - BeniBela online</title>
+    {$file/head/node()}
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="{$file/description}"/>
+    <meta name="keywords" content="{join(($file/keywords, $file/download/keywords)[.])}"/>
+    <meta name="DC.Title" content="{$fileinfo/title} - BeniBela online"/>
+    <meta name="DC.Subject" content="{$fileinfo/title}"/>
+    <meta name="DC.Type" content="{ ($file/content-type, 'Text')[1] }"/>
+    <meta name="DC.Description" content="{$file/description}"/>
+    <link rel="SHORTCUT ICON" href="favicon.ico"/>
+    <script type="text/javascript" src="js/all.js"/>
+ 
+    <meta name="author" content="{$global/author}"/>
+    <meta name="copyright" content="{$global/copyrightfirstdate}-{$global/copyrightlastdate}, {$global/author}"/>
+    <meta name="DC.Creator" content="{$global/author}"/>
+    <meta name="DC.Format" content="text/html"/>
+    <meta name="DC.Right" content="{$global/author}"/>
+    <meta name="robots" content="{($file/robots, $global/robots)[1]}"/>
+    <meta http-equiv="content-language" content="{$language/id}"/>
+    <link rel="contents" href="index.html" title="Startseite"/>
+    <link rel="start" href="index.html" title="Startseite"/>
+    <link rel="copyright" href="impressum_de.html" title="Impressum"/>
+    {for $l in $global/language return
+      <link rel="alternate" href="{local:file-url($fileinfo, $l)}" hreflang="{$l/id}"/>
+    }
+    <link rel="stylesheet" href="css/all.css"/>
+    <!--[if IE]><link rel="stylesheet" href="css/ie.css"><![endif]-->    
+    <!--[if lte IE 6]><link rel="stylesheet" href="css/lte_ie6.css"><![endif]-->
+    <link rel="stylesheet" media="print" href="css/print.css"/>
+    </head>
+    <body lang="de" onload="pageFocus()"> <!--[if IE 7]><div id="wrapper"> <![endif]-->
+      <h1 id="title">BeniBela online</h1>
+	  <div id="menu">
+	     <ul id="menulink_list">
+	     {for $l in $global/language return
+	        if ($l/id != $language/id) then
+             <li><a href="{local:file-url($fileinfo, $l)}#top" id="SwitchLanguage">{$l/changetext/text()}</a></li>
+           else (),
+        local:writeSiteMap($global)
+       }
+       
+	     </ul>
+         <div id="border_navi_bottom">
+           <img src="img/design/borderbluedown_right.gif" alt="" id="border_navi_left_bottom"/>
+           <img src="img/design/borderbluedown_left2.gif" alt="" id="border_navi_right_bottom"/>
+         </div>
+         <img src="img/design/borderbluemiddleleft.gif" alt="" id="border_navi_right_top"/>
+	  </div>
+
+    
+      <div id="outer_content">
+        <div id="content">
+           <a name="top" href="#top"></a>
+           {
+           if (empty($file/prevent-content-title)) then  <h2>{$fileinfo/title/text()}</h2> else (),
+           $file/content,
+           if (exists($file/news)) then
+             <div id="newslist">{
+               for $new in $file/news/new return (
+                 <h3>{$new/@date/data()}</h3>,
+                 if ($new/text/@language != $language/id) then
+                   <div class="untranslated"><p>(not translated)</p><div class="newstext"><p>{$new/text/node()}</p></div></div>
+                 else
+                   <p class="newstext">{$new/text/node()}</p>
+               )  
+             }
+             </div>
+           else(),
+           
+           
+           for $subfileinfo in $fileinfo/fileinfo[basefilename != ""] 
+           let $subfile := doc($subfileinfo/basefilename || ".xml")
+           return (
+             <br/>,
+             if (exists($subfile/download)) then (
+               <h3>{$subfileinfo/title}</h3>,
+               <ul style="padding-left:2em; list-style-position:inside;">{
+                 for $download in $subfile/download return
+                   <li><a href="{local:file-url($subfileinfo, $language) || '#' || $download/(id,file)[1] }">{$download/title/text()}</a>: {$download/description_80/text()}</li>
+               }</ul>
+             ) else (
+               <h3><a href="{local:file-url($subfileinfo, $language)}">{$subfileinfo/title/text()}</a></h3>,
+               <p style="margin-left:2em">{$subfile/description}</p>
+             )),
+           
+           if (empty($file/download)) then () else (<br/>,<br/>,
+           <div class="shortdescription_border">
+           <table class="shortdescription"><thead>
+           <tr>
+             <th>Titel</th>
+             <th>Beschreibung</th>
+             {
+               ($file/download)[1] / (
+                 {"data": language, "de": "Sprache"},
+                 {"data": prog-language, "de": "Sprache"},
+                 {"data": payment, "de": "Typ"},
+                 {"data": source, "de": "Source"},
+                 {"data": source-license, "de": "Lizenz"},
+                 {"data": payment-license, "de": "Lizenz"}
+               ) [. instance of node()] / <th>{.("de")}</th>
+             }
+           </tr>
+           </thead><tbody>
+           {
+             for $download in $file/download 
+             let $download-id := ($download/id, $download/file)[1]/data()
+             return (
+               $download/start-category/<tr class="category-line"><th colspan="3">{data()}</th></tr>,
+               <tr>
+                 <td><a href="($download/linkTo, '#' || $download-id)[1]">{$download/title/text()}</a></td>
+                 <td>{$download/description_80}</td>
+                 {$download/(language, prog-language, payment, source, source-license, payment-license )/<td>{.}</td>}
+               </tr>
+             )
+           }
+           </tbody></table></div>,
+           
+           if ($file/prevent-details) then () else 
+           <div class="long_description">{
+             for $download in $file/download 
+             let $download-id := ($download/id, $download/file)[1]/data()
+             return 
+             <div class="long_desc_entry">
+               <h3 class="long_desc_title"><a id="{$download-id}" name="{$download-id}" class="target">&#160;</a><a href="{$file/download-dir || '/' || $download/file}">{$download/title/text()}</a></h3>
+               {$download/year/<div class="long_desc_year">{text()}</div>}
+               <div class="long_desc_license">{$download/payment/text()}{$download/source-license/text()}</div>
+               <div class="long_desc_desc">
+                 {$download/content/node()}
+                 {if ($download/features) then
+                 <ul>
+                   {for $feature in $download/features/feature return <li>{
+                     if (empty($feature/feature2)) then $feature/node()
+                     else (
+                       <b>{$feature/title/node()}</b>,                     
+                       <ul>{
+                         for $feature2 in $feature/feature2 return <li>{
+                           if (empty($feature2/feature3)) then $feature2/node()
+                           else (
+                             $feature2/title/node(),
+                             <ul>{for $feature3 in $feature2/feature3 return <li>{$feature3/node()}</li>}</ul>
+                           )
+                         }</li>
+                       }</ul>
+                     )}</li>
+                  }</ul> else ()}
+                 
+                 {if ($download/screenshot) then
+                   <div class="screenshots">{for $shot in $download/screenshot return
+                     <img title="{$shot/title}" alt="screenshot: {$shot/title}" src="{$shot/fullfile}" width="300px" height="{$shot/height}"/>
+                   }</div> 
+                 else ()}
+                 
+                 {$download/final-content/node()}
+
+                 {for $zelda in $download/link return (
+                    <br/>,<br/>,
+                    switch ($zelda/@type)
+                      case "onlinedocu" return <a href="documentation/{$download-id}/">{$language/onlinedocumentation/node()}</a>
+                      default return <a href="{$zelda}">{$zelda/@title/data()}</a>
+                 )}
+
+                 {for $poison in $download/github return (
+                   <br/>,<br/>,
+                   <a href="http://github.com/benibela/{$poison}" rel="nofollow">{$language/sourceOnGithub/node()}</a>
+                 )}
+                 
+                 {for $downloadFile in $download/file 
+                  let $downloadsize := system(x" sh -c 'ls -s _publish/{$file/download-dir}/{$downloadFile} | grep -o -E ^*[0-9.]*")
+                 return (
+                   if ($downloadsize = "") then <b style="color:red;font-size:150%">FILE NOT FOUND</b> else (),
+                   <br/>,<br/>,
+                   <a href="{$file/download-dir}/{$downloadFile}">Download {$downloadFile/@title/data()} ({$downloadsize} KB )</a>
+                 )}
+
+                 <a style="position:absolute;right: 2em" href="#top">{$language/jumpToTop/node()}</a>
+               </div>
+             </div>
+           }</div>)}
+
+           
+           {$file/final-content/node()}
+           <hr id="contentEnd"/>
+           <span id="fileName">www.benibela.de/{local:file-url()}</span><br/>{
+(:          {$language/contentlastchange/node()}: {$file/$lastModified}<br/> :)
+(:           {$language/pagelastchange/node()}: {$$lastModified}<br/>:)()}
+           {$language/authorship/node()} <div style="display: inline">{$language/homepageOf} <a href="https://plus.google.com/u/0/105999681299848220119?rel=author" rel="author">Benito van der Zander</a></div>
+        </div>
+      </div>	
+
+      
+    <div id="border_right">&#160;</div>
+	  <div id="header">
+	    <img src="img/design/borderbluedown.gif" id="border_right_down_img" alt=""/>
+	    <div id="header_left_background">
+	      <div id="border_title_top">&#160;</div>
+	    </div>
+	  </div>
+    <div id="border_navi_top"></div>
+    <div id="border_middle"><img src="img/design/borderbluemiddleleft.gif" id="border_middle_left_img" alt=""/></div>
+    <div id="border_left"></div>
+	  <div id="footer">
+       <div id="border_middle_up_div"></div>
+	  </div>
+	  <div id="footer_clip">&#160;</div>
+	  <p><img src="img/design/borderbluemiddle_up.gif" id="border_middle_up_img" alt=""/>
+	     <img src="img/design/borderbluedown_left.gif" id="border_right_left_img" alt=""/>
+	     <img src="img/design/borderblueup_right.gif" id="border_left_up_right" alt=""/></p>
+    <!--[if IE 7]></div><![endif]--> </body>
+</html>
