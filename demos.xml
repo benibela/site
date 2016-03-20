@@ -50,8 +50,8 @@
     <file>starwars.exe</file>
     <description_80 language="de">Ein kleiner Film zum Thema Star Wars, in dem ein Raumschiffkampf gezeigt wird.</description_80>
     <description_80 language="en">A small movie concerning Star Wars where you see a space ship fight.</description_80>
-    <content language="de">Dieses Intro wurde für einen Wettbewerb programmiert (mit leider zwei Teilnehmern, wie am Abgabetermin bekannt wurde), bei dem es den ersten Platz erhielt. Man sieht einen Angriff auf Coruscant, für den ein Ablenkungsmanöver über Praesitlyn ausgeführt wird. Es ist nur 40KB groß, braucht aber für die Soundausgabe &lt;a href="http://www.fmod.org">FMOD&lt;/a>, und Windows. </content>
-    <content language="en">This intro was created for a contest (sadly only two people took part in it) and it came on place one. You can see an attack on Coruscant, for which a bluff attack is maked at Praesitlyn. It is only 40KB big, but it needs &lt;a href="http://www.fmod.org">FMOD&lt;/a> for sounds, and Windows. </content>
+    <content language="de">Dieses Intro wurde für einen Wettbewerb programmiert (mit leider zwei Teilnehmern, wie am Abgabetermin bekannt wurde), bei dem es den ersten Platz erhielt. Man sieht einen Angriff auf Coruscant, für den ein Ablenkungsmanöver über Praesitlyn ausgeführt wird. Es ist nur 40KB groß, braucht aber für die Soundausgabe <a href="http://www.fmod.org">FMOD</a>, und Windows. </content>
+    <content language="en">This intro was created for a contest (sadly only two people took part in it) and it came on place one. You can see an attack on Coruscant, for which a bluff attack is maked at Praesitlyn. It is only 40KB big, but it needs <a href="http://www.fmod.org">FMOD</a> for sounds, and Windows. </content>
   </download>
 
 
@@ -62,9 +62,9 @@
     <description_80 language="de">Ein kleines Programm, das es auf dem Computerbildschirm schneien lässt.</description_80>
     <description_80 language="en">A small program which draws snow on the screen.</description_80>
     <size_KB>121</size_KB>
-    <content language="de">Dieses Programm zeichnet fallenden Schnee auf dem Bildschirm.&lt;br&gt;
+    <content language="de">Dieses Programm zeichnet fallenden Schnee auf dem Bildschirm.<br/>
 Es lässt sich allerdings nur über den Taskmanager beenden. </content>
-    <content language="en">This program draws snow on the screen, which falls from the top side to the bottom side.&lt;br&gt;
+    <content language="en">This program draws snow on the screen, which falls from the top side to the bottom side.<br/>
 You can only stop it with the task manager. </content>
   </download>
 
@@ -107,8 +107,8 @@ You can only stop it with the task manager. </content>
     <payment>Freeware</payment>
     <source>open</source>-->
     <size_KB>708</size_KB>
-    <content language="de">Ein Programm, das ich im Rahmen meiner Facharbeit entwickelt habe und das die Konformation eines Moleküles über das Tetraedermodell und quantenchemische Formeln berechnen sollte.&lt;br>Im Allgemeinen funktioniert dies allerdings nicht, warum kann man in der &lt;a href="bin/others/facharbeit.zip">Facharbeit&lt;/a> nachlesen.&lt;br>Man kann es allerdings benutzen, um schöne Lewisformel zu zeichnen und eine (meistens falsche) 3D-Ansicht zu betrachten.</content>
-    <content language="en">This program is meant to be able calculate the conformation of a molecule, either with quanten chemistry calculations or with a very simple model.&lt;br>However, it doesn't work, you can read about the problems, in this &lt;a href="bin/others/facharbeit.zip">German text&lt;/a>.&lt;br>
+    <content language="de">Ein Programm, das ich im Rahmen meiner Facharbeit entwickelt habe und das die Konformation eines Moleküles über das Tetraedermodell und quantenchemische Formeln berechnen sollte.<br/>Im Allgemeinen funktioniert dies allerdings nicht, warum kann man in der <a href="bin/others/facharbeit.zip">Facharbeit</a> nachlesen.<br/>Man kann es allerdings benutzen, um schöne Lewisformel zu zeichnen und eine (meistens falsche) 3D-Ansicht zu betrachten.</content>
+    <content language="en">This program is meant to be able calculate the conformation of a molecule, either with quanten chemistry calculations or with a very simple model.<br/>However, it doesn't work, you can read about the problems, in this <a href="bin/others/facharbeit.zip">German text</a>.<br/>
     But you can use the program to draw Lewis structures and see the 3D structure of very simple molecules.
     </content>
   </download>
@@ -122,19 +122,19 @@ You can only stop it with the task manager. </content>
     <payment>Freeware</payment>
     <source>GPL</source>-->
     <size_KB>131</size_KB>
-    <content language="de"><![CDATA[
-Dieses Programm simuliert auf einem (bereits vorhandenen) Laufwerk jede Datei eines anderen und verbirgt dabei die ursprünglich vorhandenen Dateien.<br>
-Nicht verändert wird aber der Typ der Laufwerke, es ist also z.B. möglich Dateien von einer Festplatte auf einem CD-ROM Laufwerk erscheinen zu lassen, ohne dass normale Programme feststellen können, dass sie aus einer anderen Quelle kommen.<br>
-Wenn man die Ausgangsdaten aus einem Unterverzeichnis lesen will, kann man mit dem DOS-Programm subst aus dem Verzeichnis ein neues Laufwerk erzeugen und dieses als Quelle benutzen.<br>
-Das Programm funktioniert wegen der verwendeten Treiberfunktionen nur unter W95, 98 und ME, und es ist auch unmöglich es auf andere Systeme zu portieren, ohne es komplett neu zuschreiben.<br>
-Wenn hierbei ein Bluescreen erscheint, muss nicht unbedingt ein Fehler vorliegen, es kann auch sein das es sich um eine Debugmeldung handelt, die ich vergessen habe, aus dem Programm auszubauen. In dem Fall kann man ohne Probleme eine Taste drücken, und die Meldung verschwindet wieder.<br>
-Der GPL-lizenzierte <a href="bin/demos/source/filesim.zip">Quellcode (203 KB)</a> besteht aus zwei Teilen, dem eigentlichen Treiber, der in einem Mix aus C und Assembler programmiert ist und zum Compilern MASM, Visual C++ (Toolkit) und das 98-DDK (alle 3 von Microsoft) benötigt; und einem Aufrufteil, der in Delphi programmiert ist.  Mit dem Treiberteil kann man gut die W95 Dateifunktionen für Ring 0 Programme kennenlernen.]]></content>
-    <content language="en"><![CDATA[This program simulates each file of a drive on another (existing) one and hides every file of the original one.<br>
-It doesn't change the type of the drive, so it is able to read files of a harddisk from an CD-ROM, without the possibility for normal programs to determine the original location.<br>
-If the original files are in a sub directory, you can create a new drive containing the files of the directory with the DOS-program subst.<br>
-This program works only under W95, 98 and ME, because of the used driver functions.<br>
-If a bluescreen appears, this is not necessarily a problem, perhaps it shows just debug information. Then you can press any key to continue.<br>
-The GPL-licensed <a href="bin/demos/source/filesim.zip">source (203 KB)</a> contains two parts, the important driver programmed in C and assembler needing MASM, Visual C++ (Toolkit) and the 98-DDK (all 3 from Microsoft). The other part is the caller which is programmed in Delphi. You can learn the basic of W95 file system functions with this code.]]></content>
+    <content language="de">
+Dieses Programm simuliert auf einem (bereits vorhandenen) Laufwerk jede Datei eines anderen und verbirgt dabei die ursprünglich vorhandenen Dateien.<br/>
+Nicht verändert wird aber der Typ der Laufwerke, es ist also z.B. möglich Dateien von einer Festplatte auf einem CD-ROM Laufwerk erscheinen zu lassen, ohne dass normale Programme feststellen können, dass sie aus einer anderen Quelle kommen.<br/>
+Wenn man die Ausgangsdaten aus einem Unterverzeichnis lesen will, kann man mit dem DOS-Programm subst aus dem Verzeichnis ein neues Laufwerk erzeugen und dieses als Quelle benutzen.<br/>
+Das Programm funktioniert wegen der verwendeten Treiberfunktionen nur unter W95, 98 und ME, und es ist auch unmöglich es auf andere Systeme zu portieren, ohne es komplett neu zuschreiben.<br/>
+Wenn hierbei ein Bluescreen erscheint, muss nicht unbedingt ein Fehler vorliegen, es kann auch sein das es sich um eine Debugmeldung handelt, die ich vergessen habe, aus dem Programm auszubauen. In dem Fall kann man ohne Probleme eine Taste drücken, und die Meldung verschwindet wieder.<br/>
+Der GPL-lizenzierte <a href="bin/demos/source/filesim.zip">Quellcode (203 KB)</a> besteht aus zwei Teilen, dem eigentlichen Treiber, der in einem Mix aus C und Assembler programmiert ist und zum Compilern MASM, Visual C++ (Toolkit) und das 98-DDK (alle 3 von Microsoft) benötigt; und einem Aufrufteil, der in Delphi programmiert ist.  Mit dem Treiberteil kann man gut die W95 Dateifunktionen für Ring 0 Programme kennenlernen.</content>
+    <content language="en">This program simulates each file of a drive on another (existing) one and hides every file of the original one.<br/>
+It doesn't change the type of the drive, so it is able to read files of a harddisk from an CD-ROM, without the possibility for normal programs to determine the original location.<br/>
+If the original files are in a sub directory, you can create a new drive containing the files of the directory with the DOS-program subst.<br/>
+This program works only under W95, 98 and ME, because of the used driver functions.<br/>
+If a bluescreen appears, this is not necessarily a problem, perhaps it shows just debug information. Then you can press any key to continue.<br/>
+The GPL-licensed <a href="bin/demos/source/filesim.zip">source (203 KB)</a> contains two parts, the important driver programmed in C and assembler needing MASM, Visual C++ (Toolkit) and the 98-DDK (all 3 from Microsoft). The other part is the caller which is programmed in Delphi. You can learn the basic of W95 file system functions with this code.</content>
   </download>
   <download> 
     <title>FileBlow</title>
@@ -146,16 +146,16 @@ The GPL-licensed <a href="bin/demos/source/filesim.zip">source (203 KB)</a> cont
     <payment>Freeware</payment>
     <source>GPL</source>-->
     <size_KB>129</size_KB>
-    <content language="de"><![CDATA[
-Dieses Programm simuliert in einem bestimmten Verzeichnis eine Dateigröße von 7,45 ExaByte (=8.000.000.000 GB). Dabei spielt es keine Rolle, dass so große Dateien nicht mehr auf die Festplatte passen würden, angezeigt wird trotzdem diese Größe.<br>
-Das Programm ist praktisch dasselbe wie <a href="#filesim.zip">FileSim</a>, nur verändert es einen anderen Aspekt des Dateisystems.<br>
-Es funktioniert wegen der verwendeten Treiberfunktionen nur unter W95, 98 und ME, und es ist auch unmöglich es auf andere Systeme zu portieren, ohne es komplett neu zuschreiben.<br>
-Der GPL-lizenzierte <a href="bin/demos/source/fileblow.zip">Quellcode (162 KB)</a> besteht aus zwei Teilen, dem eigentlichen Treiber, der in einem Mix aus C und Assembler programmiert ist und zum Compilern MASM, Visual C++ (Toolkit) und das 98-DDK (alle 3 von Microsoft) benötigt; und einem Aufrufteil, der in Delphi programmiert ist.  Mit dem Treiberteil kann man gut die W95 Dateifunktionen für Ring 0 Programme kennenlernen.]]></content>
-    <content language="en"><![CDATA[
-This program shows a file size of 7.45 ExaByte (=8,000,000,000 GB) for every file in a certain directory. It doesn't matter that such big files don't fit on the drive.<br>
-It is mainly the same as <a href="#filesim.zip">FileSim</a>, but it manipulates a different aspect of the file system.<br>
-It works only under W95, 98 and ME, because of the used driver functions.<br>
-The GPL-licensed <a href="bin/demos/source/fileblow.zip">source (162 KB)</a> contains two parts, the important driver programmed in C and assembler which needs MASM, Visual C++ (Toolkit) and the 98-DDK (all 3 from Microsoft). The other part is the caller which is programmed in Delphi. You can learn the basic of W95 file system functions with this code.]]></content>
+    <content language="de">
+Dieses Programm simuliert in einem bestimmten Verzeichnis eine Dateigröße von 7,45 ExaByte (=8.000.000.000 GB). Dabei spielt es keine Rolle, dass so große Dateien nicht mehr auf die Festplatte passen würden, angezeigt wird trotzdem diese Größe.<br/>
+Das Programm ist praktisch dasselbe wie <a href="#filesim.zip">FileSim</a>, nur verändert es einen anderen Aspekt des Dateisystems.<br/>
+Es funktioniert wegen der verwendeten Treiberfunktionen nur unter W95, 98 und ME, und es ist auch unmöglich es auf andere Systeme zu portieren, ohne es komplett neu zuschreiben.<br/>
+Der GPL-lizenzierte <a href="bin/demos/source/fileblow.zip">Quellcode (162 KB)</a> besteht aus zwei Teilen, dem eigentlichen Treiber, der in einem Mix aus C und Assembler programmiert ist und zum Compilern MASM, Visual C++ (Toolkit) und das 98-DDK (alle 3 von Microsoft) benötigt; und einem Aufrufteil, der in Delphi programmiert ist.  Mit dem Treiberteil kann man gut die W95 Dateifunktionen für Ring 0 Programme kennenlernen.</content>
+    <content language="en">
+This program shows a file size of 7.45 ExaByte (=8,000,000,000 GB) for every file in a certain directory. It doesn't matter that such big files don't fit on the drive.<br/>
+It is mainly the same as <a href="#filesim.zip">FileSim</a>, but it manipulates a different aspect of the file system.<br/>
+It works only under W95, 98 and ME, because of the used driver functions.<br/>
+The GPL-licensed <a href="bin/demos/source/fileblow.zip">source (162 KB)</a> contains two parts, the important driver programmed in C and assembler which needs MASM, Visual C++ (Toolkit) and the 98-DDK (all 3 from Microsoft). The other part is the caller which is programmed in Delphi. You can learn the basic of W95 file system functions with this code.</content>
   </download>
 
 

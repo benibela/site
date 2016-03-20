@@ -3,8 +3,8 @@
   <description language="en">You can find components for Delphi on this page: A tree list view which shows a tree together with column items, a gauge combined with a color gradient and an edit box for numbers</description>
   <keywords language="de">Delphi, Komponenten, BeniBela, ListView, TreeView, TListView, TTreeView, TTreeListView, tree list view, Farbverlauf, Scrollbalken, Eingabefeld, Zahlen, download</keywords>
   <keywords language="en">Delphi, Components, tree view, list view, TTreeView, TListView, TTreeListView, tree list view, BeniBela, gauge, gradient, color, edit, box, numbers, download</keywords>
-  <content language="de"><![CDATA[Auf dieser Seite kann man Delphi und Lazaruskomponenten herunterladen, die wegen der Versionsproblematik von Delphi bei Komponenten alle Open-Source sind. Alle mit der MPL-Lizenz, GPL-Lizenz oder BSD-Lizenz versehenen Komponenten dürfen beliebig verändert und vertrieben werden. <br>Bei der MPL und GPL müssen aber Änderungen veröffentlicht werden und bleiben unter der MPL lizenziert, bei der GPL gilt dies auch für Erweiterungen.<br>Wer die Komponenten in einem proprietären Programm verwenden will, sollte mir eine <a href="impressum_de.html">E-Mail</a> schreiben.<br>Sortiert sind die Komponenten hier nach Qualität und Alter.]]></content>
-  <content language="en"><![CDATA[You can find components for Delphi and Lazarus on this page. Each of them is open source. You can use, change and distribute all sources published under the terms of the MPL, GPL or BSD-license in any way you want. Although in the case of the MPL or GPL you must publish changes and you must not change the license. In the case of the GPL you must also publish extensions and the source of all (your) programs using it under the terms of the GPL.<br>If any of the files is published under the terms of more than one license, you can choose one of them. <br> You can find more and legally valid information in the source files.]]></content>
+  <content language="de">Auf dieser Seite kann man Delphi und Lazaruskomponenten herunterladen, die wegen der Versionsproblematik von Delphi bei Komponenten alle Open-Source sind. Alle mit der MPL-Lizenz, GPL-Lizenz oder BSD-Lizenz versehenen Komponenten dürfen beliebig verändert und vertrieben werden. <br/>Bei der MPL und GPL müssen aber Änderungen veröffentlicht werden und bleiben unter der MPL lizenziert, bei der GPL gilt dies auch für Erweiterungen.<br/>Wer die Komponenten in einem proprietären Programm verwenden will, sollte mir eine <a href="impressum_de.html">E-Mail</a> schreiben.<br/>Sortiert sind die Komponenten hier nach Qualität und Alter.</content>
+  <content language="en">You can find components for Delphi and Lazarus on this page. Each of them is open source. You can use, change and distribute all sources published under the terms of the MPL, GPL or BSD-license in any way you want. Although in the case of the MPL or GPL you must publish changes and you must not change the license. In the case of the GPL you must also publish extensions and the source of all (your) programs using it under the terms of the GPL.<br/>If any of the files is published under the terms of more than one license, you can choose one of them. <br/> You can find more and legally valid information in the source files.</content>
   <download-dir>bin/components</download-dir>
   <download> 
     <title>TTreeListView</title>
@@ -17,9 +17,9 @@
     <prog-language>Lazarus, Delphi</prog-language>
     <source-license>GPL</source-license>
     <size_KB>38</size_KB>
-    <content language="de">Diese Komponente ist eine Mischung aus TTreeView und TTListView und dient dazu, einen Strukturbaum anzuzeigen, dessen Knoten weitere in Spalten sortierte Information enthalten können.&lt;br&gt;
+    <content language="de">Diese Komponente ist eine Mischung aus TTreeView und TTListView und dient dazu, einen Strukturbaum anzuzeigen, dessen Knoten weitere in Spalten sortierte Information enthalten können.<br/>
 Sie hat folgende Features:</content>
-    <content language="en">This component is a mix between TTreeView and TListView and can paint a tree whose nodes have additional information sorted in columns.&lt;br&gt;
+    <content language="en">This component is a mix between TTreeView and TListView and can paint a tree whose nodes have additional information sorted in columns.<br/>
 It has these features:</content>
     <features language="de">
       <feature>Gleichzeitige Anzeige des Strukturbaumes und zusätzlicher Spalten</feature>
@@ -76,9 +76,9 @@ It has these features:</content>
     <description_80 language="en">A typical search bar with next/previous/highlight-buttons.</description_80>
     <prog-language>Lazarus, Delphi</prog-language>
     <source-license>GPL</source-license>
-    <content language="de">Diese Suchleiste ähnelt den von Mozilla bekannten Suchleisten. Sie wird nach dem Einfügen auf dem Formular automatisch am unteren Fensterrand platziert, wo der Benutzer  den Suchtext mit inkrementieller Suchfunktion eingeben kann. Auch gibt es Vorwärts/Rückwärts-Buttons und einen Button, um alle Suchergebnisse einzufärben. Außerdem gibt es eine Combobox, in der z.B.: ein Suchbereich ausgewählt werden kann und die wie die anderen Elemente auch ausgeblendet werden kann, wenn man sie nicht braucht.&lt;br>
+    <content language="de">Diese Suchleiste ähnelt den von Mozilla bekannten Suchleisten. Sie wird nach dem Einfügen auf dem Formular automatisch am unteren Fensterrand platziert, wo der Benutzer  den Suchtext mit inkrementieller Suchfunktion eingeben kann. Auch gibt es Vorwärts/Rückwärts-Buttons und einen Button, um alle Suchergebnisse einzufärben. Außerdem gibt es eine Combobox, in der z.B.: ein Suchbereich ausgewählt werden kann und die wie die anderen Elemente auch ausgeblendet werden kann, wenn man sie nicht braucht.<br/>
     Die eigentliche Suchefunktionalität muss man natürlich selbst implementieren, aber dies wird enorm vereinfacht, indem alle Benutzereingaben auf ein Ereignis gemappt werden, so dass man sich nicht darum kümmern muss, was jetzt eigentlich passiert ist.  Die Komponente wird auch von meinem TreeListView (siehe oben) benutzt.</content>
-    <content language="en">This SearchBar is similar to those used by Mozilla. It is automatically placed on the bottom of the parenting form where the user can insert it search text (with incremental search). Also there are forward/back/highlight buttons which can be hidden if you don't need them, as well as a combobox which can be used to select a search scope. &lt;br>
+    <content language="en">This SearchBar is similar to those used by Mozilla. It is automatically placed on the bottom of the parenting form where the user can insert it search text (with incremental search). Also there are forward/back/highlight buttons which can be hidden if you don't need them, as well as a combobox which can be used to select a search scope. <br/>
     Of course you have to implement the actual search yourself, but this control make that much easier, because it maps all user interactions to a single event, so you can't forget a possible interaction. (There are a lot of search bars around where the people forgot to handle things like escape or shift+enter...). Above you can see a part of this search bar in the TTreeListView-class.</content>
   </download>
   <download> 
@@ -119,7 +119,7 @@ It has these features:</content>
     <prog-language>Delphi</prog-language>
     <size_KB>11</size_KB>
     <year>2001</year>
-    <content language="de">Diese Komponente erzeugt wie TBeniGrad einen Farbverlauf, allerdings wird nur ein Teil gezeichnet, und der Rest einfarbig gefüllt.&lt;br&gt;
+    <content language="de">Diese Komponente erzeugt wie TBeniGrad einen Farbverlauf, allerdings wird nur ein Teil gezeichnet, und der Rest einfarbig gefüllt.<br/>
 Dadurch kann man die Komponente als Fortschrittsbalken benutzen. </content>
     <content language="en">This component creates a color gradient like TBeniGrad, but it draws only a part of it, and the remnant is filled out with a single color, so it can be used as a gauge.</content>
     
@@ -133,9 +133,9 @@ Dadurch kann man die Komponente als Fortschrittsbalken benutzen. </content>
     <prog-language>Delphi</prog-language>
     <size_KB>3</size_KB>
     <year>1999</year>
-    <content language="de">Diese Komponente ist ein Editfeld, in das aber nur Zahlen eingegeben werden dürfen. Die Zwischenablage und andere Einfügemöglichkeiten werden dabei auch überwacht.&lt;br&gt;
+    <content language="de">Diese Komponente ist ein Editfeld, in das aber nur Zahlen eingegeben werden dürfen. Die Zwischenablage und andere Einfügemöglichkeiten werden dabei auch überwacht.<br/>
 Man kann einstellen, ob die Komponente auch dezimale und negative Zahlen annehmen soll, wobei die Ländereinstellungen aus sysUtils.pas berücksichtigt werden. </content>
-    <content language="en">This component is an edit box where you can only input numbers. It also monitors the clipboard and other possibilities for input.&lt;br&gt;
+    <content language="en">This component is an edit box where you can only input numbers. It also monitors the clipboard and other possibilities for input.<br/>
     The accepted input can be restricted to only positive or integer numbers.</content>
     
   </download>

@@ -42,16 +42,28 @@ declare function local:writeSiteMap($fileparent){
      else ()
   )
 };
-(:$source := "index",
-$output-dir := "_publish/",:)
-$global-raw := doc("global.xml")/global,
-$file-raw := doc($source || ".xml")/file,
-$style.template := file:read-text("style.xq.html"),
-for $l in $global-raw/language return (
-  $language := $l,
-  $global := local:language-filter($global-raw),
-  $fileinfo := $global//fileinfo[basefilename = $source],
-  $file := local:language-filter( $file-raw ),
-  local:write-html( local:file-url(),  local:eval($style.template))
-)
- 
+declare variable $global-raw := doc("global.xml")/global;
+declare function local:deps(){
+	 "PAGES := " || join( 
+	   for $fi in $global-raw//fileinfo, 
+	       $l in $global-raw/language 
+	   let $url := local:file-url($fi, $l) 
+	   where not(contains($url, "//"))
+     return $output-dir || $url )
+};
+declare function local:doit(){ 
+  (
+  (:$source := "index",
+  $output-dir := "_publish/",:)
+  $file-raw := doc($source || ".xml")/file,
+  $style.template := file:read-text("style.xq.html"),
+  for $l in $global-raw/language return (
+    $language := $l,
+    $global := local:language-filter($global-raw),
+    $fileinfo := $global//fileinfo[basefilename = $source],
+    $file := local:language-filter( $file-raw ),
+    local:write-html( local:file-url(),  local:eval($style.template))
+  )[0]
+  )[0]
+};
+()

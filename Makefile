@@ -3,10 +3,8 @@
 all: buildtemp/tardis buildtemp/global.d phony upload
 
 buildtemp/global.d: global.xml
-	xidel global.xml \
-	 -e '"PAGES := " || join( //basefilename/(x"_publish/{.}_de.html", x"_publish/{.}_en.html") )' > buildtemp/global.d
-#	 -e '"DEPS := " || join( //basefilename/x"buildtemp/{.}.d" )' \
-	 
+	xidel global.xml --extract-include xxx --extract-kind xquery --extract-file common.xq -e 'output-dir := "_publish/"' -e 'local:deps()' > buildtemp/global.d
+
 
 include buildtemp/global.d
 
@@ -21,7 +19,11 @@ phony: $(PAGES)
 
 
 _publish/%_de.html publish/%_en.html: %.xml common.xq style.xq.html
-	xidel --input-format xml-strict --extract-include=xxx -e 'source := "$*", output-dir := "_publish/"' --extract-kind xquery  --extract-file common.xq
+	xidel --input-format xml-strict --extract-include=xxx -e 'source := "$*", output-dir := "_publish/"' --extract-kind xquery  --extract-file common.xq -e 'local:doit()'
+	
+_publish/%_de.php publish/%_en.php: %.xml common.xq style.xq.html
+	xidel --input-format xml-strict --extract-include=xxx -e 'source := "$*", output-dir := "_publish/"' --extract-kind xquery  --extract-file common.xq -e 'local:doit()'
+
 	
 #	-e 'gallery:=doc("$*.xml")/gallery,lang:="de"' --extract-file common.xq --extract-file gallery.xq.html  --html > publish/$*.htm
 #	xidel --extract-include=xxx --extract-kind xquery -e 'gallery:=doc("$*.xml")/gallery,lang:="en"' --extract-file common.xq --extract-file gallery.xq.html  --html > publish/$*_EN.htm

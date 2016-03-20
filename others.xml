@@ -14,10 +14,10 @@
     <description_80 language="en">A java-script which creates (randomly or as high map) a color pattern</description_80>
     <payment-license>Freeware</payment-license>
     <size_KB>10</size_KB>
-    <content language="de">Dieses Javascriptprogramm setzt im Browser Farben in ein Raster. Es sollte direkt hier angezeigt werden:&lt;br> &lt;br></content>
-    <content language="en">This script puts color into a raster. You should  see it here now:&lt;br> &lt;br></content>
+    <content language="de">Dieses Javascriptprogramm setzt im Browser Farben in ein Raster. Es sollte direkt hier angezeigt werden:<br/> <br/></content>
+    <content language="en">This script puts color into a raster. You should  see it here now:<br/> <br/></content>
     <final-content>
-      &lt;script type="text/javascript" src="bin/others/colorMap.js">&lt;/script>
+      <script type="text/javascript" src="bin/others/colorMap.js"></script>
     </final-content>
   </download>
   <download> 
@@ -29,10 +29,10 @@
     <description_80 language="en">A java-script to perform a Gaussian Elimination</description_80>
     <payment-license>Freeware</payment-license>
     <size_KB>10</size_KB>
-    <content language="de">Dieses Javascriptprogramm lässt einen im Browser eine Matrix mit dem Gaußschen Eliminationsverfahren umformen. Im Gegensatz zu den üblichen Applets funktioniert es auch mit Matrizen beliebiger Größe und kommt (für Restklassenringe) ohne Division aus. Es sollte direkt hier angezeigt werden:&lt;br> &lt;br></content>
-    <content language="en">With this script you can perform a Gaussian Elimination. In contrast to other applets it also works with matrices of arbitrary size. You should  see it here now:&lt;br> &lt;br></content>
+    <content language="de">Dieses Javascriptprogramm lässt einen im Browser eine Matrix mit dem Gaußschen Eliminationsverfahren umformen. Im Gegensatz zu den üblichen Applets funktioniert es auch mit Matrizen beliebiger Größe und kommt (für Restklassenringe) ohne Division aus. Es sollte direkt hier angezeigt werden:<br/> <br/></content>
+    <content language="en">With this script you can perform a Gaussian Elimination. In contrast to other applets it also works with matrices of arbitrary size. You should  see it here now:<br/> <br/></content>
     <final-content>
-      &lt;script type="text/javascript" src="bin/others/gaussElimination.js">&lt;/script>
+      <script type="text/javascript" src="bin/others/gaussElimination.js"></script>
     </final-content>
   </download>
   <download> 
@@ -55,7 +55,7 @@
     <description_80 language="en">My (German) bachelor thesis about event matching</description_80>
     <payment-license>-</payment-license>
     <content language="de"></content>
-    <content language="en">Because the text is in German and to long to translate, the description is also in German:&lt;br>&lt;br></content>
+    <content language="en">Because the text is in German and to long to translate, the description is also in German:<br/><br/></content>
     <final-content language="de">In dieser Arbeit mit dem Titel "Eigenschaften eines Algorithmus zur Zuordnung von nicht eindeutigen Sende- und
 Empfangsereignissen in Ereignisprotokollen" wird untersucht, wie man aus der Reihenfolge von in Logs lokal aufgezeichneten Netzwerkpaketen berechnen kann, welche aufgezeichneten Ereignisse dasselbe (und nicht nur das inhaltlich gleiche) Paket beschreiben. Das wichtigste Ergebnis ist, dass dieses Problem NP-vollständig ist  und der  früher  am Lehrstuhl verwendete Algorithmus  (siehe Literaturverzeichnis) zur Lösung des Problems überhaupt nicht funktioniert. </final-content>
   </download>
@@ -92,7 +92,7 @@ Empfangsereignissen in Ereignisprotokollen" wird untersucht, wie man aus der Rei
     <description_80 language="en">A (German) seminar text about divisible, electronical money</description_80>
     <payment-license>-</payment-license>
     <content language="de"></content>
-    <content language="en">Because the text is in German and to long to translate, the description is also in German:&lt;br>&lt;br></content>
+    <content language="en">Because the text is in German and to long to translate, the description is also in German:<br/><br/></content>
     <final-content language="de">Die theoretische Beschreibung eines digitalen Geldsystems, das anonyme und unlinkbare Bezahlvorgänge mit teilbaren Münzen ermöglicht. </final-content>
   </download>
   <download> 
@@ -103,7 +103,7 @@ Empfangsereignissen in Ereignisprotokollen" wird untersucht, wie man aus der Rei
     <description_80 language="en">A (German) seminar text about semantically image segmentation</description_80>
     <payment-license>-</payment-license>
     <content language="de"></content>
-    <content language="en">Because the text is in German and to long to translate, the description is also in German:&lt;br>&lt;br></content>
+    <content language="en">Because the text is in German and to long to translate, the description is also in German:<br/><br/></content>
     <final-content language="de">Diese Seminararbeit erläutert das Paper "Decomposing a Scene into Geometric and Semantically Consistent Regions" von Stephen Gould, in dem beschrieben wird, wie ein Bild in semantisch und geometrisch sinnvolle Regionen segmentiert werden kann; Das heißt wie für jeden Pixel eines Bildes ermittelt werden kann, was dieser Pixel darstellt (in Goulds  Beispielsimplementation konkret, zu welcher von acht Klasse Haus, Baum, Gras, Straße... er gehört). Der Text ist eigentlich nur für die Leute interessant, deren Englisch zu schlecht ist, um das eigentliche Paper zu verstehen, oder die keine Ahnung von den üblichen Computervision-Methoden haben. </final-content>
   </download>
   <download> 
@@ -115,8 +115,8 @@ Empfangsereignissen in Ereignisprotokollen" wird untersucht, wie man aus der Rei
     <payment-license>-</payment-license>
     <size_KB>399</size_KB>
     <content language="de"></content>
-    <content language="en">Because the text is in German and to long to translate, the description is also in German:&lt;br>&lt;br></content>
-    <final-content language="de">Der Text stellt zwei Methoden zur Berechnung der Konformation von Molekülen vor. Einerseits die triviale Methode über das Tetraederverfahren, anderenseits eine komplizierte mit Hilfe der Quantenchemie.&lt;br&gt;Desweiteren gibt es ein &lt;a href="demos_de.html#moleculesim.zip">Programm&lt;a> das zeigt, dass beide so nicht funktionieren.</final-content>
+    <content language="en">Because the text is in German and to long to translate, the description is also in German:<br/><br/></content>
+    <final-content language="de">Der Text stellt zwei Methoden zur Berechnung der Konformation von Molekülen vor. Einerseits die triviale Methode über das Tetraederverfahren, anderenseits eine komplizierte mit Hilfe der Quantenchemie.<br/>Desweiteren gibt es ein <a href="demos_de.html#moleculesim.zip">Programm</a> das zeigt, dass beide so nicht funktionieren.</final-content>
   </download>
   <download> 
     <title>Chemie-Heft</title>
@@ -154,7 +154,7 @@ Empfangsereignissen in Ereignisprotokollen" wird untersucht, wie man aus der Rei
     <payment-license>UVM</payment-license>
     <size_KB>148</size_KB>
     <content language="de">Meine abgetippte Mitschrift zur Vorlesung Lineare Algebra II. </content>
-    <content language="en">(This is a German text, if you don't understand the untranslated description, you don't need it). &lt;br&gt;
+    <content language="en">(This is a German text, if you don't understand the untranslated description, you don't need it). <br/>
 Meine abgetippte Mitschrift zur Vorlesung Lineare Algebra II. </content>
   </download>
 </file>

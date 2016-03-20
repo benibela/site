@@ -4,7 +4,7 @@
   <keywords language="de">Delphi, Scherzprogramme, TCVirus, Monitor bemalen, Tastatur LEDs, Autostart, Trojaner</keywords>
   <keywords language="en">Delphi, joke programs, TCVirus, drawing on screen, keyboard LEDs, autorun</keywords>
   <prevent-content-title>YES</prevent-content-title>
-  <content><![CDATA[
+  <content language="de">
 <h2 class="scherz">Scherzprogramme programmieren</h2>
 
 <div style="text-align:center; font-size: 120%; color: red; margin: 2em">Achtung: Ich habe dieses Tutorial um das Jahr 2000 herum für Windows 98  geschrieben und inzwischen ist es größtenteils veraltet. </div>
@@ -13,24 +13,24 @@
 
            <h3 class="scherz">Grundlagen</h3>
 
-           <p>Wichtig für Scherzprogramme ist, dass nur Eingeweihte sie finden bzw. beenden können.<br>
-              Bei TCVirus ist es nicht schwer, die Komponente versteckt das Programm bei Aufruf von <span class="func">HideFromTaskManager</span> aus dem Taskmanager und die Procedure <span class="func">Hide</span> mit dem Parameter <span class="var">(form1.)handle</span> (bei Delphi enthält der Wert den Handle der Hauptform) aufruft, wird das Programm vom Bildschirm und aus der Taskleiste entfernt.<br>
-              Bei der Win-API ist es komplizierter, mit der Procedure <span class="func">RegisterServiceProcess(GetCurrentprocessID,1)</span> versteckt man das Programm vor dem Taskmanager, allerdings muss man die Procedure erst einbinden. Bei Delphi funktioniert dies mit <br>
-              <span class="code">function RegisterServiceProcess(dwProcessId,dwType:Dword):DWord; stdcall; external 'KERNEL32.DLL'</span> oberhalb des "<span class="func">implementation</span>"-Abschnitts der Unit.<br>
+           <p>Wichtig für Scherzprogramme ist, dass nur Eingeweihte sie finden bzw. beenden können.<br/>
+              Bei TCVirus ist es nicht schwer, die Komponente versteckt das Programm bei Aufruf von <span class="func">HideFromTaskManager</span> aus dem Taskmanager und die Procedure <span class="func">Hide</span> mit dem Parameter <span class="var">(form1.)handle</span> (bei Delphi enthält der Wert den Handle der Hauptform) aufruft, wird das Programm vom Bildschirm und aus der Taskleiste entfernt.<br/>
+              Bei der Win-API ist es komplizierter, mit der Procedure <span class="func">RegisterServiceProcess(GetCurrentprocessID,1)</span> versteckt man das Programm vor dem Taskmanager, allerdings muss man die Procedure erst einbinden. Bei Delphi funktioniert dies mit <br/>
+              <span class="code">function RegisterServiceProcess(dwProcessId,dwType:Dword):DWord; stdcall; external 'KERNEL32.DLL'</span> oberhalb des "<span class="func">implementation</span>"-Abschnitts der Unit.<br/>
               Leider funktioniert dies nur bei W9x und bei neueren Windowsversionen startet dann das Programm nicht mehr. TCVirus umgeht dieses Problem durch dynamisches DLL Einbinden, wie dies genau funktioniert kannst du in <a href="http://assarbad.net/stuff/ ">Assarbads DLL Tutorial</a> nachlesen.
-              <br><br>Eine andere Methode das Programm nicht im Taskmanager zu sehen. ist ALT+TAB und STRG+ALT+ENTF zu blockieren, so dass dieser nicht mehr aufgerufen wird. Dies geht über die Funktion <span class="code">SystemParametersInfo(SPI_SCREENSAVERRUNNING,1,0,0);</span><br>
+              <br/><br/>Eine andere Methode das Programm nicht im Taskmanager zu sehen. ist ALT+TAB und STRG+ALT+ENTF zu blockieren, so dass dieser nicht mehr aufgerufen wird. Dies geht über die Funktion <span class="code">SystemParametersInfo(SPI_SCREENSAVERRUNNING,1,0,0);</span><br/>
               Wieder aktiviert werden die Tasten über die gleiche Funktion, nur 0 statt 1:
-              <span class="code">SystemParametersInfo(SPI_SCREENSAVERRUNNING,0,0,0);</span><br>
-              Über die Funktion wird dafür gesorgt, dass Windows denkt, dass ein Screensaver läuft und daher die Tasten abschaltet.<br>
+              <span class="code">SystemParametersInfo(SPI_SCREENSAVERRUNNING,0,0,0);</span><br/>
+              Über die Funktion wird dafür gesorgt, dass Windows denkt, dass ein Screensaver läuft und daher die Tasten abschaltet.<br/>
               Diese Funktion funktioniert ebenfalls nur unter alten Systemen.
-              Unter den neueren NT-Systemen ist es wesentlich schwerer, zum Beispiel ist eine Möglichkeit die GINA (Graphical Identification and Authentication DLL) oder den Tastaturtreiber neuzuschreiben. <br>Man kann aber auch versuchen das Programm einfach über den Namen zu tarnen. (z.B.: ExtremWichtigerMaustreiber.exe)<br>
+              Unter den neueren NT-Systemen ist es wesentlich schwerer, zum Beispiel ist eine Möglichkeit die GINA (Graphical Identification and Authentication DLL) oder den Tastaturtreiber neuzuschreiben. <br/>Man kann aber auch versuchen das Programm einfach über den Namen zu tarnen. (z.B.: ExtremWichtigerMaustreiber.exe)<br/>
               
               Aus der Taskleiste bekommt man das Programm mit einer einfacheren API Funtkion:
               <span class="code">ShowWindow(application.handle,sw_hide)</span>.
-              Über <span class="var">Application.handle</span> bekommt man den Handle des Hauptfenstern einer Anwendung, welches für den Button auf der Taskleiste zuständig ist. Dieses wird dann versteckt.<br></p>
+              Über <span class="var">Application.handle</span> bekommt man den Handle des Hauptfenstern einer Anwendung, welches für den Button auf der Taskleiste zuständig ist. Dieses wird dann versteckt.<br/></p>
              
 
-              <p>Es muss aber möglich sein, das Programm zu beenden.<br>
+              <p>Es muss aber möglich sein, das Programm zu beenden.<br/>
               Bei TCVirus ist die schon eine Möglichkeit eingebaut, nämlich das Programm bei einer bestimmten Mausposition zu beenden.
               Diejeweilige Position kann man mit den Eigenschaften <span class="var">XMouseTest</span> und <span class="var">YMouseTest</span> festlegen.
               Die Eigenschaft <span class="var">MouseTestIntervall</span> legt fest, wie oft die Mausposition überprüft werden soll. Sobald die Maus den Punkt erreicht, wird das Ereignis <span class="var">OnMousePos</span> ausgelößt .
@@ -41,14 +41,14 @@
                 enthält danach die Mausposition.</p>
 
 
-                 <p>Man kann aber auch die Tastatur abfragen:<span class="code"><span class="func">GetAsyncKeyState</span>(<span class="value">nummer</span>)</span><br>
+                 <p>Man kann aber auch die Tastatur abfragen:<span class="code"><span class="func">GetAsyncKeyState</span>(<span class="value">nummer</span>)</span><br/>
                Für <span class="value">nummer</span> muss man den virtuelle Tastaturcode der Taste eingeben, die man überprüfen will.</p>
 
                <h3 class="scherz">Störfunktionen</h3>
 
-               <p>Eine überraschende Aktion ist es, das CD-ROM Laufwerk des Computers zu öffnen.<br>
-               TCVirus hat dafür die Methoden <span class="func">openCDTray</span> and <span class="func">closeCDTray</span> zum Öffnen und Schließen. <br> 
-               Bei der WinAPI muss man über Funktion <span class="func">mciSendString</span> dem CD-Laufwerk diese Anweisung senden:<br>
+               <p>Eine überraschende Aktion ist es, das CD-ROM Laufwerk des Computers zu öffnen.<br/>
+               TCVirus hat dafür die Methoden <span class="func">openCDTray</span> and <span class="func">closeCDTray</span> zum Öffnen und Schließen. <br/> 
+               Bei der WinAPI muss man über Funktion <span class="func">mciSendString</span> dem CD-Laufwerk diese Anweisung senden:<br/>
                <ul style="list-style: none; padding-left: 1em">
                  <li>Öffnen: <span class="code">mciSendString('Set cdaudio door open wait', nil, 0, 0);</span></li>
                  <li>Schließen: <span class="code">mciSendString('Set cdaudio door closed wait', nil, 0, 0);</span> </li>
@@ -58,9 +58,9 @@
                <p>Eine andere Möglichkeit ist es auf den Monitor zu malen. Bei der API braucht man für jeden Grafikeffekt auf dem Desktop dessen Handle, bei TCVirus steht dieser in der Eigenschaft <span class="var">canvas.handle</span>.
                Ohne TCVirus muss man ein neues Handle erzeugen, indem man <span class="code">createDc('DISPLAY',nil,nil,nil)</span> aufruft. Nach der Benutzung muss das durch createDc erzeugte Handle mit <span class="func">DeleteDc</span> freigegeben werden.</p>
 
-               <p>Hat man den Handle (oder TCVirus), kann man den Bildschirm spiegeln. <br>
+               <p>Hat man den Handle (oder TCVirus), kann man den Bildschirm spiegeln. <br/>
                Bei TCVirus kann man dies mit den Proceduren <span class="func">Canvas.MirrorHorizontal</span> und <span class="func">Canvas.Mirrorvertikal</span> tun.</p>
-               <p>Mit der Win-API ist es komplizierter:<br>
+               <p>Mit der Win-API ist es komplizierter:<br/>
                <ul style="list-style: none; padding-left: 1em">
                  <li>Horizontal:</li>
                  <li class="code" style="padding-left: 1em">StretchBlt(<span class="value">handle</span>, 0, 0, screen.width, screen.Height, <span class="value">handle</span>, 0, screen.Height, screen.Width
@@ -68,95 +68,95 @@
                  <li>Vertikal:</li>
                  <li class="code" style="padding-left: 1em">StretchBlt(<span class="value">handle</span>, 0, 0,  screen.width, screen.Height, <span class="value">handle</span>, screen.Width, 0, -screen.Width, screen.Height, SRCCOPY)</li>
                </ul>
-               Für <span class="value">handle</span> muss man den Handle des Desktops einsetzen.<br><br><br>
+               Für <span class="value">handle</span> muss man den Handle des Desktops einsetzen.<br/><br/><br/>
 
-               <p>Man kann auch Kreise, Rechtecke, Ellipsen und Linien auf den Bildschirm zeichnen.<br>
-               Bei TCVirus funktioniert das wie das normale Zeichnen mit Hilfe eines Canvas in Delphi. <br>
-               Dafür gibt es die Eigenschaft Canvas, über die zahlreiche Grafikfunktionen aufgerufen werden können.<br>
-               Da diese Funktionen in der mitgelieferten Hilfe, und auch der Delphihilfe ausreichend beschrieben sind, erkläre ich hier nur den Weg über die Win-API, der auch nicht sonderlich schwer ist:<br>
-               Mit Rectangle und Ellipse kann man ein Rechteck bzw. eine Ellispe zeichnen, indem man die Koordinaten der linken, oberen und der rechten, unteren Ecke anngibt, und zusätzlich noch als ersten Parameter den Handle des Desktops.<br>
-               Linien können über MoveToEx und LineTo gezeichnet werden. Zuerst bringt man den Cursor mit MoveToEx zur Startposition, wofür man vier Parameter braucht, den Handle, die Koordinaten und am Schluss noch eine 0. <br>
-               Mit LineTo malt man dann von den festgelegten Koordinaten zu den neu übergebenen Koordinaten, und die neuen Koordinaten werden eingestellt.<br>
-               Mit Hilfe von <span class="code">TextOut(handle,XPos,YPos,text)</span> kann ein Text ausgegeben werden. <br> 
-               Allerdings kann man mit diesen Funktionen nur schwarz-weiß zeichnen.<br>
-               Will man Farbe haben, muss man zuerst mit <span class="code">SelectObject(<span class="value">handle des Desktops</span>,CreatePen(PS_SOLID,1,<span class="value">farbe</span>)</span> einen Stift erzeugen. <br>
-               Es wird der Handle des alten Stiftes zurückgegeben, mit dem man den neuen über <span class="code">DeleteObject(SelectObject(<span class="value">handle des Desktops</span>, <span class="value">handle des alten Stiftes</span>)</span> wieder löschen kann.<br>
-               Das Setzen der Füllfarbe funktioniert ähnlich, nur schreibt man anstatt <span class="code">CreatePen</span> das: <span class="code">CreateSolidBrush(<span class="value">farbe</span>)</span>.<br>
-               Wohlgemerkt braucht man das nur, wenn man ausschließlich die Win-API benutzt, bei TCVirus kann man dessen Eigenschaften <span class="code">canvas.pen.color</span> und <span class="code">canvas.brush.color</span> verwenden. <br><br>
-               Mit der Win-API kann man aber auch Bereiche des Bildschirms invertieren:<br>
-                <span class="code" style="margin-left:1em">InvertRect(<span class="value">Handle des Desktops</span>,<span class="value">bereich</span>)</span>.<br>
-               Für <span class="value">bereich</span> muss man einen Zeiger auf eine Struktur vom Typ TRect angeben. Man kann die in Delphi über <span class="code">rect(<span class="value">links, oben, rechts, unten</span>)</span> erzeugen.<br> <br>
+               <p>Man kann auch Kreise, Rechtecke, Ellipsen und Linien auf den Bildschirm zeichnen.<br/>
+               Bei TCVirus funktioniert das wie das normale Zeichnen mit Hilfe eines Canvas in Delphi. <br/>
+               Dafür gibt es die Eigenschaft Canvas, über die zahlreiche Grafikfunktionen aufgerufen werden können.<br/>
+               Da diese Funktionen in der mitgelieferten Hilfe, und auch der Delphihilfe ausreichend beschrieben sind, erkläre ich hier nur den Weg über die Win-API, der auch nicht sonderlich schwer ist:<br/>
+               Mit Rectangle und Ellipse kann man ein Rechteck bzw. eine Ellispe zeichnen, indem man die Koordinaten der linken, oberen und der rechten, unteren Ecke anngibt, und zusätzlich noch als ersten Parameter den Handle des Desktops.<br/>
+               Linien können über MoveToEx und LineTo gezeichnet werden. Zuerst bringt man den Cursor mit MoveToEx zur Startposition, wofür man vier Parameter braucht, den Handle, die Koordinaten und am Schluss noch eine 0. <br/>
+               Mit LineTo malt man dann von den festgelegten Koordinaten zu den neu übergebenen Koordinaten, und die neuen Koordinaten werden eingestellt.<br/>
+               Mit Hilfe von <span class="code">TextOut(handle,XPos,YPos,text)</span> kann ein Text ausgegeben werden. <br/> 
+               Allerdings kann man mit diesen Funktionen nur schwarz-weiß zeichnen.<br/>
+               Will man Farbe haben, muss man zuerst mit <span class="code">SelectObject(<span class="value">handle des Desktops</span>,CreatePen(PS_SOLID,1,<span class="value">farbe</span>)</span> einen Stift erzeugen. <br/>
+               Es wird der Handle des alten Stiftes zurückgegeben, mit dem man den neuen über <span class="code">DeleteObject(SelectObject(<span class="value">handle des Desktops</span>, <span class="value">handle des alten Stiftes</span>)</span> wieder löschen kann.<br/>
+               Das Setzen der Füllfarbe funktioniert ähnlich, nur schreibt man anstatt <span class="code">CreatePen</span> das: <span class="code">CreateSolidBrush(<span class="value">farbe</span>)</span>.<br/>
+               Wohlgemerkt braucht man das nur, wenn man ausschließlich die Win-API benutzt, bei TCVirus kann man dessen Eigenschaften <span class="code">canvas.pen.color</span> und <span class="code">canvas.brush.color</span> verwenden. <br/><br/>
+               Mit der Win-API kann man aber auch Bereiche des Bildschirms invertieren:<br/>
+                <span class="code" style="margin-left:1em">InvertRect(<span class="value">Handle des Desktops</span>,<span class="value">bereich</span>)</span>.<br/>
+               Für <span class="value">bereich</span> muss man einen Zeiger auf eine Struktur vom Typ TRect angeben. Man kann die in Delphi über <span class="code">rect(<span class="value">links, oben, rechts, unten</span>)</span> erzeugen.<br/> <br/>
                Und man kann ein Bild auf den Bildschirm zeichnen:
-               <span class="code">DrawState(<span class="value">handle</span>, dss_normal nil, <span class="value">bild</span>,0,<span class="value">x, y, breite, höhe</span>, dst_bitmap);</span><br><br>.
+               <span class="code">DrawState(<span class="value">handle</span>, dss_normal nil, <span class="value">bild</span>,0,<span class="value">x, y, breite, höhe</span>, dst_bitmap);</span><br/><br/>.
 
-               Für <span class="value">handle</span> muss man den Handle des Desktops angeben.Für <span class="value">x, y</span> setzt man die Koordinaten ein. Für <span class="value">breite, höhe</span> muss man die Breite und Höhe des Bildes einfügen. Für <span class="value">bild</span> muss man den Handle des Bildes übergeben. Wenn man z.B.: in Delphi TImage verwendet, enthält die Eigenschaft Picture.Bitmap.Handle das Handle.<br>
+               Für <span class="value">handle</span> muss man den Handle des Desktops angeben.Für <span class="value">x, y</span> setzt man die Koordinaten ein. Für <span class="value">breite, höhe</span> muss man die Breite und Höhe des Bildes einfügen. Für <span class="value">bild</span> muss man den Handle des Bildes übergeben. Wenn man z.B.: in Delphi TImage verwendet, enthält die Eigenschaft Picture.Bitmap.Handle das Handle.<br/>
 
 
-               <p>Man kann auch die LEDs auf der Tastatur verändert:<br>
-               Bei TCVirus geht dies einfach über <span class="code">SetKeyBoardLEDs(numlock, caps, scroll)</span>. <br>
-               Die Parameter sind Booleanwerte (können also entweder true, oder false sein). Bei true leuchtet die Lampe, ansonsten ist sie aus. Die Parameterreihenfolge entspricht dabei der Reihenfolge der LEDs auf der Tastatur.<br>
+               <p>Man kann auch die LEDs auf der Tastatur verändert:<br/>
+               Bei TCVirus geht dies einfach über <span class="code">SetKeyBoardLEDs(numlock, caps, scroll)</span>. <br/>
+               Die Parameter sind Booleanwerte (können also entweder true, oder false sein). Bei true leuchtet die Lampe, ansonsten ist sie aus. Die Parameterreihenfolge entspricht dabei der Reihenfolge der LEDs auf der Tastatur.<br/>
 
-               Mit der API geht es so:<br>
-               Zuerst muss man eine Variable vom Typ <span class="type">pbKeyState</span>(unter Delphi = <span class="type">TKeyboardState</span>)deklarieren.<br>
+               Mit der API geht es so:<br/>
+               Zuerst muss man eine Variable vom Typ <span class="type">pbKeyState</span>(unter Delphi = <span class="type">TKeyboardState</span>)deklarieren.<br/>
 
-               Danach muss man <span class="func">GetKeyboardState</span> mit der deklarierten Variablen aufrufen, um den aktuellen Status zu erfahren. Dann kann man die LEDs mit <span class="code">keyState[<span class="value">LED Code</span>] := 0 oder 1;</span> einstellen:<br>
-               Als LED Code kann man (entsprechend der Reihenfolge auf der Tastatur) <span class="var">VK_NUMLOCK</span>, <span class="var">VK_CAPITAL</span> und <span class="var">VK_SCROLL</span> nehmen.<br>
-               Bei 0 ist sie aus, bei 1 an.<br><br>
+               Danach muss man <span class="func">GetKeyboardState</span> mit der deklarierten Variablen aufrufen, um den aktuellen Status zu erfahren. Dann kann man die LEDs mit <span class="code">keyState[<span class="value">LED Code</span>] := 0 oder 1;</span> einstellen:<br/>
+               Als LED Code kann man (entsprechend der Reihenfolge auf der Tastatur) <span class="var">VK_NUMLOCK</span>, <span class="var">VK_CAPITAL</span> und <span class="var">VK_SCROLL</span> nehmen.<br/>
+               Bei 0 ist sie aus, bei 1 an.<br/><br/>
 
-               Sehr überraschend ist es auch die Desktop-Icons auszublenden.<br>
-               Dafür benötigt man zuerst das Handle des zu den Icons gehörendem Fenster.<br>
-               Bei TCVirus wird es von der Methode GetIconDesktop zurück geliefert, bei der API geht es so:<br>
+               Sehr überraschend ist es auch die Desktop-Icons auszublenden.<br/>
+               Dafür benötigt man zuerst das Handle des zu den Icons gehörendem Fenster.<br/>
+               Bei TCVirus wird es von der Methode GetIconDesktop zurück geliefert, bei der API geht es so:<br/>
                <span class="code">handle:=FindWindowEx(FindWindowEx(FindWindow('Progman',
-nil),0,'SHELLDLL_DefView',nil),0,'SysListView32',nil);</span> (Das bedeutet, dass das Handle auf das Unterfenster namens "SysListView32" des Unterfensters "SHELLDLL_DefView" des Fensters "Progman" geholt wird, diese Namen kann man z.B.: mit <a href="tools_de.html#apiv.zip">APIV</a> herausfinden.).<br>
-               Mit dem Handle werden sie dann so unsichtbar gemacht:<br>
-               <span class="code">EnableWindow(handle ,false);<br>
-               SetWindowPos(handle,HWND_BOTTOM, 0, 0, 0, 0, SWP_HIDEWINDOW);</span><br>
-               So werden sie sichtbar gemacht:<br>
-               <span class="code">EnableWindow(handle ,false);<br>
-               SetWindowPos(handle,HWND_BOTTOM, 0, 0, 1, 1, SWP_SHOWWINDOW);</span><br><br>
+nil),0,'SHELLDLL_DefView',nil),0,'SysListView32',nil);</span> (Das bedeutet, dass das Handle auf das Unterfenster namens "SysListView32" des Unterfensters "SHELLDLL_DefView" des Fensters "Progman" geholt wird, diese Namen kann man z.B.: mit <a href="tools_de.html#apiv.zip">APIV</a> herausfinden.).<br/>
+               Mit dem Handle werden sie dann so unsichtbar gemacht:<br/>
+               <span class="code">EnableWindow(handle ,false);<br/>
+               SetWindowPos(handle,HWND_BOTTOM, 0, 0, 0, 0, SWP_HIDEWINDOW);</span><br/>
+               So werden sie sichtbar gemacht:<br/>
+               <span class="code">EnableWindow(handle ,false);<br/>
+               SetWindowPos(handle,HWND_BOTTOM, 0, 0, 1, 1, SWP_SHOWWINDOW);</span><br/><br/>
 
 
-               Man kann auch dafür sorgen, dass ein Programm automatisch bei Windowsstart geöffnet wird, dazu muss man den Namen und das Verzeichnis der Anwendung (erhält man über <span class="code">ParamStr(0)</span>) in einen bestimmten Registryschlüssel schreiben: <span class="code">HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run</span> oder <span class="code">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run</span><br>
-               Der Eintrag muss vom Typ String sein, und muss als Wert den Programmnamen haben, während der Name des Eintrages egal ist. <br>Bei Delphi gibt es Registryfunktionen, die einem die
-               komplizierten Win-API-Funktionen ersparen , näheres steht in der Delphihilfe unter TRegistry.<br>
+               Man kann auch dafür sorgen, dass ein Programm automatisch bei Windowsstart geöffnet wird, dazu muss man den Namen und das Verzeichnis der Anwendung (erhält man über <span class="code">ParamStr(0)</span>) in einen bestimmten Registryschlüssel schreiben: <span class="code">HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run</span> oder <span class="code">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run</span><br/>
+               Der Eintrag muss vom Typ String sein, und muss als Wert den Programmnamen haben, während der Name des Eintrages egal ist. <br/>Bei Delphi gibt es Registryfunktionen, die einem die
+               komplizierten Win-API-Funktionen ersparen , näheres steht in der Delphihilfe unter TRegistry.<br/>
                Man muss beachten, dass man unter NT-Systemen nur in den "Local Machine" Schlüssel schreiben kann, wenn man als Administrator angemeldet ist, dafür startet das Programm dann auch bei allen Benutzern automatisch.</p>
 
                <h3 class="scherz">Scherzprogramme zum Downloaden</h3>
 
                <p><h4><a href="bin/scherz/bw.zip">Bildwackler(150 KB)</a></h4>
 
-               Dieses Scherzprogramm spiegelt jede Sekunde zuerst den Bildschirm Vertikal, dann Horizontal und invertiert dann die Farben. Mit |Ctrl| + |SHIFT| + |A| beendet man das Programm.<br>
+               Dieses Scherzprogramm spiegelt jede Sekunde zuerst den Bildschirm Vertikal, dann Horizontal und invertiert dann die Farben. Mit |Ctrl| + |SHIFT| + |A| beendet man das Programm.<br/>
 
                <h4><a href="bin/scherz/hokus.zip">HokusScherz(737 KB):</a></h4>
 
                Das Scherzprogramm lässt über <span class="code">DrawState</span> ein Männchen auf den Bildschirm laufen, das gleich danach die Taskleiste herbeizaubert. Wenn es damit fertig ist, fangen das Startmenü und die Taskbar Notification Area hin und her laufen. Dann wird der ganze Bildschirm schwarz angemalt. Am Schluss wird der Computer beendet. 
-               Nach dem Neustarten ist das Scherzprogramm wieder da, weil es sich in diesen Autostartbereich der Registry eingetragen hat: <span class="code">HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run</span><br>
-               Der reingeschriebene Eintrag heißt LoadPower und hat den Inhalt: C:\LoadPower.exe<br>
-               Wer sich nicht in der Registry und in DOS auskennt, sollte dieses Programm nicht runterladen! Da manche Computer nicht mehr starten, muss man um Windows zum Starten zu kriegen unter DOS die Datei C:\Loadpo~1.exe löschen.<br>Danach sollte man man den Registryeintrag löschen!
+               Nach dem Neustarten ist das Scherzprogramm wieder da, weil es sich in diesen Autostartbereich der Registry eingetragen hat: <span class="code">HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run</span><br/>
+               Der reingeschriebene Eintrag heißt LoadPower und hat den Inhalt: C:\LoadPower.exe<br/>
+               Wer sich nicht in der Registry und in DOS auskennt, sollte dieses Programm nicht runterladen! Da manche Computer nicht mehr starten, muss man um Windows zum Starten zu kriegen unter DOS die Datei C:\Loadpo~1.exe löschen.<br/>Danach sollte man man den Registryeintrag löschen!
 
                <h3 class="scherz">Fremde Scherzprogramme</h3>
 
                <p><h4><a href="bin/scherz/andre.zip">Scherzprogramm von Andre Jochim (131 KB):</a></h4>
-               <a href="http://www.andre-jochim.de">www.andre-jochim.de</a><br>
+               <a href="http://www.andre-jochim.de">www.andre-jochim.de</a><br/>
 
-               Dieses Programm ist Freeware und darf beliebig verändert werden.<br>
-               Beim 1. Start kopiert es sich ins Win-Verzeichnis als sosystem.exe, erstellt die Datei C:\check.in und es trägt sich in die Registry ein und gibt eine Fehlermeldung aus, dass irgendwas nicht geklappt hat. <br>
-               Bei allen nächsten Starts prüft es, ob es die Datei check.in gibt - wenn ja: <br>
-               dann spiegelt es einige Male den Bildschirm - wieder bis zum Ausgangszustand und beendet sich dann wieder. Das &quot;Opfer&quot; sieht also jedes Mal beim Systemstart, wie der Bildschirm &quot;wackelt&quot; und wundert sich, was los ist. 
+               Dieses Programm ist Freeware und darf beliebig verändert werden.<br/>
+               Beim 1. Start kopiert es sich ins Win-Verzeichnis als sosystem.exe, erstellt die Datei C:\check.in und es trägt sich in die Registry ein und gibt eine Fehlermeldung aus, dass irgendwas nicht geklappt hat. <br/>
+               Bei allen nächsten Starts prüft es, ob es die Datei check.in gibt - wenn ja: <br/>
+               dann spiegelt es einige Male den Bildschirm - wieder bis zum Ausgangszustand und beendet sich dann wieder. Das &quot;Opfer&quot; sieht also jedes Mal beim Systemstart, wie der Bildschirm &quot;wackelt&quot; und wundert sich, was los ist. </p>
 
-               <p>Entfernen kann man das Programm vollständig so: <br>
-               C:\windows\sosystem.exe und c:\check.in löschen.<br>
-               Registry-Eintrag 'SoundMX-3G MasterSet' in <br> <span class="code">HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run</span><br>
+               <p>Entfernen kann man das Programm vollständig so: <br/>
+               C:\windows\sosystem.exe und c:\check.in löschen.<br/>
+               Registry-Eintrag 'SoundMX-3G MasterSet' in <br/> <span class="code">HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run</span><br/>
                entfernen. </p>
 
 <p style="color: #AA0000; font-weight: bold;" >Ich übernehme keine Verantwortung für eventuelle Schäden, die durch die
 Scherzprogramme entstehen können</p>
 
-<p>Wenn jemand selber Scherzprogramme programmiert hat, bitte ich sie mir per <a href="impressum_de.html#top">E-mail</a> zu zuschicken.<br>
-Bitte nur dokumentierte Scherzprogramme (wie oben) zuschicken und nicht gefährlicher als HokusScherz.<br>
+<p>Wenn jemand selber Scherzprogramme programmiert hat, bitte ich sie mir per <a href="impressum_de.html#top">E-mail</a> zu zuschicken.<br/>
+Bitte nur dokumentierte Scherzprogramme (wie oben) zuschicken und nicht gefährlicher als HokusScherz.<br/>
 Die zugeschickten Scherzprogramme können hier veröffentlicht werden.</p>
-]]></content>
-  <content language="en"><![CDATA[<h2 class="scherz">The programming of joke programs</h2>
+</content>
+  <content language="en"><h2 class="scherz">The programming of joke programs</h2>
 
   <div style="text-align:center; font-size: 120%; color: red; margin: 2em">Attention: This was written around 2000 (although translated later) for Windows 98 and is terrible outdated. </div>
 
@@ -164,49 +164,49 @@ Die zugeschickten Scherzprogramme können hier veröffentlicht werden.</p>
 
            <h3 class="scherz">Basics</h3>
 
-           <p>It is important for such joke programs that a normal user can't find and stop them.<br>
+           <p>It is important for such joke programs that a normal user can't find and stop them.<br/>
               If you use TCVirus, the hiding of the program is simple, because you can use the methode <span class="func">HideFromTaskManager</span> to remove its entry in the task manager and the methode <span class="func">Hide</span> together with the Parameter <span class="var">(form1.)handle</span> to hide it from the screen and from the task list. 
-              When you are using the Win-API this is more difficult: You can hide the program from the task manager if you call <span class="func">RegisterServiceProcess(GetCurrentprocessID,1)</span>, but at first you have to import this procedure. In Delphi you can do this with typing:<br>
-              <span class="code">function RegisterServiceProcess(dwProcessId,dwType:Dword):DWord; stdcall; external 'KERNEL32.DLL'</span>.<br>
+              When you are using the Win-API this is more difficult: You can hide the program from the task manager if you call <span class="func">RegisterServiceProcess(GetCurrentprocessID,1)</span>, but at first you have to import this procedure. In Delphi you can do this with typing:<br/>
+              <span class="code">function RegisterServiceProcess(dwProcessId,dwType:Dword):DWord; stdcall; external 'KERNEL32.DLL'</span>.<br/>
               However the program doesn't start on newer Windows versions than WinME anymore after you have written this line. TCVirus doesn't have this problem because it loads the function dynamically. How this works you can read in <a href="http://assarbad.net/stuff/ ">Assarbad's DLL Tutorial</a>.
-              <br><br>Another possibility (which also works only on W9x) to "remove" the program from the task manager is to prevent the user from calling the task manager, by simulating a screen saver: <span class="code">SystemParametersInfo(SPI_SCREENSAVERRUNNING,1,0,0);</span><br>
-              If you want to activate the keys, you can call:<br>
-              <span class="code">SystemParametersInfo(SPI_SCREENSAVERRUNNING,0,0,0);</span><br>
-              Achieving this effect on newer NT systems is much more difficult, for example you could rewrite the (Graphical Identification and Authentication DLL) or the keyboard driver.<br> But most of the users don't know the processes running on their system, so if you name your program like VeryImportantMouseDriver.exe, they will not stop them.<br><br>
+              <br/><br/>Another possibility (which also works only on W9x) to "remove" the program from the task manager is to prevent the user from calling the task manager, by simulating a screen saver: <span class="code">SystemParametersInfo(SPI_SCREENSAVERRUNNING,1,0,0);</span><br/>
+              If you want to activate the keys, you can call:<br/>
+              <span class="code">SystemParametersInfo(SPI_SCREENSAVERRUNNING,0,0,0);</span><br/>
+              Achieving this effect on newer NT systems is much more difficult, for example you could rewrite the (Graphical Identification and Authentication DLL) or the keyboard driver.<br/> But most of the users don't know the processes running on their system, so if you name your program like VeryImportantMouseDriver.exe, they will not stop them.<br/><br/>
               
               The hiding from the task list is much more simple:
                <span class="code">ShowWindow(application.handle,sw_hide)</span>.
-              With <span class="var">Application.handle</span> you get the handle of the main window of your application. After calling the procedure it will be hidden.<br></p>
+              With <span class="var">Application.handle</span> you get the handle of the main window of your application. After calling the procedure it will be hidden.<br/></p>
              
 
-              <p>However there should be a way to stop the program (of course you could kill it with a process viewer like <a href="tools_de.html#apiv.zip">APIV</a>, but then memory ressources could be lost). <br>
+              <p>However there should be a way to stop the program (of course you could kill it with a process viewer like <a href="tools_de.html#apiv.zip">APIV</a>, but then memory ressources could be lost). <br/>
               TCVirus has a built in possibility, to stop the program, when the mouse arrives a special position.
-              This Position can be set with the properties <span class="var">XMouseTest</span> and <span class="var">YMouseTest</span>.<br>
-              The property <span class="var">MouseTestIntervall</span> determines, how often the mouse position is checked. When the mouse arrives the point the event <span class="var">OnMousePos</span> is called.<br>
+              This Position can be set with the properties <span class="var">XMouseTest</span> and <span class="var">YMouseTest</span>.<br/>
+              The property <span class="var">MouseTestIntervall</span> determines, how often the mouse position is checked. When the mouse arrives the point the event <span class="var">OnMousePos</span> is called.<br/>
               Of course you can write there something else than <span class="func">close</span>.
                With the Win-API you get the mouse position over the function <span class="func">getMousePos</span>.</p>
 
 
-                 <p>You also can check the keyboard:<br><span class="code"><span class="func">GetAsyncKeyState</span>(<span class="value">number</span>)</span><br>
+                 <p>You also can check the keyboard:<br/><span class="code"><span class="func">GetAsyncKeyState</span>(<span class="value">number</span>)</span><br/>
                Instead of <span class="value">number</span> you should insert the virtual key code of the key to check.</p>
 
                <h3 class="scherz">Jokefunctions</h3>
 
-               <p>You can surprise the user with opening or closing the door of the cd drive.<br>
-               TCVirus has the methods<span class="func">openCDTray</span> and <span class="func">closeCDTray</span>. <br> 
-               If you use the Win API, you have to use these commands:<br>
+               <p>You can surprise the user with opening or closing the door of the cd drive.<br/>
+               TCVirus has the methods<span class="func">openCDTray</span> and <span class="func">closeCDTray</span>. <br/> 
+               If you use the Win API, you have to use these commands:<br/>
                <ul style="list-style: none; padding-left: 1em">
                  <li>Open: <span class="code">mciSendString('Set cdaudio door open wait', nil, 0, 0);</span></li>
                  <li>Close: <span class="code">mciSendString('Set cdaudio door closed wait', nil, 0, 0);</span> </li>
                </ul>
-               This function is declared in mmsystem, so you have to include this unit.<br>
+               This function is declared in mmsystem, so you have to include this unit.<br/>
 
-               <p>Another effect is to draw on the screen. The functions of the Win API need for each access to the screen a graphic handle of it. One handle is stored in the property <span class="var">canvas.handle</span> of TCVirus.<br>
-               You have to create a new handle, if you don't use TCVirus. To create it call: <span class="code">createDc('DISPLAY',nil,nil,nil)</span>. After using it, you can (and have to) remove it with <span class="func">DeleteDc</span>.</p><br>
+               <p>Another effect is to draw on the screen. The functions of the Win API need for each access to the screen a graphic handle of it. One handle is stored in the property <span class="var">canvas.handle</span> of TCVirus.<br/>
+               You have to create a new handle, if you don't use TCVirus. To create it call: <span class="code">createDc('DISPLAY',nil,nil,nil)</span>. After using it, you can (and have to) remove it with <span class="func">DeleteDc</span>.</p><br/>
 
-               <p>When you have a handle or TCVirus, you can mirror the screen: <br>
+               <p>When you have a handle or TCVirus, you can mirror the screen: <br/>
                TCVirus has easy methodes for this: <span class="func">Canvas.MirrorHorizontal</span> and <span class="func">Canvas.Mirrorvertikal</span>.</p>
-               <p>The Win-API is more complex:<br>
+               <p>The Win-API is more complex:<br/>
                <ul style="list-style: none; padding-left: 1em">
                  <li>Horizontally:</li>
                  <li class="code" style="padding-left: 1em">StretchBlt(<span class="value">handle</span>, 0, 0, screen.width, screen.Height, <span class="value">handle</span>, 0, screen.Height, screen.Width
@@ -214,85 +214,85 @@ Die zugeschickten Scherzprogramme können hier veröffentlicht werden.</p>
                  <li>Vertically:</li>
                  <li class="code" style="padding-left: 1em">StretchBlt(<span class="value">handle</span>, 0, 0,  screen.width, screen.Height, <span class="value">handle</span>, screen.Width, 0, -screen.Width, screen.Height, SRCCOPY)</li>
                </ul>
-               Replace <span class="value">handle</span> with the handle of the screen.<br><br><br>
+               Replace <span class="value">handle</span> with the handle of the screen.<br/><br/><br/>
 
-               <p>You can also draw circles, rectangles, ellipses or lines.<br>
-               The features of TCVirus make it possible to paint on the screen like on any normal surface in Delphi. It has got a property canvas you can use to call the numerous graphic functions.<br>
-               Because these functions are explained in the Delphi help file and in the (German) help of TCVirus, I don't repeat this descriptions here, and only name the way over the Win API which is very similar.<br>
-               The functions rectangle and ellipse draw a rectangle or an ellipse. They want 5 parameters, the handle of the desktop, the coordinate of the left top point, and the coordinates of the right bottom point.<br>
-               Lines can be created with MoveToEx and LineTo. At first you move the cursor with the function MoveToEx to the start position of the line. You need 4 parameters, handle, coordinates, null. <br>
-               Then you can call LineTo to draw the line to the destination point. <br>
-               <span class="code">TextOut(handle,XPos,YPos,text)</span> draws a text on the screen. <br> <br>
-               If you want to change the color of the figures you can use these functions:<br>
-               You can set the color of the border of the objects with: <span class="code">SelectObject(<span class="value">handle of the screen</span>,CreatePen(PS_SOLID,1,<span class="value">color</span>)</span>. <br>
-               You get the handle of the old pen which you need to delete the new own with:<span class="code">DeleteObject(SelectObject(<span class="value">handle of the screen</span>, <span class="value">handle of the old pen</span>)</span>.<br>
-               The determining of the fill color is similar: You create a brush with: <span class="code">CreateSolidBrush(<span class="value">color</span>)</span>, instead of <span class="code">CreatePen</span>.<br>
+               <p>You can also draw circles, rectangles, ellipses or lines.<br/>
+               The features of TCVirus make it possible to paint on the screen like on any normal surface in Delphi. It has got a property canvas you can use to call the numerous graphic functions.<br/>
+               Because these functions are explained in the Delphi help file and in the (German) help of TCVirus, I don't repeat this descriptions here, and only name the way over the Win API which is very similar.<br/>
+               The functions rectangle and ellipse draw a rectangle or an ellipse. They want 5 parameters, the handle of the desktop, the coordinate of the left top point, and the coordinates of the right bottom point.<br/>
+               Lines can be created with MoveToEx and LineTo. At first you move the cursor with the function MoveToEx to the start position of the line. You need 4 parameters, handle, coordinates, null. <br/>
+               Then you can call LineTo to draw the line to the destination point. <br/>
+               <span class="code">TextOut(handle,XPos,YPos,text)</span> draws a text on the screen. <br/> <br/>
+               If you want to change the color of the figures you can use these functions:<br/>
+               You can set the color of the border of the objects with: <span class="code">SelectObject(<span class="value">handle of the screen</span>,CreatePen(PS_SOLID,1,<span class="value">color</span>)</span>. <br/>
+               You get the handle of the old pen which you need to delete the new own with:<span class="code">DeleteObject(SelectObject(<span class="value">handle of the screen</span>, <span class="value">handle of the old pen</span>)</span>.<br/>
+               The determining of the fill color is similar: You create a brush with: <span class="code">CreateSolidBrush(<span class="value">color</span>)</span>, instead of <span class="code">CreatePen</span>.</p><br/>
                
-               But you only need these functions, when you are using the Win API. TCvirus has got the properties <span class="code">canvas.pen.color</span> and <span class="code">canvas.brush.color</span> which set the colors. <br><br>
+               But you only need these functions, when you are using the Win API. TCvirus has got the properties <span class="code">canvas.pen.color</span> and <span class="code">canvas.brush.color</span> which set the colors. <br/><br/>
                
-               The Win API can also invert an area of the screen:<br>
-                <span class="code" style="margin-left:1em">InvertRect(<span class="value">Handle of the screen</span>,<span class="value">area</span>)</span>.<br>
-               You have to set instead of <span class="value">area</span> a pointer on a record of the type <span class="type">TRect</span>. You can create such a record object with: <span class="code">rect(<span class="value">left, top, right, bottom</span>)</span>.<br> <br>
+               The Win API can also invert an area of the screen:<br/>
+                <span class="code" style="margin-left:1em">InvertRect(<span class="value">Handle of the screen</span>,<span class="value">area</span>)</span>.<br/>
+               You have to set instead of <span class="value">area</span> a pointer on a record of the type <span class="type">TRect</span>. You can create such a record object with: <span class="code">rect(<span class="value">left, top, right, bottom</span>)</span>.<br/> <br/>
                
                And the API can draw an image on the screen:
-               <span class="code">DrawState(<span class="value">handleS</span>, dss_normal nil, <span class="value">image</span>,0,<span class="value">x, y, width, height</span>, dst_bitmap);</span><br><br>.
+               <span class="code">DrawState(<span class="value">handleS</span>, dss_normal nil, <span class="value">image</span>,0,<span class="value">x, y, width, height</span>, dst_bitmap);</span><br/><br/>.
 
-               You should write instead of<span class="value">handleS</span> the handle of the screen, instead of image the handle of the image (for example: image1.picture.bitmap.handle, if you use a TImage), instead of (x,y) the destination coordinates, and instead of (width, height) the size of the image.<br>
+               You should write instead of<span class="value">handleS</span> the handle of the screen, instead of image the handle of the image (for example: image1.picture.bitmap.handle, if you use a TImage), instead of (x,y) the destination coordinates, and instead of (width, height) the size of the image.<br/>
 
 
-               <p>You also can change the LEDs on the keyboard:<br>
-               TCVirus has the methode <span class="code">SetKeyBoardLEDs(numlock, caps, scroll)</span> for this purpose. <br>
-               The parameter are boolean values. If you type true the LED is on, by false it is off. The order of the arguments is equal to the order of the keyboard.<br>
-               The Win API need this way:<br>
-               At first you create a variable with type <span class="type">pbKeyState</span>(in Delphi = <span class="type">TKeyboardState</span>).<br>
-               Then you call <span class="func">GetKeyboardState</span> with this variable to get the current keyboard status. You can now set the status of the LEDs with <span class="code">keyState[<span class="value">LED Code</span>] := 0 or 1;</span><:<br>
-               YOu should replace LED Code with the code of the LED (in the order of the key board:<span class="var">VK_NUMLOCK</span>, <span class="var">VK_CAPITAL</span> und <span class="var">VK_SCROLL</span>).<br><br>
+               <p>You also can change the LEDs on the keyboard:<br/>
+               TCVirus has the methode <span class="code">SetKeyBoardLEDs(numlock, caps, scroll)</span> for this purpose. <br/>
+               The parameter are boolean values. If you type true the LED is on, by false it is off. The order of the arguments is equal to the order of the keyboard.<br/>
+               The Win API need this way:<br/>
+               At first you create a variable with type <span class="type">pbKeyState</span>(in Delphi = <span class="type">TKeyboardState</span>).<br/>
+               Then you call <span class="func">GetKeyboardState</span> with this variable to get the current keyboard status. You can now set the status of the LEDs with <span class="code">keyState[<span class="value">LED Code</span>] := 0 or 1;</span><br/>
+               You should replace LED Code with the code of the LED (in the order of the key board:<span class="var">VK_NUMLOCK</span>, <span class="var">VK_CAPITAL</span> und <span class="var">VK_SCROLL</span>).<br/><br/>
 
-               Another very surprising effect is to hide the icons on the desktop.<br>
-               At first you need the handle of the window containing the icons.<br>
+               Another very surprising effect is to hide the icons on the desktop.<br/>
+               At first you need the handle of the window containing the icons.<br/>
                TCVirus returns such a handle, if you call <span class="func">GetIconDesktop</span>. 
-               If you use the Win API you can write:<br>
+               If you use the Win API you can write:<br/>
                <span class="code">handle:=FindWindowEx(FindWindowEx(FindWindow('Progman',
-nil),0,'SHELLDLL_DefView',nil),0,'SysListView32',nil);</span> (This means that the program searchs the handle of the windows "SysListView32" of windows  "SHELLDLL_DefView" of the top level Windows "Progman", these names you can find out with programs like <a href="tools_en.html#apiv.zip">APIV</a>.).<br>
-               When you have the handle you can type to hide them:<br>
-               <span class="code">EnableWindow(handle ,false);<br>
-               SetWindowPos(handle,HWND_BOTTOM, 0, 0, 0, 0, SWP_HIDEWINDOW);</span><br>
-               To show them again, write:<br>
-               <span class="code">EnableWindow(handle ,false);<br>
-               SetWindowPos(handle,HWND_BOTTOM, 0, 0, 1, 1, SWP_SHOWWINDOW);</span><br><br>
+nil),0,'SHELLDLL_DefView',nil),0,'SysListView32',nil);</span> (This means that the program searchs the handle of the windows "SysListView32" of windows  "SHELLDLL_DefView" of the top level Windows "Progman", these names you can find out with programs like <a href="tools_en.html#apiv.zip">APIV</a>.).<br/>
+               When you have the handle you can type to hide them:<br/>
+               <span class="code">EnableWindow(handle ,false);<br/>
+               SetWindowPos(handle,HWND_BOTTOM, 0, 0, 0, 0, SWP_HIDEWINDOW);</span><br/>
+               To show them again, write:<br/>
+               <span class="code">EnableWindow(handle ,false);<br/>
+               SetWindowPos(handle,HWND_BOTTOM, 0, 0, 1, 1, SWP_SHOWWINDOW);</span><br/><br/>
 
 
-               You can also let windows call the program by each start of the computer, when you know the name and position of your program. (you get this information with<span class="code">ParamStr(0)</span>) Then you write this into a certain registry key:: <span class="code">HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run</span> or <span class="code">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run</span><br>
-               The entry must be a string, and its  value must be the name and position of the program. <br>
-               Delphi has got registry methodes which make this really simple, more you can find in the Delphi help.<br>
+               You can also let windows call the program by each start of the computer, when you know the name and position of your program. (you get this information with<span class="code">ParamStr(0)</span>) Then you write this into a certain registry key:: <span class="code">HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run</span> or <span class="code">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run</span><br/>
+               The entry must be a string, and its  value must be the name and position of the program. <br/>
+               Delphi has got registry methodes which make this really simple, more you can find in the Delphi help.<br/>
                On a NT system you can't write into the "local lachine" key, when the user has no admistrator rights. But if you write in "local machine" the program is called independent of the user logged in.</p>
 
                <h3 class="scherz">Joke programs for download</h3>
 
                <p><h4><a href="bin/scherz/bw.zip">Bildwackler (150 KB)</a></h4>
 
-               This joke program mirrors each second the screen vertically and horizontally. To stop the program press |Ctrl| + |SHIFT| + |A|.<br>
+               This joke program mirrors each second the screen vertically and horizontally. To stop the program press |Ctrl| + |SHIFT| + |A|.<br/>
 
                <h4><a href="bin/scherz/hokus.zip">HokusScherz(737 KB):</a></h4>
 
                It creates a moving little magician telling a story in German, so you can't understand everything,, if you aren't able to understand this language. The magician is created with <span class="code">DrawState</span>. Then it conjures the task list, then the task button and the TNA starts moving around. After this the whole screen is painted black, and the computer is turned off.
-               After a reset the program is started again because it has written into the registry in the key: <span class="code">HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run</span><br>
-               The written value is named LoadPower and has the content C:\LoadPower.exe.<br>
+               After a reset the program is started again because it has written into the registry in the key: <span class="code">HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run</span><br/>
+               The written value is named LoadPower and has the content C:\LoadPower.exe.<br/>
                If you don't know the registry and DOS, you shouldn't download this program because some computers don't start anymore and you have to delete the file C:\Loadpo~1.exe in DOS. 
 
                <h3 class="scherz">Joke programs from other people</h3>
 
                <p><h4><a href="bin/scherz/andre.zip">Joke program of Andre Jochim (131 KB):</a></h4>
-               <a href="http://www.andre-jochim.de">www.andre-jochim.de</a><br>
+               <a href="http://www.andre-jochim.de">www.andre-jochim.de</a><br/>
 
-               This program is freeware and you are allowed to change it.<br>
-               At the first start it copies itself into the Win-directory named sosystem.exe, creates the file C:\check.in, writes into the Registry, and shows an error message something hasn't worked.<br>
+               This program is freeware and you are allowed to change it.<br/>
+               At the first start it copies itself into the Win-directory named sosystem.exe, creates the file C:\check.in, writes into the Registry, and shows an error message something hasn't worked.<br/>
 
-               You can delete it by removing the files <br>
-               C:\windows\sosystem.exe and c:\check.in. and the value 'SoundMX-3G MasterSet' in <br> <span class="code">HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run</span>. </p>
+               You can delete it by removing the files <br/>
+               C:\windows\sosystem.exe and c:\check.in. and the value 'SoundMX-3G MasterSet' in <br/> <span class="code">HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run</span>. </p>
 
 <p style="color: #AA0000; font-weight: bold;" >I don't take responsibility for any damages created by these programs by pure chance. These programs are given "as is" without any guarantee.</p>
 
 <p>If you have written a joke program, please send it to <a href="impressum_en.html#top">me</a>, if you want, that it is published here. 
-Please send only programs documented like the ones above and which are no more risky than HokusScherz.</p>]]></content>
+Please send only programs documented like the ones above and which are no more risky than HokusScherz.</p></content>
 </file>

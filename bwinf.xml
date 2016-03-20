@@ -1,75 +1,75 @@
-﻿<file>
+<file>
   <description language="de">Auf dieser Seite findet man meine Einsendungen zum Bundeswettbewerbinformatik</description>
   <description language="en">On this page you can find my submissions to the German national programming contest Bundeswettbewerbinformatik</description>
   <keywords language="">BWInf Benito van der Zander</keywords>
-  <content language="de">Auf dieser Seite findet man meine Einsendungen zum Bundeswettbewerbinformatik.&lt;br&gt;
-  Alle Dateien enthalten den Quellcode, die ausführbaren Programme und die Dokumentation.&lt;br&gt; Die Programme, außer bei 25.2, sind in Delphi programmiert.</content>
-  <content language="en">On this page you can find my submissions to the German national programming contest Bundeswettbewerbinformatik.&lt;br&gt;
-  All files contains the source, the executable and a documentation of the program. &lt;br&gt;They are written with Delphi, only 25.2 is in FreePascal.&lt;br&gt;Since this is a German contest and all programs as well as the whole documentation is in German, the remaining of this page is in German, too.</content>
+  <content language="de">Auf dieser Seite findet man meine Einsendungen zum Bundeswettbewerbinformatik.<br/>
+  Alle Dateien enthalten den Quellcode, die ausführbaren Programme und die Dokumentation.<br/> Die Programme, außer bei 25.2, sind in Delphi programmiert.</content>
+  <content language="en">On this page you can find my submissions to the German national programming contest Bundeswettbewerbinformatik.<br/>
+  All files contains the source, the executable and a documentation of the program. <br/>They are written with Delphi, only 25.2 is in FreePascal.<br/>Since this is a German contest and all programs as well as the whole documentation is in German, the remaining of this page is in German, too.</content>
   <download-dir>bin/bwinf</download-dir>
   <download> 
     <title>25. Endrunde</title>
     <file>25_3.7z</file>
     <description_80 language="de">Wasserfluss im Gebirge</description_80>
     <size_KB>962</size_KB>
-    <content>Bei der Endrunde wird normalerweise nichts programmiert, aber ich fand eine Aufgabe so interessant, dass ich sie anschließend Zuhause doch noch programmiert habe.&lt;br>Das Programm nimmt eine Höhenkarte von einem Gebirge entgegen und berechnet, wie hoch das Wasser in den Tälern steigen kann.</content>
+    <content>Bei der Endrunde wird normalerweise nichts programmiert, aber ich fand eine Aufgabe so interessant, dass ich sie anschließend Zuhause doch noch programmiert habe.<br/>Das Programm nimmt eine Höhenkarte von einem Gebirge entgegen und berechnet, wie hoch das Wasser in den Tälern steigen kann.</content>
   </download> 
   <download> 
     <title>25. Runde 2</title>
     <file>25_2.7z</file>
     <description_80 language="de">Ein Bidoku als Variante eines Sudokus und das Erkennen von mathematischen Folgen</description_80>
     <size_KB>1658</size_KB>
-    <content>Bei einem Bidoku muss ein (bereits teilweise) Gitter mit Einsen und Nullen so gefüllt werden, dass von beiden die gleiche Anzahl der Ziffer vorliegt. Das Programm erstellt und löst teilweise gefüllte Bidokus.&lt;br&gt; Das Folgenprogramm erkennt sehr viele logische Folgen, durch Untersuchung der eingegebenen Folge und Vergleich mit einem automatisch generiertem Folgenlexikon.&lt;br&gt;Die Dokumentation liegt in den Latexformaten tex und dvi vor (118 Seiten). Die Programme sind mit FreePascal/Lazarus programmiert.</content>
+    <content>Bei einem Bidoku muss ein (bereits teilweise) Gitter mit Einsen und Nullen so gefüllt werden, dass von beiden die gleiche Anzahl der Ziffer vorliegt. Das Programm erstellt und löst teilweise gefüllte Bidokus.<br/> Das Folgenprogramm erkennt sehr viele logische Folgen, durch Untersuchung der eingegebenen Folge und Vergleich mit einem automatisch generiertem Folgenlexikon.<br/>Die Dokumentation liegt in den Latexformaten tex und dvi vor (118 Seiten). Die Programme sind mit FreePascal/Lazarus programmiert.</content>
   </download> 
   <download> 
     <title>25. Runde 1</title>
     <file>25_1.7z</file>
     <description_80 language="de">Einkaufsoptimierung, Topologische Sortierung und ein Blackboxspiel</description_80>
     <size_KB>369</size_KB>
-    <content>Die Einkaufsoptimierung berechnet die optimale Kaufreihenfolge für ein festen monatliches Budget.&lt;br&gt;Beim Blackboxspiel muss man die Programmierung eines endlichen Automaten mit 3 Zuständen herausfinden.&lt;br&gt;Die Dokumentation liegt in den Latexformaten tex und dvi vor. (48 Seiten)&lt;br&gt;Bewertung: 3|5|5</content>
+    <content>Die Einkaufsoptimierung berechnet die optimale Kaufreihenfolge für ein festen monatliches Budget.<br/>Beim Blackboxspiel muss man die Programmierung eines endlichen Automaten mit 3 Zuständen herausfinden.<br/>Die Dokumentation liegt in den Latexformaten tex und dvi vor. (48 Seiten)<br/>Bewertung: 3|5|5</content>
   </download> 
   <download> 
     <title>24. Runde 2</title>
     <file>24_2.7z</file>
     <description_80 language="de">Sichtbarkeitsberechnungen in Polygonen und Teilfolgenzählen</description_80>
     <size_KB>1648</size_KB>
-    <content>Bei der Sichtbarkeitsberechnung werden alle von einem Weg durch ein konvexes Polygon mit Löchern sichtbaren Bereiche berechnet.&lt;br&gt;Die Folgenzählung zählt alle Teilfolgen eines Textes, die die Buchstabenreihenfolge erhalten (aber mit Auslassungen).&lt;br&gt;Die Dokumentation liegt in den Latexformaten tex und dvi vor.&lt;br&gt;Bewertung: 5|6</content>
+    <content>Bei der Sichtbarkeitsberechnung werden alle von einem Weg durch ein konvexes Polygon mit Löchern sichtbaren Bereiche berechnet.<br/>Die Folgenzählung zählt alle Teilfolgen eines Textes, die die Buchstabenreihenfolge erhalten (aber mit Auslassungen).<br/>Die Dokumentation liegt in den Latexformaten tex und dvi vor.<br/>Bewertung: 5|6</content>
   </download> 
   <download> 
     <title>24. Runde 1</title>
     <file>24_1.7z</file>
     <description_80 language="de">Meßwertauswertung, Folienentschlüsselung und Fehlzeitendatenbank</description_80>
     <size_KB>284</size_KB>
-    <content>Bei der Meßwertauswertung werden die Faktoren einer vorgegebenen Formel berechnet.&lt;br&gt;Bei der Folienentschlüsselung wird aus mehreren Folien, die nur durch Überlagung mit einer unbekannten Folie gelesen werden können, diese unbekannte Folie berechnet.&lt;br&gt;Die letzte Aufgabe ist die Strukturbeschreibung einer dafür nötigen Datenbank Entwurf und die moralische Bewertung davon. (ohne Programm)&lt;br&gt;Die Dokumentation besteht aus Worddokumenten.&lt;br&gt;Bewertung: 5|5|5</content>
+    <content>Bei der Meßwertauswertung werden die Faktoren einer vorgegebenen Formel berechnet.<br/>Bei der Folienentschlüsselung wird aus mehreren Folien, die nur durch Überlagung mit einer unbekannten Folie gelesen werden können, diese unbekannte Folie berechnet.<br/>Die letzte Aufgabe ist die Strukturbeschreibung einer dafür nötigen Datenbank Entwurf und die moralische Bewertung davon. (ohne Programm)<br/>Die Dokumentation besteht aus Worddokumenten.<br/>Bewertung: 5|5|5</content>
   </download> 
   <download> 
     <title>23. Runde 2</title>
     <file>23_2.7z</file>
     <description_80 language="de">Kugelkleben und Geheimbotschaften in Internetseitenstruktur</description_80>
     <size_KB>4667</size_KB>
-    <content>Beim Kugelkleben wird die Struktur berechnet, die in 2D und 3D entsteht, wenn viele Kugel an einander kleben bleiben.&lt;br&gt;Bei der Geheimbotschaft wird eine Internetseite erstellt, deren Linkstruktur einen Graphen ergibt, der eine geheime Botschaft transportiert.&lt;br&gt;Die Dokumentation besteht aus Worddokumenten.&lt;br&gt;Bewertung:5|7</content>
+    <content>Beim Kugelkleben wird die Struktur berechnet, die in 2D und 3D entsteht, wenn viele Kugel an einander kleben bleiben.<br/>Bei der Geheimbotschaft wird eine Internetseite erstellt, deren Linkstruktur einen Graphen ergibt, der eine geheime Botschaft transportiert.<br/>Die Dokumentation besteht aus Worddokumenten.<br/>Bewertung:5|7</content>
   </download> 
   <download> 
     <title>23. Runde 1</title>
     <file>23_1.7z</file>
     <description_80 language="de">Wasserdichte eines Käses, Rechtecke zählen und Wörterketten</description_80>
     <size_KB>687</size_KB>
-    <content>Beim Käse wird ein Weg durch mehrere übereinander liegende Rasterlabyrinthe vom obersten zum untersten gesucht, wobei keine Schicht von einer weiter unten liegenden betreten werden darf.&lt;br&gt;
-    Bei den Rechtecken werden in einem monochromen Rasterbild alle sichtbaren Rechtecke gezählt.&lt;br&gt;
-    Bei den Wörter soll eine möglichstlange Wörterkette gebildet werden, bei der die Anfangs- und Endbuchstaben zweier auf einander folgender Wörter gleich sein soll.&lt;br&gt;Die Dokumentation besteht aus Worddokumenten.&lt;br&gt;Bewertung:5|4|4</content>
+    <content>Beim Käse wird ein Weg durch mehrere übereinander liegende Rasterlabyrinthe vom obersten zum untersten gesucht, wobei keine Schicht von einer weiter unten liegenden betreten werden darf.<br/>
+    Bei den Rechtecken werden in einem monochromen Rasterbild alle sichtbaren Rechtecke gezählt.<br/>
+    Bei den Wörter soll eine möglichstlange Wörterkette gebildet werden, bei der die Anfangs- und Endbuchstaben zweier auf einander folgender Wörter gleich sein soll.<br/>Die Dokumentation besteht aus Worddokumenten.<br/>Bewertung:5|4|4</content>
   </download> 
   <download> 
     <title>21. Runde 2</title>
     <file>21_2.7z</file>
     <description_80 language="de">Fahrkartenautomat, Brandubh und Ampelsteuerung</description_80>
     <size_KB>2143</size_KB>
-    <content>Beim Automaten sollen Münzen möglichst sinnvoll gewechselt werden, so dass immer Wechselgeld übrig bleibt.&lt;br&gt;Brandubh ist ein mittelalterliches Spiel, ähnlich wie Schach. (aus irgendeinem seltsamen Grund startet das Programm nicht mehr)&lt;br&gt;Bei der Ampelsteuerung werden die Ampel an einer Kreuzung über  obskure Programmiersprachen S und T gesteuert.&lt;br&gt;Die Dokumentation besteht aus Worddokumenten.&lt;br&gt;Bewertung:4|4|6</content>
+    <content>Beim Automaten sollen Münzen möglichst sinnvoll gewechselt werden, so dass immer Wechselgeld übrig bleibt.<br/>Brandubh ist ein mittelalterliches Spiel, ähnlich wie Schach. (aus irgendeinem seltsamen Grund startet das Programm nicht mehr)<br/>Bei der Ampelsteuerung werden die Ampel an einer Kreuzung über  obskure Programmiersprachen S und T gesteuert.<br/>Die Dokumentation besteht aus Worddokumenten.<br/>Bewertung:4|4|6</content>
   </download> 
   <download> 
     <title>21. Runde 1</title>
     <file>21_1.7z</file>
     <description_80 language="de">Riegel, Bienen- und Schiffswegsuche</description_80>
     <size_KB>1041</size_KB>
-    <content>Bei den Riegeln soll eine bestimmte Schalterkonfiguration aus einer anderen erzeugt werden, wobei ein Riegel nur unter bestimmten Bedingungen werden kann.&lt;br&gt;Bei der Biene soll ein Weg durch ein hexagonales Gitter gesucht werden.&lt;br&gt;Beim Schiff soll ein möglichst kurzer Weg mit wenigen Richtungsänderungen durch ein rechteckiges Gitter gesucht werden.&lt;br&gt;Die Dokumentation besteht aus Worddokumenten.&lt;br&gt;Bewertung:5|5|5</content>
+    <content>Bei den Riegeln soll eine bestimmte Schalterkonfiguration aus einer anderen erzeugt werden, wobei ein Riegel nur unter bestimmten Bedingungen werden kann.<br/>Bei der Biene soll ein Weg durch ein hexagonales Gitter gesucht werden.<br/>Beim Schiff soll ein möglichst kurzer Weg mit wenigen Richtungsänderungen durch ein rechteckiges Gitter gesucht werden.<br/>Die Dokumentation besteht aus Worddokumenten.<br/>Bewertung:5|5|5</content>
   </download> 
 </file>

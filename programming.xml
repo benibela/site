@@ -1,9 +1,9 @@
-﻿<file>
+<file>
   <description language="de">Übersicht über meine Seiten zur Programmierung auf BeniBela online. Sie linkt zu: Komponenten, Quellcodes und ein Tutorial über die Programmierung von Scherzprogrammen</description>
   <description language="en">Overview about my pages concerning programming on BeniBela online. From here you can go to: components, sources und a tutorial about the programming of joke programs.</description>
   <keywords language="de">Delphi, Komponenten,  Programmierung, Quellcodes, Scherzprogramme programmieren, Tutorial</keywords>
   <keywords language="en">Delphi, components,  programming, sources, programming of joke programs, tutorial</keywords>
-  <content language="de">Dies ist nur eine Übersichtseite für meine Seiten zur Programmierung:&lt;br&gt;</content>
-  <content language="en">This page only exists for an overview about my page concerning programming.&lt;br&gt;</content>
-  <final-content><![CDATA[<br><br><br><br><br><br><br><br><br><br>]]></final-content>
+  <content language="de">Dies ist nur eine Übersichtseite für meine Seiten zur Programmierung:<br/></content>
+  <content language="en">This page only exists as an overview about my pages concerning programming.<br/></content>
+  <final-content><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></final-content>
 </file>

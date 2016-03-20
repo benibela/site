@@ -71,11 +71,11 @@
            
            
            for $subfileinfo in $fileinfo/fileinfo[basefilename != ""] 
-           let $subfile := doc($subfileinfo/basefilename || ".xml")
+           let $subfile := local:language-filter( doc($subfileinfo/basefilename || ".xml")/file )
            return (
              <br/>,
              if (exists($subfile/download)) then (
-               <h3>{$subfileinfo/title}</h3>,
+               <h3>{$subfileinfo/title/node()}</h3>,
                <ul style="padding-left:2em; list-style-position:inside;">{
                  for $download in $subfile/download return
                    <li><a href="{local:file-url($subfileinfo, $language) || '#' || $download/(id,file)[1] }">{$download/title/text()}</a>: {$download/description_80/text()}</li>
@@ -92,14 +92,14 @@
              <th>Titel</th>
              <th>Beschreibung</th>
              {
-               ($file/download)[1] / (
+               ($file/download)[1] ! (
                  {"data": language, "de": "Sprache"},
                  {"data": prog-language, "de": "Sprache"},
                  {"data": payment, "de": "Typ"},
                  {"data": source, "de": "Source"},
                  {"data": source-license, "de": "Lizenz"},
                  {"data": payment-license, "de": "Lizenz"}
-               ) [. instance of node()] / <th>{.("de")}</th>
+               ) [.("data") instance of node()] ! <th>{.("de")}</th>
              }
            </tr>
            </thead><tbody>
@@ -111,7 +111,7 @@
                <tr>
                  <td><a href="($download/linkTo, '#' || $download-id)[1]">{$download/title/text()}</a></td>
                  <td>{$download/description_80}</td>
-                 {$download/(language, prog-language, payment, source, source-license, payment-license )/<td>{.}</td>}
+                 {$download!(language, prog-language, payment, source, source-license, payment-license )!<td>{.}</td>}
                </tr>
              )
            }
@@ -167,7 +167,7 @@
                  )}
                  
                  {for $downloadFile in $download/file 
-                  let $downloadsize := system(x" sh -c 'ls -s _publish/{$file/download-dir}/{$downloadFile} | grep -o -E ^*[0-9.]*")
+                  let $downloadsize := system(x" sh -c 'ls -s _publish/{$file/download-dir}/{$downloadFile} | grep -o -E ^*[0-9.]*'")
                  return (
                    if ($downloadsize = "") then <b style="color:red;font-size:150%">FILE NOT FOUND</b> else (),
                    <br/>,<br/>,
@@ -185,7 +185,7 @@
            <span id="fileName">www.benibela.de/{local:file-url()}</span><br/>{
 (:          {$language/contentlastchange/node()}: {$file/$lastModified}<br/> :)
 (:           {$language/pagelastchange/node()}: {$$lastModified}<br/>:)()}
-           {$language/authorship/node()} <div style="display: inline">{$language/homepageOf} <a href="https://plus.google.com/u/0/105999681299848220119?rel=author" rel="author">Benito van der Zander</a></div>
+           {$language/authorship/node()} <div style="display: inline">{$language/homepageOf/node()} <a href="https://plus.google.com/u/0/105999681299848220119?rel=author" rel="author">Benito van der Zander</a></div>
         </div>
       </div>	
 

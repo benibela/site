@@ -3,10 +3,10 @@
   <description language="en">On this page you can find some tools: A program to get information about others, a file parser, GUI Tools for the 3D Game Studio, a mathematics program and a paint program.</description>
   <keywords language="de">Delphi, download, Freeware, Shareware, Tools</keywords>
   <keywords language="en">Delphi, APIV, download, freeware</keywords>
-  <content language="de"><![CDATA[Alle hier vorgestellten Programme laufen unter allen Windowsversionen (> 3.11), sofern es nicht  anders angegeben ist. <br>
-Die Sprachkürzel "de" und "en" an einem Programm geben an, in welchen Sprachen es verfügbar ist. Ist eines der beiden eingeklammert, so ist nur die Dokumentation in dieser Sprache verfügbar. Bei einem Open Source Programm steht in der rechten Spalte die Abkürzung des Namens der Lizenz, die für den Quellcode gewählt wurde, ansonsten steht dort ein Minus.]]></content>
-<content language="en"><![CDATA[Every tool published on this page is able to run on any Windows system (> 3.11), if there is no contradiction mentioned. <br>
-The language codes "de" and "en" specify which languages are supported. If one of them is in parentheses, only the documentation exists in this language, not the program. The "source" column contains the license under which the source of the program is published, or "-" for closed source programs.]]></content>
+  <content language="de">Alle hier vorgestellten Programme laufen unter allen Windowsversionen (> 3.11), sofern es nicht  anders angegeben ist. <br>
+Die Sprachkürzel "de" und "en" an einem Programm geben an, in welchen Sprachen es verfügbar ist. Ist eines der beiden eingeklammert, so ist nur die Dokumentation in dieser Sprache verfügbar. Bei einem Open Source Programm steht in der rechten Spalte die Abkürzung des Namens der Lizenz, die für den Quellcode gewählt wurde, ansonsten steht dort ein Minus.</content>
+<content language="en">Every tool published on this page is able to run on any Windows system (> 3.11), if there is no contradiction mentioned. <br>
+The language codes "de" and "en" specify which languages are supported. If one of them is in parentheses, only the documentation exists in this language, not the program. The "source" column contains the license under which the source of the program is published, or "-" for closed source programs.</content>
   <download-dir>bin/tools</download-dir>
   <download> 
     <title>VideLibri</title>
@@ -19,8 +19,8 @@ The language codes "de" and "en" specify which languages are supported. If one o
     <payment>Freeware</payment>
     <source>GPL</source>
     <year>2006 - present</year>
-    <content language="de">VideLibri ist auf einer &lt;a href="http://www.videlibri.de/" rel="nofollow">eigenen Domain&lt;/a> gehostet.</content>
-    <content language="en">VideLibri is hosted on &lt;a href="http://www.videlibri.de/index_en.html" rel="nofollow">its own page&lt;/a>.</content>    
+    <content language="de">VideLibri ist auf einer <a href="http://www.videlibri.de/" rel="nofollow">eigenen Domain</a> gehostet.</content>
+    <content language="en">VideLibri is hosted on <a href="http://www.videlibri.de/index_en.html" rel="nofollow">its own page</a>.</content>    
   </download> 
 
   <download> 
@@ -32,8 +32,8 @@ The language codes "de" and "en" specify which languages are supported. If one o
     <payment>Freeware</payment>
     <source>GPL</source>
     <year>(2008 - ) 2012 - present</year>
-    <content language="de">Xidel ist auf &lt;a href="http://www.videlibri.de/xidel.html" rel="nofollow">einer eigenen Seite&lt;/a> gehostet .</content>
-    <content language="en">Xidel is hosted on &lt;a href="http://www.videlibri.de/xidel.html" rel="nofollow">its own page&lt;/a>.</content>    
+    <content language="de">Xidel ist auf <a href="http://www.videlibri.de/xidel.html" rel="nofollow">einer eigenen Seite</a> gehostet .</content>
+    <content language="en">Xidel is hosted on <a href="http://www.videlibri.de/xidel.html" rel="nofollow">its own page</a>.</content>    
   </download> 
 
   <download> 
@@ -45,8 +45,8 @@ The language codes "de" and "en" specify which languages are supported. If one o
     <payment>Freeware</payment>
     <source>GPL</source>
     <year>2009 - present</year>
-    <content language="de">TeXstudio ist auf einer eigenen &lt;a href="http://www.texstudio.org" rel="nofollow">Domain&lt;/a> gehostet.</content>
-    <content language="en">TeXstudio is hosted on &lt;a href="http://www.texstudio.org" rel="nofollow">texstudio.org&lt;/a>.</content>
+    <content language="de">TeXstudio ist auf einer eigenen <a href="http://www.texstudio.org" rel="nofollow">Domain</a> gehostet.</content>
+    <content language="en">TeXstudio is hosted on <a href="http://www.texstudio.org" rel="nofollow">texstudio.org</a>.</content>
   </download> 
 
   <download> 
@@ -61,14 +61,14 @@ The language codes "de" and "en" specify which languages are supported. If one o
     <payment>Freeware</payment>
     <source>GPL</source>
     <year>2002, 2008</year>
-    <content language="de"><![CDATA[APIM ist ähnlich wie Spyxx und <a href="http://assarbad.net/">EDA</a> ein Programm mit dessen Hilfe man Attribute von anderen Anwendungen lesen und setzen kann.<br>
+    <content language="de">APIM ist ähnlich wie Spyxx und <a href="http://assarbad.net/">EDA</a> ein Programm mit dessen Hilfe man Attribute von anderen Anwendungen lesen und setzen kann.<br>
 Im Gegensatz zu EDA ist APIM mehr auf das Verändern von Attributen ausgelegt, als auf das reine Auslesen.<br>
 Der <a href="bin/tools/source/apim.zip">Quellcode</a> steht unter der GPL.<br>
-APIV hat folgende Features:]]></content>
-    <content language="en"><![CDATA[APIM is like Spyxx and <a href="http://assarbad.net/">EDA</a> a program which can read and set attributes of other windows, but in comparison to them APIM has much more features for changing properties.
+APIV hat folgende Features:</content>
+    <content language="en">APIM is like Spyxx and <a href="http://assarbad.net/">EDA</a> a program which can read and set attributes of other windows, but in comparison to them APIM has much more features for changing properties.
     <br>The <a href="bin/tools/source/apim.zip">source</a> is GPLed.
     <br>APIM has got these functions: 
-]]></content>
+</content>
     <features language="de">
       <feature>Auflisten von Fenstern und Prozessen.</feature>
       <feature>Fensterauswahl per Maus und Miniaturbildschirm</feature>
@@ -85,7 +85,7 @@ APIV hat folgende Features:]]></content>
       <feature>Es kann die Priorität von Prozessen auslesen und ändern.</feature>
       <feature>Es kann Prozesse beenden und ihre Speicherbelegung anzeigen.</feature>
       <feature>Es kann einige Systeminformationen auslesen.</feature>
-      <feature>Es kann Passwörter auslesen (nur unter 9x Systemen) (&lt;em>Achtung: Manche Virenscanner halten es deshalb für Spyware&lt;/em>).</feature>
+      <feature>Es kann Passwörter auslesen (nur unter 9x Systemen) (<em>Achtung: Manche Virenscanner halten es deshalb für Spyware</em>).</feature>
       <feature>Es stellt alle Zahlen wahlweise hexadezimal oder dezimal dar.</feature>
       <feature>Es kann Fenster transparent machen und den Transparentstatus auslesen (funktioniert nur unter 2000/XP/(Vista?)).</feature>
       <feature>und mehr</feature>
@@ -106,7 +106,7 @@ APIV hat folgende Features:]]></content>
       <feature>It can close processes.</feature>
       <feature>It can get and set the priority of processes.</feature>
       <feature>It can read and write some properties of the system.</feature>
-      <feature>It can read passwords (only on 9x systems) (&lt;em>Attention:  This causes some scanners to identify it as spyware&lt;/em>).</feature>
+      <feature>It can read passwords (only on 9x systems) (<em>Attention:  This causes some scanners to identify it as spyware</em>).</feature>
       <feature>It can read and set the status of the transparent effects of windows (only on 2000/XP/(Vista?)).</feature>
       <feature>and more</feature>    
     </features>
@@ -135,10 +135,10 @@ APIV hat folgende Features:]]></content>
     <language>de, en</language>
     <payment>Freeware</payment>
     <source>-</source>
-    <content language="de">In einer natürlichen Umgebung (im Freien) ändert sich der Farbton des Lichtes je nach Uhrzeit und beeinflusst dabei körperliche Prozesse (z.B.: Steuerung der inneren Uhr, Aufmerksamkeit). Der Computerbildschirm hat jedoch üblicherweise immer dieselbe Helligkeit und stört deshalb den normalen Biorhytmus. &lt;br>
-	Sun-Simulator ändert nun die Einstellungen der Grafikkarte zeitlich, so dass die Farbe des Bildschirms wieder  einigermaßen mit der des Sonnenlichtes übereinstimmt.&lt;br>Features:</content>
-   <content language="en">In a natural environment (outdoors) the light changes it shade of color during the day and controls biological processes (e.g. the sense of time). However, the computer monitor always has the same shade of color and thus disturbs the biorhythms.&lt;br>
-   Sun-Simulator solves this problem by altering the settings of the graphic card with the course of day and year, so that the monitor becomes more similar to the sun light. &lt;br>
+    <content language="de">In einer natürlichen Umgebung (im Freien) ändert sich der Farbton des Lichtes je nach Uhrzeit und beeinflusst dabei körperliche Prozesse (z.B.: Steuerung der inneren Uhr, Aufmerksamkeit). Der Computerbildschirm hat jedoch üblicherweise immer dieselbe Helligkeit und stört deshalb den normalen Biorhytmus. <br>
+	Sun-Simulator ändert nun die Einstellungen der Grafikkarte zeitlich, so dass die Farbe des Bildschirms wieder  einigermaßen mit der des Sonnenlichtes übereinstimmt.<br>Features:</content>
+   <content language="en">In a natural environment (outdoors) the light changes it shade of color during the day and controls biological processes (e.g. the sense of time). However, the computer monitor always has the same shade of color and thus disturbs the biorhythms.<br>
+   Sun-Simulator solves this problem by altering the settings of the graphic card with the course of day and year, so that the monitor becomes more similar to the sun light. <br>
    Features:</content>
     <features language="de">
 	  <feature>Standardeinstellung entspricht ungefähr dem Sonnenlicht</feature>
@@ -177,8 +177,8 @@ APIV hat folgende Features:]]></content>
     <payment>Freeware</payment>
     <source>GPL</source>
     <size_KB>68</size_KB>
-    <content language="de">"Just another XML Processor" ist eine Skriptsprache mit Interpreter, die zur Umwandlung von xml-Dateien in andere Formate benutzt werden kann.&lt;br>Die einzigste Systemanforderung ist Java JRE 1.5</content>
-    <content language="en">"Just another XML Processor" is a script language with interpreter. Its purpose is the simple processing of XML files and the transforming to other formats.&lt;br>You only need Java JRE 1.5 to run the program.</content>
+    <content language="de">"Just another XML Processor" ist eine Skriptsprache mit Interpreter, die zur Umwandlung von xml-Dateien in andere Formate benutzt werden kann.<br>Die einzigste Systemanforderung ist Java JRE 1.5</content>
+    <content language="en">"Just another XML Processor" is a script language with interpreter. Its purpose is the simple processing of XML files and the transforming to other formats.<br>You only need Java JRE 1.5 to run the program.</content>
     <features language="de">
       <feature>Es können mehrere XML Dateien geladen werden.</feature>
       <feature>Die Ausgabe einer XML-Datei kann in mehrere Dateien auf einmal und in unterschiedlichen Kodierungen erfolgen.</feature>
@@ -243,11 +243,11 @@ APIV hat folgende Features:]]></content>
     <language>en</language>
     <payment>Freeware</payment>
     <source>open</source>
-    <content language="de">Dies ist ein inverser Regexgenerator, der zu einen gegebenen regulären Ausdruck sämtliche String berechnet, die den Ausdruck erfüllen. Er unterstützt fast alle übliche Regexausdrücke (wie z.B.: "([abc]{2,3}|x+)\1")&lt;br>  
-Es arbeitet in 2-Phasen, zuerst wird ein Ausdruck in mehrere vereinfachte Ausdrücke fester Länge zerlegt, die nur noch Zeichenklassen und Einzelzeichen enthalten, und dann werden alle Kombinationen von Zeichen generiert. Dadurch kann es mehrere Millionen Strings pro Sekunde berechnen, hat aber Probleme mit Unicode. &lt;br>
-&lt;br>Es ist ein C++ Kommandozeilen-Programm, läuft unter Linux (ich habe es nur unter 64 Bit compilert)  und Windows, benötigt aber Qt. </content>
-    <content language="en">This is an inverse regex matcher that generates all strings which match a given regular expression. It supports all major expressions (e.g. "([abc]{2,3}|x+)\1"). &lt;br> 
-It runs in two steps: First it splits the regex to a set of equivalent regexs that only use character classes and match strings of fixed size. Then it lists all possible ways to choose characters from the sets. This last step is heavily optimized, so it can generate several million strings per second. However, it has no real unicode support, since unicode characters have no fixed length.  &lt;br> 
+    <content language="de">Dies ist ein inverser Regexgenerator, der zu einen gegebenen regulären Ausdruck sämtliche String berechnet, die den Ausdruck erfüllen. Er unterstützt fast alle übliche Regexausdrücke (wie z.B.: "([abc]{2,3}|x+)\1")<br>  
+Es arbeitet in 2-Phasen, zuerst wird ein Ausdruck in mehrere vereinfachte Ausdrücke fester Länge zerlegt, die nur noch Zeichenklassen und Einzelzeichen enthalten, und dann werden alle Kombinationen von Zeichen generiert. Dadurch kann es mehrere Millionen Strings pro Sekunde berechnen, hat aber Probleme mit Unicode. <br>
+<br>Es ist ein C++ Kommandozeilen-Programm, läuft unter Linux (ich habe es nur unter 64 Bit compilert)  und Windows, benötigt aber Qt. </content>
+    <content language="en">This is an inverse regex matcher that generates all strings which match a given regular expression. It supports all major expressions (e.g. "([abc]{2,3}|x+)\1"). <br> 
+It runs in two steps: First it splits the regex to a set of equivalent regexs that only use character classes and match strings of fixed size. Then it lists all possible ways to choose characters from the sets. This last step is heavily optimized, so it can generate several million strings per second. However, it has no real unicode support, since unicode characters have no fixed length.  <br> 
 It is a C++ command line program, runs on Linux (binary is for 64 bit only) and Windows, but requires Qt.
  </content>
   </download>
@@ -316,16 +316,16 @@ It is a C++ command line program, runs on Linux (binary is for 64 bit only) and 
     <payment>Freeware</payment>
     <source>GPL</source>
     <size_KB>158</size_KB>
-    <content language="de"><![CDATA[Dieses Programm veranschaulicht den logischen Aspekt von Gatterschaltung, indem jedes Gatter durch einen Kreis visualisiert wird. <br>
+    <content language="de">Dieses Programm veranschaulicht den logischen Aspekt von Gatterschaltung, indem jedes Gatter durch einen Kreis visualisiert wird. <br>
                  Es unterstützt die meisten wichtigen logischen Funktionen (nämlich or, and, xor, nand, nor, not).<br>
                  Jeder Gatterkreis (außer not) kann beliebig viele Eingangs- und Ausgangsleitungen haben, und verändert je nach Ausgangswert seine Farbe, so dass man an Hand der Farben sehen kann, welche true (grün) und welche false (weiß) liefern.<br>
                  Zusätzlich zum Programm gibt es zwei Beispielsschaltungen, eine Flip-Flop Speicher&shy;schaltung und eine für 5-Bit Zahlen Addition.<br>
-                 Der GPL-lizenzierte <a href="bin/tools/source/logics.zip">Quellcode (23 KB)</a> ist ein Delphiprojekt.]]></content>
-    <content language="en"><![CDATA[This program displays a logical model of a gate circuit by representing each gate as a circle.<br>
+                 Der GPL-lizenzierte <a href="bin/tools/source/logics.zip">Quellcode (23 KB)</a> ist ein Delphiprojekt.</content>
+    <content language="en">This program displays a logical model of a gate circuit by representing each gate as a circle.<br>
 It understands all important logical functions (or, and, xor, nand, nor, not).<br>
 Each gate (except "not") can have an unlimited count of input and output connections, and it changes its color depending on the output value which is either true (=green) or false (=white).<br>
 In addition to the program there are two example circuits, a flip-flop memory and a 5-bit addition circuit.<br>
-The GPL-licensed <a href="bin/tools/source/logics.zip">source (23 KB)</a> is a Delphi project]]></content>
+The GPL-licensed <a href="bin/tools/source/logics.zip">source (23 KB)</a> is a Delphi project</content>
   </download>
   <download> 
     <title>FileParser</title>
@@ -336,12 +336,12 @@ The GPL-licensed <a href="bin/tools/source/logics.zip">source (23 KB)</a> is a D
     <payment>Freeware</payment>
     <source>GPL</source>
     <size_KB>132</size_KB>
-    <content language="de"><![CDATA[
+    <content language="de">
 Dies ist ein relativ simpler FileParser, der Schlüsselwörter in mehreren Dateien ersetzen, und das Ergebnis unter einem anderen Namen speichern kann.<br>
-Er hat dabei folgende Features:]]></content>
-    <content language="en"><![CDATA[
+Er hat dabei folgende Features:</content>
+    <content language="en">
 This is a relative simple file parser which can replace keywords in files and then save the files with another name.<br>
-It has these features:]]></content>
+It has these features:</content>
     <features language="de">
       <feature>Man kann beliebige Schlüsselwörter wählen.</feature>    
       <feature>Man kann sie wahlweise case sensitive oder case insensitive ersetzen lassen.</feature>    
@@ -358,10 +358,10 @@ It has these features:]]></content>
       <feature>It can also replace the keywords through the content of files.</feature>
       <feature>These options are saved in an ini file.</feature>
     </features>
-    <final-content language="de"><![CDATA[Der Parser hat zwar weniger Funktionen als andere, wie z.B.: GNU Make, aber dadurch lässt er sich verstehen, ohne das man seitenlange Dokumentationen lesen muss.<br>Der Parser ist allerdings wenig flexibel, so gelten zum Beispiel alle Ersetzungsregeln für alle Dateien und die Durchführung von Ersetzungen in einer Datei erzeugt immer dasselbe Ergebnis, weshalb ich <a href="#jaxmlp.zip">JAXMLP</a> entwickelt habe, was weitaus flexibler ist.<br>
-Der <a href="bin/tools/source/fileparser.zip">Quellcode (17 KB)</a> ist ein Beispiel für ein typisches Delphiprojekt.]]></final-content>
-    <final-content language="en"><![CDATA[The parser doesn't have so much functions like others, for example like GNU Make, but because of this you can understand it without reading hundreds of pages.<br>However, the parser is not flexible, e.g. every transformation of one file creates the same result. Therefore I hava programmed <a href="#jaxmlp.zip">JAXMLP</a>, which is much more flexible, since it is a real programming language.<br>
-The <a href="bin/tools/source/fileparser.zip">source (17 KB)</a> is a typical Delphi Project.]]></final-content>
+    <final-content language="de">Der Parser hat zwar weniger Funktionen als andere, wie z.B.: GNU Make, aber dadurch lässt er sich verstehen, ohne das man seitenlange Dokumentationen lesen muss.<br>Der Parser ist allerdings wenig flexibel, so gelten zum Beispiel alle Ersetzungsregeln für alle Dateien und die Durchführung von Ersetzungen in einer Datei erzeugt immer dasselbe Ergebnis, weshalb ich <a href="#jaxmlp.zip">JAXMLP</a> entwickelt habe, was weitaus flexibler ist.<br>
+Der <a href="bin/tools/source/fileparser.zip">Quellcode (17 KB)</a> ist ein Beispiel für ein typisches Delphiprojekt.</final-content>
+    <final-content language="en">The parser doesn't have so much functions like others, for example like GNU Make, but because of this you can understand it without reading hundreds of pages.<br>However, the parser is not flexible, e.g. every transformation of one file creates the same result. Therefore I hava programmed <a href="#jaxmlp.zip">JAXMLP</a>, which is much more flexible, since it is a real programming language.<br>
+The <a href="bin/tools/source/fileparser.zip">source (17 KB)</a> is a typical Delphi Project.</final-content>
   </download>
   <download> 
     <title>GUITools</title>
@@ -373,17 +373,17 @@ The <a href="bin/tools/source/fileparser.zip">source (17 KB)</a> is a typical De
     <payment>Freeware</payment>
     <source>-</source>
     <size_KB>286</size_KB>
-    <content language="de"><![CDATA[
+    <content language="de">
 Die GUITools ermöglichen das visuelle Erzeugen von Text, Panel und View-Objekten des 3D Game Studios, ähnlich der im WDLSSG vorhandenen Funktionen, wobei die GUITools bessere Vorschaufunktionen besitzen.<br>
 Sie sind ursprünglich für 3DGS 4 und 5 geschrieben worden, da es aber in den GUI-Bereichen kaum Änderungen gab, werden sie auch mit 3DGS 6 funktionieren.<br>
 Da es sich um ein Plugin handelt, benötigt man den <a href="http://www.gstools.de">GST-Builder</a> 2.4.103 und das GSTHelper plugin 1.2.0, um sie starten zu können.<br>
-Sie sind, entsprechend dem GST-Builder, zweisprachig, und können sowohl auf deutsch wie auch auf englisch geschaltet werden.]]></content>
-    <content language="en"><![CDATA[
+Sie sind, entsprechend dem GST-Builder, zweisprachig, und können sowohl auf deutsch wie auch auf englisch geschaltet werden.</content>
+    <content language="en">
 With the GUITools you can create WYSIWYG text, panel und view objects of the 3D Game Studio.<br>
 They are originally written for 3DGS 4 and 5, but there are almost no changes in the GUI parts of it, so they work in 3DGS 6.<br>
 Because it is a plugin, you need the <a href="http://www.gstools.de">GST-Builder</a> 2.4.103 and the GSTHelper plugin 1.2.0, to use them.<br>
 They are like the GST-Builder bilingual and have a German and a English version.
-]]></content>
+</content>
     <screenshot>
       <title>Vieweditor</title>
       <fullfile>img/tools/guitools_view_de.gif</fullfile>
@@ -457,18 +457,18 @@ They are like the GST-Builder bilingual and have a German and a English version.
     <source>-</source>
     <size_KB>1500</size_KB>
     <year>2001 - 2002</year>
-    <content language="de"><![CDATA[
+    <content language="de">
 WDLSSG ist ein von mir programmmierter Editor für die Skriptsprache WDL von dem 3D Game Studio.<br>
 Ich habe ihn ursprünglich für 3DGS-4 (die einzige Version, die ich besitze) entwickelt, und ihn später um die (meisten) 
 neuen Eigenschaften von 3DGS-5 erweitert. Sämtlich Unterstützung für Features ab 3DGS-6 fehlt aber, und wird auch nicht mehr implementiert. Früher war WDLSSG als Shareware veröffentlicht, diese Freewareversion ist jetzt aber identisch zu der letzten, stabilen Vollversion.<br>
                  
 Er hat folgende Funktionen:
-]]></content>
-    <content language="en"><![CDATA[
+</content>
+    <content language="en">
 WDLSSG is a old editor for the script language of the 3D Game Studio.<br>
 It only supports 3DGS 4 and 5, and has no functions for 3DGS 6.<br>
 These are the most important features:
-]]></content>
+</content>
     <features language="de">
       <feature>Syntaxhervorhebung</feature>
       <feature>Direktstart des WEDs</feature>
