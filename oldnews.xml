@@ -5,7 +5,7 @@
   <content language="de"><p style="margin: 1em;margin-right:0em">Neuere News finden sich auf der <a href="index.html#top">Startseite</a>.</p></content>
   <content language="en"><p style="margin: 1em;margin-right:0em">More recent news you can find on the <a href="index_en.html#top">entry page</a>.<p></content>
   <news>
-      <new date="07. Nov 2008"><text language="de">
+      <new date="2008-11-07"><text language="de">
 
         Es gibt jetzt eine <a href="sources_de.html#bbutils">Übersetzungunit</a> für FPC-Dateien (wird fürs Compilern von APIM benötigt) und einen verbesserten <a href="sources_de.html#htmlparser.zip">HTML-Auswerter</a>, der auch optionale Elemente unterstützt.<br>
 
@@ -17,7 +17,7 @@
 
       </text></new>
 
-      <new date="18. Okt 2008"><text language="de">
+      <new date="2008-10-18"><text language="de">
 
         Nach langer Zeit gibt es eine neue Version von APIV, meinem Programm zur Kontrolle anderer Fenster. Wegen einem möglichen Namenskonflikt heißt es jetzt allerdings <a href="tools_de.html#apim">API Manager</a>. <br> 
 
@@ -31,13 +31,13 @@
 
       </text></new>
 
-      <new date="15. Okt 2008"><text language="de">
+      <new date="2008-10-15"><text language="de">
 
         Das neue <a href="tools_de.html#videlibri">VideLibri 0.994</a> bringt einige kosmetische Verbesserungen.
 
       </text></new>
 
-      <new date="24. Sep 2008"><text language="de">
+      <new date="2008-09-24"><text language="de">
 
       Heute ist der Welttag gegen <a href="http://stopsoftwarepatents.org/">Softwarepatente</a>.
 
@@ -47,7 +47,7 @@
 
       </text></new>
 
-      <new date="3. Sep 2008"><text language="de">
+      <new date="2008-09-03"><text language="de">
 
       Es gibt ein neues Update für mein <a href="components_de.html#treelistview">TreeListView</a>, welches die Grafikfehler behebt, die bei aktivieren XP-Themes und Suchleiste auftraten, wenn man es mit FPC oder Delphi ab Version 7 compiliert hatte (D4-6 haben funktioniert). Da das auch <a href="tools_de.html#videlibri">VideLibri</a> betrifft und inzwischen die FHB ihre Seitenstruktur geändert hat, gibt es davon ebenfalls eine neue Version.
 
@@ -55,7 +55,7 @@
 
       </new>    
 
-      <new date="30. Aug 2008"><text language="de">
+      <new date="2008-08-30"><text language="de">
 
       Ich habe ein bisschen auf der Festplatte gekramt und einige uralt Projekte (von ca. 2000) ausgegraben: Das einzig nützliche ist ein etwas jüngerer <a href="sources_de.html#farbe">erweiterter Farbauswahldialog</a>. Dann gibt es noch eine Sammlung von Windows-unabhängigen, <a href="components_de.html#customcontrols">bunten Standardkomponenten.</a>.<br>
 
@@ -71,7 +71,7 @@
 
       </new>
 
-      <new date="25. Aug 2008"><text language="de">
+      <new date="2008-08-25"><text language="de">
 
         Heute gibt es einige kleine Änderungen: <br> Die neue Version von <a href="tools_de.html#videlibri">VideLibri</a> behebt einige kleinere Bugs.  Der XML Konverter <a href="tools_de.html#jaxmlp">JAXMLP</a> erlaubt nun das Ausführen externer Programme und das Einfügen ihrer Ausgabe in die erzeugten Dateien. <br> Mein <a href="components_de.html#treelistview">TreeListView</a> läuft nun auch unter alten Delphiversionen und verfügt über eine <a href="components_de.html#searchbar">Suchleiste</a>. Außerdem gibt es einen template-basierten <a href="sources_de.html#htmlparser">HTML-Parser</a> für Freepascal. Für diese drei Komponenten habe ich zudem jeweils eine HTML-Dokumentation geschrieben.
 
@@ -83,7 +83,7 @@
 
       </new>
 
-      <new date="31. Jul 2008"><text language="de">
+      <new date="2008-07-31"><text language="de">
 
         Ich habe das Seitenlayout nochmals überarbeitet, so dass es nun auf allen Browser stabil laufen und sich die Seiten nun ohne Probleme im IE zoomen, durchsuchen, drucken und einigermaßen per Tastatur scrollen lassen sollte. 
 
@@ -101,13 +101,13 @@
 
       </new>
 
-      <new date="19. Jul 2008"><text language="de">
+      <new date="2008-07-19"><text language="de">
 
       Die neue <a href="tools_de.html#videlibri">VideLibri Version 0.990</a> ermöglicht es nun auch nach nicht ausgeliehenen Medien zu suchen und erweiterte Informationen, wie das Titelbild, anzeigen. Damit hat VideLibri nun eindeutig mehr Funktionen als die nativen Seiten.
 
       </text></new>
 
-      <new date="21. Mai 2008"><text language="de">
+      <new date="2008-05-21"><text language="de">
 
       Heute gibt es verschiedene kleine Updates: Eine neue Version meines <a href="components_de.html#TreeListView">TreeListView</a>, die einige Fehler beseitigt, stärker den normalen Komponenten ähnelt und unter Lazarus funktioniert. Dafür funktioniert sie aber eventuell nicht mehr unter alten Delphiversionen und hat keine sub-Spalten-Elemente mehr (die machten aber sowieso kaum Sinn). <br> Zusätzlich gibt es eine neue Version von meinem <a href="tools_de.html#jaxmlp">XML Umwandler</a> mit dem wesentlichsten Unterschied das Eingabedaten als Anweisungen interpretiert werden können.<br>Und dann noch eine Unit mit immer wieder <a href="sources_de.html#bbutils">nützlichen Funktionen</a> für FPC.<br>Außerdem habe ich das Seitenlayout ein wenig überarbeitet, zum Beispiel mit einigen schöneren internen Links und einer aktualisierten 404-Fehlerseite.</text>
 
@@ -121,13 +121,13 @@
 
     
 
-    <new date="12. Feb 2008"><text>
+    <new date="2008-02-12"><text>
 
       Die neue <a href="tools_de.html#videlibri">VideLibriversion 0.987</a> beseitigt mehrere kritische Fehler bei der FHB und STB.</text>
 
     </new>
 
-    <new date="15. Jan 2008"><text language="de">
+    <new date="2008-01-15"><text language="de">
 
       Mein neues Programm <a href="demos_de.html#regstealth.zip">RegStealth</a> ersetzt die Windowsregistry durch individuelle xml-Dateien für jedes Programm. Momentan ist es aber noch eine pre-Alpha-Version, die noch nicht alle Funnktionen aber dafür vermutlich einige Fehler hat.
 
@@ -137,7 +137,7 @@
 
     </new>
 
-    <new date="24. Dez 2007"><text language="de">
+    <new date="2008-12-24"><text language="de">
 
       Frohe Weihnachten!<br>
 
@@ -151,7 +151,7 @@ When you use (y&lt;maxy-7*maxx/8?((Math.abs(x-maxx/2)&lt;=maxx/16?6:5)):(Math.ab
 
     </text></new>
 
-    <new date="06. Dez 2007"><text language="de">
+    <new date="2007-12-06"><text language="de">
 
       Es gibt jetzt ein <a href="others_de.html#colorMap.js">Onlineprogramm</a> zur Erzeugung von farbigen Rasterfeldern wie Zufallsmustern oder Höhenfunktionen.
 
@@ -159,19 +159,19 @@ When you use (y&lt;maxy-7*maxx/8?((Math.abs(x-maxx/2)&lt;=maxx/16?6:5)):(Math.ab
 
     <text language="en">There is now a <a href="others_en.html#colorMap.js">online program</a> which creates colorful raster maps, for example random patterns or high map of a function.</text></new>
 
-    <new date="29. Nov 2007"><text language="de">
+    <new date="2007-11-29"><text language="de">
 
       Die neue Version 0.985 von <a href="tools_de.html#videlibri">VideLibri-Version</a> beseitigt zwei kritische Fehler bei der FHB (bezüglich Vormerkungen) und STB (bezüglich "nur nötiger" Verlängerung).
 
     </text></new>
 
-    <new date="31. Okt 2007"><text language="de">
+    <new date="2007-10-31"><text language="de">
 
 Da die Stadtbücherei ihren WebOPAC geändert hat, gibt es nun wieder eine neue <a href="tools_de.html#videlibri">VideLibri-Version</a>, die nun auch über BibTex-Export verfügt. <br>Außerdem gibt es ein <a href="bwinf_de.html#25_3.zip">Programm</a>, dass die Lösung für eine Aufgabe der Endrunde des Bundeswettbewerb Informatik implementiert; in dem ich jetzt auch Bundessieger geworden bin.
 
     </text></new>
 
-    <new date="23. Juli 2007"><text language="de">
+    <new date="2007-07-23"><text language="de">
 
     Auch diesmal gibt es wieder eine neue Version von VideLibri. Außerdem habe ich noch drei <a href="games_de.html#schlange.zip">alte Spiele</a> hochgeladen, von denen zwei auf dem Taschenrechner Algebra FX 2.0 Plus laufen. <br> Für diesen Rechner gibt es dann auch noch ein <a href="tools_de.html#math.zip">Hilfsprogramm für Rechnungen mit große Zahlen</a>.
 
@@ -179,26 +179,26 @@ Da die Stadtbücherei ihren WebOPAC geändert hat, gibt es nun wieder eine neue 
 
 </text></new>
 
-    <new date="4. Juni 2007"><text language="de">
+    <new date="2007-06-04"><text language="de">
     Es gibt jetzt die Version 0.906 von VideLibri, die einen für FHB-Benutzer kritischen Fehler korrigiert.
     </text></new>
-    <new date="12. Mai 2007"><text>Es gibt jetzt die Version 0.905 von VideLibri, die einige Fehler korrigiert.</text></new>
-    <new date="22. April 2007"><text language="de">
+    <new date="2007-05-12"><text>Es gibt jetzt die Version 0.905 von VideLibri, die einige Fehler korrigiert.</text></new>
+    <new date="2007-04-22"><text language="de">
     Die Seite wurde überarbeitet und die Speicherung in xml mit meiner Sprache <a href="tools_de.html#jaxmlp">JAXMLP</a> enthält jetzt praktisch keine Redunanz mehr.<br>
 Außerdem habe ich meine <a href="others_de.html#facharbeit.zip">Facharbeit</a> und das damit verbundene Programm hochgeladen, woran ich von Weihnachten bis Ostern gearbeitet habe.<br>
 Und es gibt jetzt auch die Programme der Bwinf-Runden hier, womit ich mich die restliche Zeit (vorher, nachher) beschäftigt habe, weshalb es auch so selten etwas neues auf der Seite gibt.</text>
 <text language="en">The site structure has been improved, using my xml processing language <a href="tools_de.html#jaxmlp">JAXMLP</a>.<br>And there are some German only ressources, my submissions to the national informatic contest BWInf and a text about the calculation of molecule conformations.
 </text></new>
-<new date="24. März 2007"><text language="de">
+<new date="2007-03-24"><text language="de">
 Die Seite wird jetzt auch im Internet Explorer 5 und (leider nur ungezoomt) im IE 7. <br>Wer das Internet mit einem vernünftigen Programm benutzen will, sollte sich aber trotzdem mal den <a href="http://www.mozilla-anleitung.de/Mozilla/101Dinge.php">FireFox</a> ansehen.</text></new>
-<new date="27. Februar 2007"><text language="de">Zwei Fehler in VideLibri wurden gelöst, jetzt kann es auch wieder für die FHB benutzt werden.</text></new>
-<new date="17. Februar 2007"><text language="de">
+<new date="2007-02-27"><text language="de">Zwei Fehler in VideLibri wurden gelöst, jetzt kann es auch wieder für die FHB benutzt werden.</text></new>
+<new date="2007-02-17"><text language="de">
 Das Ausleihenverwaltungsprogramm <a href="tools_de.html#videlibri">VideLibri</a> lässt sich jetzt als Betaversion herunterladen. (trotz Betastatus läuft es fast einwandfrei)
 </text></new>  
-<new date="1. Februar 2007"><text language="de">
+<new date="2007-02-01"><text language="de">
 Die Seite ist jetzt in einer Art Content-Management-System gespeichert. (Das sieht man zwar nicht, ist aber praktisch),<br>Das letzte Jahr angegekündigte, Bücherverwaltungsprogramm dauert wohl noch ein bisschen länger, es ist zwar im Prinzip schon fertig, hat aber noch zu viele Fehler und ich zu wenig Zeit um sie zu beseitigen. Außerdem ist es in Lazarus programmiert, das Moment auch noch einen Haufen Fehler hat.
 </text></new>  
-<new date="15. Dezember 2006"><text language="de">
+<new date="2006-12-15"><text language="de">
 Nach langer Zeit gibt es mal wieder ein Update bezüglich Programmierung.<br>
 Eine Klasse für das Parsen von <a href="sources_de.html#rcmdline.zip">Kommandozeilenparameter</a>, eine für ein <a href="sources_de.html#autoupdate.zip">automatisches Programmupdate</a> und einen kleinen IE-basierten <a href="sources_de.html#simplebrowser.zip">Browser</a>, der über Kommandozeile gesteuert werden kann. Wie man sieht, sind dies alles bloß Programmteile, und zwar von meinem neuen Bücherei - Ausleihen - Verwaltungs - programmes (Videlibri), das es auch bald hier geben wird.<br>
 Die Seite selbst ist auch leicht geändert, es gibt jetzt ein <a href="oldnews_de.html#top">Newsarchiv</a> und die Links sind teilweise als "social bookmarks" auf <a href="http://del.icio.us/BeniBela">del.icio.us</a> ausgelagert.
@@ -206,28 +206,28 @@ Die Seite selbst ist auch leicht geändert, es gibt jetzt ein <a href="oldnews_d
 However, today I have added some new support units (for programming, not gaming), a <a href="sources_en.html#rcmdline.zip">command line parser</a>, an <a href="sources_en.html#autoupdate.zip">online update class</a> and a <a href="sources_en.html#simplebrowser.zip">simple browser</a> (the last one isn't a tool, because it is only usefull when used together with an own program).<br>
 The site itself have been changed, too. There is now a <a href="oldnews_en.html#top">news archive</a> (mainly for the German part, where more news exists) and most of the links are now social bookmarks on <a href="http://del.icio.us/BeniBela">del.icio.us</a> (mainly the English links).</text>
 </new>  
-    <new date="26. Oktober 2006"><text language="de">Mein Chemiereferat zur <a href="others_de.html#glaselektrode.zip">Glaselektrode</a> ist jetzt online.</p></text></new>
-    <new date="27. April 2006"><text language="de">Es gibt jetzt die nächste version von MathSys in der einige Fehler korrigiert sind. (Stark vergrößerte Sachen ließen sich nicht drucken, die Vorschau war verschoben und mit sich selbst multiplizierte Variablen wurden nicht gezeichnet). </text></new>
+    <new date="2006-10-26"><text language="de">Mein Chemiereferat zur <a href="others_de.html#glaselektrode.zip">Glaselektrode</a> ist jetzt online.</p></text></new>
+    <new date="2006-04-27"><text language="de">Es gibt jetzt die nächste version von MathSys in der einige Fehler korrigiert sind. (Stark vergrößerte Sachen ließen sich nicht drucken, die Vorschau war verschoben und mit sich selbst multiplizierte Variablen wurden nicht gezeichnet). </text></new>
 
-    <new date="16. April 2006">
+    <new date="2006-04-16">
       <text language="de">Heute habe ich mehrere kleine Änderungen hochgeladen. Die Links wurden erweitert und auf der Seite steht endlich meine neue Mailadresse, die ich schon seit einem halben Jahr habe. Außerdem gibt es neu einen mathematisch Plotter, um Funktionen zu zeichnen. Er ist zwar noch relativ unfertig, aber das Zeichnen funktioniert bereits, und ich finde die Ausgabe schöner als die von allen anderen Programmen, die ich kenne. In dem Programm gibt es auch ein verstecktes "easter-egg".<br>
 Frohe Ostern!</p></text>
 <text language="en">
 Today I have uploaded some little changes.  The link page is now extended and my new (a half year old) mail address is listed here. Furthermore there is a mathematical plotter which draws functions. um Funktionen zu zeichnen. It is not finished yet, but the drawing works already and I thinks the output is nicer than the one of any other program I know. Additionally it has a hidden easter-egg.<br>Happy Easter!
 </text></new>
-    <new date="26. Dezember 2005"><text language="de">Passend zur Winterzeit habe ich ein <a href="others_de.html#schnee.exe">kleines Programm</a> hochgeladen, das es auf dem Bildschirm schneien lässt.<br>
+    <new date="2005-12-26"><text language="de">Passend zur Winterzeit habe ich ein <a href="others_de.html#schnee.exe">kleines Programm</a> hochgeladen, das es auf dem Bildschirm schneien lässt.<br>
 Ich wünsche jedem ein schönes neues Jahr.</p></text>
 <text language="en">Because of the wintertime I published a <a href="others_de.html#schnee.exe">small program</a> which draws snow on the screen.<br>
 Happy New Year!</text></new>
-<new date="17. September 2005">
+<new date="2005-09-17">
 <text language="de">Es gibt eine neue Delphikomponente, die die Funktionen von TListView mit denen von TTreeView verbindet.</text>
 <text language="en">There is a new delphi component which have the features of TListView and the ones of TTreeView together.</text></new>
-<new date="9.September 2005">
+<new date="2005-09-09">
 <text language="de">Es sind 4 neue Programme hochgeladen worden, 1 einfacher vertikaler Shooter und 3 Tools, Simulatoren für Logikschaltungen und Dateien. <br> Und ich bin wieder zum alten Seitenaufbau gewechselt, wo der Link zum Quellcode von Open Source Programmen nicht auf eine extra Seite ausgelagert ist, sondern direkt beim Programm steht.</text>
 <text language="en">There are 4 new programs, 1 simple vertically-scrolling shooter and 3 tools,  simulators of logic circuits and files. <br> And I have changed back to the old site division where the source of open source programs is directly linked with the program description.</text></new>
-<new date="21.August 2005"><text language="de">
+<new date="2005-08-21"><text language="de">
 Das alte, externe Gästebuch wurde durch ein selbstprogrammiertes ersetzt, so dass es endlich zum Seitendesign passt. Leider sind dadurch alle alten Gästebucheinträge nicht mehr verfügbar, aber man kann sie noch auf der <a href="http://gaestebuch-2000.de/cgi-bin/gb.pl?user=benibela">alten Seite</a> finden.</p></text></new>
-<new date="15.August 2005"><text language="de">
+<new date="2005-08-15"><text language="de">
 Ich habe die Seite komplett überarbeitet.<br>
 Sie ist jetzt moderner und völlig Standard-kompatibel. (Das heißt das sie unter alten Browser nicht mehr funktioniert ;-), da aber alle Zugriffe nahezu nur von neueren Browsern kommen, ist es nicht so tragisch)<br>
 Der Name der Seite wurde von "BeniBelas Seite" zu "BeniBela online" geändert, und sie wurde vollständig auf <a href="index_en.html#top" lang="en">English</a> übersetzt.<br>

@@ -59,7 +59,7 @@
            if (exists($file/news)) then
              <div id="newslist">{
                for $new in $file/news/new return (
-                 <h3>{$new/@date/data()}</h3>,
+                 <h3>{format-date(xs:date($new/@date/data()), "[D0o] [MNn] [Y0000]", $language/id, (), ())}</h3>,
                  if ($new/text/@language != $language/id) then
                    <div class="untranslated"><p>(not translated)</p><div class="newstext"><p>{$new/text/node()}</p></div></div>
                  else
@@ -167,11 +167,14 @@
                  )}
                  
                  {for $downloadFile in $download/file 
-                  let $downloadsize := system(x" sh -c 'ls -s _publish/{$file/download-dir}/{$downloadFile} | grep -o -E ^*[0-9.]*'")
+                  let $downloadsize := try { 
+                    xs:string( file:size(x"_publish/{$file/download-dir}/{$downloadFile}") idiv 1024) || " KB" 
+                  } catch file:not-found { 
+                    <b style="color:red;font-size:150%">FILE NOT FOUND</b> 
+                  }
                  return (
-                   if ($downloadsize = "") then <b style="color:red;font-size:150%">FILE NOT FOUND</b> else (),
                    <br/>,<br/>,
-                   <a href="{$file/download-dir}/{$downloadFile}">Download {$downloadFile/@title/data()} ({$downloadsize} KB )</a>
+                   <a href="{$file/download-dir}/{$downloadFile}">Download {$downloadFile/@title/normalize-space()}</a>,  x"&#160;&#160; ({$downloadsize})" 
                  )}
 
                  <a style="position:absolute;right: 2em" href="#top">{$language/jumpToTop/node()}</a>

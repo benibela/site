@@ -97,7 +97,7 @@
     </new>
     
     
-    <new date="30. Nov  2013"><text language="de">
+    <new date="2013-11-30"><text language="de">
     Hier ist, was ich bisher so von meinen alten oder neuen Programmen gefunden habe; viele Spiele und Schulsachen:
     <ul>
     <li>Ein uraltes <a href="games_de.html#burg">Mathelernspiel</a> für Kopfrechentraining</li>
@@ -127,11 +127,11 @@
     euglena
     -->
     
-    <new date="19. Nov  2013"><text>
+    <new date="2013-11-19"><text>
     There was a bug in the string conversion of the big decimal math. It is fixed now. (very surprising since I had a test for this case. Seems like I forgot to run all the tests)
     <p>Also the bbutils now work with Delphi (4), since there was a feature request for that...</p>
     </text></new>
-    <new date="18. Nov  2013"><text language="de">
+    <new date="2013-11-18"><text language="de">
     Eine überraschende Konsequenz davon, dass jetzt plötzlich so viele versuchen VideLibri nachzuprogrammieren, ist, dass ich dadurch einen neuen <a href="http://uberspace.de/" rel="nofollow">Webhoster</a> gefunden habe. Zwar scbon im Mindestpreis zehnmal so teuer wie der alte Tarif beim <a href="http://planet-hosting.de/" rel="nofollow">alten Hoster</a>, aber dafür kriegt man Shellzugriff und 10 GB statt wie bisher 30 MB Speicherplatz. (so dass es keine Speicherüberschreitung gibt und es im Endeffekt doch billiger ist...)
     <p>Das heißt, ich kann jetzt mal ein paar neuere Sachen hochladen, die also nicht 10 Jahre alt sind wie der Großteil der bisherigen Daten hier und für die es bisher einfach nicht genug Speicher gab. Mal angefangen mit meiner <a href="others_de.html#master">Masterarbeit</a>.</p>
     <p>Unabhängig davon gibt es auch eine neue Version der <a href="sources_de.html#internettools">Internet Tools</a>. Die wichtigste Neuerung ist die Unterstützung für das Rechnen mit Dezimalzahlen beliebiger Genauigkeit, was meine alte 65-Bit Arithmetik ersetzt und den vollen Umfang von <code>xs:decimal</code> realisiert. Des Weiteren habe ich die neueste Version des JSONiq-Standard implementiert, das Typsystem vollständig umgeschrieben als Vorbereitung für XML Schema-Unterstützung (heißt, es unterstützt keine XML Schema, aber man kann sie vermutlich pluginmäßig implementieren, ohne etwas am bisher existierenden Code ändern zu müssen) und angefangen, ein paar Sachen von XQuery/XPath 3 einzubauen.<br/>Die <a href="sources_de.html#bigdecimalmath">arbitrary-precision Funktionen</a> gibt es auch als Einzelunit, unabhängig von den Internet Tools.</p>
@@ -145,7 +145,7 @@
     
     <p>And a comment to the last news: TeXstudio actually won the sourceforge award!</p>
     </text></new>
-    <new date="13. Jul  2013"><text language="de">
+    <new date="2013-07-13"><text language="de">
     Seit einer Weile gibt es nun VideLibri auch als <a href="https://play.google.com/store/apps/details?id=de.benibela.videlibri">Android-App</a>. Zudem habe ich mal eine Liste, der Bibliotheken erstellt, welche von VideLibri unterstützte Systeme verwenden. Schon beinahe 170 Büchereien. Dauert ewig, sie alle anzuschreiben.<br/><br/>
     Für die Internet Tools gibt es ein Update mit ein paar trivialen Änderungen/Bugfixes. Z.B.: &lt;s>-Elemente (<i>s</i>hortcut-Elemente, deren als XQuery/XPath-Statement ausgeführt wird) werden auch in Gesamttemplates unterstützt, und es gibt mehr Funktionen in der XQuery-Engine, um Werte in url-encoded Daten zu verändert. <br/><br/>
     Eine neue TeXstudio-Version (Bugfix-Release) wird es auch bald geben. In der Zwischenzeit läuft eine Abstimmung für das <a href="http://twtpoll.com/4j7el6">Sourceforge Projekt des Monats</a> und TeXstudio hat gute Chancen zu gewinnen. 
@@ -153,7 +153,7 @@
     A simple update for the Internet Tools (with changes needed for VideLibri):  &lt;s>-elements (<i>s</i>hortcut-elements to evaluate a XQuery/XPath statement) are allowed in multipage templates, and the XQuery engine supports more functions to change url-encoded data. Also fixes the progress calculation of the synapse wrapper.<br/><br/>
     And as so often there is a new TeXstudio version (bug fix release) coming. By the way you can vote for it to become the <a href="http://twtpoll.com/4j7el6">Sourceforge project of the month</a>.
     </text></new>
-    <new date="16. Jun  2013"><text language="de">
+    <new date="2013-06-16"><text language="de">
     Meine Open-Source-Projekte sind jetzt auch auf <a href="http://github.com/benibela" rel="nofollow">GitHub</a> gelistet, abgesehen von denen, die schon auf Sourceforge sind, und denen, die ich in der Mittelstufe geschrieben habe. Auch wenn es nicht viel Sinn macht, ein Mercurialrepository auf github zu haben, und ich finde, dass die Webpage alleine eigentlich völlig ausreichend ist, zumal sie sowieso <i>viel</i> älter als GitHub ist...<br/><br/>
     Und wir haben diese Woche eine neue <a href="http://texstudio.sourceforge.net/" rel="nofollow">TeXstudio</a> version veröffentlicht.
     
@@ -162,7 +162,7 @@
       
       Also we released a new <a href="http://texstudio.sourceforge.net/" rel="nofollow">TeXstudio</a> version (2.6) this week.
     </text></new>
-    <new date="16. May 2013"><text language="de">
+    <new date="2013-05-16"><text language="de">
     Zuerst eine alte News, die ich vergaß zu posten: Vor ein paar Monaten gab es einen Blogpost, dass die GBV-Bibliotheken nun eine API für Ausleihendaten namens <a href="http://gbv.github.io/paia/paia.html" rel="nofollow">PAIA</a> entwickeln. Leider ist es eine JSON-API und VideLibri hatte noch keine Unterstützung für JSON, da ich meine ganze Zeit dafür verwendet habe, eine XQuery-Engine zu schreiben, um HTML/XML-APIs optimal zu verarbeiten.<br/>
     Also, mit Overkill wie üblich, hatte ich dann vor ein paar Monaten den gesamten <a href="http://www.jsoniq.org/" rel="nofollow">JSONiq-Standard</a> in den <a href="sources_de.html#internettools">Internet Tools</a> und VideLibri implementiert. Seitdem kann VideLibri nun auf die Daten aller Bibliotheken zugreifen, die PAIA unterstützen.<br/>
     Leider scheint es, dass es immer noch keine PAIA-Büchereien gibt. Nicht einmal im GBV ist die serverseitige Implementierung fertiggestellt...<br/><br/>
@@ -172,7 +172,7 @@
     There is also a new backend for Android to download/upload stuff there, using the Apache HttpComponents through JNI. It works fine on arm-Android and x86-Android. Regarding other platforms: someone confirmed to use it successfully on MacOSX with the newest Synapse version, and someone else wanted to use it on arm-WinCE and after fixing some issues (missing extended float, widechar as default), it compiles there as well. (but I did not receive feedback, if he could actually run it). <br/>
     I also added a function to the <a href="components_de.html#treelistview">TTreeListView</a> to place the record/columns items at arbitrary positions, which can be used to create a list which looks and scrolls like the standard Android listviews. It seems to run (very slowly through) on the emulator, but all the Standard components of Lazarus are so buggy there that I gave up on using Lazarus for Android. So I did not test further, if the treelistview is actually usable on Android.
     </text></new>
-    <new date="13. Dec 2012"><text language="de">
+    <new date="2012-12-13"><text language="de">
     Mein altes mathSys ist wieder da! Nur heißt es jetzt <a href="http://www.benibela.de/tools_de.html#bbmultiplot">BBMultiPlot</a>.<br/> Noch immer das bester freie, mathematischer Plotter für Funktionsscharen, das ich kenne.<br/>
     Vor ein paar Jahren hatte ich im Internet ein anderes, noch älteres Programm namens "mathSys" gesehen, und mein mathSys von der Webseite genommen, damit es keine Namenskonflikte gibt. Leider bin ich dann vor lauter Zeitverschwendung mit VideLibri und dessen XQuery-Backend nie dazu gekommen, es umbenannt wieder zu veröffentlichen. Und damals habe ich auch noch keine Versionskontrolle verwendet, so dass ich nicht mehr feststellen kann, welche Kopie des Quellcodes eigentlich die richtige ist. Und mit dem Lazarus, das ich nun statt Delphi verwende, lässt es sich sowieso nicht kompilern...<br/>
     Deshalb gibt es auch kein neues Release, sondern nur wieder das alte Binary, mit einer readme, die sagt, dass es jetzt BBMultiPlot heißt. Im alten Sourceverzeichnis habe ich zwar auch ein neues Binary gefunden, das auch moderner aussah, aber beim Testen mehr Bugs hatte. (und ein seltsames Testfenster anzeigt. Es scheint, ich wollte auch mal einen BigInteger mit fast-fourier-Transformation-Multiplikation für es schreiben.) Ich habe dann noch versucht, den Titel vom alten Binary in einem Hexeditor zu ändern,  aber es ist mit upx 0.8 (oder so) komprimiert, und das lässt sich nicht entpacken. Ollydbg mit Ollydump hat auch nicht weiter geholfen..<br/>
@@ -182,12 +182,12 @@
     I updated the source to the new name, but cannot compile an updated binary, since I no longer use Delphi/Windows and am not even sure, if I found the correct version of the source. I tried to change the name of the binary in a hex editor, but that failed, since I had compressed it with upx to fit in the 30 mb website quota. An obsolete version of upx (0.8?) that the upx tool itself cannot decompress. And dumping it in ollydbg or some petools just produces a larger binary (with the entry point set to the jmp after popad) that crashes on startup. Anyone has an idea?
     </text>
     </new>
-    <new date="06. Nov 2012"><text language="de">
+    <new date="2012-11-06"><text language="de">
     Die <a href="sources_de.html#internettools">Internet Tools</a> unterstützen nun XQuery, statt nur XPath 2!<br/> Und die variant-Klassen in der API wurden durch Interfaces ersetzt, so dass sie jetzt ref-counted sind.
     </text><text language="en">
     The <a href="sources_en.html#internettools">Internet Tools</a> support now XQuery, instead of only XPath 2! <br/> And all the variant-classes in the API were replaced by ref-counted interfaces.
     </text></new>
-    <new date="26. Sep 2012"><text language="de">
+    <new date="2012-09-26"><text language="de">
     Mal wieder ein Update:
     <ul><li><a href="sources_de.html#internettools">Internet Tools</a>: Sie unterstützen nun CSS 3 Selektoren, direkt und innerhalb von XPath-Ausdrücken. Und es gibt eine XPath-Funktion <code>form</code>, die das HTTP-Request für eine HTML-Form berechnet und als Objekt zurückgibt. Die Internetaccess-Klasse gibt einem Zugriff auf die HTTP-Header, und der Htmltreeparser erkennt die Zeichenkodierung auch dann, wenn die Angabe im http-equiv meta-Tag <i>falsch</i> ist und einem korrekten Content-Type Header widerspricht (Da hat die Münchener Stadtbücherei wirklich einen <i>super</i> programmierten Katalog). <br/> Die Internet Tools enthalten nun auch die Klasse für Mehrseitenabfrageskripts von VideLibri, und es gibt ein  <a href="http://videlibri.sourceforge.net/xidel.html" rel="nofollow">Commandlinetool Xidel</a> als Wrapper um die Internet Tools mit dem man Templates und XPathausdrücke auf Webseiten anwenden kann, ohne Pascal zu kennen oder Büchereien zu stören. <br/> Und es gibt nun ein <a href="http://userscripts.org/scripts/show/144991" rel="nofollow">Greasemonkey-Skript</a>, das die Templates für VideLibri/Xidel automatisch erstellen kann, wenn man die entsprechenden Werte in Firefox markiert.<br/>Nun soll ich den XPathparser zu XQuery ausbauen, oder nicht? So groß ist der Unterschied nicht...</li>
     <li><a href="sources_de.html#rcmdline">TCommandLineReader</a>: mein Kommandozeilenparser funktioniert nun auch unter Linux. (er hat früher nicht funktioniert, weil die fpc RTL-Funktion zum gesamten Kommandozeilenauslesen unter Linux keine einfachen Anführungszeichen unterstützt! Und umgekehrt funktioniert die RTL-Funktion zum Lesen der aufgeteilten Argumente unter Windows nicht mit einfachen Anführungszeichen! Weshalb ich den Kommandozeilenparser überhaupt erst geschrieben hatte...)<br/>Und es gibt jetzt eine Unterklasse, die als cgi-Service läuft und die Argumente von GET/POST-Requests liest anstatt von der Kommandozeile.</li>
@@ -203,24 +203,24 @@
     </ul>
     </text>
     </new>
-    <new date="03. Mai 2012"><text language="de">
+    <new date="2012-05-03"><text language="de">
     Mal wieder was neues, auch wenn es nicht so wirklich neu ist: Der <a href="sources_de.html#internettools">Internet-Tools-Parser</a> ist noch mehr erweitert und  nun eine fast Standard-konforme XPath 2-Implementierung. Zusätzlich unterstützt er jetzt auch eine Art Objekte und die übergeordnete Templatesprache erlaubt auch Abkürzungen für häufige Befehle, wie {...} für &lt;template:read/&gt;. 
     </text><text language="en">
     Another update to the <a href="sources_de.html#internettools">internet tools parser</a>. It is now almost standard compatible, up to mostly <a href="documentation/internettools/internettoolsxqts.html">rounding issues and missing namespace/dtd/schema support</a> and my extensions like variable assignments and (new) some kind of objects. And the template language itself allows you now to abbreviate common commands, e.g.  &lt;template:read/&gt; can be written as {...} or &lt;template:loop/&gt; as *.
     
     </text></new>    
-    <new date="10. Jul 2011"><text language="de">
+    <new date="2011-07-10"><text language="de">
     Ich habe den Internet-Tools-<a href="sources_de.html#internettools">Parser</a> ein wenig erweitert, und nun ist er fast Standard-konforme XPath 2-Implementierung (im wesentlichen gibt es alles bis auf namespaces und das ganze Datenmodellzeugs).  <br>
     Und hier ist ein <a href="others_de.html#cryptsem"> Kryptographieseminarpaper</a>
     </text><text language="en">
     I added a few constructs to the internet tools parsers, so that the <a href="sources_de.html#internettools">pxp parser</a> is now a almost standard compliant implementation of XPath 2. (did you know that  <pre>every $x in satisfies satisfies satisfies</pre> is always true?) 
     
     </text></new>
-    <new date="25. Mar 2011"><text language="de">Das SIRDSlets-Spiel hat jetzt einen Regenbogenfarbenmodus, obwohl ich den Modus eigentlich weglassen wollte, da er zu leicht ist und in einem Stereogramm-Spiel der Stereogrammmodus am einfachsten sein sollte, aber er sieht hübsch bunt aus.
+    <new date="2011-03-25"><text language="de">Das SIRDSlets-Spiel hat jetzt einen Regenbogenfarbenmodus, obwohl ich den Modus eigentlich weglassen wollte, da er zu leicht ist und in einem Stereogramm-Spiel der Stereogrammmodus am einfachsten sein sollte, aber er sieht hübsch bunt aus.
     </text><text language="en">
     I added a rainbow color mode to the sirdslets game, although I didn't really wanted to include it, because it makes the game to easy to play (i.e. actually playable) in the non sirdslets modes. But it looks nice.
     </text></new>
-    <new date="26. Feb 2011"><text language="de">
+    <new date="2011-02-26"><text language="de">
       Da ja jetzt fast alles auf SF mit öffentlichen Commitlogs ist, habe ich in letzter Zeit keine News mehr darüber geschrieben.<br>
       Aber dies sind die Änderungen der letzten Monate:
       <ul>
@@ -243,32 +243,32 @@
       </ul>
     </text>
     </new>
-    <new date="11. Okt 2010"><text language="de">
+    <new date="2010-10-11"><text language="de">
     Huch, was ist denn mit VideLibri los? In den vier Jahren, die es auf dieser Seite lag, wurde es praktisch kein einziges Mal heruntergeladen, nun ist es drei Tage auf SourceForge und wurde schon 778 mal runtergeladen. Weitaus öfter als TexMakerX in der gleichen Zeit, obwohl es keine fremden Links darauf gibt, außer mehreren aus Japan (Und wen interessiert es in Japan?). Am Quellcode kann es nicht liegen, der wurde nämlich nicht heruntergeladen.
     </text></new>
-    <new date="09. Okt 2010"><text language="de">
+    <new date="2010-10-09"><text language="de">
     VideLibri habe ich jetzt auf <a href="http://videlibri.sourceforge.net">SourceForge</a> verschoben; hier findet es ja niemand und mittlerweile ist es so groß geworden, dass die Webseite nicht genug Speicher dafür hat.
     </text></new>
-    <new date="24. Sep 2010"><text language="de">
+    <new date="2010-09-24"><text language="de">
       Es gibt jetzt eine neue Videlibri Version (0.998). Ich weiß gar nicht, ob man einen Unterschied zur vorherigen Version bemerken kann, auf jeden Fall habe ich die Templates für die Büchereien mit dem neuen Html-Parser vereinfacht.<br>
       Und eigentlich hatte ich gehofft, dass jemand es von selbst entdeckt, aber da es immer noch niemand verwendet, verrate ich es mal hier: Im Infodialog von VideLibri, kann man und konnte man schon immer -- wenn man richtig klickt -- Snake spielen!<br>
       Ansonsten habe ich noch ein paar Sachen geändert, zum Beispiel, das sich eine Unit der Internet Tools nicht unter Windows compilern ließ.
     </text><text language="en">I tried to write an automatical sourceforge bugtracker/forum responder, which should be trivial with my internet tools library, but it was surprisingly complicated. First sourceforge does not seem to understand host names in the format hostname:port, which is the default format of synapse. Then sf responds with a lot of redirections which neither my library nor synapse followed. Sf also uses the wrong (not standard compliant, although widely used) http status code for these redirections. And finally sf has banned the user agent "Mozilla 3.0 (compatible)" which was my default agent. It only works with "Mozilla/3.0 (compatible)". And everything is encrypted with https, so you could hardly debug it with Wireshark.<br>
     In the new update I changed that, and you can now compile it on Windows, too.  </text> </new>
-    <new date="09. Sep 2010"><text language="de">Heute habe ich noch eine <a href="others_de.html#seminarCV2010">Seminararbeit über Bildsegmentierung</a> vom letzten Semester hochgeladen. Die Bilder musste ich allerdings stark komprimieren, damit der Text noch so gerade auf die Seite passt (obwohl sie sowieso schon 10 mb größer ist als erlaubt), eigentlich sehen sie also schöner aus. </text> </new>
-    <new date="05. Sep 2010">
+    <new date="2010-09-09"><text language="de">Heute habe ich noch eine <a href="others_de.html#seminarCV2010">Seminararbeit über Bildsegmentierung</a> vom letzten Semester hochgeladen. Die Bilder musste ich allerdings stark komprimieren, damit der Text noch so gerade auf die Seite passt (obwohl sie sowieso schon 10 mb größer ist als erlaubt), eigentlich sehen sie also schöner aus. </text> </new>
+    <new date="2010-09-05">
     <text language="de">Ups, jetzt habe ich tatsächlich im letzten bbutils/internettools-Update &amp;szlig; vermasselt, ich dachte das wäre ein ascii-Zeichen. Mit dem neuen Bugfix unterstützt es nun aber wirklich alle Entities aus dem Standard, selbst die von MathML. </text>
     <text language="en">I broke the &amp;szlig; handling in the latest bbutils/internettools update, now it is fixed and even supports all entities, including those of MathML. </text>
     </new>
-    <new date="29. Aug 2010">
+    <new date="2010-08-29">
     <text language="de">Jetzt gibt es einen neue Version vom <a href="sources_en.html#internettools">HTML-Templatematcher</a>. Er läuft jetzt tausendmal langsamer mit tausendmal höherem Speicherverbrauch. <br> Die alte Version hat einen NFA mit einer cleveren Heuristik verwendet, um das Template mit der Textdarstellung einer HTML-Datei in O(1) zusätzlichem Speicher und Linearzeit zu vergleichen, die neue Version verwendet wie alle anderen HTML-Parser eine Baumdarstellungen, die O(n) Speicher erfordert und darauf Backtracking mit einer Laufzeit von vielleicht O(k^n).<br>Das ist genau das, was ich eigentlich nicht machen wollte, aber es hat sich herausgestellt, dass die Templates dadurch sehr viel leichter zu verstehen und zu schreiben sind, weil es keinerlei Seiteneffekte mehr gibt. Außerdem benötigt es immer noch nicht mehr als ein paar Millisekunden für das Verarbeiten einer Datei (schneller als das Runterladen der Datei), und der Matcher beweist nun, ob das Template der HTML-Datei entspricht oder nicht. Er ist jetzt auch in drei unabhängige Klassen zerlegt, die sich separat verwenden und leichter testen lassen.<br> Ansonsten haben sich dabei auch die bbutils (Funktionen umbenannt oder entfernt), das TreeListView und die Suchleiste (eine Methode entfernt, um LCL 27190 kompatibel zu sein) geändert. </text>
     <text language="en">I made a new version of my <a href="sources_en.html#internettools">template based html parser</a>. It is now probably thousand times slower and needs a magnitude more memory.<br>The old version used a  NFA combined with a very clever heuristic, to match the template to the html page directly with O(1) memory and O(n) time, the new version uses simple backtracking on a DOM-like tree -- like everyone else does it --  with O(n) memory and I-don't-know-how-much time (perhaps O(k^n)?).<br>But it still runs in a few milliseconds, it is easier to understand the templates, and most important, the matcher/parser can now prove that a matching is possible or not. I also splitted it into three separate classes which makes it more easy to test.<br>Furthermore I had to change with the parser the bbutils (functions renamed or removed), the TreeListView and the search bar (A method removed to be LCL 27190 compatible). </text>
     </new>
-    <new date="26. Aug 2010">
+    <new date="2010-08-26">
     <text language="de">Als ich gerade den vorherigen Artikel auf "unübersetzt" setzen wollte (was ich dann aber doch nicht gemacht habe, da die Textfarbe dadurch grau wird, und das nicht zu den bunten Tabellen passt), habe ich gemerkt, dass JAXMLP überhaupt keine Klammern in den If-Bedingungen erlaubt hat, warum auch immer, vielleicht weil es den Schwierigkeitsgrad fürs Parsen von trivial auf einfach erhöht. Die neue Version unterstützt sie jetzt aber.</text>
     <text language="en">When I wanted to display the article below as "untranslated" on the German version, I noticed that JAXMLP did not support parentheses in if-conditions (perhaps because it would increase the implementation difficulty from trivial to easy). Anyways, I changed it and you can now use brackets there.  </text>
     </new>
-        <new date="26. Aug 2010">
+        <new date="2010-08-26">
 <text>
 I just started to rewrite my fpc html template parser (which of course involves hours of debugging and patching Lazarus, before I can start to program anything else) and found two bugs due to an invalid string->pchar conversion. And although this is an absolutely trivial conversion, no one seems to have examined and described, how to do it best. So, here is a detailed analysis:
 
@@ -375,19 +375,19 @@ end.
 So only modify the pchar of an converted string if you created that string or have modified it before with string functions (so reference count = 1). 
 </text>
         </new>
-	<new date="20. Aug 2010">
+	<new date="2010-08-20">
           <text language="de">Langsam sterben alle Seiten weg, die ich im Internet kenne. Heute habe ich gemerkt, dass regexpstudio.com mit der TRegExpr-Klasse verschwunden ist, die früher als bester Delphi regexp-Parser galt. (die alten Delphiforen, in denen sie bewundert wurde, finde ich auch nicht mehr...) <br> Da man die Klasse für meine Internettools braucht, gibt es hier jetzt einen <a href="sources_de.html#regexpr">TRegExpr-Mirror</a>.</text>
           <text language="en"> I just noticed that Andrey V. Sorokin's site regexpstudio.com does not exist anymore. His class TRegExpr was the best regular expression parser for Delphi and FPC. Because you need this class to use my internet tools, I  created a <a href="sources_en.html#regexpr">mirror of TRegExpr</a>.</text>
         </new>
-	<new date="10. Aug 2010">
+	<new date="2010-08-10">
           <text language="de"> Und weiter geht es mit den SIRDSlets: Es gibt jetzt drei neue Level, Übersetzungen, Beschleuniger und Anaglyphenrendering. Die Beschleuniger sind wie schwarze Löcher, aber unabhängig von der Schiffsposition. Mit dem Anaglyphenrendering kann man es nun auch dreidimensional sehen, wenn man nicht schielen kann. Damit ist allerdings verwirrender, da die meisten 3D-Brillen eine miserabel Kanaltrennung haben. <br>Und falls es jemand noch nicht mitgekriegt hat: Deolalikar hat einen Beweis für P!=NP mit graphischen Modellen, FO(LFP)-Logik und theoretischer Physik veröffentlicht. Wenn der Beweis stimmt, wurden drei der berühmtesten Probleme in nur fünfzehn Jahren gelöst, mal sehen, wann Riemann drankommt.</text>
           <text language="en"> A Sirdslets update is there: 3 new levels, translations, accelerators and anaglyph rendering. The accelerators are like black holes, but independent of the ship position. The anaglyph rendering creates red/cyan images which you can see with 3d glasses. But they are a little bit confusing because most 3d glasses have a very bad channel separation and you will see everything three times. <br> And if you are interested in theoretical computer science and did not get the news: Deolalikar claims to have found a proof for P!=NP using a combination of graphical models, FO(LFP) logic and theoretical physics. If he is right, the third of the most famous problems is solved in just fifteen years (after Fermat and Poincaré), perhaps Riemann is going to be the next one. </text>
         </new>
-	<new date="28. May 2010">
+	<new date="2010-05-28">
           <text language="de">  Heute habe ich mein neues <a href="games_de.html#sirdslets">SIRDSlets Spiel</a> hochgeladen, dass eines der wenigen Spiele ist, die man in echtem 3D spielen/sehen kann. Es ist außerdem das erste Browserspiel auf dieser Seite und muss nicht wie die anderen explizit heruntergeladen werden. Allerdings ist es noch nicht ganz fertig, aber es ist schon seit Monaten spielbar und ich habe im Moment zu wenig Zeit, es zu vollenden. So fehlt zum Beispiel eine deutsche Übersetzung, mehr als sechs Level, und der Hardware-beschleunigte SIRDS-Renderer aus der vorherigen News (wobei es aber zweifelhaft ist, ob ich den jemals einbaue, da der Softwarerenderer schnell genug zu sein scheint, und es Applets nicht  leicht fällt OpenGL zu verwenden).</text>
           <text language="en"> Today I uploaded my new <a href="games_en.html#sirdslets">SIRDSlets game</a> which is one of the few games that you can play/see in real 3d without additional 3d glasses. It is also the first online game on this page, so you can play it without downloading it explicitely. However, although it is playable, it is not completely finished, but it is in that state since months and I don't have much time in the moment. Some things that are missing are additional levels and the opengl renderer from the last news, so it only has six levels that are software rendered.   </text>
         </new>
-          <new date="16. Feb 2010"><text language="de">
+          <new date="2010-02-16"><text language="de">
           Heute gibt es abermals ein <a href="tools_de.html#videlibri">Videlibri-Update</a>, das die unten erwähnten Probleme mit der  FHB Düsseldorf und den beiden Aachener Bibliotheken löst. Außerdem läuft es jetzt wieder unter Windows (und weiterhin unter Linux).<br>
           Dazu habe ich auch meine  <a href="sources_de.html#internettools">Internettools</a> aktualisiert: Der Wininet-Wrapper unterstützt nun auch Cookies ohne Attribute und http-Verbindungen über andere Ports als 80. Außerdem gibt es ein globales Logging (was man insbesondere für https braucht). Die Parserklasse ist ebenfalls flexibler geworden und man kann in den Pseudo-XPath-Ausdrücken nun auch Regex-Filter vor dem Ausführen anderer Funktionen anwenden, statt nur nachträglich wie bisher. (echte XPath-Ausdrücke können es dagegen übrigens gar nicht)<br>
           Zudem habe ich ein paar News ins Archiv und einige unfertige Tools auf die Demoseite verschoben. 
@@ -395,7 +395,7 @@ So only modify the pchar of an converted string if you created that string or ha
           There is a new update of my <a href="sources_en.html#internettools">Internettools</a>: It fixes two small bugs that prevented the receiving of cookies without attributes and the creation of http connections over the 8080 port. It also add a global logging which is especially useful for debugging https.  In the  parser class the pseudo-XPath-expressions can now extract regex-matching data during the evaluation of the expression instead only afterwards like before. (real XPath-expressions does not support it at all) <br>
          Furthermore, some news have been moved in the archive and some uncompleted tools on the demo page.
           </text></new>
-          <new date="07. Feb 2010"><text language="de">
+          <new date="2010-02-07"><text language="de">
           Ab jetzt gibt es eine extra <a href="demos_de.html">Demo-Unterseite</a> für kleine Programme, die eigentlich nutzlos sind, aber interessante Techniken oder hübsche Filme zeigen. Dazu habe ich zum einen ein paar Programme verschoben, zum anderen gibt es zwei neue, die ich an der Uni aus den Übungsprogrammen der VR- und Computergrafikvorlesungen programmiert habe. <br>
           Beide zeigen eine echte 3D-Darstellung, das eine rendert hardware beschleunigte <a href="demos_de.html#sirdsgl">Single Image (Random Dot) Stereograms</a>, also Bilder, in denen man ein 3D-Bild durch Schielen sehen kann. Das andere <a href="demos_de.html#webcamucp">"Webcam-UCP"</a> Programm verwendet die klassische rot/cyan-Trennung, um Bilder für 3D-Brillen zu erstellen. Zusätzlich wird aber mittels einer Webcam, die Brillenposition getrackt und die Szene betrachterzentriert gerendert.<br>
           Außerdem funktioniert in Videlibri jetzt wieder die StB Aachen (FHB Düsseldorf vermutlich auch), ich lade die neue Version aber erst hoch, wenn ich die FHB noch getestet habe, da es ja sowieso niemand nutzt.
@@ -403,7 +403,7 @@ So only modify the pchar of an converted string if you created that string or ha
           There is now a new <a href="demos_en.html">demo page</a> listing small program which are useless but demonstrate interesting techniques or show nice films. <br>
           Aside from some recategorizated old programs, there are two new ones on this page, both based on lecture exercises and rendering real 3d. The first draws hardware accelerated <a href="demos_en.html#sirdsgl">Single Image (Random Dot) Stereograms</a>. SIRDS are flat pictures containing a 3d scene which you can only see by squinting.  The other <a href="demos_en.html#webcamucp">"Webcam-UCP"</a> program creates  traditional red/cyan anaglyphs. Furthermore it tracks the position of the 3d glasses via a webcam and renders the scene in user centered projection.<br>
           </text></new>
-          <new date="27. Jan 2010"><text language="de">
+          <new date="2010-01-27"><text language="de">
           Von VideLibri gibt es nun eine neue Version, die auch die Hochschulbibliothekk der RWTH Aachen unterstützt und vollständig Linux-kompatible ist, inklusive Menüeinträge und integrierte Autostartkonfiguration.  <br>
           Nun die schlechten Nachrichten: Bei der BTH Aachen gibt es noch keine integrierte Verlängerung, da man nicht gleich nach einer  Ausleihe verlängern darf, und ich somit weiß  nicht feststellen kann, wie es funktioniert. Außerden haben alle Libero-Büchereien mal wieder eine neue Software installiert. Das heißt:<br>
           Sowohl die Aachener Stadtbibliothek wie auch die FHB Düsseldorf gehen vermutlich nicht mehr. Testen kann ich es nicht, weil ich momentan nicht in die Bibliothek kann. (und genau DAS ist der Grund, warum mal endlich jemand die Software benutzen sollte. Wenn mich jemand darauf hinweist und die neue Seite per Mail schickt, kann ich solche Fehler nämlich in einer Viertelstunde beseitigen, statt in zwei Wochen!)   <br>
@@ -411,30 +411,30 @@ So only modify the pchar of an converted string if you created that string or ha
           Zudem habe ich die FHB Bochum gestrichen, da sie nicht mehr unter ihrer alten Internetadresse zu finden ist, ich die neue nirgends finden kann und sie sowieso nur im Programm war, weil sie einen gemeinsamen Server mit der FHB Düsseldorf hatte.<br>
          
           </text></new>
-          <new date="06. Jan 2010"><text language="de">
+          <new date="2010-01-06"><text language="de">
           So jetzt gibt es eine neue Version von allen in der letzten News erwähnten Paketen, hauptsächlich, weil ich vergessen hatte, die Unittest auszuschalten. Beim TreeListView gab es noch einige andere Änderungen: Beim horizontalen Scrollen flackert es nicht mehr unter GTK (früher hat es das auch nicht, aber bei der Änderung letzter Woche gab es wohl irgendwelche Kompatibilitätsprobleme) und die Icons im Baum werden nun geclippt, wenn die Spalte zu klein ist. <br>
           Außerdem gibt es jetzt eine neue Version von meinem Büchereiverwaltungsprogramm <a href="tools_de.html#videlibri">Videlibri</a> (das übrigens auf allen diesen anderen Paketen basiert). Zur Abwechslung setzt es diesmal nicht Windows sondern Debian 64-Bit voraus und kann auch die Bücher der Aachener Stadtbibliothek verwalten. Die Windowsversion kommt später, wenn ich sichergestellt habe, dass das Crosscompiling zuverlässig funktioniert. Das Programm verwendet allerdings immer noch ein Windowsverzeichnislayout (alle Dateien in einem Programmordner statt wie unter Linux üblich überall verstreut) und der Autostart muss manuell unter der gnome/KDE-Konfiguration eingetragen werden (videlibri-Pfad mit --autostart als Parameter), wenn man die Autostartfunktionalität benutzen will. 
           </text><text language="en">
           There are some minor changes in all the packets below, mostly I forgot to disable the unittests (and you probably don't want to have test log results everywhere). And the TreeListView won't flicker anymore on gtk when you scroll horizontally (I'm pretty sure that it also didn't flicker when I uploaded the last version...) and icons in the item tree will be clipped if the column is too short.
           </text></new>
-	  <new date="31. Dec 2009"><text language="de">
+	  <new date="2009-12-31"><text language="de">
            Und weiter geht's. Ich habe jetzt drei der bisherigen Packages mit HTML-Templateparser, Autoupdate und Wininetwrapper zu einem  <a href="sources_de.html#internettools">Internet Tools</a>-Package zusammengefügt und platform-unabhängig gemacht (der Hauptunterschied ist, dass der Wininetwrapper nun auch Synapse unterstützt). Das Package benötigt/enthält auch meine <a href="sources_de.html#bbutils">bbutils</a>, bei denen ich noch einen Absturz unter 64-Bit beseitigt habe (und vermutlich seit dem letzten Release auch einige Funktionen umbenannt). <br>  
            Außerdem gibt es jetzt für alle der geänderten Pascalkomponenten eine <a href="documentation/">Onlinedokumentation</a>, für die ich einfach nur die sowieso in den zip-Dateien vorhandenen pasdoc-Dateien unkomprimiert hochgeladen habe.
           </text><text language="en">
            And more updates: I merged the three packages with the template based html parser, the auto update and my Wininetwrapper into an  <a href="sources_en.html#internettools">Internet Tools</a>-Package and made them platform-independent. (the main change is that the wininet wrapper is now also a Synapse wrapper). This new package requires/contains now my <a href="sources_en.html#bbutils">bbutils</a> in which I fixed a crash on 64-Bit.  (and probably renamed some functions since the last published version). <br>  
            Furthermore I uploaded the pasdoc documentation from every (changed so far) package as <a href="documentation/">online documentation</a> and  every  archive  has now  a common structure. The root level of the zip contains a single directory named like the zip itself, which contains the data files, the changelog from Mercurial and, if available, the pasdoc documentation for that archive.
           </text></new>
-	  <new date="28. Dec 2009"><text language="de">
+	  <new date="2009-12-28"><text language="de">
 		So nun bin ich von Windows 32-Bit auf Linux 64-Bit gewechselt, und jetzt geht das große Updaten los. Die alten Programme dieser Seite waren zwar theoretisch schon alle platform-unabhängig, praktisch gab es aber noch einige Macken.<br>
 		Mein <a href="components_de.html#treelistview">TreeListView</a> läuft in der neuen Version unter LCL-GTK sehr viel schneller/flüssiger als früher, da mehrere Benutzereingaben hintereinander zusammengefasst angezeigt werden (wobei es eigentlich ein gemeldeter LCL-Bug ist, dass so viele  überflüssige  Nachrichten überhaupt weitergeleitet werden), außerdem kann jetzt in jedem Item ein Datenwert mit 64-Bit gespeichert werden und die Komponente steht in einem Designzeitpackage zur Verfügung. Die dazugehörige <a href="components_de.html#searchbar">Suchleiste</a> passt sich nun der Schriftgröße an und hat ebenfalls ein Package bekommen. Zudem kann mein  <a href="tools_de.html#jaxmlp">JAXML-Parser</a> jetzt auch Dateien mit unterschiedlichen Zeichensätzen erstellen und die \\-Form funktioniert wieder richtig.
 	  </text><text language="en">
 	      So now I switched from Windows 32 bit to Linux 64 bit and need to update all the programs here which were theoretically platform-independent, but apparently didn't really work there.<br>
 The  <a href="components_en.html#treelistview">TreeListView</a> is now a lot faster in LCL-GTK, because it will cache subsequent input events and draw all changes at once (actually it is a reported lcl bug that there are so many unnecessary events, but joining them is better anyways), and  in every item you can now store a 64 bit value instead of a 32-bit value like before. I also changed the included <a href="components_en.html#searchbar">SearchBar</a> to set its size dependent on the currently used font. For both these components I created a Delphi and a Lazarus package, so you can place them on the form during the design time.  Furthermore my  <a href="tools_en.html#jaxmlp">JAXML parser</a> can now create files in different encodings and  \\-escaping works again (it seems I forgot to actually run the unit tests on the last release). 
 	  </text></new>
-	  <new date="05. Okt 2009"><text language="de">
+	  <new date="2009-10-05"><text language="de">
 		Ich habe jetzt mal meine <a href="others_de.html#bachelor">Bachelorarbeit</a> hochgeladen. Im Wesentlichen geht es darum, wie man aus mehreren gegebenen, sortierten Listen von gleichen Ereignissen herausfinden kann, welches dieselben sind. 
 	  </text></new>
-	  <new date="16. Sep 2009"><text language="de">
+	  <new date="2009-09-16"><text language="de">
 		Diese Woche habe ich meine Bachelorarbeit/prüfung abgelegt, so dass ich mich wieder etwas um meine Homepage kümmern kann. <br>
 		Heute gibt es ein neues Java-Script, mit dem man das <a href="others_de.html#gaussElimination">gaußsche Eliminationsverfahren</a> auf eine Matrix anwenden kann. Es gibt zwar schon hunderte solche Programme im Internet, aber alle, die ich finden konnte, waren für mein Gleichungssystem unbrauchbar, da sie verlangen, dass die Matrix quadratisch ist und Elemente eines Körpers statt eines Ringes enthält.<br>  Übrigens ist interessante Tatsache, die ich bei der Implementierung festgestellt habe, dass man den euklidischen Algorithmus zur ggT-Berechnung als Spezialfall des gaußschen Eliminationsverfahren auf einer 2x1-Matrix der natürlichen Zahlen betrachten kann.
 	  </text><text language="en">
@@ -442,21 +442,21 @@ The  <a href="components_en.html#treelistview">TreeListView</a> is now a lot fas
 		Today I added a java script that you can use to perform a <a href="others_en.html#gaussElimination">Gaussian Elimination</a> on a given matrix. Of course, there are already hundreds of such scripts online, but all of those I found, didn't work for the equations I wanted to solve, because they assumed that the matrix is quadratic and contains elements of a field instead of a ring. And most of them don't let you choose the order in which the operations are performed or allow neither import nor export of data. The only problem with my script is that java script is always a little bit slow, but anyways you don't  solve  equations with dozen variables step-by-step. And it seems that no one  downloads anything in the web2.0 era.<br>
 		An interesting fact I noticed while implementing this is that you can consider the Euclidean algorithm for finding the gcd as a special case of the Gaussian Elimination on a 2x1-matrix of integers.
 	  </text></new>
-	  <new date="15. Apr 2009"><text language="de">
+	  <new date="2009-04-15"><text language="de">
 	     Es gibt nun wieder ein neues Programm: Einen <a href="tools_de.html#sunsimulator">Sonnensimulator</a>, der die Helligkeit und den Farbton des Monitors zeitlich ändert, so dass dessen Licht dem Sonnenlicht entspricht.<br>
 		 Außerdem habe ich dafür eine <a href="sources_de.html#diagram">Diagrammkomponente</a> geschrieben, die Gleitkommazahlen-Reihen unterschiedlich darstellen kann. Sie benutzt ein Model/View-System (da ich mich viel mit QT beschäftigt habe), das im ersten Moment ziemlich verblüffend wirkt. Z.B.: Kann man in zwei unterschiedlichen Fenstern immer dieselben Punkte synchronisiert anzeigen und in einem noch eine weitere Reihe hinzufügen.
       </text><text language="en">
 	     There is now a new program: <a href="tools_en.html#sunsimulator">Sun-Simulator</a> which changes the brightness and shade of color of the monitor during the day and year, so that its light matches the sunlight.<br>
 		 Additional I wrote a <a href="sources_en.html#diagram">diagram component</a> for Lazarus which shows float points in multiple ways. It is based on a model/view system (because I use qt a lot at the moment) which can be used to create interesting effects very easily. E.g.: you can synchronize the data points across different windows and add some other points in one of them at the same time.
       </text></new>    
-	  <new date="09. Apr 2009"><text language="de">
+	  <new date="2009-04-09"><text language="de">
 	     Ein Problem, wenn man Opensource-Software schreibt ist, dass man häufig Patches erhält, die ziemlich unbrauchbar sind, weil sie zu 95% aus Whitspaceänderungen bestehen. Daher habe ich ein (unter Linux und Windows laufendes) <a href="tools_de.html#simplifydiff">Kommandozeilentool namens Simplifydiff</a> geschrieben, welches alle unnötigen Daten entfernt.<br>
          Außerdem werden ab jetzt alle Gästebucheintrag, welche von der Heuristik als Spam erkannt werden <em>ohne Backup</em> gelöscht. Bisher habe ich zur Sicherheit immer noch eine Kopie per Mail erhalten, aber da unter den letzten tausend Einträgen sowieso kein echter Beitrag war, ist das wohl unnötig. (Ebenfalls unnötig sind übrigens die Spameinträge, das Gästebuch hat nämlich schon immer noindex, nofollow gesetzt!)
       </text><text language="en">
 	     A problem with writing open-source software is that you often receive patches which are completely useless, because they consists to 95 percent of changed whitespace. Therefore I wrote the command line tool <a href="tools_en.html#simplifydiff">Simplifydiff</a> that removes all unnecessary data.<br>
          And all entries in the guestbook which are spam according to the heuristic are now removed <em>without a backup</em>. So far  I received a copy as mail, but since the last thousand entries were really spam, this seems to be useless.  (Actually the spam entries are also completely useless, because the guestbook has set the flags noindex, nofollow since the beginning!)
       </text></new>    
-      <new date="01. Mar 2009"><text language="de">
+      <new date="2009-03-01"><text language="de">
          Vor einiger Zeit habe ich angefangen Texte und ein Buch mit LaTeX zu schreiben und habe dafür den Editor Texmaker genommen, da es der einzige platform-unabhängige, open-source Editor war, den ich finde konnte. Da der einige Fehler enthält, habe ich in einige kleine Patch erstellt, die dann immer größer wurden, bis sie schließlich zu dem Fork <a href="http://texmakerx.sourceforge.net">TexMakerX</a> (auf Sourceforge) geführt haben. Zu den wichtigsten Feature, die ich hinzugefügt habe, gehört interaktive Rechtschreibprüfung, Codefaltung und eine Textanalyse.<br>
          Auf dieser Seite hier habe ich dagegen nur den Übersichtstext unten mal wieder aktualisiert und, dank eines Versionskontrollsystems, das Datum der Newsnachricht vor dieser richtig gestellt. (da stand nämlich noch 18. Okt) (Korrektur: Das VCS lag falsch, aber glücklicherweise hatte ich noch mein CMS)
       </text><text language="en">
