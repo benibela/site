@@ -61,6 +61,23 @@ Empfangsereignissen in Ereignisprotokollen" wird untersucht, wie man aus der Rei
   </download>
   
   <download> 
+    <title language="de">Präsentation AAAI 16</title>
+    <title language="en">Presentation AAAI 16</title>
+    <id>slides16aaai</id>
+    <file>slides16aaai.zip</file>
+    <description_80 language="de">Poster zum Paper "Separators and Adjustment Sets in
+    Markov Equivalent DAGs"</description_80>
+    <description_80 language="en">Poster about the paper "Separators and Adjustment Sets in
+    Markov Equivalent DAGs"</description_80>
+    <payment-license>-</payment-license>
+    <content language="de">Poster und Folien zum Paper <a href="http://wwwtcs.tcs.uni-luebeck.de/downloads/papers/2016/full-version.pdf">Separators and Adjustment Sets in
+    Markov Equivalent DAGs</a> bei AAAI 2016, welches das UAI 14 Paper zu Chain Graphen verallgemeinert .</content>
+    <content language="en">Poster and slides about the paper <a href="http://wwwtcs.tcs.uni-luebeck.de/downloads/papers/2016/full-version.pdf">Separators and Adjustment Sets in
+    Markov Equivalent DAGs</a> presented at AAAI 2016, generalizing the UAI 14 paper to a new class of chain graphs.</content>
+  </download>
+
+  
+  <download> 
     <title language="de">Folien Balisage 14</title>
     <title language="en">Slides Balisage 14</title>
     <id>slides14balisage</id>
