@@ -13,35 +13,45 @@
     <text language="en"></text>
     </new>
 -->    
-    <new date="2015-03-18"> 
-    <text language="de">Jetzt habe ich die format-*-Funktionen doch zuerst implementiert, was nahezu 99% XQTS-Konformanz auch für XPath/XQuery 3.0 ergibt...</text>
-    <text language="en">
-       Another update of the Internet Tools: All the format-* functions are now implemented, which gives almost 99% XQTS-conformance for XPath/XQuery 3.0, too.  I did not plan to implement them as they are so silly, but then I was stuck in an airplane and to tired to work on anything else, so they seemed an ideal task. You can still see a few failing format-* tests in the report, one of the blocks with the most failures, but there the W3C just seems to have forgotten, what the functions are supposed to do.  
+    <new date="2016-03-21"> 
+    <text language="de">Die Webseite ist nun von meiner <a auto="jaxmlp"/> Sprache zu <a auto="xidel"/>s XQuery migriert. Ein bisschen absurd, da ich VideLibri/Xidel dafür programmiert habe, die Daten von Büchereiwebseiten auszulesen, und jetzt erstellt es  stattdessen Webseiten. Aber das zeigt die Mächtigkeit von XQuery. <br/>
+    Und es war schon wieder fast die Hälfte meiner Links tot. Da brauch ich mal ein besseres System, nur leider haben "Social Bookmarks" (del.icio.us) mit ihrer Abhängigkeit von fremden Servern auch nichts gebracht. Völlig überraschend ist das Spotlight-Forum jetzt wieder aktiv geworden. Damit hätte ich nicht gerechnet. Allerdings mit einem neuen Betreiber, nachdem der alte gestorben ist. Auch absurd, wenn ich nach alten Foren mit tausenden Nutzern google, und alles, was ich finde, ist die Linkliste auf meiner eigenen Seite. </text>
+    <text language="en">I have migrated this webpage from my <a auto="jaxmlp"/> language to XQuery. It is a <a href="//hg.benibela.de/site/file/tip/style.xq.html">great example</a> how to generate a static webpage with <a auto="xidel"/>. Although keeping the HTML as XQuery expression, loading it as string, evaluating it with Xidel's <code>eval</code> function and writing the output with an EXPath function is not standard XQuery. But surely other XQuery processors can evaluate XQuery, too.<br/>
+    JAXMLP worked on a byte stream and inserted XML elements parsed with the standard Java XML library, so the input had to be valid XML and the output could be anything. Xidel works on a tree representation, so it always creates valid HTML. Although Xidel's default parser accepts anything as input, unlike JAXMLP it cannot dump a CDATA section containing invalid X/HTML in an output stream, so I still had to change and correct the input files. <br/>
+    Three things were surprising: First that PHP's <code>&lt;?php</code> doubles as XML processing instruction, so a PHP file can be valid XML. Secondly that JAXMLP's semantics was similar to XQuery's. <code>{{$IF download/screenshot != ""}}..{{$/IF}}</code> becomes <code>{if ($download/screenshot) then .. else ()}</code>, which even has the same number of characters. Third, that Xidel is 5 times faster than JAXMLP, despite the fact that JAXMLP just copies the data from the XML to the output, while an XQuery function in Xidel cannot change the immutable output, so it has to copy every node and children repeatedly in O(n^2). I blame the JVM overhead. On the very first start Xidel was even 30 times faster.<br/>
+    The big advantage of Xidel is that I can now use all the overcomplicated XQuery functions on the webpage, like <code>format-date</code> to translate the dates between German and English. I hope this change did not break the IE5 compatibility, but I cannot find that IE version to test it anymore. </text>
+    </new>
+
+    <new date="2015-03-18"> <text>
+    <div language="de">Jetzt habe ich die format-*-Funktionen doch zuerst implementiert, was nahezu 99% XQTS-Konformanz auch für XPath/XQuery 3.0 ergibt...<br/>Typisch für XQuery sind die Funktionen viel zu overengineered, zum Beispiel:</div>
+    <div language="en">
+       Another update of the Internet Tools: All the format-* functions are now implemented, which gives almost 99% XQTS-conformance for XPath/XQuery 3.0, too.  I did not plan to implement them as they are so silly, but then I was stuck in an airplane and to tired to work on anything else, so they seemed an ideal task. You can still see a few failing format-* tests in the report, one of the blocks with the most failures, but there the W3C just seems to have forgotten, what the functions are supposed to do.  <br/>
+       Here is an example to show just how silly and overcomplicated they made a simple int-to-str conversion: </div>
     
-    </text>I had a nice example for their silliness, but Java 
-           <pre>("0", "٠", "𝟘", "𝟎", "߀", "೦", "꧐", "༠", "i", "a", "w", "w;t", "w;o", "W", "W", "w;o", "w;o(-er)", "#,0") 
-    ! format-integer(position(), ., if (position() >= last() - 2) then "de" else ())
-    </pre>
-    Output:
-    <pre>1
-    ٢
-    𝟛
-    𝟒
-    ߅
-    ೬
-    ꧗
-    ༨
-    ix
-    j
-    eleven
-    dozen
-    thirteenth
-    FOURTEEN
-    FIFTEEN
-    sechzehnte
-    siebzehnter
-    1,8
-    </pre>
+<pre>("0", "٠", "𝟘", "𝟎", "߀", "೦", "꧐", "༠", "i", "a", "w", "w;t", "w;o", "W", "W", "w;o", "w;o(-er)", "#,0") 
+! format-integer(position(), ., if (position() >= last() - 2) then "de" else ())
+</pre>
+Output:
+<pre>1
+٢
+𝟛
+𝟒
+೬
+꧗
+༨
+ix
+j
+eleven
+dozen
+thirteenth
+FOURTEEN
+FIFTEEN
+sechzehnte
+siebzehnter
+1,8
+</pre>
+  </text>
+           
     </new>
 
     <new date="2016-02-07"> 
