@@ -15,6 +15,9 @@ declare function local:language-filter($node, $language-id){
         if ( $e/(preceding-sibling::*,following-sibling::*)[name() = $e/name() and @language = $language-id] ) then ()
         else $e
       else $e
+    else if ($e/@auto and name($e) = "a") then
+      let $target := local:get-id-target($e/@auto) 
+      return <a href="{$target('source')}_{$language/id}.html#{$e/@auto}">{$target('title')}</a>
     else $e
   })
 };
@@ -30,6 +33,15 @@ declare function local:file-url($fileinfo){
 };
 declare function local:file-url(){
   local:file-url($fileinfo, $language)
+};
+declare function local:remember-id($id, $title){
+  file:write("buildtemp/ids/" || $id || "-" || $language/id, serialize-json({
+    "title": $title,
+    "source": $source
+  }))
+};
+declare function local:get-id-target($id){
+  jn:parse-json(file:read-text("buildtemp/ids/" || $id || "-" || $language/id))
 };
 declare function local:writeSiteMap($fileparent){
   for $fi in $fileparent/fileinfo[not(hidden = "YES")] return (

@@ -107,6 +107,7 @@
              for $download in $file/download 
              let $download-id := ($download/id, $download/file)[1]/data()
              return (
+               if ($download-id) then local:remember-id($download-id, $download/title/text()) else (),
                $download/start-category/<tr class="category-line"><th colspan="3">{data()}</th></tr>,
                <tr>
                  <td><a href="{($download/linkTo, '#' || $download-id)[1]}">{$download/title/text()}</a></td>
