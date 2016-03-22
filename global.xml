@@ -10,6 +10,11 @@
   <homepageOf>Homepage von </homepageOf>
   <sourceOnGithub>Quellcode auf GitHub</sourceOnGithub>
   <jumpToTop>zur Übersicht</jumpToTop>
+  <Language>Sprache</Language>
+  <Source>Source</Source>
+  <License>Lizenz</License>
+  <Title>Titel</Title>
+  <Description>Beschreibung</Description>
 </language>
 <language>
   <id>en</id>
@@ -21,6 +26,11 @@
   <homepageOf>Personal home page of </homepageOf>
   <sourceOnGithub>Source on GitHub</sourceOnGithub>
   <jumpToTop>jump to top</jumpToTop>
+  <Language>Language</Language>
+  <Source>Source</Source>
+  <License>License</License>
+  <Title>Title</Title>
+  <Description>Description</Description>
 </language>
 
 <fileinfo>

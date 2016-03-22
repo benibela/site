@@ -89,17 +89,17 @@
            <div class="shortdescription_border">
            <table class="shortdescription"><thead>
            <tr>
-             <th>Titel</th>
-             <th>Beschreibung</th>
+             <th>{$language/Title/node()}</th>
+             <th>{$language/Description/node()}</th>
              {
                ($file/download)[1] ! (
-                 {"data": language, "de": "Sprache"},
-                 {"data": prog-language, "de": "Sprache"},
-                 {"data": payment, "de": "Typ"},
-                 {"data": source, "de": "Source"},
-                 {"data": source-license, "de": "Lizenz"},
-                 {"data": payment-license, "de": "Lizenz"}
-               ) [.("data") instance of node()] ! <th>{.("de")}</th>
+                 {"data": language, "th": $language/Language},
+                 {"data": prog-language, "th": $language/Language},
+(:                 {"data": payment, "th": "Typ"},:)
+                 {"data": source, "th": $language/Source},
+                 {"data": source-license, "th": $language/License},
+                 {"data": payment-license, "th": $language/License}
+               ) [.("data") instance of node()] ! <th>{.("th")}</th>
              }
            </tr>
            </thead><tbody>
@@ -112,7 +112,7 @@
                <tr>
                  <td><a href="{($download/linkTo, '#' || $download-id)[1]}">{$download/title/text()}</a></td>
                  <td>{$download/description_80/node()}</td>
-                 {$download!(language, prog-language, payment, source, source-license, payment-license )!<td>{node()}</td>}
+                 {$download!(language, prog-language, (:payment,:) source, source-license, payment-license )!<td>{node()}</td>}
                </tr>
              )
            }
