@@ -3,11 +3,11 @@
   <description language="en">news archive of BeniBela online</description>
   <keywords>BeniBela, Benito van der Zander, News</keywords>
   <content language="de"><p style="margin: 1em;margin-right:0em">Neuere News finden sich auf der <a href="index.html#top">Startseite</a>.</p></content>
-  <content language="en"><p style="margin: 1em;margin-right:0em">More recent news you can find on the <a href="index_en.html#top">entry page</a>.<p></content>
+  <content language="en"><p style="margin: 1em;margin-right:0em">More recent news you can find on the <a href="index_en.html#top">entry page</a>.</p></content>
   <news>
       <new date="2008-11-07"><text language="de">
 
-        Es gibt jetzt eine <a href="sources_de.html#bbutils">Übersetzungunit</a> für FPC-Dateien (wird fürs Compilern von APIM benötigt) und einen verbesserten <a href="sources_de.html#htmlparser.zip">HTML-Auswerter</a>, der auch optionale Elemente unterstützt.<br>
+        Es gibt jetzt eine <a href="sources_de.html#bbutils">Übersetzungunit</a> für FPC-Dateien (wird fürs Compilern von APIM benötigt) und einen verbesserten <a href="sources_de.html#htmlparser.zip">HTML-Auswerter</a>, der auch optionale Elemente unterstützt.<br/>
 
         Und außerdem eine neue Videlibriversion, welche auch ein Konto der FHB ohne ausgeliehene Medien verarbeiten kann (wobei man dann natürlich sowieso kein Ausleihverwaltungsprogramm benötigt)
 
@@ -19,13 +19,13 @@
 
       <new date="2008-10-18"><text language="de">
 
-        Nach langer Zeit gibt es eine neue Version von APIV, meinem Programm zur Kontrolle anderer Fenster. Wegen einem möglichen Namenskonflikt heißt es jetzt allerdings <a href="tools_de.html#apim">API Manager</a>. <br> 
+        Nach langer Zeit gibt es eine neue Version von APIV, meinem Programm zur Kontrolle anderer Fenster. Wegen einem möglichen Namenskonflikt heißt es jetzt allerdings <a href="tools_de.html#apim">API Manager</a>. <br/> 
 
         Es gibt einige neue Features, die wesentliche Verbesserung ist aber die höhere Stabilität und Flexibilität. Die alte Version neigte dazu häufig nicht zu starten oder einfach abzustürzen, bei der neuen sollte dies nicht mehr passieren. Die Flexibilität kommt dadurch zustande, dass man mittels Docking die einzelnen Bestandteile des Programms einigermaßen beliebig anordnen kann. Dazu habe ich den GUI-Teil fast komplett neugeschrieben und nebenbei von Delphi nach Lazarus portiert. Außerdem ist der Quellcode jetzt ordentlich genug, dass ich das Programm unter die GPL stellen kann.
 
       </text><text language="en">
 
-        It took a long time, but there is now a new version of APIV, a program to control other ones. It is now called <a href="tools_de.html#apim">API Manager</a> due to another program with the same name.  <br> 
+        It took a long time, but there is now a new version of APIV, a program to control other ones. It is now called <a href="tools_de.html#apim">API Manager</a> due to another program with the same name.  <br/> 
 
         It has got some new features, but the most important improvement is that it is much more stable and flexible. The old version often crashed or doesn't start at all, now something like that shouldn't happen anymore. And it is flexible, because it supports docking which you can use to choose the  layout you want. It also supports automatically translations, so it has been translated into English. The GUI part is nearly completely rewritten and converted from Delphi to Lazarus. Furthermore the source is nice enough that I can publish it under the GPL.
 
@@ -57,15 +57,15 @@
 
       <new date="2008-08-30"><text language="de">
 
-      Ich habe ein bisschen auf der Festplatte gekramt und einige uralt Projekte (von ca. 2000) ausgegraben: Das einzig nützliche ist ein etwas jüngerer <a href="sources_de.html#farbe">erweiterter Farbauswahldialog</a>. Dann gibt es noch eine Sammlung von Windows-unabhängigen, <a href="components_de.html#customcontrols">bunten Standardkomponenten.</a>.<br>
+      Ich habe ein bisschen auf der Festplatte gekramt und einige uralt Projekte (von ca. 2000) ausgegraben: Das einzig nützliche ist ein etwas jüngerer <a href="sources_de.html#farbe">erweiterter Farbauswahldialog</a>. Dann gibt es noch eine Sammlung von Windows-unabhängigen, <a href="components_de.html#customcontrols">bunten Standardkomponenten.</a>.<br/>
 
-      Damals habe ich ziemlich viele Spiele angefangen, als gibt es hier jetzt zum Einen einen kleinen <a href="games_de.html#benworm">Snakeklon</a>. Zum anderen zwei unfertige Spiele: ein <a href="games_de.html#indergalaxis">Raumschiffspiel</a> und ein <a href="games_de.html#pbspiel">Strategiespiel</a><br>
+      Damals habe ich ziemlich viele Spiele angefangen, als gibt es hier jetzt zum Einen einen kleinen <a href="games_de.html#benworm">Snakeklon</a>. Zum anderen zwei unfertige Spiele: ein <a href="games_de.html#indergalaxis">Raumschiffspiel</a> und ein <a href="games_de.html#pbspiel">Strategiespiel</a><br/>
 
       Außerdem gibt es ein kleineres Update für mein <a href="components_de.html#treelistview">TreeListView</a> (danke an Bruce Christensen) sowie kritische Bugfixes für <a href="tools_de.html#videlibri">VideLibri</a>.
 
-      </text><text language="en">I have looked a little bit around on my harddisk und diged out some old projects (from around 2000): The most useful is a younger <a href="sources_en.html#farbe">extended color selection dialog</a>. Then there is a collection of  <a href="components_en.html#customcontrols">colorful standard components.</a>.<br>
+      </text><text language="en">I have looked a little bit around on my harddisk und diged out some old projects (from around 2000): The most useful is a younger <a href="sources_en.html#farbe">extended color selection dialog</a>. Then there is a collection of  <a href="components_en.html#customcontrols">colorful standard components.</a>.<br/>
 
-      Because I started programming many games at that time, here is a small <a href="games_en.html#benworm">clone of snake</a> as well as  two unfinished games: a <a href="games_en.html#indergalaxis">space ship game</a> and a <a href="games_en.html#pbspiel">RTS game</a><br>
+      Because I started programming many games at that time, here is a small <a href="games_en.html#benworm">clone of snake</a> as well as  two unfinished games: a <a href="games_en.html#indergalaxis">space ship game</a> and a <a href="games_en.html#pbspiel">RTS game</a><br/>
 
       Furthermore there is a small update for the <a href="components_en.html#treelistview">TreeListView</a> (thanks to Bruce Christensen).</text>
 
@@ -73,13 +73,13 @@
 
       <new date="2008-08-25"><text language="de">
 
-        Heute gibt es einige kleine Änderungen: <br> Die neue Version von <a href="tools_de.html#videlibri">VideLibri</a> behebt einige kleinere Bugs.  Der XML Konverter <a href="tools_de.html#jaxmlp">JAXMLP</a> erlaubt nun das Ausführen externer Programme und das Einfügen ihrer Ausgabe in die erzeugten Dateien. <br> Mein <a href="components_de.html#treelistview">TreeListView</a> läuft nun auch unter alten Delphiversionen und verfügt über eine <a href="components_de.html#searchbar">Suchleiste</a>. Außerdem gibt es einen template-basierten <a href="sources_de.html#htmlparser">HTML-Parser</a> für Freepascal. Für diese drei Komponenten habe ich zudem jeweils eine HTML-Dokumentation geschrieben.
+        Heute gibt es einige kleine Änderungen: <br/> Die neue Version von <a href="tools_de.html#videlibri">VideLibri</a> behebt einige kleinere Bugs.  Der XML Konverter <a href="tools_de.html#jaxmlp">JAXMLP</a> erlaubt nun das Ausführen externer Programme und das Einfügen ihrer Ausgabe in die erzeugten Dateien. <br/> Mein <a href="components_de.html#treelistview">TreeListView</a> läuft nun auch unter alten Delphiversionen und verfügt über eine <a href="components_de.html#searchbar">Suchleiste</a>. Außerdem gibt es einen template-basierten <a href="sources_de.html#htmlparser">HTML-Parser</a> für Freepascal. Für diese drei Komponenten habe ich zudem jeweils eine HTML-Dokumentation geschrieben.
 
       </text>
 
       <text language="en">
 
-        Today there are some small changes: <br> The XML converter <a href="tools_en.html#jaxmlp">JAXMLP</a> can now call additional programs during a transformation and insert their output into created files.<br>  My <a href="components_en.html#treelistview">TreeListView</a> can now be used in old Delphi versions and has got a Mozilla like <a href="components_en.html#searchbar">search bar</a>. Additional there is a template-based <a href="sources_en.html#htmlparser">html parser</a> for use with FreePascal. These last three components have a new html documentation.</text>
+        Today there are some small changes: <br/> The XML converter <a href="tools_en.html#jaxmlp">JAXMLP</a> can now call additional programs during a transformation and insert their output into created files.<br/>  My <a href="components_en.html#treelistview">TreeListView</a> can now be used in old Delphi versions and has got a Mozilla like <a href="components_en.html#searchbar">search bar</a>. Additional there is a template-based <a href="sources_en.html#htmlparser">html parser</a> for use with FreePascal. These last three components have a new html documentation.</text>
 
       </new>
 
@@ -87,7 +87,7 @@
 
         Ich habe das Seitenlayout nochmals überarbeitet, so dass es nun auf allen Browser stabil laufen und sich die Seiten nun ohne Probleme im IE zoomen, durchsuchen, drucken und einigermaßen per Tastatur scrollen lassen sollte. 
 
-        <br>Besonders das Durchsuchen und Scrollen war problematisch, da bei einem Layout mit festen, den Inhalt überlagernden Elementen die Browsersuchfunktion prinzipiell nicht richtig funktioniert. Und ein Layout mit einem Scrollcontainer lässt sich im Allgemeinen nicht mittels Tastatur scrollen. Hier funktioniert es nun nur, indem jeder Link zu einem Anker zeigt und beim ersten Aufruf mittels JavaScript der Fokus versetzt wird. Aber das ist ziemlich umständlich und funktioniert eben nicht beim ersten Aufruf, wenn Skripte ausgeschaltet sind. Kennt jemand eine Methode dafür, die ohne JavaScript auskommt?
+        <br/>Besonders das Durchsuchen und Scrollen war problematisch, da bei einem Layout mit festen, den Inhalt überlagernden Elementen die Browsersuchfunktion prinzipiell nicht richtig funktioniert. Und ein Layout mit einem Scrollcontainer lässt sich im Allgemeinen nicht mittels Tastatur scrollen. Hier funktioniert es nun nur, indem jeder Link zu einem Anker zeigt und beim ersten Aufruf mittels JavaScript der Fokus versetzt wird. Aber das ist ziemlich umständlich und funktioniert eben nicht beim ersten Aufruf, wenn Skripte ausgeschaltet sind. Kennt jemand eine Methode dafür, die ohne JavaScript auskommt?
 
       </text>
 
@@ -95,7 +95,7 @@
 
         I have modified the layout of this site, so that it  works probably stably in all browsers. You can now zoom the pages in IE 7, print in FireFox, search something and scroll using your keyboard.
 
-        <br>Especially the possibility to search and scroll was difficult to implement, because the usual search functions don't work in a layout using fixed elements lying over the content. And if you put the content in a smaller container with scrollbar, the keyboard scrolling normally doesn't work. Here it works because every link refers to an anchor and a JavaScript function changes the focus to the content area when you visit this site from another one. But this is nasty and doesn't work on the first call if scripts are disabled. Has anyone found a method which doesn't need JavaScript?
+        <br/>Especially the possibility to search and scroll was difficult to implement, because the usual search functions don't work in a layout using fixed elements lying over the content. And if you put the content in a smaller container with scrollbar, the keyboard scrolling normally doesn't work. Here it works because every link refers to an anchor and a JavaScript function changes the focus to the content area when you visit this site from another one. But this is nasty and doesn't work on the first call if scripts are disabled. Has anyone found a method which doesn't need JavaScript?
 
       </text>
 
@@ -109,11 +109,11 @@
 
       <new date="2008-05-21"><text language="de">
 
-      Heute gibt es verschiedene kleine Updates: Eine neue Version meines <a href="components_de.html#TreeListView">TreeListView</a>, die einige Fehler beseitigt, stärker den normalen Komponenten ähnelt und unter Lazarus funktioniert. Dafür funktioniert sie aber eventuell nicht mehr unter alten Delphiversionen und hat keine sub-Spalten-Elemente mehr (die machten aber sowieso kaum Sinn). <br> Zusätzlich gibt es eine neue Version von meinem <a href="tools_de.html#jaxmlp">XML Umwandler</a> mit dem wesentlichsten Unterschied das Eingabedaten als Anweisungen interpretiert werden können.<br>Und dann noch eine Unit mit immer wieder <a href="sources_de.html#bbutils">nützlichen Funktionen</a> für FPC.<br>Außerdem habe ich das Seitenlayout ein wenig überarbeitet, zum Beispiel mit einigen schöneren internen Links und einer aktualisierten 404-Fehlerseite.</text>
+      Heute gibt es verschiedene kleine Updates: Eine neue Version meines <a href="components_de.html#TreeListView">TreeListView</a>, die einige Fehler beseitigt, stärker den normalen Komponenten ähnelt und unter Lazarus funktioniert. Dafür funktioniert sie aber eventuell nicht mehr unter alten Delphiversionen und hat keine sub-Spalten-Elemente mehr (die machten aber sowieso kaum Sinn). <br/> Zusätzlich gibt es eine neue Version von meinem <a href="tools_de.html#jaxmlp">XML Umwandler</a> mit dem wesentlichsten Unterschied das Eingabedaten als Anweisungen interpretiert werden können.<br/>Und dann noch eine Unit mit immer wieder <a href="sources_de.html#bbutils">nützlichen Funktionen</a> für FPC.<br/>Außerdem habe ich das Seitenlayout ein wenig überarbeitet, zum Beispiel mit einigen schöneren internen Links und einer aktualisierten 404-Fehlerseite.</text>
 
       <text language="en">Today there are some small updates: A new version of my <a href="components_en.html#treelistview">TreeListView</a> which removes some bugs, is more similar to the Windows controls and works with Lazarus.  However, it is possible that it doesn't work in  older versions of Delphi and it doesn't shows sub-column-elements (but they were never useful anyways). 
 
-      <br> Then there is a new version of my <a href="tools_en.html#jaxmlp">xml converter</a> with the main difference being the possibility to interpret the xml data as source. <br>Furthermore I uploaded a unit (for FPC) containing always <a href="sources_en.html#bbutils">useful functions</a>.<br>And the layout of this page is improved, for example the URL of the links looks nicer, the 404 error page is updated and untranslated news are shown (in gray).
+      <br/> Then there is a new version of my <a href="tools_en.html#jaxmlp">xml converter</a> with the main difference being the possibility to interpret the xml data as source. <br/>Furthermore I uploaded a unit (for FPC) containing always <a href="sources_en.html#bbutils">useful functions</a>.<br/>And the layout of this page is improved, for example the URL of the links looks nicer, the 404 error page is updated and untranslated news are shown (in gray).
 
       </text>
 
@@ -139,13 +139,13 @@
 
     <new date="2008-12-24"><text language="de">
 
-      Frohe Weihnachten!<br>
+      Frohe Weihnachten!<br/>
 
       Mit (y&lt;maxy-7*maxx/8?((Math.abs(x-maxx/2)&lt;=maxx/16?6:5)):(Math.abs(x-maxx/2)&lt;(maxy-y+1)/2?7:5)) als Algorithmus für den Musterfeldgenerator (s.u.) erhält man übrigens einen Tannenbaum.
 
     </text>
 
-    <text language="en">Merry Christmas!<br>
+    <text language="en">Merry Christmas!<br/>
 
 When you use (y&lt;maxy-7*maxx/8?((Math.abs(x-maxx/2)&lt;=maxx/16?6:5)):(Math.abs(x-maxx/2)&lt;(maxy-y+1)/2?7:5)) as algorithm in the color pattern generator(s.b.) you see a Christmas tree.
 
@@ -167,15 +167,15 @@ When you use (y&lt;maxy-7*maxx/8?((Math.abs(x-maxx/2)&lt;=maxx/16?6:5)):(Math.ab
 
     <new date="2007-10-31"><text language="de">
 
-Da die Stadtbücherei ihren WebOPAC geändert hat, gibt es nun wieder eine neue <a href="tools_de.html#videlibri">VideLibri-Version</a>, die nun auch über BibTex-Export verfügt. <br>Außerdem gibt es ein <a href="bwinf_de.html#25_3.zip">Programm</a>, dass die Lösung für eine Aufgabe der Endrunde des Bundeswettbewerb Informatik implementiert; in dem ich jetzt auch Bundessieger geworden bin.
+Da die Stadtbücherei ihren WebOPAC geändert hat, gibt es nun wieder eine neue <a href="tools_de.html#videlibri">VideLibri-Version</a>, die nun auch über BibTex-Export verfügt. <br/>Außerdem gibt es ein <a href="bwinf_de.html#25_3.zip">Programm</a>, dass die Lösung für eine Aufgabe der Endrunde des Bundeswettbewerb Informatik implementiert; in dem ich jetzt auch Bundessieger geworden bin.
 
     </text></new>
 
     <new date="2007-07-23"><text language="de">
 
-    Auch diesmal gibt es wieder eine neue Version von VideLibri. Außerdem habe ich noch drei <a href="games_de.html#schlange.zip">alte Spiele</a> hochgeladen, von denen zwei auf dem Taschenrechner Algebra FX 2.0 Plus laufen. <br> Für diesen Rechner gibt es dann auch noch ein <a href="tools_de.html#math.zip">Hilfsprogramm für Rechnungen mit große Zahlen</a>.
+    Auch diesmal gibt es wieder eine neue Version von VideLibri. Außerdem habe ich noch drei <a href="games_de.html#schlange.zip">alte Spiele</a> hochgeladen, von denen zwei auf dem Taschenrechner Algebra FX 2.0 Plus laufen. <br/> Für diesen Rechner gibt es dann auch noch ein <a href="tools_de.html#math.zip">Hilfsprogramm für Rechnungen mit große Zahlen</a>.
 
-    </text><text language="en">You can now download three <a href="games_en.html#schlange.zip">old games</a>. Two of them can be played on the calculator Algebra FX 2.0 Plus.<br> There is also a program which allows <a href="tools_en.html#math.zip">the calculation with long integers.</a>.
+    </text><text language="en">You can now download three <a href="games_en.html#schlange.zip">old games</a>. Two of them can be played on the calculator Algebra FX 2.0 Plus.<br/> There is also a program which allows <a href="tools_en.html#math.zip">the calculation with long integers.</a>.
 
 </text></new>
 
@@ -184,62 +184,62 @@ Da die Stadtbücherei ihren WebOPAC geändert hat, gibt es nun wieder eine neue 
     </text></new>
     <new date="2007-05-12"><text>Es gibt jetzt die Version 0.905 von VideLibri, die einige Fehler korrigiert.</text></new>
     <new date="2007-04-22"><text language="de">
-    Die Seite wurde überarbeitet und die Speicherung in xml mit meiner Sprache <a href="tools_de.html#jaxmlp">JAXMLP</a> enthält jetzt praktisch keine Redunanz mehr.<br>
-Außerdem habe ich meine <a href="others_de.html#facharbeit.zip">Facharbeit</a> und das damit verbundene Programm hochgeladen, woran ich von Weihnachten bis Ostern gearbeitet habe.<br>
+    Die Seite wurde überarbeitet und die Speicherung in xml mit meiner Sprache <a href="tools_de.html#jaxmlp">JAXMLP</a> enthält jetzt praktisch keine Redunanz mehr.<br/>
+Außerdem habe ich meine <a href="others_de.html#facharbeit.zip">Facharbeit</a> und das damit verbundene Programm hochgeladen, woran ich von Weihnachten bis Ostern gearbeitet habe.<br/>
 Und es gibt jetzt auch die Programme der Bwinf-Runden hier, womit ich mich die restliche Zeit (vorher, nachher) beschäftigt habe, weshalb es auch so selten etwas neues auf der Seite gibt.</text>
-<text language="en">The site structure has been improved, using my xml processing language <a href="tools_de.html#jaxmlp">JAXMLP</a>.<br>And there are some German only ressources, my submissions to the national informatic contest BWInf and a text about the calculation of molecule conformations.
+<text language="en">The site structure has been improved, using my xml processing language <a href="tools_de.html#jaxmlp">JAXMLP</a>.<br/>And there are some German only ressources, my submissions to the national informatic contest BWInf and a text about the calculation of molecule conformations.
 </text></new>
 <new date="2007-03-24"><text language="de">
-Die Seite wird jetzt auch im Internet Explorer 5 und (leider nur ungezoomt) im IE 7. <br>Wer das Internet mit einem vernünftigen Programm benutzen will, sollte sich aber trotzdem mal den <a href="http://www.mozilla-anleitung.de/Mozilla/101Dinge.php">FireFox</a> ansehen.</text></new>
+Die Seite wird jetzt auch im Internet Explorer 5 und (leider nur ungezoomt) im IE 7. <br/>Wer das Internet mit einem vernünftigen Programm benutzen will, sollte sich aber trotzdem mal den <a href="http://www.mozilla-anleitung.de/Mozilla/101Dinge.php">FireFox</a> ansehen.</text></new>
 <new date="2007-02-27"><text language="de">Zwei Fehler in VideLibri wurden gelöst, jetzt kann es auch wieder für die FHB benutzt werden.</text></new>
 <new date="2007-02-17"><text language="de">
 Das Ausleihenverwaltungsprogramm <a href="tools_de.html#videlibri">VideLibri</a> lässt sich jetzt als Betaversion herunterladen. (trotz Betastatus läuft es fast einwandfrei)
 </text></new>  
 <new date="2007-02-01"><text language="de">
-Die Seite ist jetzt in einer Art Content-Management-System gespeichert. (Das sieht man zwar nicht, ist aber praktisch),<br>Das letzte Jahr angegekündigte, Bücherverwaltungsprogramm dauert wohl noch ein bisschen länger, es ist zwar im Prinzip schon fertig, hat aber noch zu viele Fehler und ich zu wenig Zeit um sie zu beseitigen. Außerdem ist es in Lazarus programmiert, das Moment auch noch einen Haufen Fehler hat.
+Die Seite ist jetzt in einer Art Content-Management-System gespeichert. (Das sieht man zwar nicht, ist aber praktisch),<br/>Das letzte Jahr angegekündigte, Bücherverwaltungsprogramm dauert wohl noch ein bisschen länger, es ist zwar im Prinzip schon fertig, hat aber noch zu viele Fehler und ich zu wenig Zeit um sie zu beseitigen. Außerdem ist es in Lazarus programmiert, das Moment auch noch einen Haufen Fehler hat.
 </text></new>  
 <new date="2006-12-15"><text language="de">
-Nach langer Zeit gibt es mal wieder ein Update bezüglich Programmierung.<br>
-Eine Klasse für das Parsen von <a href="sources_de.html#rcmdline.zip">Kommandozeilenparameter</a>, eine für ein <a href="sources_de.html#autoupdate.zip">automatisches Programmupdate</a> und einen kleinen IE-basierten <a href="sources_de.html#simplebrowser.zip">Browser</a>, der über Kommandozeile gesteuert werden kann. Wie man sieht, sind dies alles bloß Programmteile, und zwar von meinem neuen Bücherei - Ausleihen - Verwaltungs - programmes (Videlibri), das es auch bald hier geben wird.<br>
+Nach langer Zeit gibt es mal wieder ein Update bezüglich Programmierung.<br/>
+Eine Klasse für das Parsen von <a href="sources_de.html#rcmdline.zip">Kommandozeilenparameter</a>, eine für ein <a href="sources_de.html#autoupdate.zip">automatisches Programmupdate</a> und einen kleinen IE-basierten <a href="sources_de.html#simplebrowser.zip">Browser</a>, der über Kommandozeile gesteuert werden kann. Wie man sieht, sind dies alles bloß Programmteile, und zwar von meinem neuen Bücherei - Ausleihen - Verwaltungs - programmes (Videlibri), das es auch bald hier geben wird.<br/>
 Die Seite selbst ist auch leicht geändert, es gibt jetzt ein <a href="oldnews_de.html#top">Newsarchiv</a> und die Links sind teilweise als "social bookmarks" auf <a href="http://del.icio.us/BeniBela">del.icio.us</a> ausgelagert.
-</text><text language="en">Although the last change here has been more than 7 months ago, this site isn't dead. I have only been to busy to change anything here.<br>
-However, today I have added some new support units (for programming, not gaming), a <a href="sources_en.html#rcmdline.zip">command line parser</a>, an <a href="sources_en.html#autoupdate.zip">online update class</a> and a <a href="sources_en.html#simplebrowser.zip">simple browser</a> (the last one isn't a tool, because it is only usefull when used together with an own program).<br>
+</text><text language="en">Although the last change here has been more than 7 months ago, this site isn't dead. I have only been to busy to change anything here.<br/>
+However, today I have added some new support units (for programming, not gaming), a <a href="sources_en.html#rcmdline.zip">command line parser</a>, an <a href="sources_en.html#autoupdate.zip">online update class</a> and a <a href="sources_en.html#simplebrowser.zip">simple browser</a> (the last one isn't a tool, because it is only usefull when used together with an own program).<br/>
 The site itself have been changed, too. There is now a <a href="oldnews_en.html#top">news archive</a> (mainly for the German part, where more news exists) and most of the links are now social bookmarks on <a href="http://del.icio.us/BeniBela">del.icio.us</a> (mainly the English links).</text>
 </new>  
-    <new date="2006-10-26"><text language="de">Mein Chemiereferat zur <a href="others_de.html#glaselektrode.zip">Glaselektrode</a> ist jetzt online.</p></text></new>
+    <new date="2006-10-26"><text language="de">Mein Chemiereferat zur <a href="others_de.html#glaselektrode.zip">Glaselektrode</a> ist jetzt online.</text></new>
     <new date="2006-04-27"><text language="de">Es gibt jetzt die nächste version von MathSys in der einige Fehler korrigiert sind. (Stark vergrößerte Sachen ließen sich nicht drucken, die Vorschau war verschoben und mit sich selbst multiplizierte Variablen wurden nicht gezeichnet). </text></new>
 
     <new date="2006-04-16">
-      <text language="de">Heute habe ich mehrere kleine Änderungen hochgeladen. Die Links wurden erweitert und auf der Seite steht endlich meine neue Mailadresse, die ich schon seit einem halben Jahr habe. Außerdem gibt es neu einen mathematisch Plotter, um Funktionen zu zeichnen. Er ist zwar noch relativ unfertig, aber das Zeichnen funktioniert bereits, und ich finde die Ausgabe schöner als die von allen anderen Programmen, die ich kenne. In dem Programm gibt es auch ein verstecktes "easter-egg".<br>
-Frohe Ostern!</p></text>
+      <text language="de">Heute habe ich mehrere kleine Änderungen hochgeladen. Die Links wurden erweitert und auf der Seite steht endlich meine neue Mailadresse, die ich schon seit einem halben Jahr habe. Außerdem gibt es neu einen mathematisch Plotter, um Funktionen zu zeichnen. Er ist zwar noch relativ unfertig, aber das Zeichnen funktioniert bereits, und ich finde die Ausgabe schöner als die von allen anderen Programmen, die ich kenne. In dem Programm gibt es auch ein verstecktes "easter-egg".<br/>
+Frohe Ostern!</text>
 <text language="en">
-Today I have uploaded some little changes.  The link page is now extended and my new (a half year old) mail address is listed here. Furthermore there is a mathematical plotter which draws functions. um Funktionen zu zeichnen. It is not finished yet, but the drawing works already and I thinks the output is nicer than the one of any other program I know. Additionally it has a hidden easter-egg.<br>Happy Easter!
+Today I have uploaded some little changes.  The link page is now extended and my new (a half year old) mail address is listed here. Furthermore there is a mathematical plotter which draws functions. um Funktionen zu zeichnen. It is not finished yet, but the drawing works already and I thinks the output is nicer than the one of any other program I know. Additionally it has a hidden easter-egg.<br/>Happy Easter!
 </text></new>
-    <new date="2005-12-26"><text language="de">Passend zur Winterzeit habe ich ein <a href="others_de.html#schnee.exe">kleines Programm</a> hochgeladen, das es auf dem Bildschirm schneien lässt.<br>
-Ich wünsche jedem ein schönes neues Jahr.</p></text>
-<text language="en">Because of the wintertime I published a <a href="others_de.html#schnee.exe">small program</a> which draws snow on the screen.<br>
+    <new date="2005-12-26"><text language="de">Passend zur Winterzeit habe ich ein <a href="others_de.html#schnee.exe">kleines Programm</a> hochgeladen, das es auf dem Bildschirm schneien lässt.<br/>
+Ich wünsche jedem ein schönes neues Jahr.</text>
+<text language="en">Because of the wintertime I published a <a href="others_de.html#schnee.exe">small program</a> which draws snow on the screen.<br/>
 Happy New Year!</text></new>
 <new date="2005-09-17">
 <text language="de">Es gibt eine neue Delphikomponente, die die Funktionen von TListView mit denen von TTreeView verbindet.</text>
 <text language="en">There is a new delphi component which have the features of TListView and the ones of TTreeView together.</text></new>
 <new date="2005-09-09">
-<text language="de">Es sind 4 neue Programme hochgeladen worden, 1 einfacher vertikaler Shooter und 3 Tools, Simulatoren für Logikschaltungen und Dateien. <br> Und ich bin wieder zum alten Seitenaufbau gewechselt, wo der Link zum Quellcode von Open Source Programmen nicht auf eine extra Seite ausgelagert ist, sondern direkt beim Programm steht.</text>
-<text language="en">There are 4 new programs, 1 simple vertically-scrolling shooter and 3 tools,  simulators of logic circuits and files. <br> And I have changed back to the old site division where the source of open source programs is directly linked with the program description.</text></new>
+<text language="de">Es sind 4 neue Programme hochgeladen worden, 1 einfacher vertikaler Shooter und 3 Tools, Simulatoren für Logikschaltungen und Dateien. <br/> Und ich bin wieder zum alten Seitenaufbau gewechselt, wo der Link zum Quellcode von Open Source Programmen nicht auf eine extra Seite ausgelagert ist, sondern direkt beim Programm steht.</text>
+<text language="en">There are 4 new programs, 1 simple vertically-scrolling shooter and 3 tools,  simulators of logic circuits and files. <br/> And I have changed back to the old site division where the source of open source programs is directly linked with the program description.</text></new>
 <new date="2005-08-21"><text language="de">
-Das alte, externe Gästebuch wurde durch ein selbstprogrammiertes ersetzt, so dass es endlich zum Seitendesign passt. Leider sind dadurch alle alten Gästebucheinträge nicht mehr verfügbar, aber man kann sie noch auf der <a href="http://gaestebuch-2000.de/cgi-bin/gb.pl?user=benibela">alten Seite</a> finden.</p></text></new>
+Das alte, externe Gästebuch wurde durch ein selbstprogrammiertes ersetzt, so dass es endlich zum Seitendesign passt. Leider sind dadurch alle alten Gästebucheinträge nicht mehr verfügbar, aber man kann sie noch auf der <a href="http://gaestebuch-2000.de/cgi-bin/gb.pl?user=benibela">alten Seite</a> finden.</text></new>
 <new date="2005-08-15"><text language="de">
-Ich habe die Seite komplett überarbeitet.<br>
-Sie ist jetzt moderner und völlig Standard-kompatibel. (Das heißt das sie unter alten Browser nicht mehr funktioniert ;-), da aber alle Zugriffe nahezu nur von neueren Browsern kommen, ist es nicht so tragisch)<br>
-Der Name der Seite wurde von "BeniBelas Seite" zu "BeniBela online" geändert, und sie wurde vollständig auf <a href="index_en.html#top" lang="en">English</a> übersetzt.<br>
-In den nächsten Tagen, werden noch kleinere Updates folgen, um andere Programme oder Quellcodes hochzuladen, und um eventuell auftretende Probleme zu beheben.</p></text>
-<text language="en">This page was translated to English and it got a completely new design.<br>
-In the next days there will be more updates which will contain other programs. <br>
+Ich habe die Seite komplett überarbeitet.<br/>
+Sie ist jetzt moderner und völlig Standard-kompatibel. (Das heißt das sie unter alten Browser nicht mehr funktioniert ;-), da aber alle Zugriffe nahezu nur von neueren Browsern kommen, ist es nicht so tragisch)<br/>
+Der Name der Seite wurde von "BeniBelas Seite" zu "BeniBela online" geändert, und sie wurde vollständig auf <a href="index_en.html#top" lang="en">English</a> übersetzt.<br/>
+In den nächsten Tagen, werden noch kleinere Updates folgen, um andere Programme oder Quellcodes hochzuladen, und um eventuell auftretende Probleme zu beheben.</text>
+<text language="en">This page was translated to English and it got a completely new design.<br/>
+In the next days there will be more updates which will contain other programs. <br/>
 Because this is my first published English page it would be nice, if you will inform me (via mail or over the guestbook), if you find any linguistic errors like spelling or grammar mistakes.</text></new>
 </news>
-<final-content><br><br><br>
+<final-content><br/><br/><br/>
 <div style="text-align:center; margin-top: 2em;">
-<img src="img/maus.gif" alt="Maus mit Käse"width="182" height="132">
+<img src="img/maus.gif" alt="Maus mit Käse" width="182" height="132"/>
 </div>
-<br><br><br><br></final-content>
+<br/><br/><br/><br/></final-content>
  
 </file>

@@ -53,7 +53,7 @@
                  <li>Öffnen: <span class="code">mciSendString('Set cdaudio door open wait', nil, 0, 0);</span></li>
                  <li>Schließen: <span class="code">mciSendString('Set cdaudio door closed wait', nil, 0, 0);</span> </li>
                </ul>
-               Damit Delphi diese Funktion kennt, muss die Unit mmsystem eingebunden werden.
+               Damit Delphi diese Funktion kennt, muss die Unit mmsystem eingebunden werden.</p>
 
                <p>Eine andere Möglichkeit ist es auf den Monitor zu malen. Bei der API braucht man für jeden Grafikeffekt auf dem Desktop dessen Handle, bei TCVirus steht dieser in der Eigenschaft <span class="var">canvas.handle</span>.
                Ohne TCVirus muss man ein neues Handle erzeugen, indem man <span class="code">createDc('DISPLAY',nil,nil,nil)</span> aufruft. Nach der Benutzung muss das durch createDc erzeugte Handle mit <span class="func">DeleteDc</span> freigegeben werden.</p>
@@ -68,7 +68,7 @@
                  <li>Vertikal:</li>
                  <li class="code" style="padding-left: 1em">StretchBlt(<span class="value">handle</span>, 0, 0,  screen.width, screen.Height, <span class="value">handle</span>, screen.Width, 0, -screen.Width, screen.Height, SRCCOPY)</li>
                </ul>
-               Für <span class="value">handle</span> muss man den Handle des Desktops einsetzen.<br/><br/><br/>
+               Für <span class="value">handle</span> muss man den Handle des Desktops einsetzen.<br/></p><br/>
 
                <p>Man kann auch Kreise, Rechtecke, Ellipsen und Linien auf den Bildschirm zeichnen.<br/>
                Bei TCVirus funktioniert das wie das normale Zeichnen mit Hilfe eines Canvas in Delphi. <br/>
@@ -87,14 +87,14 @@
                 <span class="code" style="margin-left:1em">InvertRect(<span class="value">Handle des Desktops</span>,<span class="value">bereich</span>)</span>.<br/>
                Für <span class="value">bereich</span> muss man einen Zeiger auf eine Struktur vom Typ TRect angeben. Man kann die in Delphi über <span class="code">rect(<span class="value">links, oben, rechts, unten</span>)</span> erzeugen.<br/> <br/>
                Und man kann ein Bild auf den Bildschirm zeichnen:
-               <span class="code">DrawState(<span class="value">handle</span>, dss_normal nil, <span class="value">bild</span>,0,<span class="value">x, y, breite, höhe</span>, dst_bitmap);</span><br/><br/>.
+               <span class="code">DrawState(<span class="value">handle</span>, dss_normal nil, <span class="value">bild</span>,0,<span class="value">x, y, breite, höhe</span>, dst_bitmap);</span></p><br/>.
 
-               Für <span class="value">handle</span> muss man den Handle des Desktops angeben.Für <span class="value">x, y</span> setzt man die Koordinaten ein. Für <span class="value">breite, höhe</span> muss man die Breite und Höhe des Bildes einfügen. Für <span class="value">bild</span> muss man den Handle des Bildes übergeben. Wenn man z.B.: in Delphi TImage verwendet, enthält die Eigenschaft Picture.Bitmap.Handle das Handle.<br/>
+               <p>Für <span class="value">handle</span> muss man den Handle des Desktops angeben.Für <span class="value">x, y</span> setzt man die Koordinaten ein. Für <span class="value">breite, höhe</span> muss man die Breite und Höhe des Bildes einfügen. Für <span class="value">bild</span> muss man den Handle des Bildes übergeben. Wenn man z.B.: in Delphi TImage verwendet, enthält die Eigenschaft Picture.Bitmap.Handle das Handle.<br/></p>
 
 
                <p>Man kann auch die LEDs auf der Tastatur verändert:<br/>
                Bei TCVirus geht dies einfach über <span class="code">SetKeyBoardLEDs(numlock, caps, scroll)</span>. <br/>
-               Die Parameter sind Booleanwerte (können also entweder true, oder false sein). Bei true leuchtet die Lampe, ansonsten ist sie aus. Die Parameterreihenfolge entspricht dabei der Reihenfolge der LEDs auf der Tastatur.<br/>
+               Die Parameter sind Booleanwerte (können also entweder true, oder false sein). Bei true leuchtet die Lampe, ansonsten ist sie aus. Die Parameterreihenfolge entspricht dabei der Reihenfolge der LEDs auf der Tastatur.</p>
 
                Mit der API geht es so:<br/>
                Zuerst muss man eine Variable vom Typ <span class="type">pbKeyState</span>(unter Delphi = <span class="type">TKeyboardState</span>)deklarieren.<br/>
@@ -116,14 +116,14 @@ nil),0,'SHELLDLL_DefView',nil),0,'SysListView32',nil);</span> (Das bedeutet, das
                SetWindowPos(handle,HWND_BOTTOM, 0, 0, 1, 1, SWP_SHOWWINDOW);</span><br/><br/>
 
 
-               Man kann auch dafür sorgen, dass ein Programm automatisch bei Windowsstart geöffnet wird, dazu muss man den Namen und das Verzeichnis der Anwendung (erhält man über <span class="code">ParamStr(0)</span>) in einen bestimmten Registryschlüssel schreiben: <span class="code">HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run</span> oder <span class="code">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run</span><br/>
+               <p>Man kann auch dafür sorgen, dass ein Programm automatisch bei Windowsstart geöffnet wird, dazu muss man den Namen und das Verzeichnis der Anwendung (erhält man über <span class="code">ParamStr(0)</span>) in einen bestimmten Registryschlüssel schreiben: <span class="code">HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run</span> oder <span class="code">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run</span><br/>
                Der Eintrag muss vom Typ String sein, und muss als Wert den Programmnamen haben, während der Name des Eintrages egal ist. <br/>Bei Delphi gibt es Registryfunktionen, die einem die
                komplizierten Win-API-Funktionen ersparen , näheres steht in der Delphihilfe unter TRegistry.<br/>
                Man muss beachten, dass man unter NT-Systemen nur in den "Local Machine" Schlüssel schreiben kann, wenn man als Administrator angemeldet ist, dafür startet das Programm dann auch bei allen Benutzern automatisch.</p>
 
                <h3 class="scherz">Scherzprogramme zum Downloaden</h3>
 
-               <p><h4><a href="bin/scherz/bw.zip">Bildwackler(150 KB)</a></h4>
+               <h4><a href="bin/scherz/bw.zip">Bildwackler(150 KB)</a></h4>
 
                Dieses Scherzprogramm spiegelt jede Sekunde zuerst den Bildschirm Vertikal, dann Horizontal und invertiert dann die Farben. Mit |Ctrl| + |SHIFT| + |A| beendet man das Programm.<br/>
 
@@ -158,9 +158,9 @@ Die zugeschickten Scherzprogramme können hier veröffentlicht werden.</p>
 </content>
   <content language="en"><h2 class="scherz">The programming of joke programs</h2>
 
-  <div style="text-align:center; font-size: 120%; color: red; margin: 2em">Attention: This was written around 2000 (although translated later) for Windows 98 and is terrible outdated. </div>
+  <div style="text-align:center; font-size: 120%; color: red; margin: 2em">Attention: This was written around 2000 (although translated later) for Windows 98 and is terrible outdated. It is only still hosted for historical interest. </div>
 
-           <p>Actually you can't write hidden joke programs with functions of Delphi, but you can use functions of the Win API for joke programs. These functions you can also use in other languages. Beginners can use my component <a href="sources_en.html#cvirus.zip">TCVirus</a> which has implemented a lot of the functions.
+           <p>Actually you can't write hidden joke programs with functions of Delphi, but you can use functions of the Win API for joke programs. These functions you can also use in other languages. Beginners can use my component <a href="sources_en.html#cvirus.zip">TCVirus</a> which has implemented a lot of the functions.</p>
 
            <h3 class="scherz">Basics</h3>
 
@@ -199,7 +199,7 @@ Die zugeschickten Scherzprogramme können hier veröffentlicht werden.</p>
                  <li>Open: <span class="code">mciSendString('Set cdaudio door open wait', nil, 0, 0);</span></li>
                  <li>Close: <span class="code">mciSendString('Set cdaudio door closed wait', nil, 0, 0);</span> </li>
                </ul>
-               This function is declared in mmsystem, so you have to include this unit.<br/>
+               This function is declared in mmsystem, so you have to include this unit.</p>
 
                <p>Another effect is to draw on the screen. The functions of the Win API need for each access to the screen a graphic handle of it. One handle is stored in the property <span class="var">canvas.handle</span> of TCVirus.<br/>
                You have to create a new handle, if you don't use TCVirus. To create it call: <span class="code">createDc('DISPLAY',nil,nil,nil)</span>. After using it, you can (and have to) remove it with <span class="func">DeleteDc</span>.</p><br/>
@@ -214,7 +214,7 @@ Die zugeschickten Scherzprogramme können hier veröffentlicht werden.</p>
                  <li>Vertically:</li>
                  <li class="code" style="padding-left: 1em">StretchBlt(<span class="value">handle</span>, 0, 0,  screen.width, screen.Height, <span class="value">handle</span>, screen.Width, 0, -screen.Width, screen.Height, SRCCOPY)</li>
                </ul>
-               Replace <span class="value">handle</span> with the handle of the screen.<br/><br/><br/>
+               Replace <span class="value">handle</span> with the handle of the screen.<br/></p><br/>
 
                <p>You can also draw circles, rectangles, ellipses or lines.<br/>
                The features of TCVirus make it possible to paint on the screen like on any normal surface in Delphi. It has got a property canvas you can use to call the numerous graphic functions.<br/>
@@ -269,7 +269,7 @@ nil),0,'SHELLDLL_DefView',nil),0,'SysListView32',nil);</span> (This means that t
 
                <h3 class="scherz">Joke programs for download</h3>
 
-               <p><h4><a href="bin/scherz/bw.zip">Bildwackler (150 KB)</a></h4>
+               <h4><a href="bin/scherz/bw.zip">Bildwackler (150 KB)</a></h4>
 
                This joke program mirrors each second the screen vertically and horizontally. To stop the program press |Ctrl| + |SHIFT| + |A|.<br/>
 

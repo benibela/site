@@ -16,10 +16,10 @@
     <description_80 language="en">Online side-scrolling game in the full 3d world of a stereogram</description_80>
     <language>en</language>
     <payment>Freeware (GPL)</payment>
-    <content language="de">Ein Sidescroller, bei dem man ein Raumschiff zwischen verschiedenen Hindernissen wie Minen oder schwarzen Löchern hindurch steuert.<br>Dabei befindet man sich in einer 3D-Welt und kann das Raumschiff sowohl in x, y wie auch z-Richtung fliegen lassen. Außerdem wird der Level als Stereogramm gerendert, so dass man die tatsächliche 3D-Position des Schiffes und der Hindernisse direkt sehen kann. Alternativ gibt es auch einen Anaglyphrendermodus, der dient aber nur als Notbehelf für Leute, die keine SIRDS sehen können. Die Schwierigkeitsgradeinstellung ändert die Fähigkeiten des Raumschiffes und bestimmt, ob die reparierenden Nanoroboter und die Zeitmaschine aktiviert werden können.<br><br>Zusätzlich gibt es ein Stereogrammmalprogramm und einen Leveleditor.</content>
-    <content language="en">A side-scrolling game in which you move a space ship while you have to avoid several obstacles like mines or black holes.<br>The special thing is that the level is a 3d world which is rendered as a stereogram so you can actually see it in full 3d (although it has no colors). You can also switch to an anaglyph render mode, but you should only use it if you are unable to see SIRDS. The ship can of course not only move along the x/y-axis, but also along the z-axis from near to far. The option to change the level of difficulty determines the abilities of the ship and give you repairing nano robots or a time machine.<br>Additionally there is a level editor and a simple stereogram painting program. </content>
-    <final-content language="de"><br><br><a href="bin/games/sirdslets/sirdslet_page.html" class="inline-popup-large">Spiele es online</a></final-content>
-    <final-content language="en"><br><a href="bin/games/sirdslets/sirdslet_page.html" class="inline-popup-large">Play it online</a></final-content>
+    <content language="de">Ein Sidescroller, bei dem man ein Raumschiff zwischen verschiedenen Hindernissen wie Minen oder schwarzen Löchern hindurch steuert.<br/>Dabei befindet man sich in einer 3D-Welt und kann das Raumschiff sowohl in x, y wie auch z-Richtung fliegen lassen. Außerdem wird der Level als Stereogramm gerendert, so dass man die tatsächliche 3D-Position des Schiffes und der Hindernisse direkt sehen kann. Alternativ gibt es auch einen Anaglyphrendermodus, der dient aber nur als Notbehelf für Leute, die keine SIRDS sehen können. Die Schwierigkeitsgradeinstellung ändert die Fähigkeiten des Raumschiffes und bestimmt, ob die reparierenden Nanoroboter und die Zeitmaschine aktiviert werden können.<br/><br/>Zusätzlich gibt es ein Stereogrammmalprogramm und einen Leveleditor.</content>
+    <content language="en">A side-scrolling game in which you move a space ship while you have to avoid several obstacles like mines or black holes.<br/>The special thing is that the level is a 3d world which is rendered as a stereogram so you can actually see it in full 3d (although it has no colors). You can also switch to an anaglyph render mode, but you should only use it if you are unable to see SIRDS. The ship can of course not only move along the x/y-axis, but also along the z-axis from near to far. The option to change the level of difficulty determines the abilities of the ship and give you repairing nano robots or a time machine.<br/>Additionally there is a level editor and a simple stereogram painting program. </content>
+    <final-content language="de"><br/><br/><a href="bin/games/sirdslets/sirdslet_page.html" class="inline-popup-large">Spiele es online</a></final-content>
+    <final-content language="en"><br/><a href="bin/games/sirdslets/sirdslet_page.html" class="inline-popup-large">Play it online</a></final-content>
     <screenshot>
       <title language="de">Parallelblick</title>
       <title language="en">parallel eye view</title>
@@ -44,14 +44,14 @@
     <description_80 language="en">Help a mouse to collect cheese!</description_80>
     <language>de</language>
     <payment>Freeware</payment>
-    <content language="de">Mausitanien ist ein typischer Pacmanclone. Man steuert mit den Pfeiltasten seine Spielfigur durch ein Labyrinth, um dabei Punkte zu sammeln. <br>
-Das besondere an Mausitanien ist, dass man, anstelle des üblichen Smileys, mit einer Maus im Labyrinth Käse sammeln muss, während man von 2 Katzen verfolgt wird. In späteren Leveln kommen noch eine Schlange und ein Gespenst als Feinde hinzu, die sich jeweils schneller bewegen, und somit gefährlicher sind.<br>
-Das Spiel ist relativ einfach zu spielen, da man, sollte man von einem der Feinde erwischt werden, keine Leben, sondern lediglich Punkte verliert. Es gibt auch einen Zweispielermodus, wo zwei Spieler zusammen am selben Computer spielen können.<br>
+    <content language="de">Mausitanien ist ein typischer Pacmanclone. Man steuert mit den Pfeiltasten seine Spielfigur durch ein Labyrinth, um dabei Punkte zu sammeln. <br/>
+Das besondere an Mausitanien ist, dass man, anstelle des üblichen Smileys, mit einer Maus im Labyrinth Käse sammeln muss, während man von 2 Katzen verfolgt wird. In späteren Leveln kommen noch eine Schlange und ein Gespenst als Feinde hinzu, die sich jeweils schneller bewegen, und somit gefährlicher sind.<br/>
+Das Spiel ist relativ einfach zu spielen, da man, sollte man von einem der Feinde erwischt werden, keine Leben, sondern lediglich Punkte verliert. Es gibt auch einen Zweispielermodus, wo zwei Spieler zusammen am selben Computer spielen können.<br/>
 Es gibt 40 Level, je 20 Ein- und Zweispielerlevel. Die alte Demo-Version hat noch einmal 10 andere Level (so schade, dass Shareware nie funktioniert). </content>
-    <content language="en">Mausitanien is a game like pacman. You have to move a mouse through a maze to get points. <br>
-But Mausitanien isn't played with the usual smiley, You move a mouse which has to collect cheese while it is persecuted by 2 cats. Later it gets new enemys: a snake and a ghost. They are faster than the cats.<br>
-The game is relative simple because you cann't lose a life, but only points. <br>
-It has a two player mode in which 2 players sitting together at the PC move 2 mouses through the maze.<br>
+    <content language="en">Mausitanien is a game like pacman. You have to move a mouse through a maze to get points. <br/>
+But Mausitanien isn't played with the usual smiley, You move a mouse which has to collect cheese while it is persecuted by 2 cats. Later it gets new enemys: a snake and a ghost. They are faster than the cats.<br/>
+The game is relative simple because you cann't lose a life, but only points. <br/>
+It has a two player mode in which 2 players sitting together at the PC move 2 mouses through the maze.<br/>
 It has 40 levels, 20 single player levels and 20 multi player levels. </content>
     <screenshot>
       <title language="de">Spielansicht</title>
@@ -76,25 +76,25 @@ It has 40 levels, 20 single player levels and 20 multi player levels. </content>
     <language>de</language>
     <payment>Freeware</payment>
     <year>2002</year>
-    <content language="de">Bei diesem Bombermanclone steuert man einen schwebenden Luftpanzer mit dem man versuchen muss, die anderen Spieler abzuschießen.<br>
+    <content language="de">Bei diesem Bombermanclone steuert man einen schwebenden Luftpanzer mit dem man versuchen muss, die anderen Spieler abzuschießen.<br/>
 Wird man getroffen, verliert man ein Leben, und derjenige der als letzter noch Leben hat, hat gewonnen.
-Es gibt 9 unterschiedliche Waffen, die den Gegner und die Kisten jeweils unterschiedlich stark verletzen, wie beispielsweise Bomben, Gewehre, Flammenwerfer, oder Spezialbomben, die sich bewegen lassen, oder später gesprengt werden.<br>
-Das Spiel läuft nur über Netzwerk, da ich es ursprünglich nur zum Erlernen der Netzwerkprogrammierung programmiert habe, und es sind nur bis zu 4 Spieler - Mensch oder Computer - möglich.<br>
-Als besondere Features gibt es einen Leveleditor und im Spiel 4 verschiedene Ansichten, wo entweder Spieler, Bomben, oder aufsammelbare Objekte hervorgehoben werden, so dass nie die Übersicht verloren geht.<br>
+Es gibt 9 unterschiedliche Waffen, die den Gegner und die Kisten jeweils unterschiedlich stark verletzen, wie beispielsweise Bomben, Gewehre, Flammenwerfer, oder Spezialbomben, die sich bewegen lassen, oder später gesprengt werden.<br/>
+Das Spiel läuft nur über Netzwerk, da ich es ursprünglich nur zum Erlernen der Netzwerkprogrammierung programmiert habe, und es sind nur bis zu 4 Spieler - Mensch oder Computer - möglich.<br/>
+Als besondere Features gibt es einen Leveleditor und im Spiel 4 verschiedene Ansichten, wo entweder Spieler, Bomben, oder aufsammelbare Objekte hervorgehoben werden, so dass nie die Übersicht verloren geht.<br/>
 Genauere Informationen (u.a zur Bedienung) findet man in der mitgelieferten Hilfedatei.</content>
-    <content language="en">You control a flying air tank and have to shoot down the ones of the other players,<br>
-If you are hit, you will lose a life, until everyone except the winner will be dead.<br>
-There are 9 weapons which all damage players and blocks differently. For example, there are bombs, guns, flamethrower, or special bombs which can move or which will explode later.<br>
-The game needs a network and only 4 players - human or computer - can play in a session.<br>
-Extra feature are the 4 different views in the game which stress different elements of the game, like player, bombs or object you can collect.<br> 
-There is also a level editor.<br>
+    <content language="en">You control a flying air tank and have to shoot down the ones of the other players,<br/>
+If you are hit, you will lose a life, until everyone except the winner will be dead.<br/>
+There are 9 weapons which all damage players and blocks differently. For example, there are bombs, guns, flamethrower, or special bombs which can move or which will explode later.<br/>
+The game needs a network and only 4 players - human or computer - can play in a session.<br/>
+Extra feature are the 4 different views in the game which stress different elements of the game, like player, bombs or object you can collect.<br/> 
+There is also a level editor.<br/>
 More information you can find in the help file (it is on German).
-You control a flying air tank and have to shoot down the ones of the other players,<br>
-If you are hit, you will lose a life, until everyone except the winner will be dead.<br>
-There are 9 weapons which all damage players and blocks differently. For example, there are bombs, guns, flamethrower, or special bombs which can move or which will explode later.<br>
-The game needs a network and only 4 players - human or computer - can play in a session.<br>
-Extra feature are the 4 different views in the game which stress different elements of the game, like player, bombs or object you can collect.<br> 
-There is also a level editor.<br>
+You control a flying air tank and have to shoot down the ones of the other players,<br/>
+If you are hit, you will lose a life, until everyone except the winner will be dead.<br/>
+There are 9 weapons which all damage players and blocks differently. For example, there are bombs, guns, flamethrower, or special bombs which can move or which will explode later.<br/>
+The game needs a network and only 4 players - human or computer - can play in a session.<br/>
+Extra feature are the 4 different views in the game which stress different elements of the game, like player, bombs or object you can collect.<br/> 
+There is also a level editor.<br/>
 More information you can find in the help file (it is on German).</content>
     <screenshot>
       <title language="de">Normale Spielansicht</title>
@@ -118,9 +118,9 @@ More information you can find in the help file (it is on German).</content>
     <language>de</language>
     <payment>Freeware</payment>
     <year>2001</year>
-    <content language="de">Bei diesem Spiel steuert man 4 Flaks, von denen 3 um das WTC verteilt sind, und ein viertes auf dem WTC auf einer Verbindung zwischen den beiden Türmen fährt. Mit diesen Flaks muss man anfliegende Flugzeuge abschießen, um das WTC zu retten.<br>
+    <content language="de">Bei diesem Spiel steuert man 4 Flaks, von denen 3 um das WTC verteilt sind, und ein viertes auf dem WTC auf einer Verbindung zwischen den beiden Türmen fährt. Mit diesen Flaks muss man anfliegende Flugzeuge abschießen, um das WTC zu retten.<br/>
 Die Steuerung ist in der Datei 0liesmich.doc beschrieben.</content>
-    <content language="en">In this game you control 4 missile launchers with you have to use to protect the WTC. 3 are placed arond the WTC and the fourth can move between the top side of the towers.<br>
+    <content language="en">In this game you control 4 missile launchers with you have to use to protect the WTC. 3 are placed arond the WTC and the fourth can move between the top side of the towers.<br/>
 You can select missile launcher by pressing the keys 1, 2, 3, 4. You can rotate it by the arrow keys and you shoot with space. The one of the towers can be moved by the del and end keys.</content>
     <screenshot>
       <title language="de">Auf den Türmen</title>
@@ -144,9 +144,9 @@ You can select missile launcher by pressing the keys 1, 2, 3, 4. You can rotate 
     <description_80 language="en">Clone of snake, running on the Algebra FX 2+ calculator.</description_80>
     <language>de, (en)</language>
     <payment>Freeware</payment>
-    <content language="de">Das Spiel ist ein typischer Snakeklon, in dem man mit einer Schlange, die weder sich selbst noch Wände berühren darf, Objekte aufsammeln muss. Es  hat 14 Level und eine Highscoreliste.<br>
+    <content language="de">Das Spiel ist ein typischer Snakeklon, in dem man mit einer Schlange, die weder sich selbst noch Wände berühren darf, Objekte aufsammeln muss. Es  hat 14 Level und eine Highscoreliste.<br/>
                            Um das Spiel zu spielen, kann man den Casio Algebra FX 2.0 PLUS Taschenrechner benutzen, in dessen Skriptsprache es auf ihm programmiert wurde, wobei es aber eventuell auch auf Vorgängerversionen läuft. Außerdem braucht man eine Übertragungssoftware, wenn man die Programme nicht abtippen will. </content>
-    <content language="en">The game is a typical snake clon in which you have to collect food with a snake that is not allowed to touch anything else. It has 14 levels and a high score list.<br>
+    <content language="en">The game is a typical snake clon in which you have to collect food with a snake that is not allowed to touch anything else. It has 14 levels and a high score list.<br/>
 You can use the Casio Algebra FX 2.0 PLUS calculator to run this game, which is the one the game has been written on. However, it is possible that it works on older versions, too. And of course you need a transfer software in case you doesn't want to typewrite the source.</content>
   </download>
 
@@ -159,8 +159,8 @@ You can use the Casio Algebra FX 2.0 PLUS calculator to run this game, which is 
     <description_80 language="en">Clone of the Windows' solitaire game, running on the Algebra FX 2+ calculator.</description_80>
     <language>de, (en)</language>
     <payment>Freeware</payment>
-    <content language="de">Dieses Spiel ist wie das Solitär von Windows, man muss unsortierte Karten von verdeckten Stapel auf vier Zielstapel sortieren und es gibt auch einen Reservestapel, aus dem man beliebige Karten ziehen kann.<br>Um das Spiel zu spielen, kann man den Casio Algebra FX 2.0 PLUS Taschenrechner benutzen, in dessen Skriptsprache es auf ihm programmiert wurde, wobei es aber eventuell auch auf Vorgängerversionen läuft. Außerdem braucht man eine Übertragungssoftware, wenn man die Programme nicht abtippen will.</content>
-    <content language="en">This game is like the solitaire of windows<br>You have to sort cards you can take from unsorted hidden stacks. There is also a reserve stack where you can take arbitrary cards from.<br>
+    <content language="de">Dieses Spiel ist wie das Solitär von Windows, man muss unsortierte Karten von verdeckten Stapel auf vier Zielstapel sortieren und es gibt auch einen Reservestapel, aus dem man beliebige Karten ziehen kann.<br/>Um das Spiel zu spielen, kann man den Casio Algebra FX 2.0 PLUS Taschenrechner benutzen, in dessen Skriptsprache es auf ihm programmiert wurde, wobei es aber eventuell auch auf Vorgängerversionen läuft. Außerdem braucht man eine Übertragungssoftware, wenn man die Programme nicht abtippen will.</content>
+    <content language="en">This game is like the solitaire of windows<br/>You have to sort cards you can take from unsorted hidden stacks. There is also a reserve stack where you can take arbitrary cards from.<br/>
 You can use the Casio Algebra FX 2.0 PLUS calculator to run this game, which is the one the game has been written on. However, it is possible that it works on older versions, too. And of course you need a transfer software in case you doesn't want to typewrite the source.</content>
   </download>
 
@@ -174,13 +174,13 @@ You can use the Casio Algebra FX 2.0 PLUS calculator to run this game, which is 
     <language>de</language>
     <payment>Freeware</payment>
     <year>2000</year>
-    <content language="de">In diesem Spiel steuert man eine Figur durch einen zufällig generierten 2D Level, der aus Bücherregalen und Suchcomputer besteht. <br>
-    Die Aufgabe kautet nun bestimmte Bücher zu finden, indem man die Regale einzeln durchsucht. Zur Hilfe können die Suchcomputer benutzt werden, die einem verraten, wo sich die Bücher befinden.<br>
-    Diese kann man aber, bis man einen Schraubenzieher und Computerchip gefunden hat, nur einmalig nutzen.<br>
-    Bereits gefundene Bücher können einem auch von einer Leseratte und zwei Bücherwürmern wieder gestohlen werden.<br>
+    <content language="de">In diesem Spiel steuert man eine Figur durch einen zufällig generierten 2D Level, der aus Bücherregalen und Suchcomputer besteht. <br/>
+    Die Aufgabe kautet nun bestimmte Bücher zu finden, indem man die Regale einzeln durchsucht. Zur Hilfe können die Suchcomputer benutzt werden, die einem verraten, wo sich die Bücher befinden.<br/>
+    Diese kann man aber, bis man einen Schraubenzieher und Computerchip gefunden hat, nur einmalig nutzen.<br/>
+    Bereits gefundene Bücher können einem auch von einer Leseratte und zwei Bücherwürmern wieder gestohlen werden.<br/>
     Das Spiel konnte auch einige Zeit lang in den Stadtbüchereien Düsseldorf gespielt werden.
     </content>
-    <content language="en">In this game you have to walk around in randomly generated 2D level in order to find certain books in bookshelfs.<br>However, you must be careful not to be caught by a bookworm or a "Leseratte". ("Leseratte" = reading rat, in German an animal similar to a bookworm. In fact it is so similar, that every  dictionaries I have checked gives "bookworm" as translation [or none at all])<br>You can get help by search computers which can tell you where everything is. However, you can use one only once, except you have found a computer chip as well as screwdriver.</content>
+    <content language="en">In this game you have to walk around in randomly generated 2D level in order to find certain books in bookshelfs.<br/>However, you must be careful not to be caught by a bookworm or a "Leseratte". ("Leseratte" = reading rat, in German an animal similar to a bookworm. In fact it is so similar, that every  dictionaries I have checked gives "bookworm" as translation [or none at all])<br/>You can get help by search computers which can tell you where everything is. However, you can use one only once, except you have found a computer chip as well as screwdriver.</content>
     <screenshot>
       <title language="de">zu suchende und gefundenen Bücher</title>
       <title language="en">books to find and books found</title>
@@ -198,9 +198,9 @@ You can use the Casio Algebra FX 2.0 PLUS calculator to run this game, which is 
     <description_80 language="en">A simple vertically-scrolling game</description_80>
     <language>de</language>
     <payment>Freeware</payment>
-    <content language="de">Bei diesem abwärts scrollenden Raumschiffshooter besteht das einzigste Ziel darin, den jeweils aktuellen Level zu durchqueren, ohne mit Minen zu kollidieren oder von feindlichen Schiffen abgeschossen zu werden.<br>
+    <content language="de">Bei diesem abwärts scrollenden Raumschiffshooter besteht das einzigste Ziel darin, den jeweils aktuellen Level zu durchqueren, ohne mit Minen zu kollidieren oder von feindlichen Schiffen abgeschossen zu werden.<br/>
 Das Spiel ist ziemlich schwer zu spielen, was vor allem an der physikalischen ziemlich korrekten Steuerung, und den schwachen Schilden des Schiffes liegt.</content>
-    <content language="en">In this game you will win when you have crossed a level and reached its end without being destroyed by mines or hostile firing space ships.<br>
+    <content language="en">In this game you will win when you have crossed a level and reached its end without being destroyed by mines or hostile firing space ships.<br/>
 It is very difficult to play this game because ship is moved realistically and has got very weak shields.</content>
     <screenshot>
       <title language="de">Minenfeld</title>
@@ -223,11 +223,11 @@ It is very difficult to play this game because ship is moved realistically and h
     <language>de</language>
     <payment>Freeware</payment>
     <year>2000</year>
-    <content language="de">"Das Kinderzimmer" ist ein Vorschullernprogramm, welches im Jahr 2001 mit dem Sonderpreis "Softwaresystemtechnik" von Jugend Forscht ausgezeichnet wurde. <br>Der Spieler muss ein virtuelles Kinderzimmer aufräumen. Dazu muss er die  auf dem Boden liegenden Teile anklicken, und ein Lernspiele zu Bereichen, wie logisches Denken und visuelle Wahrnehmung, lösen. Bei Erfolgt landet das Teil im Regal, ansonsten muss man es erneut probieren. <br>
-               Dieses Spiel ist Shareware und die Vollversion kostet 10 Euro. Um die nötigen Erwerbsbedingungen, wie Kontonummer, zu erhalten, schreiben Sie bitte eine E-Mail an "benito [Klammer ist durch at ersetzen] benibela.de".</content>
-    <content language="en">"Das Kinderzimmer" (= children's room) is a pre-school learn game.<br>The player has to tidy up a virtual children's room. To do this, he clicks on the toys laying on the floor. Then the game starts a sub game where he has to solve a problem. If he is successfull the toy is placed into a shelve, otherwise he has to do it again. <br>
-               This game is in German and based on voice output, so don't download the game, if you don't speak German. (of course you can use it to learn German) <br>
-               It is shareware and the full version costs 10 &euro;. To get more information (for example, how to pay) please write a mail to "benito "[replace bracket with at] benibela.de".</content>
+    <content language="de">"Das Kinderzimmer" ist ein Vorschullernprogramm, welches im Jahr 2001 mit dem Sonderpreis "Softwaresystemtechnik" von Jugend Forscht ausgezeichnet wurde. <br/>Der Spieler muss ein virtuelles Kinderzimmer aufräumen. Dazu muss er die  auf dem Boden liegenden Teile anklicken, und ein Lernspiele zu Bereichen, wie logisches Denken und visuelle Wahrnehmung, lösen. Bei Erfolgt landet das Teil im Regal, ansonsten muss man es erneut probieren. <!--<br/>
+               Dieses Spiel ist Shareware und die Vollversion kostet 10 Euro. Um die nötigen Erwerbsbedingungen, wie Kontonummer, zu erhalten, schreiben Sie bitte eine E-Mail an "benito [Klammer ist durch at ersetzen] benibela.de".--></content>
+    <content language="en">"Das Kinderzimmer" (= children's room) is a pre-school learn game.<br/>The player has to tidy up a virtual children's room. To do this, he clicks on the toys laying on the floor. Then the game starts a sub game where he has to solve a problem. If he is successfull the toy is placed into a shelve, otherwise he has to do it again. <br/>
+               This game is in German and based on voice output, so don't download the game, if you don't speak German. (of course you can use it to learn German) <br/>
+<!--               It is shareware and the full version costs 10 €. To get more information (for example, how to pay) please write a mail to "benito "[replace bracket with at] benibela.de".--></content>
     <screenshot>
       <title language="de">Das Zimmer</title>
       <title language="en">the room</title>
@@ -249,10 +249,10 @@ It is very difficult to play this game because ship is moved realistically and h
     <language>de</language>
     <payment>Freeware</payment>
     <year>2000</year>
-    <content language="de">Scherli 2 ist ein typisches Pacmanspiel. Man läuft mit einem Smiley durch Labyrinthe, um Kekse aufzusammeln, während man von zwei Raumschiffen, einer Schlange und einem Krokodil gejagt wird.<br>
-Es gibt Teleporter, Fallen, Extraleben und einen Leveleditor, und man kann das Aussehen der Blockaden zwischen Balken und Ellipsen umschalten.<br>
+    <content language="de">Scherli 2 ist ein typisches Pacmanspiel. Man läuft mit einem Smiley durch Labyrinthe, um Kekse aufzusammeln, während man von zwei Raumschiffen, einer Schlange und einem Krokodil gejagt wird.<br/>
+Es gibt Teleporter, Fallen, Extraleben und einen Leveleditor, und man kann das Aussehen der Blockaden zwischen Balken und Ellipsen umschalten.<br/>
 Mit dem mitgelieferten Leveleditor kann man auch eigene Level erzeugen.</content>
-    <content language="en">Scherli 2 is a typical clone of pacman. You move a Smiley through a maze to collect cookies while two space ships, a snake and a crocodile want to kill you.<br>
+    <content language="en">Scherli 2 is a typical clone of pacman. You move a Smiley through a maze to collect cookies while two space ships, a snake and a crocodile want to kill you.<br/>
 There are extras like jumper, traps, new lifes and a level editor. You can also change the appearance of the walls.</content>
     <screenshot>
       <title>Level 2</title>
@@ -274,9 +274,9 @@ There are extras like jumper, traps, new lifes and a level editor. You can also 
     <payment>Freeware</payment>
     <size_KB>259</size_KB>
     <year>2000</year>
-    <content language="de">Scherli 1 ist ein typisches Pacmanspiel, sehr ähnlich zu Scherli 2. Man läuft mit einem Smiley durch Labyrinthe, um Kekse aufzusammeln, während man von zwei Raumschiffen und einem Krokodil gejagt wird. <br>
+    <content language="de">Scherli 1 ist ein typisches Pacmanspiel, sehr ähnlich zu Scherli 2. Man läuft mit einem Smiley durch Labyrinthe, um Kekse aufzusammeln, während man von zwei Raumschiffen und einem Krokodil gejagt wird. <br/>
 Es gibt recht viele Extrafeatures, wie Mauern, die nur von dem Spieler, oder nur von den Feinden durchlaufen werden können, Teleporter und Schlüssel. Das spiel ist für Anfänger dieser Art Spiele gut geeignet, da sich die Figuren langsam bewegen und die Level sich sehr ähnlich sind.</content>
-    <content language="en">Scherli 1 is a clone of pacman, very similar to Scherli 2. You move a smiley through a maze (you can find this sentence three times on this page ;-) to get cookies while two space ships an a crocodile want to kill you. <br>There are many extras like jumper, walls the only player or only the enemies can get, new lifes, keys and doors. The game is suited for beginners because the smiley and his enemies move slowly and the levels have not much variations.</content>
+    <content language="en">Scherli 1 is a clone of pacman, very similar to Scherli 2. You move a smiley through a maze (you can find this sentence three times on this page ;-) to get cookies while two space ships an a crocodile want to kill you. <br/>There are many extras like jumper, walls the only player or only the enemies can get, new lifes, keys and doors. The game is suited for beginners because the smiley and his enemies move slowly and the levels have not much variations.</content>
     <screenshot>
       <title>Level 1</title>
       <fullfile>img/games/scherli1_2.gif</fullfile>
@@ -360,9 +360,9 @@ Es gibt recht viele Extrafeatures, wie Mauern, die nur von dem Spieler, oder nur
     <language>de</language>
     <payment>Freeware</payment>
     <year>1999</year>
-    <content language="de">Bei diesem Spiel gibt es eine Reihe von Stöcken, von denen man in jeder Runde 1, 2 oder 3 anklickt, um sie zu entfernen. Derjenige der den letzten Stock nimmt, hat verloren.<br>
+    <content language="de">Bei diesem Spiel gibt es eine Reihe von Stöcken, von denen man in jeder Runde 1, 2 oder 3 anklickt, um sie zu entfernen. Derjenige der den letzten Stock nimmt, hat verloren.<br/>
 Man kann allein gegen den Computer oder zu zweit gegen einander spielen.</content>
-    <content language="en">In this game there is a row of sticks. You can remove 1, 2 or 3 of them. Then the computer or another player also removes some of the sticks. Then it is your turn. <br>
+    <content language="en">In this game there is a row of sticks. You can remove 1, 2 or 3 of them. Then the computer or another player also removes some of the sticks. Then it is your turn. <br/>
 The one who gets the last stick has lost the game.</content>
     <screenshot>
       <title language="de">Spielstart</title>
@@ -395,8 +395,8 @@ The one who gets the last stick has lost the game.</content>
     <description_80 language="en">A 2d space ship game with different rooms</description_80>
     <language>de</language>
     <payment>Freeware (GPL)</payment>
-    <content language="de">In diesem Spiel steuert man ein Raumschiff durch mehrere von Laserbarrieren abgetrennte Räume und muss in jeden Rätsel lösen, zum Beispiel Minen abschießen oder Objekte aufsammeln. <br> Ein Problem bei diesem Programm ist, dass das es manchmal abstürzt und ich die Programmierung daran aufgegeben habe, als ich den Fehler nicht finden konnte. (aber man kann den ersten Level spielen) </content>
-    <content language="en">In this game you move a space ship through different rooms which are separated by laser blockades. In the rooms you can have to solve riddles like collecting something or destroying mines. The title means translated "In the galaxy" and there are many messages spoken in German.<br> The problem with this program is that it sometimes crashes. And because I couldn't find the error, I stopped the development of it. (but you can play the first level) </content>
+    <content language="de">In diesem Spiel steuert man ein Raumschiff durch mehrere von Laserbarrieren abgetrennte Räume und muss in jeden Rätsel lösen, zum Beispiel Minen abschießen oder Objekte aufsammeln. <br/> Ein Problem bei diesem Programm ist, dass das es manchmal abstürzt und ich die Programmierung daran aufgegeben habe, als ich den Fehler nicht finden konnte. (aber man kann den ersten Level spielen) </content>
+    <content language="en">In this game you move a space ship through different rooms which are separated by laser blockades. In the rooms you can have to solve riddles like collecting something or destroying mines. The title means translated "In the galaxy" and there are many messages spoken in German.<br/> The problem with this program is that it sometimes crashes. And because I couldn't find the error, I stopped the development of it. (but you can play the first level) </content>
     <screenshot>
       <title language="de">Spielstart</title>
       <title language="en">game start</title>

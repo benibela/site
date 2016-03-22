@@ -220,7 +220,7 @@ siebzehnter
     
     </text></new>    
     <new date="2011-07-10"><text language="de">
-    Ich habe den Internet-Tools-<a href="sources_de.html#internettools">Parser</a> ein wenig erweitert, und nun ist er fast Standard-konforme XPath 2-Implementierung (im wesentlichen gibt es alles bis auf namespaces und das ganze Datenmodellzeugs).  <br>
+    Ich habe den Internet-Tools-<a href="sources_de.html#internettools">Parser</a> ein wenig erweitert, und nun ist er fast Standard-konforme XPath 2-Implementierung (im wesentlichen gibt es alles bis auf namespaces und das ganze Datenmodellzeugs).  <br/>
     Und hier ist ein <a href="others_de.html#cryptsem"> Kryptographieseminarpaper</a>
     </text><text language="en">
     I added a few constructs to the internet tools parsers, so that the <a href="sources_de.html#internettools">pxp parser</a> is now a almost standard compliant implementation of XPath 2. (did you know that  <pre>every $x in satisfies satisfies satisfies</pre> is always true?) 
@@ -231,7 +231,7 @@ siebzehnter
     I added a rainbow color mode to the sirdslets game, although I didn't really wanted to include it, because it makes the game to easy to play (i.e. actually playable) in the non sirdslets modes. But it looks nice.
     </text></new>
     <new date="2011-02-26"><text language="de">
-      Da ja jetzt fast alles auf SF mit öffentlichen Commitlogs ist, habe ich in letzter Zeit keine News mehr darüber geschrieben.<br>
+      Da ja jetzt fast alles auf SF mit öffentlichen Commitlogs ist, habe ich in letzter Zeit keine News mehr darüber geschrieben.<br/>
       Aber dies sind die Änderungen der letzten Monate:
       <ul>
       <li> <a href="tools_de.html#regexgen">regexgen</a>: Ist neues kleines Programm um alle Strings zu finden, die einen regulären Ausdruck erfüllen. (d.h. es arbeitet genau umgekehrt zu allen anderen Regexengines) </li> 
@@ -260,10 +260,10 @@ siebzehnter
     VideLibri habe ich jetzt auf <a href="http://videlibri.sourceforge.net">SourceForge</a> verschoben; hier findet es ja niemand und mittlerweile ist es so groß geworden, dass die Webseite nicht genug Speicher dafür hat.
     </text></new>
     <new date="2010-09-24"><text language="de">
-      Es gibt jetzt eine neue Videlibri Version (0.998). Ich weiß gar nicht, ob man einen Unterschied zur vorherigen Version bemerken kann, auf jeden Fall habe ich die Templates für die Büchereien mit dem neuen Html-Parser vereinfacht.<br>
-      Und eigentlich hatte ich gehofft, dass jemand es von selbst entdeckt, aber da es immer noch niemand verwendet, verrate ich es mal hier: Im Infodialog von VideLibri, kann man und konnte man schon immer -- wenn man richtig klickt -- Snake spielen!<br>
+      Es gibt jetzt eine neue Videlibri Version (0.998). Ich weiß gar nicht, ob man einen Unterschied zur vorherigen Version bemerken kann, auf jeden Fall habe ich die Templates für die Büchereien mit dem neuen Html-Parser vereinfacht.<br/>
+      Und eigentlich hatte ich gehofft, dass jemand es von selbst entdeckt, aber da es immer noch niemand verwendet, verrate ich es mal hier: Im Infodialog von VideLibri, kann man und konnte man schon immer -- wenn man richtig klickt -- Snake spielen!<br/>
       Ansonsten habe ich noch ein paar Sachen geändert, zum Beispiel, das sich eine Unit der Internet Tools nicht unter Windows compilern ließ.
-    </text><text language="en">I tried to write an automatical sourceforge bugtracker/forum responder, which should be trivial with my internet tools library, but it was surprisingly complicated. First sourceforge does not seem to understand host names in the format hostname:port, which is the default format of synapse. Then sf responds with a lot of redirections which neither my library nor synapse followed. Sf also uses the wrong (not standard compliant, although widely used) http status code for these redirections. And finally sf has banned the user agent "Mozilla 3.0 (compatible)" which was my default agent. It only works with "Mozilla/3.0 (compatible)". And everything is encrypted with https, so you could hardly debug it with Wireshark.<br>
+    </text><text language="en">I tried to write an automatical sourceforge bugtracker/forum responder, which should be trivial with my internet tools library, but it was surprisingly complicated. First sourceforge does not seem to understand host names in the format hostname:port, which is the default format of synapse. Then sf responds with a lot of redirections which neither my library nor synapse followed. Sf also uses the wrong (not standard compliant, although widely used) http status code for these redirections. And finally sf has banned the user agent "Mozilla 3.0 (compatible)" which was my default agent. It only works with "Mozilla/3.0 (compatible)". And everything is encrypted with https, so you could hardly debug it with Wireshark.<br/>
     In the new update I changed that, and you can now compile it on Windows, too.  </text> </new>
     <new date="2010-09-09"><text language="de">Heute habe ich noch eine <a href="others_de.html#seminarCV2010">Seminararbeit über Bildsegmentierung</a> vom letzten Semester hochgeladen. Die Bilder musste ich allerdings stark komprimieren, damit der Text noch so gerade auf die Seite passt (obwohl sie sowieso schon 10 mb größer ist als erlaubt), eigentlich sehen sie also schöner aus. </text> </new>
     <new date="2010-09-05">
@@ -271,8 +271,8 @@ siebzehnter
     <text language="en">I broke the &amp;szlig; handling in the latest bbutils/internettools update, now it is fixed and even supports all entities, including those of MathML. </text>
     </new>
     <new date="2010-08-29">
-    <text language="de">Jetzt gibt es einen neue Version vom <a href="sources_en.html#internettools">HTML-Templatematcher</a>. Er läuft jetzt tausendmal langsamer mit tausendmal höherem Speicherverbrauch. <br> Die alte Version hat einen NFA mit einer cleveren Heuristik verwendet, um das Template mit der Textdarstellung einer HTML-Datei in O(1) zusätzlichem Speicher und Linearzeit zu vergleichen, die neue Version verwendet wie alle anderen HTML-Parser eine Baumdarstellungen, die O(n) Speicher erfordert und darauf Backtracking mit einer Laufzeit von vielleicht O(k^n).<br>Das ist genau das, was ich eigentlich nicht machen wollte, aber es hat sich herausgestellt, dass die Templates dadurch sehr viel leichter zu verstehen und zu schreiben sind, weil es keinerlei Seiteneffekte mehr gibt. Außerdem benötigt es immer noch nicht mehr als ein paar Millisekunden für das Verarbeiten einer Datei (schneller als das Runterladen der Datei), und der Matcher beweist nun, ob das Template der HTML-Datei entspricht oder nicht. Er ist jetzt auch in drei unabhängige Klassen zerlegt, die sich separat verwenden und leichter testen lassen.<br> Ansonsten haben sich dabei auch die bbutils (Funktionen umbenannt oder entfernt), das TreeListView und die Suchleiste (eine Methode entfernt, um LCL 27190 kompatibel zu sein) geändert. </text>
-    <text language="en">I made a new version of my <a href="sources_en.html#internettools">template based html parser</a>. It is now probably thousand times slower and needs a magnitude more memory.<br>The old version used a  NFA combined with a very clever heuristic, to match the template to the html page directly with O(1) memory and O(n) time, the new version uses simple backtracking on a DOM-like tree -- like everyone else does it --  with O(n) memory and I-don't-know-how-much time (perhaps O(k^n)?).<br>But it still runs in a few milliseconds, it is easier to understand the templates, and most important, the matcher/parser can now prove that a matching is possible or not. I also splitted it into three separate classes which makes it more easy to test.<br>Furthermore I had to change with the parser the bbutils (functions renamed or removed), the TreeListView and the search bar (A method removed to be LCL 27190 compatible). </text>
+    <text language="de">Jetzt gibt es einen neue Version vom <a href="sources_en.html#internettools">HTML-Templatematcher</a>. Er läuft jetzt tausendmal langsamer mit tausendmal höherem Speicherverbrauch. <br/> Die alte Version hat einen NFA mit einer cleveren Heuristik verwendet, um das Template mit der Textdarstellung einer HTML-Datei in O(1) zusätzlichem Speicher und Linearzeit zu vergleichen, die neue Version verwendet wie alle anderen HTML-Parser eine Baumdarstellungen, die O(n) Speicher erfordert und darauf Backtracking mit einer Laufzeit von vielleicht O(k^n).<br/>Das ist genau das, was ich eigentlich nicht machen wollte, aber es hat sich herausgestellt, dass die Templates dadurch sehr viel leichter zu verstehen und zu schreiben sind, weil es keinerlei Seiteneffekte mehr gibt. Außerdem benötigt es immer noch nicht mehr als ein paar Millisekunden für das Verarbeiten einer Datei (schneller als das Runterladen der Datei), und der Matcher beweist nun, ob das Template der HTML-Datei entspricht oder nicht. Er ist jetzt auch in drei unabhängige Klassen zerlegt, die sich separat verwenden und leichter testen lassen.<br/> Ansonsten haben sich dabei auch die bbutils (Funktionen umbenannt oder entfernt), das TreeListView und die Suchleiste (eine Methode entfernt, um LCL 27190 kompatibel zu sein) geändert. </text>
+    <text language="en">I made a new version of my <a href="sources_en.html#internettools">template based html parser</a>. It is now probably thousand times slower and needs a magnitude more memory.<br/>The old version used a  NFA combined with a very clever heuristic, to match the template to the html page directly with O(1) memory and O(n) time, the new version uses simple backtracking on a DOM-like tree -- like everyone else does it --  with O(n) memory and I-don't-know-how-much time (perhaps O(k^n)?).<br/>But it still runs in a few milliseconds, it is easier to understand the templates, and most important, the matcher/parser can now prove that a matching is possible or not. I also splitted it into three separate classes which makes it more easy to test.<br/>Furthermore I had to change with the parser the bbutils (functions renamed or removed), the TreeListView and the search bar (A method removed to be LCL 27190 compatible). </text>
     </new>
     <new date="2010-08-26">
     <text language="de">Als ich gerade den vorherigen Artikel auf "unübersetzt" setzen wollte (was ich dann aber doch nicht gemacht habe, da die Textfarbe dadurch grau wird, und das nicht zu den bunten Tabellen passt), habe ich gemerkt, dass JAXMLP überhaupt keine Klammern in den If-Bedingungen erlaubt hat, warum auch immer, vielleicht weil es den Schwierigkeitsgrad fürs Parsen von trivial auf einfach erhöht. Die neue Version unterstützt sie jetzt aber.</text>
@@ -285,19 +285,19 @@ I just started to rewrite my fpc html template parser (which of course involves 
 <h4>Converting ansistring to pchar</h4>
 <p>
 Converting a <a href="http://www.freepascal.org/docs-html/ref/refsu10.html">ansistring</a> to <a href="http://www.freepascal.org/docs-html/ref/refsu13.html">pchar</a> should be pretty simple, because  the text itself is stored in almost the same way in both cases. 
-If you have a variable str: string, there are three popular ways to convert it to a pchar: pchar(str), @str[1] and pchar(pointer(str)), but it is not obvious which is the best way to do the conversion.
+If you have a variable str: string, there are three popular ways to convert it to a pchar: pchar(str), @str[1] and pchar(pointer(str)), but it is not obvious which is the best way to do the conversion.</p>
 
 <p>
-If you don't want to bother with the technical details, <i>you can always use <code>pchar(str)</code></i> and treat the result as a read-only pchar. But this is not the most efficient way to convert the string, and the following table summarizes the advantages (always green) and disadvantages (always red) of the other methods:
+If you don't want to bother with the technical details, <i>you can always use <code>pchar(str)</code></i> and treat the result as a read-only pchar. But this is not the most efficient way to convert the string, and the following table summarizes the advantages (always green) and disadvantages (always red) of the other methods:</p>
 
-<p>
+
 <table style="margin-left:auto;margin-right:auto">
 <thead>
 <tr><td class="invisible"></td><td>Example</td><td>No copy</td><td>Branch free</td><td>Nil aware</td><td>Range safe</td><td>$H- safe</td></tr>
 </thead>
 <tbody>
 <tr><td>Explicit</td> <td><code>p := pchar(str)</code></td> <td class="yes">yes</td> <td class="no">no</td> <td class="yes">yes</td> <td class="yes">yes</td> <td class="yes">yes</td> </tr>
-<tr><td>Array like</td> <td class="code">p := @str[1]</span></td> <td class="yes">yes</td> <td class="yesno">without $R</td><td class="no">no</td> <td class="no">no</td> <td class="no">no</td> </tr>
+<tr><td>Array like</td> <td class="code">p := @str[1]</td> <td class="yes">yes</td> <td class="yesno">without $R</td><td class="no">no</td> <td class="no">no</td> <td class="no">no</td> </tr>
 <tr><td>Indirect</td> <td><code>p := pchar(pointer(str))</code></td> <td class="yes">yes</td><td class="yes">yes</td> <td class="no">no</td> <td class="yes">yes</td> <td class="yes">yes</td> </tr>
 </tbody>
 </table>
@@ -308,22 +308,22 @@ The meaning of the columns is:
 <li>No copy: None of the methods above copies the content of the string.</li>
 <li>Branch free: yes, iff the conversion works without branching instructions (hidden ifs). Branching is always very slow and  even if modern computers are fast enough that it usually does not matter, you sometimes have/want to make something as fast as possible.  </li>
 <li>Nil aware: yes, if it works if str=nil. </li>
-<li>Range safe: no, iff the conversion can fail if you enable range checking with the $R+ or -Cr option. <br> <code>@str[1]</code> will raise a range checking error if the string is empty, because s[1] doesn't exist then. </li>
+<li>Range safe: no, iff the conversion can fail if you enable range checking with the $R+ or -Cr option. <br/> <code>@str[1]</code> will raise a range checking error if the string is empty, because s[1] doesn't exist then. </li>
 <li>$H- safe: no, if it also compiles with shortstrings. This section is only about conversion of ansistrings to pchars and none of the methods supports shortstrings. However, sometimes you forget to enable the $H+ option and every string becomes a shortstring.  If you then use @str[1], it can randomly crash, because shortstrings are not null-terminated. The other two methods are safe, because they will not compile.</li>
-</ul>
+</ul></p>
 
 <p>
-So you should never use @str[1] to convert it to a pchar, and pchar(pointer(str)) only if you understand what nil aware means. <br>
-It is said that every ansistring is null-terminated, but this is not exactly true. There is one (and only one!) case in which a ansistring str is not null-terminated: If str is empty (<code>str = ''</code>). Then str is nil.<br>
-<code>pchar(str)</code> will detect this case and returns a pointer to a global #0 character, but <code>pchar(pointer(str))</code> will return nil. So <i>you can always use <code>pchar(str)</code>, and <code>pchar(pointer(str))</code> only if your string is not empty</i> and you can prove this.<br>
-(and as a remark: if you ever get a string which is not '' and not null-terminated, you probably forget to enable $H+ or - less probably - something wrote to a wrong pointer. )
+So you should never use @str[1] to convert it to a pchar, and pchar(pointer(str)) only if you understand what nil aware means. <br/>
+It is said that every ansistring is null-terminated, but this is not exactly true. There is one (and only one!) case in which a ansistring str is not null-terminated: If str is empty (<code>str = ''</code>). Then str is nil.<br/>
+<code>pchar(str)</code> will detect this case and returns a pointer to a global #0 character, but <code>pchar(pointer(str))</code> will return nil. So <i>you can always use <code>pchar(str)</code>, and <code>pchar(pointer(str))</code> only if your string is not empty</i> and you can prove this.<br/>
+(and as a remark: if you ever get a string which is not '' and not null-terminated, you probably forget to enable $H+ or - less probably - something wrote to a wrong pointer. )</p>
 
 <p>
-So why should you not always use <code>pchar(str)</code>? <br>
-Because it is much slower than the two other methods, since <code>pchar(str)</code> checks for the nil-case, and this is often unnecessary.<br>
-<p>Some people also say <code>pchar(str)</code> calls <code>UniqueString</code> to reset the reference count of the string, but this is wrong. <code>pchar(str)</code> does not call any function.
+So why should you not always use <code>pchar(str)</code>? <br/>
+Because it is much slower than the two other methods, since <code>pchar(str)</code> checks for the nil-case, and this is often unnecessary.</p><br/>
+<p>Some people also say <code>pchar(str)</code> calls <code>UniqueString</code> to reset the reference count of the string, but this is wrong. <code>pchar(str)</code> does not call any function.</p>
 
-To see how worse the check is, you have to look at the assembly of the program (generated with fpc2.4 on amd64, not affected by optimization levels (which is strange because the assignment to rax was duplicated)):
+<p>To see how worse the check is, you have to look at the assembly of the program (generated with fpc2.4 on amd64, not affected by optimization levels (which is strange because the assignment to rax was duplicated)):</p>
 
 <p>
 <code>pchar(str):</code>
@@ -342,18 +342,18 @@ To see how worse the check is, you have to look at the assembly of the program (
 2    mov    QWORD PTR <i>pchar variable</i>,rax
 </pre>
 
-So the check requires three additional instructions, and one is a jump instruction which will be executed iff the string is not empty.
+So the check requires three additional instructions, and one is a jump instruction which will be executed iff the string is not empty.</p>
 
 Benchmarking (100000000 * 8 times repeated) results in:
 <table style="text-align:center; margin-left:auto;margin-right:auto">
-<tr><td class="invisible"></td><td colspan=2>non-empty string</td><td colspan=2>empty string</td></tr>
+<tr><td class="invisible"></td><td colspan="2">non-empty string</td><td colspan="2">empty string</td></tr>
 <tr><td class="invisible"></td><td>$R-</td><td>$R+</td><td>$R-</td><td>$R+</td></tr>
-<tr><td style="text-align:left">pchar(str)</td><td colspan=2>894 ms</td><td colspan=2>496 ms</td></tr>
-<tr><td style="text-align:left">pchar(pointer(str))</td><td colspan=2>325 ms</td><td colspan=2>325 ms, but wrong result</td></tr>
-<tr><td style="text-align:left">@str[1]</td><td>325 ms</td><td colspan>4616 ms</td><td>325 ms, but wrong result</td><td>crash</td></td></tr>
+<tr><td style="text-align:left">pchar(str)</td><td colspan="2">894 ms</td><td colspan="2">496 ms</td></tr>
+<tr><td style="text-align:left">pchar(pointer(str))</td><td colspan="2">325 ms</td><td colspan="2">325 ms, but wrong result</td></tr>
+<tr><td style="text-align:left">@str[1]</td><td>325 ms</td><td>4616 ms</td><td>325 ms, but wrong result</td><td>crash</td></tr>
 </table>
 <p>
-This shows <code>pchar(pointer(str))</code> is more than twice as fast than <code>pchar(str)</code> in the more common use case of non-empty strings.
+This shows <code>pchar(pointer(str))</code> is more than twice as fast than <code>pchar(str)</code> in the more common use case of non-empty strings.</p>
 
 <p>
 And for completeness, also the <code>$R+ @s[1]</code> assembly:
@@ -382,130 +382,130 @@ begin
 end.
 </pre>
 
-So only modify the pchar of an converted string if you created that string or have modified it before with string functions (so reference count = 1). 
+So only modify the pchar of an converted string if you created that string or have modified it before with string functions (so reference count = 1). </p>
 </text>
         </new>
 	<new date="2010-08-20">
-          <text language="de">Langsam sterben alle Seiten weg, die ich im Internet kenne. Heute habe ich gemerkt, dass regexpstudio.com mit der TRegExpr-Klasse verschwunden ist, die früher als bester Delphi regexp-Parser galt. (die alten Delphiforen, in denen sie bewundert wurde, finde ich auch nicht mehr...) <br> Da man die Klasse für meine Internettools braucht, gibt es hier jetzt einen <a href="sources_de.html#regexpr">TRegExpr-Mirror</a>.</text>
+          <text language="de">Langsam sterben alle Seiten weg, die ich im Internet kenne. Heute habe ich gemerkt, dass regexpstudio.com mit der TRegExpr-Klasse verschwunden ist, die früher als bester Delphi regexp-Parser galt. (die alten Delphiforen, in denen sie bewundert wurde, finde ich auch nicht mehr...) <br/> Da man die Klasse für meine Internettools braucht, gibt es hier jetzt einen <a href="sources_de.html#regexpr">TRegExpr-Mirror</a>.</text>
           <text language="en"> I just noticed that Andrey V. Sorokin's site regexpstudio.com does not exist anymore. His class TRegExpr was the best regular expression parser for Delphi and FPC. Because you need this class to use my internet tools, I  created a <a href="sources_en.html#regexpr">mirror of TRegExpr</a>.</text>
         </new>
 	<new date="2010-08-10">
-          <text language="de"> Und weiter geht es mit den SIRDSlets: Es gibt jetzt drei neue Level, Übersetzungen, Beschleuniger und Anaglyphenrendering. Die Beschleuniger sind wie schwarze Löcher, aber unabhängig von der Schiffsposition. Mit dem Anaglyphenrendering kann man es nun auch dreidimensional sehen, wenn man nicht schielen kann. Damit ist allerdings verwirrender, da die meisten 3D-Brillen eine miserabel Kanaltrennung haben. <br>Und falls es jemand noch nicht mitgekriegt hat: Deolalikar hat einen Beweis für P!=NP mit graphischen Modellen, FO(LFP)-Logik und theoretischer Physik veröffentlicht. Wenn der Beweis stimmt, wurden drei der berühmtesten Probleme in nur fünfzehn Jahren gelöst, mal sehen, wann Riemann drankommt.</text>
-          <text language="en"> A Sirdslets update is there: 3 new levels, translations, accelerators and anaglyph rendering. The accelerators are like black holes, but independent of the ship position. The anaglyph rendering creates red/cyan images which you can see with 3d glasses. But they are a little bit confusing because most 3d glasses have a very bad channel separation and you will see everything three times. <br> And if you are interested in theoretical computer science and did not get the news: Deolalikar claims to have found a proof for P!=NP using a combination of graphical models, FO(LFP) logic and theoretical physics. If he is right, the third of the most famous problems is solved in just fifteen years (after Fermat and Poincaré), perhaps Riemann is going to be the next one. </text>
+          <text language="de"> Und weiter geht es mit den SIRDSlets: Es gibt jetzt drei neue Level, Übersetzungen, Beschleuniger und Anaglyphenrendering. Die Beschleuniger sind wie schwarze Löcher, aber unabhängig von der Schiffsposition. Mit dem Anaglyphenrendering kann man es nun auch dreidimensional sehen, wenn man nicht schielen kann. Damit ist allerdings verwirrender, da die meisten 3D-Brillen eine miserabel Kanaltrennung haben. <br/>Und falls es jemand noch nicht mitgekriegt hat: Deolalikar hat einen Beweis für P!=NP mit graphischen Modellen, FO(LFP)-Logik und theoretischer Physik veröffentlicht. Wenn der Beweis stimmt, wurden drei der berühmtesten Probleme in nur fünfzehn Jahren gelöst, mal sehen, wann Riemann drankommt.</text>
+          <text language="en"> A Sirdslets update is there: 3 new levels, translations, accelerators and anaglyph rendering. The accelerators are like black holes, but independent of the ship position. The anaglyph rendering creates red/cyan images which you can see with 3d glasses. But they are a little bit confusing because most 3d glasses have a very bad channel separation and you will see everything three times. <br/> And if you are interested in theoretical computer science and did not get the news: Deolalikar claims to have found a proof for P!=NP using a combination of graphical models, FO(LFP) logic and theoretical physics. If he is right, the third of the most famous problems is solved in just fifteen years (after Fermat and Poincaré), perhaps Riemann is going to be the next one. </text>
         </new>
 	<new date="2010-05-28">
           <text language="de">  Heute habe ich mein neues <a href="games_de.html#sirdslets">SIRDSlets Spiel</a> hochgeladen, dass eines der wenigen Spiele ist, die man in echtem 3D spielen/sehen kann. Es ist außerdem das erste Browserspiel auf dieser Seite und muss nicht wie die anderen explizit heruntergeladen werden. Allerdings ist es noch nicht ganz fertig, aber es ist schon seit Monaten spielbar und ich habe im Moment zu wenig Zeit, es zu vollenden. So fehlt zum Beispiel eine deutsche Übersetzung, mehr als sechs Level, und der Hardware-beschleunigte SIRDS-Renderer aus der vorherigen News (wobei es aber zweifelhaft ist, ob ich den jemals einbaue, da der Softwarerenderer schnell genug zu sein scheint, und es Applets nicht  leicht fällt OpenGL zu verwenden).</text>
           <text language="en"> Today I uploaded my new <a href="games_en.html#sirdslets">SIRDSlets game</a> which is one of the few games that you can play/see in real 3d without additional 3d glasses. It is also the first online game on this page, so you can play it without downloading it explicitely. However, although it is playable, it is not completely finished, but it is in that state since months and I don't have much time in the moment. Some things that are missing are additional levels and the opengl renderer from the last news, so it only has six levels that are software rendered.   </text>
         </new>
           <new date="2010-02-16"><text language="de">
-          Heute gibt es abermals ein <a href="tools_de.html#videlibri">Videlibri-Update</a>, das die unten erwähnten Probleme mit der  FHB Düsseldorf und den beiden Aachener Bibliotheken löst. Außerdem läuft es jetzt wieder unter Windows (und weiterhin unter Linux).<br>
-          Dazu habe ich auch meine  <a href="sources_de.html#internettools">Internettools</a> aktualisiert: Der Wininet-Wrapper unterstützt nun auch Cookies ohne Attribute und http-Verbindungen über andere Ports als 80. Außerdem gibt es ein globales Logging (was man insbesondere für https braucht). Die Parserklasse ist ebenfalls flexibler geworden und man kann in den Pseudo-XPath-Ausdrücken nun auch Regex-Filter vor dem Ausführen anderer Funktionen anwenden, statt nur nachträglich wie bisher. (echte XPath-Ausdrücke können es dagegen übrigens gar nicht)<br>
+          Heute gibt es abermals ein <a href="tools_de.html#videlibri">Videlibri-Update</a>, das die unten erwähnten Probleme mit der  FHB Düsseldorf und den beiden Aachener Bibliotheken löst. Außerdem läuft es jetzt wieder unter Windows (und weiterhin unter Linux).<br/>
+          Dazu habe ich auch meine  <a href="sources_de.html#internettools">Internettools</a> aktualisiert: Der Wininet-Wrapper unterstützt nun auch Cookies ohne Attribute und http-Verbindungen über andere Ports als 80. Außerdem gibt es ein globales Logging (was man insbesondere für https braucht). Die Parserklasse ist ebenfalls flexibler geworden und man kann in den Pseudo-XPath-Ausdrücken nun auch Regex-Filter vor dem Ausführen anderer Funktionen anwenden, statt nur nachträglich wie bisher. (echte XPath-Ausdrücke können es dagegen übrigens gar nicht)<br/>
           Zudem habe ich ein paar News ins Archiv und einige unfertige Tools auf die Demoseite verschoben. 
           </text><text language="en">
-          There is a new update of my <a href="sources_en.html#internettools">Internettools</a>: It fixes two small bugs that prevented the receiving of cookies without attributes and the creation of http connections over the 8080 port. It also add a global logging which is especially useful for debugging https.  In the  parser class the pseudo-XPath-expressions can now extract regex-matching data during the evaluation of the expression instead only afterwards like before. (real XPath-expressions does not support it at all) <br>
+          There is a new update of my <a href="sources_en.html#internettools">Internettools</a>: It fixes two small bugs that prevented the receiving of cookies without attributes and the creation of http connections over the 8080 port. It also add a global logging which is especially useful for debugging https.  In the  parser class the pseudo-XPath-expressions can now extract regex-matching data during the evaluation of the expression instead only afterwards like before. (real XPath-expressions does not support it at all) <br/>
          Furthermore, some news have been moved in the archive and some uncompleted tools on the demo page.
           </text></new>
           <new date="2010-02-07"><text language="de">
-          Ab jetzt gibt es eine extra <a href="demos_de.html">Demo-Unterseite</a> für kleine Programme, die eigentlich nutzlos sind, aber interessante Techniken oder hübsche Filme zeigen. Dazu habe ich zum einen ein paar Programme verschoben, zum anderen gibt es zwei neue, die ich an der Uni aus den Übungsprogrammen der VR- und Computergrafikvorlesungen programmiert habe. <br>
-          Beide zeigen eine echte 3D-Darstellung, das eine rendert hardware beschleunigte <a href="demos_de.html#sirdsgl">Single Image (Random Dot) Stereograms</a>, also Bilder, in denen man ein 3D-Bild durch Schielen sehen kann. Das andere <a href="demos_de.html#webcamucp">"Webcam-UCP"</a> Programm verwendet die klassische rot/cyan-Trennung, um Bilder für 3D-Brillen zu erstellen. Zusätzlich wird aber mittels einer Webcam, die Brillenposition getrackt und die Szene betrachterzentriert gerendert.<br>
+          Ab jetzt gibt es eine extra <a href="demos_de.html">Demo-Unterseite</a> für kleine Programme, die eigentlich nutzlos sind, aber interessante Techniken oder hübsche Filme zeigen. Dazu habe ich zum einen ein paar Programme verschoben, zum anderen gibt es zwei neue, die ich an der Uni aus den Übungsprogrammen der VR- und Computergrafikvorlesungen programmiert habe. <br/>
+          Beide zeigen eine echte 3D-Darstellung, das eine rendert hardware beschleunigte <a href="demos_de.html#sirdsgl">Single Image (Random Dot) Stereograms</a>, also Bilder, in denen man ein 3D-Bild durch Schielen sehen kann. Das andere <a href="demos_de.html#webcamucp">"Webcam-UCP"</a> Programm verwendet die klassische rot/cyan-Trennung, um Bilder für 3D-Brillen zu erstellen. Zusätzlich wird aber mittels einer Webcam, die Brillenposition getrackt und die Szene betrachterzentriert gerendert.<br/>
           Außerdem funktioniert in Videlibri jetzt wieder die StB Aachen (FHB Düsseldorf vermutlich auch), ich lade die neue Version aber erst hoch, wenn ich die FHB noch getestet habe, da es ja sowieso niemand nutzt.
           </text><text language="en">
-          There is now a new <a href="demos_en.html">demo page</a> listing small program which are useless but demonstrate interesting techniques or show nice films. <br>
-          Aside from some recategorizated old programs, there are two new ones on this page, both based on lecture exercises and rendering real 3d. The first draws hardware accelerated <a href="demos_en.html#sirdsgl">Single Image (Random Dot) Stereograms</a>. SIRDS are flat pictures containing a 3d scene which you can only see by squinting.  The other <a href="demos_en.html#webcamucp">"Webcam-UCP"</a> program creates  traditional red/cyan anaglyphs. Furthermore it tracks the position of the 3d glasses via a webcam and renders the scene in user centered projection.<br>
+          There is now a new <a href="demos_en.html">demo page</a> listing small program which are useless but demonstrate interesting techniques or show nice films. <br/>
+          Aside from some recategorizated old programs, there are two new ones on this page, both based on lecture exercises and rendering real 3d. The first draws hardware accelerated <a href="demos_en.html#sirdsgl">Single Image (Random Dot) Stereograms</a>. SIRDS are flat pictures containing a 3d scene which you can only see by squinting.  The other <a href="demos_en.html#webcamucp">"Webcam-UCP"</a> program creates  traditional red/cyan anaglyphs. Furthermore it tracks the position of the 3d glasses via a webcam and renders the scene in user centered projection.<br/>
           </text></new>
           <new date="2010-01-27"><text language="de">
-          Von VideLibri gibt es nun eine neue Version, die auch die Hochschulbibliothekk der RWTH Aachen unterstützt und vollständig Linux-kompatible ist, inklusive Menüeinträge und integrierte Autostartkonfiguration.  <br>
-          Nun die schlechten Nachrichten: Bei der BTH Aachen gibt es noch keine integrierte Verlängerung, da man nicht gleich nach einer  Ausleihe verlängern darf, und ich somit weiß  nicht feststellen kann, wie es funktioniert. Außerden haben alle Libero-Büchereien mal wieder eine neue Software installiert. Das heißt:<br>
-          Sowohl die Aachener Stadtbibliothek wie auch die FHB Düsseldorf gehen vermutlich nicht mehr. Testen kann ich es nicht, weil ich momentan nicht in die Bibliothek kann. (und genau DAS ist der Grund, warum mal endlich jemand die Software benutzen sollte. Wenn mich jemand darauf hinweist und die neue Seite per Mail schickt, kann ich solche Fehler nämlich in einer Viertelstunde beseitigen, statt in zwei Wochen!)   <br>
-          Zumindest in der alten Windowsversion funktionieren die beiden definitiv nicht (Stb Aachen war da nie drin und die FHB ist umgezogen). Sollten sie in der Linuxversion funktionieren,  kann man aber einfach die Dateien der Linuxversion in das Installationverzeichnis in Windows kopieren, dann läuft es dort genauso gut/schlecht. <br> 
-          Zudem habe ich die FHB Bochum gestrichen, da sie nicht mehr unter ihrer alten Internetadresse zu finden ist, ich die neue nirgends finden kann und sie sowieso nur im Programm war, weil sie einen gemeinsamen Server mit der FHB Düsseldorf hatte.<br>
+          Von VideLibri gibt es nun eine neue Version, die auch die Hochschulbibliothekk der RWTH Aachen unterstützt und vollständig Linux-kompatible ist, inklusive Menüeinträge und integrierte Autostartkonfiguration.  <br/>
+          Nun die schlechten Nachrichten: Bei der BTH Aachen gibt es noch keine integrierte Verlängerung, da man nicht gleich nach einer  Ausleihe verlängern darf, und ich somit weiß  nicht feststellen kann, wie es funktioniert. Außerden haben alle Libero-Büchereien mal wieder eine neue Software installiert. Das heißt:<br/>
+          Sowohl die Aachener Stadtbibliothek wie auch die FHB Düsseldorf gehen vermutlich nicht mehr. Testen kann ich es nicht, weil ich momentan nicht in die Bibliothek kann. (und genau DAS ist der Grund, warum mal endlich jemand die Software benutzen sollte. Wenn mich jemand darauf hinweist und die neue Seite per Mail schickt, kann ich solche Fehler nämlich in einer Viertelstunde beseitigen, statt in zwei Wochen!)   <br/>
+          Zumindest in der alten Windowsversion funktionieren die beiden definitiv nicht (Stb Aachen war da nie drin und die FHB ist umgezogen). Sollten sie in der Linuxversion funktionieren,  kann man aber einfach die Dateien der Linuxversion in das Installationverzeichnis in Windows kopieren, dann läuft es dort genauso gut/schlecht. <br/> 
+          Zudem habe ich die FHB Bochum gestrichen, da sie nicht mehr unter ihrer alten Internetadresse zu finden ist, ich die neue nirgends finden kann und sie sowieso nur im Programm war, weil sie einen gemeinsamen Server mit der FHB Düsseldorf hatte.<br/>
          
           </text></new>
           <new date="2010-01-06"><text language="de">
-          So jetzt gibt es eine neue Version von allen in der letzten News erwähnten Paketen, hauptsächlich, weil ich vergessen hatte, die Unittest auszuschalten. Beim TreeListView gab es noch einige andere Änderungen: Beim horizontalen Scrollen flackert es nicht mehr unter GTK (früher hat es das auch nicht, aber bei der Änderung letzter Woche gab es wohl irgendwelche Kompatibilitätsprobleme) und die Icons im Baum werden nun geclippt, wenn die Spalte zu klein ist. <br>
+          So jetzt gibt es eine neue Version von allen in der letzten News erwähnten Paketen, hauptsächlich, weil ich vergessen hatte, die Unittest auszuschalten. Beim TreeListView gab es noch einige andere Änderungen: Beim horizontalen Scrollen flackert es nicht mehr unter GTK (früher hat es das auch nicht, aber bei der Änderung letzter Woche gab es wohl irgendwelche Kompatibilitätsprobleme) und die Icons im Baum werden nun geclippt, wenn die Spalte zu klein ist. <br/>
           Außerdem gibt es jetzt eine neue Version von meinem Büchereiverwaltungsprogramm <a href="tools_de.html#videlibri">Videlibri</a> (das übrigens auf allen diesen anderen Paketen basiert). Zur Abwechslung setzt es diesmal nicht Windows sondern Debian 64-Bit voraus und kann auch die Bücher der Aachener Stadtbibliothek verwalten. Die Windowsversion kommt später, wenn ich sichergestellt habe, dass das Crosscompiling zuverlässig funktioniert. Das Programm verwendet allerdings immer noch ein Windowsverzeichnislayout (alle Dateien in einem Programmordner statt wie unter Linux üblich überall verstreut) und der Autostart muss manuell unter der gnome/KDE-Konfiguration eingetragen werden (videlibri-Pfad mit --autostart als Parameter), wenn man die Autostartfunktionalität benutzen will. 
           </text><text language="en">
           There are some minor changes in all the packets below, mostly I forgot to disable the unittests (and you probably don't want to have test log results everywhere). And the TreeListView won't flicker anymore on gtk when you scroll horizontally (I'm pretty sure that it also didn't flicker when I uploaded the last version...) and icons in the item tree will be clipped if the column is too short.
           </text></new>
 	  <new date="2009-12-31"><text language="de">
-           Und weiter geht's. Ich habe jetzt drei der bisherigen Packages mit HTML-Templateparser, Autoupdate und Wininetwrapper zu einem  <a href="sources_de.html#internettools">Internet Tools</a>-Package zusammengefügt und platform-unabhängig gemacht (der Hauptunterschied ist, dass der Wininetwrapper nun auch Synapse unterstützt). Das Package benötigt/enthält auch meine <a href="sources_de.html#bbutils">bbutils</a>, bei denen ich noch einen Absturz unter 64-Bit beseitigt habe (und vermutlich seit dem letzten Release auch einige Funktionen umbenannt). <br>  
+           Und weiter geht's. Ich habe jetzt drei der bisherigen Packages mit HTML-Templateparser, Autoupdate und Wininetwrapper zu einem  <a href="sources_de.html#internettools">Internet Tools</a>-Package zusammengefügt und platform-unabhängig gemacht (der Hauptunterschied ist, dass der Wininetwrapper nun auch Synapse unterstützt). Das Package benötigt/enthält auch meine <a href="sources_de.html#bbutils">bbutils</a>, bei denen ich noch einen Absturz unter 64-Bit beseitigt habe (und vermutlich seit dem letzten Release auch einige Funktionen umbenannt). <br/>  
            Außerdem gibt es jetzt für alle der geänderten Pascalkomponenten eine <a href="documentation/">Onlinedokumentation</a>, für die ich einfach nur die sowieso in den zip-Dateien vorhandenen pasdoc-Dateien unkomprimiert hochgeladen habe.
           </text><text language="en">
-           And more updates: I merged the three packages with the template based html parser, the auto update and my Wininetwrapper into an  <a href="sources_en.html#internettools">Internet Tools</a>-Package and made them platform-independent. (the main change is that the wininet wrapper is now also a Synapse wrapper). This new package requires/contains now my <a href="sources_en.html#bbutils">bbutils</a> in which I fixed a crash on 64-Bit.  (and probably renamed some functions since the last published version). <br>  
+           And more updates: I merged the three packages with the template based html parser, the auto update and my Wininetwrapper into an  <a href="sources_en.html#internettools">Internet Tools</a>-Package and made them platform-independent. (the main change is that the wininet wrapper is now also a Synapse wrapper). This new package requires/contains now my <a href="sources_en.html#bbutils">bbutils</a> in which I fixed a crash on 64-Bit.  (and probably renamed some functions since the last published version). <br/>  
            Furthermore I uploaded the pasdoc documentation from every (changed so far) package as <a href="documentation/">online documentation</a> and  every  archive  has now  a common structure. The root level of the zip contains a single directory named like the zip itself, which contains the data files, the changelog from Mercurial and, if available, the pasdoc documentation for that archive.
           </text></new>
 	  <new date="2009-12-28"><text language="de">
-		So nun bin ich von Windows 32-Bit auf Linux 64-Bit gewechselt, und jetzt geht das große Updaten los. Die alten Programme dieser Seite waren zwar theoretisch schon alle platform-unabhängig, praktisch gab es aber noch einige Macken.<br>
+		So nun bin ich von Windows 32-Bit auf Linux 64-Bit gewechselt, und jetzt geht das große Updaten los. Die alten Programme dieser Seite waren zwar theoretisch schon alle platform-unabhängig, praktisch gab es aber noch einige Macken.<br/>
 		Mein <a href="components_de.html#treelistview">TreeListView</a> läuft in der neuen Version unter LCL-GTK sehr viel schneller/flüssiger als früher, da mehrere Benutzereingaben hintereinander zusammengefasst angezeigt werden (wobei es eigentlich ein gemeldeter LCL-Bug ist, dass so viele  überflüssige  Nachrichten überhaupt weitergeleitet werden), außerdem kann jetzt in jedem Item ein Datenwert mit 64-Bit gespeichert werden und die Komponente steht in einem Designzeitpackage zur Verfügung. Die dazugehörige <a href="components_de.html#searchbar">Suchleiste</a> passt sich nun der Schriftgröße an und hat ebenfalls ein Package bekommen. Zudem kann mein  <a href="tools_de.html#jaxmlp">JAXML-Parser</a> jetzt auch Dateien mit unterschiedlichen Zeichensätzen erstellen und die \\-Form funktioniert wieder richtig.
 	  </text><text language="en">
-	      So now I switched from Windows 32 bit to Linux 64 bit and need to update all the programs here which were theoretically platform-independent, but apparently didn't really work there.<br>
+	      So now I switched from Windows 32 bit to Linux 64 bit and need to update all the programs here which were theoretically platform-independent, but apparently didn't really work there.<br/>
 The  <a href="components_en.html#treelistview">TreeListView</a> is now a lot faster in LCL-GTK, because it will cache subsequent input events and draw all changes at once (actually it is a reported lcl bug that there are so many unnecessary events, but joining them is better anyways), and  in every item you can now store a 64 bit value instead of a 32-bit value like before. I also changed the included <a href="components_en.html#searchbar">SearchBar</a> to set its size dependent on the currently used font. For both these components I created a Delphi and a Lazarus package, so you can place them on the form during the design time.  Furthermore my  <a href="tools_en.html#jaxmlp">JAXML parser</a> can now create files in different encodings and  \\-escaping works again (it seems I forgot to actually run the unit tests on the last release). 
 	  </text></new>
 	  <new date="2009-10-05"><text language="de">
 		Ich habe jetzt mal meine <a href="others_de.html#bachelor">Bachelorarbeit</a> hochgeladen. Im Wesentlichen geht es darum, wie man aus mehreren gegebenen, sortierten Listen von gleichen Ereignissen herausfinden kann, welches dieselben sind. 
 	  </text></new>
 	  <new date="2009-09-16"><text language="de">
-		Diese Woche habe ich meine Bachelorarbeit/prüfung abgelegt, so dass ich mich wieder etwas um meine Homepage kümmern kann. <br>
-		Heute gibt es ein neues Java-Script, mit dem man das <a href="others_de.html#gaussElimination">gaußsche Eliminationsverfahren</a> auf eine Matrix anwenden kann. Es gibt zwar schon hunderte solche Programme im Internet, aber alle, die ich finden konnte, waren für mein Gleichungssystem unbrauchbar, da sie verlangen, dass die Matrix quadratisch ist und Elemente eines Körpers statt eines Ringes enthält.<br>  Übrigens ist interessante Tatsache, die ich bei der Implementierung festgestellt habe, dass man den euklidischen Algorithmus zur ggT-Berechnung als Spezialfall des gaußschen Eliminationsverfahren auf einer 2x1-Matrix der natürlichen Zahlen betrachten kann.
+		Diese Woche habe ich meine Bachelorarbeit/prüfung abgelegt, so dass ich mich wieder etwas um meine Homepage kümmern kann. <br/>
+		Heute gibt es ein neues Java-Script, mit dem man das <a href="others_de.html#gaussElimination">gaußsche Eliminationsverfahren</a> auf eine Matrix anwenden kann. Es gibt zwar schon hunderte solche Programme im Internet, aber alle, die ich finden konnte, waren für mein Gleichungssystem unbrauchbar, da sie verlangen, dass die Matrix quadratisch ist und Elemente eines Körpers statt eines Ringes enthält.<br/>  Übrigens ist interessante Tatsache, die ich bei der Implementierung festgestellt habe, dass man den euklidischen Algorithmus zur ggT-Berechnung als Spezialfall des gaußschen Eliminationsverfahren auf einer 2x1-Matrix der natürlichen Zahlen betrachten kann.
 	  </text><text language="en">
-		This week I finished and presented my bachelor thesis, so that I have now enough time to update this home page. <br>
-		Today I added a java script that you can use to perform a <a href="others_en.html#gaussElimination">Gaussian Elimination</a> on a given matrix. Of course, there are already hundreds of such scripts online, but all of those I found, didn't work for the equations I wanted to solve, because they assumed that the matrix is quadratic and contains elements of a field instead of a ring. And most of them don't let you choose the order in which the operations are performed or allow neither import nor export of data. The only problem with my script is that java script is always a little bit slow, but anyways you don't  solve  equations with dozen variables step-by-step. And it seems that no one  downloads anything in the web2.0 era.<br>
+		This week I finished and presented my bachelor thesis, so that I have now enough time to update this home page. <br/>
+		Today I added a java script that you can use to perform a <a href="others_en.html#gaussElimination">Gaussian Elimination</a> on a given matrix. Of course, there are already hundreds of such scripts online, but all of those I found, didn't work for the equations I wanted to solve, because they assumed that the matrix is quadratic and contains elements of a field instead of a ring. And most of them don't let you choose the order in which the operations are performed or allow neither import nor export of data. The only problem with my script is that java script is always a little bit slow, but anyways you don't  solve  equations with dozen variables step-by-step. And it seems that no one  downloads anything in the web2.0 era.<br/>
 		An interesting fact I noticed while implementing this is that you can consider the Euclidean algorithm for finding the gcd as a special case of the Gaussian Elimination on a 2x1-matrix of integers.
 	  </text></new>
 	  <new date="2009-04-15"><text language="de">
-	     Es gibt nun wieder ein neues Programm: Einen <a href="tools_de.html#sunsimulator">Sonnensimulator</a>, der die Helligkeit und den Farbton des Monitors zeitlich ändert, so dass dessen Licht dem Sonnenlicht entspricht.<br>
+	     Es gibt nun wieder ein neues Programm: Einen <a href="tools_de.html#sunsimulator">Sonnensimulator</a>, der die Helligkeit und den Farbton des Monitors zeitlich ändert, so dass dessen Licht dem Sonnenlicht entspricht.<br/>
 		 Außerdem habe ich dafür eine <a href="sources_de.html#diagram">Diagrammkomponente</a> geschrieben, die Gleitkommazahlen-Reihen unterschiedlich darstellen kann. Sie benutzt ein Model/View-System (da ich mich viel mit QT beschäftigt habe), das im ersten Moment ziemlich verblüffend wirkt. Z.B.: Kann man in zwei unterschiedlichen Fenstern immer dieselben Punkte synchronisiert anzeigen und in einem noch eine weitere Reihe hinzufügen.
       </text><text language="en">
-	     There is now a new program: <a href="tools_en.html#sunsimulator">Sun-Simulator</a> which changes the brightness and shade of color of the monitor during the day and year, so that its light matches the sunlight.<br>
+	     There is now a new program: <a href="tools_en.html#sunsimulator">Sun-Simulator</a> which changes the brightness and shade of color of the monitor during the day and year, so that its light matches the sunlight.<br/>
 		 Additional I wrote a <a href="sources_en.html#diagram">diagram component</a> for Lazarus which shows float points in multiple ways. It is based on a model/view system (because I use qt a lot at the moment) which can be used to create interesting effects very easily. E.g.: you can synchronize the data points across different windows and add some other points in one of them at the same time.
       </text></new>    
 	  <new date="2009-04-09"><text language="de">
-	     Ein Problem, wenn man Opensource-Software schreibt ist, dass man häufig Patches erhält, die ziemlich unbrauchbar sind, weil sie zu 95% aus Whitspaceänderungen bestehen. Daher habe ich ein (unter Linux und Windows laufendes) <a href="tools_de.html#simplifydiff">Kommandozeilentool namens Simplifydiff</a> geschrieben, welches alle unnötigen Daten entfernt.<br>
+	     Ein Problem, wenn man Opensource-Software schreibt ist, dass man häufig Patches erhält, die ziemlich unbrauchbar sind, weil sie zu 95% aus Whitspaceänderungen bestehen. Daher habe ich ein (unter Linux und Windows laufendes) <a href="tools_de.html#simplifydiff">Kommandozeilentool namens Simplifydiff</a> geschrieben, welches alle unnötigen Daten entfernt.<br/>
          Außerdem werden ab jetzt alle Gästebucheintrag, welche von der Heuristik als Spam erkannt werden <em>ohne Backup</em> gelöscht. Bisher habe ich zur Sicherheit immer noch eine Kopie per Mail erhalten, aber da unter den letzten tausend Einträgen sowieso kein echter Beitrag war, ist das wohl unnötig. (Ebenfalls unnötig sind übrigens die Spameinträge, das Gästebuch hat nämlich schon immer noindex, nofollow gesetzt!)
       </text><text language="en">
-	     A problem with writing open-source software is that you often receive patches which are completely useless, because they consists to 95 percent of changed whitespace. Therefore I wrote the command line tool <a href="tools_en.html#simplifydiff">Simplifydiff</a> that removes all unnecessary data.<br>
+	     A problem with writing open-source software is that you often receive patches which are completely useless, because they consists to 95 percent of changed whitespace. Therefore I wrote the command line tool <a href="tools_en.html#simplifydiff">Simplifydiff</a> that removes all unnecessary data.<br/>
          And all entries in the guestbook which are spam according to the heuristic are now removed <em>without a backup</em>. So far  I received a copy as mail, but since the last thousand entries were really spam, this seems to be useless.  (Actually the spam entries are also completely useless, because the guestbook has set the flags noindex, nofollow since the beginning!)
       </text></new>    
       <new date="2009-03-01"><text language="de">
-         Vor einiger Zeit habe ich angefangen Texte und ein Buch mit LaTeX zu schreiben und habe dafür den Editor Texmaker genommen, da es der einzige platform-unabhängige, open-source Editor war, den ich finde konnte. Da der einige Fehler enthält, habe ich in einige kleine Patch erstellt, die dann immer größer wurden, bis sie schließlich zu dem Fork <a href="http://texmakerx.sourceforge.net">TexMakerX</a> (auf Sourceforge) geführt haben. Zu den wichtigsten Feature, die ich hinzugefügt habe, gehört interaktive Rechtschreibprüfung, Codefaltung und eine Textanalyse.<br>
+         Vor einiger Zeit habe ich angefangen Texte und ein Buch mit LaTeX zu schreiben und habe dafür den Editor Texmaker genommen, da es der einzige platform-unabhängige, open-source Editor war, den ich finde konnte. Da der einige Fehler enthält, habe ich in einige kleine Patch erstellt, die dann immer größer wurden, bis sie schließlich zu dem Fork <a href="http://texmakerx.sourceforge.net">TexMakerX</a> (auf Sourceforge) geführt haben. Zu den wichtigsten Feature, die ich hinzugefügt habe, gehört interaktive Rechtschreibprüfung, Codefaltung und eine Textanalyse.<br/>
          Auf dieser Seite hier habe ich dagegen nur den Übersichtstext unten mal wieder aktualisiert und, dank eines Versionskontrollsystems, das Datum der Newsnachricht vor dieser richtig gestellt. (da stand nämlich noch 18. Okt) (Korrektur: Das VCS lag falsch, aber glücklicherweise hatte ich noch mein CMS)
       </text><text language="en">
-        Some time ago I started to write texts and even a book in LaTeX. Therefore I searched a platform-independent, open-source editor, and found only Texmaker. <br>
-        But since he has some bugs, I created some small patches, which got bigger and bigger, until they finally lead to the fork <a href="http://texmakerx.sourceforge.net">TexMakerX</a> (on Sourceforge). The most important features I added are, interactive spell checking, code folding and a text analysis.<br>
+        Some time ago I started to write texts and even a book in LaTeX. Therefore I searched a platform-independent, open-source editor, and found only Texmaker. <br/>
+        But since he has some bugs, I created some small patches, which got bigger and bigger, until they finally lead to the fork <a href="http://texmakerx.sourceforge.net">TexMakerX</a> (on Sourceforge). The most important features I added are, interactive spell checking, code folding and a text analysis.<br/>
          On this web page I only updated the overview text below and corrected the date of the last news from 18.Okt to 27.Nov. (version control systems are really useful...) (correction: The date of the VCS was wrong, but my CMS got it right).
       </text></new>    
   </news>
   <final-content language="de">
   <a href="oldnews_de.html">Ältere Neurigkeiten...</a>
   
-  <br><br><h2>Übersicht</h2>
-  <br>
-  Auf dieser Seite kann man einige von mir programmierte Spiele und Tools herunterladen. <br>
-  Zudem gibt es nützliche Quellcodes und Komponenten, vorwiegend für Delphi und FreePascal. <br>
-  <br>
-  Ein paar Informationen über mich: Ich programmiere, seit ich acht bin (weshalb viele der Downloads auf dieser Seite sehr alt sind), mittlerweile bin ich 20 und studiere Informatik an der Heinrich-Heine-Universität Düsseldorf.(Stand 2009)<br>
-  Ich habe mehrmals am Bundeswettbewerb Informatik teilgenommen, wo ich Preisträger und Bundessieger wurde, außerdem war ich im deutschen Team bei mehreren internationalen Informatikolympiaden (auch bei <em>der</em> International Olympiad of Informatics)  und habe dort (leider nicht bei der) auch einige Medaillen gewonnen.<br>
-  <br>
+  <br/><br/><h2>Übersicht</h2>
+  <br/>
+  Auf dieser Seite kann man einige von mir programmierte Spiele und Tools herunterladen. <br/>
+  Zudem gibt es nützliche Quellcodes und Komponenten, vorwiegend für Delphi und FreePascal. <br/>
+  <br/>
+  Ein paar Informationen über mich: Ich programmiere, seit ich acht bin (weshalb viele der Downloads auf dieser Seite sehr alt sind), mittlerweile bin ich 20 und studiere Informatik an der Heinrich-Heine-Universität Düsseldorf.(Stand 2009)<br/>
+  Ich habe mehrmals am Bundeswettbewerb Informatik teilgenommen, wo ich Preisträger und Bundessieger wurde, außerdem war ich im deutschen Team bei mehreren internationalen Informatikolympiaden (auch bei <em>der</em> International Olympiad of Informatics)  und habe dort (leider nicht bei der) auch einige Medaillen gewonnen.<br/>
+  <br/>
 Es wäre schön, wenn ihr ins <a href="koobtseug_de.php">Gästebuch</a> schreibt wie euch diese Seite und die Programme hier gefallen haben. Bei sonstigen Fragen könnte ihr mir auch gerne <a href="impressum_de.html#top">eine Mail</a> schreiben.
 <div style="text-align:center; margin-top: 2em;">
-  <img src="img/maus.gif" alt="Maus mit Käse"width="182" height="132">
+  <img src="img/maus.gif" alt="Maus mit Käse" width="182" height="132"/>
 </div>
 </final-content>
 <final-content language="en">
-  <a href="oldnews_en.html">Older news...</a><br><br>
-<br>
+  <a href="oldnews_en.html">Older news...</a><br/><br/>
+<br/>
 <h2>Overview</h2>
-  <br>
-  On this page you can download some games and tools I wrote. <br>
-  There are also useful sources and components, mainly for Delphi and Free Pascal. <br>
-  <br>
-  Some information about me: I have programmed since I was twelve (that's why there are so many old downloads here), now I am 19 and study computer science at the Heinrich-Heine-Universität Düsseldorf. (2009)<br>
-  I won several prices in the German national informatics competition and participated in different European and International Olympiads of Informatics. In the European ones I also won some medals. <br>
-  <br>
+  <br/>
+  On this page you can download some games and tools I wrote. <br/>
+  There are also useful sources and components, mainly for Delphi and Free Pascal. <br/>
+  <br/>
+  Some information about me: I have programmed since I was twelve (that's why there are so many old downloads here), now I am 19 and study computer science at the Heinrich-Heine-Universität Düsseldorf. (2009)<br/>
+  I won several prices in the German national informatics competition and participated in different European and International Olympiads of Informatics. In the European ones I also won some medals. <br/>
+  <br/>
 Here is a <a href="koobtseug_en.php">guestbook</a> where you can tell me if you like or dislike something on this page. If you have any questions or suggestions you can also write me <a href="impressum_en.html#top">a mail</a>.
 
 <div style="text-align:center; margin-top: 2em;">
-  <img src="img/maus.gif" alt="mousing eating cheese"width="182" height="132">
+  <img src="img/maus.gif" alt="mousing eating cheese" width="182" height="132"/>
 </div>
-<br><br><br><br></final-content>
+<br/><br/><br/><br/></final-content>
 </file>
