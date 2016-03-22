@@ -1,4 +1,4 @@
-﻿<file>
+<file>
   <description language="de">BeniBela online: Auf dieser Unterseite gibt es  alles, was nicht mehr auf die anderen gepasst hat. Unter anderem: Ein Mathematikskript und einen Star Wars Film</description>
   <description language="en">BeniBela online: Here you find everything which doesn't fit into the other categories on my page.</description>
   <keywords language="de">BeniBela, Skript, Lineare Algebra, 64K 3D Star Wars Intro, download, Glaselektrode, Schnee</keywords>
@@ -8,16 +8,62 @@
   <prevent-details>YES</prevent-details>
   <download>  
     <start-category language="de">Ausgelagerte Links</start-category>
-    <start-category language="en">social bookmarks</start-category>
+    <start-category language="en">Social Bookmarks</start-category>
     <title>del.icio.us</title>
     <linkTo>http://del.icio.us/BeniBela</linkTo>
     <description_80 language="de">Meine Linkliste auf del.icio.us</description_80>
     <description_80 language="en">My shared link collection on del.icio.us.</description_80>
     <language>(de), en</language>
   </download>
+
+  <download>  
+    <start-category>Delphi</start-category>
+    <title>Torry's Delphi</title>
+    <linkTo>http://www.torry.net/</linkTo>
+    <description_80 language="de">Eine der größten Komponentensammlungen</description_80>
+    <description_80 language="en">One of the biggest component collections.</description_80>
+    <language>en</language>
+  </download>
+  <download>  
+    <title>GExpert</title>
+    <linkTo>http://www.gexperts.org/</linkTo>
+    <description_80 language="de">Hier gibt es jede Menge von Experten(Plugins) für die Delphi Ide</description_80>
+    <description_80 language="en">Here you can download many experts for the Delphi IDE.</description_80>
+    <language>en</language>
+  </download>
+  <download>  
+    <title>Delphi Works</title>
+    <linkTo>http://delphiworks.sourceforge.net/</linkTo>
+    <description_80 language="de">Eine große Quellcodesammlung für Delphi</description_80>
+    <description_80 language="en">A big collection of Delphi sources.</description_80>
+    <language>de</language>
+  </download>
+  <download>  
+    <title>Spotlight</title>
+    <linkTo>https://www.spotlight.de/de/blog/forum/48/Delphi/</linkTo>
+    <description_80 language="de">Ein uraltes Delphiforen. Für 8-Jahre im Archivmodus, inzwischen kann man wieder posten</description_80>
+    <description_80 language="en">One of the oldest Delphi forums. For 8-years it was shutdown to a read-only mode, now it seems active again</description_80>
+    <language>de</language>
+  </download>
+  <download>  
+    <title>Homepage von Assarbad</title>
+    <linkTo>http://assarbad.net/de/welcome</linkTo>
+    <description_80 language="de">Eine gute Seite mit Tutorials und Opensource-Programmen zur systemnahen Programmierung mit Delphi</description_80>
+    <description_80 language="en">A good page with tutorials and open source programs for programming on low level.</description_80>
+    <language>de, en</language>
+  </download>
+  <download>  
+    <title>Homepage von Michael Puff</title>
+    <linkTo>http://michael-puff.de/</linkTo>
+    <description_80 language="de">Eine ähnliche Seite wie die von Assarbad, allerdings weniger übersichtlich.</description_80>
+    <description_80 language="en">A page like the one of Assarbad, but not so clearly.</description_80>
+    <language>de</language>
+  </download>
+
+
   <download>  
     <start-category language="de">Spieleprogrammierung</start-category>
-    <start-category language="en">game programming</start-category>
+    <start-category language="en">Game Programming</start-category>
     <title>DelphiGL</title>
     <linkTo>http://www.delphigl.com/</linkTo>
     <description_80 language="de">Die beste deutschsprachige OpenGl-Seite mit sehr vielen Tutorials</description_80>
@@ -31,84 +77,23 @@
     <description_80 language="en">One of the most famous pages about game programming. It contains many tutorials and has a forum.</description_80>
     <language>en</language>
   </download>
-  <download>  
+ <!-- <download>  
     <title>USF</title>
     <linkTo>http://www.usf.de/</linkTo>
     <description_80 language="de">Das USF ist eines der wenigen Spieleprogrammiererforen, die vorwiegend von professionellen Entwicklern besucht werden.</description_80>
     <description_80 language="en">The USF is one of the few forums which is visited mainly by professional developers.</description_80>
     <language>de</language>
-  </download>
+  </download>-->
   <download>  
-    <title>Developia</title>
-    <linkTo>http://www.developia.de/</linkTo>
-    <description_80 language="de">Die zentrale Seite für deutsche Hobbyspieleprogrammierer. Hier gibt es Spiele, Tutorials und ein Forum.</description_80>
-    <description_80 language="en">The central page for German hobby game programming. Here you find games, tutorials and a forum.</description_80>
-    <language>de</language>
-  </download>
-  <download>  
-    <title>ZFX</title>
+    <title>ZFX/Developia</title>
     <linkTo>http://www.zfx.info/</linkTo>
-    <description_80 language="de">Eine C++-Seite über die Programmierung von OpenGL und DirectX mit Tutorials und einem großen Forum.</description_80>
-    <description_80 language="en">A C++-Page about the programming with OpenGL and DirectX. There are tutorials and a forum.</description_80>
+    <description_80 language="de">Die Fusion von ZFX und Developia, zwei großen Foren für deutsche Hobbyspieleprogrammierer.</description_80>
+    <description_80 language="en">The fusion of ZFX and Developia, two large forums for German hobby game programming.</description_80>
     <language>de</language>
   </download>
-  <download>  
-    <start-category>Delphi</start-category>
-    <title>Spotlight</title>
-    <linkTo>http://spotlight.de/zforen/dlp/t/forum_dlp_1.html</linkTo>
-    <description_80 language="de">Eines der wenigen Delphiforen, wo man in Beiträgen HTML benutzen darf (leider inzwischen tot, es gibt aber noch ein Archiv)</description_80>
-    <description_80 language="en">One of the few Delphi forums where you are allowed to use HTML (and is now dead)</description_80>
-    <language>de</language>
-  </download>
-  <download>  
-    <title>Delphi-Source</title>
-    <linkTo>http://www.dsdt.info/</linkTo>
-    <description_80 language="de">Eine gute Delphiseite. Besonders zu empfehlen sind die Tips und Tutorials</description_80>
-    <description_80 language="en">Here you find good tutorials and tips about Delphi.</description_80>
-    <language>de</language>
-  </download>
-  <download>  
-    <title>GExpert</title>
-    <linkTo>http://www.gexperts.org/</linkTo>
-    <description_80 language="de">Hier gibt es jede Menge von Experten(Plugins) für die Delphi Ide</description_80>
-    <description_80 language="en">Here you can download many experts for the Delphi IDE.</description_80>
-    <language>en</language>
-  </download>
-  <download>  
-    <title>Torry's Delphi</title>
-    <linkTo>http://www.torry.net/</linkTo>
-    <description_80 language="de">Eine der größten Komponentensammlungen</description_80>
-    <description_80 language="en">One of the biggest component collections.</description_80>
-    <language>en</language>
-  </download>
-  <download>  
-    <title>Delphi Works</title>
-    <linkTo>http://delphiworks.sourceforge.net/</linkTo>
-    <description_80 language="de">Eine große Quellcodesammlung für Delphi</description_80>
-    <description_80 language="en">A big collection of Delphi sources.</description_80>
-    <language>de</language>
-  </download>
-  <download>  
-    <title>Delphi-FAQsen</title>
-    <linkTo>http://www.faqsen.de/delphi/contribs.jsp</linkTo>
-    <description_80 language="de">Eine Seite, auf der sämtliche Tips zu Delphi gespeichert werden sollen</description_80>
-    <description_80 language="en">A page on which all tips about Delphi should be stored.</description_80>
-    <language>de</language>
-  </download>
-  <download>  
-    <title>Homepage von Assarbad</title>
-    <linkTo>http://assarbad.net/de/welcome</linkTo>
-    <description_80 language="de">Eine gute Seite mit Tutorials und Opensource-Programmen zur systemnahen Programmierung mit Delphi</description_80>
-    <description_80 language="en">A good page with tutorials and open source programs for programming on low level.</description_80>
-    <language>de, en</language>
-  </download>
-  <download>  
-    <title>Homepage von Michael Puff</title>
-    <linkTo>http://www.luckie-online.de/</linkTo>
-    <description_80 language="de">Eine ähnliche Seite wie die von Assarbad, allerdings weniger übersichtlich.</description_80>
-    <description_80 language="en">A page like the one of Assarbad, but not so clearly.</description_80>
-    <language>de</language>
-  </download>
+  
+  
+  
   <download>  
     <start-category>C++</start-category>
     <title>C-PlusPlus</title>
@@ -133,13 +118,13 @@
     <description_80 language="en">AV-Personal is a virus scanner which is free of charge for non commercial use.</description_80>
     <language>de, en</language>
   </download>
-  <download>  
+  <!--<download>  
     <title>SpaceMonger</title>
     <linkTo>http://www.sixty-five.cc/sm/v1x.php</linkTo>
     <description_80 language="de">SpaceMonger zeigt eine Karte der Festplatte, auf der die Größe jedes Verzeichnis/Datei proportional zu dem von ihm verbrauchten Speicher angezeigt wird. Zu jedem großen Objekt wird der Dateiname angezeigt.</description_80>
     <description_80 language="en"> 	SpaceMonger displays a treemap of the space of disks. The size of each displayed item is proportional to the size the file/folder use. Each item is shown together with its name.</description_80>
     <language>en</language>
-  </download>
+  </download>-->
   <download>  
     <title>WinDirStat</title>
     <linkTo>http://windirstat.info/</linkTo>
@@ -151,7 +136,7 @@
     <start-category language="de">Sammlung von Windows tools</start-category>
     <start-category language="en">Collection of Windows tools</start-category>
     <title>SysInternals</title>
-    <linkTo>http://www.microsoft.com/technet/sysinternals/default.mspx</linkTo>
+    <linkTo>https://technet.microsoft.com/en-us/sysinternals/default</linkTo>
     <description_80 language="de">Hier gibt es eine große Sammlung von Tools die Systeminformationen liefern. (z.B.: Registry oder Festplatten Zugriffsüberwachung).</description_80>
     <description_80 language="en">There is a big collection of tools showing system informations (e.g. registry or disk access monitoring).</description_80>
     <language>en</language>
@@ -170,16 +155,16 @@
     <description_80 language="en">There you can get two tools for spectral analysis of sound or radio signals among others.</description_80>
     <language>en</language>
   </download>
-  <download>  
-    <start-category language="de">Sonstiges</start-category>
-    <start-category language="en">Others</start-category>
+<!--  <download>  
     <title>Wotsit's Format</title>
     <linkTo>http://www.wotsit.org/</linkTo>
     <description_80 language="de">Ein großes Archiv, wo es die Dokumentation zu fast jedem Dateiformat gibt.</description_80>
     <description_80 language="en">A big archive where you find documentation about nearly every file format.</description_80>
     <language>en</language>
-  </download>
+  </download>-->
   <download>  
+    <start-category language="de">Sonstiges</start-category>
+    <start-category language="en">Others</start-category>
     <title>Shareware-Autoren-VEreinigung</title>
     <linkTo>http://www.s-a-ve.com/</linkTo>
     <description_80 language="de">Ein Zusammenschluß der meisten Free- und Shareware-Programmierer. Dort gibt es auch ein Softwarearchiv.</description_80>
