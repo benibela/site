@@ -27,8 +27,8 @@ function init(){
   for (i=0;i<15;i++) {
     var r = [];
     for (j=0;j<15;j++)
-      if (Math.random() < 0.7) r.push(1);
-      else if (Math.random() < 0.7) r.push(2);
+      if (Math.random() < 0.6) r.push(1);
+      else if (Math.random() < 0.6) r.push(2);
       else r.push(3);
     cubes.push(r);
   }
@@ -65,10 +65,10 @@ function invertDir(d) {
 }
 function moveInDir(coord, d){
   switch (d) {
-    case 0: coord.r --; break;
-    case 1: coord.c ++; break;
-    case 2: coord.r ++; break;
-    case 3: coord.c --; break;
+    case 0: coord.r --; break; //up
+    case 1: coord.c ++; break; //right
+    case 2: coord.r ++; break; //down
+    case 3: coord.c --; break; //left
   }
 }
 
@@ -83,14 +83,17 @@ function moveTillClickable(coord, d){
 }
 
 function reachable(r,c,skipd,a){
+  var res = 0;
   for (var i=0;i<4;i++)
     if (i != skipd) {
       var coord = {"r": r, "c": c};
       moveTillClickable(coord, i);
       if (coordValid(coord)) {
         a[i] = coord;
-      }
+        res++;
+      } else if (a[i]) a[i].r = -1;
     }
+  return res;
 }
 function highlight(r,c,skipd,color){
   var a = [null,null,null,null];
@@ -112,8 +115,10 @@ function dig(r,c,ct){
       var ok = false;
       for (var i=0;i<a.length;i++)
         if (a[i] && r == a[i].r && c == a[i].c) ok = true;
-      if (!ok) return;
-   
+      if (!ok) {
+        alert("forbidden: "+r + "  " + c+ "\nOnly "+a + " are allowed " );
+        return;
+      }  
   }
   document.getElementById("grid").rows[r].cells[c].innerHTML = "<img src='digging.gif'>";
   detectors[ct-1] --;
