@@ -102,7 +102,7 @@ function highlight(r,c,skipd,color){
   reachable(r, c, skipd, a);
   var ok = false;
   for (var i=0;i<a.length;i++)
-    if (a[i])
+    if (a[i] && a[i].r >= 0)
       document.getElementById("grid").rows[a[i].r].cells[a[i].c].style.backgroundColor = color;
 }
 

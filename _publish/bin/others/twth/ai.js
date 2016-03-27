@@ -13,6 +13,7 @@ var pathC = [];
 var realPathLen = 0;
 var bestPathR = [];
 var bestPathC = [];
+var nextCache = [];
 var bestPathLen = 0;
 var bestPathAdvancedCount = 0;
 var openTiles = 0;
@@ -23,7 +24,9 @@ function findPath(r,c,forbiddenD,advanced) {
   step++;
   if (step > 1000000) return false;
   var preferredDir = [0,1,3,2,  0, 1, 3, 2];
-  var next = [null,null,null,null];
+  var depth = realPathLen;
+  while (depth >= nextCache.length) nextCache.push([null,null,null,null]);
+  var next = nextCache[depth];
   reachable(r,c,forbiddenD, next);
   var i;
   var j=0;
