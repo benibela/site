@@ -86,12 +86,14 @@ function reachable(r,c,skipd,a){
   var res = 0;
   for (var i=0;i<4;i++)
     if (i != skipd) {
-      var coord = {"r": r, "c": c};
-      moveTillClickable(coord, i);
-      if (coordValid(coord)) {
-        a[i] = coord;
-        res++;
-      } else if (a[i]) a[i].r = -1;
+      if (!a[i]) a[i] = {"r": r, "c": c};
+      else {
+        a[i].r = r;
+        a[i].c = c;
+      }
+      moveTillClickable(a[i], i);
+      if (coordValid(a[i])) res++;
+      else a[i].r = -1;
     }
   return res;
 }
