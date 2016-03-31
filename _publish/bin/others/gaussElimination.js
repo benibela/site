@@ -602,7 +602,7 @@ if (lang=="en") {
 
    var gaussTxtReallyRemove="Sorry, but do you know what you're doing?\nThis will completely remove this row and lead to information loss.\nAre you sure you don't need it anymore? (OK means yes)";
   } else  {
-  var gaussTxtSize="Größe:";  
+  var gaussTxtSize="GrÃ¶ÃŸe:";  
   var gaussTxtCreateIDMatrix="Einheitsmatrix";  
   var gaussTxtCreateEmptyMatrix="Leere Matrix";  
   var gaussTxtImportExport="Import/Export";  
@@ -610,29 +610,29 @@ if (lang=="en") {
   var gaussTxtExport="export";  
   var gaussTxtMultiply=" multipliziere ";
   var gaussTxtNoNumberGiven="Keine Zahl gegeben";
-  var gaussTxtWrongPivotRow="Die gezogene Matrixzeile kann die ausgewählte Spalte nicht eliminieren.";
+  var gaussTxtWrongPivotRow="Die gezogene Matrixzeile kann die ausgewÃ¤hlte Spalte nicht eliminieren.";
   var gaussTxtDescription="<b>Anleitung:</b><br><br>"+
 						  'Zusammenfassung: <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alles Blaue  reagiert auf die Maus. <br><br>'+
-						  'Ausführlich:<br>'+
+						  'AusfÃ¼hrlich:<br>'+
 						  '1. Um eine Zeile mit einer Zahl zu multiplizieren, gebe diese Zahl in die Box nach dem "<-*" ein und klicke auf "<-*"<br>'+
 						  '2. Um eine Zeile zu einer anderen zu addieren oder davon abzuziehen, schiebe die Zeile ausgehend von dem "move"-Button auf das +/- Symbole hinter der zu modifizierenden Zeile.<br>'+
 						  '3. Um Zeilen zu tauschen, schiebe eine Zeile auf den "move"-Button der jeweils anderen.<br>'+
 						  '4. Um Spalten zu tauschen, schiebe eine Spalte ausgehend von ihrem "move"-Button auf den "move"-Button der jeweils anderen.<br>'+
-						  '5. Um eine Matrixzelle  zu eliminieren, schiebe eine Pivotzeile auf das dazugehörige Editfeld.<br>'+
-						  '6. Um eine Matrixspalte unter einer Pivotzeile zu eliminieren, schiebe diese Zeile auf die Zahl über der Spalte.<br>';
+						  '5. Um eine Matrixzelle  zu eliminieren, schiebe eine Pivotzeile auf das dazugehÃ¶rige Editfeld.<br>'+
+						  '6. Um eine Matrixspalte unter einer Pivotzeile zu eliminieren, schiebe diese Zeile auf die Zahl Ã¼ber der Spalte.<br>';
   var gaussTxtParsingOptions="<b>Optionen:</b>";
-  var gaussTxtNewColumnChars="Zeichen für neue Spalte:";
-  var gaussTxtNewRowChars="Zeichen für neue Zeile:";
+  var gaussTxtNewColumnChars="Zeichen fÃ¼r neue Spalte:";
+  var gaussTxtNewRowChars="Zeichen fÃ¼r neue Zeile:";
   var gaussTxtShowLog="Ablauf speichern";
   //var gaussTxtShowInverse="Operationen spiegeln zur Berechnung der Inversen";
-  var gaussTxtShowInverse="Inverse Operationen für LR-Zerlegung durchführen";
+  var gaussTxtShowInverse="Inverse Operationen fÃ¼r LR-Zerlegung durchfÃ¼hren";
 	var gaussTxtLogMultiplyBy = "multipliziere Zeile %1 mit %2"
 	var gaussTxtLogAddRows = "addiere Zeile %1 zu %2 multipliziert mit %3"
 	var gaussTxtLogSwapRows = "vertausche Zeilen %1 und %2"
 	var gaussTxtLogSwapCols = "vertausche Spalten %1 und %2"
 	var gaussTxtLogKillRowColumn = "eliminiere Spalte %2 in Zeile %1 mit Zeile %3"
 	var gaussTxtLogKillColumn = "eliminate Spalte %1 mit Zeile %2"
-	var gaussTxtReallyRemove="Sorry, aber weißt du, was du tust?\nDamit wird diese Zeile vollständig und für immer entfernt.\nKlicke auf OK, falls sie wirklich gelöscht werden soll.";
+	var gaussTxtReallyRemove="Sorry, aber weiÃŸt du, was du tust?\nDamit wird diese Zeile vollstÃ¤ndig und fÃ¼r immer entfernt.\nKlicke auf OK, falls sie wirklich gelÃ¶scht werden soll.";
 }
 
 //====================Interfaceerzeugung======================================
@@ -642,14 +642,14 @@ function gaussOpenNewWindow(){
   var fenster=window.open("", "_blank");//, "scrollbars");
   fenster.document.writeln("<html><head><title>")
   if (lang=="en") fenster.document.writeln("Gauss Elimination - BeniBela online");
-  else fenster.document.writeln("Gaußsches Eliminationsverfahren - BeniBela online");
+  else fenster.document.writeln("GauÃŸsches Eliminationsverfahren - BeniBela online");
   fenster.document.writeln('</title><script type="text/javascript">var lang="'+lang+'";var functionOnly=true;</script>');
   fenster.document.writeln('</head><body>');
   createInterface(fenster);
   fenster.document.writeln('<script type="text/javascript" src="bin/others/gaussElimination.js"></script>');
   fenster.document.writeln('</body></html>');
 //  if (navigator.userAgent.search(/MSIE/)==-1)
-  fenster.document.close(); //nötig für FireFox, lässt aber IE abstürzen 
+  fenster.document.close(); //nÃ¶tig fÃ¼r FireFox, lÃ¤sst aber IE abstÃ¼rzen 
 }
 
 
