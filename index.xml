@@ -22,7 +22,7 @@
     The big advantage of Xidel is that I can now use all the overcomplicated XQuery functions on the webpage, like <code>format-date</code> to translate the dates between German and English. I hope this change did not break the IE5 compatibility, but I cannot find that IE version to test it anymore. </text>
     </new>
 
-    <new date="2015-03-18"> <text>
+    <new date="2016-03-18"> <text>
     <div language="de">Jetzt habe ich die format-*-Funktionen doch zuerst implementiert, was nahezu 99% XQTS-Konformanz auch für XPath/XQuery 3.0 ergibt...<br/>Typisch für XQuery sind die Funktionen viel zu overengineered, zum Beispiel:</div>
     <div language="en">
        Another update of the Internet Tools: All the format-* functions are now implemented, which gives almost 99% XQTS-conformance for XPath/XQuery 3.0, too.  I did not plan to implement them as they are so silly, but then I was stuck in an airplane and to tired to work on anything else, so they seemed an ideal task. You can still see a few failing format-* tests in the report, one of the blocks with the most failures, but there the W3C just seems to have forgotten, what the functions are supposed to do.  <br/>

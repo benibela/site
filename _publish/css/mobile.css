@@ -1,0 +1,31 @@
+#outer_content {      
+  top:5em;            /* Beginn des Dokumenttextes in nicht IE-Browsern */
+  bottom:2em; 
+  right: 1em;
+  left: 1em;
+}
+
+#menu {
+  display: none
+}
+#menu:hover {
+  display: block;
+}
+
+#border_left {
+  bottom: 2em;
+  height: auto
+}	
+#border_navi_top { 
+  display: none 
+}
+
+#border_middle {
+  height: 4em
+}	
+#border_middle_up_img{ 
+  left: 1em
+}
+#footer_clip{
+  width: 1em;
+}
