@@ -207,6 +207,18 @@ function pageFocus(){
   }
 }  
 
+function togglenavigation(){
+  var menu = document.getElementById("menu");
+
+  if (menu.style.display == "block") {
+    menu.style.display = "none";
+    
+  } else {
+    menu.style.display = "block";
+  }
+  document.getElementById("border_navi_top").style.display = menu.style.display;
+}
+
 
 var lang="de"; //needed for guestbook
 if (window.location.href.search(/lang=en/)!=-1) lang="en";
