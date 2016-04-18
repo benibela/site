@@ -179,6 +179,7 @@ APIV hat folgende Features:</content>
     <size_KB>68</size_KB>
     <content language="de">"Just another XML Processor" ist eine Skriptsprache mit Interpreter, die zur Umwandlung von xml-Dateien in andere Formate benutzt werden kann.<br/>Die einzigste Systemanforderung ist Java JRE 1.5</content>
     <content language="en">"Just another XML Processor" is a script language with interpreter. Its purpose is the simple processing of XML files and the transforming to other formats.<br/>You only need Java JRE 1.5 to run the program.</content>
+    <year>2007 - 2010</year> 
     <features language="de">
       <feature>Es können mehrere XML Dateien geladen werden.</feature>
       <feature>Die Ausgabe einer XML-Datei kann in mehrere Dateien auf einmal und in unterschiedlichen Kodierungen erfolgen.</feature>
@@ -214,6 +215,7 @@ APIV hat folgende Features:</content>
     <source>GPL</source>
     <content language="de">Dieses Kommandozeilentool ist nützlich, wenn man häufig Unified Diffs erhält, die zum größten Teil aus Whitespace-Änderungen bestehen. </content>
     <content language="en">This tool is useful if you often receive unified diffs which consists mostly of changed whitespace</content>
+    <year>2009</year>
     <features language="de">
       <feature>Einlesen des Diffs über Stdin und Ausgabe des reduzierten über Stdout.</feature>
       <feature>Aufspüren von Zeilen, die zwar als verändert gekennzeichnet sind, aber trotzdem identisch sind (auch wenn sie durch Leerzeilen getrennt sind)</feature>
@@ -243,6 +245,7 @@ APIV hat folgende Features:</content>
     <language>en</language>
     <payment>Freeware</payment>
     <source>open</source>
+    <year>2011</year>
     <content language="de">Dies ist ein inverser Regexgenerator, der zu einen gegebenen regulären Ausdruck sämtliche String berechnet, die den Ausdruck erfüllen. Er unterstützt fast alle übliche Regexausdrücke (wie z.B.: "([abc]{2,3}|x+)\1")<br/>  
 Es arbeitet in 2-Phasen, zuerst wird ein Ausdruck in mehrere vereinfachte Ausdrücke fester Länge zerlegt, die nur noch Zeichenklassen und Einzelzeichen enthalten, und dann werden alle Kombinationen von Zeichen generiert. Dadurch kann es mehrere Millionen Strings pro Sekunde berechnen, hat aber Probleme mit Unicode. <br/>
 <br/>Es ist ein C++ Kommandozeilen-Programm, läuft unter Linux (ich habe es nur unter 64 Bit compilert)  und Windows, benötigt aber Qt. </content>
@@ -263,6 +266,7 @@ It is a C++ command line program, runs on Linux (binary is for 64 bit only) and 
     <language>de, (en)</language>
     <payment>Freeware</payment>
     <source>open</source>
+    <year>2006 - 2012</year>
     <content language="de">BBMultiPlot kann beliebige Funktionen plotten, und ihre Ableitung symbolisch berechnen. Es kann Funktionen, die von mehreren Variablen abhängen anzeigen, in dem die Funktion für jede mögliche Variablenbelegung in einem bestimmten Interval mit einiger eigenen Farbe geplottet wird.<br/>
      Es  unterstützt die normalen arithmetischen Operationen, +,-,*,/,^,|, sowie sin, cos, tan, exp, ln, sqrt, abs, sign, int (= floor), asin, acos und atan. Der Parser ist recht flexible, so kann man "4*x" als "4x" schreiben und  Randklammern wie in "x)+(7" statt "(x)+(7)" weglassen.<br/>
     Leider habe ich, als ich es programmiert habe, noch kein VCS verwendet, und so den Quellcode bei der Portierung von Windows/Delphi nach Linux/Lazarus irgendwie beschädigt. Der Source im unterstehenden zip-Archive ist wahrscheinlich neuer als das Binary, hat aber wohl ein paar Bugs.</content>
@@ -301,6 +305,7 @@ It is a C++ command line program, runs on Linux (binary is for 64 bit only) and 
     <payment>Freeware</payment>
     <source>open</source>
     <size_KB>14</size_KB>
+    <year>2007</year> <!--?-->
     <content language="de">Hiermit kann man Additionen, Subtraktionen und Multiplikationen mit (fast) beliebig langen ganzen Zahlen auf dem Casio Algebra FX 2.0 Plus Taschenrechner durchführen. (eventuell läuft es auch auf älteren Modellen)</content>
     <content language="en">You can use this program for addition, subtraction and multiplication of long integers on the Casio Algebra FX 2.0 Plus calculator. (Perhaps it also works on older models)</content>
   </download>
@@ -336,6 +341,7 @@ The GPL-licensed <a href="bin/tools/source/logics.zip">source (23 KB)</a> is a D
     <payment>Freeware</payment>
     <source>GPL</source>
     <size_KB>132</size_KB>
+    <year>2005</year>
     <content language="de">
 Dies ist ein relativ simpler FileParser, der Schlüsselwörter in mehreren Dateien ersetzen, und das Ergebnis unter einem anderen Namen speichern kann.<br/>
 Er hat dabei folgende Features:</content>
@@ -458,7 +464,7 @@ They are like the GST-Builder bilingual and have a German and a English version.
     <size_KB>1500</size_KB>
     <year>2001 - 2002</year>
     <content language="de">
-WDLSSG ist ein von mir programmmierter Editor für die Skriptsprache WDL von dem 3D Game Studio.<br/>
+WDLSSG ist ein von mir programmmierter Editor für die Skriptsprache WDL des 3D Game Studio.<br/>
 Ich habe ihn ursprünglich für 3DGS-4 (die einzige Version, die ich besitze) entwickelt, und ihn später um die (meisten) 
 neuen Eigenschaften von 3DGS-5 erweitert. Sämtlich Unterstützung für Features ab 3DGS-6 fehlt aber, und wird auch nicht mehr implementiert. Früher war WDLSSG als Shareware veröffentlicht, diese Freewareversion ist jetzt aber identisch zu der letzten, stabilen Vollversion.<br/>
                  

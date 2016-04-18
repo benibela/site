@@ -9,7 +9,14 @@
  //display: none;
   width: 70%;
   max-width: 70%;
- 
+
+  max-height: 70%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-position: right 16px center;
+}
+#menu a{
+  font-size: 1.5em;
 }
 #menu:hover {
   display: block;
@@ -28,10 +35,10 @@
 }
 #border_navi_top{
   width: 70%;
-  padding-right: 4px;
+/*  padding-right: 4px; not needed with right menu scrollbar*/
   padding-left: 0.6em;
   max-width: 70%;
-  //display: none;
+  display: none;
 }
 #border_navi_bottom{
   width: auto;
@@ -45,6 +52,9 @@
   left: auto;
   right: -16px;
 }
+/*#border_navi_right_top{ 
+  right: 32px;
+}*/
 #border_left {
   bottom: 2em;
   height: auto

@@ -455,7 +455,7 @@ The most important features are:</content>
     <prog-language>Delphi</prog-language>
     <source-license>MPL, GPL</source-license>
     <size_KB>40</size_KB>
-    <year>2000 <!-- ? -->,2003</year>
+    <year><!-- ? -->2000, 2003</year>
     <content language="de">TCvirus hat (unter anderem) folgende Funktionen:</content>
     <content language="en">These are the most important features of TCvirus:</content>
     <features language="de">
@@ -512,6 +512,7 @@ To use the class you need a wininet unit containing the windows internet functio
     <prog-language>(Delphi), (EXE)</prog-language>
     <source-license>GPL</source-license>
     <size_KB>189</size_KB>
+    <year>2006</year>
     <content language="de">Dies ist ein kleiner Browser, der auf dem Internet Explorer basiert.<br/>
 Für einen Normaluser ist er vollkommen nutzlos, sein Aussehen kann aber beim Aufruf durch Kommandozeilenparameter festgelegt werden, was manchmal recht praktisch ist, wenn man nur eine bestimmte Seite anzeigen will.</content>
     <content language="en">This is a small browser based on the IE.<br/>
@@ -532,7 +533,7 @@ Es ist auch möglich Unicodestrings, Arrays und Dateien zu komprimieren, indem s
 It is also possible to compress Unicode strings, arrays and files, by treating them as byte strings.
 <br/>This unit contains a copy of TBits from the 32-Bit VCL, which only works on 32 systems. On other platforms the normal VCL can be used by enabling a define.<br/>You get the best compression rates in data which contains many repeated characters, but it is usually worse than modern compressions like ACE or RAR.</content>
   </download>
-  <download> 
+ <!-- <download> 
     <title>TRegExpr</title>
     <file>regexpr.zip</file>
     <id>regexpr</id>
@@ -542,6 +543,6 @@ It is also possible to compress Unicode strings, arrays and files, by treating t
     <source-license>GPL</source-license>
     <content language="de">Dies ist eine Kopie von TRegExpr 0.952 von Andrey V. Sorokin, dessen Seite www.regexpstudio.com tot zu sein scheint. Im wesentlichen ist eine Bibliothek für reguläre Ausdrücke, die sämtliche Regexp-Operationen unterstützt, inklusive Backtracking. <br/>Ich habe ein paar Zeilen geändert, damit es besser mit FPC funktioniert, die größte Änderung ist im Grunde, dass ich die Unit umbenannt habe.</content>
     <content language="en">This is a mirror of  Andrey V. Sorokin's TRegExpr  whose page www.regexpstudio.com seems to be vanished from the internet. It is a highly advanced regular expression parser which supports all regexp operations, even backtracking. Hence, although it was written in 2004, it is still more advanced than most regexpr packages. <br/> This copy is a little bit modified to improve fpc support, one of the biggest changes is that I renamed the file to dregexpr.</content>
-  </download>
+  </download>-->
 
 </file>

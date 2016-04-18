@@ -16,6 +16,7 @@
     <description_80 language="en">Online side-scrolling game in the full 3d world of a stereogram</description_80>
     <language>en</language>
     <payment>Freeware (GPL)</payment>
+    <year>2009 - <!--2011, --> 2015</year>
     <content language="de">Ein Sidescroller, bei dem man ein Raumschiff zwischen verschiedenen Hindernissen wie Minen oder schwarzen Löchern hindurch steuert.<br/>Dabei befindet man sich in einer 3D-Welt und kann das Raumschiff sowohl in x, y wie auch z-Richtung fliegen lassen. Außerdem wird der Level als Stereogramm gerendert, so dass man die tatsächliche 3D-Position des Schiffes und der Hindernisse direkt sehen kann. Alternativ gibt es auch einen Anaglyphrendermodus, der dient aber nur als Notbehelf für Leute, die keine SIRDS sehen können. Die Schwierigkeitsgradeinstellung ändert die Fähigkeiten des Raumschiffes und bestimmt, ob die reparierenden Nanoroboter und die Zeitmaschine aktiviert werden können.<br/><br/>Zusätzlich gibt es ein Stereogrammmalprogramm und einen Leveleditor.</content>
     <content language="en">A side-scrolling game in which you move a space ship while you have to avoid several obstacles like mines or black holes.<br/>The special thing is that the level is a 3d world which is rendered as a stereogram so you can actually see it in full 3d (although it has no colors). You can also switch to an anaglyph render mode, but you should only use it if you are unable to see SIRDS. The ship can of course not only move along the x/y-axis, but also along the z-axis from near to far. The option to change the level of difficulty determines the abilities of the ship and give you repairing nano robots or a time machine.<br/>Additionally there is a level editor and a simple stereogram painting program. </content>
     <final-content language="de"><br/><br/><a href="bin/games/sirdslets/sirdslet_page.html" class="inline-popup-large">Spiele es online</a></final-content>
@@ -44,6 +45,7 @@
     <description_80 language="en">Help a mouse to collect cheese!</description_80>
     <language>de</language>
     <payment>Freeware</payment>
+    <year>2001 - 2002</year> <!--?-->
     <content language="de">Mausitanien ist ein typischer Pacmanclone. Man steuert mit den Pfeiltasten seine Spielfigur durch ein Labyrinth, um dabei Punkte zu sammeln. <br/>
 Das besondere an Mausitanien ist, dass man, anstelle des üblichen Smileys, mit einer Maus im Labyrinth Käse sammeln muss, während man von 2 Katzen verfolgt wird. In späteren Leveln kommen noch eine Schlange und ein Gespenst als Feinde hinzu, die sich jeweils schneller bewegen, und somit gefährlicher sind.<br/>
 Das Spiel ist relativ einfach zu spielen, da man, sollte man von einem der Feinde erwischt werden, keine Leben, sondern lediglich Punkte verliert. Es gibt auch einen Zweispielermodus, wo zwei Spieler zusammen am selben Computer spielen können.<br/>
@@ -144,6 +146,7 @@ You can select missile launcher by pressing the keys 1, 2, 3, 4. You can rotate 
     <description_80 language="en">Clone of snake, running on the Algebra FX 2+ calculator.</description_80>
     <language>de, (en)</language>
     <payment>Freeware</payment>
+    <year>2007</year> <!--?-->
     <content language="de">Das Spiel ist ein typischer Snakeklon, in dem man mit einer Schlange, die weder sich selbst noch Wände berühren darf, Objekte aufsammeln muss. Es  hat 14 Level und eine Highscoreliste.<br/>
                            Um das Spiel zu spielen, kann man den Casio Algebra FX 2.0 PLUS Taschenrechner benutzen, in dessen Skriptsprache es auf ihm programmiert wurde, wobei es aber eventuell auch auf Vorgängerversionen läuft. Außerdem braucht man eine Übertragungssoftware, wenn man die Programme nicht abtippen will. </content>
     <content language="en">The game is a typical snake clon in which you have to collect food with a snake that is not allowed to touch anything else. It has 14 levels and a high score list.<br/>
@@ -159,6 +162,7 @@ You can use the Casio Algebra FX 2.0 PLUS calculator to run this game, which is 
     <description_80 language="en">Clone of the Windows' solitaire game, running on the Algebra FX 2+ calculator.</description_80>
     <language>de, (en)</language>
     <payment>Freeware</payment>
+    <year>2007</year> <!--?-->
     <content language="de">Dieses Spiel ist wie das Solitär von Windows, man muss unsortierte Karten von verdeckten Stapel auf vier Zielstapel sortieren und es gibt auch einen Reservestapel, aus dem man beliebige Karten ziehen kann.<br/>Um das Spiel zu spielen, kann man den Casio Algebra FX 2.0 PLUS Taschenrechner benutzen, in dessen Skriptsprache es auf ihm programmiert wurde, wobei es aber eventuell auch auf Vorgängerversionen läuft. Außerdem braucht man eine Übertragungssoftware, wenn man die Programme nicht abtippen will.</content>
     <content language="en">This game is like the solitaire of windows<br/>You have to sort cards you can take from unsorted hidden stacks. There is also a reserve stack where you can take arbitrary cards from.<br/>
 You can use the Casio Algebra FX 2.0 PLUS calculator to run this game, which is the one the game has been written on. However, it is possible that it works on older versions, too. And of course you need a transfer software in case you doesn't want to typewrite the source.</content>
@@ -198,6 +202,7 @@ You can use the Casio Algebra FX 2.0 PLUS calculator to run this game, which is 
     <description_80 language="en">A simple vertically-scrolling game</description_80>
     <language>de</language>
     <payment>Freeware</payment>
+    <year>2003</year> <!--?-->
     <content language="de">Bei diesem abwärts scrollenden Raumschiffshooter besteht das einzigste Ziel darin, den jeweils aktuellen Level zu durchqueren, ohne mit Minen zu kollidieren oder von feindlichen Schiffen abgeschossen zu werden.<br/>
 Das Spiel ist ziemlich schwer zu spielen, was vor allem an der physikalischen ziemlich korrekten Steuerung, und den schwachen Schilden des Schiffes liegt.</content>
     <content language="en">In this game you will win when you have crossed a level and reached its end without being destroyed by mines or hostile firing space ships.<br/>
@@ -341,6 +346,7 @@ Es gibt recht viele Extrafeatures, wie Mauern, die nur von dem Spieler, oder nur
     <description_80 language="en">A console space ship game, similar to the old defender</description_80>
     <language>de</language>
     <payment>Freeware</payment>
+    <year>2004</year>
     <content language="de">Dies ist ein Defender-ähnliches Raumschiffspiel für die Windowskonsole. Es kann mit Tastatur oder Maus gespielt werden. Es ist wie bei (alten) Konsolenspielen sehr kompliziert, obwohl es selbst nicht alt ist. </content>
     <content language="en">This is a game similar to Defender, made for the Windows console. It can be played with keyboard or mouse, but is very complicated (either because it should be like an old console game or because the timing does not work  in newer Windows versions). </content>
     <screenshot>
@@ -395,6 +401,7 @@ The one who gets the last stick has lost the game.</content>
     <description_80 language="en">A 2d space ship game with different rooms</description_80>
     <language>de</language>
     <payment>Freeware (GPL)</payment>
+    <year>2000</year>
     <content language="de">In diesem Spiel steuert man ein Raumschiff durch mehrere von Laserbarrieren abgetrennte Räume und muss in jeden Rätsel lösen, zum Beispiel Minen abschießen oder Objekte aufsammeln. <br/> Ein Problem bei diesem Programm ist, dass das es manchmal abstürzt und ich die Programmierung daran aufgegeben habe, als ich den Fehler nicht finden konnte. (aber man kann den ersten Level spielen) </content>
     <content language="en">In this game you move a space ship through different rooms which are separated by laser blockades. In the rooms you can have to solve riddles like collecting something or destroying mines. The title means translated "In the galaxy" and there are many messages spoken in German.<br/> The problem with this program is that it sometimes crashes. And because I couldn't find the error, I stopped the development of it. (but you can play the first level) </content>
     <screenshot>
@@ -413,6 +420,7 @@ The one who gets the last stick has lost the game.</content>
     <description_80 language="en">Unfinished RTS game</description_80>
     <language>de</language>
     <payment>Freeware (GPL)</payment>
+    <year>2000 - 2002</year> <!--?-->
     <content language="de">Ein nie fertig gestelltes Strategiespiel, das in der Zukunft spielen sollte. Man kann nur herumfahren und Gebäude bauen. </content>
     <content language="en">A never finished real time strategy game which should play in the future. You can only drive around and create buildings and units.</content>
     <screenshot>

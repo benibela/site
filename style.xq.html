@@ -127,8 +127,8 @@
              return 
              <div class="long_desc_entry">
                <h3 class="long_desc_title"><a id="{$download-id}" name="{$download-id}" class="target">&#160;</a><a href="{$file/download-dir || '/' || $download/file}">{$download/title/text()}</a></h3>
-               {$download/year/<div class="long_desc_year">{text()}</div>}
                <div class="long_desc_license">{$download/payment/text()}{$download/source-license/text()}</div>
+               {$download/year/<div class="long_desc_year">{text()}</div>}
                <div class="long_desc_desc">
                  {$download/content/node()}
                  {if ($download/features) then
@@ -180,7 +180,7 @@
                    <a href="{$file/download-dir}/{$downloadFile}">Download {$downloadFile/@title/normalize-space()}</a>,  x"&#160;&#160; ({$downloadsize})" 
                  )}
 
-                 <a style="position:absolute;right: 2em" href="#top">{$language/jumpToTop/node()}</a>
+                 <a style="float:right" href="#top">{$language/jumpToTop/node()}</a>
                </div>
              </div>
            }</div>)}
@@ -214,5 +214,6 @@
 	  <p><img src="img/design/borderbluemiddle_up.gif" id="border_middle_up_img" alt=""/>
 	     <img src="img/design/borderbluedown_left.gif" id="border_right_left_img" alt=""/>
 	     <img src="img/design/borderblueup_right.gif" id="border_left_up_right" alt=""/></p>
+	  <div class="mobile-navigation"><a onclick="togglenavigation()">Navigation</a></div>
     <!--[if IE 7]></div><![endif]--> </body>
 </html>
