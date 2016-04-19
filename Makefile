@@ -12,9 +12,6 @@ include buildtemp/global.d
 phony: $(PAGES) _publish/index.html
 #$(DEPS) $(PAGES)
 
-#buildtemp/%.d: %.xml
-#	xidel $*.xml -e '"$*.xml: " || join( ( /*/local-name()!x"{.}.xq.html", //photo/(x"publish/img/{replace(@src, "\.", "_small.")}", x"publish/img/{replace(@src, "\.", "_large.")}")))' > buildtemp/$*.d
-
 #include $(DEPS)
 
 _publish/%_de.html publish/%_en.html: %.xml common.xq style.xq.html
@@ -22,6 +19,9 @@ _publish/%_de.html publish/%_en.html: %.xml common.xq style.xq.html
 	
 _publish/%_de.php publish/%_en.php: %.xml common.xq style.xq.html
 	xidel --input-format xml-strict --extract-include=xxx -e 'source := "$*", output-dir := "_publish/"' --extract-kind xquery  --extract-file common.xq -e 'local:doit()'
+
+_publish/%_de.rss publish/%_en.rss: %.xml common.xq news.rss.xq
+	xidel --input-format xml-strict --extract-include=xxx -e 'source := "$*", output-dir := "_publish/"' --extract-kind xquery  --extract-file common.xq -e 'local:dorss()'
 
 _publish/index.html: _publish/index_de.html
 	cp _publish/index_de.html _publish/index.html

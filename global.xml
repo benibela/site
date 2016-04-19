@@ -15,6 +15,7 @@
   <License>Lizenz</License>
   <Title>Titel</Title>
   <Description>Beschreibung</Description>
+  <nottranslated>nicht übersetzt</nottranslated>
 </language>
 <language>
   <id>en</id>
@@ -31,9 +32,10 @@
   <License>License</License>
   <Title>Title</Title>
   <Description>Description</Description>
+  <nottranslated>not translated</nottranslated>
 </language>
 
-<fileinfo>
+<fileinfo make-rss="true">
   <basefilename>index</basefilename>
   <title language="de">Startseite</title>
   <title language="en">Home Site</title>

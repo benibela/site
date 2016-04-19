@@ -1,10 +1,10 @@
 declare function local:eval($tpl) {
   eval($tpl, {"language": "xquery"})
 };
-declare function local:write-html($file, $data){
+declare function local:write($file, $data, $format){
   file:write($output-dir || $file, $data, 
     <output:serialization-parameters xmlns:output="http://www.w3.org/2010/xslt-xquery-serialization">
-      <output:method value="html"/>
+      <output:method value="{$format}"/>
     </output:serialization-parameters>
   )
 };
@@ -16,8 +16,11 @@ declare function local:language-filter($node, $language-id){
         else $e
       else $e
     else if ($e/@auto and name($e) = "a") then
-      let $target := local:get-id-target($e/@auto) 
-      return <a href="{$target('source')}_{$language/id}.html#{$e/@auto}">{$target('title')}</a>
+      switch ($e/@auto)
+        case "*rss" return
+          <a href="{get("fileinfo")/basefilename}_{$language/id}.rss"><img src="img/design/feed.png"/></a>  
+        default return let $target := local:get-id-target($e/@auto) 
+        return <a href="{$target('source')}_{$language/id}.html#{$e/@auto}">{$target('title')}</a>
     else $e
   })
 };
@@ -33,6 +36,9 @@ declare function local:file-url($fileinfo){
 };
 declare function local:file-url(){
   local:file-url($fileinfo, $language)
+};
+declare function local:rss-url($fi,$lang){
+  x"{$fi/basefilename}_{$lang/id}.rss"
 };
 declare function local:remember-id($id, $title){
   file:write("buildtemp/ids/" || $id || "-" || $language/id, serialize-json({
@@ -61,21 +67,28 @@ declare function local:deps(){
 	       $l in $global-raw/language 
 	   let $url := local:file-url($fi, $l) 
 	   where not(contains($url, "//"))
-     return $output-dir || $url )
+     return ($url,
+       if ($fi/@make-rss) then local:rss-url($fi, $l)
+       else ()
+     ) ! ($output-dir || .) )
 };
-declare function local:doit(){ 
+declare function local:make($inputstyle, $outputfunction, $format){ 
   (
-  (:$source := "index",
-  $output-dir := "_publish/",:)
   $file-raw := doc($source || ".xml")/file,
-  $style.template := file:read-text("style.xq.html"),
+  $style.template := file:read-text($inputstyle),
   for $l in $global-raw/language return (
     $language := $l,
     $global := local:language-filter($global-raw),
     $fileinfo := $global//fileinfo[basefilename = $source],
     $file := local:language-filter( $file-raw ),
-    local:write-html( local:file-url(),  local:eval($style.template))
+    local:write($outputfunction($fileinfo, $l),  local:eval($style.template), $format)
   )[0]
   )[0]
+};
+declare function local:doit(){ 
+  local:make("style.xq.html", local:file-url#2, "html")
+};
+declare function local:dorss(){ 
+  local:make("news.rss.xq", local:rss-url#2, "xml") 
 };
 ()
