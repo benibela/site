@@ -63,7 +63,7 @@
                for $new in $file/news/new return (
                  <h3 id="new{$new/@date}">{format-date(xs:date($new/@date/data()), "[D0o] [MNn] [Y0000]", $language/id, (), ())}</h3>,
                  if ($new/text/@language != $language/id) then
-                   <div class="untranslated"><p>(not translated)</p><div class="newstext"><p>{$new/text/node()}</p></div></div>
+                   <div class="untranslated"><p class="untranslated-p">({$language/nottranslated/node()})</p><div class="newstext"><p>{$new/text/node()}</p></div></div>
                  else
                    <p class="newstext">{$new/text/node()}</p>
                )  

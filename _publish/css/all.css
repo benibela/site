@@ -78,7 +78,7 @@ body {
   margin-bottom: 1em;
 }
 
-.untranslated  p{ color:gray;}
+.untranslated .untranslated-p { color: gray;}
 .untranslated .newstext{ display: none;}
 .untranslated:hover .newstext, .untranslated:focus .newstext{ display: block;}
 
@@ -199,6 +199,7 @@ ul {list-style-position: inside;}
   margin: 0.5em;
   padding: 0.5em;
   overflow: auto;
+  max-width: 65em; /* fits in inner_content. I do not understand why this is not 50em as th max-width of inner_content */
 }
 #content table{
   background-color: #EEEEDD;

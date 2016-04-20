@@ -6,7 +6,7 @@
     <language>{$language/id/data()}</language>
     <atom:link href="http://www.benibela.de/index_{$language/id}.rss" rel="self" type="application/rss+xml" />
     
-    {$file/news/new ! (let $serialized :=  join(text/node()/outer-html()) return
+    {subsequence($file/news/new,1,10) ! (let $serialized :=  join(text/node()/outer-html()) return
     <item>
       <title>{if (text/@language != $language/id ) then 
          $language/nottranslated/data()
