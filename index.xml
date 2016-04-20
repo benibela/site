@@ -13,6 +13,85 @@
     <text language="en"></text>
     </new>
 -->    
+    <new date="2016-04-20"> 
+      <text language="en">
+        "How do you handle JSON in the XQuery world?", was a question that just	arose on the XML mailing list and is quite relevant here. Two competing standards were made, the real XQuery 3.1 currently being specified by the W3C, and an earlier standard JSONiq, which exists in two versions, a standalone version and a JSONiq extension to XQuery 3.0. My <a auto="xidel"/> is based on the JSONiq standard, but might be updated to XQuery 3.1, when it is finished. <br/>
+        
+        Let <code>$object</code> be an object, <code>$objects</code> a sequence of objects, <code>$key</code> a key (which can be any value in XQuery 3.1, but is converted to a string in JSONiq or current Xidel), <code>$array</code> an object, and so on...<br/>
+        
+        Object values can be accessed in the following ways:
+        
+        <ul>
+          <li>The dot operator <code>$object.key</code> is of course the most natural to access JSON object fields and familiar to every JavaScript developer. However, if you want to use it in XQuery, you encounter a problem: XQuery variables names are XML names and thus can contain dots, as in <code>let $foo.bar := 123 return $foo.bar</code>. <br/> 
+          Hence this notation is neither allowed in XQuery 3.1 nor the JSONiq-XQuery-extension.<br/>
+          Standalone JSONiq wants to be JavaScript-like, so it takes another approach and forbids dots in variables names, making the standard syntax legal and unambiguous. It treats <code>.</code> as a "dot operator" and allows computed keys as <code>$objects.(any expression)</code>, queries for non-alphanumeric keys like <code>$objects."special key name"</code>, or keys referenced by another variable  <code>$objects.$indirect</code>. <br/>
+          The last two cases are also supported in Xidel, as they are unambiguous. A variable name cannot contain <code>"</code> or <code>$</code>, and <code>$objects.</code> cannot be a single variable, as it is not followed by an operator. <code>$objects.(any expression)</code> is not allowed, as the variable <code>$objects.</code> could be a function that is called. Other unambiguous and allowed cases are after the end of parentheses, e.g. <code>($objects).key</code> or <code>{..object constructor..}.key</code>. A long time ago, before VideLibri became XQuery compatible, I did not care about these details and just used the <code>$objects.key</code> syntax. From that time Xidel still has a legacy mode in which it checks, if a variable with name <code>$objects.key</code> exists. If it exists the expression returns the value of that variable, otherwise it searches for a variable <code>$objects</code> containing an object. But this mode is disabled in the default settings.
+          </li>
+          <li>The functional notation <code>$object("key")</code>: It is perhaps the most natural syntax in XQuery, you treat the object as function that you can call with a key to read the corresponding value. Therefore it is allowed in all XQuery variants, but not in standalone JSONiq.<br/>
+          In XQuery 3.1 it is an error to use this notation on non-JSON types (non-functions) or sequences of multiple objects, in the JSONiq extension or Xidel it returns an empty sequence. Those two also allow <code>$objects()</code> to retrieve all keys of an object.</li>
+          
+          <li>A lookup operator <code>$objects?key</code>. The functional notation is not always easy to read, so the W3C has added the <code>?</code>-lookup operator to XQuery 3.1. It can be used similar JSONiq's <code>.</code> operator, allowing <code>$object?key</code> or <code>$objects?(calculated key)</code>. Latter form can query multiple objects and multiple keys as <code>($object1, $object2, ...)?("key1", "key2", ..)</code>. If the left side is omitted, the current context item is used for it. 
+          You can also use <code>$objects?*</code> to get all values in the object. It is an error to use it on non-JSON types.<br/>
+          I have not come around to implement this in Xidel, but later versions might support it. </li>
+          
+          <li>A XPath like query <code>$objects/key</code> or <code>$objects!key</code>. This was the original XPath syntax to query XML, so it seems to be a good syntax to query JSON, too. Thus I have added this syntax to Xidel, but none of the other languages support it. Like W3C's <code>?</code> it can be used for multiple queries <code>($obj1, $obj2)/(key1, key2)</code> or to retrieve all values in the object <code>$objects/*</code>. It can also recursively search for a key in all descendant objects with <code>$objects//key</code>. For compatibility with XQuery, it raises an error if used on non-JSON (non-XML).  </li>
+          <li>Helper functions: All variants have a bunch of helper functions. For example JSONiq (extension/Xidel) have <code>keys($objects)</code> (or <code>jn:keys($objects)</code>) to get the keys of all objects, ignoring non-objects. They also have <code>values($objects)</code> (<code>libjn:values($objects)</code>) to get all the values. XQuery 3.1 has <code>map:keys($object)</code> for the keys, <code>map:get($object, $key)</code> to get a single value, or <code>map:size($object)</code> for the number of keys in an object. These functions raise an error for anything that is not a single object.</li>
+        </ul>
+        
+        For arrays a similar number of notations exists. Surprisingly to JavaScript developers the first element in the array has the index 1.
+        
+        <ul>
+          <li>The JavaScript notation <code>$array[index]</code>: This is already used in XQuery to get the element of a sequence, and an array is not a sequence. So this syntax is sadly not supported anywhere. <br/> However, standalone JSONiq has at least <code>$arrays[]</code> to get all values of one or more arrays, ignoring non-arrays.</li>
+          <li>The functional notation <code>$array(index)</code>: Similar to objects, this syntax is allowed in all variants except standalone JSONiq. Again XQuery 3.1 raises an error on non-arrays (non-functions) or invalid indices, while JSONiq extension and Xidel return an empty sequence. Later also have <code>$arrays()</code> to get all values of the array.</li>
+          <li>The lookup operator <code>$arrays?indices</code> of XQuery 3.1 can also be used for arrays and returns the values with the corresponding indices. <code>$arrays?*</code> will return all the values in the array.</li>          <li>The <code>$arrays[[index]]</code> operator. Standalone JSONiq uses double brackets to get array elements, returning the empty sequence for invalid indices. This is not supported in Xidel and I see no reason to add it.</li>
+          <li>The helper functions: JSONiq has <code>members($arrays)</code> to get all values in a sequence of arrays, <code>flatten($arrays)</code> to get all values recursively and <code>size($array)</code> to get the size of a single array. In JSONiq extension or Xidel they are called <code>jn:members</code>, <code>libjn:flatten</code> and <code>jn:size</code>. XQuery 3.1 has similar functions <code>array:flatten</code> and <code>array:size</code>, as well as <code>array:get($array, $index)</code> to get a single value, which raise errors on non arrays.</li>
+        </ul>
+        
+        Multiple notations also exist for creating objects and arrays:
+        
+        <ul>
+          <li><code>{ $key: $value, ... }</code> is the normal JavaScript syntax to create objects and is supported in JSONiq and Xidel. <code>$key</code> and <code>$value</code>  can be any value, but the key is cast to a string and raises an error, if that  conversion fails. <code>{}</code> logically returns an empty object. <code>{| $objects |}</code> can be used to merge multiple objects with distinct keys to a single object. A further JSONiq syntax not yet implemented in Xidel is <code>{ $key ?: $value }</code> which omits the key/value pair, if the value is the empty sequence. In JSONiq XML values are copied, erasing the node identity and relationship to their ancestors. </li>
+          <li><code>map { $key: $value }</code> the special syntax of XQuery 3.1 to create an object. The key is cast to an atomic value (not a string!) and the value can have any type.  </li>
+          <li><code>[$value1, $value2, ...]</code> the standard JavaScript syntax to create an array. It is supported in any language, although with different semantics. In XQuery <code>[$value]</code> always creates an array of size 1, containing the single value <code>$value</code>, even if it is a sequence like <code>(1,2,3)</code>. In JSONiq and Xidel <code>[$value]</code> contains so many elements as <code>$value</code>, e.g. for the previous sequence the array will have size 3. </li>
+          <li><code>array { $value1, $value2, ... }</code> the XQuery 3.1 syntax, which creates the same array as <code>[$value1, $value2, ...]</code> would create in JSONiq.</li>
+        </ul>
+        
+        
+        So to summarize the supported notations:
+        
+        <table>
+          <thead><tr><th>Notation</th><th>XQuery 3.1</th><th>JSONiq s.a.</th><th>JSONiq ext.</th><th>Xidel</th></tr></thead>
+          <tr><td colspan="5">Object access</td></tr>
+
+          
+          <tr><td><code>$object.key</code>, <code>$object."key"</code></td><td class="no">no</td><td class="yes">yes</td><td class="no">no</td><td class="yes">yes</td></tr>
+          <tr><td><code>$object("key")</code></td><td class="yes">yes</td><td class="no">no</td><td class="yes">yes</td><td class="yes">yes</td></tr>
+          <tr><td><code>$objects?keys</code></td><td class="yes">yes</td><td class="no">no</td><td class="no">no</td><td class="no">no</td></tr>
+          <tr><td><code>$objects/keys</code>, <code>$objects!keys</code></td><td class="no">no</td><td class="no">no</td><td class="no">no</td><td class="yes">yes</td></tr>
+          
+          <tr><td colspan="5">Array access</td></tr>          
+
+          <tr><td><code>$array(index)</code></td><td class="yes">yes</td><td class="no">no</td><td class="yes">yes</td><td class="yes">yes</td></tr>
+          <tr><td><code>$arrays?indices</code></td><td class="yes">yes</td><td class="no">no</td><td class="no">no</td><td class="no">no</td></tr>
+          <tr><td><code>$arrays[[indices]]</code></td><td class="no">no</td><td class="yes">yes</td><td class="no">no</td><td class="no">no</td></tr>
+
+          <tr><td colspan="5">Object/array creation</td></tr>          
+          <tr><td><code>{key: value, key2: value2, ...}</code></td><td class="no">no</td><td class="yes">yes</td><td class="yes">yes</td><td class="yes">yes</td></tr>
+          <tr><td><code>map {key: value, key2: value2, ...}</code></td><td class="yes">yes</td><td class="no">no</td><td class="no">no</td><td class="no">no</td></tr>
+          
+          <tr><td><code>[value1, value2, ...]</code></td><td class="yes">yes</td><td class="yes">yes</td><td class="yes">yes</td><td class="yes">yes</td></tr>
+          <tr><td><code>array {value1, value2, ...}</code></td><td class="yes">yes</td><td class="no">no</td><td class="no">no</td><td class="no">no</td></tr>
+          
+          
+                  </table>
+        <br/>
+        
+        Btw, another advantage of my new webpage backend is that Xidel can dump all these crappy news in an RSS feed <a auto="*rss"/>.
+        
+      </text>
+    </new>
+
+
     <new date="2016-03-21"> 
     <text language="de">Die Webseite ist nun von meiner <a auto="jaxmlp"/> Sprache zu <a auto="xidel"/>s XQuery migriert. Ein bisschen absurd, da ich VideLibri/Xidel dafür programmiert habe, die Daten von Büchereiwebseiten auszulesen, und jetzt erstellt es  stattdessen Webseiten. Aber das zeigt die Mächtigkeit von XQuery. <br/>
     Und es war schon wieder fast die Hälfte meiner Links tot. Da brauch ich mal ein besseres System, nur leider haben "Social Bookmarks" (del.icio.us) mit ihrer Abhängigkeit von fremden Servern auch nichts gebracht. Völlig überraschend ist das Spotlight-Forum jetzt wieder aktiv geworden. Damit hätte ich nicht gerechnet. Allerdings mit einem neuen Betreiber, nachdem der alte gestorben ist. Auch absurd, wenn ich nach alten Foren mit tausenden Nutzern google, und alles, was ich finde, ist die Linkliste auf meiner eigenen Seite. </text>
