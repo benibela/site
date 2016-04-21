@@ -70,3 +70,26 @@ function imgClicked(){
   box.value+='<img src="'+img+'">';
   box.focus();
 }
+function guestbookCmd(command) {
+  var box=getObject('entryBox');
+  box.value = command;
+  document.getElementsByName("input2")[0].value = "BeniBela";
+  var inputs = document.getElementsByTagName("input");
+  for (var i=0;i<inputs.length;i++) 
+    if (inputs[i].type == "text" && !/input[0-9]/.test(inputs[i].name)) {
+      if (inputs[i].value == "") {
+        inputs[i].focus();
+        abortstack();
+      }
+      break;
+    }
+}
+function guestbookDelete(id) {
+  if (!confirm("Do you want to delete "+id+"?")) return;
+  guestbookCmd("COMMAND:DELETE-ENTRY:\n"+id);
+  document.getElementsByTagName("form")[0].submit();
+}
+function guestbookComment(id) { 
+  getObject('entryBox').focus();
+  guestbookCmd("COMMAND:REPLY-TO:\n"+id+"\n");
+}
