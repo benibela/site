@@ -325,7 +325,9 @@ function RGBColor(color_string)
       tab.style.borderCollapse="separate";
       tab.style.borderSpacing=border+"px";
       tab.cellSpacing=border; 
-    } else tab.style.borderCollapse="collapse";
+    } else {
+      tab.style.borderCollapse="collapse";
+    }
     //else  //setAttribute("style","margin-left:40px;");;
     boxes = new Array(maxy*maxx);
     for (var y=maxy-1;y>=0;y--){
@@ -334,6 +336,7 @@ function RGBColor(color_string)
       line.style.height=sizey+"px";
       for (var x=0;x<maxx;x++){
         boxes[x*maxy+y]=document.createElement("td");
+        boxes[x*maxy+y].style.borderStyle = "none";
         line.appendChild(boxes[x*maxy+y]);
         if (y==0) boxes[x*maxy+y].width=sizex;
         boxes[x*maxy+y].appendChild(document.createTextNode(nbsp));//schneller aber nur im ie:innerText=nbsp;
