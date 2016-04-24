@@ -4,6 +4,7 @@
     <link>http://www.benibela.de</link>
     <description>BeniBela online</description>
     <language>{$language/id/data()}</language>
+    <generator>Xidel</generator>
     <atom:link href="http://www.benibela.de/index_{$language/id}.rss" rel="self" type="application/rss+xml"  xmlns:atom="http://www.w3.org/2005/Atom"/>
     
     {subsequence($file/news/new,1,10) ! (let $serialized :=  join(text!x:transform(node(), function($n){
