@@ -215,5 +215,8 @@
 	     <img src="img/design/borderbluedown_left.gif" id="border_right_left_img" alt=""/>
 	     <img src="img/design/borderblueup_right.gif" id="border_left_up_right" alt=""/></p>
 	  <div class="mobile-navigation"><a onclick="togglenavigation()">Navigation</a></div>
-    <!--[if IE 7]></div><![endif]--> </body>
+    <!--[if IE 7]></div><![endif]--> 
+    {$file/moved-ids!<script>checkmovedids( { serialize-json([ id/{"id": data(.), "to": data(@to)} ])  }  )</script>}
+    
+    </body>
 </html>

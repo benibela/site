@@ -219,6 +219,13 @@ function togglenavigation(){
   document.getElementById("border_navi_top").style.display = menu.style.display;
 }
 
+function checkmovedids(ids){
+  for (var i=0;i<ids.length;i++) 
+    if ("#" + ids[i].id == location.hash) {
+      location = ids[i].to + "_" + lang + ".html"+location.hash;
+      return;
+    }
+}
 
 var lang="de"; //needed for guestbook
 if (window.location.href.search(/lang=en/)!=-1) lang="en";

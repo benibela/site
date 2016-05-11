@@ -6,7 +6,21 @@
   <content language="de">Auf dieser Seite kann man alles finden, was nicht auf die anderen gepasst hat.</content>
   <content language="en">On this page you can find everything that does not fit into the other categories.</content>
   <download-dir>bin/others</download-dir>
-  <download> 
+  <moved-ids>
+    <id to="papers">master</id>
+    <id to="papers">bachelor</id>
+    <id to="papers">poster16aistats</id>
+    <id to="papers">slides16aaai</id>
+    <id to="papers">slides14balisage</id>
+    <id to="papers">slides14uai</id>
+    <id to="papers">cryptsem</id>
+    <id to="papers">seminarCV2010</id>
+    <id to="papers">chemiebbo</id>
+    <id to="papers">euglena</id>
+    <id to="papers">glaselektrode.zip</id>
+    <id to="papers">lina2.zip</id>
+  </moved-ids>
+  <download> 	
     <title language="de">Farbmustergenerator</title>
     <title language="en">Color pattern creator</title>
     <file>colorMap.js</file>

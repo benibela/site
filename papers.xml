@@ -3,7 +3,7 @@
   <description language="en">BeniBela online: Here you find papers, theses and presentations.</description>
   <keywords language="de">BeniBela, Skript, Lineare Algebra, download, Glaselektrode</keywords>
   <keywords language="en">BeniBela, script, lineare algebra, download</keywords>
-  <content language="de">Hier gibt es Arbeiten, Seminarausarbeitungen und Präsentationen von peer-reviewed Conference-Papers, jedoch keine Journalpapers oder Papers, die von anderen präsentiert wurden.</content>
+  <content language="de">Hier gibt es Arbeiten, Seminarausarbeitungen und Präsentationen von peer-reviewed Konferenzpapers, jedoch keine Journalpapers oder Papers, die von anderen präsentiert wurden.</content>
   <content language="en">This page contains papers, meaning seminar papers, theses, and presented peer-reviewed conference papers. It does not include journal papers or papers presented by coworkers.</content>
   <download-dir>bin/others</download-dir>
   <download> 
