@@ -88,7 +88,12 @@
     <title language="de">BWInf</title>
     <title language="en">BWInf (German)</title>
   </fileinfo>  
-</fileinfo>  
+</fileinfo> 
+<fileinfo>
+  <basefilename>papers</basefilename>
+  <title language="de">Papers</title>
+  <title language="en">Papers</title>
+</fileinfo> 
 <fileinfo>
   <basefilename>others</basefilename>
   <title language="de">Sonstiges</title>
