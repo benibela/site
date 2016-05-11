@@ -1,10 +1,10 @@
 <file>
   <description language="de">BeniBela online: Auf dieser Unterseite gibt es  alles, was nicht mehr auf die anderen gepasst hat.</description>
   <description language="en">BeniBela online: Here you find everything which don't fit into the other categories on my page.</description>
-  <keywords language="de">BeniBela, Skript, Lineare Algebra, download, Glaselektrode</keywords>
-  <keywords language="en">BeniBela, script, lineare algebra, download</keywords>
+  <keywords language="de">BeniBela, Skript, Gauß-Elimination </keywords>
+  <keywords language="en">BeniBela, script, Gaussian Elimination</keywords>
   <content language="de">Auf dieser Seite kann man alles finden, was nicht auf die anderen gepasst hat.</content>
-  <content language="en">On this page you can find everything which doesn't fit into the other categories.</content>
+  <content language="en">On this page you can find everything that does not fit into the other categories.</content>
   <download-dir>bin/others</download-dir>
   <download> 
     <title language="de">Farbmustergenerator</title>
@@ -34,144 +34,5 @@
     <final-content>
       <script type="text/javascript" src="bin/others/gaussElimination.js"></script>
     </final-content>
-  </download>
-  <download> 
-    <title language="de">Masterarbeit</title>
-    <title language="en">Master thesis</title>    
-    <id>master</id>
-    <file>master.pdf</file>
-    <description_80 language="de">Meine Masterarbeit über die Kombination von aus Videos berechneten Kamerapfaden und (Straßen-)karten</description_80>
-    <description_80 language="en">My master thesis about combining camera paths estimated from video sequences with cadastral (street) maps</description_80>
-    <payment-license>-</payment-license>
-    <content language="de">Meine Masterarbeit "OpenStreetSLAM: Combining visual SLAM with cadastral maps". Es wird ein System beschrieben, welches aus 3D-Video einen Kamerapfad berechnet, wie man daraus eine 3D Szene als Punktwolke berechnet und dann wie man es mit (Straßen-)karten kombinieren kann, um die Pfadberechnung oder die Karte zu verbessen. So richtig gut hat es nicht funktioniert, die Weiterentwicklung im Paper "OpenStreetSLAM: Global vehicle localization using OpenStreetMaps" soll wohl besser funktionieren, .     
-    </content>
-    <content language="en">My master thesis "OpenStreetSLAM: Combining visual SLAM with cadastral maps". It describes as system calculating a camera path from a 3d video, how you can reconstruct the scene as point cloud and how you can combine it with cadastral (meaning street) maps to improve the estimation of the path and simultaneously the map. It did find paths and map correspondences, but overall not very convincing. The follow-up paper "OpenStreetSLAM: Global vehicle localization using OpenStreetMaps" is supposed to work better, but I do not really know the details there.</content>
-  </download>
-  <download> 
-    <title>Bacholorarbeit</title>
-	<id>bachelor</id>
-    <file>bachelor.zip</file>
-    <description_80 language="de">Meine Bachelorarbeit über Ereigniszuordnungen</description_80>
-    <description_80 language="en">My (German) bachelor thesis about event matching</description_80>
-    <payment-license>-</payment-license>
-    <content language="de"></content>
-    <content language="en">Because the text is in German and to long to translate, the description is also in German:<br/><br/></content>
-    <final-content language="de">In dieser Arbeit mit dem Titel "Eigenschaften eines Algorithmus zur Zuordnung von nicht eindeutigen Sende- und
-Empfangsereignissen in Ereignisprotokollen" wird untersucht, wie man aus der Reihenfolge von in Logs lokal aufgezeichneten Netzwerkpaketen berechnen kann, welche aufgezeichneten Ereignisse dasselbe (und nicht nur das inhaltlich gleiche) Paket beschreiben. Das wichtigste Ergebnis ist, dass dieses Problem NP-vollständig ist  und der  früher  am Lehrstuhl verwendete Algorithmus  (siehe Literaturverzeichnis) zur Lösung des Problems überhaupt nicht funktioniert. </final-content>
-  </download>
-  
-  <download> 
-    <title language="de">Präsentation AAAI 16</title>
-    <title language="en">Presentation AAAI 16</title>
-    <id>slides16aaai</id>
-    <file>slides16aaai.zip</file>
-    <description_80 language="de">Poster zum Paper "Separators and Adjustment Sets in
-    Markov Equivalent DAGs"</description_80>
-    <description_80 language="en">Poster about the paper "Separators and Adjustment Sets in
-    Markov Equivalent DAGs"</description_80>
-    <payment-license>-</payment-license>
-    <content language="de">Poster und Folien zum Paper <a href="http://wwwtcs.tcs.uni-luebeck.de/downloads/papers/2016/full-version.pdf">Separators and Adjustment Sets in
-    Markov Equivalent DAGs</a> bei AAAI 2016, welches das UAI 14 Paper zu Chain Graphen verallgemeinert .</content>
-    <content language="en">Poster and slides about the paper <a href="http://wwwtcs.tcs.uni-luebeck.de/downloads/papers/2016/full-version.pdf">Separators and Adjustment Sets in
-    Markov Equivalent DAGs</a> presented at AAAI 2016, generalizing the UAI 14 paper to a new class of chain graphs.</content>
-  </download>
-
-  
-  <download> 
-    <title language="de">Folien Balisage 14</title>
-    <title language="en">Slides Balisage 14</title>
-    <id>slides14balisage</id>
-    <file>slides14balisage.pdf</file>
-    <description_80 language="de">Folien zum Balisage Vortrag "Extending XQuery with pattern matching"</description_80>
-    <description_80 language="en">Slides for the Balisage talk "Extending XQuery with pattern matching"</description_80>
-    <payment-license>-</payment-license>
-    <content language="de">Folien von meinem Vortrag über das Paper <a href="http://balisage.net/Proceedings/vol13/html/Zander01/BalisageVol13-Zander01.html">Extending XQuery with pattern matching over XML, HTML and JSON, and its usage for data mining</a> bei der Balisagekonferenz 2014, welches beschreibt, wie VideLibri die Webseiten der Bibliotheken ausliest.</content>
-    <content language="en">Slides of my talk about the paper <a href="http://balisage.net/Proceedings/vol13/html/Zander01/BalisageVol13-Zander01.html">Extending XQuery with pattern matching over XML, HTML and JSON, and its usage for data mining</a> at Balisage 2014, which describes the XQuery extensions developed for my library app VideLibri to simply the data mining of webpages.</content>
-  </download>
-  
-  <download> 
-    <title language="de">Folien UAI 14</title>
-    <title language="en">Slides UAI 14</title>
-    <id>slides14uai</id>
-    <file>slides14uai.pdf</file>
-    <description_80 language="de">Folien zum UAI Vortrag "Constructing Separators and Adjustment Sets in Ancestral Graphs"</description_80>
-    <description_80 language="en">Slides for the UAI talk "Constructing Separators and Adjustment Sets in Ancestral Graphs"</description_80>
-    <payment-license>-</payment-license>
-    <content language="de">Folien von meinem Vortrag über das Paper <a href="http://auai.org/uai2014/proceedings/individuals/209.pdf">Constructing Separators and Adjustment Sets in Ancestral Graphs</a> bei der UAI (Conference on Uncertainty in Artificial Intelligence) 2014, eine Sammlung von Algorithmen, um statistisch unabhängige Variablen zu finden und den kausalen Effekt zu berechnen.</content>
-    <content language="en">Slides of my talk about the paper <a href="http://auai.org/uai2014/proceedings/individuals/209.pdf">Constructing Separators and Adjustment Sets in Ancestral Graphs</a> at the UAI (Conference on Uncertainty in Artificial Intelligence) 2014, which is part of my Ph.D. research.</content>
-  </download>
-  
-  <download> 
-    <title>Seminararbeit Kryptographie</title>
-    <id>cryptsem</id>
-    <file>seminarcrypt.pdf</file>
-    <description_80 language="de">Meine Seminararbeit über teilbares, elektronisches Geld</description_80>
-    <description_80 language="en">A (German) seminar text about divisible, electronical money</description_80>
-    <payment-license>-</payment-license>
-    <content language="de"></content>
-    <content language="en">Because the text is in German and to long to translate, the description is also in German:<br/><br/></content>
-    <final-content language="de">Die theoretische Beschreibung eines digitalen Geldsystems, das anonyme und unlinkbare Bezahlvorgänge mit teilbaren Münzen ermöglicht. </final-content>
-  </download>
-  <download> 
-    <title>Seminararbeit Vision</title>
-    <id>seminarCV2010</id>
-    <file>seminarvision.pdf.7z</file>
-    <description_80 language="de">Meine Seminararbeit über semantische Bildsegmentierungen</description_80>
-    <description_80 language="en">A (German) seminar text about semantically image segmentation</description_80>
-    <payment-license>-</payment-license>
-    <content language="de"></content>
-    <content language="en">Because the text is in German and to long to translate, the description is also in German:<br/><br/></content>
-    <final-content language="de">Diese Seminararbeit erläutert das Paper "Decomposing a Scene into Geometric and Semantically Consistent Regions" von Stephen Gould, in dem beschrieben wird, wie ein Bild in semantisch und geometrisch sinnvolle Regionen segmentiert werden kann; Das heißt wie für jeden Pixel eines Bildes ermittelt werden kann, was dieser Pixel darstellt (in Goulds  Beispielsimplementation konkret, zu welcher von acht Klasse Haus, Baum, Gras, Straße... er gehört). Der Text ist eigentlich nur für die Leute interessant, deren Englisch zu schlecht ist, um das eigentliche Paper zu verstehen, oder die keine Ahnung von den üblichen Computervision-Methoden haben. </final-content>
-  </download>
-  <download> 
-    <title>Facharbeit</title>
-    <file>facharbeit.zip</file>
-    <github>chemistry</github>
-    <description_80 language="de">Meine Facharbeit über Molekülstrukturberechnungen</description_80>
-    <description_80 language="en">A (German) text about the calculation of molecule conformation</description_80>
-    <payment-license>-</payment-license>
-    <size_KB>399</size_KB>
-    <content language="de"></content>
-    <content language="en">Because the text is in German and to long to translate, the description is also in German:<br/><br/></content>
-    <final-content language="de">Der Text stellt zwei Methoden zur Berechnung der Konformation von Molekülen vor. Einerseits die triviale Methode über das Tetraederverfahren, anderenseits eine komplizierte mit Hilfe der Quantenchemie.<br/>Desweiteren gibt es ein <a href="demos_de.html#moleculesim.zip">Programm</a> das zeigt, dass beide so nicht funktionieren.</final-content>
-  </download>
-  <download> 
-    <title>Chemie-Heft</title>
-    <id>chemiebbo</id>
-    <file>chemiebbo.zip</file>
-    <description_80 language="de">Mein virtuelles Chemieheft. Inklusive eigenem Dateiformat</description_80>
-    <description_80 language="en">My (German) school notes about chemistry</description_80>
-    <payment-license>-</payment-license>
-    <content language="de">Mein altes Chemie-Heft aus der Schule. Nur insofern interessant, dass ich dafür ein eigenes Dateiformat geschrieben habe.</content>
-  </download>
-  <download> 
-    <title>Euglenareferat</title>
-    <id>euglena</id>
-    <file>euglena/euglena.html</file>
-    <description_80 language="de">Ein Referat über den Euglena-Einzeller (Augentierchen).</description_80>
-    <description_80 language="en">A (German) text about the Euglena</description_80>
-    <size_KB>online</size_KB>
-    <payment-license>-</payment-license>
-    <content language="de">Mein Referat zur Euglena als Online-Webseite. Mit einem Java-Applet, das eine Euglena simuliert. (Der Link sagt "Download", aber es ist ein Link zur Webseite)</content>
-  </download>
-  <download> 
-    <title>Glaselektrodenreferat</title>
-    <file>glaselektrode.zip</file>
-    <description_80 language="de">Ein Referat über die Glaselektrode zur pH-Messung.</description_80>
-    <description_80 language="en">A (German) text about ph measurement</description_80>
-    <payment-license>UVM</payment-license>
-    <size_KB>20</size_KB>
-    <content language="de">Mein Referat zur Glaselektrode.</content>
-  </download>
-  <download> 
-    <title>Skript zu Lineare Algebra II</title>
-    <file>lina2.zip</file>
-    <description_80 language="de">Skriptmitschrift zu Lineare Algebra II</description_80>
-    <description_80 language="en">Skriptmitschrift zu Lineare Algebra II</description_80>
-    <payment-license>UVM</payment-license>
-    <size_KB>148</size_KB>
-    <content language="de">Meine abgetippte Mitschrift zur Vorlesung Lineare Algebra II. </content>
-    <content language="en">(This is a German text, if you don't understand the untranslated description, you don't need it). <br/>
-Meine abgetippte Mitschrift zur Vorlesung Lineare Algebra II. </content>
   </download>
 </file>
