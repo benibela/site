@@ -89,7 +89,14 @@ function guestbookDelete(id) {
   guestbookCmd("COMMAND:DELETE-ENTRY:\n"+id);
   document.getElementsByTagName("form")[0].submit();
 }
+function guestbookSpamMark(id) {
+  guestbookCmd("COMMAND:SPAM-ENTRY:\n"+id);
+  document.getElementsByTagName("form")[0].submit();
+}
 function guestbookComment(id) { 
   getObject('entryBox').focus();
   guestbookCmd("COMMAND:REPLY-TO:\n"+id+"\n");
+}
+function guestbookShowSpam(btn) {
+  btn.parentNode.innerHTML = btn.value;
 }
