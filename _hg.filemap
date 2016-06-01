@@ -3,4 +3,5 @@ exclude sites/web5/upload.sh
 exclude sites/web5/password.sh
 exclude sites/web5/koobtseug.xml
 exclude sites/web5/koobtseug_yrtne.xml
+exclude sites/web5/config.php
 rename sites/web5 .
