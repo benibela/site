@@ -10,11 +10,9 @@ declare function local:write($file, $data, $format){
 };
 declare function local:language-filter($node, $language-id){
   transform($node, function($e){
-    if ($e/@language) then
-      if ($e/@language != $language-id) then 
-        if ( $e/(preceding-sibling::*,following-sibling::*)[name() = $e/name() and @language = $language-id] ) then ()
-        else $e
-      else $e
+    if ($e/@language 
+        and $e/@language != $language-id 
+        and $e/(preceding-sibling::*,following-sibling::*)[name() = $e/name() and @language = $language-id] ) then ()
     else if ($e/@auto and name($e) = "a") then
       switch ($e/@auto)
         case "*rss" return
