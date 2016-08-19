@@ -19,34 +19,8 @@
     <id to="papers">euglena</id>
     <id to="papers">glaselektrode.zip</id>
     <id to="papers">lina2.zip</id>
+
+    <id to="web-apps">colorMap.js</id>
+    <id to="web-apps">gaussElimination</id>
   </moved-ids>
-  <download> 	
-    <title language="de">Farbmustergenerator</title>
-    <title language="en">Color pattern creator</title>
-    <file>colorMap.js</file>
-    <description_80 language="de">Ein JavaScript, dass ein Farbmuster (zufällig oder als Höhenkarte) generiert.</description_80>
-    <description_80 language="en">A java-script which creates (randomly or as high map) a color pattern</description_80>
-    <payment-license>Freeware</payment-license>
-    <size_KB>10</size_KB>
-    <content language="de">Dieses Javascriptprogramm setzt im Browser Farben in ein Raster. Es sollte direkt hier angezeigt werden:<br/> <br/></content>
-    <content language="en">This script puts color into a raster. You should  see it here now:<br/> <br/></content>
-    <final-content>
-      <script type="text/javascript" src="bin/others/colorMap.js"></script>
-    </final-content>
-  </download>
-  <download> 
-    <title language="de">Gauß-Elimination</title>
-    <title language="en">Gaussian Elimination</title>
-	<id>gaussElimination</id>
-    <file>gaussElimination.js</file>
-    <description_80 language="de">Ein JavaScript um das Gaußsche Eliminationsverfahren durchzuführen.</description_80>
-    <description_80 language="en">A java-script to perform a Gaussian Elimination</description_80>
-    <payment-license>Freeware</payment-license>
-    <size_KB>10</size_KB>
-    <content language="de">Dieses Javascriptprogramm lässt einen im Browser eine Matrix mit dem Gaußschen Eliminationsverfahren umformen. Im Gegensatz zu den üblichen Applets funktioniert es auch mit Matrizen beliebiger Größe und kommt (für Restklassenringe) ohne Division aus. Es sollte direkt hier angezeigt werden:<br/> <br/></content>
-    <content language="en">With this script you can perform a Gaussian Elimination. In contrast to other applets it also works with matrices of arbitrary size. You should  see it here now:<br/> <br/></content>
-    <final-content>
-      <script type="text/javascript" src="bin/others/gaussElimination.js"></script>
-    </final-content>
-  </download>
 </file>

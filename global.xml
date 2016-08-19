@@ -46,6 +46,10 @@
   <title language="en">News archive</title>
 </fileinfo>  
 <fileinfo>
+  <basefilename>web-apps</basefilename>
+  <title>Web-Applets</title>
+</fileinfo>  
+<fileinfo>
   <basefilename>tools</basefilename>
   <title>Tools</title>
 </fileinfo>  
@@ -95,6 +99,7 @@
   <title language="en">Papers</title>
 </fileinfo> 
 <fileinfo>
+  <hidden>YES</hidden>
   <basefilename>others</basefilename>
   <title language="de">Sonstiges</title>
   <title language="en">Other Things</title>
