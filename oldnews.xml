@@ -153,11 +153,11 @@ When you use (y&lt;maxy-7*maxx/8?((Math.abs(x-maxx/2)&lt;=maxx/16?6:5)):(Math.ab
 
     <new date="2007-12-06"><text language="de">
 
-      Es gibt jetzt ein <a href="others_de.html#colorMap.js">Onlineprogramm</a> zur Erzeugung von farbigen Rasterfeldern wie Zufallsmustern oder Höhenfunktionen.
+      Es gibt jetzt ein <a auto="colorMap.js">Onlineprogramm</a> zur Erzeugung von farbigen Rasterfeldern wie Zufallsmustern oder Höhenfunktionen.
 
     </text>
 
-    <text language="en">There is now a <a href="others_en.html#colorMap.js">online program</a> which creates colorful raster maps, for example random patterns or high map of a function.</text></new>
+    <text language="en">There is now a <a auto="colorMap.js">online program</a> which creates colorful raster maps, for example random patterns or high map of a function.</text></new>
 
     <new date="2007-11-29"><text language="de">
 
@@ -185,7 +185,7 @@ Da die Stadtbücherei ihren WebOPAC geändert hat, gibt es nun wieder eine neue 
     <new date="2007-05-12"><text>Es gibt jetzt die Version 0.905 von VideLibri, die einige Fehler korrigiert.</text></new>
     <new date="2007-04-22"><text language="de">
     Die Seite wurde überarbeitet und die Speicherung in xml mit meiner Sprache <a href="tools_de.html#jaxmlp">JAXMLP</a> enthält jetzt praktisch keine Redunanz mehr.<br/>
-Außerdem habe ich meine <a href="others_de.html#facharbeit.zip">Facharbeit</a> und das damit verbundene Programm hochgeladen, woran ich von Weihnachten bis Ostern gearbeitet habe.<br/>
+Außerdem habe ich meine <a auto="facharbeit.zip">Facharbeit</a> und das damit verbundene Programm hochgeladen, woran ich von Weihnachten bis Ostern gearbeitet habe.<br/>
 Und es gibt jetzt auch die Programme der Bwinf-Runden hier, womit ich mich die restliche Zeit (vorher, nachher) beschäftigt habe, weshalb es auch so selten etwas neues auf der Seite gibt.</text>
 <text language="en">The site structure has been improved, using my xml processing language <a href="tools_de.html#jaxmlp">JAXMLP</a>.<br/>And there are some German only ressources, my submissions to the national informatic contest BWInf and a text about the calculation of molecule conformations.
 </text></new>
@@ -206,7 +206,7 @@ Die Seite selbst ist auch leicht geändert, es gibt jetzt ein <a href="oldnews_d
 However, today I have added some new support units (for programming, not gaming), a <a href="sources_en.html#rcmdline.zip">command line parser</a>, an <a href="sources_en.html#autoupdate.zip">online update class</a> and a <a href="sources_en.html#simplebrowser.zip">simple browser</a> (the last one isn't a tool, because it is only usefull when used together with an own program).<br/>
 The site itself have been changed, too. There is now a <a href="oldnews_en.html#top">news archive</a> (mainly for the German part, where more news exists) and most of the links are now social bookmarks on <a href="http://del.icio.us/BeniBela">del.icio.us</a> (mainly the English links).</text>
 </new>  
-    <new date="2006-10-26"><text language="de">Mein Chemiereferat zur <a href="others_de.html#glaselektrode.zip">Glaselektrode</a> ist jetzt online.</text></new>
+    <new date="2006-10-26"><text language="de">Mein Chemiereferat zur <a auto="glaselektrode.zip">Glaselektrode</a> ist jetzt online.</text></new>
     <new date="2006-04-27"><text language="de">Es gibt jetzt die nächste version von MathSys in der einige Fehler korrigiert sind. (Stark vergrößerte Sachen ließen sich nicht drucken, die Vorschau war verschoben und mit sich selbst multiplizierte Variablen wurden nicht gezeichnet). </text></new>
 
     <new date="2006-04-16">
@@ -215,9 +215,9 @@ Frohe Ostern!</text>
 <text language="en">
 Today I have uploaded some little changes.  The link page is now extended and my new (a half year old) mail address is listed here. Furthermore there is a mathematical plotter which draws functions. um Funktionen zu zeichnen. It is not finished yet, but the drawing works already and I thinks the output is nicer than the one of any other program I know. Additionally it has a hidden easter-egg.<br/>Happy Easter!
 </text></new>
-    <new date="2005-12-26"><text language="de">Passend zur Winterzeit habe ich ein <a href="others_de.html#schnee.exe">kleines Programm</a> hochgeladen, das es auf dem Bildschirm schneien lässt.<br/>
+    <new date="2005-12-26"><text language="de">Passend zur Winterzeit habe ich ein <a auto="schnee.exe">kleines Programm</a> hochgeladen, das es auf dem Bildschirm schneien lässt.<br/>
 Ich wünsche jedem ein schönes neues Jahr.</text>
-<text language="en">Because of the wintertime I published a <a href="others_de.html#schnee.exe">small program</a> which draws snow on the screen.<br/>
+<text language="en">Because of the wintertime I published a <a auto="schnee.exe">small program</a> which draws snow on the screen.<br/>
 Happy New Year!</text></new>
 <new date="2005-09-17">
 <text language="de">Es gibt eine neue Delphikomponente, die die Funktionen von TListView mit denen von TTreeView verbindet.</text>

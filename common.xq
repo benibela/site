@@ -18,7 +18,7 @@ declare function local:language-filter($node, $language-id){
         case "*rss" return
           <a href="{get("fileinfo")/basefilename}_{$language/id}.rss"><img src="img/design/feed.png"/></a>  
         default return let $target := local:get-id-target($e/@auto) 
-        return <a href="{$target('source')}_{$language/id}.html#{$e/@auto}">{$target('title')}</a>
+        return <a href="{$target('source')}_{$language/id}.html#{$e/@auto}">{if (normalize-space($e)) then $e/node() else $target('title')}</a>
     else $e
   })
 };
