@@ -107,7 +107,7 @@
                Dafür benötigt man zuerst das Handle des zu den Icons gehörendem Fenster.<br/>
                Bei TCVirus wird es von der Methode GetIconDesktop zurück geliefert, bei der API geht es so:<br/>
                <span class="code">handle:=FindWindowEx(FindWindowEx(FindWindow('Progman',
-nil),0,'SHELLDLL_DefView',nil),0,'SysListView32',nil);</span> (Das bedeutet, dass das Handle auf das Unterfenster namens "SysListView32" des Unterfensters "SHELLDLL_DefView" des Fensters "Progman" geholt wird, diese Namen kann man z.B.: mit <a href="tools_de.html#apiv.zip">APIV</a> herausfinden.).<br/>
+nil),0,'SHELLDLL_DefView',nil),0,'SysListView32',nil);</span> (Das bedeutet, dass das Handle auf das Unterfenster namens "SysListView32" des Unterfensters "SHELLDLL_DefView" des Fensters "Progman" geholt wird, diese Namen kann man z.B.: mit <a auto="apim">APIV</a> herausfinden.).<br/>
                Mit dem Handle werden sie dann so unsichtbar gemacht:<br/>
                <span class="code">EnableWindow(handle ,false);<br/>
                SetWindowPos(handle,HWND_BOTTOM, 0, 0, 0, 0, SWP_HIDEWINDOW);</span><br/>
@@ -179,7 +179,7 @@ Die zugeschickten Scherzprogramme können hier veröffentlicht werden.</p>
               With <span class="var">Application.handle</span> you get the handle of the main window of your application. After calling the procedure it will be hidden.<br/></p>
              
 
-              <p>However there should be a way to stop the program (of course you could kill it with a process viewer like <a href="tools_de.html#apiv.zip">APIV</a>, but then memory ressources could be lost). <br/>
+              <p>However there should be a way to stop the program (of course you could kill it with a process viewer like <a auto="apim">APIV</a>, but then memory ressources could be lost). <br/>
               TCVirus has a built in possibility, to stop the program, when the mouse arrives a special position.
               This Position can be set with the properties <span class="var">XMouseTest</span> and <span class="var">YMouseTest</span>.<br/>
               The property <span class="var">MouseTestIntervall</span> determines, how often the mouse position is checked. When the mouse arrives the point the event <span class="var">OnMousePos</span> is called.<br/>
@@ -253,7 +253,7 @@ Die zugeschickten Scherzprogramme können hier veröffentlicht werden.</p>
                TCVirus returns such a handle, if you call <span class="func">GetIconDesktop</span>. 
                If you use the Win API you can write:<br/>
                <span class="code">handle:=FindWindowEx(FindWindowEx(FindWindow('Progman',
-nil),0,'SHELLDLL_DefView',nil),0,'SysListView32',nil);</span> (This means that the program searchs the handle of the windows "SysListView32" of windows  "SHELLDLL_DefView" of the top level Windows "Progman", these names you can find out with programs like <a href="tools_en.html#apiv.zip">APIV</a>.).<br/>
+nil),0,'SHELLDLL_DefView',nil),0,'SysListView32',nil);</span> (This means that the program searchs the handle of the windows "SysListView32" of windows  "SHELLDLL_DefView" of the top level Windows "Progman", these names you can find out with programs like <a auto="apim">APIV</a>.).<br/>
                When you have the handle you can type to hide them:<br/>
                <span class="code">EnableWindow(handle ,false);<br/>
                SetWindowPos(handle,HWND_BOTTOM, 0, 0, 0, 0, SWP_HIDEWINDOW);</span><br/>

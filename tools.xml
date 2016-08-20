@@ -398,12 +398,12 @@ The <a href="bin/tools/source/fileparser.zip">source (17 KB)</a> is a typical De
     <content language="de">
 Die GUITools ermöglichen das visuelle Erzeugen von Text, Panel und View-Objekten des 3D Game Studios, ähnlich der im WDLSSG vorhandenen Funktionen, wobei die GUITools bessere Vorschaufunktionen besitzen.<br/>
 Sie sind ursprünglich für 3DGS 4 und 5 geschrieben worden, da es aber in den GUI-Bereichen kaum Änderungen gab, werden sie auch mit 3DGS 6 funktionieren.<br/>
-Da es sich um ein Plugin handelt, benötigt man den <a href="http://www.gstools.de">GST-Builder</a> 2.4.103 und das GSTHelper plugin 1.2.0, um sie starten zu können.<br/>
+Da es sich um ein Plugin handelt, benötigt man den <a href="http://web.archive.org/web/20160113233941/http://gstools.de/index.php/projects/gst-builder"> <!-- href="http://www.gstools.de">-->GST-Builder</a> 2.4.103 und das GSTHelper plugin 1.2.0, um sie starten zu können.<br/>
 Sie sind, entsprechend dem GST-Builder, zweisprachig, und können sowohl auf deutsch wie auch auf englisch geschaltet werden.</content>
     <content language="en">
 With the GUITools you can create WYSIWYG text, panel und view objects of the 3D Game Studio.<br/>
 They are originally written for 3DGS 4 and 5, but there are almost no changes in the GUI parts of it, so they work in 3DGS 6.<br/>
-Because it is a plugin, you need the <a href="http://www.gstools.de">GST-Builder</a> 2.4.103 and the GSTHelper plugin 1.2.0, to use them.<br/>
+Because it is a plugin, you need the <a href="http://web.archive.org/web/20160113233941/http://gstools.de/index.php/projects/gst-builder">GST-Builder</a> 2.4.103 and the GSTHelper plugin 1.2.0, to use them.<br/>
 They are like the GST-Builder bilingual and have a German and a English version.
 </content>
     <screenshot>

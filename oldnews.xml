@@ -7,13 +7,13 @@
   <news>
       <new date="2008-11-07"><text language="de">
 
-        Es gibt jetzt eine <a href="sources_de.html#bbutils">Übersetzungunit</a> für FPC-Dateien (wird fürs Compilern von APIM benötigt) und einen verbesserten <a href="sources_de.html#htmlparser.zip">HTML-Auswerter</a>, der auch optionale Elemente unterstützt.<br/>
+        Es gibt jetzt eine <a href="sources_de.html#bbutils">Übersetzungunit</a> für FPC-Dateien (wird fürs Compilern von APIM benötigt) und einen verbesserten <a auto="internettools">HTML-Auswerter</a>, der auch optionale Elemente unterstützt.<br/>
 
         Und außerdem eine neue Videlibriversion, welche auch ein Konto der FHB ohne ausgeliehene Medien verarbeiten kann (wobei man dann natürlich sowieso kein Ausleihverwaltungsprogramm benötigt)
 
       </text><text language="en">
 
-        I added a  <a href="sources_en.html#bbutils">translation unit</a> for fpc-files (you need it for compiling APIM) and improved my <a href="sources_en.html#htmlparser.zip">html template parser</a>, so that it now supports  optional elements.
+        I added a  <a href="sources_en.html#bbutils">translation unit</a> for fpc-files (you need it for compiling APIM) and improved my <a auto="internettools">html template parser</a>, so that it now supports  optional elements.
 
       </text></new>
 
@@ -25,7 +25,7 @@
 
       </text><text language="en">
 
-        It took a long time, but there is now a new version of APIV, a program to control other ones. It is now called <a href="tools_de.html#apim">API Manager</a> due to another program with the same name.  <br/> 
+        It took a long time, but there is now a new version of APIV, a program to control other ones. It is now called <a auto="apim">API Manager</a> due to another program with the same name.  <br/> 
 
         It has got some new features, but the most important improvement is that it is much more stable and flexible. The old version often crashed or doesn't start at all, now something like that shouldn't happen anymore. And it is flexible, because it supports docking which you can use to choose the  layout you want. It also supports automatically translations, so it has been translated into English. The GUI part is nearly completely rewritten and converted from Delphi to Lazarus. Furthermore the source is nice enough that I can publish it under the GPL.
 
@@ -39,19 +39,19 @@
 
       <new date="2008-09-24"><text language="de">
 
-      Heute ist der Welttag gegen <a href="http://stopsoftwarepatents.org/">Softwarepatente</a>.
+      Heute ist der Welttag gegen <a href="http://web.archive.org/web/20100330164542/http://stopsoftwarepatents.org/">Softwarepatente</a>.
 
       </text><text language="en">
 
-      Today is the <a href="http://stopsoftwarepatents.org/">World Day Against Software Patents</a>.
+      Today is the <a href="http://web.archive.org/web/20100330164542/http://stopsoftwarepatents.org/">World Day Against Software Patents</a>.
 
       </text></new>
 
       <new date="2008-09-03"><text language="de">
 
-      Es gibt ein neues Update für mein <a href="components_de.html#treelistview">TreeListView</a>, welches die Grafikfehler behebt, die bei aktivieren XP-Themes und Suchleiste auftraten, wenn man es mit FPC oder Delphi ab Version 7 compiliert hatte (D4-6 haben funktioniert). Da das auch <a href="tools_de.html#videlibri">VideLibri</a> betrifft und inzwischen die FHB ihre Seitenstruktur geändert hat, gibt es davon ebenfalls eine neue Version.
+      Es gibt ein neues Update für mein <a auto="treelistview">TreeListView</a>, welches die Grafikfehler behebt, die bei aktivieren XP-Themes und Suchleiste auftraten, wenn man es mit FPC oder Delphi ab Version 7 compiliert hatte (D4-6 haben funktioniert). Da das auch <a href="tools_de.html#videlibri">VideLibri</a> betrifft und inzwischen die FHB ihre Seitenstruktur geändert hat, gibt es davon ebenfalls eine neue Version.
 
-      </text><text language="en">There is a new update for the <a href="components_en.html#treelistview">TreeListView</a> which fixes some graphic issues with the XP-themes and FPC or Delphi 7 or higher (D4-6 has worked correctly). </text>
+      </text><text language="en">There is a new update for the <a auto="treelistview">TreeListView</a> which fixes some graphic issues with the XP-themes and FPC or Delphi 7 or higher (D4-6 has worked correctly). </text>
 
       </new>    
 
@@ -73,13 +73,13 @@
 
       <new date="2008-08-25"><text language="de">
 
-        Heute gibt es einige kleine Änderungen: <br/> Die neue Version von <a href="tools_de.html#videlibri">VideLibri</a> behebt einige kleinere Bugs.  Der XML Konverter <a href="tools_de.html#jaxmlp">JAXMLP</a> erlaubt nun das Ausführen externer Programme und das Einfügen ihrer Ausgabe in die erzeugten Dateien. <br/> Mein <a href="components_de.html#treelistview">TreeListView</a> läuft nun auch unter alten Delphiversionen und verfügt über eine <a href="components_de.html#searchbar">Suchleiste</a>. Außerdem gibt es einen template-basierten <a href="sources_de.html#htmlparser">HTML-Parser</a> für Freepascal. Für diese drei Komponenten habe ich zudem jeweils eine HTML-Dokumentation geschrieben.
+        Heute gibt es einige kleine Änderungen: <br/> Die neue Version von <a href="tools_de.html#videlibri">VideLibri</a> behebt einige kleinere Bugs.  Der XML Konverter <a href="tools_de.html#jaxmlp">JAXMLP</a> erlaubt nun das Ausführen externer Programme und das Einfügen ihrer Ausgabe in die erzeugten Dateien. <br/> Mein <a href="components_de.html#treelistview">TreeListView</a> läuft nun auch unter alten Delphiversionen und verfügt über eine <a href="components_de.html#searchbar">Suchleiste</a>. Außerdem gibt es einen template-basierten <a auto="internettools">HTML-Parser</a> für Freepascal. Für diese drei Komponenten habe ich zudem jeweils eine HTML-Dokumentation geschrieben.
 
       </text>
 
       <text language="en">
 
-        Today there are some small changes: <br/> The XML converter <a href="tools_en.html#jaxmlp">JAXMLP</a> can now call additional programs during a transformation and insert their output into created files.<br/>  My <a href="components_en.html#treelistview">TreeListView</a> can now be used in old Delphi versions and has got a Mozilla like <a href="components_en.html#searchbar">search bar</a>. Additional there is a template-based <a href="sources_en.html#htmlparser">html parser</a> for use with FreePascal. These last three components have a new html documentation.</text>
+        Today there are some small changes: <br/> The XML converter <a href="tools_en.html#jaxmlp">JAXMLP</a> can now call additional programs during a transformation and insert their output into created files.<br/>  My <a href="components_en.html#treelistview">TreeListView</a> can now be used in old Delphi versions and has got a Mozilla like <a href="components_en.html#searchbar">search bar</a>. Additional there is a template-based <a auto="internettools">html parser</a> for use with FreePascal. These last three components have a new html documentation.</text>
 
       </new>
 
@@ -109,7 +109,7 @@
 
       <new date="2008-05-21"><text language="de">
 
-      Heute gibt es verschiedene kleine Updates: Eine neue Version meines <a href="components_de.html#TreeListView">TreeListView</a>, die einige Fehler beseitigt, stärker den normalen Komponenten ähnelt und unter Lazarus funktioniert. Dafür funktioniert sie aber eventuell nicht mehr unter alten Delphiversionen und hat keine sub-Spalten-Elemente mehr (die machten aber sowieso kaum Sinn). <br/> Zusätzlich gibt es eine neue Version von meinem <a href="tools_de.html#jaxmlp">XML Umwandler</a> mit dem wesentlichsten Unterschied das Eingabedaten als Anweisungen interpretiert werden können.<br/>Und dann noch eine Unit mit immer wieder <a href="sources_de.html#bbutils">nützlichen Funktionen</a> für FPC.<br/>Außerdem habe ich das Seitenlayout ein wenig überarbeitet, zum Beispiel mit einigen schöneren internen Links und einer aktualisierten 404-Fehlerseite.</text>
+      Heute gibt es verschiedene kleine Updates: Eine neue Version meines <a auto="treelistview">TreeListView</a>, die einige Fehler beseitigt, stärker den normalen Komponenten ähnelt und unter Lazarus funktioniert. Dafür funktioniert sie aber eventuell nicht mehr unter alten Delphiversionen und hat keine sub-Spalten-Elemente mehr (die machten aber sowieso kaum Sinn). <br/> Zusätzlich gibt es eine neue Version von meinem <a href="tools_de.html#jaxmlp">XML Umwandler</a> mit dem wesentlichsten Unterschied das Eingabedaten als Anweisungen interpretiert werden können.<br/>Und dann noch eine Unit mit immer wieder <a href="sources_de.html#bbutils">nützlichen Funktionen</a> für FPC.<br/>Außerdem habe ich das Seitenlayout ein wenig überarbeitet, zum Beispiel mit einigen schöneren internen Links und einer aktualisierten 404-Fehlerseite.</text>
 
       <text language="en">Today there are some small updates: A new version of my <a href="components_en.html#treelistview">TreeListView</a> which removes some bugs, is more similar to the Windows controls and works with Lazarus.  However, it is possible that it doesn't work in  older versions of Delphi and it doesn't shows sub-column-elements (but they were never useful anyways). 
 
@@ -167,7 +167,7 @@ When you use (y&lt;maxy-7*maxx/8?((Math.abs(x-maxx/2)&lt;=maxx/16?6:5)):(Math.ab
 
     <new date="2007-10-31"><text language="de">
 
-Da die Stadtbücherei ihren WebOPAC geändert hat, gibt es nun wieder eine neue <a href="tools_de.html#videlibri">VideLibri-Version</a>, die nun auch über BibTex-Export verfügt. <br/>Außerdem gibt es ein <a href="bwinf_de.html#25_3.zip">Programm</a>, dass die Lösung für eine Aufgabe der Endrunde des Bundeswettbewerb Informatik implementiert; in dem ich jetzt auch Bundessieger geworden bin.
+Da die Stadtbücherei ihren WebOPAC geändert hat, gibt es nun wieder eine neue <a href="tools_de.html#videlibri">VideLibri-Version</a>, die nun auch über BibTex-Export verfügt. <br/>Außerdem gibt es ein <a href="bwinf_de.html#25_3.7z">Programm</a>, dass die Lösung für eine Aufgabe der Endrunde des Bundeswettbewerb Informatik implementiert; in dem ich jetzt auch Bundessieger geworden bin.
 
     </text></new>
 
@@ -187,7 +187,7 @@ Da die Stadtbücherei ihren WebOPAC geändert hat, gibt es nun wieder eine neue 
     Die Seite wurde überarbeitet und die Speicherung in xml mit meiner Sprache <a href="tools_de.html#jaxmlp">JAXMLP</a> enthält jetzt praktisch keine Redunanz mehr.<br/>
 Außerdem habe ich meine <a auto="facharbeit.zip">Facharbeit</a> und das damit verbundene Programm hochgeladen, woran ich von Weihnachten bis Ostern gearbeitet habe.<br/>
 Und es gibt jetzt auch die Programme der Bwinf-Runden hier, womit ich mich die restliche Zeit (vorher, nachher) beschäftigt habe, weshalb es auch so selten etwas neues auf der Seite gibt.</text>
-<text language="en">The site structure has been improved, using my xml processing language <a href="tools_de.html#jaxmlp">JAXMLP</a>.<br/>And there are some German only ressources, my submissions to the national informatic contest BWInf and a text about the calculation of molecule conformations.
+<text language="en">The site structure has been improved, using my xml processing language <a href="tools_en.html#jaxmlp">JAXMLP</a>.<br/>And there are some German only ressources, my submissions to the national informatic contest BWInf and a text about the calculation of molecule conformations.
 </text></new>
 <new date="2007-03-24"><text language="de">
 Die Seite wird jetzt auch im Internet Explorer 5 und (leider nur ungezoomt) im IE 7. <br/>Wer das Internet mit einem vernünftigen Programm benutzen will, sollte sich aber trotzdem mal den <a href="http://www.mozilla-anleitung.de/Mozilla/101Dinge.php">FireFox</a> ansehen.</text></new>
@@ -200,10 +200,10 @@ Die Seite ist jetzt in einer Art Content-Management-System gespeichert. (Das sie
 </text></new>  
 <new date="2006-12-15"><text language="de">
 Nach langer Zeit gibt es mal wieder ein Update bezüglich Programmierung.<br/>
-Eine Klasse für das Parsen von <a href="sources_de.html#rcmdline.zip">Kommandozeilenparameter</a>, eine für ein <a href="sources_de.html#autoupdate.zip">automatisches Programmupdate</a> und einen kleinen IE-basierten <a href="sources_de.html#simplebrowser.zip">Browser</a>, der über Kommandozeile gesteuert werden kann. Wie man sieht, sind dies alles bloß Programmteile, und zwar von meinem neuen Bücherei - Ausleihen - Verwaltungs - programmes (Videlibri), das es auch bald hier geben wird.<br/>
+Eine Klasse für das Parsen von <a href="sources_de.html#rcmdline">Kommandozeilenparameter</a>, eine für ein <a href="sources_de.html#autoupdate.zip">automatisches Programmupdate</a> und einen kleinen IE-basierten <a href="sources_de.html#simplebrowser.zip">Browser</a>, der über Kommandozeile gesteuert werden kann. Wie man sieht, sind dies alles bloß Programmteile, und zwar von meinem neuen Bücherei - Ausleihen - Verwaltungs - programmes (Videlibri), das es auch bald hier geben wird.<br/>
 Die Seite selbst ist auch leicht geändert, es gibt jetzt ein <a href="oldnews_de.html#top">Newsarchiv</a> und die Links sind teilweise als "social bookmarks" auf <a href="http://del.icio.us/BeniBela">del.icio.us</a> ausgelagert.
 </text><text language="en">Although the last change here has been more than 7 months ago, this site isn't dead. I have only been to busy to change anything here.<br/>
-However, today I have added some new support units (for programming, not gaming), a <a href="sources_en.html#rcmdline.zip">command line parser</a>, an <a href="sources_en.html#autoupdate.zip">online update class</a> and a <a href="sources_en.html#simplebrowser.zip">simple browser</a> (the last one isn't a tool, because it is only usefull when used together with an own program).<br/>
+However, today I have added some new support units (for programming, not gaming), a <a href="sources_en.html#rcmdline">command line parser</a>, an <a href="sources_en.html#autoupdate.zip">online update class</a> and a <a href="sources_en.html#simplebrowser.zip">simple browser</a> (the last one isn't a tool, because it is only usefull when used together with an own program).<br/>
 The site itself have been changed, too. There is now a <a href="oldnews_en.html#top">news archive</a> (mainly for the German part, where more news exists) and most of the links are now social bookmarks on <a href="http://del.icio.us/BeniBela">del.icio.us</a> (mainly the English links).</text>
 </new>  
     <new date="2006-10-26"><text language="de">Mein Chemiereferat zur <a auto="glaselektrode.zip">Glaselektrode</a> ist jetzt online.</text></new>
