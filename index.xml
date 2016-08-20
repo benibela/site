@@ -13,6 +13,11 @@
     <text language="en"></text>
     </new>
 -->    
+    <new date="2016-08-20"> 
+    <text language="de">Die Webseitenstruktur hat sich leicht geändert, es gibt keine Seite "Sonstiges" mehr und stattdessen <a href="papers_de.html">Papers</a> und <a href="web-apps_de.html">Web-Applets</a>. Wer also einen Link gesetzt hatte, sollte ihn ändert.</text>
+    <text language="en">I have changed the webpage structure slightly. If you had set any links to me, you might need to update them. </text>
+    </new>
+
     <new date="2016-06-13"> 
     <text language="de">Der Interpreter in meinen <a auto="internettools"/> (und damit auch von Xidel und VideLibri) unterstützt XQuery 3 nun vollständig. Vielleicht wird es jetzt Zeit an der Performance zu arbeiten, denn der Raytracertest aus der XQTS braucht immer ewig zum Durchlaufen. Warum VideLibri einen Raytracer unterstützen muss, ist zwar auch schleierhaft, aber so ist das nun mal. </text>
     <text language="en">My <a auto="internettools"/> (and thus Xidel and VideLibri) have now a complete XPath/XQuery 3.0 implementation. It  has probably become one of the most standard conformant interpreters out there. Next goals would be performance improvements and support for html5 as well as the still preliminary XPath/XQuery 3.1 standard. Remember the survey, if it one day should <a href="http://goo.gl/forms/E8vYgpa8nP" rel="nofollow">default to 3.1 instead JSONiq</a>.  </text>
