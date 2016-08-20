@@ -27,6 +27,9 @@
 #menulink_list li{
   width: auto;
 }
+#menulink_list ul.menulink_sublist a{
+  display: none
+}
 #menulink_list .menulink_sublist a{
   width: auto;
 }
