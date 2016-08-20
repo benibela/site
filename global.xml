@@ -46,23 +46,28 @@
   <title language="en">News archive</title>
 </fileinfo>  
 <fileinfo>
-  <basefilename>web-apps</basefilename>
-  <title>Web-Applets</title>
-</fileinfo>  
-<fileinfo>
-  <basefilename>tools</basefilename>
-  <title>Tools</title>
-</fileinfo>  
-<fileinfo>
-  <basefilename>games</basefilename>
-  <title language="de">Spiele</title>
-  <title language="en">Games</title>
-</fileinfo>  
-<fileinfo>
-  <basefilename>demos</basefilename>
-  <title language="de">(Tech-)Demos</title>
-  <title language="en">(Tech-)Demos</title>
-</fileinfo>  
+  <basefilename>programs</basefilename>
+  <title language="de">Programme</title>
+  <title language="en">Programs</title>
+  <fileinfo>
+    <basefilename>web-apps</basefilename>
+    <title>Web-Applets</title>
+  </fileinfo>  
+  <fileinfo>
+    <basefilename>tools</basefilename>
+    <title>Tools</title>
+  </fileinfo>  
+  <fileinfo>
+    <basefilename>games</basefilename>
+    <title language="de">Spiele</title>
+    <title language="en">Games</title>
+  </fileinfo>  
+  <fileinfo>
+    <basefilename>demos</basefilename>
+    <title language="de">(Tech-)Demos</title>
+    <title language="en">(Tech-)Demos</title>
+  </fileinfo>  
+</fileinfo>
 <fileinfo>
   <basefilename>programming</basefilename>
   <title language="de">Programmierung</title>
