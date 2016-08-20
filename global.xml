@@ -83,6 +83,7 @@
     <title language="en">Components</title>
   </fileinfo>  
   <fileinfo>
+    <hidden>YES</hidden>
     <basefilename>jokeprograms</basefilename>
     <title language="de">Scherzprogramme</title>
     <title language="en">Joke Programs</title>

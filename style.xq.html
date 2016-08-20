@@ -72,7 +72,7 @@
            else(),
            
            
-           for $subfileinfo in $fileinfo/fileinfo[basefilename != ""] 
+           for $subfileinfo in $fileinfo/fileinfo[basefilename != "" and not(hidden = "YES")] 
            let $subfile := local:language-filter( doc($subfileinfo/basefilename || ".xml")/file )
            return (
              <br/>,

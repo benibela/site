@@ -71,6 +71,7 @@ body {
   padding-left: 1em;
 }
 #newslist h3{
+  margin-top: 0;
   margin-left: -1em;
   padding-left: 4px;
 }
@@ -253,6 +254,7 @@ th{
   border-bottom: 1px solid blue;
 }
 .long_desc_title {
+  margin-top: 0em;
   font-size: 1.1em;
   font-weight:bold; 
   display: inline;
@@ -300,7 +302,10 @@ th{
 .indentation-list {list-style: none}
 .indentation-list li {margin-bottom: 1em}
 
-h3.scherz{margin-top:1em;}
+h3{margin-top:1.5em;}
+h4{margin-top:1em;}
+
+
 .code {
   font-family:'Courier New', Courier, monospace;
 }
