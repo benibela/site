@@ -11,16 +11,24 @@ The language codes "de" and "en" specify which languages are supported. If one o
   <download> 
     <title>VideLibri</title>
     <id>videlibri</id>
-    <description_80 language="de">Eine App zum Zugriff auf das Ausleihkonto bei einer Bibliothek und sonstige Katalogfunktionen</description_80>
-    <description_80 language="en">An app to manage books lend from a library and access other library catalog functions</description_80>
+    <description_80 language="de">Eine Bibliothek-App zum Zugriff auf sein Ausleihkonto bei verschiedenen Bibliotheken und sonstige Katalogfunktionen</description_80>
+    <description_80 language="en">An app to manage books lend from libraries and access other library catalog functions</description_80>
     <keywords language="de">Bücherei, Bibliothek, Stadtbücherei, Universitätbibliothek, Landesbibliothek, Fachhochschulbibliothek</keywords>
     <keywords language="en">library</keywords>
     <language>de</language>
     <payment>Freeware</payment>
     <source>GPL</source>
-    <year>2006 - present</year>
-    <content language="de">VideLibri ist auf einer <a href="http://www.videlibri.de/" rel="nofollow">eigenen Domain</a> gehostet.</content>
-    <content language="en">VideLibri is hosted on <a href="http://www.videlibri.de/index_en.html" rel="nofollow">its own page</a>.</content>    
+    <year>2006 - <insert value="currentyear"/>*</year>
+    <content language="de">
+      <p>VideLibri ist als App zur Verwaltung der eigenen Ausleihen bei verschiedenen Bibliotheken konzipiert, und kann so beispielsweise mehrere Benutzerkonten gleichzeitig anzeigen, eine Historie aller jemals ausgeliehen Medien speichern, vor Leihfristen warnen und alles automatisch verlängern. Alle weiteren Funktionen eines Bibliothekskatalog wie die Mediensuche sind ebenfalls implementiert.</p>
+      <p>Damit VideLibri mit jeder existierenden Bibliothek verwendet werden kann, habe ich seit 2008 primär an einem Framework zur automatisierten Webseitenabfrage geforscht, bei dem die abzufragende Webseite (des Bibliotheks-OPACs) selbst als Sample genommen wird und nur die relevanten Teile markiert werden. An Hand der Samples kann dann ohne jegliche Programmierung jede Webseite abgefragt werden. Da dies auch für nicht-Bibliotheken interessant ist, gibt es eine Kommandozeilen-Version von VideLibri <a auto="xidel">ohne Bibliotheksfunktionen</a> und eine <a auto="internettools">Pascal-Library</a>.</p>
+      <p>VideLibri ist platform-unabhängig und wurde unter Windows, Linux und Android mit 200 Bibliotheken getestet.  VideLibri hat mittlerweile eine <a href="http://www.videlibri.de/" rel="nofollow">eigene Domain</a>.</p>
+      </content>
+    <content language="en">
+      <p>VideLibri is an app to manage books lend in various libraries. For example it can show multiple library accounts simultanously, show a history of all ever lend books, warn of due dates, and renew everything automatically before the due date. All other OPAC-functions like searching for books are also supported.</p>
+      <p>To facilitate the usage of VideLibri with every existing library it is designed around a framework for automatic webpage querying. Thereby samples of the queried webpages (i.e. of the library OPAC) are annotated to mark the interesting parts and can directly be used to query those parts without requiring any programming. Since this is also useful for non-library webpages there is a command line version of VideLibri <a auto="xidel">without any library functionality</a> and a <a auto="internettools">(non-book) library variant for Pascal</a>.</p>
+      <p>VideLibri is platform-independent and has been tested on Windows, Linux and Android, as well as with 200 libraries. However, it is still only available in German.</p>
+    VideLibri is hosted on <a href="http://www.videlibri.de/index_en.html" rel="nofollow">its own page</a>. </content>    
   </download> 
 
   <download> 
@@ -31,9 +39,17 @@ The language codes "de" and "en" specify which languages are supported. If one o
     <language>en</language>
     <payment>Freeware</payment>
     <source>GPL</source>
-    <year>(2008 - ) 2012 - present</year>
-    <content language="de">Xidel ist auf <a href="http://www.videlibri.de/xidel.html" rel="nofollow">einer eigenen Seite</a> gehostet .</content>
-    <content language="en">Xidel is hosted on <a href="http://www.videlibri.de/xidel.html" rel="nofollow">its own page</a>.</content>    
+    <year>(2008 - ) 2012 - <insert value="currentyear"/>*</year>
+    <content language="de">
+    <p>Xidel ist ein Kommandozeilen-Tool zur Abfrage von Webseiten. 
+       Es ersetzt dabei gleichermaßen Einzeldownloader wie wget oder curl, Textfilter/Datenparser wie grep, sed, xpath, xmlstarlet oder jq, und den aufrufenden Interpreter wie bash oder python. </p>
+    <p>Der Kern von Xidel ist ein standard-konformer Interpreter für XQuery 3.0, eine Turing-vollständige auf XPath und SQL aufgebaute Programmiersprache.  Das Typsystem von XQuery integriert XML (XML Schema, mit Erweiterungen auch HTML und JSON), so dass die Elemente direkt gelesen/manipuliert werden können, ohne dass man wie bei DOM Wrapperfunktionenen aufrufen muss. Xidel hat verschiedene Syntaxerweiterungen, z.B.: JSONiq oder das für <a auto="videlibri"/> entwickelte HTML-Pattern-Matching, bei dem Samples von Webseiten wie reguläre Ausdrücke verwendet werden können. XQuery wurde auch dafür konzipiert, Markup zu erzeugen, zum Beispiel ist diese Webseite mittels Xidel erstellt. </p>
+    <p>Xidel ist auf <a href="http://www.videlibri.de/xidel.html" rel="nofollow">einer eigenen Seite</a> gehostet.</p></content>
+    <content language="en">
+    <p>Xidel is a command line tool to query web pages.
+       It replaces downloaders like wget or curl, text processors/parsers like grep, sed, xpath, xmlstarlet or jq, and the calling interpreters like bash or python. </p>
+    <p>The core of Xidel is a standard-conformant interpreter of XQuery 3.0, a Turing-complete programming language inspired by XPath and SQL.  The type system of XQuery integrates XML (XML Schema, extended to HTML and JSON), so that elements can be directly accessed and manipulated, and you do not need any wrapper classes like DOM. Xidel has various extensions, e.g.: JSONiq or the HTML-pattern-matching developed for <a auto="videlibri"/>, where samples of the queried web pages can be used like regular expressions. Another purpose of XQuery is creating markup, e.g. this webpage is created by Xidel. </p>
+    <p>Xidel is hosted on <a href="http://www.videlibri.de/xidel.html" rel="nofollow">its own page</a>.</p></content>    
   </download> 
 
   <download> 
@@ -44,9 +60,9 @@ The language codes "de" and "en" specify which languages are supported. If one o
     <language>de, en, ...</language>
     <payment>Freeware</payment>
     <source>GPL</source>
-    <year>2009 - present</year>
-    <content language="de">TeXstudio ist auf einer eigenen <a href="http://www.texstudio.org" rel="nofollow">Domain</a> gehostet.</content>
-    <content language="en">TeXstudio is hosted on <a href="http://www.texstudio.org" rel="nofollow">texstudio.org</a>.</content>
+    <year>2009 - <insert value="currentyear"/>*</year>
+    <content language="de">Ein LaTeX Editor, den ich geschrieben habe, als ich eigentlich ein Buch schreiben wollte. TeXstudio ist auf einer eigenen <a href="http://www.texstudio.org" rel="nofollow">Domain</a> gehostet.</content>
+    <content language="en">An editor based on Texmaker which I made to write a book in LaTeX. It has become surprisingly popular and is hosted on <a href="http://www.texstudio.org" rel="nofollow">texstudio.org</a>.</content>
   </download> 
 
   <download> 

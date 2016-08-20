@@ -13,13 +13,18 @@ declare function local:language-filter($node, $language-id){
     if ($e/@language 
         and $e/@language != $language-id 
         and $e/(preceding-sibling::*,following-sibling::*)[name() = $e/name() and @language = $language-id] ) then ()
-    else if ($e/@auto and name($e) = "a") then
-      switch ($e/@auto)
-        case "*rss" return
-          <a href="{get("fileinfo")/basefilename}_{$language/id}.rss"><img src="img/design/feed.png"/></a>  
-        default return let $target := local:get-id-target($e/@auto) 
-        return <a href="{$target('source')}_{$language/id}.html#{$e/@auto}">{if (normalize-space($e)) then $e/node() else $target('title')}</a>
-    else $e
+    else  switch(name($e))
+      case "a" return if ($e/@auto) then
+        switch ($e/@auto)
+          case "*rss" return
+            <a href="{get("fileinfo")/basefilename}_{$language/id}.rss"><img src="img/design/feed.png"/></a>  
+          default return let $target := local:get-id-target($e/@auto) 
+          return <a href="{$target('source')}_{$language/id}.html#{$e/@auto}">{if (normalize-space($e)) then $e/node() else $target('title')}</a>
+        else $e
+      case "insert"  return
+        if ($e/@value = "currentyear") then year-from-dateTime(current-date())
+        else $e
+      default return $e
   })
 };
 declare function local:language-filter($node){
