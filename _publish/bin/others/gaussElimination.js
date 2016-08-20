@@ -571,6 +571,7 @@ if (lang=="en") {
   var gaussTxtSize="Size:";  
   var gaussTxtCreateIDMatrix="id matrix";  
   var gaussTxtCreateEmptyMatrix="empty matrix";  
+  var gaussTxtCreateWindow="Open new window";  
   var gaussTxtImportExport="import/export";  
   var gaussTxtImport="parse import";  
   var gaussTxtExport="export";  
@@ -605,6 +606,7 @@ if (lang=="en") {
   var gaussTxtSize="Größe:";  
   var gaussTxtCreateIDMatrix="Einheitsmatrix";  
   var gaussTxtCreateEmptyMatrix="Leere Matrix";  
+  var gaussTxtCreateWindow="neues Fenster \xF6ffnen";  
   var gaussTxtImportExport="Import/Export";  
   var gaussTxtImport="import";  
   var gaussTxtExport="export";  
@@ -645,7 +647,7 @@ function gaussOpenNewWindow(){
   else fenster.document.writeln("Gaußsches Eliminationsverfahren - BeniBela online");
   fenster.document.writeln('</title><script type="text/javascript">var lang="'+lang+'";var functionOnly=true;</script>');
   fenster.document.writeln('</head><body>');
-  createInterface(fenster);
+  createInterfaceGauss(fenster);
   fenster.document.writeln('<script type="text/javascript" src="bin/others/gaussElimination.js"></script>');
   fenster.document.writeln('</body></html>');
 //  if (navigator.userAgent.search(/MSIE/)==-1)
@@ -653,7 +655,7 @@ function gaussOpenNewWindow(){
 }
 
 
-function createInterface(intfWin){
+function createInterfaceGauss(intfWin){
   var doc=intfWin.document;
 
   doc.write('<div id="GaussBaseDiv" >');
@@ -663,7 +665,7 @@ function createInterface(intfWin){
   doc.write('<input  onclick="javascript:gaussChangeImportExport();" id="gaussChangeImportExportID" type="checkbox"/>&nbsp;'+gaussTxtImportExport+'&nbsp;&nbsp;');
 
   //if (doc==document && window.location.href.search(/www\.benibela\.de\/others/)!=-1) 
-    doc.write('<button onclick="javascript:gaussOpenNewWindow();" type="button">'+colorMapTxtCreateWindow+'</button>');
+    doc.write('<button onclick="javascript:gaussOpenNewWindow();" type="button">'+gaussTxtCreateWindow+'</button>');
    if (window.location.href.search(/www\.benibela\.de/)==-1) 
       doc.write('by <a href="http://www.benibela.de">Benito van der Zander</a>');
 
@@ -723,6 +725,6 @@ function createInterface(intfWin){
 
   
 if (window.functionOnly) ;
-else createInterface(window);
+else createInterfaceGauss(window);
   
   

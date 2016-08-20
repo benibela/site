@@ -632,7 +632,7 @@ function createInterface(intfWin){
   doc.write('<button onclick="javascript:genAll();" type="button">'+colorMapTxtCreate+'</button>&nbsp;&nbsp;&nbsp;');
 
 
-  if (doc==document && window.location.href.search(/www\.benibela\.de\/others/)!=-1) 
+  if (doc==document && window.location.href.search(/www\.benibela\.de\/(others|web-apps)/)!=-1) 
     doc.write('<button onclick="javascript:openNewWindow();" type="button">'+colorMapTxtCreateWindow+'</button>');
    else if (window.location.href.search(/www\.benibela\.de/)==-1) 
       doc.write('by <a href="http://www.benibela.de">Benito van der Zander</a>');

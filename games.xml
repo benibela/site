@@ -7,33 +7,9 @@
 <content language="en">Every game in this list can run on any (32 or more bit) Windows system and has a German user interface (if not mentioned otherwise).</content>
   <download-dir>bin/games</download-dir>
 
-  <download> 
-    <title>SIRDSlets</title>
-    <file>sirdslets.zip</file> 
-    <id>sirdslets</id>
-    <github>sirdslets</github>
-    <description_80 language="de">Online Sidescroller-Spiel in einer 3D-Welt, die als Stereogramm gerendert wird.</description_80>
-    <description_80 language="en">Online side-scrolling game in the full 3d world of a stereogram</description_80>
-    <language>en</language>
-    <payment>Freeware (GPL)</payment>
-    <year>2009 - <!--2011, --> 2015</year>
-    <content language="de">Ein Sidescroller, bei dem man ein Raumschiff zwischen verschiedenen Hindernissen wie Minen oder schwarzen Löchern hindurch steuert.<br/>Dabei befindet man sich in einer 3D-Welt und kann das Raumschiff sowohl in x, y wie auch z-Richtung fliegen lassen. Außerdem wird der Level als Stereogramm gerendert, so dass man die tatsächliche 3D-Position des Schiffes und der Hindernisse direkt sehen kann. Alternativ gibt es auch einen Anaglyphrendermodus, der dient aber nur als Notbehelf für Leute, die keine SIRDS sehen können. Die Schwierigkeitsgradeinstellung ändert die Fähigkeiten des Raumschiffes und bestimmt, ob die reparierenden Nanoroboter und die Zeitmaschine aktiviert werden können.<br/><br/>Zusätzlich gibt es ein Stereogrammmalprogramm und einen Leveleditor.</content>
-    <content language="en">A side-scrolling game in which you move a space ship while you have to avoid several obstacles like mines or black holes.<br/>The special thing is that the level is a 3d world which is rendered as a stereogram so you can actually see it in full 3d (although it has no colors). You can also switch to an anaglyph render mode, but you should only use it if you are unable to see SIRDS. The ship can of course not only move along the x/y-axis, but also along the z-axis from near to far. The option to change the level of difficulty determines the abilities of the ship and give you repairing nano robots or a time machine.<br/>Additionally there is a level editor and a simple stereogram painting program. </content>
-    <final-content language="de"><br/><br/><a href="bin/games/sirdslets/sirdslet_page.html" class="inline-popup-large">Spiele es online</a></final-content>
-    <final-content language="en"><br/><a href="bin/games/sirdslets/sirdslet_page.html" class="inline-popup-large">Play it online</a></final-content>
-    <screenshot>
-      <title language="de">Parallelblick</title>
-      <title language="en">parallel eye view</title>
-      <fullfile>img/games/sirdslets_1.png</fullfile>s
-      <height>300px</height>
-    </screenshot>
-    <screenshot>
-      <title language="de">Kreuzblick</title>
-      <title language="en">cross eye view</title>
-      <fullfile>img/games/sirdslets_2.png</fullfile>
-      <height>300px</height>
-    </screenshot>
-  </download>
+  <moved-ids>
+    <id to="web-apps">sirdslets</id>
+  </moved-ids>
 
 
 
