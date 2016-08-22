@@ -231,4 +231,39 @@ var lang="de"; //needed for guestbook
 if (window.location.href.search(/lang=en/)!=-1) lang="en";
 if (window.location.href.search(/_en/)!=-1) lang="en";
 
- 
+function insertAfter(parent, child, after){
+  if (after == parent.lastChild) parent.appendChild(child);
+  else parent.insertBefore(child, after.nextSibling);
+}
+
+function jsinit(){
+  pageFocus();
+  function makelinks(parent, id, previous){
+    var link = document.createElement("a");
+    var box = document.createElement("div");
+    link.innerText = lang == "de" ? "kommentieren" : "discuss";
+    link.href="#";
+    link.onclick = function(){
+      link.style.display = "none";
+      var iframe = document.createElement("iframe");
+      iframe.style.width = "100%";
+      iframe.style.maxHeight = "30em";
+      iframe.onload = function () {iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";}      
+      iframe.src = (window.location.href.search(/benibela\.de/) != -1 ? "" : "http://benibela.de") + "/koobtseug_api.php?lang="+lang+"&thread=" + id;
+      insertAfter(parent, iframe, box);
+    }
+    box.style.textAlign = "right";
+    box.appendChild(link)
+    insertAfter(parent, box, previous);
+  }
+  var newsdiv=document.getElementById("newslist");
+  if (newsdiv) {
+    var news = newsdiv.getElementsByTagName("h3");
+    var lastnew = null;
+    for (var i=0;i<news.length;i++) {
+      if (lastnew) makelinks(newsdiv, lastnew.id, news[i].previousSibling);
+      lastnew = news[i];
+    }
+    if (lastnew) makelinks(newsdiv, lastnew.id, newsdiv.lastChild)
+  }
+}
