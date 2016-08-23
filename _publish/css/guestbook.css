@@ -16,10 +16,22 @@
 #topInputBox *{
   text-align: left
 } 
+.emptyrow td { 
+  border: none
+}
 #secondInputBox{
   margin:auto;  
   margin-bottom: 2em;
   border-collapse: collapse;
+}
+#secondInputBox{
+  background-color: #FFFFDD !important;
+}
+#secondInputBox table {
+  width: 100%
+}
+#secondInputBox table input, #secondInputBox table textarea {
+  width: 100%
 }
 #inputRow{
   border: 3px double blue;

@@ -1,3 +1,20 @@
+<?php if ($_REQUEST['thread']){?>
+<html>
+	<head>
+    <title>BeniBela online</title>
+     
+    <link rel="stylesheet" href="css/guestbook.css"/>
+    <script type="text/javascript" src="js/guestbook.js"></script>
+    
+    <link rel="stylesheet" href="css/all.css">
+    <!--[if IE]><link rel="stylesheet" href="css/ie.css"><![endif]-->    
+    <!--[if lte IE 6]><link rel="stylesheet" href="css/lte_ie6.css"><![endif]-->
+    <link rel="stylesheet" media="print" href="css/print.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="only screen and (max-width: 560px)" href="css/mobile.css">
+</head>
+    <body style="background-color: #FFFFDD">
+<?php }?>
 <div id="topInputBox">
 <table id="secondInputBox"><tr><td id="inputRow">
 <?php 
@@ -178,3 +195,7 @@
   }
   mysql_close($db);
 ?></table></div>
+
+<?php if ($_REQUEST['thread']){?>
+</body>
+</html><?php }?>
