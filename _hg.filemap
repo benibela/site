@@ -4,4 +4,7 @@ exclude sites/web5/password.sh
 exclude sites/web5/koobtseug.xml
 exclude sites/web5/koobtseug_yrtne.xml
 exclude sites/web5/config.php
+exclude sites/web5/_publish/config.php
+exclude sites/web5/logs
+exclude sites/web5/pad
 rename sites/web5 .
