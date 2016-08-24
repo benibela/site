@@ -232,13 +232,13 @@ if (window.location.href.search(/lang=en/)!=-1) lang="en";
 if (window.location.href.search(/_en/)!=-1) lang="en";
 
 function insertAfter(parent, child, after){
-  if (after == parent.lastChild) parent.appendChild(child);
+  if (after == parent.lastChild || !after) parent.appendChild(child);
   else parent.insertBefore(child, after.nextSibling);
 }
 
 function jsinit(){
   pageFocus();
-  function makelinks(parent, id, previous){
+  function makelinks(parent, id, previous, center){
     var link = document.createElement("a");
     var box = document.createElement("div");
     link.innerText = lang == "de" ? "kommentieren" : "discuss";
@@ -250,11 +250,20 @@ function jsinit(){
       iframe.style.maxHeight = "30em";
       iframe.onload = function () {iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";}      
       iframe.src = (window.location.href.search(/benibela\.de/) != -1 ? "" : "http://benibela.de") + "/koobtseug_api.php?lang="+lang+"&thread=" + id;
-      insertAfter(parent, iframe, box);
+      var after = box;
+      while (after.nextElementSibling && after.nextElementSibling.tagName == "BR") after = after.nextElementSibling;
+      insertAfter(parent, iframe, after);
     }
-    box.style.textAlign = "right";
     box.appendChild(link)
+    box.style.textAlign = "right";
     insertAfter(parent, box, previous);
+    if (center) {
+      box.style.float = "right";
+      var rightfloat = 0;
+      var as = parent.getElementsByTagName("a");
+      if (as.length) rightfloat = as[as.length - 1].clientWidth;
+      box.style.marginRight = Math.floor(parent.clientWidth / 2 -  0.5 * box.clientWidth - rightfloat) + "px";
+    }
   }
   var newsdiv=document.getElementById("newslist");
   if (newsdiv) {
@@ -265,5 +274,12 @@ function jsinit(){
       lastnew = news[i];
     }
     if (lastnew) makelinks(newsdiv, lastnew.id, newsdiv.lastChild)
+  }
+  var entry = document.getElementsByClassName("long_desc_entry");
+  for (var i=0;i<entry.length;i++) {
+    var desc = entry[i].getElementsByClassName("long_desc_desc")[0];
+    nobr = desc.lastElementChild;
+    while (nobr.tagName == "BR") nobr = nobr.previousElementSibling;
+    makelinks(desc, entry[i].getElementsByTagName("a")[0].id, nobr, true)//float: right;    margin-right: 206px;
   }
 }
