@@ -101,6 +101,12 @@ function InlinePopupClosing(){
   }
 }
 
+function createElement(name, props){
+  var e = document.createElement(name);
+  for (var p in props) e[p] = props[p];
+  return e;
+}
+
 function openInlinePopup(destWidth, destHeight, href,idnr){
   if (inlinePopupDiv!=null) closeInlinePopupNOW();
     
@@ -236,25 +242,54 @@ function insertAfter(parent, child, after){
   else parent.insertBefore(child, after.nextSibling);
 }
 
+var shared = false;
 function jsinit(){
   pageFocus();
-  function makelinks(parent, id, previous, center){
-    var link = document.createElement("a");
+  function makelinks(parent, target, previous, center){
     var box = document.createElement("div");
+    var link = document.createElement("a");
+    var slash = document.createTextNode(" / ");
+    var linkshare = document.createElement("a");
     link.innerText = lang == "de" ? "kommentieren" : "discuss";
     link.href="#";
+    function openBox(clicked, insert){
+      clicked.style.display = "none";
+      if (slash.parentNode) slash.parentNode.removeChild(slash);
+      var after = box;
+      while (after.nextElementSibling && after.nextElementSibling.tagName == "BR") after = after.nextElementSibling;
+      insertAfter(parent, insert, after);
+    }
     link.onclick = function(){
-      link.style.display = "none";
       var iframe = document.createElement("iframe");
       iframe.style.width = "100%";
       iframe.style.maxHeight = "30em";
       iframe.onload = function () {iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";}      
-      iframe.src = (window.location.href.search(/benibela\.de/) != -1 ? "" : "http://benibela.de") + "/koobtseug_api.php?lang="+lang+"&thread=" + id;
-      var after = box;
-      while (after.nextElementSibling && after.nextElementSibling.tagName == "BR") after = after.nextElementSibling;
-      insertAfter(parent, iframe, after);
+      iframe.src = (window.location.href.search(/benibela\.de/) != -1 ? "" : "http://benibela.de") + "/koobtseug_api.php?lang="+lang+"&thread=" + target.id;
+      openBox(link,iframe);
     }
-    box.appendChild(link)
+    linkshare.innerText = lang == "de" ? "teilen" : "share";
+    linkshare.href="#";
+    linkshare.onclick = function(){
+      var temp = document.createElement("div");
+      temp.style.width = "100%";
+      temp.style.maxHeight = "30em";
+      var url;
+      var headLinks = document.getElementsByTagName("link");
+      for (var i=0;i<headLinks.length;i++) if (headLinks[i].rel == "canonical") url = headLinks[i].href;
+      if (!url) url = location.href.toString();
+      url = url.replace( /#.*$/,"");
+      url += "#" + target.id;
+      var title = (target.textContent != "\xA0" ? target : target.nextSibling ).textContent + " - " + (document.title.toString().replace( /-? *https?:.*$/, "") );
+      temp.innerHTML = '<div class="shariff" data-lang="'+lang+'" data-url="'+url+'" data-title="'+title+'"  data-services=\'["twitter", "facebook", "googleplus", "linkedin", "pinterest", "xing", "whatsapp",  "addthis", "tumblr",  "diaspora", "reddit", "stumbleupon", "threema", "weibo", "tencent-weibo", "qzone"]\'></div>';
+      //    [&quot;addthis&quot;,&quot;whatsapp&quot;,&quot;facebook&quot;,&quot;xing&quot;,&quot;pinterest&quot;,&quot;linkedin&quot;,&quot;tumblr&quot;,&quot;flattr&quot;,&quot;diaspora&quot;,&quot;reddit&quot;,&quot;stumbleupon&quot;,&quot;threema&quot;]
+      openBox(linkshare,temp);
+      if (!shared) {
+        shared = true;
+        document.head.appendChild(createElement("link", {"href": "/css/shariff.complete.css", "rel": "stylesheet" }));
+        document.body.appendChild(createElement("script", {"src": "/js/shariff.complete.js"}));
+      } else temp.firstChild.shariff = new Shariff(temp.firstChild );
+    }
+    box.appendChild(link); box.appendChild(slash); box.appendChild(linkshare); 
     box.style.textAlign = "right";
     insertAfter(parent, box, previous);
     if (center) {
@@ -262,7 +297,7 @@ function jsinit(){
       var rightfloat = 0;
       var as = parent.getElementsByTagName("a");
       if (as.length) rightfloat = as[as.length - 1].clientWidth;
-      box.style.marginRight = Math.floor(parent.clientWidth / 2 -  0.5 * box.clientWidth - rightfloat) + "px";
+      box.style.marginRight = Math.floor(parent.clientWidth / 2 -  box.clientWidth - rightfloat) + "px";
     }
   }
   var newsdiv=document.getElementById("newslist");
@@ -270,16 +305,16 @@ function jsinit(){
     var news = newsdiv.getElementsByTagName("h3");
     var lastnew = null;
     for (var i=0;i<news.length;i++) {
-      if (lastnew) makelinks(newsdiv, lastnew.id, news[i].previousSibling);
+      if (lastnew) makelinks(newsdiv, lastnew, news[i].previousSibling);
       lastnew = news[i];
     }
-    if (lastnew) makelinks(newsdiv, lastnew.id, newsdiv.lastChild)
+    if (lastnew) makelinks(newsdiv, lastnew, newsdiv.lastChild)
   }
   var entry = document.getElementsByClassName("long_desc_entry");
   for (var i=0;i<entry.length;i++) {
     var desc = entry[i].getElementsByClassName("long_desc_desc")[0];
     nobr = desc.lastElementChild;
     while (nobr.tagName == "BR") nobr = nobr.previousElementSibling;
-    makelinks(desc, entry[i].getElementsByTagName("a")[0].id, nobr, true)//float: right;    margin-right: 206px;
+    makelinks(desc, entry[i].getElementsByTagName("a")[0], nobr, true)//float: right;    margin-right: 206px;
   }
 }
