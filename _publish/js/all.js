@@ -247,11 +247,9 @@ function jsinit(){
   pageFocus();
   function makelinks(parent, target, previous, center){
     var box = document.createElement("div");
-    var link = document.createElement("a");
+    var link = createElement("a", {"innerText": lang == "de" ? "kommentieren" : "discuss", "href": "#"});
     var slash = document.createTextNode(" / ");
-    var linkshare = document.createElement("a");
-    link.innerText = lang == "de" ? "kommentieren" : "discuss";
-    link.href="#";
+    var linkshare = createElement("a", {"innerText": lang == "de" ? "teilen" : "share", "href": "#"});
     function openBox(clicked, insert){
       clicked.style.display = "none";
       if (slash.parentNode) slash.parentNode.removeChild(slash);
@@ -260,15 +258,14 @@ function jsinit(){
       insertAfter(parent, insert, after);
     }
     link.onclick = function(){
-      var iframe = document.createElement("iframe");
+      var iframe = createElement("iframe", {
+        "onload": function () {iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";},
+        "src": (window.location.href.search(/benibela\.de/) != -1 ? "" : "http://benibela.de") + "/koobtseug_api.php?lang="+lang+"&thread=" + target.id;
+      });
       iframe.style.width = "100%";
       iframe.style.maxHeight = "30em";
-      iframe.onload = function () {iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";}      
-      iframe.src = (window.location.href.search(/benibela\.de/) != -1 ? "" : "http://benibela.de") + "/koobtseug_api.php?lang="+lang+"&thread=" + target.id;
       openBox(link,iframe);
     }
-    linkshare.innerText = lang == "de" ? "teilen" : "share";
-    linkshare.href="#";
     linkshare.onclick = function(){
       var temp = document.createElement("div");
       temp.style.width = "100%";
