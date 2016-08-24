@@ -260,7 +260,7 @@ function jsinit(){
     link.onclick = function(){
       var iframe = createElement("iframe", {
         "onload": function () {iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";},
-        "src": (window.location.href.search(/benibela\.de/) != -1 ? "" : "http://benibela.de") + "/koobtseug_api.php?lang="+lang+"&thread=" + target.id;
+        "src": (window.location.href.search(/benibela\.de/) != -1 ? "" : "http://benibela.de") + "/koobtseug_api.php?lang="+lang+"&thread=" + target.id
       });
       iframe.style.width = "100%";
       iframe.style.maxHeight = "30em";
