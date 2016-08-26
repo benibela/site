@@ -243,6 +243,7 @@ function insertAfter(parent, child, after){
 }
 
 var shared = false;
+//var hascenterstyle = false;
 function jsinit(){
   pageFocus();
   function makelinks(parent, target, previous, center){
@@ -287,15 +288,19 @@ function jsinit(){
       } else temp.firstChild.shariff = new Shariff(temp.firstChild );
     }
     box.appendChild(link); box.appendChild(slash); box.appendChild(linkshare); 
-    box.style.textAlign = "right";
     insertAfter(parent, box, previous);
     if (center) {
-      box.style.float = "right";
-      var rightfloat = 0;
-      var as = parent.getElementsByTagName("a");
-      if (as.length) rightfloat = as[as.length - 1].clientWidth;
-      box.style.marginRight = Math.floor(parent.clientWidth / 2 -  box.clientWidth - rightfloat) + "px";
-    }
+      /*if (!hascenterstyle) {
+        hascenterstyle = true;
+        var as = parent.getElementsByClassName("uplink");
+        var rightfloat = 0;
+        if (as.length) rightfloat = as[as.length - 1].clientWidth;
+        document.head.appendChild(createElement("style", {"textContent": (
+          ".socialboxcenter { float: right; margin-right: "+Math.floor(parent.clientWidth / 2 -  box.clientWidth - rightfloat) + "px }")
+        }));
+      }*/
+      box.className = "socialbox socialboxcenter";
+    } else box.className = "socialbox";
   }
   var newsdiv=document.getElementById("newslist");
   if (newsdiv) {

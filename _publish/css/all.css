@@ -296,6 +296,7 @@ th{
   margin-left: 5px;
   margin-top: 10px;
   margin-right: 5px;
+  max-width: 100%;
 }
 
 
@@ -566,5 +567,11 @@ h4{margin-top:1em;}
   
 }
 
+.socialbox { text-align: right;  }
+.socialbox { float: right; margin-right: 10% }
+
+.uplink { float:right }
+
 .mobile-navigation { display: none }
+.largetable { max-width: 100%; overflow-x: auto }
 

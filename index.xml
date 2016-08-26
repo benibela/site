@@ -67,7 +67,7 @@
         
         
         So to summarize the supported notations:
-        
+        <div class="largetable">
         <table>
           <thead><tr><th>Notation</th><th>XQuery 3.1</th><th>JSONiq s.a.</th><th>JSONiq ext.</th><th>Xidel</th></tr></thead>
           <tr><td colspan="5">Object access</td></tr>
@@ -92,7 +92,7 @@
           <tr><td><code>array {value1, value2, ...}</code></td><td class="yes">yes</td><td class="no">no</td><td class="no">no</td><td class="no">no</td></tr>
           
           
-                  </table>
+        </table></div>
         <br/>
         
         Btw, another advantage of my new webpage backend is that Xidel can dump all these crappy news in an RSS feed <a auto="*rss"/>.
@@ -378,7 +378,7 @@ If you have a variable str: string, there are three popular ways to convert it t
 <p>
 If you don't want to bother with the technical details, <i>you can always use <code>pchar(str)</code></i> and treat the result as a read-only pchar. But this is not the most efficient way to convert the string, and the following table summarizes the advantages (always green) and disadvantages (always red) of the other methods:</p>
 
-
+<div class="largetable">
 <table style="margin-left:auto;margin-right:auto">
 <thead>
 <tr><td class="invisible"></td><td>Example</td><td>No copy</td><td>Branch free</td><td>Nil aware</td><td>Range safe</td><td>$H- safe</td></tr>
@@ -388,7 +388,7 @@ If you don't want to bother with the technical details, <i>you can always use <c
 <tr><td>Array like</td> <td class="code">p := @str[1]</td> <td class="yes">yes</td> <td class="yesno">without $R</td><td class="no">no</td> <td class="no">no</td> <td class="no">no</td> </tr>
 <tr><td>Indirect</td> <td><code>p := pchar(pointer(str))</code></td> <td class="yes">yes</td><td class="yes">yes</td> <td class="no">no</td> <td class="yes">yes</td> <td class="yes">yes</td> </tr>
 </tbody>
-</table>
+</table></div>
 
 <p>
 The meaning of the columns is:
@@ -433,13 +433,19 @@ Because it is much slower than the two other methods, since <code>pchar(str)</co
 So the check requires three additional instructions, and one is a jump instruction which will be executed iff the string is not empty.</p>
 
 Benchmarking (100000000 * 8 times repeated) results in:
+<div class="largetable">
 <table style="text-align:center; margin-left:auto;margin-right:auto">
+<thead>
 <tr><td class="invisible"></td><td colspan="2">non-empty string</td><td colspan="2">empty string</td></tr>
 <tr><td class="invisible"></td><td>$R-</td><td>$R+</td><td>$R-</td><td>$R+</td></tr>
+</thead>
+<tbody>
 <tr><td style="text-align:left">pchar(str)</td><td colspan="2">894 ms</td><td colspan="2">496 ms</td></tr>
 <tr><td style="text-align:left">pchar(pointer(str))</td><td colspan="2">325 ms</td><td colspan="2">325 ms, but wrong result</td></tr>
 <tr><td style="text-align:left">@str[1]</td><td>325 ms</td><td>4616 ms</td><td>325 ms, but wrong result</td><td>crash</td></tr>
+</tbody>
 </table>
+</div>
 <p>
 This shows <code>pchar(pointer(str))</code> is more than twice as fast than <code>pchar(str)</code> in the more common use case of non-empty strings.</p>
 

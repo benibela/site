@@ -12,6 +12,7 @@
     <link rel="stylesheet" media="print" href="css/print.css"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" media="only screen and (max-width: 560px)" href="css/mobile.css">
+    <style>html, body {overflow-y: auto}</style>
 </head>
     <body style="background-color: #FFFFDD">
 <?php }?>

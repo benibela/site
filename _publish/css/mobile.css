@@ -91,3 +91,8 @@
   text-decoration: none;
   left: 10em;
 }
+
+.uplink { display: block; float: none; text-align: right; margin-top: 0.5em; margin-bottom: 0.5em;  }
+
+.socialbox { display:block; float: none }
+.socialboxcenter { margin-right: 0 }
