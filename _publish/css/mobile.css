@@ -1,6 +1,6 @@
 #outer_content {      
   top:5em;            /* Beginn des Dokumenttextes in nicht IE-Browsern */
-  bottom:2em; 
+  bottom:12px; 
   right: 1em;
   left: 1em;
 }
@@ -59,7 +59,7 @@
   right: 32px;
 }*/
 #border_left {
-  bottom: 2em;
+  bottom: 12px;
   height: auto
 }	 
 
