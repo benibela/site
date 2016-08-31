@@ -11,8 +11,8 @@
     <id>sirdsgl</id>
     <file>sirds_gl.7z</file>
     <file title="Dokumentation">sirds_doc.pdf</file>
-    <description_80 language="de">Ein hardwarebeschleunigter Single Image (Random Dot) Stereogram Renderer.</description_80>
-    <description_80 language="en">A Single Image (Random Dot) Stereogram Renderer using hardware acceleration.</description_80>
+    <description_80 language="de">Ein hardware&#173;beschleunigter Single Image (Random Dot) Stereo&#173;gram Renderer.</description_80>
+    <description_80 language="en">A Single Image (Random Dot) Stereo&#173;gram Renderer using hardware acceleration.</description_80>
     <content language="de">Dieser Renderer demonstriert, dass man Single Image (Random Dot) Stereograms mit Shadern in Echtzeit berechnen kann. Solche Stereogramme sind 3D-Bilder mit echter Tiefe, die man ohne jegliche Hilfsmittel durch bloßes Schielen bzw. Üben  betrachten kann.   Das Programm enthält ein paar verschiedene Objekte und Texturen, und  benötigt OpenGL, Java sowie lwjgl, um zu funktionieren.</content>
     <content language="en">A Single Image (Random Dot) Stereogram is a single image which you can see as real 3d inclusive depth effect just by crossing your eyes. This program creates such SIRDS in realtime using hardware accelerated shaders. It contains some different textures and objects, and it requires OpenGL, Java and lwjgl. </content>
     <screenshot>
@@ -35,7 +35,7 @@
     <file>webcamucp.7z</file>
     <github>webcam-ucp</github>
     <year>2010</year>
-    <description_80 language="de">3D-Anaglyphenrenderer, der ein Objekt betrachterzentriert rendert und den  Betrachter dazu per Webcam trackt.</description_80>
+    <description_80 language="de">3D-Anaglyphen&#173;renderer, der ein Objekt betrachter&#173;zentriert rendert und den  Betrachter dazu per Webcam trackt.</description_80>
     <description_80 language="en">A 3d anaglyph renderer which tracks the user with a webcam and then renders an object with a user centered projection.</description_80>
     <content language="de">Dieses Programm rendern ein paar 3D-Objekte in Anaglyphendarstellung (rot/cyan) mit betrachterzentrierter Projektion. Dazu wird der Benutzer per  Webcam gefilmt und in jedem Frame, der röteste und cyanste Bereich gesucht. Daraus wird die Position der 3D-Brille ermittelt und dann die Szene aus Sicht dieser Position gerendert. Der Download enthält den Quellcode und ein Linux amd64 Binary.</content>
     <content language="en">This program renders some 3d objects as anaglyphs (red/cyan) with user centered projection. The user or better the 3d glasses are tracked by a webcam, by searching the redest/cyanest area in every frame. The download contains the source and a linux amd64 binary. </content>
@@ -48,7 +48,7 @@
   <download> 
     <title>64K 3D Starwars Intro</title>
     <file>starwars.exe</file>
-    <description_80 language="de">Ein kleiner Film zum Thema Star Wars, in dem ein Raumschiffkampf gezeigt wird.</description_80>
+    <description_80 language="de">Ein kleiner Film zum Thema Star Wars, in dem ein Raumschiff&#173;kampf gezeigt wird.</description_80>
     <description_80 language="en">A small movie concerning Star Wars where you see a space ship fight.</description_80>
     <content language="de">Dieses Intro wurde für einen Wettbewerb programmiert (mit leider zwei Teilnehmern, wie am Abgabetermin bekannt wurde), bei dem es den ersten Platz erhielt. Man sieht einen Angriff auf Coruscant, für den ein Ablenkungsmanöver über Praesitlyn ausgeführt wird. Es ist nur 40KB groß, braucht aber für die Soundausgabe <a href="http://www.fmod.org">FMOD</a>, und Windows. </content>
     <content language="en">This intro was created for a contest (sadly only two people took part in it) and it came on place one. You can see an attack on Coruscant, for which a bluff attack is maked at Praesitlyn. It is only 40KB big, but it needs <a href="http://www.fmod.org">FMOD</a> for sounds, and Windows. </content>
@@ -59,7 +59,7 @@
     <title language="de">Schnee</title>
     <title language="en">Snow</title>
     <file>schnee.exe</file>
-    <description_80 language="de">Ein kleines Programm, das es auf dem Computerbildschirm schneien lässt.</description_80>
+    <description_80 language="de">Ein kleines Programm, das es auf dem Computer&#173;bildschirm schneien lässt.</description_80>
     <description_80 language="en">A small program which draws snow on the screen.</description_80>
     <size_KB>121</size_KB>
     <content language="de">Dieses Programm zeichnet fallenden Schnee auf dem Bildschirm.<br/>
@@ -72,15 +72,15 @@ You can only stop it with the task manager. </content>
     <title>RegStealth 0.01</title>
     <file>regstealth.zip</file>
     <year><!--?-->2007 - 2008</year>
-    <description_80 language="de">RegStealth ersetzt die Windowsregistry durch xml-Dateien.</description_80>
-    <description_80 language="en">RegStealth replaces the registry of Windows with xml-files.</description_80>
+    <description_80 language="de">RegStealth ersetzt die Windows&#173;registry durch XML-Dateien.</description_80>
+    <description_80 language="en">RegStealth replaces the registry of Windows with XML-files.</description_80>
     <keywords>registry, xml</keywords>
 <!--    <language>(de), (en)</language>
     <payment>Freeware</payment>
     <source>GPL</source>-->
     <size_KB>800</size_KB>
-    <content language="de">Mittels IAT-Hooking fängt dieses Programm alle Zugriffe auf die Windowsregistry ab und leitet sie in xml-Dateien um. Momentan ist es allerdings noch nicht vollfunktionsfähig, zeigt aber das es  so funktionieren kann. Man benötigt mindestens W2k. Momentan hat es folgende Eigenschaften:</content>
-    <content language="en">Using IAT-hooking RegStealth captures every registry access and passes it to xml-files. The current version is merely a proof of concept. You need W2k to use it. The properties are:</content>
+    <content language="de">Mittels IAT-Hooking fängt dieses Programm alle Zugriffe aller Programme auf die Windowsregistry ab und leitet sie in XML-Dateien um. Momentan ist es allerdings noch nicht vollfunktionsfähig, zeigt aber dass es so funktionieren kann. Man benötigt mindestens W2k. Momentan hat es folgende Eigenschaften:</content>
+    <content language="en">Using IAT-hooking RegStealth captures every registry access of every program and passes it to XML-files. The current version is merely a proof of concept. You need at least W2k to use it. Its features are:</content>
     <features language="de">
       <feature>Die meisten üblichen Registryfunktionen werden ersetzt.</feature>
       <feature>Original Windowsprogramme werden ignoriert.</feature>
@@ -98,7 +98,7 @@ You can only stop it with the task manager. </content>
   </download>
 
   <download> 
-    <title>Molekülsimulator</title>
+    <title>Molekül&#173;simulator</title>
     <file>moleculesim.zip</file>
     <year>2007</year>
     <description_80 language="de">Sollte die Struktur eines Moleküles berechnen</description_80>
@@ -116,7 +116,7 @@ You can only stop it with the task manager. </content>
     <title>FileSim</title>
     <file>filesim.zip</file>
     <year>2004</year>
-    <description_80 language="de">Ein Dateisimulator, der den Inhalt eines Laufwerks auf einem anderen anzeigt. (nur W9x und ME)</description_80>
+    <description_80 language="de">Ein Datei&#173;simulator, der den Inhalt eines Laufwerks auf einem anderen anzeigt. (nur W9x und ME)</description_80>
     <description_80 language="en">A file simulator which maps a drive on another. (works only under W9x and ME)</description_80>
 <!--    <language>(de), en</language>
     <payment>Freeware</payment>

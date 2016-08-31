@@ -11,7 +11,7 @@ The language codes "de" and "en" specify which languages are supported. If one o
   <download> 
     <title>VideLibri</title>
     <id>videlibri</id>
-    <description_80 language="de">Eine Bibliothek-App zum Zugriff auf sein Ausleihkonto bei verschiedenen Bibliotheken und sonstige Katalogfunktionen</description_80>
+    <description_80 language="de">Eine Bibliothek-App zum Zugriff auf sein Ausleih&#173;konto bei verschiedenen Bibliotheken und auf sonstige Katalog&#173;funktionen</description_80>
     <description_80 language="en">An app to manage books lend from libraries and access other library catalog functions</description_80>
     <keywords language="de">Bücherei, Bibliothek, Stadtbücherei, Universitätbibliothek, Landesbibliothek, Fachhochschulbibliothek</keywords>
     <keywords language="en">library</keywords>
@@ -34,7 +34,7 @@ The language codes "de" and "en" specify which languages are supported. If one o
   <download> 
     <title>Xidel</title>
     <id>xidel</id>
-    <description_80 language="de">Ein Kommandozeilen-XPath/XQuery/JSONiq-Interpreter, um HTML/XML/JSON-Daten von Webseiten zu verarbeiten</description_80>
+    <description_80 language="de">Ein Kommando&#173;zeilen-XPath/XQuery/JSONiq-Interpreter, um HTML/XML/JSON-Daten von Web&#173;seiten zu verarbeiten</description_80>
     <description_80 language="en">A command line XPath/XQuery/JSONiq interpreter to process HTML/XML/JSON from webpages or locally</description_80>
     <language>en</language>
     <payment>Freeware</payment>
@@ -146,7 +146,7 @@ APIV hat folgende Features:</content>
     <id>sunsimulator</id>
     <year>2009</year>
     <github>sun-simulator</github>
-    <description_80 language="de">Ein Programm, das die Helligkeit und den Farbton des Bildschirms gemäß dem natürlichen Tagesverlauf steuert</description_80>
+    <description_80 language="de">Ein Programm, das die Helligkeit und den Farb&#173;ton des Bildschirms gemäß dem natürlichen Tages&#173;verlauf steuern soll</description_80>
     <description_80 language="en">This program  changes the brightness and color of the monitor according to the time and date</description_80>
     <language>de, en</language>
     <payment>Freeware</payment>
@@ -186,7 +186,7 @@ APIV hat folgende Features:</content>
     <title>JAXMLP</title>
     <id>jaxmlp</id>
     <file>jaxmlparser.zip</file>
-    <description_80 language="de">Eine XML Umwandlungssprache.</description_80>
+    <description_80 language="de">Eine XML Umwandlungs&#173;sprache.</description_80>
     <description_80 language="en">Just another XML Processor language.</description_80>
     <keywords>XML, engine</keywords>
     <language>(de), en</language>
@@ -217,14 +217,14 @@ APIV hat folgende Features:</content>
     </features>
   </download>
   <download> 
-    <title>SimplifyDiff</title>
+    <title>Simplify&#173;Diff</title>
     <id>simplifydiff</id>
     <github>simplify-diff</github>
     <file title="Windows">simplifydiff.zip</file>
     <file title="Linux">simplifydiff_linux.zip</file>
     <file title="Source">source/simplifydiff.zip</file>
-    <description_80 language="de">SimplifyDiff entfernt alle unnötigen Daten wie Whitespace-Änderungen und Duplikate aus einem Diff.</description_80>
-    <description_80 language="en">SimplifyDiff remove all unnecessary lines from a diff file, e.g. modified white space or duplicates.</description_80>
+    <description_80 language="de">Simplify&#173;Diff entfernt alle unnötigen Daten wie Whitespace-Änderungen und Duplikate aus einem Diff.</description_80>
+    <description_80 language="en">Simplify&#173;Diff remove all unnecessary lines from a diff file, e.g. modified white space or duplicates.</description_80>
     <keywords>diff, whitespace</keywords>
     <language>en</language>
     <payment>Freeware</payment>
@@ -256,7 +256,7 @@ APIV hat folgende Features:</content>
     <title>Regexgen</title>
     <file>regexgen.zip</file>
     <github>regexgen</github>
-    <description_80 language="de">Ein inverser Regexgenerator, der für einen regulären Ausdruck alle Strings berechnet, die diesen Ausdruck erfüllen</description_80>
+    <description_80 language="de">Ein inverser Regex&#173;generator, der für einen regulären Ausdruck alle Strings berechnet, die diesen Ausdruck erfüllen</description_80>
     <description_80 language="en">An inverse regex matcher that generates all strings which match a given regular expression </description_80>
     <language>en</language>
     <payment>Freeware</payment>
@@ -277,8 +277,8 @@ It is a C++ command line program, runs on Linux (binary is for 64 bit only) and 
     <file>bbmultiplot.zip</file>
     <file title="Source">source/bbmultiplot.zip</file>
     <id>bbmultiplot</id>
-    <description_80 language="de">Plotter für multivariable Funktionen, mit symbolischer Ableitungsberechnung </description_80>
-    <description_80 language="en">Plotter rendering multivariate functions with their symbolic derivative </description_80>
+    <description_80 language="de">Plotter für multi&#173;variable Funktionen, mit symbolischer Ableitungs&#173;berechnung </description_80>
+    <description_80 language="en">Plotter rendering multi&#173;variate functions with their symbolic derivative </description_80>
     <language>de, (en)</language>
     <payment>Freeware</payment>
     <source>open</source>
@@ -296,7 +296,7 @@ It is a C++ command line program, runs on Linux (binary is for 64 bit only) and 
   </download>
 
   <download> 
-    <title>ChiffrenDecoder</title>
+    <title>Chiffren&#173;Decoder</title>
     <file>cipherdecoder.zip</file>
     <id>cipherdecoder</id>
     <description_80 language="de">Decoder für triviale Chiffren </description_80>
@@ -331,7 +331,7 @@ It is a C++ command line program, runs on Linux (binary is for 64 bit only) and 
     <title>Logics</title>
     <file>logics.zip</file>
    <!--?--> <year>2002 - 2003</year>
-    <description_80 language="de">Ein Simulator für (den logischen Aspekt von) Gatterschaltungen.</description_80>
+    <description_80 language="de">Ein Simulator für (den logischen Aspekt von) Gatter&#173;schaltungen.</description_80>
     <description_80 language="en">A simulator of (the logic side of) gate circuits.</description_80>
     <language>(de), en</language>
     <payment>Freeware</payment>
@@ -349,9 +349,9 @@ In addition to the program there are two example circuits, a flip-flop memory an
 The GPL-licensed <a href="bin/tools/source/logics.zip">source (23 KB)</a> is a Delphi project</content>
   </download>
   <download> 
-    <title>FileParser</title>
+    <title>File&#173;Parser</title>
     <file>fileparser.zip</file>
-    <description_80 language="de">Ein einfacher Parser, der Schlüsselworte in mehreren Dateien ersetzt.</description_80>
+    <description_80 language="de">Ein einfacher Parser, der Schlüssel&#173;wörter in mehreren Dateien ersetzt.</description_80>
     <description_80 language="en">A simple parser which replaces keywords in some files.</description_80>
     <language>(de), en</language>
     <payment>Freeware</payment>
@@ -420,7 +420,7 @@ They are like the GST-Builder bilingual and have a German and a English version.
   <download> 
     <title>MatheFix</title>
     <file>mathefix.zip</file>
-    <description_80 language="de">Ein Mathematikprogramm zu Primzahlen und Teilbarkeit.</description_80>
+    <description_80 language="de">Ein Mathe&#173;matik&#173;programm zu Primzahlen und Teil&#173;bar&#173;keit.</description_80>
     <description_80 language="en">A mathematics program about divisible and prime numbers</description_80>
     <language>de</language>
     <payment>Freeware</payment>
@@ -447,7 +447,7 @@ They are like the GST-Builder bilingual and have a German and a English version.
   <download> 
     <title>TVB</title>
     <file>tvb.zip</file>
-    <description_80 language="de">Ein kleines Malprogramm, das Bilder automatisch als Textur gekachelt darstellt.</description_80>
+    <description_80 language="de">Ein kleines Mal&#173;programm, das Bilder automatisch als Textur gekachelt darstellt.</description_80>
     <description_80 language="en">A small paint program which displays images tiled</description_80>
     <language>de</language>
     <payment>Freeware</payment>

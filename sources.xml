@@ -12,7 +12,7 @@
     <file>internettools.zip</file>
     <id>internettools</id>
     <github>internettools</github>
-    <description_80 language="de">Ein XPath 2/3/XQuery 1/3/JSONiq-Interpreter, ein Pattern-Matcher für HTML/XML-Templates, eine Autoupdate-Klasse und einen HTTP-Verbindungswrapper</description_80>
+    <description_80 language="de">Ein XPath 2/3/XQuery 1/3/JSONiq-Interpreter, ein Pattern-Matcher für HTML/XML-Templates, eine Auto&#173;update-Klasse und einen HTTP-Verbindungswrapper</description_80>
     <description_80 language="en">A XPath 2/3/XQuery 1/3/JSONiq engine, a pattern matcher for HTML/XML, an auto update class and a HTTP connection wrapper.</description_80>
     <prog-language>FPC</prog-language>
     <source-license>GPL</source-license>
@@ -149,11 +149,11 @@
   
   
   <download> 
-    <title>Farbauswahldialog</title>
+    <title>Farb&#173;auswahl&#173;dialog</title>
     <file>farbe.zip</file>
     <id>farbe</id>
     <github>color-dialog</github>
-    <description_80 language="de">Ein Farbauswahldialog mit RGB- und HLS-Auswahlmöglichkeiten</description_80>
+    <description_80 language="de">Ein Farb&#173;auswahl&#173;dialog mit RGB- und HLS-Auswahl&#173;möglichkeiten</description_80>
     <description_80 language="en">A color select dialog with HLS- and RGB-mode.</description_80>
     <prog-language>Delphi</prog-language>
     <source-license>GPL</source-license>
@@ -190,12 +190,12 @@
   
 
   <download> 
-    <title>TCommandLineReader</title>
+    <title>TCommand&#173;Line&#173;Reader</title>
     <link type="onlinedocu"/>
     <id>rcmdline</id>
     <file>rcmdline.zip</file>
     <github>rcmdline</github>
-    <description_80 language="de">Eine Unit zum Lesen von Kommandozeilenparametern</description_80>
+    <description_80 language="de">Eine Unit zum Lesen von Kommando&#173;zeilen&#173;parametern</description_80>
     <description_80 language="en">An unit for parsing of command line parameters</description_80>
     <prog-language>FPC, Delphi</prog-language>
     <source-license>GPL</source-license>
@@ -204,22 +204,24 @@
     Vor der Abfrage von Parametern, müssen alle erlaubten Parameter deklariert werden. Dadurch kann vom Parser überprüft werden, dass der Benutzer nur erlaubte Parameter und nur richtige Parameterwerte (z.B.: Int vs. String) verwendet. Außerdem kann so bei Angabe eines falschen Parameters automatisch eine Hilfsliste aller unterstützenden Parameter angezeigt werden. Dies verhindert umgekehrt, dass es geheime, undokumentiere Optionen gibt.<br/>
     Es gibt drei verschiedene Versionen des Parsers, die ersten beiden lesen die Argumente von der Kommandozeile, und zeigen die Hilfe auf stdout bzw. in einer Messagebox an. Die dritte Version (nur fpc) läuft als CGI-Anwendung und nimmt die Argumente über http GET/POST-Anfragen entgegen.<br/><br/>
     Zum Vergleich sind hier die Ausgaben meiner Klasse und der Standard-Kommandozeilenfunktionen bei Aufruf des Programms mit den Parameter <code>'" a "'</code> :
-    <table><tr><th>System</th><th>TCommandLineReader</th><th>ParamStr</th><th>string(cmdline)</th></tr>
+    <div class="largetable">
+    <table><thead><tr><th>System</th><th>TCommandLineReader</th><th>ParamStr</th><th>string(cmdline)</th></tr></thead>
     <tr><td>Windows (Delphi 4)</td><td class="yes"><code>" a "</code></td><td class="no"><code>' a '</code></td><td class="yesno"><code>"executable" '" a "'</code></td></tr>
     <tr><td>Windows (fpc 2.6)</td><td class="yes"><code>" a "</code></td><td class="no"><code>' a '</code></td><td class="yesno"><code>executable '" a "'</code></td></tr>
     <tr><td>Linux/bash (fpc 2.6)</td><td class="yes"><code>" a "</code></td><td class="yes"><code>" a "</code></td><td class="no"><code>executable "" a ""</code></td></tr>
-    </table>
-    <br/>
+    </table></div>
+        <br/>
 Die Features von rcmdline sind:<br/></content>
     <content language="en">This is a command line parser working with Delphi as well as with Free Pascal, and on Windows and Linux.<br/>
     Before you can read the command line arguments, all allowed arguments need to be declared. So the parser can ensure that the user only uses allowed arguments and each given argument has the correct type (e.g. int or string). Furthermore, the parser can automatically generate a help summary displaying all allowed arguments including a description. This again ensures that there are no hidden, undocumented command line arguments. <br/>
     There are three different versions of the parser. The first two read the arguments from the command line and show the help list of all allowed arguments on stdout or respectively in a message box. The third version (fpc only) runs as cgi service and reads the argument from get/post requests.<br/><br/>
 Here is a nice comparison between TCommandLineReader and the standard pascal command line functions, when the program is called as <code>executable '" a "'</code>
- <table><tr><th>System</th><th>TCommandLineReader</th><th>ParamStr</th><th>string(cmdline)</th></tr>
+  <div class="largetable">
+ <table><thead><tr><th>System</th><th>TCommandLineReader</th><th>ParamStr</th><th>string(cmdline)</th></tr></thead>
     <tr><td>Windows (Delphi 4)</td><td class="yes"><code>" a "</code></td><td class="no"><code>' a '</code></td><td class="yesno"><code>"executable" '" a "'</code></td></tr>
     <tr><td>Windows (fpc 2.6)</td><td class="yes"><code>" a "</code></td><td class="no"><code>' a '</code></td><td class="yesno"><code>executable '" a "'</code></td></tr>
     <tr><td>Linux/bash (fpc 2.6)</td><td class="yes"><code>" a "</code></td><td class="yes"><code>" a "</code></td><td class="no"><code>executable "" a ""</code></td></tr>
-    </table>
+    </table></div>
 The feature list of rcmdline is:<br/><br/></content>
     <features language="de">
       <feature>Automatische Typumwandlung in den angegeben Typen</feature>
@@ -251,7 +253,7 @@ The feature list of rcmdline is:<br/><br/></content>
     <file>bigdecimalmath.zip</file>
     <id>bigdecimalmath</id>
     <github>bigdecimalmath</github>
-    <description_80 language="de">Funktionen zum Rechnen mit beliebig genauen Dezimalzahlen</description_80>
+    <description_80 language="de">Funktionen zum Rechnen mit beliebig genauen Dezimal&#173;zahlen</description_80>
     <description_80 language="en">An arbitrary precision bcd floating point library</description_80>
     <prog-language>FPC</prog-language>
     <source-license>(LC)LGPL</source-license>
@@ -311,7 +313,7 @@ The feature list of rcmdline is:<br/><br/></content>
     <id>diagram</id>
     <github>diagram</github>
     <link type="onlinedocu"/>
-    <description_80 language="de">Eine Diagrammkomponente, basierend auf einem Model/View-System</description_80>
+    <description_80 language="de">Eine Diagramm&#173;komponente, basierend auf einem Model/View-System</description_80>
     <description_80 language="en">A diagram component based on a model/view system.</description_80>
     <prog-language>FPC/Lazarus</prog-language>
     <source-license>GPL</source-license>
@@ -424,7 +426,7 @@ The most important features are:</content>
 
   
   <download>
-    <title>Diffreader</title>
+    <title>Diff&#173;reader</title>
     <file>diffreader.zip</file>
     <id>diffreader</id>
     <year>2009</year>
@@ -450,7 +452,7 @@ The most important features are:</content>
   <download> 
     <title>TCVirus</title>
     <file>cvirus.zip</file>
-    <description_80 language="de">Eine Unit/Komponente zum Entwickeln von Scherzprogrammen</description_80>
+    <description_80 language="de">Eine Unit/Komponente zum Entwickeln von Scherz&#173;programmen</description_80>
     <description_80 language="en">An unit/component for the development of joke programs</description_80>
     <prog-language>Delphi</prog-language>
     <source-license>MPL, GPL</source-license>
@@ -479,9 +481,9 @@ The most important features are:</content>
 
 
   <download> 
-    <title>TAutoUpdater</title>
+    <title>TAuto&#173;Updater</title>
     <file>autoupdate.zip</file>
-    <description_80 language="de">Eine Unit für ein automatisches Progammupdate</description_80>
+    <description_80 language="de">Eine Unit für ein automatisches Progamm&#173;update</description_80>
     <description_80 language="en">An unit for an automatically update</description_80>
     <prog-language>FPC</prog-language>
     <source-license>GPL</source-license>
@@ -505,7 +507,7 @@ To use the class you need a wininet unit containing the windows internet functio
     </features>
   </download>
   <download> 
-    <title>SimpleBrowser</title>
+    <title>Simple&#173;Browser</title>
     <file>simplebrowser.zip</file>
     <description_80 language="de">Ein kleiner, IE-basierter Browser</description_80>
     <description_80 language="en">A simple IE-based browser</description_80>
@@ -519,10 +521,10 @@ Für einen Normaluser ist er vollkommen nutzlos, sein Aussehen kann aber beim Au
 It is completely useless for a normal user, but you can use it to implement a browser for a certain web page in your program. The appearance and behavior can be controlled over command line switches, so it allows for example restricted access.</content>
   </download>
   <download> 
-    <title>Huffmankomprimierer</title>
+    <title>Huffman&#173;komprimierer</title>
     <file>huffman.zip</file>
     <year>2003</year> <!--?-->
-    <description_80 language="de">Eine Funktionssammlung für Huffman(de-)komprimierung.</description_80>
+    <description_80 language="de">Eine Funktions&#173;sammlung für Huffman(de-)komprimierung.</description_80>
     <description_80 language="en">A collection of functions for Huffman (de-)compression.</description_80>
     <prog-language>Delphi</prog-language>
     <source-license>MPL, GPL</source-license>

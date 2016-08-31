@@ -7,13 +7,13 @@
   <content language="en">You can find components for Delphi and Lazarus on this page. Each of them is open source. You can use, change and distribute all sources published under the terms of the MPL, GPL or BSD-license in any way you want. Although in the case of the MPL or GPL you must publish changes and you must not change the license. In the case of the GPL you must also publish extensions and the source of all (your) programs using it under the terms of the GPL.<br/>If any of the files is published under the terms of more than one license, you can choose one of them. <br/> You can find more and legally valid information in the source files.</content>
   <download-dir>bin/components</download-dir>
   <download> 
-    <title>TTreeListView</title>
+    <title>TTree&#173;List&#173;View</title>
     <link type="onlinedocu"/>
     <file>treelistview.zip</file>
     <id>treelistview</id>
     <github>treelistview</github>
-    <description_80 language="de">Eine Verbindung von TListView und TTreeView, die einen Baum mit Spalten anzeigt.</description_80>
-    <description_80 language="en">A combination of TListView and TTreeView drawing tree and column items.</description_80>
+    <description_80 language="de">Eine Verbindung von TList&#173;View und TTree&#173;View, die einen Baum mit Spalten anzeigt.</description_80>
+    <description_80 language="en">A combination of TList&#173;View and TTree&#173;View drawing tree and column items.</description_80>
     <prog-language>Lazarus, Delphi</prog-language>
     <source-license>GPL</source-license>
     <size_KB>38</size_KB>
@@ -68,11 +68,11 @@ It has these features:</content>
     </screenshot>
   </download>
   <download> 
-    <title>TSearchBar</title>
+    <title>TSearch&#173;Bar</title>
     <link type="onlinedocu"/>
     <file>searchbar.zip</file>
     <id>searchbar</id>
-    <description_80 language="de">Eine typische Suchleiste mit Vorwärts/Rückwärts/Einfärbe-Buttons.</description_80>
+    <description_80 language="de">Eine typische Such&#173;leiste mit Vorwärts/Rückwärts/Einfärbe-Buttons.</description_80>
     <description_80 language="en">A typical search bar with next/previous/highlight-buttons.</description_80>
     <prog-language>Lazarus, Delphi</prog-language>
     <source-license>GPL</source-license>
@@ -85,7 +85,7 @@ It has these features:</content>
     <title>Custom Controls</title>
     <file>customcontrols.zip</file>
     <id>customcontrols</id>
-    <description_80 language="de">Eine Sammlung von Betriebsystem-unabhängigen Komponenten.</description_80>
+    <description_80 language="de">Eine Sammlung von Betrieb&#173;system-unabhängigen Komponenten.</description_80>
     <description_80 language="en">A set of completely owner drawn components.</description_80>
     <prog-language>Delphi</prog-language>
     <source-license>BSD</source-license>
@@ -95,7 +95,7 @@ It has these features:</content>
   <download> 
     <title>TBeniGrad</title>
     <file>bgrad.zip</file>
-    <description_80 language="de">Eine Komponente, um auf dem Formular einen Farbverlauf darzustellen.</description_80>
+    <description_80 language="de">Eine Komponente, um auf dem Formular einen Farb&#173;verlauf darzustellen.</description_80>
     <description_80 language="en">A component which creates a color gradient on the formular.</description_80>
     <source-license>MPL, GPL</source-license>
     <prog-language>Delphi</prog-language>
@@ -111,9 +111,9 @@ It has these features:</content>
     </screenshot>
   </download>
   <download> 
-    <title>TBeniGradGauge</title>
+    <title>TBeni&#173;Grad&#173;Gauge</title>
     <file>bgradg.zip</file>
-    <description_80 language="de">Eine Komponente, um auf dem Formular einen Fortschrittsbalken mit Farbverlauf darzustellen.</description_80>
+    <description_80 language="de">Eine Komponente, um auf dem Formular einen Fortschritts&#173;balken mit Farb&#173;verlauf darzustellen.</description_80>
     <description_80 language="en">A gauge combined with a color gradient.</description_80>
     <source-license>MPL, GPL</source-license>
     <prog-language>Delphi</prog-language>

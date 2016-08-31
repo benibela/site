@@ -573,5 +573,5 @@ h4{margin-top:1em;}
 .uplink { float:right }
 
 .mobile-navigation { display: none }
-.largetable { max-width: 100%; overflow-x: auto }
+.largetable { max-width: 100%; overflow-x: auto; overflow-y: hidden }
 

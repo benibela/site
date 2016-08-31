@@ -92,6 +92,17 @@
   left: 10em;
 }
 
+/*.largetable {  white-space: nowrap; -webkit-overflow scrolling: touch; }
+.largetable table {  white-space: normal;	}
+.largetable span {  display: inline;	}*/
+
+.shortdescriptionholder { max-wdith: 100% }
+.shortdescription { width: 100%; max-width: 100%}
+.shortdescription tr td:nth-child(1n+3) { display: none; }
+.shortdescription tr th:nth-child(1n+3) { display: none; }
+
+.long_desc_year { display: block; text-align: right }
+
 .uplink { display: block; float: none; text-align: right; margin-top: 0.5em; margin-bottom: 0.5em;  }
 
 .socialbox { display:block; float: none }

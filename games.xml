@@ -17,7 +17,7 @@
     <title>Mausitanien</title>
     <file>mausitanien.zip</file>
     <file title="Alte Demo">mausitanien_trial.zip</file>
-    <description_80 language="de">Pacmanclone mit Mäusen anstelle von Smileys.</description_80>
+    <description_80 language="de">Pacman&#173;clone mit Mäusen anstelle von Smileys.</description_80>
     <description_80 language="en">Help a mouse to collect cheese!</description_80>
     <language>de</language>
     <payment>Freeware</payment>
@@ -47,10 +47,10 @@ It has 40 levels, 20 single player levels and 20 multi player levels. </content>
   
  
   <download> 
-    <title>2D Netzwerk bomberman clone</title>
+    <title>2D Netzwerk&#173;bomberman&#173;clone</title>
     <file>bomber.zip</file>
-    <description_80 language="de">Ein Bombermanclone mit Netzwerk- und KI-Fähigkeit.</description_80>
-    <description_80 language="en">A clone of bomberman which is played over a network and has AI opponents.</description_80>
+    <description_80 language="de">Ein Bomber&#173;man&#173;clone mit Netzwerk- und KI-Fähigkeit.</description_80>
+    <description_80 language="en">A clone of bomber&#173;man which is played over a network and has AI opponents.</description_80>
     <language>de</language>
     <payment>Freeware</payment>
     <year>2002</year>
@@ -118,7 +118,7 @@ You can select missile launcher by pressing the keys 1, 2, 3, 4. You can rotate 
     <title language="de">Schlange</title>
     <title language="en">Snake</title>
     <file>schlange.zip</file>
-    <description_80 language="de">Snakeklon für den Algebra FX 2+ Taschenrechner</description_80>
+    <description_80 language="de">Snakeklon für den Algebra FX 2+ Taschen&#173;rechner</description_80>
     <description_80 language="en">Clone of snake, running on the Algebra FX 2+ calculator.</description_80>
     <language>de, (en)</language>
     <payment>Freeware</payment>
@@ -134,7 +134,7 @@ You can use the Casio Algebra FX 2.0 PLUS calculator to run this game, which is 
     <title language="en">Solitaire</title>
     <id>solitaer</id>
     <file>solitaer.zip</file>
-    <description_80 language="de">Solitärklon für den Algebra FX 2+ Taschenrechner</description_80>
+    <description_80 language="de">Solitärklon für den Algebra FX 2+ Taschen&#173;rechner</description_80>
     <description_80 language="en">Clone of the Windows' solitaire game, running on the Algebra FX 2+ calculator.</description_80>
     <language>de, (en)</language>
     <payment>Freeware</payment>
@@ -172,9 +172,9 @@ You can use the Casio Algebra FX 2.0 PLUS calculator to run this game, which is 
   
   
   <download> 
-    <title>Raumschiffspiel</title>
+    <title>Raumschiff&#173;spiel</title>
     <file>upscroller.zip</file>
-    <description_80 language="de">Ein simples scrollendes Raumschiffspiel.</description_80>
+    <description_80 language="de">Ein simples scrollendes Raumschiff&#173;spiel.</description_80>
     <description_80 language="en">A simple vertically-scrolling game</description_80>
     <language>de</language>
     <payment>Freeware</payment>
@@ -199,7 +199,7 @@ It is very difficult to play this game because ship is moved realistically and h
   <download> 
     <title>Das Kinderzimmer</title>
     <file>kinder.zip</file>
-    <description_80 language="de">Ein Vorschullernprogramm mit 5 Lernspielen</description_80>
+    <description_80 language="de">Ein Vorschul&#173;lern&#173;programm mit 5 Lern&#173;spielen</description_80>
     <description_80 language="en">A educational game for young children.</description_80>
     <language>de</language>
     <payment>Freeware</payment>
@@ -225,7 +225,7 @@ It is very difficult to play this game because ship is moved realistically and h
   <download> 
     <title>Scherli 2</title>
     <file>scherli2.zip</file>
-    <description_80 language="de">Pacmanclone mit Raumschiffen und Krokodilen</description_80>
+    <description_80 language="de">Pacman&#173;clone mit Raum&#173;schiffen und Krokodilen</description_80>
     <description_80 language="en">A clone of pacman played with space ships, a snake and a crocodile</description_80>
     <language>de</language>
     <payment>Freeware</payment>
@@ -249,7 +249,7 @@ There are extras like jumper, traps, new lifes and a level editor. You can also 
   <download> 
     <title>Scherli 1</title>
     <file>scherli1.zip</file>
-    <description_80 language="de">Pacmanclone mit Raumschiffen und Krokodilen</description_80>
+    <description_80 language="de">Pacman&#173;clone mit Raum&#173;schiffen und Krokodilen</description_80>
     <description_80 language="en">A clone of pacman played with space ships and a crocodile</description_80>
     <language>de</language>
     <payment>Freeware</payment>
@@ -275,7 +275,7 @@ Es gibt recht viele Extrafeatures, wie Mauern, die nur von dem Spieler, oder nur
     <title>Burg</title>
     <id>burg</id>
     <file>burg.zip</file>
-    <description_80 language="de">Ein uraltes Burg-Spiel mit dem man Kopfrechnen trainieren kann.</description_80>
+    <description_80 language="de">Ein uraltes Burg-Spiel mit dem man Kopf&#173;rechnen trainieren kann.</description_80>
     <description_80 language="en">An old training game for mental arithmetic set in a castle</description_80>
     <language>de</language>
     <payment>Freeware</payment>
@@ -293,7 +293,7 @@ Es gibt recht viele Extrafeatures, wie Mauern, die nur von dem Spieler, oder nur
     <title>Schnippja</title>
     <id>schnippja</id>
     <file>schnippja.zip</file>
-    <description_80 language="de">Ein Farbratespiel, ähnlich wie Mastermind</description_80>
+    <description_80 language="de">Ein Farb&#173;rate&#173;spiel, ähnlich wie Master&#173;mind</description_80>
     <description_80 language="en">An color guessing game, similar to Mastermind</description_80>
     <language>de</language>
     <payment>Freeware</payment>
@@ -303,10 +303,10 @@ Es gibt recht viele Extrafeatures, wie Mauern, die nur von dem Spieler, oder nur
 
 
   <download> 
-    <title>Kampfsimulator</title>
+    <title>Kampf&#173;simulator</title>
     <id>kampfsimulator</id>
     <file>kampfsimulator.zip</file>
-    <description_80 language="de">Ein Kampf-Simulator für das "Stadt der Diebe"-Abenteuerbuch</description_80>
+    <description_80 language="de">Ein Kampf&#173;simulator für das "Stadt der Diebe"-Abenteuerbuch</description_80>
     <description_80 language="en">A battle simulator for a German adventure book</description_80>
     <language>de</language>
     <payment>Freeware</payment>
@@ -318,7 +318,7 @@ Es gibt recht viele Extrafeatures, wie Mauern, die nur von dem Spieler, oder nur
     <title>Defendrix</title>
     <id>defendrix</id>
     <file>defendrix.zip</file>
-    <description_80 language="de">Ein Konsolen-Raumschiffspiel, ähnlich wie das alte Defender</description_80>
+    <description_80 language="de">Ein Konsolen-Raumschiff&#173;spiel, ähnlich wie das alte Defender</description_80>
     <description_80 language="en">A console space ship game, similar to the old defender</description_80>
     <language>de</language>
     <payment>Freeware</payment>
@@ -337,7 +337,7 @@ Es gibt recht viele Extrafeatures, wie Mauern, die nur von dem Spieler, oder nur
   <download> 
     <title>Stockspiel</title>
     <file>stockspiel.zip</file>
-    <description_80 language="de">Logikspiel mit Streichhölzern.</description_80>
+    <description_80 language="de">Logikspiel mit Streich&#173;hölzern.</description_80>
     <description_80 language="en">A logic game</description_80>
     <language>de</language>
     <payment>Freeware</payment>
@@ -373,7 +373,7 @@ The one who gets the last stick has lost the game.</content>
     <title>In der Galaxis</title>
     <file>indergalaxis.zip</file>
     <id>indergalaxis</id>
-    <description_80 language="de">2D Raumschiffspiel mit mehreren Räumen.</description_80>
+    <description_80 language="de">2D Raumschiff&#173;spiel mit mehreren Räumen.</description_80>
     <description_80 language="en">A 2d space ship game with different rooms</description_80>
     <language>de</language>
     <payment>Freeware (GPL)</payment>
@@ -392,7 +392,7 @@ The one who gets the last stick has lost the game.</content>
     <title>PB</title>
     <file>pbspiel.zip</file>
     <id>pbspiel</id>
-    <description_80 language="de">Unfertiges Strategiespiel</description_80>
+    <description_80 language="de">Unfertiges Strategie&#173;spiel</description_80>
     <description_80 language="en">Unfinished RTS game</description_80>
     <language>de</language>
     <payment>Freeware (GPL)</payment>
