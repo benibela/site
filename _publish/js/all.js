@@ -248,9 +248,9 @@ function jsinit(){
   pageFocus();
   function makelinks(parent, target, previous, center){
     var box = document.createElement("div");
-    var link = createElement("a", {"innerText": lang == "de" ? "kommentieren" : "discuss", "href": "#"});
+    var link = createElement("a", {"textContent": lang == "de" ? "kommentieren" : "discuss", "href": "#"});
     var slash = document.createTextNode(" / ");
-    var linkshare = createElement("a", {"innerText": lang == "de" ? "teilen" : "share", "href": "#"});
+    var linkshare = createElement("a", {"textContent": lang == "de" ? "teilen" : "share", "href": "#"});
     function openBox(clicked, insert){
       clicked.style.display = "none";
       if (slash.parentNode) slash.parentNode.removeChild(slash);
