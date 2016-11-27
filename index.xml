@@ -13,6 +13,31 @@
     <text language="en"></text>
     </new>
 -->    
+
+    <new date="2016-11-25"> 
+    <text language="de">Die neue Version meines <a auto="internettools">XQuery interpreter</a> ist nun weitaus schneller. Die Optimierungen lassen sich in drei Aspekte einteilen: <ul>
+    <li>Einige Berechnungen, die während der Evaluationsphase durchgeführt werden, aber nicht von den Eingabedaten abhängen, wurden in die Parsingphase verschoben.</li>
+    <li>Ein verbessertes Speichermanagement, beinahe einen Garbage-Collector, bei dem wiederholte Allokationen vermieden werden. </li>
+    <li>Das Entfernen von impliziten FPC-Funktionsaufrufen. Zum Beispiel benötigt die automatische Speicherfreigabe von Interfaces/Arrays/Strings in FreePascal einen Referenzzähler, der einen impliziten Exceptionblock braucht, um Exception-safe zu sein, was wiederum einen long jump braucht, der in valgrind dann die Hälfte der ausgeführten Instruktionen ausmacht...</li></ul><br/>
+    Desweiteren habe ich einen ausführlichen Vergleich der existierenden <a href="fpc-map-benchmark_en.html">FreePascal Hash Maps</a> erstellt. Die Hälfte der Maps in der Standardbibliothek wirkt unbenutzbar ineffizient. RTL Generics.Collection funktioniert theoretisch am besten, hat jedoch noch einige offene Compilerbugs, selbst in fpc trunk. <code>contnrs.TFPHashList</code> ist zwar schnell, verwendet aber leider <code>shortstring</code>, so dass es eine maximale Schlüssellänge von 255-Zeichen hat...
+    </text>
+    <text language="en">I have made my <a auto="internettools">XQuery interpreter</a> much faster, after profiling it several times over the XQuery Test Suite. Some key improvements are:
+    <ul><li>The query is fully parsed before being evaluated. Previously some parts were left as string and only parsed during evaluation, e.g. axes names. Although this change makes it of course slower when running many queries with untaken branches. </li>
+        <li>Some specific query rewriting, e.g.: <code>a and b</code> to <code>if (a) then boolean(b) else false()</code>. In XPath conditionally filtering and index access of a sequence are the same, so there always has been a query optimizer to detect constant filters. But I had not marked <code>last()</code> as constant, so it was evaluated for every element. Marking it as constant was the biggest speed-up, O(n), although it only affects queries using <code>last()</code> on sequences with tenthousands of values. </li>
+        <li>Local variables are no longer accessed by name but by their stack position. Although it still pushes and compares their names for debugging, as the speed difference of that was negligible.</li>	
+        <li><code>{$IMPLICITEXCEPTIONS OFF}</code> sprinkled around everything. Otherwise FreePascal surrounds every function using non-const interfaces, arrays or strings with an implicit exception block, including a <em>long jump</em>. Setting a long jump on every interpreted instructions definitely hurts performance. Unfortunately there are still places, where exceptions actually might occur and the directive is not applicable, which means either I need to stop using functions (->byte code) or stop using fpc interfaces.</li>
+        <li>Avoidance of memory allocations: First temporary arrays are replaced by one big stack that only grows during the evaluation, avoiding reallocation. Secondly freed value instances are cached on each thread, so values can be created from the cache without any memory allocation. This also avoids a constructor call, which is especially helpful for interface instances, because they have two VMTs initialized by the constructor. </li>
+        <li>At most places it does not use interfaces anymore, but pointers to interfaces, which is weird, because interfaces are only used here as replacement for smart pointers. For the stack and list it was also helpful to bypass the automatic ref counting, by treating the smartpointers as normal pointers and memmoving them around. Having interfaces clearly was a mistake. </li>
+        <li>Node names are hashed and searched by hash, which skips most nodes that do not match the queried name without ever actually comparing the name. </li>
+        <li>All namespaces URLs are cached and normalized to one specific string instance. So if a node in the correct namespace is found, it never needs to compare the namespace URLs itself, because they are the same pointer. Although I had to write my own function for <a href="http://bugs.freepascal.org/view.php?id=30777" rel="nofollow">string comparison</a>, before this had any effect.</li>
+    </ul><br/>
+    It also somewhat breaks backward compatibility, e.g. by replacing my old TEncoding data type with fpc 3.0's TSystemCodepage.
+    <br/><br/>
+    
+     Another huge problem with Pascal is the lack of any well-designed collection library. When it did not had generics, everyone reimplemented collections to contain one specific type. Then it got generics and every collection was reimplemented, while keeping the old ones. Then Delphi got generics, and every collection was implemented again Delphi-compatible. At the end there are a dozen collections of which neither works well. <br/>
+     Here I have compared all the available <a href="fpc-map-benchmark_en.html">hash maps</a>. </text>
+    </new>
+    
     <new date="2016-08-20"> 
     <text language="de">Die Webseitenstruktur hat sich leicht geändert, es gibt keine Seite "Sonstiges" mehr und stattdessen <a href="papers_de.html">Papers</a> und <a href="web-apps_de.html">Web-Applets</a>. Wer also einen Link gesetzt hatte, sollte ihn ändert.</text>
     <text language="en">I have changed the webpage structure slightly. If you had set any links to me, you might need to update them. </text>
