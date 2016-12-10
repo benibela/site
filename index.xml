@@ -13,7 +13,11 @@
     <text language="en"></text>
     </new>
 -->    
-
+    <new date="2016-12-03"> 
+    <text language="de">Viel zu wenig Leute kennen alle XPath/XQuery-Funktionen, daher habe ich eine Liste aller in Xidel/Internet Tools <a href="/documentation/internettools/xpath-functions.html">implementierten Funktionen</a> zusammengestellt. Die Funktionen können auch in VideLibri verwendet werden, allerdings ist die Liste für das nicht vollständig, da VideLibri zusätzliche Funktionen definiert.  </text>
+    <text language="en">It seem people have a hard time knowing, which functions they can use in Xidel / Internet Tools, even thought most are described in the XPath/XQuery, EXPath or JSONiq standards. Therefore I have assembled a complete list of <a href="/documentation/internettools/xpath-functions.html">all implemented functions</a>. </text>
+    </new>
+    
     <new date="2016-11-25"> 
     <text language="de">Die neue Version meines <a auto="internettools">XQuery interpreter</a> ist nun weitaus schneller. Die Optimierungen lassen sich in drei Aspekte einteilen: <ul>
     <li>Einige Berechnungen, die während der Evaluationsphase durchgeführt werden, aber nicht von den Eingabedaten abhängen, wurden in die Parsingphase verschoben.</li>
