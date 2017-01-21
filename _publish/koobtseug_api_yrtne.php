@@ -40,10 +40,10 @@
         for ($curid=intval($lines[1]);$curid<=intval($lines[2]);$curid++){
           $cond=" FROM Guestbook WHERE `ID` = ".$curid;
           $todelete = @mysql_query("SELECT `ID`,`Name`, `Text`, `comment`, `Mail` ".$cond,$db);
-          if (@mysql_num_rows($todelete) != 1) $TextOld += "Don't delete: <br/>Wrong number of entries: ".@mysql_num_rows($todelete);
+          if (@mysql_num_rows($todelete) != 1) $TextOld .= "Don't delete: <br/>Wrong number of entries: ".@mysql_num_rows($todelete);
           else {
             $row=mysql_fetch_array($todelete);
-            $TextOld += "Delete: ".$row['ID']."<br/>".$row['Name']."<br/>".$row['Text']."<br/>".$row['comment']."<br/>";
+            $TextOld .= "Delete: ".$row['ID']."<br/>".$row['Name']."<br/>".$row['Text']."<br/>".$row['comment']."<br/>";
             @mysql_query("DELETE ".$cond,$db);
           }
         }
@@ -78,7 +78,7 @@
       if ($row['Mail']) $mailto = $mailto.", ".$row['Mail'];
       $TextOld = str_replace( ["<br>","<br/>"], ["\n","\n"], $TextOld);
     } else $TextOld = "Mail: ".$Mail."\nIP:".$IP."\nBrowser:".$Browser."\nSite: ".$Site."\nBlocked: ".$blockBecause."\n\n".$TextOld."\n\n-----------------------------------\n\n".$Text;
-    mail($mailto, $title, $TextOld);
+    mail($mailto, $title, $TextOld); 
   } else {  
     $Text=nl2br($Text);
     $Text= stripslashes($Text);
@@ -189,7 +189,7 @@
         echo "Thanks for your entry, ".htmlspecialchars($Name).".<br/>";
         echo "You entry is: <br/><p style=\"padding-left:1em\">".htmlspecialchars($Text)."</p>";
       }
-      mail($configmail,"[-[Gästebuch $thread]-]: ".$Name,"Mail: ".$Mail."\nIP:".$IP."\nBrowser:".$Browser."\nSite: ".$Site."\nBlocked: ".$blockBecause."\n\n".$TextOld."\n\n-----------------------------------\n\n".$Text);
+      mail($configmail,"[-[Gästebuch $thread]-]: ".$Name,"Mail: ".$Mail."\nIP:".$IP."\nBrowser:".$Browser."\nSite: ".$Site."\nBlocked: ".$blockBecause."\n\n".$TextOld."\n\n-----------------------------------\n\n".$Text."\n\nSender headers:\n".http_build_query ( getallheaders(), "", "\n"));
     } else {
       if ($lang == "de") {
         echo "Ihr Eintrag wurde nicht angenommen.<br/>";
