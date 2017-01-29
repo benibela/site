@@ -8,11 +8,23 @@
     
     <news>
 <!--
-    <new date="2016-10-13"> 
+    <new date="2017-10-13"> 
     <text language="de"></text>
     <text language="en"></text>
     </new>
 -->    
+    <new date="2017-01-29"> 
+    <text language="de">
+    <p>Nun gibt es <a auto="videlibri"/> schon seit 10 Jahren: 4183 Commits, 88 Tausend Zeilen Code<sup>256 kLOC mit Testfällen, etc. nach Open Hub</sup>, 30 000 Testfälle, 18 Bibliothekssystems/APIs, verwendet von hunderten Bibliotheken. Eine erstaunliche Zeitverschwendung.</p>
+    <p>Zudem habe ich ein neues <a href="//hg.benibela.de/mailfilter">Mailsortierungssystem</a>. </p>
+    </text>
+    <text language="en"><p>I have a new way of <a href="//hg.benibela.de/mailfilter">sorting my mails</a>. </p>
+    <p>It is the ten year anniversary of <a auto="videlibri"/>: 4183 commits, 88 kLOC<sup>256 kLOC when counting test cases, etc., says Open Hub</sup>, 30 000 test cases, 18 different supported library sytems/APIs used by at least hundreds of libraries. And yet there is still no English translation.</p>
+    <p>And to whoever owns 91.200.12.0: can you please stop posting 1000 spam entries to my guestbook every day? They are being auto blocked anyways. 30375 blocked comments this year.</p>
+    </text>
+    </new>
+
+
     <new date="2016-12-03"> 
     <text language="de">Viel zu wenig Leute kennen alle XPath/XQuery-Funktionen, daher habe ich eine Liste aller in Xidel/Internet Tools <a href="/documentation/internettools/xpath-functions.html">implementierten Funktionen</a> zusammengestellt. Die Funktionen können auch in VideLibri verwendet werden, allerdings ist die Liste für das nicht vollständig, da VideLibri zusätzliche Funktionen definiert.  </text>
     <text language="en">It seem people have a hard time knowing, which functions they can use in Xidel / Internet Tools, even thought most are described in the XPath/XQuery, EXPath or JSONiq standards. Therefore I have assembled a complete list of <a href="/documentation/internettools/xpath-functions.html">all implemented functions</a>. </text>
