@@ -13,6 +13,18 @@
     <text language="en"></text>
     </new>
 -->    
+    <new date="2017-03-26"> 
+    <text language="de">
+    <p>Zur Abwechslung gibt es diesmal ein Update der <a auto="internettools"/>, das nicht XQuery betrifft: <br/>
+    Heruntergeladene Daten werden durch eine Callback-Funktion zurückgeliefert, so dass man sie direkt in den Zielbuffer schreiben kann. Damit kann man unbegrenzt viel herunterladen, ohne dass der Arbeitsspeicher ausgehen könnte, und auch sonst war es in manchen Fällen 30% schneller.  <br/>Die verschiedenen URL-Encodingfunktionen <code>TInternetAccess.urlEncodeData</code>, <code>xquery.urlHexEncode</code>, <code>bbutils.strEscapeToHex</code>  sind vereinheitlicht und <code>TInternetAccess.urlEncodeData</code> folgt standardmäßig html5. <br/>Cookies werden nach RFC 6265 verarbeitet und nur an den Server gesendet, der sie gesetzt hat. Da gibt es erstaunlich viele Büchereien die einen externen Login-Server verwenden, der die Cookies der Bibliothek löscht, wenn er darauf Zugriff bekommt. </p>
+    </text>
+    <text language="en"><p>Time for an update of the <a auto="internettools"/> that does not involve XQuery: <br/>
+    Downloaded data is now returned through a callback function, so it can be written directly in the destination buffer without copying, no matter if the destination is a string, stream or file.<br/>
+    The various url/hex encoding functions <code>TInternetAccess.urlEncodeData</code>, <code>xquery.urlHexEncode</code>, <code>bbutils.strEscapeToHex</code> are merged and the default escaping mode follows html5.<br/>
+    The cookie handling is updated to RFC 6265 and the cookie origin rules are actually enforced, i.e. a cookie set by one server will not be send to another server</p>
+    </text>
+    </new>
+
     <new date="2017-01-29"> 
     <text language="de">
     <p>Nun gibt es <a auto="videlibri"/> schon seit 10 Jahren: 4183 Commits, 88 Tausend Zeilen Code<sup>256 kLOC mit Testfällen, etc. nach Open Hub</sup>, 30 000 Testfälle, 18 Bibliothekssystems/APIs, verwendet von hunderten Bibliotheken. Eine erstaunliche Zeitverschwendung.</p>
