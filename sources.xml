@@ -16,7 +16,7 @@
     <description_80 language="en">A XPath 2/3/XQuery 1/3/JSONiq engine, a pattern matcher for HTML/XML, an auto update class and a HTTP connection wrapper.</description_80>
     <prog-language>FPC</prog-language>
     <source-license>GPL</source-license>
-    <year>2006 - 2016</year>
+    <year>2006 - 2017</year>
     <content language="de">Dieses Package enthält folgende Module: <br/><br/> 
         <ul class="indentation-list">
         <li>Einen <em>simplen HTML Parser</em>, der eine HTML/XML-Datei parst und für jeden gelesen Tag und Text eine entsprechende Callbackfunktion aufruft.</li>
@@ -368,14 +368,14 @@ The feature list of rcmdline is:<br/><br/></content>
     <github>bbutils</github>
     <description_80 language="de">Häufig benötigte Funktionen, die einem bei FPC fehlen.</description_80>
     <description_80 language="en">Often needed functions missing in FPC.</description_80>
-    <prog-language>Delphi, FPC</prog-language>
-    <source-license>(LC)LGPL</source-license>
+    <prog-language>FPC</prog-language>
+    <source-license>LGPL (+FPC)</source-license>
     <content language="de">In diesen Units habe ich einige kleine Funktionen gesammelt, die einem bei der Programmierung mit FPC ständig fehlen. Es gibt:</content>
-    <content language="en">These units consist of low-level functions missing in FPC. E.g.:</content>
+    <content language="en">These units consist of low-level functions missing in FPC. For example:</content>
     <features language="de">
-      <feature>Alle möglichen Arrayfunktionen (hinzufügen, löschen, vergleichen, ...)</feature>
-      <feature>Alle möglichen Stringfunktionen (pchar/ansistring, vergleichen, zerlegen, suchen, umwandeln, html-Entities, ...)</feature>
-      <feature>Alle möglichen date/time-parsing/formatting functions, für negative Jahre und Jahre nach 65535, und Zeitzonen </feature>
+      <feature>Viele verschiedene Arrayfunktionen (hinzufügen, löschen, vergleichen, ...)</feature>
+      <feature>Viele verschiedene Stringfunktionen (pchar/ansistring, vergleichen, zerlegen, suchen, umwandeln, 1-Bit von/zu Unicode Zeichensatzkonvertierungen, UTF-8-Funktionen, HTML-Entities, Stringbuilder, ...)</feature>
+      <feature>Viele verschiedene Datum/Zeit-Funktionen, Parser/Formatierer für Zeitzonen, negative Jahre und Jahre nach 65535 (gemäß dem XML Schema 1.1 Standard, also kompatibel zur Zeitrepräsentation in ISO 8601:2004)</feature>
       <feature>Stabile Sortierfunktion für Daten beliebiger Größe (merge+insert sort) </feature>
       <feature>Mathematische Funktionen (ggt, Primzahlen, Bernoulli-Wahrscheinlichkeitsrechnung,...)</feature>
       <feature>Automatische Übersetzung von mit tr['markierten String'] und Lazaruskomponenten</feature>
@@ -383,13 +383,18 @@ The feature list of rcmdline is:<br/><br/></content>
     </features>
     <features language="en">
       <feature>Various array functions (add, delete, search, prealloc, ...)</feature>
-      <feature>Various string functions (pchar/ansistring, compare, split, search, convert html entities, ...)</feature>
-      <feature>Various date/time parsing/formatting functions, supporting years before 0 and after 65535, and timezones</feature>
+      <feature>Various string functions (pchar/ansistring, compare, split, utf8-functions, 1-bit/unicode encoding conversions, search, convert HTML entities, ...)</feature>
+      <feature>Various date time functions, parsing/formatting supporting timezones, years before 0 and after 65535 (compatible to XML Schema 1.1, using the date time model of ISO 8601:2004)</feature>
       <feature>Stable sorting function for arbitrary sized data arrays (merge+insert sort)</feature>
       <feature>Mathematical functions (gcd, primes, Bernoulli statistics,...)</feature>
       <feature>Automatic translation of with tr['marked strings'] and components</feature>
       <feature>A  Pascal template language which is "compiled" to Pascal (similar to the C preprocessor)</feature>
     </features>
+    <final-content language="de">Diese Unit hat dieselbe Lizenz wie FreePascals Standardbibliotheken, kann also ohne Lizenzprobleme in jedem FPC/Lazarus-Programm verwendet werden.<br/><br/>
+    Delphi-Kompatibilität: Viele dieser Funktionen wurden ursprünglich für Delphi 4 geschrieben und funktionieren auch noch mit Delphi 4. Neue Funktionen werden jedoch nicht mehr mit Delphi getestet, da es unwahrscheinlich ist, dass Leute noch immer Delphi 4 verwenden und ich nicht das neuste Delphi zum Testen besitze. Wer die Unit mit Delphi verwenden will, kann einfach die nicht kompilierenden Funktionen entfernen.</final-content>
+    <final-content language="en">This unit has the same license as the runtime libraries of FPC, so anyone using FPC/Lazarus can use it without license issues. <br/><br/>
+    A note about Delphi compatibility: This unit was written for Delphi 4 and most functions still work with Delphi 4. However, I no longer test new functions with Delphi, as I have no newer Delphi version and people are unlikely to still use Delphi 4. If you want to use it with Delphi, you can just remove the non-compiling functions.
+    </final-content>
   </download>
   
   

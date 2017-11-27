@@ -13,6 +13,22 @@
     <text language="en"></text>
     </new>
 -->    
+  <new date="2017-11-26"> 
+  <text language="de"><p>Ich habe die <a auto="bbutils"/> und <a auto="internettools"/> modernisiert: <br/>
+  Größen und Längen werden als <code>SizeInt</code> gespeichert, um auf 64-Bit Systemen Strings/Arrays mit mehr als 2GB Größen verarbeiten zu können. Wer bisher entsprechende Funktionen mit var-Parametern verwendet hat, muss seine Variablen entsprechend anpassen. <br/>
+  Bisher wurde angenommen, dass alle Strings UTF-8 kodiert sind. Da in FPC 3 die String-Kodierung nun explizit und dynamisch eingestellt werden kann, geht dies nicht mehr. Stattdessen werden die Strings nun als <code>DefaultSystemCodePage</code> kodiert betrachtet, und die Internet Tools konvertieren eingelesenen Webseiten zur <code>DefaultSystemCodePage</code> Kodierung anstatt zu UTF-8. Nur XPath/XQuery Funktionen wie <code>fn:normalize-unicode</code>, die nur auf Unicode definiert sind, nehmen an, dass ihre Eingabe UTF-8 kodiert ist. <br/>
+  Die BBUtils unterstützten nicht mehr Delphi (zumindest nicht das 20 Jahre alte Delphi 4, mit dem ich es bisher getestet habe), und die Internet Tools nicht mehr FPC 2. Damit sicher ist, dass es mit FPC 3 auf allen Plattformen läuft, habe ich eine Travis-Instanz eingerichtet.
+  </p>
+  </text>
+  <text language="en"><p>I have modernized the <a auto="bbutils"/> and <a auto="internettools"/>: 
+  Lengths are stored in <code>SizeInt</code>, so they will support >2GB data structures on 64-bit systems. If you were using functions that return lengths in var parameters, you need to adjust your variables as well, or it will not compile.<br/>
+  So far the units assumed that all strings are UTF-8 encoded, which was fine on FPC 2, but could return non-sense with the codepage aware strings of FPC 3, when used on non-utf8 strings. Now all functions in bbutils either use <code>DefaultSystemCodePage</code> encoded strings, when they do not care about the encoding or <code>UTF8String</code> when they return UTF-8 strings. The Internet Tools will convert input files to <code>DefaultSystemCodePage</code> rather than to UTF-8, and most string functions will switch between 1-bit encoding and UTF-8 depending on the default codepage. However, some functions like <code>fn:normalize-unicode</code> have no meaningful purpose for non-UTF8 strings, so they will just assume their input is still UTF-8.  <br/>
+  Furthermore the BButils do not support Delphi anymore. I always tried to keep it compilable with Delphi 4, but that is now nearly 20 years old. The Internet Tools now require FPC 3. <br/>
+  Last but not least their test cases are now run on Travis.
+  </p></text>
+  
+  
+  </new> 
     <new date="2017-03-26"> 
     <text language="de">
     <p>Zur Abwechslung gibt es diesmal ein Update der <a auto="internettools"/>, das nicht XQuery betrifft: <br/>
