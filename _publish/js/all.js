@@ -256,6 +256,7 @@ var shared = false;
 //var hascenterstyle = false;
 function jsinit(){
   pageFocus();
+  //make share/discuss links
   function makelinks(parent, target, previous, center){
     var box = document.createElement("div");
     var link = createElement("a", {"textContent": lang == "de" ? "kommentieren" : "discuss", "href": "#"});
@@ -312,6 +313,7 @@ function jsinit(){
       box.className = "socialbox socialboxcenter";
     } else box.className = "socialbox";
   }
+  
   var newsdiv=document.getElementById("newslist");
   if (newsdiv) {
     var news = newsdiv.getElementsByTagName("h3");
@@ -322,11 +324,19 @@ function jsinit(){
     }
     if (lastnew) makelinks(newsdiv, lastnew, newsdiv.lastChild)
   }
-  var entry = document.getElementsByClassName("long_desc_entry");
-  for (var i=0;i<entry.length;i++) {
-    var desc = entry[i].getElementsByClassName("long_desc_desc")[0];
-    nobr = desc.lastElementChild;
-    while (nobr.tagName == "BR") nobr = nobr.previousElementSibling;
-    makelinks(desc, entry[i].getElementsByTagName("a")[0], nobr, true)//float: right;    margin-right: 206px;
+  if(!document.getElementsByClassName && document.querySelectorAll) {
+      document.getElementsByClassName = function(className) {
+          return this.querySelectorAll("." + className);
+      };
+      Element.prototype.getElementsByClassName = document.getElementsByClassName;
+  }
+  if (document.getElementsByClassName) {
+    var entry = document.getElementsByClassName("long_desc_entry");
+    for (var i=0;i<entry.length;i++) {
+      var desc = entry[i].getElementsByClassName("long_desc_desc")[0];
+      nobr = desc.lastElementChild;
+      while (nobr.tagName == "BR") nobr = nobr.previousElementSibling;
+      makelinks(desc, entry[i].getElementsByTagName("a")[0], nobr, true)//float: right;    margin-right: 206px;
+    }
   }
 }
