@@ -188,6 +188,11 @@ function openInlinePopup(destWidth, destHeight, href,idnr){
 
 }
 
+function isBrowserIE(){
+  var ua = window.navigator.userAgent;
+  return (ua.indexOf('MSIE ') > -1 || ua.indexOf('Trident/') > -1) ? true : false;
+}
+
 function pageFocus(){
   contentdiv=document.getElementById("content");
   if (!contentdiv) return;
@@ -199,18 +204,23 @@ function pageFocus(){
           break;
       }  
     }
-  for (var i=0;i<document.links.length;i++) {    
-    if (document.links[i].className=="inline-popup")  {
+  var isIE = isBrowserIE();
+  
+  for (var i=0;i<document.links.length;i++) {
+    var link = document.links[i];
+    if (link.className=="inline-popup")  {
       inlinePopupLinks+=1;
-      document.links[i].href='javascript:openInlinePopup(0,0,"'+document.links[i].href+'",'+inlinePopupLinks.toString()+')';
-      document.links[i].id="inlinePopup"+inlinePopupLinks.toString();
-    } else if (document.links[i].className=="inline-popup-large")  {
+      link.href='javascript:openInlinePopup(0,0,"'+link.href+'",'+inlinePopupLinks.toString()+')';
+      link.id="inlinePopup"+inlinePopupLinks.toString();
+    } else if (link.className=="inline-popup-large")  {
       inlinePopupLinks+=1;
-      document.links[i].href='javascript:openInlinePopup(640,700,"'+document.links[i].href+'",'+inlinePopupLinks.toString()+')';
-      document.links[i].id="inlinePopup"+inlinePopupLinks.toString();
-    }
-
+      link.href='javascript:openInlinePopup(640,700,"'+link.href+'",'+inlinePopupLinks.toString()+')';
+      link.id="inlinePopup"+inlinePopupLinks.toString();
+    } 
+    if (isIE) 
+      link.onclick = function() { setTimeout(function(){document.body.scrollTop = 0;}, 10); }
   }
+  if (isIE) document.body.scrollTop = 0;
 }  
 
 function togglenavigation(){
