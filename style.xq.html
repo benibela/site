@@ -126,7 +126,9 @@
              let $download-id := ($download/id, $download/file)[1]/data()
              return 
              <div class="long_desc_entry">
-               <h3 class="long_desc_title"><a id="{$download-id}" name="{$download-id}" class="target">&#160;</a><a href="{$file/download-dir || '/' || $download/file}">{$download/title/text()}</a></h3>
+               <h3 class="long_desc_title"><a id="{$download-id}" name="{$download-id}" class="target">&#160;</a><a>{
+                 $download/file[1] ! attribute href {$file/download-dir || '/' || .}, $download/title/text()
+                 }</a></h3>
                <div class="long_desc_license">{$download/payment/text()}{$download/source-license/text()}</div>
                {$download/year/<div class="long_desc_year">{text()}</div>}
                <div class="long_desc_desc">

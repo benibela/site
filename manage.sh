@@ -13,7 +13,12 @@ mirror)
 
 checklinks)
   echo searching invalid internal links
-  xidel -s --extract-include=xx --printed-node-format xml global.xml -e 'output-dir := "/tmp",source:="",language:=//language[1]' -e 'unchecked := ("documentation/internettools/xqts.html","documentation/internettools/internettoolsxqts.html","documentation/","bin/games/sirdslets/sirdslet_page.html")' --extract-file common.xq  -f '//basefilename/(.||".xml")' --xquery '
+  xidel -s --extract-include=xx --printed-node-format xml global.xml -e 'output-dir := "/tmp",source:="",language:=//language[1]' -e 'unchecked := ( 
+    "documentation/internettools/xqts.html",
+    "documentation/internettools/internettoolsxqts.html",
+    "documentation/","bin/games/sirdslets/sirdslet_page.html",
+    "documentation/internettools/xpath-functions.html")
+  ' --extract-file common.xq  -f '//basefilename/(.||".xml")' --xquery '
     //a[not(starts-with(@href, "http")) and not(starts-with(@href,"//"))] ! (
       try { 
         let $oldref := extract(@href, "^\s*(\w+)_(\w+).html(#(.+))?", (1,2,4))
