@@ -26,11 +26,11 @@
     <table>
       <tr>
         <td><?php if ($lang == "de") { ?>Eintrag (notwendig):<?php } else { ?>Entry (necessary):<?php } ?></td>
-        <td><textarea name="input1" rows="6" id="entryBox"></textarea></td>
+        <td style="border-bottom: none"><textarea name="input1" rows="14" id="entryBox"></textarea></td>
       </tr>
       <tr>
-        <td>&#160;</td>
-        <td><input type="button" value="b" id="boldBtn" style="font-weight:bold; width:2em; text-align:center;" onClick="javascript:boldClicked();"/>
+        <td style="border:none">&#160;</td>
+        <td style="border-top: none"><input type="button" value="b" id="boldBtn" style="font-weight:bold; width:2em; text-align:center;" onClick="javascript:boldClicked();"/>
             <input type="button" value="i" id="italicBtn" style="font-style: italic; width:2em; text-align:center;" onClick="javascript:italicClicked();"/>
             <input type="button" value="u" id="underlineBtn" style="font-decoration: underline; width:2em; text-align:center;" onClick="javascript:underlinedClicked();"/>
             <input type="button" value="http://" id="httpBtn"  style="width:auto; text-align:center;" onClick="javascript:httpClicked();"/>
@@ -52,9 +52,9 @@
         <td><input type="text" name="input3"/></td>
       </tr>
       <tr>
-        <td>&#160;</td>
-        <td><input type="checkbox" name="input4" value="yes" style="width: auto"/>
-          <?php if ($lang == "de") {echo "E-Mail Adresse verbergen";} else {echo "hide mail addy";} ?></td>
+        <td style="border: none">&#160;</td>
+        <td><input type="checkbox" name="input4" value="yes" style="width: auto" checked/>
+          <?php if ($lang == "de") {echo "E-Mail Adresse verbergen";} else {echo "hide mail address";} ?></td>
       </tr>
       <tr>
         <td>ICQ:</td>
@@ -62,15 +62,24 @@
       </tr>
       <tr>
         <td>
-          <?php if ($lang == "de") { ?>Homepage-Titel:<?php } else { ?>title of your homepage:<?php } ?>
+          <?php if ($lang == "de") { ?>Homepage-Titel:<?php } else { ?>Title of your homepage:<?php } ?>
        </td>
        <td><input type="text" name="input6"/></td>
      </tr>
      <tr>
        <td>
-         <?php if ($lang == "de") { ?>Homepage-URL:<?php } else { ?>url of your homepage:<?php } ?>
+         <?php if ($lang == "de") { ?>Homepage-URL:<?php } else { ?>Url of your homepage:<?php } ?>
        </td>
        <td><input type="hidden" name="input8"/><input type="text" name="input7"/></td>
+     </tr>
+     <tr>
+       <td>
+         <?php echo ($lang == "de" ? "Bot-Falle" : "Bot trap") ?>:
+       </td>
+       <td><input type="checkbox" name="input10" value="yes" style="width: auto"/>
+            <?php if ($lang == "de") { ?>Ich bin ein Mensch, und lasse dieses kleine Feld leer:<?php } else { ?>I am human and did not write anything in the next input field:<?php } ?>
+           <input type="text" name="input11" style="width: 2em"/>
+        </td>
      </tr>
      </table>
      <?php if ($_REQUEST["thread"]) echo '<input type="hidden" name="thread" value="'.htmlspecialchars($_REQUEST["thread"]).'"/>'; ?> 
@@ -80,16 +89,16 @@
  </td></tr>
  
 <?php 
-  $FLAG_HIDEMAIL = 1;
-  $FLAG_SPAM = 2;
   
   if ($lang=="de") {
     $tr = array ( 
-      "showspam" => "Als Spam markiert. Trotzdem zeigen"
+      "showspam" => "Als Spam markiert. Trotzdem zeigen",
+      "showpending" => "Kommentar noch nicht freigegeben. Trotzdem zeigen"
     ); 
   } else {
     $tr = array ( 
-      "showspam" => "marked as spam. show anyways"
+      "showspam" => "marked as spam. Show anyways.",
+      "showpending" => "Pending approval. Show anyways."
     ); 
   }
 
@@ -98,9 +107,17 @@
   @mysql_select_db($configdb,$db) or die ("Datenbankverbindung konnte nicht hergestellt werden.");
   $cond = ($adminmode ? "" : "WHERE `thread` = '".mysql_real_escape_string($_REQUEST['thread'])."'");
   $result=@mysql_query("SELECT `ID`,`Name`, `Mail`, `Site`, `sitetitle`,`ICQ`, `Text`, `flags`, `Time`, `comment` FROM Guestbook $cond ORDER BY `ID` DESC",$db) or die ("Gästebuch konnte nicht gelesen werden");
+  
+
+  
   if ($result) {
     if (mysql_num_rows ( $result ) == 0) echo '<tr class="emptyrow"><td> ' . ($lang == "de" ? "Bisher keine Kommentare" : "No comments yet")  .   ' </td></tr>';
     while ($row=mysql_fetch_array($result)) {
+    
+      $flagSetHideMail = ($row['flags'] & $FLAG_HIDEMAIL) != 0;
+      $flagSetSpam = ($row['flags'] & $FLAG_SPAM) != 0;
+      $flagSetPending = ($row['flags'] & $FLAG_PENDING) != 0;
+    
       ?>
       <tr class="emptyrow"><td>&#160;</td></tr>
       <tr><td class="entryrowtitle">
@@ -117,16 +134,15 @@
           if (empty($name)) 
             if ($lang=="de") $name=" -- unbekannt -- ";
             else $name=" -- unknown -- "; 
-          if ((!empty($row['Mail'])) && (($row['flags'] & $FLAG_HIDEMAIL) == 0)) {
+          if ((!empty($row['Mail'])) && !$flagSetHideMail) {
             echo "<a href=\"mailto:{$row['Mail']}\">{$name}</a>";
           } else {
             echo $name; 
           }
           if (!empty($row['ICQ'])){ 
-            echo '<a href="http://www.icq.com/whitepages/about_me.php?uin='.$row['ICQ'].'">';
-            echo '<img style="border: none;" src="http://status.icq.com/online.gif?icq='.$row['ICQ'].'&img=5"></a>';
+            echo '<br/>ICQ: '.$row['ICQ'];
           }
-          if ((!empty($row['Site']))) {
+          if ((!empty($row['Site'])) && !$flagSetSpam && !$flagSetPending ) {
             echo "<br/>";#\n <span class='cap'>";
             if ($lang=="de") {
               echo "Homepage: ";
@@ -169,8 +185,8 @@
         echo '<td class="';
         if (!empty($row['comment'])) echo "entryrow2"; else echo "entryrow";
         echo '">';
-        if ($row['flags'] & $FLAG_SPAM) { 
-          echo "<button onclick='guestbookShowSpam(this)' value=\"".htmlspecialchars($row['Text'])."\"> $tr[showspam] </button>";
+        if ($flagSetSpam || $flagSetPending) {           
+          echo "<button onclick='guestbookShowSpam(this)' value=\"".htmlspecialchars($row['Text'])."\">".$tr[$flagSetSpam ? "showspam" : "showpending"]."</button>";
         } else {
           echo $row['Text'];
         }

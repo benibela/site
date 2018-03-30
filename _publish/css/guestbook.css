@@ -31,7 +31,8 @@
   width: 100%
 }
 #secondInputBox table input, #secondInputBox table textarea {
-  width: 100%
+  width: 100%;
+  box-sizing: border-box;
 }
 #inputRow{
   border: 3px double blue;

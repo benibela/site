@@ -1,7 +1,4 @@
 <?php
-  $FLAG_HIDEMAIL = 1;
-  $FLAG_SPAM = 2;
- 
   include 'config.php';
   
   $db=@mysql_connect("localhost",$configdbname,$configdbpass) or die ("Verbindung zum SQL-Server konnte nicht hergestellt werden.");
@@ -19,6 +16,8 @@
   $Time=time();
   $Text=$_POST['input1'];
   $thread=$_POST['thread'];
+  $botTrapMustHave=$_POST['input10'];
+  $botTrapMustNotHave=$_POST['input11'];
   $returnparam = "";
 
   if (strcasecmp($Name, $configownername) === 0 || strcasecmp($Name, $configownernick) === 0) {
@@ -89,7 +88,7 @@
     $Text=ereg_replace("\[u\]","<span style='text-decoration: underline;'>",$Text);
     $Text=ereg_replace("\[/u\]","</span>",$Text);
     $Text=ereg_replace("'","\"",$Text);
-    if (isset($_POST['input4'])) {$flags=1;}
+    if (isset($_POST['input4'])) {$flags=$FLAG_HIDEMAIL;}
     else {$flags=0;}
     
     
@@ -100,53 +99,28 @@
       if ($lang=="de") $Text="<span style=\"color: red\"><b>Gästebucheintrag wurde wegen ungültigem Browser nicht akzeptiert!.</b></span><br/>Folgende Browser sollten auf jeden Fall funktionieren: FireFox, Opera und Internet Explorer";
       else $Text="<span style=\"color: red\"><b>Due to the use of a blocked browser your entry has not been accepted.</b></span><br/>If you use on of the following, it should work: FireFox, Opera und Internet Explorer";
     }
-    
-    if (preg_match('#(http://\d*[.]\w*[.]\w*/\w*/\W.*){3,}#', $Text)) {
+
+    if ($botTrapMustHave != "yes" || $botTrapMustNotHave != "" ) {
       $blockBecause=2;
-      if ($lang=="de") $Text="<span style=\"color: red\"><b>Gästebucheintrag wurde wegen zuvielen Links nicht akzeptiert.</b></span><br/>Beiträge mit weniger als vier (semantischen) Links werden funktionieren.";
-      else $Text="<span style=\"color: red\"><b>Due to the use of too many links your entry has been blocked.</b></span><br/>If you use less than three (semantic) links, it should work";
+      if ($lang=="de") $Text="<span style=\"color: red\"><b>Bot-Falle nicht deaktiviert.</b></span>";
+      else $Text="<span style=\"color: red\"><b>You have failed to disarm the bot trap.</b></span>";
     }
 
-    if (preg_match('#.*(http://\w+[.]\w+[.]\w+/[\w-]*.html\W.*){3,}#', $Text)) {
-      $blockBecause=3;
-      if ($lang=="de") $Text="<span style=\"color: red\"><b>Gästebucheintrag wurde wegen zuvielen Links nicht akzeptiert.</b></span><br/>Beiträge mit weniger als vier (semantischen) Links werden funktionieren.";
-      else $Text="<span style=\"color: red\"><b>Due to the use of too many links your entry has been blocked.</b></span><br/>If you use less than three (semantic) links, it should work";
+    if (substr_count($Text,"http://")>=2) {
+      $flags |= $FLAG_PENDING;
     }
-
-
-    
-    if (substr_count($Text,"http://")>5) {
-      $blockBecause=4;
-      if ($lang=="de") $Text="<span style=\"color: red\"><b>Gästebucheintrag wurde wegen zuvielen Links nicht akzeptiert.</b></span>";
-      else $Text="<span style=\"color: red\"><b>Due to the use of too many links your entry has been blocked.</b></span>";
-    }
-
-    if (preg_match('#(<a[ ]*href[ ]*=.*>.*</a>.*\[url[ ]*=.*\[/url])+#is', $Text)) {
-      $blockBecause=5;
-      if ($lang=="de") $Text="<span style=\"color: red\"><b>Es darf nicht sowohl html wie auch BBCode für Links benutzt werden.";
-      else $Text="<span style=\"color: red\"><b>You are not allowed to use html as well as bbcode for links.";
-    }
-
-    
     if ($_POST['input8']!="") {
       $blockBecause=9;
       if ($lang=="de") $Text="<span style=\"color: red\"><b>Bot test failed.</b></span>";
       else $Text="<span style=\"color: red\"><b>Bot test failed.</b></span>";
     }
-    
+   
     if (!preg_match('#\w+#', $Text)) {
       $blockBecause=10;
       if ($lang=="de") $Text="<span style=\"color: red\"><b>Gästebucheintrag wurde nicht akzeptiert.</b></span><br/>Bitte einen Text eingeben.";
       else $Text="<span style=\"color: red\"><b>Please insert a text.</b></span>";
     }
     
-
-    if (preg_match('#.*http://(www[.])+ajcarvelli[.]com.*#', $Text)) {
-      $blockBecause=11;
-      if ($lang=="de") $Text="<span style=\"color: red\"><b>Nicht erlaubte URL im Beitrag enthalten</b></span>";
-      else $Text="<span style=\"color: red\"><b>Not allowed URL contained in entry</b></span>";
-    }
-
     if (($Name==$Mail) && ($Name!="")) {
       $blockBecause=12;
       if ($lang=="de") $Text="<span style=\"color: red\"><b>Name und E-Mailaddresse müssen unterschiedlich sein</b></span>";
