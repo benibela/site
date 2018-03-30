@@ -46,14 +46,15 @@
             @mysql_query("DELETE ".$cond,$db);
           }
         }
-      } else if ($lines[0] === "COMMAND:SPAM-ENTRY:"){
-        $cond=" WHERE `ID` = ".$lines[1];
+      } else if ($lines[0] === "COMMAND:MARK-ENTRY:"){
+        $flag = intval($lines[1]);
+        $cond=" WHERE `ID` = ".$lines[2];
         $tochange = @mysql_query("SELECT `ID`,`Name`, `Text`, `comment`, `Mail`, `flags` FROM Guestbook ".$cond,$db);
         if (@mysql_num_rows($tochange) != 1) $TextOld = "Not found: <br/>Wrong number of entries: ".@mysql_num_rows($tochange);
         else {
           $row=mysql_fetch_array($tochange);
-          $TextOld = "Marked as spam: ".$row['ID']."<br/>".$row['Name'];
-          @mysql_query("UPDATE Guestbook SET flags='".($row["flags"] | $FLAG_SPAM)."' ".$cond,$db);
+          $TextOld = "Marked: ".$row['ID']."<br/>".$row['Name'];
+          @mysql_query("UPDATE Guestbook SET flags='".($row["flags"] ^ $flag)."' ".$cond,$db);
         }
       } else if ($lines[0] === "COMMAND:REPLY-TO:"){
         $cond=" WHERE `ID` = ".$lines[1];

@@ -89,8 +89,8 @@ function guestbookDelete(id) {
   guestbookCmd("COMMAND:DELETE-ENTRY:\n"+id);
   document.getElementsByTagName("form")[0].submit();
 }
-function guestbookSpamMark(id) {
-  guestbookCmd("COMMAND:SPAM-ENTRY:\n"+id);
+function guestbookMark(id, flag) {
+  guestbookCmd("COMMAND:MARK-ENTRY:\n"+flag+"\n"+id);
   document.getElementsByTagName("form")[0].submit();
 }
 function guestbookComment(id) { 

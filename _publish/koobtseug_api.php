@@ -93,12 +93,14 @@
   if ($lang=="de") {
     $tr = array ( 
       "showspam" => "Als Spam markiert. Trotzdem zeigen",
-      "showpending" => "Kommentar noch nicht freigegeben. Trotzdem zeigen"
+      "showpending" => "Kommentar noch nicht freigegeben. Trotzdem zeigen",
+      "deadlink" => " [toter Link]"
     ); 
   } else {
     $tr = array ( 
-      "showspam" => "marked as spam. Show anyways.",
-      "showpending" => "Pending approval. Show anyways."
+      "showspam" => "marked as spam. show anyways.",
+      "showpending" => "pending approval. show anyways.",
+      "deadlink" => " [dead link]"
     ); 
   }
 
@@ -114,16 +116,17 @@
     if (mysql_num_rows ( $result ) == 0) echo '<tr class="emptyrow"><td> ' . ($lang == "de" ? "Bisher keine Kommentare" : "No comments yet")  .   ' </td></tr>';
     while ($row=mysql_fetch_array($result)) {
     
-      $flagSetHideMail = ($row['flags'] & $FLAG_HIDEMAIL) != 0;
-      $flagSetSpam = ($row['flags'] & $FLAG_SPAM) != 0;
-      $flagSetPending = ($row['flags'] & $FLAG_PENDING) != 0;
+      $flags = $row['flags'];
+      $flagSetHideMail = ($flags & $FLAG_HIDEMAIL) != 0;
+      $flagSetSpam = ($flags & $FLAG_SPAM) != 0;
+      $flagSetPending = ($flags & $FLAG_PENDING) != 0;
     
       ?>
       <tr class="emptyrow"><td>&#160;</td></tr>
       <tr><td class="entryrowtitle">
         <?php 
           $id = $row['ID'];
-          if ($adminmode) echo '<button onclick="guestbookDelete('.$id.')">X</button> <button onclick="guestbookSpamMark('.$id.')">spam</button>';
+          if ($adminmode) echo "<button onclick='guestbookDelete($id)'>X</button> <button onclick='guestbookMark($id, $FLAG_SPAM)'>spam</button> <button onclick='guestbookMark($id, $FLAG_PENDING)'>pending</button> <button onclick='guestbookMark($id, $FLAG_DEADLINK)'>deadlink</button>";
           echo "<span class='cap'>".$row['ID'].". ";
           if ($lang=="de") {
             echo "Geschrieben von</span>: ";
@@ -149,7 +152,9 @@
             } else {
               echo "homepage: ";
             } 
-            echo '<a href="'.$row['Site'].'">'.(empty($row['sitetitle'])?$row['Site']:$row['sitetitle']).'</a>';
+            $tempTitle = empty($row['sitetitle'])?$row['Site']:$row['sitetitle'];
+            if (($flags & $FLAG_DEADLINK) != 0) echo $tempTitle.$tr['deadlink'];
+            else echo '<a href="'.$row['Site'].'">'.$tempTitle.'</a>';
           }
           echo "<br/>\n";
           if ($lang=="de") {
