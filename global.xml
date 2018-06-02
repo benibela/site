@@ -121,6 +121,12 @@
   <title language="de">Links</title>
 </fileinfo>  
 <fileinfo>
+  <hidden>YES</hidden>
+  <basefilename>privacy</basefilename>
+  <title language="de">Datenschutzerklärung</title>
+  <title language="en">Privacy</title>
+</fileinfo>  
+<fileinfo>
   <basefilename>impressum</basefilename>
   <title language="de">Impressum</title>
   <title language="en">Contact</title>
