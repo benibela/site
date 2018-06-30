@@ -1,6 +1,19 @@
 <?php
   include 'config.php';
   
+  function processText($Text){
+    $Text=nl2br($Text);
+    $Text= stripslashes($Text);
+    $Text=ereg_replace("\[b\]","<b>",$Text);
+    $Text=ereg_replace("\[/b\]","</b>",$Text);
+    $Text=ereg_replace("\[i\]","<i>",$Text);
+    $Text=ereg_replace("\[/i\]","</i>",$Text);
+    $Text=ereg_replace("\[u\]","<span style='text-decoration: underline;'>",$Text);
+    $Text=ereg_replace("\[/u\]","</span>",$Text);
+    $Text=ereg_replace("'","\"",$Text);
+    return $Text;
+  }
+  
   $db=@mysql_connect("localhost",$configdbname,$configdbpass) or die ("Verbindung zum SQL-Server konnte nicht hergestellt werden.");
 #  @mysql_set_charset('latin1',$db);
   @mysql_select_db($configdb,$db) or die ("Datenbankverbindung konnte nicht hergestellt werden.2");;
@@ -64,7 +77,7 @@
           $newComment=implode("\n",array_splice($lines,2,count($lines)-2));
           $row=mysql_fetch_array($tochange);
           $TextOld = "Reply to: ".$row['ID']."<br/>".$row['Name']."<br/>".$row['Text']."<br/>".$row['comment']."<br/>--------------<br/>".$newComment;
-          @mysql_query("UPDATE Guestbook SET comment='".mysql_real_escape_string($newComment)."', commenttime='.$Time.' ".$cond,$db);
+          @mysql_query("UPDATE Guestbook SET comment='".mysql_real_escape_string(processText($newComment))."', commenttime='.$Time.' ".$cond,$db);
         }
       } else $TextOld = "Der Beitrag wurde nicht akzeptiert.";
       $returnparam = "?edom=nimda";
@@ -80,15 +93,7 @@
     } else $TextOld = "Mail: ".$Mail."\nIP:".$IP."\nBrowser:".$Browser."\nSite: ".$Site."\nBlocked: ".$blockBecause."\n\n".$TextOld."\n\n-----------------------------------\n\n".$Text;
     mail($mailto, $title, $TextOld); 
   } else {  
-    $Text=nl2br($Text);
-    $Text= stripslashes($Text);
-    $Text=ereg_replace("\[b\]","<b>",$Text);
-    $Text=ereg_replace("\[/b\]","</b>",$Text);
-    $Text=ereg_replace("\[i\]","<i>",$Text);
-    $Text=ereg_replace("\[/i\]","</i>",$Text);
-    $Text=ereg_replace("\[u\]","<span style='text-decoration: underline;'>",$Text);
-    $Text=ereg_replace("\[/u\]","</span>",$Text);
-    $Text=ereg_replace("'","\"",$Text);
+    $Text=processText($Text);
     if (isset($_POST['input4'])) {$flags=$FLAG_HIDEMAIL;}
     else {$flags=0;}
     
