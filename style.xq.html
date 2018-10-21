@@ -24,7 +24,7 @@
     <link rel="stylesheet" media="only screen and (max-width: 560px)" href="css/mobile.css" />
     </head>
     <body lang="de" onload="jsinit()"> <!--[if IE 7]><div id="wrapper"> <![endif]-->
-      <h1 id="title">BeniBela online</h1>
+      <div id="title">BeniBela online</div>
 	  <div id="menu">
 	     <ul id="menulink_list">
 	     {for $l in $global/language return
@@ -47,12 +47,12 @@
         <div id="content"> <div id="inner_content">
            <a name="top" href="#top"></a>
            {
-           if (empty($file/prevent-content-title)) then  <h2>{$fileinfo/title/text()}</h2> else (),
+           if (empty($file/prevent-content-title)) then  <h1>{$fileinfo/title/text()}</h1> else (),
            $file/content/node(),
            if (exists($file/news)) then
              <div id="newslist">{
                for $new in $file/news/new return (
-                 <h3 id="new{$new/@date}">{format-date(xs:date($new/@date/data()), "[D0o] [MNn] [Y0000]", $language/id, (), ())}</h3>,
+                 <h2 id="new{$new/@date}">{format-date(xs:date($new/@date/data()), "[D0o] [MNn] [Y0000]", $language/id, (), ())}</h2>,
                  if ($new/text/@language != $language/id) then
                    <div class="untranslated"><p class="untranslated-p">({$language/nottranslated/node()})</p><div class="newstext"><p>{$new/text/node()}</p></div></div>
                  else
@@ -68,13 +68,13 @@
            return (
              <br/>,
              if (exists($subfile/download)) then (
-               <h3>{$subfileinfo/title/node()}</h3>,
+               <h2>{$subfileinfo/title/node()}</h2>,
                <ul style="padding-left:2em; list-style-position:inside;">{
                  for $download in $subfile/download return
                    <li><a href="{local:file-url($subfileinfo, $language) || '#' || $download/(id,file)[1] }">{$download/title/text()}</a>: {$download/description_80/text()}</li>
                }</ul>
              ) else (
-               <h3><a href="{local:file-url($subfileinfo, $language)}">{$subfileinfo/title/text()}</a></h3>,
+               <h2><a href="{local:file-url($subfileinfo, $language)}">{$subfileinfo/title/text()}</a></h2>,
                <p style="margin-left:2em">{$subfile/description}</p>
              )),
            
@@ -117,9 +117,9 @@
              let $download-id := ($download/id, $download/file)[1]/data()
              return 
              <div class="long_desc_entry">
-               <h3 class="long_desc_title"><a id="{$download-id}" name="{$download-id}" class="target">&#160;</a><a>{
+               <h2 class="long_desc_title"><a id="{$download-id}" name="{$download-id}" class="target">&#160;</a><a>{
                  $download/file[1] ! attribute href {$file/download-dir || '/' || .}, $download/title/text()
-                 }</a></h3>
+                 }</a></h2>
                <div class="long_desc_license">{$download/payment/text()}{$download/source-license/text()}</div>
                {$download/year/<div class="long_desc_year">{text()}</div>}
                <div class="long_desc_desc">

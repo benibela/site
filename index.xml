@@ -4,7 +4,7 @@
   <keywords language="de">BeniBela, Benito van der Zander, Spiele, Tools, Delphi, Komponenten, Scherzprogramme</keywords>
   <keywords language="en">BeniBela, Benito van der Zander, games, tools, Delphi, components, joke programs</keywords>
   <prevent-content-title>YES</prevent-content-title>
-  <content><a auto="*rss"/> <h2 style="display: inline">News</h2>  <br/></content>
+  <content><a auto="*rss"/> <h1 style="display: inline">News</h1>  <br/></content>
     
     <news>
 <!--
