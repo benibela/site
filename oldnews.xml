@@ -190,7 +190,7 @@ Und es gibt jetzt auch die Programme der Bwinf-Runden hier, womit ich mich die r
 <text language="en">The site structure has been improved, using my xml processing language <a href="tools_en.html#jaxmlp">JAXMLP</a>.<br/>And there are some German only ressources, my submissions to the national informatic contest BWInf and a text about the calculation of molecule conformations.
 </text></new>
 <new date="2007-03-24"><text language="de">
-Die Seite wird jetzt auch im Internet Explorer 5 und (leider nur ungezoomt) im IE 7. <br/>Wer das Internet mit einem vernünftigen Programm benutzen will, sollte sich aber trotzdem mal den <a href="http://www.mozilla-anleitung.de/Mozilla/101Dinge.php">FireFox</a> ansehen.</text></new>
+Die Seite wird jetzt auch im Internet Explorer 5 und (leider nur ungezoomt) im IE 7. <br/>Wer das Internet mit einem vernünftigen Programm benutzen will, sollte sich aber trotzdem mal den FireFox ansehen.</text></new>
 <new date="2007-02-27"><text language="de">Zwei Fehler in VideLibri wurden gelöst, jetzt kann es auch wieder für die FHB benutzt werden.</text></new>
 <new date="2007-02-17"><text language="de">
 Das Ausleihenverwaltungsprogramm <a href="tools_de.html#videlibri">VideLibri</a> lässt sich jetzt als Betaversion herunterladen. (trotz Betastatus läuft es fast einwandfrei)
@@ -201,10 +201,10 @@ Die Seite ist jetzt in einer Art Content-Management-System gespeichert. (Das sie
 <new date="2006-12-15"><text language="de">
 Nach langer Zeit gibt es mal wieder ein Update bezüglich Programmierung.<br/>
 Eine Klasse für das Parsen von <a href="sources_de.html#rcmdline">Kommandozeilenparameter</a>, eine für ein <a href="sources_de.html#autoupdate.zip">automatisches Programmupdate</a> und einen kleinen IE-basierten <a href="sources_de.html#simplebrowser.zip">Browser</a>, der über Kommandozeile gesteuert werden kann. Wie man sieht, sind dies alles bloß Programmteile, und zwar von meinem neuen Bücherei - Ausleihen - Verwaltungs - programmes (Videlibri), das es auch bald hier geben wird.<br/>
-Die Seite selbst ist auch leicht geändert, es gibt jetzt ein <a href="oldnews_de.html#top">Newsarchiv</a> und die Links sind teilweise als "social bookmarks" auf <a href="http://del.icio.us/BeniBela">del.icio.us</a> ausgelagert.
+Die Seite selbst ist auch leicht geändert, es gibt jetzt ein <a href="oldnews_de.html#top">Newsarchiv</a> und die Links sind teilweise als "social bookmarks" auf <a href="//del.icio.us/BeniBela">del.icio.us</a> ausgelagert.
 </text><text language="en">Although the last change here has been more than 7 months ago, this site isn't dead. I have only been to busy to change anything here.<br/>
 However, today I have added some new support units (for programming, not gaming), a <a href="sources_en.html#rcmdline">command line parser</a>, an <a href="sources_en.html#autoupdate.zip">online update class</a> and a <a href="sources_en.html#simplebrowser.zip">simple browser</a> (the last one isn't a tool, because it is only usefull when used together with an own program).<br/>
-The site itself have been changed, too. There is now a <a href="oldnews_en.html#top">news archive</a> (mainly for the German part, where more news exists) and most of the links are now social bookmarks on <a href="http://del.icio.us/BeniBela">del.icio.us</a> (mainly the English links).</text>
+The site itself have been changed, too. There is now a <a href="oldnews_en.html#top">news archive</a> (mainly for the German part, where more news exists) and most of the links are now social bookmarks on <a href="//del.icio.us/BeniBela">del.icio.us</a> (mainly the English links).</text>
 </new>  
     <new date="2006-10-26"><text language="de">Mein Chemiereferat zur <a auto="glaselektrode.zip">Glaselektrode</a> ist jetzt online.</text></new>
     <new date="2006-04-27"><text language="de">Es gibt jetzt die nächste version von MathSys in der einige Fehler korrigiert sind. (Stark vergrößerte Sachen ließen sich nicht drucken, die Vorschau war verschoben und mit sich selbst multiplizierte Variablen wurden nicht gezeichnet). </text></new>
@@ -226,7 +226,7 @@ Happy New Year!</text></new>
 <text language="de">Es sind 4 neue Programme hochgeladen worden, 1 einfacher vertikaler Shooter und 3 Tools, Simulatoren für Logikschaltungen und Dateien. <br/> Und ich bin wieder zum alten Seitenaufbau gewechselt, wo der Link zum Quellcode von Open Source Programmen nicht auf eine extra Seite ausgelagert ist, sondern direkt beim Programm steht.</text>
 <text language="en">There are 4 new programs, 1 simple vertically-scrolling shooter and 3 tools,  simulators of logic circuits and files. <br/> And I have changed back to the old site division where the source of open source programs is directly linked with the program description.</text></new>
 <new date="2005-08-21"><text language="de">
-Das alte, externe Gästebuch wurde durch ein selbstprogrammiertes ersetzt, so dass es endlich zum Seitendesign passt. Leider sind dadurch alle alten Gästebucheinträge nicht mehr verfügbar, aber man kann sie noch auf der <a href="http://gaestebuch-2000.de/cgi-bin/gb.pl?user=benibela">alten Seite</a> finden.</text></new>
+Das alte, externe Gästebuch wurde durch ein selbstprogrammiertes ersetzt, so dass es endlich zum Seitendesign passt. Leider sind dadurch alle alten Gästebucheinträge nicht mehr verfügbar, aber man kann sie noch auf der <a href="//gaestebuch-2000.de/cgi-bin/gb.pl?user=benibela">alten Seite</a> finden.</text></new>
 <new date="2005-08-15"><text language="de">
 Ich habe die Seite komplett überarbeitet.<br/>
 Sie ist jetzt moderner und völlig Standard-kompatibel. (Das heißt das sie unter alten Browser nicht mehr funktioniert ;-), da aber alle Zugriffe nahezu nur von neueren Browsern kommen, ist es nicht so tragisch)<br/>

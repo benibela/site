@@ -61,8 +61,8 @@ The language codes "de" and "en" specify which languages are supported. If one o
     <payment>Freeware</payment>
     <source>GPL</source>
     <year>2009 - <insert value="currentyear"/>*</year>
-    <content language="de">Ein LaTeX Editor, den ich geschrieben habe, als ich eigentlich ein Buch schreiben wollte. TeXstudio ist auf einer eigenen <a href="http://www.texstudio.org" rel="nofollow">Domain</a> gehostet.</content>
-    <content language="en">An editor based on Texmaker which I made to write a book in LaTeX. It has become surprisingly popular and is hosted on <a href="http://www.texstudio.org" rel="nofollow">texstudio.org</a>.</content>
+    <content language="de">Ein LaTeX Editor, den ich geschrieben habe, als ich eigentlich ein Buch schreiben wollte. TeXstudio ist auf einer eigenen <a href="//www.texstudio.org" rel="nofollow">Domain</a> gehostet.</content>
+    <content language="en">An editor based on Texmaker which I made to write a book in LaTeX. It has become surprisingly popular and is hosted on <a href="//www.texstudio.org" rel="nofollow">texstudio.org</a>.</content>
   </download> 
 
   <download> 
@@ -77,11 +77,11 @@ The language codes "de" and "en" specify which languages are supported. If one o
     <payment>Freeware</payment>
     <source>GPL</source>
     <year>2002, 2008</year>
-    <content language="de">APIM ist ähnlich wie Spyxx und <a href="http://assarbad.net/">EDA</a> ein Programm mit dessen Hilfe man Attribute von anderen Anwendungen lesen und setzen kann.<br/>
+    <content language="de">APIM ist ähnlich wie Spyxx und <a href="//assarbad.net/">EDA</a> ein Programm mit dessen Hilfe man Attribute von anderen Anwendungen lesen und setzen kann.<br/>
 Im Gegensatz zu EDA ist APIM mehr auf das Verändern von Attributen ausgelegt, als auf das reine Auslesen.<br/>
 Der <a href="bin/tools/source/apim.zip">Quellcode</a> steht unter der GPL.<br/>
 APIV hat folgende Features:</content>
-    <content language="en">APIM is like Spyxx and <a href="http://assarbad.net/">EDA</a> a program which can read and set attributes of other windows, but in comparison to them APIM has much more features for changing properties.
+    <content language="en">APIM is like Spyxx and <a href="//assarbad.net/">EDA</a> a program which can read and set attributes of other windows, but in comparison to them APIM has much more features for changing properties.
     <br/>The <a href="bin/tools/source/apim.zip">source</a> is GPLed.
     <br/>APIM has got these functions: 
 </content>

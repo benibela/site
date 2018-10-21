@@ -54,9 +54,9 @@ Empfangsereignissen in Ereignisprotokollen" wird untersucht, wie man aus der Rei
     <description_80 language="en">Poster about the paper "Separators and Adjustment Sets in
     Markov Equivalent DAGs"</description_80>
     <!--<payment-license>-</payment-license>-->
-    <content language="de">Poster und Folien zum Paper <a href="http://wwwtcs.tcs.uni-luebeck.de/downloads/papers/2016/full-version.pdf">Separators and Adjustment Sets in
+    <content language="de">Poster und Folien zum Paper <a href="//www.tcs.uni-luebeck.de/downloads/papers/2016/full-version.pdf">Separators and Adjustment Sets in
     Markov Equivalent DAGs</a> bei AAAI 2016, welches das UAI 14 Paper zu Chain Graphen verallgemeinert .</content>
-    <content language="en">Poster and slides about the paper <a href="http://wwwtcs.tcs.uni-luebeck.de/downloads/papers/2016/full-version.pdf">Separators and Adjustment Sets in
+    <content language="en">Poster and slides about the paper <a href="//www.tcs.uni-luebeck.de/downloads/papers/2016/full-version.pdf">Separators and Adjustment Sets in
     Markov Equivalent DAGs</a> presented at AAAI 2016, generalizing the UAI 14 paper to a new class of chain graphs.</content>
   </download>
 
@@ -69,8 +69,8 @@ Empfangsereignissen in Ereignisprotokollen" wird untersucht, wie man aus der Rei
     <description_80 language="de">Folien zum Balisage Vortrag "Extending XQuery with pattern matching"</description_80>
     <description_80 language="en">Slides for the Balisage talk "Extending XQuery with pattern matching"</description_80>
     <!--<payment-license>-</payment-license>-->
-    <content language="de">Folien von meinem Vortrag über das Paper <a href="http://balisage.net/Proceedings/vol13/html/Zander01/BalisageVol13-Zander01.html">Extending XQuery with pattern matching over XML, HTML and JSON, and its usage for data mining</a> bei der Balisagekonferenz 2014, welches beschreibt, wie VideLibri die Webseiten der Bibliotheken ausliest.</content>
-    <content language="en">Slides of my talk about the paper <a href="http://balisage.net/Proceedings/vol13/html/Zander01/BalisageVol13-Zander01.html">Extending XQuery with pattern matching over XML, HTML and JSON, and its usage for data mining</a> at Balisage 2014, which describes the XQuery extensions developed for my library app VideLibri to simply the data mining of webpages.</content>
+    <content language="de">Folien von meinem Vortrag über das Paper <a href="//balisage.net/Proceedings/vol13/html/Zander01/BalisageVol13-Zander01.html">Extending XQuery with pattern matching over XML, HTML and JSON, and its usage for data mining</a> bei der Balisagekonferenz 2014, welches beschreibt, wie VideLibri die Webseiten der Bibliotheken ausliest.</content>
+    <content language="en">Slides of my talk about the paper <a href="//balisage.net/Proceedings/vol13/html/Zander01/BalisageVol13-Zander01.html">Extending XQuery with pattern matching over XML, HTML and JSON, and its usage for data mining</a> at Balisage 2014, which describes the XQuery extensions developed for my library app VideLibri to simply the data mining of webpages.</content>
   </download>
   
   <download> 
