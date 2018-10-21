@@ -5,23 +5,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="description" content="{$file/description}"/>
     <meta name="keywords" content="{join(($file/keywords, $file/download/keywords)[.])}"/>
-    <meta name="DC.Title" content="{$fileinfo/title} - BeniBela online"/>
-    <meta name="DC.Subject" content="{$fileinfo/title}"/>
-    <meta name="DC.Type" content="{ ($file/content-type, 'Text')[1] }"/>
-    <meta name="DC.Description" content="{$file/description}"/>
     <link rel="SHORTCUT ICON" href="favicon.ico"/>
     <script type="text/javascript" src="js/all.js"/>
  
     <meta name="author" content="{$global/author}"/>
-    <meta name="copyright" content="{$global/copyrightfirstdate}-{$global/copyrightlastdate}, {$global/author}"/>
-    <meta name="DC.Creator" content="{$global/author}"/>
-    <meta name="DC.Format" content="text/html"/>
-    <meta name="DC.Right" content="{$global/author}"/>
     <meta name="robots" content="{($file/robots, $global/robots)[1]}"/>
     <meta http-equiv="content-language" content="{$language/id}"/>
     <link rel="contents" href="index.html" title="Startseite"/>
     <link rel="start" href="index.html" title="Startseite"/>
-    <link rel="copyright" href="impressum_de.html" title="Impressum"/>
     {for $l in $global/language return
       <link rel="alternate" href="{local:file-url($fileinfo, $l)}" hreflang="{$l/id}"/>
     }
@@ -197,7 +188,7 @@
            <span id="fileName">www.benibela.de/{local:file-url()}</span><br/>{
 (:          {$language/contentlastchange/node()}: {$file/$lastModified}<br/> :)
 (:           {$language/pagelastchange/node()}: {$$lastModified}<br/>:)()}
-           {$language/authorship/node()} <div style="display: inline">{$language/homepageOf/node()} <a href="https://plus.google.com/u/0/105999681299848220119?rel=author" rel="author">Benito van der Zander</a>, <a href="privacy_{$language/id}.html">Datenschutz</a></div>
+           <a href="privacy_{$language/id}.html">Datenschutz</a>
         
       </div>	
     </div>
