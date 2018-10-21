@@ -196,14 +196,10 @@ function isBrowserIE(){
 function pageFocus(){
   contentdiv=document.getElementById("content");
   if (!contentdiv) return;
-  if (window.location.href.indexOf("#") <= -1) 
-    for(var i=0; i<contentdiv.childNodes.length; i++){
-      var link = contentdiv.childNodes[i];
-      if(link.nodeName=='A'){
-          link.focus();
-          break;
-      }  
-    }
+  if (window.location.href.indexOf("#") <= -1 && document.getElementsByName) {
+    var t = document.getElementsByName("top");
+    if (t && t[0]) t[0].focus(); //need to focus on something on the scrollable div, so keyboard scrolling works 
+  }
   var isIE = isBrowserIE();
   
   for (var i=0;i<document.links.length;i++) {
