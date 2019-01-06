@@ -12,7 +12,7 @@ The language codes "de" and "en" specify which languages are supported. If one o
     <title>VideLibri</title>
     <id>videlibri</id>
     <description_80 language="de">Eine Bibliothek-App zum Zugriff auf sein Ausleih&#173;konto bei verschiedenen Bibliotheken und auf sonstige Katalog&#173;funktionen</description_80>
-    <description_80 language="en">An app to manage books lend from libraries and access other library catalog functions</description_80>
+    <description_80 language="en">An app to manage books borrowed from libraries and access other library catalog functions</description_80>
     <keywords language="de">Bücherei, Bibliothek, Stadtbücherei, Universitätbibliothek, Landesbibliothek, Fachhochschulbibliothek</keywords>
     <keywords language="en">library</keywords>
     <language>de</language>
@@ -25,7 +25,7 @@ The language codes "de" and "en" specify which languages are supported. If one o
       <p>VideLibri ist platform-unabhängig und wurde unter Windows, Linux und Android mit 200 Bibliotheken getestet.  VideLibri hat mittlerweile eine <a href="http://www.videlibri.de/" rel="nofollow">eigene Domain</a>.</p>
       </content>
     <content language="en">
-      <p>VideLibri is an app to manage books lend in various libraries. For example it can show multiple library accounts simultanously, show a history of all ever lend books, warn of due dates, and renew everything automatically before the due date. All other OPAC-functions like searching for books are also supported.</p>
+      <p>VideLibri is an app to manage books borrowed in various libraries. For example it can show multiple library accounts simultanously, show a history of all ever lent books, warn of due dates, and renew everything automatically before the due date. All other OPAC-functions like searching for books are also supported.</p>
       <p>To facilitate the usage of VideLibri with every existing library it is designed around a framework for automatic webpage querying. Thereby samples of the queried webpages (i.e. of the library OPAC) are annotated to mark the interesting parts and can directly be used to query those parts without requiring any programming. Since this is also useful for non-library webpages there is a command line version of VideLibri <a auto="xidel">without any library functionality</a> and a <a auto="internettools">(non-book) library variant for Pascal</a>.</p>
       <p>VideLibri is platform-independent and has been tested on Windows, Linux and Android, as well as with 200 libraries. However, it is still only available in German.</p>
     VideLibri is hosted on <a href="http://www.videlibri.de/index_en.html" rel="nofollow">its own page</a>. </content>    
