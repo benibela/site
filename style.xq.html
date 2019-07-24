@@ -104,9 +104,9 @@
                $download/start-category/<tr class="category-line"><th colspan="3">{data()}</th></tr>,
                <tr>
                  <td><a href="{($download/linkTo, '#' || $download-id)[1]}">{$download/title/text()}</a></td>
-                 <td>{$download/description_80/node()}</td>
-                 {$download!(language, prog-language, (:payment,:) source, source-license, payment-license )!<td>{node()}</td>}
-               </tr>
+                 <td>{$download/description_80/node()}</td>{
+                 $download!(language, prog-language, (:payment,:) source, source-license, payment-license )!<td>{node()}</td>
+               }</tr>
              )
            }
            </tbody></table></div>,
@@ -119,14 +119,14 @@
              <div class="long_desc_entry">
                <h2 class="long_desc_title"><a id="{$download-id}" name="{$download-id}" class="target">&#160;</a><a>{
                  $download/file[1] ! attribute href {$file/download-dir || '/' || .}, $download/title/text()
-                 }</a></h2>
-               <div class="long_desc_license">{$download/payment/text()}{$download/source-license/text()}</div>
-               {$download/year/<div class="long_desc_year">{text()}</div>}
-               <div class="long_desc_desc">
-                 {$download/content/node()}
-                 {if ($download/features) then
-                 <ul>
-                   {for $feature in $download/features/feature return <li>{
+                 }</a></h2>{
+              join($download/(payment,source-license)/text())[.]!<div class="long_desc_license">{.}</div>,
+               $download/year/<div class="long_desc_year">{text()}</div>}
+               <div class="long_desc_desc">{
+                 $download/content/node(),
+                 if ($download/features) then
+                 <ul>{
+                   for $feature in $download/features/feature return <li>{
                      if (empty($feature/feature2)) then $feature/node()
                      else (
                        <b>{$feature/title/node()}</b>,                     
@@ -140,29 +140,29 @@
                          }</li>
                        }</ul>
                      )}</li>
-                  }</ul> else ()}
-                 
-                 {if ($download/screenshot) then
+                  }</ul> else (),
+                  
+                  if ($download/screenshot) then
                    <div class="screenshots">{for $shot in $download/screenshot return
                      <img title="{$shot/title}" alt="screenshot: {$shot/title}" src="{$shot/fullfile}" width="300px" height="{$shot/height}"/>
                    }</div> 
-                 else ()}
+                 else (),
                  
-                 {$download/final-content/node()}
+                 $download/final-content/node(),
 
-                 {for $zelda in $download/link return (
+                 for $zelda in $download/link return (
                     <br/>,<br/>,
                     switch ($zelda/@type)
                       case "onlinedocu" return <a href="documentation/{$download-id}/">{$language/onlinedocumentation/node()}</a>
                       default return <a href="{$zelda}">{$zelda/@title/data()}</a>
-                 )}
+                 ),
 
-                 {for $poison in $download/github return (
+                 for $poison in $download/github return (
                    <br/>,<br/>,
                    <a href="//github.com/benibela/{$poison}" rel="nofollow">{$language/sourceOnGithub/node()}</a>
-                 )}
+                 ),
                  
-                 {for $downloadFile in $download/file 
+                 for $downloadFile in $download/file 
                   let $downloadsize := try { 
                     xs:string( file:size(x"_publish/{$file/download-dir}/{$downloadFile}") idiv 1024) || " KB" 
                   } catch file:not-found { 
@@ -171,25 +171,22 @@
                  return (
                    <br/>,<br/>,
                    <a href="{$file/download-dir}/{$downloadFile}">Download {$downloadFile/@title/normalize-space()}</a>,  x"&#160;&#160; ({$downloadsize})" 
-                 )}
+                 )
 
-                 <a class="uplink" href="#top">{$language/jumpToTop/node()}</a>
-
-                 <br/> <!-- otherwise downloads with p text and no download are broken -->
-
+                 }<a class="uplink" href="#top">{$language/jumpToTop/node()}</a>
+                 <br/> {(:!-- otherwise downloads with p text and no download are broken :)}
                </div>
              </div>
-           }</div>)}
+           }</div>),
 
            
-           {$file/final-content/node()}
+           $file/final-content/node()}
            </div>
            <hr id="contentEnd"/>
            <span id="fileName">www.benibela.de/{local:file-url()}</span><br/>{
 (:          {$language/contentlastchange/node()}: {$file/$lastModified}<br/> :)
 (:           {$language/pagelastchange/node()}: {$$lastModified}<br/>:)()}
            <a href="privacy_{$language/id}.html">Datenschutz</a>
-        
       </div>	
     </div>
       
