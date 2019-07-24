@@ -41,11 +41,11 @@
 
     <content language="en">This package consists of several units working together: <br/><br/> 
     <ul class="indentation-list">
-    <li>The <em>simple html parser</em> at the lowest level, parses an XML/HTML like file and calls callback functions for every tag and text it has read.</li>
-    <li>The <em>html tree parser</em>, uses the simpler parser to read an XML/HTML like file and create a linked element-stream from it, which is equivalent to a dom-like tree. This parser takes much care to make the tree usable, e.g. by correcting errors in invalid html files and auto detecting its encoding.</li>
+    <li>The <em>simple HTML parser</em> at the lowest level, parses an XML/HTML like file and calls callback functions for every tag and text it has read.</li>
+    <li>The <em>HTML tree parser</em>, uses the simpler parser to read an XML/HTML like file and create a linked element-stream from it, which is equivalent to a dom-like tree. This parser takes much care to make the tree usable, e.g. by correcting errors in invalid HTML files and auto detecting its encoding.</li>
     <li>With the <em>XPath  / XQuery engine</em> you can then run arbitrary <a href="http://www.w3.org/TR/xpath20/" rel="nofollow">XPath 2.0</a>, <a href="http://www.w3.org/TR/xpath-30/" rel="nofollow">XPath 3.0</a>, <a href="http://www.w3.org/TR/xquery/" rel="nofollow">XQuery 1.0</a> and <a href="http://www.w3.org/TR/xquery-30/" rel="nofollow">XQuery 3.0</a> queries on the dom-like representation. It is completely implemented in Pascal and pretty much standard conformant. (compare its <a href="documentation/internettools/xqts.html">XQuery Testsuite results</a>: between 100% for XPath 2 and over 99% for XQuery 3). It also supports JSONiq.</li>
     <li>The parser for <em>CSS 3 selectors</em> is part of then XQuery class, converts the CSS selector to a XPath expression and evaluates that.</li>
-    <li>The <em>pattern-matching html template engine</em> at the highest level, can be used to process an HTML file by annotating a subset of it and applying the resulting template to the HTML file.  All elements in the template are searched in the HTML file and template instructions in matching elements can be used to extract data. For example a template like 
+    <li>The <em>pattern-matching HTML template engine</em> at the highest level, can be used to process an HTML file by annotating a subset of it and applying the resulting template to the HTML file.  All elements in the template are searched in the HTML file and template instructions in matching elements can be used to extract data. For example a template like 
     <pre>&lt;a>{@href}&lt;/a>*</pre>
     will read the urls of all links in an HTML file.<br/>
     A template like this:
@@ -55,90 +55,90 @@
     <pre>&lt;table id="foobar">&lt;tr>{temp := 0}&lt;td>abc&lt;/td>&lt;td>{temp := $temp + .}&lt;/td>*{result := $temp}&lt;/tr>*&lt;/table></pre>
     will calculate the sum of all table cells after the abc cell in all rows.<br/>You can also try these templates <a href ="http://videlibri.sourceforge.net/cgi-bin/xidelcgi"> online</a> or with <a href="http://videlibri.sourceforge.net/xidel.html">Xidel</a>.</li>
     <li>The <em>multi page template engine</em> can be used to download several pages, and apply a single-page template to each of them. Contrary to the single-page template it does not do any pattern matching itself (of course the single-page templates contained in a multi-page template do pattern matching against each page), but simply executes the actions in the order given in the template. It also supports variables, condition and loops, so it is even Turing complete.</li>
-    <li>The <em>http/s-wrapper</em> let you switch dynamically between Wininet (default library installed on every Windows computer), Synapse (platform-independent,  but not always installed and problematic with HTTPS) and Apache HttpComponents (called through JNI and runs on Android).</li>
-    <li>The <em>auto update</em> class is a trivial example for the other classes and can be used to add an auto update function to a program which will check online for a more recent version, download that version automatically and (optionally) install it. </li>
+    <li>The <em>HTTP/S-wrapper</em> let you switch dynamically between Wininet (default library installed on every Windows computer), Synapse (platform-independent,  but not always installed and problematic with HTTPS), Apache HttpComponents and OkHttp (latter two called through JNI for Android).</li>
+    <li>The <em>auto update</em> class is a simple example for the other classes and can be used to add an auto update function to a program which will check online for a more recent version, download that version automatically and (optionally) install it. </li>
     </ul>
     <br/><br/>Summary of features:<br/><br/>
     </content>
     <features language="de">
       <feature><title>Parser/Interpreter:</title>
-      <feature2>für xml/html Seiten, über ein sax und dom-ähnliches Interface</feature2>
+      <feature2>für XML/HTML Webseiten, über ein sax und dom-ähnliches Interface</feature2>
       <feature2><title>für XPath 2.0, XPath 3.0, XQuery 1.0 und XQuery 3.0 Ausdrücke</title>
       <feature3>nahezu vollständig standardkompatibel: von den Tests in der XQuery Testsuite besteht es zwischen 100% für XPath 2.0 und 99% für XQuery 3.0</feature3>
+      <feature3>einige Funktionen von XPath/XQuery 3.1.</feature3>
       <feature3>Plus Erweiterungen für OOP, CSS, Regexps, pattern-matching und JSONiq.</feature3>
       </feature2>
       <feature2>für JSONiq: Eine Weiterentwicklung von XQuery zur Verarbeitung von JSON-Daten</feature2>
       <feature2><title>für CSS 3 Selektoren</title>
-      <feature3>standardkompatibel (afaik, nicht viel getestet)</feature3>
       <feature3>standalone oder innerhalb eines XPath Ausdrucks: <code>//foobar/css("p#x a.class")/@href</code></feature3>
       </feature2>
-      <feature2><title>für pattern-matching html/xml Templates:</title>
-        <feature3>Templates lassen sich einfach aus einer html-Datei erstellen und später updaten </feature3>
-        <feature3>Die Sprache kann reguläre, XPath 2 / XQuery, JSONiq und CSS 3 Selektor Ausdrücke einbinden</feature3>
-        <feature3>Es gibt Variablen, optionale Elemente, Schleifen und Bedingungen</feature3>
+      <feature2><title>für pattern-matching HTML/XML Templates:</title>
+        <feature3>Patterns sind für HTML, was reguläre Ausdrücke für Text sind.</feature3>
+        <feature3>Die Sprache kann reguläre, XPath 2 / XQuery, JSONiq und CSS 3 Selektor Ausdrücke einbinden.</feature3>
+        <feature3>Es gibt Variablen, optionale Elemente, Schleifen und Bedingungen.</feature3>
         <feature3>z.B.: <code>&lt;p class="test">&lt;span>Caption:&lt;/span>&lt;a>{.}&lt;/a>*&lt;/p></code> liest alle Links nach einem <code>span</code>-Element mit Text <code>Caption:</code> innerhalb eines Paragraphens mit Klasse <code>test</code></feature3>
       </feature2>
       <feature2><title>für multi-page Templates</title>
-      <feature3>Mehrere pattern-matching Templates zusammen, die nacheinander auf unterschiedliche Seiten angewandt werden.</feature3>
+      <feature3>Mehrere Patterns zusammen, die nacheinander auf unterschiedliche Seiten angewandt werden.</feature3>
       <feature3>unterstützt Variablen, Bedingungen und Schleifen => Turing vollständig</feature3>
       </feature2>
       </feature>
       <feature><title>HTTP/S-Wrapper:</title>
-      <feature2>Übertragungen über http und https mit Fortschrittsanzeige </feature2>
+      <feature2>Übertragungen über HTTP und HTTPS mit Fortschrittsanzeige </feature2>
       <feature2>Beliebige HTTP-Methoden, z.B.: GET, POST, PUT, ...</feature2>
       <feature2><title>Unterstützte Plattformen:</title>
-      <feature3>Windows: via wininet</feature3>
-      <feature3>Android: via JNI-Aufruf der Apache HttpComponents</feature3>
-      <feature3>Andere (Linux, Mac): via dem plattform unabhängigen Synapse</feature3>
+      <feature3>Windows: via WinINet</feature3>
+      <feature3>Android: via JNI-Aufruf von OkHttp oder den Apache HttpComponents</feature3>
+      <feature3>Andere (Linux, Mac): via dem plattform unabhängigen Synapse (benötigt OpenSSL for HTTPS)</feature3>
       <feature3>Offline: Simulation eine Internetverbindung für Unittests </feature3> </feature2>
-      <feature2>Unterstützung für http, https und socks-Proxy (nicht auf Android)</feature2>
+      <feature2>Unterstützung für HTTP, HTTPS und SOCKS-Proxy (abhängig von der Plattform)</feature2>
       </feature>
       <feature><title>Auto update:</title>
       <feature2>Verwendet ein XML-Format, um auf dem Server die aktuelle Version und das Changelog zu speichern. </feature2>
-      <feature2>Erlaubt unterschiedliche Updates für 32/64-bit Linux/Windows und BSD-Platformen  </feature2>
-      <feature2>Überprüft, ob es eine neue Version gibt, indem nur eine kleine Datei (statt dem Changelog) heruntergeladen wird </feature2>
-      <feature2>Erlaubt das Ausführen des heruntergeladenen Installers mit beliebigen Kommandozeilenparametern </feature2>
+      <feature2>Erlaubt unterschiedliche Updates für 32/64-bit Linux/Windows und BSD-Plattformen.</feature2>
+      <feature2>Überprüft, ob es eine neue Version gibt, indem nur eine kleine Datei (statt dem Changelog) heruntergeladen wird. </feature2>
+      <feature2>Erlaubt das Ausführen des heruntergeladenen Installers mit beliebigen Kommandozeilenparametern.</feature2>
       </feature>
     </features>
     <features language="en">
       <feature><title>Parsers/interpreters:</title>
-      <feature2>for xml/html files, with a sax or dom-like interface</feature2>
-      <feature2><title>for XPath 2 / XQuery expressions</title>
-      <feature3>nearly completely standard compatible: passes 99.3% of the XPath 2 only tests and 97.8% of the XQuery 1 tests in the XQuery Testsuite <br/> (skipping tests for invalid input queries; most failing tests depend on xml schemas which are not supported, yet)</feature3>
-      <feature3>Some extension for objects, css, regular expressions, pattern matching and JSONiq<br/></feature3>
+      <feature2>for XML/HTML files, with a sax or dom-like interface</feature2>
+      <feature2><title>for XPath / XQuery expressions</title>
+      <feature3>standard compatible: passes over 99.9% of the XPath 2 only tests and 99.5% of the XQuery 3.0 tests in the XQuery Testsuite</feature3>
+      <feature3>Some extension for objects, css, regular expressions, pattern matching and JSONiq.<br/></feature3>
       </feature2>
-      <feature2><code>!</code> and <code>||</code> operators of XPath/XQuery 3.0</feature2>
+      <feature2>Some syntax from XPath/XQuery 3.1.</feature2>
       <feature2>for JSONiq: An extension to XQuery to handle JSON data<br/></feature2>                  
       <feature2><title>for CSS 3 Selectors</title>
       <feature3>standard compatible (afaik)</feature3>
       <feature3>standalone or within XPath queries <code>//foobar/css("p#x a.class")/@href</code></feature3>
       </feature2>
-      <feature2><title>for pattern-matching html/xml templates:</title>
-        <feature3>Templates can be easily created/updated from the existing html file</feature3>
-        <feature3>The template languages allows the inclusion of regular, XPath 2 / XQuery, JSONiq and CSS 3 Selectors expressions</feature3>
+      <feature2><title>for pattern-matching HTML/XML templates:</title>
+        <feature3>Templates process HTML like regular expressions process strings.</feature3>
+        <feature3>The template languages allows the inclusion of regular, XPath/XQuery, JSONiq and CSS 3 Selectors expressions</feature3>
         <feature3>The language has variables, optional elements, loops and conditions</feature3>
         <feature3>e.g. <code>&lt;p class="test">&lt;span>Caption:&lt;/span>&lt;a>{.}&lt;/a>*&lt;/p></code> will read all links after the <code>span</code>-element containing <code>Caption:</code> in a paragraph with class <code>test</code></feature3>
       </feature2>
       <feature2><title>for multi-page "scraping" templates</title>
-      <feature3>A collection of pattern-matching template to apply to several webpages</feature3>
-      <feature3>has variables, conditions and loops => Turing complete</feature3>
+      <feature3>A collection of patterns applied to several webpages.</feature3>
+      <feature3>has variables, conditions and loops => Turing complete.</feature3>
       </feature2>
       </feature>
       <feature><title>HTTP/S-Wrapper:</title>
-      <feature2>Can be used for transmissions over http and https</feature2>
-      <feature2>Allows arbitrary http methods, e.g. GET, POST, PUT, ...</feature2>
+      <feature2>Can be used for transmissions over HTTP and HTTPS</feature2>
+      <feature2>Allows arbitrary HTTP methods, e.g. GET, POST, PUT, ...</feature2>
       <feature2><title>Supported platforms:</title>
-            <feature3>Windows: using wininet with the standard system configuration</feature3>
-            <feature3>Android: using the Apache HttpComponents through JNI</feature3>
+            <feature3>Windows: using WinINet with the standard system configuration</feature3>
+            <feature3>Android: using OkHttp or the Apache HttpComponents through JNI</feature3>
             <feature3>Others (Linux, Mac): using the platform-independent Synapse</feature3> 
             <feature3>Offline: simulating an internet connection locally for unit tests</feature3> </feature2>
-      <feature2>Supports http, https and socks-Proxy (not on Android)</feature2>
+      <feature2>Supports HTTP, HTTPS and SOCKS-Proxy (depending on the platform)</feature2>
       </feature>
       <feature><title>Auto update:</title>
-      <feature2>Uses a xml format to store the most recent version and a changelog on the server.</feature2>
-      <feature2>Supports different updates for 32/64-bit platforms and linux,Windows or BSD systems </feature2>
-      <feature2>Checks if a new version is available without downloading the whole, large changelog</feature2>
-      <feature2>Allows the execution of an arbitrary command line after the update, runas administrator if necessary</feature2>
+      <feature2>Uses an XML format to store the most recent version and a changelog on the server.</feature2>
+      <feature2>Supports different updates for 32/64-bit platforms and Linux, Windows or BSD systems.</feature2>
+      <feature2>Checks if a new version is available without downloading the whole, large changelog.</feature2>
+      <feature2>Allows the execution of an arbitrary command line after the update, runas administrator if necessary.</feature2>
       </feature>
     </features>
     <final-content>
