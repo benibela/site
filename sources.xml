@@ -187,6 +187,71 @@
       <height>173px</height>
     </screenshot>
   </download>
+
+
+  <download> 
+    <title>HAMT</title>
+    <link type="onlinedocu"/>
+    <id>hamt</id>
+    <file>hamt.zip</file>
+    <github>hamt</github>
+    <description_80 language="de">HAMT-basierte mutable und immutable Maps und Sets</description_80>
+    <description_80 language="en">Mutable and immutable persistent maps and sets as hash array mapped trie</description_80>
+    <prog-language>FPC</prog-language>
+    <source-license>(LC)LGPL</source-license>
+    <content language="de">
+    <p>Ein HAMT ist eine effiziente Abbildung von Hashwerten/prefixen zu Daten als Baum/Trie, wobei die Zugriffsgeschwindigkeit ähnlich zu einer Hashmap ist, aber kein Rehashing benötigt wird und sich der ganze Baum an der Wurzel in konstanter Zeit kopieren lässt. In dieser Implementierung werden ein 32-Bit Hash und Knoten mit 32 Kindern verwendet, so dass jeweils 5 Bits vom Hash das nächste Kind auf dem Pfad von der Wurzel zum Blatt bestimmen. In der Abwesenheit von Hashkollisionen lassen sich damit maximal 2^32 Werte in einem Baum der Tiefe (log_32 2^32) = 6 speichern. Das Auslesen von Werten benötigt damit maximal 6 Speicherzugriffe und ist somit quasi O(1). Auftretende Hashkollisionen werden für jeden Hash in einem Array gespeichert.</p>
+    <p>Die Speicherverwaltung der Baumknoten läuft wie bei strings: Jeder Baumknoten hat einen Referenzzähler. Wenn der Zähler 1 ist, ist der Knoten mutable und kann verändert werden. Wenn der Zähler größer als 1 ist, ist der Knoten immutable und eine Veränderung erzeugt mittels copy-on-write einen neuen Knoten.  </p>
+    <p>Der HAMT kann mit beliebigen Typen verwendet werden, da alles generic ist.</p>
+    <p>Beispiel:</p>
+</content>
+<final-content>
+<pre>
+type TImmutableMapStringString = specialize TImmutableMap&lt;string, string, THAMTTypeInfo>;
+var map, map2, map3: TImmutableMapStringString;
+    p: TImmutableMapStringString.PPair;
+begin
+  map := TImmutableMapStringString.create;
+  map2 := map.Insert('hello', 'world');
+  map3 := map2.insert('foo', 'bar');
+
+  writeln(map.get('hello', 'default')); // default
+  writeln(map.get('foo', 'default')); // default
+
+  writeln(map2.get('hello')); // world
+  writeln(map2.get('foo', 'default')); // default
+
+  writeln(map3['hello']); // world
+  writeln(map3['foo']); // bar
+
+  //enumerate all
+  for p in map3 do
+    writeln(p^.key, ': ', p^.value);
+
+  map.free;
+  map2.free;
+  map3.free;
+end</pre>
+    </final-content>
+    <content language="en">
+    <p>A HAMT is a hashmap/set stored as trie, which provides update and lookup performance similarly to a normal hashmap/set, but needs no rehashing and also allows one to copy the entire map/set in constant time.  This implementation uses a 32 bit hash and trie nodes with 32 children, so 5 bits of the hash are consumed to choose the next child. When there are no hash collisions, this HAMT can store 2^32 items with a maximal tree depth of (log_32 2^32) = 6, i.e., you need 6 memory accesses to find any key/value which is practically O(1). (When there are hash collisions, they are put in an array)</p>
+    
+    <p>Each HAMT node carries a reference counter, since FreePascal has no garbage collector. If the reference count is 1, the node can mutate, otherwise it is immutable with a copy-on-write semantic like strings. The counter is updated atomically, so the map could be shared across threads.</p>
+    
+    <p>Everything is implemented using generics, so it can be used with all types.</p>
+    <p>Example: </p>
+    </content>
+<!--    <features language="de">
+    </features>
+    <features language="en">
+      <feature>Read-only, mutable and immutable</feature>
+      <feature>Reference counting</feature>
+      <feature>32-bit hash</feature>
+      <feature>32-bit hash</feature>
+    </features>-->
+  </download>
+
+
   
 
   <download> 
