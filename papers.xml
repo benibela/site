@@ -32,6 +32,27 @@ Empfangsereignissen in Ereignisprotokollen" wird untersucht, wie man aus der Rei
   </download>
   
   <download> 
+    <title language="de">Präsentation UAI 19</title>
+    <title language="en">Presentation UAI 19</title>
+    <file>slides19uai.pdf</file>
+    <id>slides19uai</id>
+    <description_80 language="de">Folien zum Paper "Finding minimal d-separators in linear time and applications"</description_80>
+    <description_80 language="en">Slides of the talk "Finding minimal d-separators in linear time and applications"</description_80>
+    <content language="de">Folien zum Paper "<a href="http://auai.org/uai2019/proceedings/papers/222.pdf">Finding minimal d-separators in linear time and applications</a>" bei UAI 2019.</content>
+    <content language="en">Slides of the paper "<a href="http://auai.org/uai2019/proceedings/papers/222.pdf">Finding minimal d-separators in linear time and applications</a>" at UAI 2019.</content>
+  </download>
+
+  <download> 
+    <title language="de">Präsentation CTW 19</title>
+    <title language="en">Presentation CTW 19</title>
+    <file>slides19ctw.pdf</file>
+    <description_80 language="de">Folien zum Vortrag "Graphical Methods for Finding Instrumental Variables"</description_80>
+    <description_80 language="en">Slides of the talk "Graphical Methods for Finding Instrumental Variables"</description_80>
+    <content language="de">Folien zum Vortrag "Graphical Methods for Finding Instrumental Variables" beim 17ten Köln-Twente Workshop zu Graphen und Kombinatorischer Optimierung.</content>
+    <content language="en">Slides of the talk "Graphical Methods for Finding Instrumental Variables" at the 17th Cologne-Twente Workshop on Graphs &amp; Combinatorial Optimization.</content>
+  </download>
+
+  <download> 
     <title language="de">Poster AISTATS 16</title>
     <title language="en">Poster AISTATS 16</title>
     <id>poster16aistats</id>
@@ -42,6 +63,7 @@ Empfangsereignissen in Ereignisprotokollen" wird untersucht, wie man aus der Rei
     <content language="de">Poster zum Paper <a href="http://jmlr.org/proceedings/papers/v51/vanderzander16.pdf">On Searching for Generalized Instrumental Variables</a> bei AISTATS 2016.</content>
     <content language="en">Poster about the paper <a href="http://jmlr.org/proceedings/papers/v51/vanderzander16.pdf">On Searching for Generalized Instrumental Variables</a> at AISTATS 2016.</content>
   </download>
+
 
   
   <download> 
@@ -159,7 +181,7 @@ Empfangsereignissen in Ereignisprotokollen" wird untersucht, wie man aus der Rei
     <content language="de">Mein Referat zur Glaselektrode.</content>
   </download>
   <download> 
-    <title>Skript zu Lineare Algebra II</title>
+    <title>Skript&#xA0;zu&#xA0;Lineare&#xA0;Algebra&#xA0;II</title>
     <file>lina2.zip</file>
     <description_80 language="de">Skriptmitschrift zu Lineare Algebra II</description_80>
     <description_80 language="en">Skriptmitschrift zu Lineare Algebra II</description_80>
