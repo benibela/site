@@ -8,6 +8,7 @@
   foreach($_POST as $key => $value) 
     $message = $message. $key . " = " . $value . "\n";
   
+  if ($app == "" && $ver == "" && $data == "") exit();
   
   function myget($data, $name) {
     $i = stripos($data, $name);
