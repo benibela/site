@@ -2,12 +2,12 @@
   <content language="de">
     Die angegebene Datei konnte nicht gefunden werden. <br/>
     Sie können jede verfügbare Seite  auf der Navigationsleiste am linken Rand wählen.<br/>
-    <p style="margin-top:30em"><br/></p>
+    <p style="margin-top:100em"><br/></p>
   </content>
   <content language="en">
 There is no page with this URI.<br/>
 You can select every available page on the navigation bar on the left site.  
-  <p style="margin-top:30em"><br/></p>
+  <p style="margin-top:100em"><br/></p>
 </content>
 
  
