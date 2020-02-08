@@ -27,7 +27,10 @@
   if ($fromName == "") $fromName = "ErrorReport";
   if ($fromMail == "") $fromMail = "noreply@benibela.de";
  
-  $headers = "From: \"".$fromName."\" <".$fromMail.">";
+  $headers = "From: \"".$fromName."\" <".$fromMail.">\r\n" .
+             "MIME-Version: 1.0\r\n".
+             "Content-type: text/plain; charset=UTF-8\r\n";
+  
  
   
 #  mail("benito@benibela.de","[-[Fehler]-] in ".$app." ".$ver,"Fehler in ".$app." ".$ver.": \n\n".$data);
