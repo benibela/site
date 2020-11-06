@@ -1,6 +1,11 @@
 <?php
   include 'config.php';
   
+  $mailheaders = "From: \"$configownername\" <$configmail>\r\n" .
+                 "MIME-Version: 1.0\r\n".
+                 "Content-type: text/plain; charset=UTF-8\r\n";
+
+  
   function processText($Text){
     $Text=nl2br($Text);
     $Text= stripslashes($Text);
@@ -91,7 +96,7 @@
       if ($row['Mail']) $mailto = $mailto.", ".$row['Mail'];
       $TextOld = str_replace( ["<br>","<br/>"], ["\n","\n"], $TextOld);
     } else $TextOld = "Mail: ".$Mail."\nIP:".$IP."\nBrowser:".$Browser."\nSite: ".$Site."\nBlocked: ".$blockBecause."\n\n".$TextOld."\n\n-----------------------------------\n\n".$Text;
-    mail($mailto, $title, $TextOld); 
+    mail($mailto, $title, $TextOld, $mailheaders);
   } else {  
     $Text=processText($Text);
     if (isset($_POST['input4'])) {$flags=$FLAG_HIDEMAIL;}
