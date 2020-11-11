@@ -9,19 +9,20 @@
   function processText($Text){
     $Text=nl2br($Text);
     $Text= stripslashes($Text);
-    $Text=ereg_replace("\[b\]","<b>",$Text);
-    $Text=ereg_replace("\[/b\]","</b>",$Text);
-    $Text=ereg_replace("\[i\]","<i>",$Text);
-    $Text=ereg_replace("\[/i\]","</i>",$Text);
-    $Text=ereg_replace("\[u\]","<span style='text-decoration: underline;'>",$Text);
-    $Text=ereg_replace("\[/u\]","</span>",$Text);
-    $Text=ereg_replace("'","\"",$Text);
+    $Text=preg_replace("/\[b\]/","<b>",$Text);
+    $Text=preg_replace("/\[\/b\]/","</b>",$Text);
+    $Text=preg_replace("/\[i\]/","<i>",$Text);
+    $Text=preg_replace("/\[\/i\]/","</i>",$Text);
+    $Text=preg_replace("/\[u\]/","<span style='text-decoration: underline;'>",$Text);
+    $Text=preg_replace("/\[\/u\]/","</span>",$Text);
+    $Text=preg_replace("/'/","\"",$Text);
     return $Text;
   }
   
-  $db=@mysql_connect("localhost",$configdbname,$configdbpass) or die ("Verbindung zum SQL-Server konnte nicht hergestellt werden.");
-#  @mysql_set_charset('latin1',$db);
-  @mysql_select_db($configdb,$db) or die ("Datenbankverbindung konnte nicht hergestellt werden.2");;
+  $configdbPDO = "mysql:host=localhost;dbname=$configdb";  
+  $db = new PDO( $configdbPDO, $configdbname, $configdbpass );
+  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
+  
   $Name=$_POST['input2'];
   $Mail=$_POST['input3'];
   $Site=$_POST['input7'];
@@ -33,7 +34,7 @@
   $Browser=getenv('HTTP_USER_AGENT');
   $Time=time();
   $Text=$_POST['input1'];
-  $thread=$_POST['thread'];
+  $thread= isset($_POST['thread']) ? $_POST['thread'] : "" ;
   $botTrapMustHave=$_POST['input10'];
   $botTrapMustNotHave=$_POST['input11'];
   $returnparam = "";
@@ -45,44 +46,44 @@
     $row = "";
     if (($_POST['inputp'] === $configadminpass)) {
       if ($lines[0] === "COMMAND:DELETE-ENTRY:"){
-        $cond=" FROM Guestbook WHERE `ID` = ".$lines[1];
-        $todelete = @mysql_query("SELECT `ID`,`Name`, `Text`, `comment`, `Mail` ".$cond,$db);
-        if (@mysql_num_rows($todelete) != 1) $TextOld = "Don't delete: <br/>Wrong number of entries: ".@mysql_num_rows($todelete);
+        $cond=" FROM Guestbook WHERE `ID` = ".intval($lines[1]);
+        $todelete = $db->query("SELECT `ID`,`Name`, `Text`, `comment`, `Mail` ".$cond);
+        if ($todelete->rowCount() != 1) $TextOld = "Don't delete: <br/>Wrong number of entries: ".$todelete->rowCount();
         else {
-          $row=mysql_fetch_array($todelete);
-          $TextOld = "Delete: ".$row['ID']."<br/>".$row['Name']."<br/>".$row['Text']."<br/>".$row['comment']."<br/>";
-          @mysql_query("DELETE ".$cond,$db);
+          $row = $todelete->fetch( PDO::FETCH_BOTH )  ;
+          $TextOld = "Delete: $row[ID]<br/>".$row['Name']."<br/>".$row['Text']."<br/>".$row['comment']."<br/>";
+          $db->query("DELETE ".$cond);
         }
       } else if ($lines[0] === "COMMAND:DELETE-ENTRIES:"){
         for ($curid=intval($lines[1]);$curid<=intval($lines[2]);$curid++){
           $cond=" FROM Guestbook WHERE `ID` = ".$curid;
-          $todelete = @mysql_query("SELECT `ID`,`Name`, `Text`, `comment`, `Mail` ".$cond,$db);
-          if (@mysql_num_rows($todelete) != 1) $TextOld .= "Don't delete: <br/>Wrong number of entries: ".@mysql_num_rows($todelete);
+          $todelete = $db->query("SELECT `ID`,`Name`, `Text`, `comment`, `Mail` ".$cond);
+          if ($todelete->rowCount() != 1) $TextOld .= "Don't delete: <br/>Wrong number of entries: ". $todelete->rowCount();
           else {
-            $row=mysql_fetch_array($todelete);
+            $row = $todelete->fetch( PDO::FETCH_BOTH );
             $TextOld .= "Delete: ".$row['ID']."<br/>".$row['Name']."<br/>".$row['Text']."<br/>".$row['comment']."<br/>";
-            @mysql_query("DELETE ".$cond,$db);
+            $db->query("DELETE ".$cond);
           }
         }
       } else if ($lines[0] === "COMMAND:MARK-ENTRY:"){
         $flag = intval($lines[1]);
-        $cond=" WHERE `ID` = ".$lines[2];
-        $tochange = @mysql_query("SELECT `ID`,`Name`, `Text`, `comment`, `Mail`, `flags` FROM Guestbook ".$cond,$db);
-        if (@mysql_num_rows($tochange) != 1) $TextOld = "Not found: <br/>Wrong number of entries: ".@mysql_num_rows($tochange);
+        $cond=" WHERE `ID` = ".intval($lines[2]);
+        $tochange = $db->query("SELECT `ID`,`Name`, `Text`, `comment`, `Mail`, `flags` FROM Guestbook ".$cond);
+        if ($tochange->rowCount() != 1) $TextOld = "Not found: <br/>Wrong number of entries: ".$tochange->rowCount();
         else {
-          $row=mysql_fetch_array($tochange);
+          $row=$tochange->fetch( PDO::FETCH_BOTH );
           $TextOld = "Marked: ".$row['ID']."<br/>".$row['Name'];
-          @mysql_query("UPDATE Guestbook SET flags='".($row["flags"] ^ $flag)."' ".$cond,$db);
+          $db->query("UPDATE Guestbook SET flags='".($row["flags"] ^ $flag)."' ".$cond);
         }
       } else if ($lines[0] === "COMMAND:REPLY-TO:"){
-        $cond=" WHERE `ID` = ".$lines[1];
-        $tochange = @mysql_query("SELECT `ID`,`Name`, `Text`, `comment`, `Mail` FROM Guestbook ".$cond,$db);
-        if (@mysql_num_rows($tochange) != 1) $TextOld = "Don't reply: <br/>Wrong number of entries: ".@mysql_num_rows($tochange);
+        $cond=" WHERE `ID` = ".intval($lines[1]);
+        $tochange = $db->query("SELECT `ID`,`Name`, `Text`, `comment`, `Mail` FROM Guestbook ".$cond);
+        if ($tochange->rowCount() != 1) $TextOld = "Don't reply: <br/>Wrong number of entries: ".$tochange->rowCount();
         else {
           $newComment=implode("\n",array_splice($lines,2,count($lines)-2));
-          $row=mysql_fetch_array($tochange);
-          $TextOld = "Reply to: ".$row['ID']."<br/>".$row['Name']."<br/>".$row['Text']."<br/>".$row['comment']."<br/>--------------<br/>".$newComment;
-          @mysql_query("UPDATE Guestbook SET comment='".mysql_real_escape_string(processText($newComment))."', commenttime='.$Time.' ".$cond,$db);
+          $row=$tochange->fetch( PDO::FETCH_BOTH );
+          $TextOld = "Reply to: $row[ID]<br/>$row[Name]<br/>$row[Text]<br/>$row[comment]<br/>--------------<br/>".$newComment;
+          $db->query("UPDATE Guestbook SET comment=".$db->quote(processText($newComment)).", commenttime=$Time ".$cond);
         }
       } else $TextOld = "Der Beitrag wurde nicht akzeptiert.";
       $returnparam = "?edom=nimda";
@@ -165,19 +166,22 @@
     if (!preg_match('#^$|^http(s?)://#', $Site)) $Site="http://".$Site;  
 
     if ($blockBecause==0) {
-      $sql="INSERT INTO `Guestbook` (`Name`, `Mail`, `Site`,`sitetitle`, `ICQ`, `Text`, `flags`, `IP`, `host`, `lang`, `Browser`, `Time`, `thread`) VALUES ('".mysql_real_escape_string($Name)."', '".mysql_real_escape_string($Mail)."', '".mysql_real_escape_string($Site)."', '".mysql_real_escape_string($sitetitle)."', '".mysql_real_escape_string($ICQ)."', '".mysql_real_escape_string($Text)."', '$flags', '".mysql_real_escape_string($IP)."', '".mysql_real_escape_string($host)."', '".mysql_real_escape_string($lang)."', '".mysql_real_escape_string($Browser)."','$Time','".mysql_real_escape_string($thread)."')";
-      @mysql_query($sql,$db);
+      $stmt = $db->prepare("INSERT INTO `Guestbook` (`Name`, `Mail`, `Site`,`sitetitle`, `ICQ`, `Text`, `flags`, `IP`, `host`, `lang`, `Browser`, `Time`, `thread`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+      $entrydata = [$Name, $Mail, $Site, $sitetitle, $ICQ, $Text, $flags, $IP, $host, $lang, $Browser, $Time, $thread];
+      for ($i=0;$i<count($entrydata);$i++)
+        $stmt->bindParam($i + 1, $entrydata[$i]);
+      $stmt->execute();
       if ($lang == "de") {
-        echo "Danke für Ihren Eintrag ".htmlspecialchars($Name)."<br/>";
+        echo "Danke für deinen Eintrag ".htmlspecialchars($Name)."<br/>";
         echo "Er lautet: <br/><p style=\"padding-left:1em\">".htmlspecialchars($Text)."</p>";
       } else {
         echo "Thanks for your entry, ".htmlspecialchars($Name).".<br/>";
         echo "You entry is: <br/><p style=\"padding-left:1em\">".htmlspecialchars($Text)."</p>";
       }
-      mail($configmail,"[-[Gästebuch $thread]-]: ".$Name,"Mail: ".$Mail."\nIP:".$IP."\nBrowser:".$Browser."\nSite: ".$Site."\nBlocked: ".$blockBecause."\n\n".$TextOld."\n\n-----------------------------------\n\n".$Text."\n\nSender headers:\n".http_build_query ( getallheaders(), "", "\n"));
+      mail($configmail,"[Gästebuch $thread]: ".$Name,"Mail: ".$Mail."\nIP:".$IP."\nBrowser:".$Browser."\nSite: ".$Site."\nBlocked: ".$blockBecause."\n\n".$TextOld."\n\n-----------------------------------\n\n".$Text."\n\nSender headers:\n".http_build_query ( getallheaders(), "", "\n"));
     } else {
       if ($lang == "de") {
-        echo "Ihr Eintrag wurde nicht angenommen.<br/>";
+        echo "Dein Eintrag wurde nicht angenommen.<br/>";
         echo "Der Grund hierfür ist: <br/><p style=\"padding-left:1em\">".$Text."</p>";
       } else {
         echo "Your entry was not accepted.<br/>";
@@ -187,6 +191,6 @@
   }
   
       
-    mysql_close($db);
+    unset($db);
     
 ?>

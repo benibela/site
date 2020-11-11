@@ -1,4 +1,6 @@
-<?php if ($_REQUEST['thread']){?>
+<?php 
+$thread = isset($_REQUEST['thread']) ? $_REQUEST['thread'] : "";
+if ($thread){?>
 <html>
 	<head>
     <title>BeniBela online</title>
@@ -20,7 +22,7 @@
 <table id="secondInputBox"><tr><td id="inputRow">
 <?php 
   include 'config.php';
-  $adminmode = $_GET['edom'] == "nimda";
+  $adminmode = isset($_GET['edom']) ? $_GET['edom'] == "nimda" : false;
   echo '<form action="koobtseug_yrtne_'.$lang.'.php?lang='.$lang.'" method="post" id="inputbox">'; 
 ?>
     <table>
@@ -82,7 +84,7 @@
         </td>
      </tr>
      </table>
-     <?php if ($_REQUEST["thread"]) echo '<input type="hidden" name="thread" value="'.htmlspecialchars($_REQUEST["thread"]).'"/>'; ?> 
+     <?php if ($thread) echo '<input type="hidden" name="thread" value="'.htmlspecialchars($thread).'"/>'; ?> 
      <input type="submit" value="Absenden"/>
     <!-- <p><br/><?php if ($lang == "de") { ?>Falls jemand  hier nur einen Eintrag machen möchte, um bessere Rankings bei Suchmaschinen zu erreichen (wie in den letzten 40 - nun gelöschten - Einträgen), kann er es vergessen:<br/>Das Gästebuch wird auf Grund der robots-Einstellung von Suchmaschinen (schon immer) vollkommen ignoriert.<?php } else { ?>The guestbook is (and always was) completely ignored by every search engine due to the robots settings, so spamming is useless."<?php } ?></p>-->
 <?php echo '</form>' ?>
@@ -103,18 +105,19 @@
       "deadlink" => " [dead link]"
     ); 
   }
-
-  $db=@mysql_connect("localhost",$configdbname,$configdbpass) or die ("Verbindung zum SQL-Server konnte nicht hergestellt werden.");
-  #@mysql_set_charset('latin1',$db);
-  @mysql_select_db($configdb,$db) or die ("Datenbankverbindung konnte nicht hergestellt werden.");
-  $cond = ($adminmode ? "" : "WHERE `thread` = '".mysql_real_escape_string($_REQUEST['thread'])."'");
-  $result=@mysql_query("SELECT `ID`,`Name`, `Mail`, `Site`, `sitetitle`,`ICQ`, `Text`, `flags`, `Time`, `comment` FROM Guestbook $cond ORDER BY `ID` DESC",$db) or die ("Gästebuch konnte nicht gelesen werden");
+  
+  $configdbPDO = "mysql:host=localhost;dbname=$configdb";  
+  $db = new PDO( $configdbPDO, $configdbname, $configdbpass );
+  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
+  
+  $cond = ($adminmode ? "" : "WHERE `thread` = " . $db->quote($thread));
+  $result=$db->query("SELECT `ID`,`Name`, `Mail`, `Site`, `sitetitle`,`ICQ`, `Text`, `flags`, `Time`, `comment` FROM Guestbook $cond ORDER BY `ID` DESC");
   
 
   
   if ($result) {
-    if (mysql_num_rows ( $result ) == 0) echo '<tr class="emptyrow"><td> ' . ($lang == "de" ? "Bisher keine Kommentare" : "No comments yet")  .   ' </td></tr>';
-    while ($row=mysql_fetch_array($result)) {
+    if ($result->rowCount() == 0) echo '<tr class="emptyrow"><td> ' . ($lang == "de" ? "Bisher keine Kommentare" : "No comments yet")  .   ' </td></tr>';
+    while ($row= $result->fetch( PDO::FETCH_BOTH ) ) {
     
       $flags = $row['flags'];
       $flagSetHideMail = ($flags & $FLAG_HIDEMAIL) != 0;
@@ -215,9 +218,10 @@
         }
     }
   }
-  mysql_close($db);
+  
+  unset( $db );  
 ?></table></div>
 
-<?php if ($_REQUEST['thread']){?>
+<?php if ($thread){?>
 </body>
 </html><?php }?>

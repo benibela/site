@@ -34,6 +34,6 @@
  
   
 #  mail("benito@benibela.de","[-[Fehler]-] in ".$app." ".$ver,"Fehler in ".$app." ".$ver.": \n\n".$data);
-  mail("benito@benibela.de","[-[Fehler]-] in ".$app." ".$ver,"Fehler in ".$app." ".$ver.": \n\n".$message,$headers);
+  mail("benito@benibela.de","Fehler in ".$app." ".$ver,"Fehler in ".$app." ".$ver.": \n\n".$message,$headers);
 
 ?>PHPOK
