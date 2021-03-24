@@ -157,7 +157,7 @@ if ($thread){?>
             } 
             $tempTitle = empty($row['sitetitle'])?$row['Site']:$row['sitetitle'];
             if (($flags & $FLAG_DEADLINK) != 0) echo $tempTitle.$tr['deadlink'];
-            else echo '<a href="'.$row['Site'].'">'.$tempTitle.'</a>';
+            else echo '<a href="'.$row['Site'].'" rel="ugc">'.$tempTitle.'</a>';
           }
           echo "<br/>\n";
           if ($lang=="de") {
