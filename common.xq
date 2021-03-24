@@ -2,14 +2,19 @@ declare function local:eval($tpl) {
   eval($tpl, {"language": "xquery"})
 };
 declare function local:write($file, $data, $format){
-  file:write($output-dir || $file, $data, 
-    <output:serialization-parameters xmlns:output="http://www.w3.org/2010/xslt-xquery-serialization">
-      <output:method value="{$format}"/>
-    </output:serialization-parameters>
-  )
+  if ($format = "php") then
+    local:write($file, x:replace-nodes($data, $data//processing-instruction(php), function($php) {
+      processing-instruction {"php"} {$php||"?"}
+    }), "html")
+  else 
+    file:write($output-dir || $file, $data, 
+      <output:serialization-parameters xmlns:output="http://www.w3.org/2010/xslt-xquery-serialization">
+        <output:method value="{$format}"/>
+      </output:serialization-parameters>
+    )
 };
 declare function local:language-filter($node, $language-id){
-  transform($node, function($e){
+  x:transform($node, function($e){
     if ($e/@language 
         and $e/@language != $language-id 
         and $e/(preceding-sibling::*,following-sibling::*)[name() = $e/name() and @language = $language-id] ) then ()
@@ -44,7 +49,7 @@ declare function local:rss-url($fi,$lang){
   x"{$fi/basefilename}_{$lang/id}.rss"
 };
 declare function local:remember-id($id, $title){
-  file:write("buildtemp/ids/" || $id || "-" || $language/id, serialize-json({
+  file:write-text("buildtemp/ids/" || $id || "-" || $language/id, serialize-json({
     "title": $title,
     "source": $source
   }))
@@ -90,6 +95,9 @@ declare function local:make($inputstyle, $outputfunction, $format){
 };
 declare function local:doit(){ 
   local:make("style.xq.html", local:file-url#2, "html")
+};
+declare function local:dophp(){ 
+  local:make("style.xq.html", local:file-url#2, "php")
 };
 declare function local:dorss(){ 
   local:make("news.rss.xq", local:rss-url#2, "xml") 
