@@ -18,7 +18,7 @@ _publish/%_de.html publish/%_en.html: %.xml common.xq style.xq.html global.xml
 	xidel --input-format xml-strict --extract-include=xxx -e 'source := "$*", output-dir := "_publish/"' --extract-kind xquery  --extract-file common.xq -e 'local:doit()'
 	
 _publish/%_de.php publish/%_en.php: %.xml common.xq style.xq.html global.xml
-	xidel --input-format xml-strict --extract-include=xxx -e 'source := "$*", output-dir := "_publish/"' --extract-kind xquery  --extract-file common.xq -e 'local:doit()'
+	xidel --input-format xml-strict --extract-include=xxx -e 'source := "$*", output-dir := "_publish/"' --extract-kind xquery  --extract-file common.xq -e 'local:dophp()'
 
 _publish/%_de.rss publish/%_en.rss: %.xml common.xq news.rss.xq global.xml
 	xidel --input-format xml-strict --extract-include=xxx -e 'source := "$*", output-dir := "_publish/"' --extract-kind xquery  --extract-file common.xq -e 'local:dorss()'

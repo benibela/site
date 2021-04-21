@@ -4,7 +4,7 @@
   <keywords language="de">Delphi, non VCL Canvas, TCVirus, Huffman, Komprimierung, Units, Komponenten, Kommandozeile, Parser, Browser, automatisches Update</keywords>
   <keywords language="en">Delphi, Non VCL Canvas, TCVirus, Huffman, compression, Units, components, auto update, browser, command line reader, parser</keywords>
   <content language="de">Auf dieser Seite sind Quellcodes, die man in eigenen Projekten benutzten kann, aufgelistet, <a href="components_de.html#top">Delphikomponenten</a> sind jedoch auf einer eigenen Seite zu finden. Alle mit der MPL-Lizenz, GPL-Lizenz oder BSD-Lizenz versehenen Quellcodes dürfen beliebig verändert und vertrieben werden. <br/>Bei der MPL und GPL müssen aber Änderungen veröffentlicht werden und bleiben unter der MPL lizenziert, bei der GPL gilt dies auch für Erweiterungen.<br/>Steht eine Datei unter mehreren Lizenzen, darf man eine davon wählen.<br/> Genauere und rechtskräftige Informationen sollten den Dateien bei liegen.<br/>Braucht jemand unbedingt eine andere Lizenz, kann er mir eine E-Mail schicken.</content>
-  <content language="en">Here you can find all my published sources that you can use as libraries in your projects. Only <a href="components_en.html#top">components</a> for Delphi are on another page. You can use, change and distribute all sources published under the terms of the MPL, GPL or BSD-license in any way you want. Although in the case of the MPL or GPL you must publish changes and you must not change the license. In the case of the GPL you must also publish extensions and the source of all (your) programs using it under the terms of the GPL.<br/>If any of the files is published under the terms of more than one license, you can choose one of them. <br/> You can find more and legally valid information in the source files.</content>
+  <content language="en">Here you can find all my published sources that you can use as libraries in your projects. Only <a href="components_en.html#top">components</a> for Delphi are on another page. You can use, change, and distribute all sources published under the terms of the MPL, GPL, or BSD-license in any way you want. Although in the case of the MPL or GPL, you must publish changes and you must not change the license. In the case of the GPL, you must also publish extensions and the source of all (your) programs using it under the terms of the GPL.<br/>If any of the files is published under the terms of more than one license, you can choose one of them. <br/> You can find more and legally valid information in the source files.</content>
   <download-dir>bin/sources</download-dir>
   <download> 
     <title>Internet Tools</title>
@@ -13,7 +13,7 @@
     <id>internettools</id>
     <github>internettools</github>
     <description_80 language="de">Ein XPath 2/3/XQuery 1/3/JSONiq-Interpreter, ein Pattern-Matcher für HTML/XML-Templates, eine Auto&#173;update-Klasse und einen HTTP-Verbindungswrapper</description_80>
-    <description_80 language="en">A XPath 2/3/XQuery 1/3/JSONiq engine, a pattern matcher for HTML/XML, an auto update class and a HTTP connection wrapper.</description_80>
+    <description_80 language="en">An XPath 2/3/XQuery 1/3/JSONiq engine, a pattern matcher for HTML/XML, an auto update class, and an HTTP connection wrapper.</description_80>
     <prog-language>FPC</prog-language>
     <source-license>GPL</source-license>
     <year>2006 - 2017</year>
@@ -31,7 +31,7 @@
          liest alle Tabellenzellen nach der Zelle mit dem Text abc in der Tabelle mit ID foobar.
         Und schließlich ein Template wie
         <pre>&lt;table id="foobar">&lt;tr>{temp := 0}&lt;td>abc&lt;/td>&lt;td>{temp := $temp + .}&lt;/td>*{result := $temp}&lt;/tr>*&lt;/table></pre>
-        berechnet die Summe aller Tabellenzellen nach der abc-Zelle für alle Zeilen.<br/>Diese Templates lassen sich auch <a href ="http://videlibri.sourceforge.net/cgi-bin/xidelcgi"> online</a> or with <a href="http://videlibri.sourceforge.net/xidel.html">Xidel</a> ausprobieren.</li>
+        berechnet die Summe aller Tabellenzellen nach der abc-Zelle für alle Zeilen.<br/>Diese Templates lassen sich auch <a href ="https://www.videlibri.de/cgi-bin/xidelcgi"> online</a> or with <a href="https://www.videlibri.de/xidel.html">Xidel</a> ausprobieren.</li>
         <li>Die <em>multi page Templateengine</em> speichert in ihren Templates mehrere Einzelseitentemplates, die nacheinander auf die angegebenen Seiten angewandt werden. Im Gegensatz zu den Einzelseitentemplates führt diese Engine kein pattern-matching durch (außer natürlich dem pattern-matching mit den enthaltenen Einzelseitentemplates zu den heruntergeladenen Seiten), sondern führt alle Aktionen in der angegebenen Reihenfolge durch. Dabei werden auch Variablen, Bedingungen und Schleifen unterstützt, so dass sie Turing vollständig ist.</li>
         <li>Der <em>HTTP/S-Verbindungswrapper</em> kann Seiten mit beliebigen HTTP-Methoden (z.B.: GET/POST) herunterladen und kümmert sich automatisch um Cookies und Weiterleitungen. Außerdem kann er dynamisch zwischen Wininet (auf allen Windowscomputern vorhanden), Synapse (plattform-unabhängig, muss aber installiert werden) und Apache HttpComponents (alter Standard für Android) umschalten.</li>
         <li>Die <em>Autoupdateklasse</em> ist ein Trivialbeispiel für die anderen Klassen, und kann automatisch ein Update herunterladen und installieren.
@@ -41,22 +41,22 @@
 
     <content language="en">This package consists of several units working together: <br/><br/> 
     <ul class="indentation-list">
-    <li>The <em>simple HTML parser</em> at the lowest level, parses an XML/HTML like file and calls callback functions for every tag and text it has read.</li>
-    <li>The <em>HTML tree parser</em>, uses the simpler parser to read an XML/HTML like file and create a linked element-stream from it, which is equivalent to a dom-like tree. This parser takes much care to make the tree usable, e.g. by correcting errors in invalid HTML files and auto detecting its encoding.</li>
-    <li>With the <em>XPath  / XQuery engine</em> you can then run arbitrary <a href="http://www.w3.org/TR/xpath20/" rel="nofollow">XPath 2.0</a>, <a href="http://www.w3.org/TR/xpath-30/" rel="nofollow">XPath 3.0</a>, <a href="http://www.w3.org/TR/xquery/" rel="nofollow">XQuery 1.0</a> and <a href="http://www.w3.org/TR/xquery-30/" rel="nofollow">XQuery 3.0</a> queries on the dom-like representation. It is completely implemented in Pascal and pretty much standard conformant. (compare its <a href="documentation/internettools/xqts.html">XQuery Testsuite results</a>: between 100% for XPath 2 and over 99% for XQuery 3). It also supports JSONiq.</li>
-    <li>The parser for <em>CSS 3 selectors</em> is part of then XQuery class, converts the CSS selector to a XPath expression and evaluates that.</li>
-    <li>The <em>pattern-matching HTML template engine</em> at the highest level, can be used to process an HTML file by annotating a subset of it and applying the resulting template to the HTML file.  All elements in the template are searched in the HTML file and template instructions in matching elements can be used to extract data. For example a template like 
+    <li>The <em>simple HTML parser</em> at the lowest level parses an XML/HTML like file and calls callback functions for every tag and text it has read.</li>
+    <li>The <em>HTML tree parser</em> uses the simpler parser to read an XML/HTML like file and create a linked element-stream from it, which is equivalent to a dom-like tree. This parser takes much care to make the tree usable, e.g. by correcting errors in invalid HTML files and auto detecting its encoding.</li>
+    <li>With the <em>XPath  / XQuery engine</em>, you can then run arbitrary <a href="http://www.w3.org/TR/xpath20/" rel="nofollow">XPath 2.0</a>, <a href="http://www.w3.org/TR/xpath-30/" rel="nofollow">XPath 3.0</a>, <a href="http://www.w3.org/TR/xquery/" rel="nofollow">XQuery 1.0</a>, and <a href="http://www.w3.org/TR/xquery-30/" rel="nofollow">XQuery 3.0</a> queries on the dom-like representation. It is completely implemented in Pascal and pretty much standard conformant. (compare its <a href="documentation/internettools/xqts.html">XQuery Testsuite results</a>: between 100% for XPath 2 and over 99% for XQuery 3). It also supports JSONiq.</li>
+    <li>The parser for <em>CSS 3 selectors</em> is part of the XQuery class, converting the CSS selector to an XPath expression and evaluating that.</li>
+    <li>The <em>pattern-matching HTML template engine</em> at the highest level can be used to process an HTML file by annotating a subset of it and applying the resulting template to the HTML file.  All elements in the template are searched in the HTML file and template instructions in matching elements can be used to extract data. For example a template like 
     <pre>&lt;a>{@href}&lt;/a>*</pre>
-    will read the urls of all links in an HTML file.<br/>
+    will read the URLs of all links in an HTML file.<br/>
     A template like this:
     <pre>&lt;table id="foobar">&lt;tr>&lt;td>abc&lt;/td>&lt;td>{.}&lt;/td>*&lt;/tr>*&lt;/table></pre>
      will read all table cells after the cell containing abc in all rows of the table with id foobar.
     And a template like this:
     <pre>&lt;table id="foobar">&lt;tr>{temp := 0}&lt;td>abc&lt;/td>&lt;td>{temp := $temp + .}&lt;/td>*{result := $temp}&lt;/tr>*&lt;/table></pre>
-    will calculate the sum of all table cells after the abc cell in all rows.<br/>You can also try these templates <a href ="http://videlibri.sourceforge.net/cgi-bin/xidelcgi"> online</a> or with <a href="http://videlibri.sourceforge.net/xidel.html">Xidel</a>.</li>
-    <li>The <em>multi page template engine</em> can be used to download several pages, and apply a single-page template to each of them. Contrary to the single-page template it does not do any pattern matching itself (of course the single-page templates contained in a multi-page template do pattern matching against each page), but simply executes the actions in the order given in the template. It also supports variables, condition and loops, so it is even Turing complete.</li>
-    <li>The <em>HTTP/S-wrapper</em> let you switch dynamically between Wininet (default library installed on every Windows computer), Synapse (platform-independent,  but not always installed and problematic with HTTPS), Apache HttpComponents and OkHttp (latter two called through JNI for Android).</li>
-    <li>The <em>auto update</em> class is a simple example for the other classes and can be used to add an auto update function to a program which will check online for a more recent version, download that version automatically and (optionally) install it. </li>
+    will calculate the sum of all table cells after the abc cell in all rows.<br/>You can also try these templates <a href ="https://www.videlibri.de/cgi-bin/xidelcgi"> online</a> or with <a href="https://www.videlibri.de/xidel.html">Xidel</a>.</li>
+    <li>The <em>multi page template engine</em> can be used to download several pages, and apply a single-page template to each of them. Contrary to the single-page template it does not do any pattern matching itself (of course the single-page templates contained in a multi-page template do pattern matching against each page), but simply executes the actions in the order given in the template. It also supports variables, condition, and loops, so it is even Turing complete.</li>
+    <li>The <em>HTTP/S-wrapper</em> lets you switch dynamically between Wininet (default library installed on every Windows computer), Synapse (platform-independent,  but not always installed and problematic with HTTPS), Apache HttpComponents, and OkHttp (latter two called through JNI for Android).</li>
+    <li>The <em>auto update</em> class is a simple example for the other classes and can be used to add an auto update function to a program which will check online for a more recent version, download that version automatically, and (optionally) install it. </li>
     </ul>
     <br/><br/>Summary of features:<br/><br/>
     </content>
@@ -105,7 +105,7 @@
       <feature2>for XML/HTML files, with a sax or dom-like interface</feature2>
       <feature2><title>for XPath / XQuery expressions</title>
       <feature3>standard compatible: passes over 99.9% of the XPath 2 only tests and 99.5% of the XQuery 3.0 tests in the XQuery Testsuite</feature3>
-      <feature3>Some extension for objects, css, regular expressions, pattern matching and JSONiq.<br/></feature3>
+      <feature3>Some extensions for objects, CSS selectors, regular expressions, pattern matching and JSONiq.<br/></feature3>
       </feature2>
       <feature2>Some syntax from XPath/XQuery 3.1.</feature2>
       <feature2>for JSONiq: An extension to XQuery to handle JSON data<br/></feature2>                  
@@ -115,13 +115,13 @@
       </feature2>
       <feature2><title>for pattern-matching HTML/XML templates:</title>
         <feature3>Templates process HTML like regular expressions process strings.</feature3>
-        <feature3>The template languages allows the inclusion of regular, XPath/XQuery, JSONiq and CSS 3 Selectors expressions</feature3>
+        <feature3>The template languages allow the inclusion of regular, XPath/XQuery, JSONiq, and CSS 3 Selectors expressions</feature3>
         <feature3>The language has variables, optional elements, loops and conditions</feature3>
         <feature3>e.g. <code>&lt;p class="test">&lt;span>Caption:&lt;/span>&lt;a>{.}&lt;/a>*&lt;/p></code> will read all links after the <code>span</code>-element containing <code>Caption:</code> in a paragraph with class <code>test</code></feature3>
       </feature2>
       <feature2><title>for multi-page "scraping" templates</title>
       <feature3>A collection of patterns applied to several webpages.</feature3>
-      <feature3>has variables, conditions and loops => Turing complete.</feature3>
+      <feature3>has variables, conditions, and loops => Turing complete.</feature3>
       </feature2>
       </feature>
       <feature><title>HTTP/S-Wrapper:</title>
@@ -169,9 +169,9 @@
       <feature>Zusätzlich kann man eine Liste von änderbaren Farben anzeigen</feature>
     </features>
     <features language="en">
-      <feature>All components of rgb and hls are shown.</feature>
-      <feature>You can change any component of rgb/hls in a color gradient</feature>
-      <feature>The selected color component is shown as function depending on the other two components</feature>
+      <feature>All components of RGB and HLS are shown.</feature>
+      <feature>You can change any component of RGB/HLS in a color gradient</feature>
+      <feature>The selected color component is shown as a function depending on the other two components</feature>
       <feature>You can change the other two components in a two-dimensional gradient</feature>
       <feature>This one is drawn depending on the first component</feature>
       <feature>Additional you can enable a list of colors to change</feature>
@@ -196,7 +196,7 @@
     <file>hamt.zip</file>
     <github>hamt</github>
     <description_80 language="de">HAMT-basierte mutable und immutable Maps und Sets</description_80>
-    <description_80 language="en">Mutable and immutable persistent maps and sets as hash array mapped trie</description_80>
+    <description_80 language="en">Mutable and immutable persistent maps and sets as a hash array mapped trie</description_80>
     <prog-language>FPC</prog-language>
     <source-license>(LC)LGPL</source-license>
     <content language="de">
@@ -234,9 +234,9 @@ begin
 end</pre>
     </final-content>
     <content language="en">
-    <p>A HAMT is a hashmap/set stored as trie, which provides update and lookup performance similarly to a normal hashmap/set, but needs no rehashing and also allows one to copy the entire map/set in constant time.  This implementation uses a 32 bit hash and trie nodes with 32 children, so 5 bits of the hash are consumed to choose the next child. When there are no hash collisions, this HAMT can store 2^32 items with a maximal tree depth of (log_32 2^32) = 6, i.e., you need 6 memory accesses to find any key/value which is practically O(1). (When there are hash collisions, they are put in an array)</p>
+    <p>A HAMT is a hashmap/set stored as a trie, which provides an update and lookup performance similar to a normal hashmap/set, but needs no rehashing and also allows one to copy the entire map/set in constant time.  This implementation uses a 32 bit hash and trie nodes with 32 children, so 5 bits of the hash are consumed to choose the next child. When there are no hash collisions, this HAMT can store 2^32 items with a maximal tree depth of (log_32 2^32) = 6, i.e., you need 6 memory accesses to find any key/value which is practically O(1). (When there are hash collisions, they are put in an array)</p>
     
-    <p>Each HAMT node carries a reference counter, since FreePascal has no garbage collector. If the reference count is 1, the node can mutate, otherwise it is immutable with a copy-on-write semantic like strings. The counter is updated atomically, so the map could be shared across threads.</p>
+    <p>Each HAMT node carries a reference counter  since FreePascal has no garbage collector. If the reference count is 1, the node can mutate, otherwise, it is immutable with a copy-on-write semantic like strings. The counter is updated atomically, so the map could be shared across threads.</p>
     
     <p>Everything is implemented using generics, so it can be used with all types.</p>
     <p>Example: </p>
@@ -267,7 +267,7 @@ end</pre>
     <size_KB>8</size_KB>
     <content language="de">Dies ist ein Kommandozeilenparser, der sowohl mit Delphi wie auch mit Free Pascal funktioniert, sowie unter Windows und Linux.<br/>
     Vor der Abfrage von Parametern, müssen alle erlaubten Parameter deklariert werden. Dadurch kann vom Parser überprüft werden, dass der Benutzer nur erlaubte Parameter und nur richtige Parameterwerte (z.B.: Int vs. String) verwendet. Außerdem kann so bei Angabe eines falschen Parameters automatisch eine Hilfsliste aller unterstützenden Parameter angezeigt werden. Dies verhindert umgekehrt, dass es geheime, undokumentiere Optionen gibt.<br/>
-    Es gibt drei verschiedene Versionen des Parsers, die ersten beiden lesen die Argumente von der Kommandozeile, und zeigen die Hilfe auf stdout bzw. in einer Messagebox an. Die dritte Version (nur fpc) läuft als CGI-Anwendung und nimmt die Argumente über http GET/POST-Anfragen entgegen.<br/><br/>
+    Es gibt drei verschiedene Versionen des Parsers, die ersten beiden lesen die Argumente von der Kommandozeile, und zeigen die Hilfe auf stdout bzw. in einer Messagebox an. Die dritte Version (nur fpc) läuft als CGI-Anwendung und nimmt die Argumente über HTTP GET/POST-Anfragen entgegen.<br/><br/>
     Zum Vergleich sind hier die Ausgaben meiner Klasse und der Standard-Kommandozeilenfunktionen bei Aufruf des Programms mit den Parameter <code>'" a "'</code> :
     <div class="largetable">
     <table><thead><tr><th>System</th><th>TCommandLineReader</th><th>ParamStr</th><th>string(cmdline)</th></tr></thead>
@@ -279,7 +279,7 @@ end</pre>
 Die Features von rcmdline sind:<br/></content>
     <content language="en">This is a command line parser working with Delphi as well as with Free Pascal, and on Windows and Linux.<br/>
     Before you can read the command line arguments, all allowed arguments need to be declared. So the parser can ensure that the user only uses allowed arguments and each given argument has the correct type (e.g. int or string). Furthermore, the parser can automatically generate a help summary displaying all allowed arguments including a description. This again ensures that there are no hidden, undocumented command line arguments. <br/>
-    There are three different versions of the parser. The first two read the arguments from the command line and show the help list of all allowed arguments on stdout or respectively in a message box. The third version (fpc only) runs as cgi service and reads the argument from get/post requests.<br/><br/>
+    There are three different versions of the parser. The first two read the arguments from the command line and show the help list of all allowed arguments on stdout or respectively in a message box. The third version (fpc only) runs as a cgi service and reads the argument from GET/POST requests.<br/><br/>
 Here is a nice comparison between TCommandLineReader and the standard pascal command line functions, when the program is called as <code>executable '" a "'</code>
   <div class="largetable">
  <table><thead><tr><th>System</th><th>TCommandLineReader</th><th>ParamStr</th><th>string(cmdline)</th></tr></thead>
@@ -303,10 +303,10 @@ The feature list of rcmdline is:<br/><br/></content>
       <feature>different input possibilities for boolean flags (<code>-f</code>, <code>--flag</code>, <code>--enable-flag</code>, <code>--disable-flag</code>)</feature>
       <feature>understands single (') and double (") quotation marks (even on Windows)</feature>
       <feature>type conversion of the string arguments to the declared types </feature>
-      <feature>automatically user notification about wrong parameters</feature>
+      <feature>automatic user notification about wrong parameters</feature>
       <feature>existing files with names containing spaces can be parsed without quotation marks    </feature>
-      <feature>can run as cgi service and answer to GET/POST requests (fpc only)</feature>
-      <feature>Arguments can be read from: a simple string (e.g. cmdline) or an array of arguments (e.g. paramstr)</feature>
+      <feature>can run as a cgi service and answer to GET/POST requests (fpc only)</feature>
+      <feature>Arguments can be read from a simple string (e.g. cmdline) or an array of arguments (e.g. paramstr)</feature>
     </features>
 </download>
   
@@ -319,7 +319,7 @@ The feature list of rcmdline is:<br/><br/></content>
     <id>bigdecimalmath</id>
     <github>bigdecimalmath</github>
     <description_80 language="de">Funktionen zum Rechnen mit beliebig genauen Dezimal&#173;zahlen</description_80>
-    <description_80 language="en">An arbitrary precision bcd floating point library</description_80>
+    <description_80 language="en">An arbitrary precision BCD floating point library</description_80>
     <prog-language>FPC</prog-language>
     <source-license>(LC)LGPL</source-license>
     <year>2013, 2015</year>
@@ -337,7 +337,7 @@ The feature list of rcmdline is:<br/><br/></content>
         <br/><br/>Features:<br/><br/></content>
 
     <content language="en">    
-    This unit provides a BigDecimal-Typ which stores arbitrary precision (bcd) decimal numbers and can be used like any native numeric type. For example:
+    This unit provides a BigDecimal-Typ which stores arbitrary precision (BCD) decimal numbers and can be used like any native numeric type. For example:
      <pre>
   var bd: BigDecimal;
   
@@ -403,7 +403,7 @@ The feature list of rcmdline is:<br/><br/></content>
       <feature>Filling with horizontal/vertical color gradient and different line/point-styles</feature>
       <feature>Interpolation using linear lines or splines</feature>
       <feature>The diagram data can be modified by the user if wanted</feature>
-	  <feature>Multiple axis and point rows as well as a legend naming the latter</feature>
+	  <feature>Multiple axes and point rows as well as a legend naming the latter</feature>
 	  <feature>Automatic calculation of the view range and support for floats</feature>
 	  <feature>Standard models with lists of points, cyclic lists, and a model to merge other ones</feature>
       <feature>There is a help file</feature>
@@ -491,7 +491,7 @@ The most important features are:</content>
       <feature>An int-int hash map implementation and a resources manager.</feature>
     </features>
     <final-content language="de">In einigen Bereichen sind sie den Delphimethoden sogar überlegen, so kann man beispielweise den Text auch gedreht ausgeben.<br/>Es gibt eine ausführliche HTML-Doku, in der alle Funktionen beschrieben sind. </final-content>
-    <final-content language="en">In some field they are even better than the  functions of Delphi, for example they can draw rotated text.<br/>There is a good, German help, and you could use the documentation of TCanvas from Delphi. </final-content>
+    <final-content language="en">In some areas, they are even better than the  functions of Delphi, for example, they can draw rotated text.<br/>There is a good, German help, and you could use the documentation of TCanvas from Delphi. </final-content>
   </download>
 
   
@@ -505,7 +505,7 @@ The most important features are:</content>
     <prog-language>FPC</prog-language>
     <source-license>GPL</source-license>
     <content language="de">Mit dieser Unit kann man ein Unified Diff in ein strukturiertes Format einlesen, verarbeiten und wieder als gültiges Diff speichern</content>
-    <content language="en">You can use this unit to read an Unified Diff, modify its tree structure and save it finally. </content>
+    <content language="en">You can use this unit to read a Unified Diff, modify its tree structure, and save it finally. </content>
     <features language="de">
       <feature>Liest Unified Diffs für eine oder mehrere Dateien</feature>
       <feature>Erzeugt gültige Diffs</feature>
@@ -545,7 +545,7 @@ The most important features are:</content>
       <feature>It can open and close the CD tray.</feature>
     </features>
     <final-content language="de">Da TCvirus ursprünglich eine Komponente war, gibt es zwei Units: Eine mit den eigentlichen Funktionen, und eine Komponente, die einen Wrapper für die erste Unit darstellt.<br/>Will man die Komponente ohne die VCL nutzen, benötigt man meinen Non-VCL Canvas, der aber im Ziparchiv enthalten ist.</final-content>
-    <final-content language="en">Because TCvirus has originally been a component, there are 2 units, a component for the VCL and a unit for non VCL.</final-content>
+    <final-content language="en">Because TCvirus has originally been a component, there are 2 units, a component for the VCL and a unit for non-VCL.</final-content>
   </download>
 
 
@@ -554,14 +554,14 @@ The most important features are:</content>
     <title>TAuto&#173;Updater</title>
     <file>autoupdate.zip</file>
     <description_80 language="de">Eine Unit für ein automatisches Progamm&#173;update</description_80>
-    <description_80 language="en">An unit for an automatically update</description_80>
+    <description_80 language="en">An unit for an automatic update</description_80>
     <prog-language>FPC</prog-language>
     <source-license>GPL</source-license>
     <size_KB>10</size_KB>
     <content language="de">Hiermit kann man in ein Programm ein automatisches Update übers Internet einbauen.<br/>Um die Klasse benutzen zu können, braucht man eine wininet-Unit, die die Windowsinternetfunktionen enthält. (<a href="#internettools">oben</a> gibt es eine neuere Version, die ein besser konfigurierbares XML-Format verwendet)
 Funktionen:</content>
-    <content language="en">This allows an automatical update about the internt.<br/>
-To use the class you need a wininet unit containing the windows internet functions (<a href="#internettools">above is a new class which uses a better customizable xml format</a>).<br/>Features:</content>
+    <content language="en">This allows an automatic update, downloaded from the internet.<br/>
+To use the class you need a wininet unit containing the windows internet functions (<a href="#internettools">above is a new class that uses a better customizable XML format</a>).<br/>Features:</content>
     <features language="de">
       <feature>Erkennen neuer Versionen</feature>
       <feature>Download dieser</feature>
@@ -571,7 +571,7 @@ To use the class you need a wininet unit containing the windows internet functio
     <features language="en">
       <feature>check for new versions</feature>
       <feature>download them in a compressed zip archive</feature>
-      <feature>extract this</feature>
+      <feature>extract this archive</feature>
       <feature>replace the current executable with the new one on every Windows</feature>
       <feature>detect missing access rights on Windows NT...</feature>
     </features>
@@ -587,7 +587,7 @@ To use the class you need a wininet unit containing the windows internet functio
     <year>2006</year>
     <content language="de">Dies ist ein kleiner Browser, der auf dem Internet Explorer basiert.<br/>
 Für einen Normaluser ist er vollkommen nutzlos, sein Aussehen kann aber beim Aufruf durch Kommandozeilenparameter festgelegt werden, was manchmal recht praktisch ist, wenn man nur eine bestimmte Seite anzeigen will.</content>
-    <content language="en">This is a small browser based on the IE.<br/>
+    <content language="en">This is a small browser based on the Internet Explorer.<br/>
 It is completely useless for a normal user, but you can use it to implement a browser for a certain web page in your program. The appearance and behavior can be controlled over command line switches, so it allows for example restricted access.</content>
   </download>
   <download> 
@@ -602,8 +602,8 @@ It is completely useless for a normal user, but you can use it to implement a br
     <content language="de">Diese Unit ermöglicht die (De-)Kompression von Strings mit dem Huffmanverfahren. In dem entstehenden, komprimierten String wird jedes Zeichen nicht mehr mit 8 Bit gespeichert, sondern die Bitlänge ist variabel, so dass häufige Zeichen mit weniger Bits als seltene gespeichert werden.<br/>
 Es ist auch möglich Unicodestrings, Arrays und Dateien zu komprimieren, indem sie einfach als Bytestrings interpretiert werden. <br/>Die Unit enthält eine Kopie von TBits der 32-Bit VCL, per Define kann dies deaktiviert werden, um auch auf anderen Platformen zu kompilieren.<br/>Geeignet ist das Verfahren für normale Texte und andere Daten, bei denen einige wenige Zeichen sehr oft wiederholt werden. In den meisten Fällen ist die Kompressionsrate aber geringer als bei modernen Komprimierungsverfahren, wie Rar oder Ace.</content>
     <content language="en">This unit can (de-)compress strings with the Huffman algorithm. After compression frequently occurring characters are stored with less than 8 bit.<br/>
-It is also possible to compress Unicode strings, arrays and files, by treating them as byte strings.
-<br/>This unit contains a copy of TBits from the 32-Bit VCL, which only works on 32 systems. On other platforms the normal VCL can be used by enabling a define.<br/>You get the best compression rates in data which contains many repeated characters, but it is usually worse than modern compressions like ACE or RAR.</content>
+It is also possible to compress Unicode strings, arrays, and files, by treating them as byte strings.
+<br/>This unit contains a copy of TBits from the 32-Bit VCL, which only works on 32 systems. On other platforms, the normal VCL can be used by enabling a define.<br/>You get the best compression rates in data which contains many repeated characters, but it is usually worse than modern compressions like ACE or RAR.</content>
   </download>
  <!-- <download> 
     <title>TRegExpr</title>

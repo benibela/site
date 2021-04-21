@@ -22,13 +22,13 @@ The language codes "de" and "en" specify which languages are supported. If one o
     <content language="de">
       <p>VideLibri ist als App zur Verwaltung der eigenen Ausleihen bei verschiedenen Bibliotheken konzipiert, und kann so beispielsweise mehrere Benutzerkonten gleichzeitig anzeigen, eine Historie aller jemals ausgeliehen Medien speichern, vor Leihfristen warnen und alles automatisch verlängern. Alle weiteren Funktionen eines Bibliothekskatalog wie die Mediensuche sind ebenfalls implementiert.</p>
       <p>Damit VideLibri mit jeder existierenden Bibliothek verwendet werden kann, habe ich seit 2008 primär an einem Framework zur automatisierten Webseitenabfrage geforscht, bei dem die abzufragende Webseite (des Bibliotheks-OPACs) selbst als Sample genommen wird und nur die relevanten Teile markiert werden. An Hand der Samples kann dann ohne jegliche Programmiererei jede Webseite abgefragt werden. Da dies auch für nicht-Bibliotheken interessant ist, gibt es eine Kommandozeilen-Version von VideLibri <a auto="xidel">ohne Bibliotheksfunktionen</a> und eine <a auto="internettools">Pascal-Library</a>.</p>
-      <p>VideLibri ist platform-unabhängig und wurde unter Windows, Linux und Android mit 200 Bibliotheken getestet.  VideLibri hat mittlerweile eine <a href="http://www.videlibri.de/" rel="nofollow">eigene Domain</a>.</p>
+      <p>VideLibri ist platform-unabhängig und wurde unter Windows, Linux und Android mit 200 Bibliotheken getestet.  VideLibri hat mittlerweile eine <a href="https://www.videlibri.de/" rel="nofollow">eigene Domain</a>.</p>
       </content>
     <content language="en">
       <p>VideLibri is an app to manage books borrowed in various libraries. For example it can show multiple library accounts simultanously, show a history of all ever lent books, warn of due dates, and renew everything automatically before the due date. All other OPAC-functions like searching for books are also supported.</p>
       <p>To facilitate the usage of VideLibri with every existing library it is designed around a framework for automatic webpage querying. Thereby samples of the queried webpages (i.e. of the library OPAC) are annotated to mark the interesting parts and can directly be used to query those parts without requiring any programming. Since this is also useful for non-library webpages there is a command line version of VideLibri <a auto="xidel">without any library functionality</a> and a <a auto="internettools">(non-book) library variant for Pascal</a>.</p>
       <p>VideLibri is platform-independent and has been tested on Windows, Linux and Android, as well as with 200 libraries. However, it is still only available in German.</p>
-    VideLibri is hosted on <a href="http://www.videlibri.de/index_en.html" rel="nofollow">its own page</a>. </content>    
+    VideLibri is hosted on <a href="https://www.videlibri.de/index_en.html" rel="nofollow">its own page</a>. </content>    
   </download> 
 
   <download> 
@@ -44,12 +44,12 @@ The language codes "de" and "en" specify which languages are supported. If one o
     <p>Xidel ist ein Kommandozeilen-Tool zur Abfrage von Webseiten. 
        Es ersetzt dabei gleichermaßen Einzeldownloader wie wget oder curl, Textfilter/Datenparser wie grep, sed, xpath, xmlstarlet oder jq, und den aufrufenden Interpreter wie bash oder python. </p>
     <p>Der Kern von Xidel ist ein standard-konformer Interpreter für XQuery 3.0, eine Turing-vollständige auf XPath und SQL aufgebaute Programmiersprache.  Das Typsystem von XQuery integriert XML (XML Schema, mit Erweiterungen auch HTML und JSON), so dass die Elemente direkt gelesen/manipuliert werden können, ohne dass man wie bei DOM Wrapperfunktionenen aufrufen muss. Xidel hat verschiedene Syntaxerweiterungen, z.B.: JSONiq oder das für <a auto="videlibri"/> entwickelte HTML-Pattern-Matching, bei dem Samples von Webseiten wie reguläre Ausdrücke verwendet werden können. XQuery wurde auch dafür konzipiert, Markup zu erzeugen, zum Beispiel ist diese Webseite mittels Xidel erstellt. </p>
-    <p>Xidel ist auf <a href="http://www.videlibri.de/xidel.html" rel="nofollow">einer eigenen Seite</a> gehostet.</p></content>
+    <p>Xidel ist auf <a href="https://www.videlibri.de/xidel.html" rel="nofollow">einer eigenen Seite</a> gehostet.</p></content>
     <content language="en">
     <p>Xidel is a command line tool to query web pages.
        It replaces downloaders like wget or curl, text processors/parsers like grep, sed, xpath, xmlstarlet or jq, and the calling interpreters like bash or python. </p>
     <p>The core of Xidel is a standard-conformant interpreter of XQuery 3.0, a Turing-complete programming language inspired by XPath and SQL.  The type system of XQuery integrates XML (XML Schema, extended to HTML and JSON), so that elements can be directly accessed and manipulated, and you do not need any wrapper classes like DOM. Xidel has various extensions, e.g.: JSONiq or the HTML-pattern-matching developed for <a auto="videlibri"/>, where samples of the queried web pages can be used like regular expressions. Another purpose of XQuery is creating markup, e.g. this webpage is created by Xidel. </p>
-    <p>Xidel is hosted on <a href="http://www.videlibri.de/xidel.html" rel="nofollow">its own page</a>.</p></content>    
+    <p>Xidel is hosted on <a href="https://www.videlibri.de/xidel.html" rel="nofollow">its own page</a>.</p></content>    
   </download> 
 
   <download> 
@@ -398,12 +398,12 @@ The <a href="bin/tools/source/fileparser.zip">source (17 KB)</a> is a typical De
     <content language="de">
 Die GUITools ermöglichen das visuelle Erzeugen von Text, Panel und View-Objekten des 3D Game Studios, ähnlich der im WDLSSG vorhandenen Funktionen, wobei die GUITools bessere Vorschaufunktionen besitzen.<br/>
 Sie sind ursprünglich für 3DGS 4 und 5 geschrieben worden, da es aber in den GUI-Bereichen kaum Änderungen gab, werden sie auch mit 3DGS 6 funktionieren.<br/>
-Da es sich um ein Plugin handelt, benötigt man den <a href="http://web.archive.org/web/20160113233941/http://gstools.de/index.php/projects/gst-builder"> <!-- href="http://www.gstools.de">-->GST-Builder</a> 2.4.103 und das GSTHelper plugin 1.2.0, um sie starten zu können.<br/>
+Da es sich um ein Plugin handelt, benötigt man den <a href="https://web.archive.org/web/20160113233941/http://gstools.de/index.php/projects/gst-builder"> <!-- href="http://www.gstools.de">-->GST-Builder</a> 2.4.103 und das GSTHelper plugin 1.2.0, um sie starten zu können.<br/>
 Sie sind, entsprechend dem GST-Builder, zweisprachig, und können sowohl auf deutsch wie auch auf englisch geschaltet werden.</content>
     <content language="en">
 With the GUITools you can create WYSIWYG text, panel und view objects of the 3D Game Studio.<br/>
 They are originally written for 3DGS 4 and 5, but there are almost no changes in the GUI parts of it, so they work in 3DGS 6.<br/>
-Because it is a plugin, you need the <a href="http://web.archive.org/web/20160113233941/http://gstools.de/index.php/projects/gst-builder">GST-Builder</a> 2.4.103 and the GSTHelper plugin 1.2.0, to use them.<br/>
+Because it is a plugin, you need the <a href="https://web.archive.org/web/20160113233941/http://gstools.de/index.php/projects/gst-builder">GST-Builder</a> 2.4.103 and the GSTHelper plugin 1.2.0, to use them.<br/>
 They are like the GST-Builder bilingual and have a German and a English version.
 </content>
     <screenshot>
