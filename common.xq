@@ -1,3 +1,4 @@
+xquery version "4.0-xidel";
 declare function local:eval($tpl) {
   eval($tpl, {"language": "xquery"})
 };
