@@ -1,0 +1,85 @@
+<file>
+  <description language="de">BeniBela online: Auf dieser Seite finden sich Web-Applets, die sich direkt im Browser ausführen lassen.</description>
+  <description language="en">BeniBela online: Here you find web various applets that run directly in the browser.</description>
+  <keywords language="de">BeniBela, Gauß-Elimination, Komedogene Inhaltsstoffe </keywords>
+  <keywords language="en">BeniBela, Gaussian Elimination, Comedogenic Ingredients</keywords>
+  <content language="de">Auf dieser Seite finden sich Web-Applets, die sich direkt im Browser ausführen lassen.</content>
+  <content language="en">On this page you can find web applets that run directly in the browser.</content>
+  <download-dir>bin/others</download-dir>
+
+  <download> 
+    <title>SIRDSlets</title>
+    <file>../games/sirdslets.zip</file> 
+    <id>sirdslets</id>
+    <github>sirdslets</github>
+    <description_80 language="de">Online Sidescroller-Spiel in einer 3D-Welt, die als Stereo&#173;gramm gerendert wird.</description_80>
+    <description_80 language="en">Online side-scrolling game in the full 3d world of a stereo&#173;gram</description_80>
+    <!--<language>en</language>-->
+    <payment>GPL</payment>
+    <year>2009 - <!--2011, --> 2015</year>
+    <content language="de">Ein Sidescroller, bei dem man ein Raumschiff zwischen verschiedenen Hindernissen wie Minen oder schwarzen Löchern hindurch steuert.<br/>Dabei befindet man sich in einer 3D-Welt und kann das Raumschiff sowohl in x, y wie auch z-Richtung fliegen lassen. Außerdem wird der Level als Stereogramm gerendert, so dass man die tatsächliche 3D-Position des Schiffes und der Hindernisse direkt sehen kann. Alternativ gibt es auch einen Anaglyphrendermodus, der dient aber nur als Notbehelf für Leute, die keine SIRDS sehen können. Die Schwierigkeitsgradeinstellung ändert die Fähigkeiten des Raumschiffes und bestimmt, ob die reparierenden Nanoroboter und die Zeitmaschine aktiviert werden können.<br/><br/>Zusätzlich gibt es ein Stereogrammmalprogramm und einen Leveleditor.</content>
+    <content language="en">A side-scrolling game in which you move a space ship while you have to avoid several obstacles like mines or black holes.<br/>The special thing is that the level is a 3d world which is rendered as a stereogram so you can actually see it in full 3d (although it has no colors). You can also switch to an anaglyph render mode, but you should only use it if you are unable to see SIRDS. The ship can of course not only move along the x/y-axis, but also along the z-axis from near to far. The option to change the level of difficulty determines the abilities of the ship and give you repairing nano robots or a time machine.<br/>Additionally there is a level editor and a simple stereogram painting program. </content>
+    <final-content language="de"><br/><br/><a href="bin/games/sirdslets/sirdslet_page.html" class="inline-popup-large">Spiele es online</a></final-content>
+    <final-content language="en"><br/><a href="bin/games/sirdslets/sirdslet_page.html" class="inline-popup-large">Play it online</a></final-content>
+    <screenshot>
+      <title language="de">Parallelblick</title>
+      <title language="en">parallel eye view</title>
+      <fullfile>img/games/sirdslets_1.png</fullfile>s
+      <height>300px</height>
+    </screenshot>
+    <screenshot>
+      <title language="de">Kreuzblick</title>
+      <title language="en">cross eye view</title>
+      <fullfile>img/games/sirdslets_2.png</fullfile>
+      <height>300px</height>
+    </screenshot>
+  </download>
+
+  <download> 
+    <title language="de">Komedo&#173;gene Inhalts&#173;stoffen</title>
+    <title language="en">Comedo&#173;genic Tester</title>
+  	<id>comedogenic</id>
+    <file>comedogenic.js</file>
+    <year>2015</year>
+    <description_80 language="de">Eine Liste von komedogene Inhaltsstoffen.</description_80>
+    <description_80 language="en">A list of comedogenic ingredients</description_80>
+    <content language="de">Dieses Tool testet, ob eine Liste von Inhaltsstoffen komedogene Stoffe enthält:<br/> <br/></content>
+    <content language="en">Here you can test if a list of ingredients contains comedogenic substances:<br/> <br/></content>
+    <final-content>
+      <div id="comedogenic-placeholder"></div>
+      <script type="text/javascript" src="bin/others/comedogenic.js"></script>
+    </final-content>
+  </download>
+ 
+  <download> 
+    <title language="de">Gauß-Elimination</title>
+    <title language="en">Gaussian Elimination</title>
+    <id>gaussElimination</id>
+    <file>gaussElimination.js</file>
+    <description_80 language="de">Ein Java&#173;Script, um das Gaußsche Eliminations&#173;verfahren durchzuführen.</description_80>
+    <description_80 language="en">A java-script to perform a Gaussian Elimination</description_80>
+    <size_KB>10</size_KB>
+    <year>2009</year>
+    <content language="de">Dieses Javascriptprogramm lässt einen im Browser eine Matrix mit dem Gaußschen Eliminationsverfahren umformen. Im Gegensatz zu den üblichen Applets funktioniert es auch mit Matrizen beliebiger Größe und kommt (für Restklassenringe) ohne Division aus. Es sollte direkt hier angezeigt werden:<br/> <br/></content>
+    <content language="en">With this script you can perform a Gaussian Elimination. In contrast to other applets it also works with matrices of arbitrary size. You should  see it here now:<br/> <br/></content>
+    <final-content>
+      <script type="text/javascript" src="bin/others/gaussElimination.js"></script>
+    </final-content>
+  </download>
+
+
+  <download> 	
+    <title language="de">Farb&#173;muster&#173;generator</title>
+    <title language="en">Color pattern creator</title>
+    <file>colorMap.js</file>
+    <description_80 language="de">Ein Java&#173;Script, das ein Farb&#173;muster (zufällig oder als Höhen&#173;karte) generiert.</description_80>
+    <description_80 language="en">A java-script that creates (randomly or as high map) a color pattern</description_80>
+    <size_KB>10</size_KB>
+    <year>2007</year>
+    <content language="de">Dieses Javascriptprogramm setzt im Browser Farben in ein Raster. Es sollte direkt hier angezeigt werden:<br/> <br/></content>
+    <content language="en">This script puts color into a raster. You should  see it here now:<br/> <br/></content>
+    <final-content>
+      <script type="text/javascript" src="bin/others/colorMap.js"></script>
+    </final-content>
+  </download>
+</file>
